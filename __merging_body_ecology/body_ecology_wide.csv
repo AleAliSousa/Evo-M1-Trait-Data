@@ -697,7 +697,7 @@
 "Ateles hybridus","7914.06",,,,,,,,"10","0","0","0","10","0","60","0","10","10","5","Fruit","Herbivore","Arboreal","Diurnal"
 "Ateles marginatus","5266.9967",,,,,,,,"10","0","0","0","10","0","60","0","10","10","5","Fruit","Herbivore","Arboreal","Diurnal"
 "Ateles paniscus","5332.2222",,,"33","229.5","788.3333","1","1516","10","0","0","0","10","0","60","0","10","10","5","Fruit","Herbivore","Arboreal","Diurnal"
-"Ateles sp.","2800",,,,,"821",,,,,,,,,,,,,,,,,
+"Ateles sp.","2800",,,,,,,,,,,,,,,,,,,,,,
 "Ateles spec.","1635",,,,,,,,,,,,,,,,,,,,,,
 "Atelocynus microtis","8383.994",,,,,,,,"0","80","0","0","0","0","0","0","0","20","2","Endotherm vertebrates","Faunivore","Ground","Nocturnal"
 "Athene noctua","169",,,,,,,,,,,,,,,,,,,,,,
@@ -1112,7 +1112,7 @@
 "Callithrix geoffroyi","338",,,,,,,,"20","0","0","0","10","0","30","40","0","0","4","Nectar","Herbivore","Arboreal","Diurnal"
 "Callithrix humilis","335.61",,,,,,,,"20","0","0","0","10","0","30","40","0","0","4","Nectar","Herbivore","Arboreal","Diurnal"
 "Callithrix intermedia","335.61",,,,,,,,"50","0","0","0","0","0","30","20","0","0","3","Invertebrates","Omnivore","Arboreal","Diurnal"
-"Callithrix jacchus","305.1548","165.3128","0.5526","16.75","145","76.1333","2.31","421","20","0","0","0","10","0","30","40","0","0","4","Nectar","Herbivore","Arboreal","Diurnal"
+"Callithrix jacchus","305.1548","165.3128","0.5526","16.75","145","73.7","2.31","421","20","0","0","0","10","0","30","40","0","0","4","Nectar","Herbivore","Arboreal","Diurnal"
 "Callithrix kuhlii","364.5556",,,,,,,,"20","0","0","0","10","0","30","40","0","0","4","Nectar","Herbivore","Arboreal","Diurnal"
 "Callithrix leucippe","335.61",,,,,,,,"20","0","0","0","0","0","40","40","0","0","3","Fruit","Herbivore","Arboreal","Diurnal"
 "Callithrix manicorensis","335.61",,,,,,,,"20","0","0","0","10","0","30","40","0","0","4","Nectar","Herbivore","Arboreal","Diurnal"
@@ -1654,8 +1654,8 @@
 "Chlorocebus aethiops","2684.5926",,,,,,,,"20","0","0","0","20","0","40","0","0","20","4","Fruit","Omnivore","Scansorial","Diurnal"
 "Chlorocebus cynosuros","3400",,,,,,,,"10","0","0","0","20","0","40","0","10","20","5","Fruit","Herbivore","Scansorial","Diurnal"
 "Chlorocebus djamdjamensis","4651.6667",,,,,,,,"10","0","0","0","0","0","10","0","0","80","3","Other plant","Herbivore","Scansorial","Diurnal"
-"Chlorocebus pygerythrus","4000",,,,,"117",,,"20","0","0","0","20","0","40","0","0","20","4","Fruit","Omnivore","Scansorial","Diurnal"
-"Chlorocebus sabaeus","2289.6154",,,,,"365",,,"20","0","0","0","20","0","40","0","0","20","4","Fruit","Omnivore","Scansorial","Diurnal"
+"Chlorocebus pygerythrus","4000",,,,,,,,"20","0","0","0","20","0","40","0","0","20","4","Fruit","Omnivore","Scansorial","Diurnal"
+"Chlorocebus sabaeus","2289.6154",,,,,,,,"20","0","0","0","20","0","40","0","0","20","4","Fruit","Omnivore","Scansorial","Diurnal"
 "Chlorocebus tantalus","4904.5",,,,,,,,"20","0","0","0","0","0","50","0","0","30","3","Fruit","Herbivore","Scansorial","Diurnal"
 "Chloropsis sonnerati","0.0397",,,,,,,,,,,,,,,,,,,,,,
 "Chlorostilbon mellisugus","0.0029",,,,,,,,,,,,,,,,,,,,,,
@@ -2428,7 +2428,7 @@
 "Dasyprocta leporina","2659","1558.48","0.5287","17.8","112","140","1","193","10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasyprocta mexicana","5000",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasyprocta pratti","900",,,,,,,,,,,,,,,,,,,,,,
-"Dasyprocta prymnolopha","2888.602",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
+"Dasyprocta prymnolopha","2881.0517",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasyprocta punctata","2450.75",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
 "Dasyprocta punctata dariensis (Goldman)","2210.3333",,,,,,,,,,,,,,,,,,,,,,
 "Dasyprocta ruatanica","1172.6767",,,,,,,,"10","0","0","0","0","0","40","0","0","50","3","Other plant","Herbivore","Ground","Diurnal"
@@ -2999,7 +2999,7 @@
 "Erophylla bombifrons","15.6633","18.1","1.103",,,,,,"40","0","0","0","0","0","30","30","0","0","3","Invertebrates","Omnivore","Arboreal","Nocturnal"
 "Erophylla sezekorni","15.8667",,,,,,,,"30","0","0","0","0","0","40","30","0","0","3","Fruit","Herbivore","Arboreal","Nocturnal"
 "Erythemis simplicicollis","3e-04",,,,,,,,,,,,,,,,,,,,,,
-"Erythrocebus patas","7273.131","856.35","0.2854","21.6","167","225","1","1246.07","0","0","0","0","0","0","40","0","20","40","3","Fruit","Herbivore","Ground","Diurnal"
+"Erythrocebus patas","7273.131","856.35","0.2854","21.6","167","234","1","1246.07","0","0","0","0","0","0","40","0","20","40","3","Fruit","Herbivore","Ground","Diurnal"
 "Erythrodiplax berenice","1e-04",,,,,,,,,,,,,,,,,,,,,,
 "Erythrodiplax connata","0",,,,,,,,,,,,,,,,,,,,,,
 "Erythrogonys cinctus","0.048",,,,,,,,,,,,,,,,,,,,,,
@@ -3062,11 +3062,11 @@
 "Eulemur cinereiceps","2071.9644",,,,,,,,"0","0","0","0","0","0","80","5","0","15","2.5","Fruit","Herbivore","Arboreal","Diurnal"
 "Eulemur coronatus","1422",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Diurnal"
 "Eulemur flavifrons","2112.3333",,,,,,,,,,,,,,,,,,,,,,
-"Eulemur fulvus","1625","344.4262","0.1551","36","121.5","164","1","548","0","0","0","0","0","0","65","0","0","35","1.5","Other plant","Herbivore","Arboreal","Diurnal"
+"Eulemur fulvus","1625","344.4262","0.1551","36","121.5","171","1","548","0","0","0","0","0","0","65","0","0","35","1.5","Other plant","Herbivore","Arboreal","Diurnal"
 "Eulemur fulvus group","2235",,,,,,,,,,,,,,,,,,,,,,
-"Eulemur macaco","1915.1389",,,,,"170",,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Diurnal"
+"Eulemur macaco","1915.1389",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Diurnal"
 "Eulemur macao macao","2390",,,,,,,,,,,,,,,,,,,,,,
-"Eulemur mongoz","1464.7778","1041.5","0.7014","30","127.6667","151","1.05","550","0","0","0","0","0","0","20","50","0","30","3","Nectar","Herbivore","Arboreal","Cathemeral"
+"Eulemur mongoz","1464.7778","1041.5","0.7014","30","127.6667","152","1.05","550","0","0","0","0","0","0","20","50","0","30","3","Nectar","Herbivore","Arboreal","Cathemeral"
 "Eulemur rubriventer","1015",,,,,,,,"0","0","0","0","0","0","30","0","0","70","2","Other plant","Herbivore","Arboreal","Diurnal"
 "Eulemur rufifrons","2083.3333",,,,,,,,,,,,,,,,,,,,,,
 "Eulemur rufiventer","1.4",,,,,,,,,,,,,,,,,,,,,,
@@ -3293,7 +3293,7 @@
 "Galago moholi","180","125.95","0.7416",,"124","84",,,"40","0","0","0","0","0","0","60","0","0","2","Nectar","Omnivore","Arboreal","Nocturnal"
 "Galago nyasae","165.68",,,,,,,,"90","0","0","0","0","0","10","0","0","0","2","Invertebrates","Faunivore","Arboreal","Nocturnal"
 "Galago rondoensis","165.68",,,,,,,,"50","0","0","0","0","0","50","0","0","0","2","Invertebrates","Omnivore","Arboreal","Nocturnal"
-"Galago senegalensis","205.7727","192.075","0.8162","17","130.6667","96.1667","1.55","240","40","0","0","0","0","0","0","60","0","0","2","Nectar","Omnivore","Arboreal","Nocturnal"
+"Galago senegalensis","205.7727","192.075","0.8162","17","130.6667","87.3333","1.55","240","40","0","0","0","0","0","0","60","0","0","2","Nectar","Omnivore","Arboreal","Nocturnal"
 "Galago senegalensis group","185.2145",,,,,,,,,,,,,,,,,,,,,,
 "Galago sp.","237.5",,,,,,,,,,,,,,,,,,,,,,
 "Galagoides cocos","142.5",,,,,,,,,,,,,,,,,,,,,,
@@ -3928,7 +3928,7 @@
 "Homo naledi","41794.4848",,,,,,,,,,,,,,,,,,,,,,
 "Homo neanderthalensis","79133.3333",,,,,,,,,,,,,,,,,,,,,,
 "Homo rudolfensis","45600",,,,,,,,,,,,,,,,,,,,,,
-"Homo sapiens","63223.2349","12925.1607","0.2012","122.5","272.39","910.43","1","4745","10","0","0","0","0","0","60","0","0","30","3","Fruit","Herbivore","Ground","Diurnal"
+"Homo sapiens","63223.2349","12925.1607","0.2012","122.5","272.39","725.86","1","4745","10","0","0","0","0","0","60","0","0","30","3","Fruit","Herbivore","Ground","Diurnal"
 "Homo spDenisova","76000",,,,,,,,,,,,,,,,,,,,,,
 "Homonota gaudichaudii","8e-04",,,,,,,,,,,,,,,,,,,,,,
 "Homotherium latidens","189000",,,,,,,,,,,,,,,,,,,,,,
@@ -4678,33 +4678,33 @@
 "Lysmata amboinensis","2.23",,,,,,,,,,,,,,,,,,,,,,
 "Mabuya striata","19.5",,,,,,,,,,,,,,,,,,,,,,
 "Macaca anderssoni","7260.8037",,,,,,,,,,,,,,,,,,,,,,
-"Macaca arctoides","5998.75",,,,,"270",,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
+"Macaca arctoides","5998.75",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca assamensis","3655",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca brunnescens","3950",,,,,,,,,,,,,,,,,,,,,,
 "Macaca cyclopis","5605",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
-"Macaca fascicularis","3724.9777","3033.6014","0.5122",,,"385",,,"50","0","0","0","0","0","40","0","0","10","3","Invertebrates","Omnivore","Scansorial","Diurnal"
+"Macaca fascicularis","3724.9777","3033.6014","0.5122",,,,,,"50","0","0","0","0","0","40","0","0","10","3","Invertebrates","Omnivore","Scansorial","Diurnal"
 "Macaca fascicularis group","4501.7613",,,,,,,,,,,,,,,,,,,,,,
 "Macaca fuscata","3251","3898.0267","0.4086",,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca hecki","7598.1371",,,,,,,,"10","0","0","0","0","0","60","0","10","20","4","Fruit","Herbivore","Scansorial","Diurnal"
 "Macaca leonina","2050",,,,,,,,"10","0","0","0","0","0","80","0","0","10","3","Fruit","Herbivore","Scansorial","Diurnal"
 "Macaca maura","8141.1429",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
-"Macaca mulatta","6826.7235","2269.2222","0.393","36","165.8889","307.1667","1","1231","10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
+"Macaca mulatta","6826.7235","2269.2222","0.393","36","165.8889","278.25","1","1231","10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca mulatta group","6737.7927",,,,,,,,,,,,,,,,,,,,,,
 "Macaca munzala","15000",,,,,,,,,,,,,,,,,,,,,,
-"Macaca nemestrina","6109.4",,,,,"342",,,"10","0","0","0","0","0","70","0","10","10","4","Fruit","Herbivore","Scansorial","Diurnal"
+"Macaca nemestrina","6109.4",,,,,,,,"10","0","0","0","0","0","70","0","10","10","4","Fruit","Herbivore","Scansorial","Diurnal"
 "Macaca nemestrina group","8043.1724",,,,,,,,,,,,,,,,,,,,,,
 "Macaca nigra","5482.6111",,,,,,,,"10","0","0","0","0","0","70","0","10","10","4","Fruit","Herbivore","Scansorial","Diurnal"
 "Macaca nigrescens","7609.24",,,,,,,,"10","0","0","0","0","0","80","0","0","10","3","Fruit","Herbivore","Scansorial","Diurnal"
 "Macaca ochreata","3950",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca pagensis","5868.665",,,,,,,,"10","0","0","0","0","0","60","0","10","20","4","Fruit","Herbivore","Scansorial","Diurnal"
 "Macaca pileatus","1.97",,,,,,,,,,,,,,,,,,,,,,
-"Macaca radiata","3850",,,,,"195",,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
+"Macaca radiata","3850",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca rhesus","1814.6515",,,,,,,,,,,,,,,,,,,,,,
 "Macaca siberu","5492.8867",,,,,,,,"10","0","0","0","0","0","60","0","10","20","4","Fruit","Herbivore","Scansorial","Diurnal"
 "Macaca silenus","7500",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca sinica","1568.3929",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca sinica group","6468.6471",,,,,,,,,,,,,,,,,,,,,,
-"Macaca sylvanus","10412.5",,,,,"258",,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
+"Macaca sylvanus","10412.5",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca sylvanus group","9000",,,,,,,,,,,,,,,,,,,,,,
 "Macaca thibetana","12491.6667",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
 "Macaca tonkeana","9000",,,,,,,,"10","0","0","0","0","0","30","0","20","40","4","Other plant","Herbivore","Scansorial","Diurnal"
@@ -5177,7 +5177,7 @@
 "Microcebus margotmarshae","47",,,,,,,,,,,,,,,,,,,,,,
 "Microcebus marohita","60.7",,,,,,,,,,,,,,,,,,,,,,
 "Microcebus mittermeieri","42",,,,,,,,,,,,,,,,,,,,,,
-"Microcebus murinus","56.4437","71.9433","1.0165","15.5","60.375","45","2","243","20","0","20","0","0","0","30","10","0","20","5","Fruit","Omnivore","Arboreal","Nocturnal"
+"Microcebus murinus","56.4437","71.9433","1.0165","15.5","60.375","42","2","243","20","0","20","0","0","0","30","10","0","20","5","Fruit","Omnivore","Arboreal","Nocturnal"
 "Microcebus myoxinus","33",,,,,,,,"20","0","20","0","0","0","30","10","0","20","5","Fruit","Omnivore","Arboreal","Nocturnal"
 "Microcebus ravelobensis","63",,,,,,,,"20","0","20","0","0","0","30","10","0","20","5","Fruit","Omnivore","Arboreal","Nocturnal"
 "Microcebus rufus","43.05",,,,,,,,"20","0","20","0","0","0","30","10","0","20","5","Fruit","Omnivore","Arboreal","Nocturnal"
@@ -6724,7 +6724,7 @@
 "Pampatherium typum","2e+05",,,,,,,,,,,,,,,,,,,,,,
 "Pan paniscus","38513.3333",,,,,,,,"10","0","0","0","0","0","60","0","10","20","4","Fruit","Herbivore","Scansorial","Diurnal"
 "Pan sp","25850",,,,,,,,,,,,,,,,,,,,,,
-"Pan troglodytes","47663.9951","9298.9175","0.263","59.4","232","1558.1667","1","3376","10","0","0","0","0","0","60","0","0","30","3","Fruit","Herbivore","Scansorial","Diurnal"
+"Pan troglodytes","47663.9951","9298.9175","0.263","59.4","232","1640.75","1","3376","10","0","0","0","0","0","60","0","0","30","3","Fruit","Herbivore","Scansorial","Diurnal"
 "Pandion cristatus","1.415",,,,,,,,,,,,,,,,,,,,,,
 "Panochthus tuberculatus","1061000",,,,,,,,,,,,,,,,,,,,,,
 "Pantala flavescens","3e-04",,,,,,,,,,,,,,,,,,,,,,
@@ -6747,14 +6747,14 @@
 "Papilio demoleus demoleus","0.3",,,,,,,,,,,,,,,,,,,,,,
 "Papilio polytes polytes","0.3",,,,,,,,,,,,,,,,,,,,,,
 "Papilio xuthus koxingus","0.3",,,,,,,,,,,,,,,,,,,,,,
-"Papio anubis","21348.0729","3258.1183","0.3051",,,"390",,,"10","40","0","0","0","0","20","0","0","30","4","Endotherm vertebrates","Omnivore","Ground","Diurnal"
-"Papio cynocephalus","16380.25","6867","0.479",,,"365",,,"10","0","0","0","10","0","20","0","0","60","4","Other plant","Herbivore","Ground","Diurnal"
+"Papio anubis","21348.0729","3258.1183","0.3051",,,,,,"10","40","0","0","0","0","20","0","0","30","4","Endotherm vertebrates","Omnivore","Ground","Diurnal"
+"Papio cynocephalus","16380.25","6867","0.479",,,,,,"10","0","0","0","10","0","20","0","0","60","4","Other plant","Herbivore","Ground","Diurnal"
 "Papio cynocephalus anubis","20375",,,,,,,,,,,,,,,,,,,,,,
 "Papio cynocphalus","2541.8",,,,,,,,,,,,,,,,,,,,,,
-"Papio hamadryas","10885.75",,,"37.5","171","307.5","1","1514","10","0","0","0","10","0","0","0","0","80","3","Other plant","Herbivore","Ground","Diurnal"
+"Papio hamadryas","10885.75",,,"37.5","171","300","1","1514","10","0","0","0","10","0","0","0","0","80","3","Other plant","Herbivore","Ground","Diurnal"
 "Papio izodi","17500",,,,,,,,,,,,,,,,,,,,,,
 "Papio kindae","13000",,,,,,,,,,,,,,,,,,,,,,
-"Papio papio","14329","2622","0.4207",,,"420",,,"10","0","0","0","20","0","20","0","10","40","5","Other plant","Herbivore","Ground","Diurnal"
+"Papio papio","14329","2622","0.4207",,,,,,"10","0","0","0","20","0","20","0","10","40","5","Other plant","Herbivore","Ground","Diurnal"
 "Papio sp.","16811.5",,,,,,,,,,,,,,,,,,,,,,
 "Papio ursinus","20756.6214","5066.5","0.3045",,,,,,"20","0","0","0","10","0","40","0","20","10","5","Fruit","Herbivore","Ground","Diurnal"
 "Pappogeomys alcorni","150",,,,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
@@ -7523,7 +7523,7 @@
 "Pomatostomus superciliosus","0.0386",,,,,,,,,,,,,,,,,,,,,,
 "Pomatostomus temporalis","0.0695",,,,,,,,,,,,,,,,,,,,,,
 "Pongo abelii","53131.0505",,,,,,,,"10","0","0","0","10","0","80","0","0","0","3","Fruit","Herbivore","Arboreal","Diurnal"
-"Pongo pygmaeus","59981.9022","6301.7374","0.2851","59","248.5","1421.625","1","2555","10","0","0","0","10","0","80","0","0","0","3","Fruit","Herbivore","Arboreal","Diurnal"
+"Pongo pygmaeus","59981.9022","6301.7374","0.2851","59","248.5","1206.25","1","2555","10","0","0","0","10","0","80","0","0","0","3","Fruit","Herbivore","Arboreal","Diurnal"
 "Pongo sp","21000",,,,,,,,,,,,,,,,,,,,,,
 "Pongo sp.","54313.6667",,,,,,,,,,,,,,,,,,,,,,
 "Pontella danae","0.0024",,,,,,,,,,,,,,,,,,,,,,
@@ -7650,7 +7650,7 @@
 "Proechimys gorgonae","285",,,,,,,,,,,,,,,,,,,,,,
 "Proechimys guairae","383",,,,,,,,"0","0","0","0","0","0","20","0","10","70","3","Other plant","Herbivore","Ground","Nocturnal"
 "Proechimys gularis","285",,,,,,,,,,,,,,,,,,,,,,
-"Proechimys guyannensis","278.4",,,,,,,,"0","0","0","0","0","0","20","0","10","70","3","Other plant","Herbivore","Ground","Nocturnal"
+"Proechimys guyannensis","269.25",,,,,,,,"0","0","0","0","0","0","20","0","10","70","3","Other plant","Herbivore","Ground","Nocturnal"
 "Proechimys hendeei","285",,,,,,,,,,,,,,,,,,,,,,
 "Proechimys hoplomyoides","285",,,,,,,,"0","0","0","0","0","0","20","0","10","70","3","Other plant","Herbivore","Ground","Nocturnal"
 "Proechimys iheringi","221",,,,,,,,,,,,,,,,,,,,,,
@@ -8470,7 +8470,7 @@
 "Saimiri macrodon","990",,,,,,,,,,,,,,,,,,,,,,
 "Saimiri oerstedii","521.5",,,,,,,,"20","0","0","0","20","0","20","0","20","20","5","Invertebrates","Omnivore","Arboreal","Diurnal"
 "Saimiri orstedii orstedii reinhardt","504.8",,,,,,,,,,,,,,,,,,,,,,
-"Saimiri sciureus","732.2318","686.8669","0.8599","27","169.5","198.6667","1","1003","20","0","0","0","20","0","20","0","20","20","5","Invertebrates","Omnivore","Arboreal","Diurnal"
+"Saimiri sciureus","732.2318","686.8669","0.8599","27","169.5","209.5","1","1003","20","0","0","0","20","0","20","0","20","20","5","Invertebrates","Omnivore","Arboreal","Diurnal"
 "Saimiri sciureus cassiquiarensis","838.0625",,,,,,,,,,,,,,,,,,,,,,
 "Saimiri sciureus group","830.5375",,,,,,,,,,,,,,,,,,,,,,
 "Saimiri sciureus macrodon","823.6012",,,,,,,,,,,,,,,,,,,,,,
@@ -9532,7 +9532,6 @@
 "Thomomys umbrinus","138.325","72.3","0.7587",,,,,,"0","0","0","0","0","0","0","0","0","100","1","Other plant","Herbivore","Ground","Nocturnal"
 "Thoopterus nigrescens","62.1",,,,,,,,"0","0","0","0","0","0","80","20","0","0","2","Fruit","Herbivore","Arboreal","Nocturnal"
 "Thos mesomelas","2850",,,,,,,,,,,,,,,,,,,,,,
-"Three-striped night monkey",,,,,,"77",,,,,,,,,,,,,,,,,
 "Threskiornis molucca","1.825",,,,,,,,,,,,,,,,,,,,,,
 "Threskiornis spinicollis","1.36",,,,,,,,,,,,,,,,,,,,,,
 "Thrichomys apereoides","324.75","206.7","0.6399",,,,,,"0","0","0","0","0","0","60","0","40","0","2","Fruit","Herbivore","Ground","Nocturnal"

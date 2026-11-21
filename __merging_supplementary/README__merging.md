@@ -83,6 +83,41 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
   plus its source-specific label, unchanged); Dunn's likewise (own label plus a
   pooled-feed row). Coverage: 58 species (winners: McComb & Semple 2005 42,
   Dunn & Smaers 2018 16).
+- **Social group size pooled by precedence (added 2026-11-20).** Ten compilations report
+  mean social group size under ten labels. `Social_group_size (count)` is now the pooled
+  label, assembled by the `precedence` column of `supplementary_sources.csv`: PanTHERIA (1),
+  Galán-Acedo 2019 (2), Kamilar & Cooper 2013 (3), Grueter et al. 2013 (4),
+  Dunbar & Bever 1998 (5, its Table 1 and Table 2 rows feed separately; their species sets
+  are complementary by construction), McComb & Semple 2005 (6), Nunn & Samson 2018 (7),
+  Pasquaretta et al. 2014 (8), Dunn & Smaers 2018 MS (9), Wiafe 2019 (10). Each feeder
+  compilation is mapped twice (its own label, unchanged, plus a pooled-feed row);
+  provenance columns on the pooled rows still span all contributing compilations.
+  Coverage: 707 -> 833 species (winners: PanTHERIA 707, Galán-Acedo 2019 60,
+  Dunbar & Bever 1998 46, Kamilar & Cooper 2013 8, Grueter et al. 2013 8,
+  Pasquaretta et al. 2014 2, Nunn & Samson 2018 1, Wiafe 2019 1; McComb & Semple 2005 and
+  Dunn & Smaers 2018 (MS) win none -- every species they report is already covered by a
+  higher-precedence compilation, so they contribute provenance and spread only).
+  The four look-alikes stay separate: `Social_group_size_foraging_Dunn2018` (foraging-party
+  size), `Social_group_size_population_Dunn2018` and `Social_group_size_population_mean_Ziege2016`
+  (population size), `Social_group_size_colony_Devillard2003` (colony size).
+- **Female / male body mass pooled by precedence (added 2026-11-20).** Three compilations
+  report sex-specific body mass under six labels. New pooled labels `Female_body_mass (g)`
+  and `Male_body_mass (g)` are assembled by the `precedence` column: Galán-Acedo 2019 (1),
+  Kamilar & Cooper 2013 (2), Nunn & Samson 2018 (3), for each sex; every compilation is
+  mapped twice (its own label, unchanged, plus a pooled-feed row). Coverage:
+  Female_body_mass 369 species (winners: Galán-Acedo 2019 358, Kamilar & Cooper 2013 10,
+  Nunn & Samson 2018 1); Male_body_mass 380 species (winners: Galán-Acedo 2019 368,
+  Kamilar & Cooper 2013 11, Nunn & Samson 2018 1).
+- **Litter_size_Kamilar2013 retired (2026-11-20).** The Kamilar & Cooper 2013 litter-size
+  column added no species to the pooled `Litter_size (count)` (PanTHERIA + Amniote + AnAge
+  via `label_policy = shared`, plus the body_ecology copy of the label), so its
+  source-specific mapping row is removed and the label leaves the app catalogue. The
+  pooled label is unchanged (3,532 species in this merge); the source table
+  (Kamilar_Cooper_2013_S2) and its registry entry are untouched, and the label can be
+  restored by re-adding the mapping row. A canonical supersede row cannot do this job:
+  app.R's supersede pass only relabels rows of the base tables (volumes / cell counts /
+  traits), never rows inside a merge, so merge-internal labels are retired here, in the
+  mapping, not in `_keys/variable_canonical.csv`.
 - **AnAge interbirth interval is in days.** The item column is named `Inter_litter_Interbirth_interval_days`.
   AnAge's header carries no unit; the values are days (Homo 639, Mus 30, Sus 230) and are mapped directly.
 - **AnAge longevity quality filter.** `Data_quality` is AnAge's confidence in the longevity record only;

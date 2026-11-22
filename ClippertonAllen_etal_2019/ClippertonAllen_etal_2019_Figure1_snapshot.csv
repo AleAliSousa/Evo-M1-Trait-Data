@@ -1,0 +1,13 @@
+Panel,Age,Structure,Genotype,n,Axis min mm3,Axis max mm3,Axis min pixel y,Axis max pixel y,Bar top pixel y,Upper SEM cap pixel y
+A,P7,Total brain,Pten+/+,10,200,300,465,180,367,350
+A,P7,Total brain,Pten+/-,10,200,300,465,180,295,277
+A,P60,Total brain,Pten+/+,10,400,550,465,180,381,367
+A,P60,Total brain,Pten+/-,9,400,550,465,180,230,215
+B,P7,Gray matter,Pten+/+,10,180,280,465,180,361,347
+B,P7,Gray matter,Pten+/-,10,180,280,465,180,294,278
+B,P7,White matter,Pten+/+,10,14,20,465,180,385,368
+B,P7,White matter,Pten+/-,10,14,20,465,180,311,294
+B,P60,Gray matter,Pten+/+,10,360,480,465,180,398,383
+B,P60,Gray matter,Pten+/-,9,360,480,465,180,241,222
+B,P60,White matter,Pten+/+,10,45,65,465,180,398,381
+B,P60,White matter,Pten+/-,9,45,65,465,180,263,247

@@ -1,0 +1,25 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,,,,info,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+species_as_published,species as published,,,,info,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+id,id,,,,info,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+sex,sex,,,,info,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+date,date,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+jday,jday,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+brmst,brmst,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+age,age,,,,info,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+mandible,mandible,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+body_mass,body mass,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+brm,brm,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+stage,stage,,,,info,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+tooth,tooth,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+volume,volume,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,Original source field retained; inspect paper and source data before treating as absolute mm3.,Data_skull_brain.csv
+location,location,,,,info,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+year,year,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+month,month,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+skl,skl,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+skh,skh,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+skw,skw,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+skhst,skhst,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+sklst,sklst,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+skwst,skwst,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,,Data_skull_brain.csv
+WholeBrain_Mass.mg,WholeBrain Mass.mg,,,,data,Sorex araneus,Lázaro_etal_2021_Dataskullbrain,Computed from source brain mass in g x 1000.,Data_skull_brain.csv

@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,,,,info,Sorex araneus,Baldoni_etal_2025_Table1,,Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf
+species_as_published,species as published,,,,info,Sorex araneus,Baldoni_etal_2025_Table1,,Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf
+control_condition,control condition,,,,info,Sorex araneus,Baldoni_etal_2025_Table1,,Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf
+comparison_condition,comparison condition,,,,info,Sorex araneus,Baldoni_etal_2025_Table1,,Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf
+Structure_as_published,Structure as published,as published,,,info,Sorex araneus,Baldoni_etal_2025_Table1,,Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf
+WinterMinusSummer_Volume.mm3,WinterMinusSummer Volume.mm3,,,,data,Sorex araneus,Baldoni_etal_2025_Table1,"Bayesian winter minus summer contrast, mm3; not separate group volumes.",Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf
+Estimate_error_reported.mm3,Estimate error reported.mm3,,,,data,Sorex araneus,Baldoni_etal_2025_Table1,,Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf
+CredibleInterval95_Lower.mm3,CredibleInterval95 Lower.mm3,,,,data,Sorex araneus,Baldoni_etal_2025_Table1,"Bayesian winter minus summer contrast, mm3; not separate group volumes.",Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf
+CredibleInterval95_Upper.mm3,CredibleInterval95 Upper.mm3,,,,data,Sorex araneus,Baldoni_etal_2025_Table1,"Bayesian winter minus summer contrast, mm3; not separate group volumes.",Baldoni-2025-Programmed-seasonal-brain-shrinka.pdf

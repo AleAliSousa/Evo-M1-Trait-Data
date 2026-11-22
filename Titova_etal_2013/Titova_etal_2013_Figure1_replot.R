@@ -1,0 +1,17 @@
+## Replot the extracted forest-plot table; CI type is only specified as "CI" in source.
+me <- "Titova_etal_2013_Figure1_replot.R"
+a <- grep("^--file=", commandArgs(FALSE), value=TRUE)
+if (!length(a) || basename(sub("^--file=", "", a[1])) != me) stop("Run with Rscript")
+folder <- dirname(normalizePath(sub("^--file=", "", a[1])))
+base <- sub("_replot\\.R$", "", me)
+d <- read.csv(file.path(folder, paste0(base, ".csv")), check.names=FALSE)
+stopifnot(nrow(d)==9L)
+y <- rev(seq_len(nrow(d)))
+png(file.path(folder, paste0(base,"_replot.png")), width=1100, height=700)
+par(mar=c(5,18,3,2))
+plot(NA, xlim=c(-4,2), ylim=c(0.5,9.5), xlab="Cohen's D (anorexia nervosa vs controls)", ylab="", yaxt="n", main="Global gray matter")
+abline(v=0, col="gray60")
+segments(d$CI_lower, y, d$CI_upper, y, col=ifelse(d$series_role=="pooled","firebrick","steelblue4"), lwd=2)
+points(d$CohenD, y, pch=ifelse(d$series_role=="pooled",18,15), col=ifelse(d$series_role=="pooled","firebrick","steelblue4"), cex=1.4)
+axis(2, at=y, labels=d$source_study, las=2, tick=FALSE)
+dev.off()

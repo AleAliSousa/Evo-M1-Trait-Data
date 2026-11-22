@@ -1,0 +1,21 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,,,,info,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+species_as_published,species as published,,,,info,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+id,id,,,,info,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+brain_mass,brain mass,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+age,age,,,,info,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+sex,sex,,,,info,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+stage,stage,,,,info,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+jday,jday,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+tooth,tooth,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+body_mass,body mass,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+CF,CF,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+brain_region,brain region,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+raw_volume,raw volume,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,Original source field retained; inspect paper and source data before treating as absolute mm3.,Data_brain_regions.csv
+volume_CF,volume CF,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,Original source field retained; inspect paper and source data before treating as absolute mm3.,Data_brain_regions.csv
+volume_abs,volume abs,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,"Corrected absolute volume of a reconstructed hemisphere, mm3; Brain row is one hemisphere.",Data_brain_regions.csv
+volume_tooth,volume tooth,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,Original source field retained; inspect paper and source data before treating as absolute mm3.,Data_brain_regions.csv
+volume,volume,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,Original source field retained; inspect paper and source data before treating as absolute mm3.,Data_brain_regions.csv
+location,location,,,,info,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+volume_scope,volume scope,,,,info,Sorex araneus,Lázaro_etal_2021_Databrainregions,,Data_brain_regions.csv
+WholeBrain_Mass.mg,WholeBrain Mass.mg,,,,data,Sorex araneus,Lázaro_etal_2021_Databrainregions,Computed from source brain mass in g x 1000.,Data_brain_regions.csv

@@ -1,0 +1,21 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,,,,info,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+species_as_published,species as published,,,,info,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+source_row,source row,,,,info,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+section_as_published,section as published,,,,info,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+category_as_published,category as published,,,,info,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+Structure_as_published,Structure as published,as published,,,info,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+age,age,,,,info,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+control_genotype,control genotype,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+condition_genotype,condition genotype,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+Control_AbsoluteVolume.mm3,Control AbsoluteVolume.mm3,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,Absolute MRI region volume; group mean in mm3.,41398_2019_656_MOESM10_ESM.xlsx
+Condition_AbsoluteVolume.mm3,Condition AbsoluteVolume.mm3,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,Absolute MRI region volume; group mean in mm3.,41398_2019_656_MOESM10_ESM.xlsx
+AbsoluteVolume_pct_difference_reported,AbsoluteVolume pct difference reported,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+AbsoluteVolume_p_reported,AbsoluteVolume p reported,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+AbsoluteVolume_FDR_reported,AbsoluteVolume FDR reported,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+Control_RelativeVolume.pct,Control RelativeVolume.pct,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+Condition_RelativeVolume.pct,Condition RelativeVolume.pct,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+RelativeVolume_pct_difference_reported,RelativeVolume pct difference reported,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+RelativeVolume_p_reported,RelativeVolume p reported,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+RelativeVolume_FDR_reported,RelativeVolume FDR reported,,,,data,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx
+Figure_crossref,Figure crossref,,,,info,Mus musculus,ClippertonAllen_etal_2019_TableS1,,41398_2019_656_MOESM10_ESM.xlsx

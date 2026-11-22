@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,,,,info,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+species_as_published,species as published,,,,info,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+sex,sex,,,,info,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+exposure_group,exposure group,,,,info,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+source_measure,source measure,,,,info,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+unit,unit,,,,info,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+n,n,,,,data,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+GroupMean,GroupMean,,,,data,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+OverallMean_all_groups,OverallMean all groups,,,,data,Homo sapiens,deRooij_etal_2016_Table2,,de Rooij-2016-Prenatal famine exposure has sex.pdf
+OverallSD_all_groups,OverallSD all groups,,,,data,Homo sapiens,deRooij_etal_2016_Table2,"SD of all exposure groups combined, not an individual exposure-group SD.",de Rooij-2016-Prenatal famine exposure has sex.pdf
+P_exposed_vs_combined_unexposed,P exposed vs combined unexposed,,,,data,Homo sapiens,deRooij_etal_2016_Table2,P compares early exposure with both unexposed groups combined; source regression analysis.,de Rooij-2016-Prenatal famine exposure has sex.pdf

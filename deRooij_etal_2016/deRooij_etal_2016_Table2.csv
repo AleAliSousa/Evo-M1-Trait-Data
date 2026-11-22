@@ -1,0 +1,55 @@
+"Species","species_as_published","sex","exposure_group","source_measure","unit","n","GroupMean","OverallMean_all_groups","OverallSD_all_groups","P_exposed_vs_combined_unexposed"
+"Homo sapiens","human","male","born_before_famine","Head circumference at birth (cm)","cm",14,32.7,33.2,1.5,0.85
+"Homo sapiens","human","male","early_gestation_exposed","Head circumference at birth (cm)","cm",19,33.1,33.2,1.5,0.85
+"Homo sapiens","human","male","conceived_after_famine","Head circumference at birth (cm)","cm",19,33.5,33.2,1.5,0.85
+"Homo sapiens","human","male","born_before_famine","Adult head circumference (cm)","cm",14,57.1,57.9,1.5,0.32
+"Homo sapiens","human","male","early_gestation_exposed","Adult head circumference (cm)","cm",19,57.6,57.9,1.5,0.32
+"Homo sapiens","human","male","conceived_after_famine","Adult head circumference (cm)","cm",19,58.7,57.9,1.5,0.32
+"Homo sapiens","human","male","born_before_famine","ICV (ml)","mm3",14,1138000,1138000,85000,0.01
+"Homo sapiens","human","male","early_gestation_exposed","ICV (ml)","mm3",19,1101000,1138000,85000,0.01
+"Homo sapiens","human","male","conceived_after_famine","ICV (ml)","mm3",19,1176000,1138000,85000,0.01
+"Homo sapiens","human","male","born_before_famine","TBV (excl ventr.) (ml)","mm3",14,1092000,1090000,88000,0.01
+"Homo sapiens","human","male","early_gestation_exposed","TBV (excl ventr.) (ml)","mm3",19,1049000,1090000,88000,0.01
+"Homo sapiens","human","male","conceived_after_famine","TBV (excl ventr.) (ml)","mm3",19,1131000,1090000,88000,0.01
+"Homo sapiens","human","male","born_before_famine","TBV/ICV","ratio",14,0.959,0.957,0.026,0.43
+"Homo sapiens","human","male","early_gestation_exposed","TBV/ICV","ratio",19,0.953,0.957,0.026,0.43
+"Homo sapiens","human","male","conceived_after_famine","TBV/ICV","ratio",19,0.959,0.957,0.026,0.43
+"Homo sapiens","human","male","born_before_famine","Total ventricular volume (ml)","mm3",14,34200,34600,14300,0.64
+"Homo sapiens","human","male","early_gestation_exposed","Total ventricular volume (ml)","mm3",19,33300,34600,14300,0.64
+"Homo sapiens","human","male","conceived_after_famine","Total ventricular volume (ml)","mm3",19,36300,34600,14300,0.64
+"Homo sapiens","human","male","born_before_famine","Total grey matter (ml)","mm3",14,603000,601000,46000,0.01
+"Homo sapiens","human","male","early_gestation_exposed","Total grey matter (ml)","mm3",19,581000,601000,46000,0.01
+"Homo sapiens","human","male","conceived_after_famine","Total grey matter (ml)","mm3",19,620000,601000,46000,0.01
+"Homo sapiens","human","male","born_before_famine","Total white matter (ml)","mm3",14,488000,489000,50000,0.03
+"Homo sapiens","human","male","early_gestation_exposed","Total white matter (ml)","mm3",19,469000,489000,50000,0.03
+"Homo sapiens","human","male","conceived_after_famine","Total white matter (ml)","mm3",19,510000,489000,50000,0.03
+"Homo sapiens","human","male","born_before_famine","Cortical thickness (mm)","mm",14,4.81,4.82,0.18,0.78
+"Homo sapiens","human","male","early_gestation_exposed","Cortical thickness (mm)","mm",19,4.82,4.82,0.18,0.78
+"Homo sapiens","human","male","conceived_after_famine","Cortical thickness (mm)","mm",19,4.81,4.82,0.18,0.78
+"Homo sapiens","human","female","born_before_famine","Head circumference at birth (cm)","cm",21,32.1,32.4,1.3,0.79
+"Homo sapiens","human","female","early_gestation_exposed","Head circumference at birth (cm)","cm",22,32.5,32.4,1.3,0.79
+"Homo sapiens","human","female","conceived_after_famine","Head circumference at birth (cm)","cm",23,32.7,32.4,1.3,0.79
+"Homo sapiens","human","female","born_before_famine","Adult head circumference (cm)","cm",21,55,54.9,1.3,0.6
+"Homo sapiens","human","female","early_gestation_exposed","Adult head circumference (cm)","cm",22,55,54.9,1.3,0.6
+"Homo sapiens","human","female","conceived_after_famine","Adult head circumference (cm)","cm",23,54.7,54.9,1.3,0.6
+"Homo sapiens","human","female","born_before_famine","ICV (ml)","mm3",21,1010000,1019000,82000,0.13
+"Homo sapiens","human","female","early_gestation_exposed","ICV (ml)","mm3",22,1041000,1019000,82000,0.13
+"Homo sapiens","human","female","conceived_after_famine","ICV (ml)","mm3",23,1006000,1019000,82000,0.13
+"Homo sapiens","human","female","born_before_famine","TBV (excl ventr.) (ml)","mm3",21,966000,972000,77000,0.25
+"Homo sapiens","human","female","early_gestation_exposed","TBV (excl ventr.) (ml)","mm3",22,990000,972000,77000,0.25
+"Homo sapiens","human","female","conceived_after_famine","TBV (excl ventr.) (ml)","mm3",23,967000,972000,77000,0.25
+"Homo sapiens","human","female","born_before_famine","TBV/ICV","ratio",21,0.956,0.957,0.016,0.07
+"Homo sapiens","human","female","early_gestation_exposed","TBV/ICV","ratio",22,0.951,0.957,0.016,0.07
+"Homo sapiens","human","female","conceived_after_famine","TBV/ICV","ratio",23,0.962,0.957,0.016,0.07
+"Homo sapiens","human","female","born_before_famine","Total ventricular volume (ml)","mm3",21,28500,28400,13800,0.39
+"Homo sapiens","human","female","early_gestation_exposed","Total ventricular volume (ml)","mm3",22,30400,28400,13800,0.39
+"Homo sapiens","human","female","conceived_after_famine","Total ventricular volume (ml)","mm3",23,26600,28400,13800,0.39
+"Homo sapiens","human","female","born_before_famine","Total grey matter (ml)","mm3",21,540000,543000,37000,0.22
+"Homo sapiens","human","female","early_gestation_exposed","Total grey matter (ml)","mm3",22,551000,543000,37000,0.22
+"Homo sapiens","human","female","conceived_after_famine","Total grey matter (ml)","mm3",23,538000,543000,37000,0.22
+"Homo sapiens","human","female","born_before_famine","Total white matter (ml)","mm3",21,425000,431000,44000,0.31
+"Homo sapiens","human","female","early_gestation_exposed","Total white matter (ml)","mm3",22,439000,431000,44000,0.31
+"Homo sapiens","human","female","conceived_after_famine","Total white matter (ml)","mm3",23,429000,431000,44000,0.31
+"Homo sapiens","human","female","born_before_famine","Cortical thickness (mm)","mm",21,4.85,4.87,0.17,0.45
+"Homo sapiens","human","female","early_gestation_exposed","Cortical thickness (mm)","mm",22,4.85,4.87,0.17,0.45
+"Homo sapiens","human","female","conceived_after_famine","Cortical thickness (mm)","mm",23,4.91,4.87,0.17,0.45

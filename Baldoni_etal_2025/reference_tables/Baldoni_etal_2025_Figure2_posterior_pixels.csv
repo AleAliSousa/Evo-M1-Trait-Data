@@ -1,0 +1,29 @@
+Panel,Source facet,Structure as published,Season,Low axis tick count,Low axis tick pixel y,High axis tick count,High axis tick pixel y,Posterior mean pixel y,95% CrI upper cap pixel y,95% CrI lower cap pixel y,Source page,Render resolution dpi
+A,total_all,All brain,Summer,5000000,827,20000000,623,750,652,815,6,300
+A,total_all,All brain,Winter,5000000,827,20000000,623,700,574,788,6,300
+A,ob_all,Olfactory bulb,Summer,3000000,778,12000000,562,740,673,789,6,300
+A,ob_all,Olfactory bulb,Winter,3000000,778,12000000,562,680,574,756,6,300
+A,neo_all,Neocortex,Summer,2000000,785,5000000,592,731,615,814,6,300
+A,neo_all,Neocortex,Winter,2000000,785,5000000,592,711,574,800,6,300
+A,nac_all,Nucleus accumbens,Summer,200000,1191,700000,950,1107,991,1190,6,300
+A,nac_all,Nucleus accumbens,Winter,200000,1191,700000,950,1083,949,1174,6,300
+A,cau_all,Caudoputamen,Summer,1000000,1127,2000000,960,1086,949,1180,6,300
+A,cau_all,Caudoputamen,Winter,1000000,1127,2000000,960,1100,977,1189,6,300
+A,amy_all,Amygdala,Summer,50000,1208,200000,1004,1117,1016,1189,6,300
+A,amy_all,Amygdala,Winter,50000,1208,200000,1004,1077,950,1168,6,300
+A,hip_all,Hippocampus,Summer,1000000,1568,4000000,1335,1497,1403,1564,6,300
+A,hip_all,Hippocampus,Winter,1000000,1568,4000000,1335,1448,1324,1538,6,300
+B,All Brain,All brain,Summer,5000000,2053,20000000,1835,1978,1891,2048,6,300
+B,All Brain,All brain,Winter,5000000,2053,20000000,1835,1928,1808,2021,6,300
+B,Olfactory Bulb,Olfactory bulb,Summer,3000000,2009,9000000,1865,1973,1905,2022,6,300
+B,Olfactory Bulb,Olfactory bulb,Winter,3000000,2009,9000000,1865,1912,1808,1989,6,300
+B,Neocortex,Neocortex,Summer,2000000,1993,4000000,1843,1968,1855,2048,6,300
+B,Neocortex,Neocortex,Winter,2000000,1993,4000000,1843,1938,1808,2032,6,300
+B,Nucleus Accumbens,Nucleus accumbens,Summer,200000,2419,600000,2196,2342,2229,2423,6,300
+B,Nucleus Accumbens,Nucleus accumbens,Winter,200000,2419,600000,2196,2313,2183,2407,6,300
+B,Caudoputamen,Caudoputamen,Summer,500000,2432,1500000,2246,2315,2183,2412,6,300
+B,Caudoputamen,Caudoputamen,Winter,500000,2432,1500000,2246,2333,2219,2424,6,300
+B,Amygdala,Amygdala,Summer,50000,2431,200000,2201,2355,2260,2423,6,300
+B,Amygdala,Amygdala,Winter,50000,2431,200000,2201,2300,2183,2397,6,300
+B,Hippocampus,Hippocampus,Summer,1000000,2791,3000000,2625,2734,2645,2798,6,300
+B,Hippocampus,Hippocampus,Winter,1000000,2791,3000000,2625,2686,2558,2768,6,300

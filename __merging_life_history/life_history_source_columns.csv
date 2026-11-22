@@ -56,3 +56,12 @@
 "Myhrvold_etal_2015","birth_or_hatching_svl_cm","neonate_head_body_length_mm",10,"cm -> mm","Hayssen"
 "Myhrvold_etal_2015","maximum_longevity_y","maximum_longevity_y",1,"value as published; -999/blank = not published","Hayssen"
 "Myhrvold_etal_2015","adult_body_mass_g","adult_body_mass_g",1,"value as published; -999/blank = not published","Hayssen"
+"Lewitus_etal_2014","Maximum_lifespan_yrs","maximum_longevity_y",1,"value as published; numeric and > 0 only (the body_ecology section 3 filter)",
+"Lewitus_etal_2014","Gestation_days","gestation_d",1,"value as published; numeric and > 0 only (the body_ecology section 3 filter)",
+"Lewitus_etal_2014","Weaning_period_days","weaning_age_d",1,"value as published; numeric and > 0 only (the body_ecology section 3 filter)",
+"Lewitus_etal_2014","Litter_size","litter_size_n",1,"value as published; numeric and > 0 only (the body_ecology section 3 filter)",
+"Lewitus_etal_2014","Female_sexual_maturity_days","female_maturity_age_d",1,"value as published; numeric and > 0 only (the body_ecology section 3 filter)",
+"Isler_etal_2008","Gestation length (d)","gestation_d",1,"value as published; numeric and > 0 only (the body_ecology section 3 filter)",
+"Isler_etal_2008","Lactation length (d)","weaning_age_d",1,"lactation length as weaning-age proxy (the body_ecology convention)",
+"Garwicz_etal_2009","Gestation (days)","gestation_d",1,"value as published; numeric and > 0 only (the body_ecology section 3 filter)",
+"Eagleman_Vaughn_2021","Time_to_weaning_days","weaning_age_d",1,"common names as printed; resolved with the paper scope",

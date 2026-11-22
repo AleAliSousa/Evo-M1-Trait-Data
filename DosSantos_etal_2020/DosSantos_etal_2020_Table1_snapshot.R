@@ -1,13 +1,13 @@
 ## DosSantos_etal_2020_Table1_snapshot.R -- writes ONLY DosSantos_etal_2020_Table1_snapshot.csv (PDF extraction); DosSantos_etal_2020_Table1.R reads it.
 # =====================================================================================
 # Dos Santos et al. (2020), J Neurosci 40(24):4622-4643 — PUBLISHED Table 1 (main PDF).
-# NOTE: the published Table 1 contains transcription typos in several cell-count values
-#   (some impossible — neurons/microglia > total cells; e.g. Tragelaphus strepsiceros
-#   whole-brain cells ~1000x too small). It is kept here only as a reference snapshot.
-#   For analysis we use the authors' UNPUBLISHED data instead (DosSantos_etal_2020_unpublished),
-#   which is internally consistent and matches older publications (Herculano-Houzel et al. 2015).
-#   Checks: DosSantos_etal_2020_Table1_check.R  |  summary: DosSantos_etal_2020_comparison_summary.md.
-#   This script just reformats the published table into a faithful snapshot/CSV.
+# NOTE: this item is the Dos Santos et al. (2020) source of the cell-counts merge, AS PRINTED.
+#   The published Table 1 prints a few wrong values (some impossible -- neurons/microglia >
+#   total cells; e.g. Tragelaphus strepsiceros whole-brain cells ~1000x too small). They are
+#   NOT changed here: the snapshot, the CSV and the TSV mirror the print. They are recorded in
+#   reference_tables/DosSantos_etal_2020_errata.csv, found by internal_checks/ (the paper
+#   against itself), and ten of them are corrected in the merge (step 3.4e).
+#   Folder note: DosSantos_etal_2020.README.md.
 # =====================================================================================
 ## 0. PATHS (NO setwd) -------------------------------------------------------
 

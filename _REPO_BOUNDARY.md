@@ -93,8 +93,9 @@ hard cases; the placement table above is just its consequences.
 
 **I2 — Exactly one read crosses the boundary.** A public build may read
 `unpublished_data/`, and only through `_helpers/restricted_data.R` (`evom1_restricted_file(...)`), never
-a hardcoded path. No public script may read anything under `restricted_checks/`. Currently one build
-crosses: `DosSantos_etal_2020/DosSantos_etal_2020_unpublished.R`.
+a hardcoded path. No public script may read anything under `restricted_checks/`. Currently **no**
+build crosses: the one that did, `DosSantos_etal_2020/DosSantos_etal_2020_unpublished.R`, moved to the
+private repo on 2026-11-21 when the cell-counts merge returned to the published Table 1.
 
 **I3 — Nothing private writes into the public repo.** Private checks read the public data and write
 their reports next to themselves. A private script that needs to change a public file is a request for
@@ -229,8 +230,11 @@ researcher supplied privately. Those sit in the private repo under `unpublished_
 that needs one reaches it through **`_helpers/restricted_data.R`** (`evom1_restricted_file(...)`), which
 resolves the private repo from `EVOM1_RESTRICTED` or the default layout and stops with an explanatory
 message if it is not mounted. Current cases: Carol MacLeod's neocortex workbooks, and the Dos Santos
-et al. 2020 authors' corrected microglia spreadsheet (`DosSantos_etal_2020_unpublished.R` reads it
-from there; the audit that used it moved to the private repo's `restricted_checks/_cross_table/`).
+et al. 2020 authors' microglia spreadsheet. Since 2026-11-21 nothing public reads the latter: the merge
+uses the published Table 1 with errata found from the publication itself, and both the table built
+from the spreadsheet and the check against it live in the private repo's `restricted_checks/_cross_table/`.
+Two individual values from the spreadsheet are public by curator decision, each named as such: the
+cortex total cells of two primates, as proposed values in `DosSantos_etal_2020_errata.csv` (E007, E008).
 
 ### 2026-09-05 addendum: repair after a manual move, and a boundary-rule change
 

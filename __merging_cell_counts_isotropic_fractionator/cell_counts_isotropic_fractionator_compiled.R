@@ -21,13 +21,17 @@ item_name <- c(
   "AvelinodeSouza_etal_2025_TABLE1",
   "Burish_etal_2010_Table1",
   "DosSantos_etal_2017_TableS1",
- # "DosSantos_etal_2020_Table1",   # EXCLUDED: published Table 1 (main PDF) has transcription typos in cell
-                                  #   counts (some impossible, e.g. Tragelaphus strepsiceros whole-brain cells
-                                  #   ~1000x too small). Superseded by the authors' unpublished data (next line).
-                                  #   See DosSantos_etal_2020 ReadMes + DosSantos_etal_2020_Table1_check.R.
-  "DosSantos_etal_2020_unpublished",   # USED INSTEAD of Table 1: authors' unpublished spreadsheet; internally
-                                       #   consistent and matches older pubs (HH 2015). Contributes microglia/cell
-                                       #   (I/C, *_I.p.C) ratios; cell NUMBERS for these species come from older sources.
+  "DosSantos_etal_2020_Table1",   # LIVE again 2026-11 (curator decision: the PUBLISHED table is the source).
+                                  #   Herculano-Houzel team, microglia. What it contributes:
+                                  #   - its own microglia measures: _I.p.mg and _I.p.N (measured), _I.n (printed,
+                                  #     = I/N x N) and, derived in sec 3.7, _I.p.C = _I.n / _C.n;
+                                  #   - _Mass.g, _C.n, _N.n, _N.p.mg ONLY as a fallback: Table 1's footnote says
+                                  #     these are values published previously, so the primary tables outrank
+                                  #     it for them (compilation rule, sec 8.2.H "Dos Santos 2020 demotion").
+                                  #   Ten printed cells are wrong and are corrected in sec 3.4e, each guarded and
+                                  #   tied to DosSantos_etal_2020/reference_tables/DosSantos_etal_2020_errata.csv.
+                                  #   The authors' unpublished table (DosSantos_etal_2020_unpublished), used here
+                                  #   until 2026-11 instead of Table 1, is no longer an item and is not in this repo.
   "HerculanoHouzel_etal_2015_Table1",
   "HerculanoHouzel_etal_2015_Table2",
   "HerculanoHouzel_etal_2015_Table3",
@@ -311,45 +315,81 @@ if (!is.null(hh2011_df)) {
 }
 rm(hh2011_df)
 
-### DosSantos_etal_2020_Table1 omit ###
-# # 3.5 Calculate microglia per cells (I/C) data which was not reported in Dos Santos et al. 2020 Table 1 but must have been their primary data
-# # Formula: _I.p.C = _I.n/_C.n
-#   
-#   # Extract the specific dataframe
-#   df <- cell_counts_isotropic_fractionator_data_list$DosSantos_etal_2020_Table1
-#   # Extract unique prefixes from column names
-#   prefixes <- unique(sub("_.*", "", colnames(df)))
-#   # Add an initial step to create the _I.p.C column if the condition is satisfied
-#   for (prefix in prefixes) {
-#     In_column <- paste0(prefix, "_I.n")
-#     Cn_column <- paste0(prefix, "_C.n")
-#     IpC_column <- paste0(prefix, "_I.p.C")
-#     if (In_column %in% colnames(df) && Cn_column %in% colnames(df) && 
-#         !any(is.na(df[[In_column]])) && !any(is.na(df[[Cn_column]]))) {
-#       df[[IpC_column]] <- df[[In_column]] / df[[Cn_column]]
-#     }
-#   }
-#   # Loop through each unique prefix to handle remaining rows
-#   for (prefix in prefixes) {
-#     # Define column names
-#     In_column <- paste0(prefix, "_I.n")
-#     Cn_column <- paste0(prefix, "_C.n")
-#     IpC_column <- paste0(prefix, "_I.p.C")
-#     # Check if both In_column and Cn_column exist
-#     if (In_column %in% colnames(df) && Cn_column %in% colnames(df)) {
-#       # Check for NA values in both columns
-#       if (!any(is.na(df[[In_column]])) && !any(is.na(df[[Cn_column]]))) {
-#         # Skip rows with NA values and already calculated _I.p.C values
-#         next
-#       }
-#       # Calculate _I.p.C based on the given formula
-#       df[[IpC_column]] <- df[[In_column]] / df[[Cn_column]]
-#     }
-#   }
-#   # Update the dataframe in the list
-#   cell_counts_isotropic_fractionator_data_list$DosSantos_etal_2020_Table1 <- df
-#   cell_counts_isotropic_fractionator_data_list$DosSantos_etal_2020_Table1$WholeBrain_I.p.C
-### DosSantos_etal_2020_Table1 omit ### 
+
+# 3.4e Misprint fixes for Dos Santos et al. 2020 Table 1 (ten cells).
+#      The published Table 1 is used as printed except for ten cells that the paper's own evidence
+#      shows to be wrong: its arithmetic (a count above the total, a ratio that is not the quotient
+#      its footnote defines, densities that are not mass-additive), its Table 5 and its Figure 5.
+#      Where the corrected value comes from, in the curator's order of preference (2026-11):
+#      (1) a published table, (2) calculation from published numbers, (3) the authors' unpublished
+#      table, named as the source, (4) a figure. Eight values come from (1) or (2). Two, E007 and
+#      E008, come from (3): no published table carries those two cortex samples and the published
+#      numbers do not fix them exactly; the Figure 5 readings agree within 0.4%.
+#      Check: DosSantos_etal_2020/internal_checks/DosSantos_etal_2020_Table1_internal_check.R
+#      (33 major or impossible failures as printed; 12 with these values applied, all of them
+#      documented non-errors). Decision and evidence per cell:
+#      DosSantos_etal_2020/reference_tables/DosSantos_etal_2020_errata.csv (E001-E010).
+#      The authors' unpublished data agrees with the eight publication-derived values to within
+#      0.7% (private check: Evo-M1-Trait-Data-restricted/restricted_checks/_cross_table/
+#      DosSantos_2020_published_vs_authors_unpublished/).
+#        E001 Tragelaphus strepsiceros WholeBrain_C.n     21,751,929 -> 21,888,835,128  (= Cx + Cb + RoB; print lost 3 digits)
+#        E002 Procavia capensis        Cerebellum_N.n  4,883,703,000 ->    488,373,000  (stray digit; N exceeded C)
+#        E003 Mungos mungo             RoB_I.p.mg              1.915 ->          1,915  (decimal point for thousands space)
+#        E004 Dendrohyrax dorsalis     WholeBrain_I.p.mg      10,129 ->          2,123  (= I / mass; above all its parts)
+#        E005 Tragelaphus strepsiceros Hippocampus_I.p.N       3.946 ->          1.034  (= I / N, the footnote's identity)
+#        E006 Tragelaphus strepsiceros Hippocampus_I.p.mg      4,710 ->          2,682  (= I / mass; mass-additivity)
+#        E007 Sapajus apella (printed Cebus apella)  CerebralCortex_C.n  3,035,947,220 -> 3,707,354,000  (authors' unpublished workbook)
+#        E008 Papio anubis cynocephalus              CerebralCortex_C.n  4,934,116,014 -> 6,740,084,000  (authors' unpublished workbook)
+#        E009 Petrodromus tetradactylus RoB_I.n            1,217,665 ->      1,649,430  (= I/mg x mass; Table 5)
+#        E010 Petrodromus tetradactylus Hippocampus_I.n    1,067,062 ->        824,704  (= I/mg x mass)
+#      The corrections are made HERE, before 3.6/3.7 derive anything, so the within-source
+#      microglia-per-cell ratio (_I.p.C = _I.n / _C.n) is built on the corrected cells. The frozen
+#      snapshot, the item CSV and the public TSV stay verbatim. The guards stop the merge unless
+#      each printed value is exactly the expected one AND the errata file still proposes exactly
+#      the value applied here (withdraw an erratum there and this step stops until it is removed).
+#      E007/E008 change only that derived ratio in the merged output: merged cortex total cells for
+#      those species come from the primary source (sec 8.2.H demotion).
+dossantos_df <- cell_counts_isotropic_fractionator_data_list$DosSantos_etal_2020_Table1
+if (!is.null(dossantos_df)) {
+  dossantos_fixes <- data.frame(
+    errata_id = sprintf("DosSantos_etal_2020-E%03d", 1:10),
+    species   = c("Tragelaphus strepsiceros", "Procavia capensis", "Mungos mungo", "Dendrohyrax dorsalis",
+                  "Tragelaphus strepsiceros", "Tragelaphus strepsiceros", "Cebus apella",
+                  "Papio anubis cynocephalus", "Petrodromus tetradactylus", "Petrodromus tetradactylus"),
+    variable  = c("WholeBrain_C.n", "Cerebellum_N.n", "RoB_I.p.mg", "WholeBrain_I.p.mg", "Hippocampus_I.p.N",
+                  "Hippocampus_I.p.mg", "CerebralCortex_C.n", "CerebralCortex_C.n", "RoB_I.n", "Hippocampus_I.n"),
+    printed   = c(21751929, 4883703000, 1.915, 10129, 3.946, 4710, 3035947220, 4934116014, 1217665, 1067062),
+    corrected = c(21888835128, 488373000, 1915, 2123, 1.034, 2682, 3707354000, 6740084000, 1649430, 824704),
+    stringsAsFactors = FALSE)
+  dossantos_errata_file <- file.path("..", "DosSantos_etal_2020", "reference_tables", "DosSantos_etal_2020_errata.csv")
+  if (!file.exists(dossantos_errata_file))
+    stop("3.4e: ", dossantos_errata_file, " not found. These corrections are only applied against ",
+         "their errata file.", call. = FALSE)
+  dossantos_errata <- read.csv(dossantos_errata_file, colClasses = "character", check.names = FALSE)
+  for (k in seq_len(nrow(dossantos_fixes))) {
+    fix <- dossantos_fixes[k, ]
+    erratum <- dossantos_errata[dossantos_errata$errata_id == fix$errata_id, , drop = FALSE]
+    if (nrow(erratum) != 1L || erratum$status == "withdrawn" ||
+        !isTRUE(all.equal(suppressWarnings(as.numeric(erratum$proposed_value)), fix$corrected, tolerance = 1e-12)))
+      stop("3.4e: ", fix$errata_id, " in DosSantos_etal_2020_errata.csv is missing, withdrawn, or no longer ",
+           "proposes ", format(fix$corrected, scientific = FALSE), ". Re-check this correction ",
+           "before applying it.", call. = FALSE)
+    target <- !is.na(dossantos_df$Species) & dossantos_df$Species == fix$species
+    if (!(fix$variable %in% colnames(dossantos_df)) || sum(target) != 1L)
+      stop("3.4e: expected exactly one '", fix$species, "' row with a ", fix$variable, " column in ",
+           "DosSantos_etal_2020_Table1; found ", sum(target), " row(s). The source table or its ",
+           "standardized terms changed -- re-check this correction before applying it.", call. = FALSE)
+    printed_value <- suppressWarnings(as.numeric(dossantos_df[[fix$variable]][target]))
+    if (!isTRUE(all.equal(printed_value, fix$printed, tolerance = 1e-12)))
+      stop("3.4e: expected the printed ", fix$species, " ", fix$variable, " of ",
+           format(fix$printed, scientific = FALSE), ", found ", printed_value, ". The source table ",
+           "changed -- re-check this correction (", fix$errata_id, ") before applying it.", call. = FALSE)
+    dossantos_df[[fix$variable]][target] <- fix$corrected
+  }
+  cell_counts_isotropic_fractionator_data_list$DosSantos_etal_2020_Table1 <- dossantos_df
+  rm(dossantos_fixes, dossantos_errata_file, dossantos_errata, fix, erratum, target, printed_value)
+}
+rm(dossantos_df)
 
 # 3.6 Calculate Cell number where not already available (it was only reported in Dos Santos et al., 2020)
 # Formula _C.n = _N.n + _O.n
@@ -481,11 +521,6 @@ for (i in seq_along(cell_counts_isotropic_fractionator_data_list)) {
   cell_counts_isotropic_fractionator_data_list[[i]] <- df
 }
 
-# Note: the published Dos Santos et al. (2020) Table 1 has transcription typos in its cell counts
-#   (e.g. Tragelaphus strepsiceros whole-brain cells). RESOLVED upstream: Table 1 is excluded from
-#   item_name (above) and the authors' unpublished data is used instead. Verification:
-#   DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R + DosSantos_etal_2020_comparison_summary.md.
-  
 ## 4 Rename Species using the shared resolver (_keys/resolve_species.R; SPECIES_NAMING.md v1)
 ## The former live NCBI name2taxid()/taxid2name() lookup and the hand edits below it were migrated
 ## into the spoke keys (_keys/HerculanoHouzel/species_key.csv etc., basis/note per row) on
@@ -540,13 +575,6 @@ write.csv(cell_counts_isotropic_fractionator_unfiltered, file = "cell_counts_iso
 
 # Create a copy of cell_counts_isotropic_fractionator_data_list to filter
 filtered_cell_counts_isotropic_fractionator_data_list <- lapply(cell_counts_isotropic_fractionator_data_list, data.frame)
-# ### DosSantos_etal_2020_Table1 omit ###
-# # Extract suffixes from DosSantos_etal_2020_Table1 to determine secondary data variables to exclude.
-# suffixes <- unique(sub(".*_", "", grep(".*_.*", colnames(cell_counts_isotropic_fractionator_data_list$DosSantos_etal_2020_Table1), value = TRUE)))
-# # Ignore '_I.p.C' and '_S.n' which estimates the primary data and Species_Source which is not really a variable.
-# suffixes <- suffixes[!(suffixes %in% c("I.p.C", "Source", "S.n"))]
-# paste0("_",suffixes, collapse = "|") # Manually change the double quotes for single in the script
-# ### DosSantos_etal_2020_Table1 omit ###
 ## 5.1 Flag problematic data for removal
 
 # Initialize metadata_flags for each dataframe with names from filtered_cell_counts_isotropic_fractionator_data_list
@@ -558,23 +586,6 @@ for (df_name in names(filtered_cell_counts_isotropic_fractionator_data_list)) {
     Flag_Condition_Type = c(NA)
   )
 }
-# ### DosSantos_etal_2020_Table1 omit ###
-# # Modify metadata_flags DosSantos_etal_2020_Table1 to include multiple rows for flag conditions and descriptions
-# metadata_flags$DosSantos_etal_2020_Table1 <- list(
-#   Flag_Condition = c(
-#     "filtered_cell_counts_isotropic_fractionator_data_list[[df_name]]$Species == 'Tragelaphus strepsiceros'",
-#     "grepl('_C.n|_I.n|_I.p.mg|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cell_counts_isotropic_fractionator_data_list[[df_name]]))"
-#   ),
-#   Flag_Description = c(
-#     "Omit Row Species == Tragelaphus strepsiceros due to impossible numbers",
-#     "Omit secondary data columns due to some typos/conflicts with primary sources, and illogical values."
-#   ),
-#   Flag_Condition_Type = c(
-#     "row",
-#     "column"
-#   )
-# )
-# ### DosSantos_etal_2020_Table1 omit ###
 ## Delete flagged data
 # Loop through every dataframe in filtered_cell_counts_isotropic_fractionator_data_list
 for (df_name in names(filtered_cell_counts_isotropic_fractionator_data_list)) {
@@ -991,6 +1002,47 @@ if ("HerculanoHouzel_etal_2011_Table1" %in% worth_dataframe$source) {
   combined_data$priority[carve_out_rows] <- t4_priority + 0.5
   rm(bulb_t4, bulb_11, n_t4, n_11, bulb_measured_11, shared_bulb_species, n_diff_bulb,
      expected_n_diff_bulb, carve_out_species, t4_priority, carve_out_rows)
+}
+
+# Dos Santos 2020 demotion (2026-11, curator decision): compilation rule for re-reported measures.
+# Dos Santos et al. 2020 Table 1 is dated 2020, so the date rule above ranks it over every
+# earlier Herculano-Houzel-team table. But its footnote a (p. 4627) states that structure mass,
+# C, N and N/mg "list the values published previously" (Ribeiro et al. 2013; Herculano-Houzel et
+# al. 2014; Kazu et al. 2014; Neves et al. 2014; Gabi et al. 2016; Dos Santos et al. 2017;
+# Jardim-Messeder et al. 2017): for those measures it is a compilation, and under the project's
+# compilation rule the primary source outranks the compilation for shared cells (the same rule
+# as the HH2011 pin above). The re-reports are not always the primary's value either. Computed by
+# checks/DosSantos_2020_rereported_vs_primaries.R (output beside it): of the 433 mass, C, N and
+# N/mg cells Table 1 shares with a primary table (after the sec 3.4e corrections), 375 agree
+# within 0.1%, 25 differ by 0.1-2% and 33 by more than 2% (23 by more than 10%). Of the 33, 28
+# are cerebral cortex and 5 whole brain: 22 belong to six primates, 8 to Elephantulus myurus
+# (whose Table 1 rows mix a single specimen with the species average), 2 to Loxodonta africana
+# and 1 to Sus scrofa domesticus -- e.g. Homo sapiens cortex mass 696.708 g in Table 1 against
+# 1,232.93 g in Herculano-Houzel et al. 2015 Table 1. Letting Table 1 win by date would have
+# replaced those primary values with figures on a different sample basis.
+# So every Table 1 row that is NOT one of its own microglia measures is demoted below all other
+# Herculano-Houzel-team sources: _Mass.g, _C.n, _N.n, _N.p.mg, and _p.C.N (derived in sec 3.7
+# from the re-reported N and C). Demotion, not removal: sec 8.3 keeps the best-priority non-NA
+# value per cell, so Table 1 still supplies these measures wherever no primary table has the
+# cell (cortex without hippocampus, pons + medulla, several hippocampi).
+# Its microglia measures keep their date priority and have no competitor: _I.p.mg and _I.p.N
+# (measured), _I.n (printed) and _I.p.C (derived in sec 3.7 from Table 1's own I and C).
+# The guard stops the merge if Table 1 carries a measure this rule was not written for.
+if ("DosSantos_etal_2020_Table1" %in% worth_dataframe$source) {
+  dossantos_rows <- combined_data$Source == "DosSantos_etal_2020_Table1"
+  dossantos_measure <- sub("^[^_]*_", "", combined_data$Variable[dossantos_rows])
+  own_measures      <- c("I.n", "I.p.mg", "I.p.N", "I.p.C")
+  rereported_measures <- c("Mass.g", "C.n", "N.n", "N.p.mg", "p.C.N")
+  unexpected <- setdiff(unique(dossantos_measure), c(own_measures, rereported_measures))
+  if (length(unexpected) || !all(c(own_measures, rereported_measures) %in% dossantos_measure))
+    stop("8.2.H Dos Santos 2020 demotion: expected DosSantos_etal_2020_Table1 to carry exactly the ",
+         "measures ", paste(c(own_measures, rereported_measures), collapse = ", "), "; found ",
+         paste(sort(unique(dossantos_measure)), collapse = ", "), ". The source table, its ",
+         "standardized terms or the sec 3.7 derivations changed -- re-check this rule before ",
+         "applying it.", call. = FALSE)
+  combined_data$priority[dossantos_rows][dossantos_measure %in% rereported_measures] <-
+    max(worth_dataframe$priority) + 1
+  rm(dossantos_rows, dossantos_measure, own_measures, rereported_measures, unexpected)
 }
 
 ## 8.3.H Limit dataset to best available data

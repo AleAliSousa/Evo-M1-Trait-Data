@@ -17,7 +17,7 @@ neither on its own; it is machinery the other two and the paper builds borrow.
 |---|---|---|
 | `openxlsx_compat.R` | `openxlsx_compatible_copy()` — makes `__ReadMe.xlsx` readable by openxlsx. OneDrive rewrites the workbook in two ways openxlsx 4.2.8 cannot parse (a prefixed `x:workbook` namespace, and a legacy cell note expanded into AlternateContent), and there is a dangling drawing relationship that defeats openpyxl too. Never edits the source; returns either the original path or a normalised temp copy. | `_tools/file_list.R`, `_tools/restore_registry_rows.R`, and the two dated registration tools |
 | `cortical_layers_source_common.R` | shared build steps for the cortical-layer sources | `Jacobs_etal_2015`, `Jacobs_etal_2016`, `Johnson_etal_2016`, `Peruffo_etal_2019` table builds |
-| `restricted_data.R` | `evom1_restricted()` / `evom1_restricted_file()` — the **only sanctioned read across the public/private boundary**. Resolves the private repo from `EVOM1_RESTRICTED` or the default layout and stops with an explanatory message if it is not mounted. See `REPO_BOUNDARY.md`. | `DosSantos_etal_2020_unpublished.R` |
+| `restricted_data.R` | `evom1_restricted()` / `evom1_restricted_file()` — the **only sanctioned read across the public/private boundary**. Resolves the private repo from `EVOM1_RESTRICTED` or the default layout and stops with an explanatory message if it is not mounted. See `REPO_BOUNDARY.md`. | no build at present (`DosSantos_etal_2020_unpublished.R`, its one caller, moved to the private repo on 2026-11-21) |
 
 ## Naming
 

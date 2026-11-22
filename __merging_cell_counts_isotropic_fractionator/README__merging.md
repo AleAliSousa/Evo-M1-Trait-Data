@@ -30,6 +30,51 @@ Most recent addition: `AvelinodeSouza_etal_2025_TABLE1` (*Balaenoptera acutorost
 
 ## Corrections
 
+- **2026-11 — Dos Santos et al. 2020: the published Table 1 is the source again (steps 1, 3.4e, 8.2.H).**
+  `DosSantos_etal_2020_Table1` replaces `DosSantos_etal_2020_unpublished` in `item_name`. The
+  unpublished item, its standardized-terms file and its public TSV are gone; no output of this merge
+  names it any more.
+  - **Ten printed cells are corrected, step 3.4e.** Table 1 prints a few wrong values, some
+    impossible (*Tragelaphus strepsiceros* whole-brain cells below its own neuron count, *Procavia
+    capensis* cerebellar neurons above its total cells). They were found by checking the paper
+    against itself — its arithmetic, its Table 5 and its Figure 5 — in
+    `DosSantos_etal_2020/internal_checks/` (33 major or impossible failures as printed, 12 with the
+    ten values applied, all twelve documented non-errors). Each correction is one row of
+    `DosSantos_etal_2020/reference_tables/DosSantos_etal_2020_errata.csv` (E001–E010) and is guarded:
+    the merge stops unless the printed value is the expected one and the errata file still proposes
+    the value applied. Corrected values follow the curator's order of preference: a published table,
+    then calculation from published numbers, then the authors' unpublished table (named as the
+    source), then a figure. Eight values come from the first two. Two — cortex total cells of
+    *Cebus apella* and *Papio anubis cynocephalus* (E007, E008) — come from the authors' unpublished
+    workbook, because no published table carries those samples and the published numbers do not fix
+    them exactly; the Figure 5 readings agree within 0.4%. The unpublished data agrees with the
+    other eight within 0.7% (private check). The item CSV, snapshot and TSV stay verbatim.
+  - **Re-reported measures rank below the primaries, step 8.2.H.** Table 1's footnote says its
+    structure mass, C, N and N/mg are values published previously. Under the compilation rule (as
+    for the HH2011 pin) those rows — and `_p.C.N` derived from them — are demoted below every other
+    Herculano-Houzel-team source. Table 1 fills them only where no primary table has the cell. Its
+    microglia measures keep their date priority: `_I.p.mg` and `_I.p.N` (measured), `_I.n` (printed,
+    = I/N × N) and `_I.p.C` (derived in 3.7 from Table 1's own I and C).
+    Why it matters: of the 433 such cells Table 1 shares with a primary table, 375 agree within
+    0.1% but 33 differ by more than 2% (23 by more than 10%), 28 of them cerebral cortex — six
+    primates, *Elephantulus myurus*, *Loxodonta africana* — on a different sample basis
+    (`checks/DosSantos_2020_rereported_vs_primaries.R` and its CSV).
+  - **Effect** (against a re-run of the previous script on the same inputs).
+    `cell_counts_isotropic_fractionator_long` 3,259 → 3,842 cells; **no cell lost**. No `_Mass.g`,
+    `_C.n`, `_N.n`, `_N.p.mg` or `_p.C.N` value that was in the merge changed (1,900 cells). 583 cells
+    are new, all from Table 1: `_I.p.N` (153, a measure the merge did not have), `_I.n` and `_I.p.mg`
+    (83 each), and fallback cells for structures the primaries lack (`_C.n` and `_p.C.N` 83 each,
+    `_Mass.g`, `_N.n`, `_N.p.mg` 32 each). 231 microglia values changed: `_I.p.C` 102 (87 within 1%,
+    none above 4.4%), `_I.n` 59 and `_I.p.mg` 70 (median change 0.01–0.02%). The 12 changes above
+    10% are all cerebral-cortex `_I.n` / `_I.p.mg` of the primates and the elephant, where the previous
+    values were the unpublished ratio multiplied by another paper's cortex count on a different sample
+    basis; they are now the values the paper prints.
+  - **Known consequence.** For those cortex cells the merged `_C.n` (primary source) and the merged
+    `_I.n` (Dos Santos) describe different samples, so `_I.n / _C.n` from the merged table is not the
+    microglia fraction. Use `_I.p.C`, which is built inside Table 1.
+  - Minor: the Table 1 standardized-terms file mapped a column `Species` that the TSV names
+    `Species name`; corrected, or the item would have lost its species column.
+
 - **2026-09 — Jardim-Messeder et al. 2017 Table 1, *Procyon lotor* hippocampus mass: laterality-basis
   fix, step 3.4c.** `MHP` is doubled, 0.477 g → 0.954 g. The published raccoon row is internally
   inconsistent by exactly a factor of two: printed `DNHP` (16,076 /mg) is half of `NHP`/`MHP`
@@ -113,10 +158,12 @@ Most recent addition: `AvelinodeSouza_etal_2025_TABLE1` (*Balaenoptera acutorost
      table first.
   4. **Step 9.1 implemented (was commented out).** Ratios still empty after filtering are derived
      from primaries that survived for the same species and structure within the same team, across
-     tables, with the two contributing sources joined in `Source`. This is the only route to
-     microglia numbers: `DosSantos_etal_2020_unpublished` reports only the microglia/cell ratio
-     `_I.p.C`, while `_C.n` and `_Mass.g` for those species come from other HH-team tables, so
-     `_I.n = _I.p.C * _C.n` and `_I.p.mg = _I.n / (_Mass.g * 1000)`.
+     tables, with the two contributing sources joined in `Source`. At the time this was the only
+     route to microglia numbers: the Dos Santos 2020 item then in the merge reported only the
+     microglia/cell ratio `_I.p.C`, while `_C.n` and `_Mass.g` for those species came from other
+     HH-team tables, so `_I.n = _I.p.C * _C.n` and `_I.p.mg = _I.n / (_Mass.g * 1000)`.
+     *(Since 2026-11 the published Dos Santos Table 1 supplies `_I.n`, `_I.p.mg` and `_I.p.N`
+     directly — see the 2026-11 entry above — and 9.1 only fills what is still empty.)*
 
   **Policy: fill-only.** A ratio a source reports is never overwritten. For isotropic-fractionation
   data the density is the measured quantity and the count is density × mass, so a printed density
@@ -160,19 +207,6 @@ Most recent addition: `AvelinodeSouza_etal_2025_TABLE1` (*Balaenoptera acutorost
   densities (per mg) and percentages were already absolute and are unchanged. A density sanity scan
   (neurons / (mass×1000) should be ~50–3,000,000 /mg) flagged only Burish; JardimMesseder et al. 2017
   and the other datasets were within range. Re-run `standardized_term.R` then `cell_counts_isotropic_fractionator_compiled.R`.
-
-- **Dos Santos et al. 2020 — published Table 1 excluded; authors' unpublished data used instead.**
-  The published Table 1 (main PDF) contains transcription/typographical errors in several cell-count
-  values, some physically impossible (neurons or microglia exceeding total cells; e.g. *Tragelaphus
-  strepsiceros* whole-brain cells = 21,751,929, ~1000× too small — the unpublished value is
-  21,751,929,128). The authors supplied an updated **unpublished** spreadsheet
-  (`2020-PublishedDataMammalsMicroglia - cópia.xlsx`; received 22 Mar 2024 via O. S. Todorov from the
-  authors' team). Independent checks (`DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R`; summary
-  `DosSantos_etal_2020_comparison_summary.md`) show the unpublished data is internally consistent and
-  agrees with older publications (Herculano-Houzel et al. 2015). Therefore `item_name` uses
-  `DosSantos_etal_2020_unpublished` (commented out `DosSantos_etal_2020_Table1`). The unpublished file
-  contributes the microglia/cell ratio (`*_I.p.C`); cell **numbers** for these species come from older
-  primary sources. The published Table 1 is kept only as a reference snapshot.
 
 ## Within-team resolution: most recent wins (worked example, Kazu 2015)
 

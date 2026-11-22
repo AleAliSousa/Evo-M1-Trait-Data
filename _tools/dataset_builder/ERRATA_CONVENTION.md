@@ -108,6 +108,99 @@ What the queue letter means depends on what the audited dataset *is*:
 * Folder names with accents are stored NFD on macOS; comparisons are normalisation-insensitive, but `Rscript` needs a UTF-8 locale (`LC_ALL=en_US.UTF-8`) — RStudio already has one.
 * Accepted `variable` values are the `Code`/`variable` entries of the item's definitions file; for long-format items (Zilles Table 12-2) those are the structure rows.
 
+## Where a corrected value comes from — worked example (Dos Santos et al. 2020)
+
+*Status: an example, not yet a rule. Written 2026-11-22 from one paper; revise
+it when further cases arise.*
+
+The columns above say how to *record* a wrong print. They do not say where
+the `proposed_value` may come from when the print cannot be trusted. This
+section sets out how that was decided for Table 1 of Dos Santos et al. (2020),
+so the next case can follow it or argue with it. The errata file
+(`DosSantos_etal_2020/reference_tables/DosSantos_etal_2020_errata.csv`) has the
+evidence for every row; `DosSantos_etal_2020/DosSantos_etal_2020.README.md`
+has the paper-level account.
+
+### Order of preference used
+
+The published table stays the source of the item. A correction is looked for
+in this order, and the first level that yields a value supplies it:
+
+1. **A published table** — elsewhere in the same paper, or in the paper the
+   value is re-reported from.
+2. **Calculation from published numbers** — a sum of parts, a product or a
+   ratio the paper itself defines. Where two published routes disagree, prefer
+   the one built on the quantity that was **measured first**: in this paper
+   microglia per mg and per neuron were measured and the microglia count was
+   derived from them, so a density outranks the count.
+3. **The authors' unpublished table** — the value is used and the unpublished
+   table is **named as the source** in `evidence`, together with why levels 1
+   and 2 failed.
+4. **A figure** — read off a plot, with the calibration stated.
+
+The levels are also evidence for one another. A correction that several of
+them agree on is firmer than one resting on a single level, and `evidence`
+lists every level that was checked, not only the one that supplied the value.
+
+### How the fifteen rows fell out
+
+| rows | cell | printed → proposed | supplied by | also agreeing |
+|---|---|---|---|---|
+| E001 | *Tragelaphus* whole-brain cells | 21 751 929 → 21,888,835,128 | 2: sum of the three parts in the same table | 1: neurons + other cells in Herculano-Houzel et al. 2015 Table 5 |
+| E002 | *Procavia* cerebellar neurons | "488 3703 000" → 488,373,000 | 1: Herculano-Houzel et al. 2015 Table 2, the table re-reported | 2: whole brain minus the other parts; the row's own I/N |
+| E003, E004, E006 | three microglia densities | 1.915 → 1915; 10 129 → 2123; 4710 → 2682 | 2: count / mass | 2 again: mass-weighted mean of the parts (E004, E006); clade mean in the paper's Table 5 (E003) |
+| E005 | *Tragelaphus* hippocampus I/N | 3.946 → 1.034 | 2: I / N, the footnote's own definition | — |
+| E009, E010 | *Petrodromus* microglia counts | 1217 665 → 1,649,430; 1067 062 → 824,704 | 2: density × mass, preferred over the printed count as the earlier measurement | the species' densities add up across structures where its counts do not; clade mean in the paper's Table 5 (E009) |
+| E007, E008 | *Cebus*, *Papio* cortical cells | 3035 947 220 → 3,707,354,000; 4934 116 014 → 6,740,084,000 | 3: the authors' workbook, named | 4: two panels of Figure 5, within 0.4% |
+| E011, E013 | *Otolemur* cortical cells; *Loxodonta* brain mass | no value proposed | — | recorded only: the miss is under 10% |
+| E012, E014, E015 | *Elephantulus* rows; *Petrodromus* I/N | no value proposed | — | recorded only: no single wrong cell can be named |
+
+Two rows went to level 3 because the first two levels gave nothing exact. No
+published table carries that cortex sample: the cited source prints
+percentages only, the earlier table of absolute numbers is a different
+sample, and a search of every public table in the repo found the row's
+numbers nowhere else. The table offers no second route to total cells. The
+figure reading would have served, and at first it did; the workbook value
+replaced it because a tabulated number is safer than a marker read off a plot.
+
+### What was done with the data
+
+* **The item stays verbatim.** CSV, snapshot and public TSV carry the print,
+  including the wrong cells. Corrections are a layer on top.
+* **A value is proposed only when the merge will use it.** The threshold in
+  this case: the paper's own arithmetic fails by more than 10 % *and* the wrong
+  cell can be identified. Smaller or unattributable failures get an errata row
+  with `proposed_value` blank.
+* **The merge substitutes in a guarded step** keyed to the errata ids
+  (`__merging_cell_counts_isotropic_fractionator`, step 3.4e). It stops if the
+  printed value it expects is no longer in the table, if the erratum's
+  `proposed_value` differs from the one in the script, or if the erratum has
+  been withdrawn. The same merge already corrected Jardim-Messeder et al. 2017
+  and Herculano-Houzel et al. 2011 this way. Rendering 3 above still reads
+  "flags only; no substitution": practice and text differ here, and one of
+  them should be brought into line when this section is revised.
+* **Checks sit where their inputs may sit.** The check of the paper against
+  itself is public (`DosSantos_etal_2020/internal_checks/`). The comparison
+  with the authors' unpublished table is in the restricted repo
+  (`restricted_checks/_cross_table/DosSantos_2020_published_vs_authors_unpublished/`);
+  public errata rows may say that it agrees but do not quote it.
+* **Level 3 is the exception to "do not quote".** The two workbook numbers
+  appear in the public errata file, labelled as unpublished and attributed.
+  `_REPO_BOUNDARY.md` records that they crossed the boundary, so that such
+  cases can be counted.
+
+### Left open by one example
+
+* Whether 10 % is the right threshold for other tables, or was only a
+  convenient gap in this one.
+* Whether a level-3 value needs the authors' consent before it is made
+  public. It was not obtained here before the two values were used.
+* Whether `issue_type = publication_ambiguity` should ever carry a
+  `proposed_value` (E009 and E010 do, by curator decision), or whether such
+  rows need a type of their own.
+* Whether the supplying level deserves its own column (`value_source`) once
+  more than one paper uses the scheme. For now it is written into `evidence`.
+
 ## Precedence
 
 The errata file is the record of what we found and decided; the build `.R`

@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,,,,info,Eulipotyphla,Sarko_etal_2009_Table1,,
+species_as_published,species as published,,,,info,Eulipotyphla,Sarko_etal_2009_Table1,Printed label retained from source,
+Body_Mass.g,Body Mass g,,Mass.g,species mean,primary,Eulipotyphla,Sarko_etal_2009_Table1,,
+Body_Mass.g_plusminus_reported,Body Mass g plusminus reported,,,reported +/- (type unstated),info,Eulipotyphla,Sarko_etal_2009_Table1,Numeric quantity printed after ±; paper does not identify SD versus SEM.,
+WholeBrain_Mass.g,WholeBrain Mass g,WholeBrain,Mass.g,species mean,primary,Eulipotyphla,Sarko_etal_2009_Table1,,
+WholeBrain_Mass.g_plusminus_reported,WholeBrain Mass g plusminus reported,WholeBrain,,reported +/- (type unstated),info,Eulipotyphla,Sarko_etal_2009_Table1,Numeric quantity printed after ±; paper does not identify SD versus SEM.,
+WholeBrain_Cells.n,WholeBrain Cells n,WholeBrain,N.n,species mean,primary,Eulipotyphla,Sarko_etal_2009_Table1,,
+WholeBrain_Cells.n_plusminus_reported,WholeBrain Cells n plusminus reported,WholeBrain,,reported +/- (type unstated),info,Eulipotyphla,Sarko_etal_2009_Table1,Numeric quantity printed after ±; paper does not identify SD versus SEM.,
+WholeBrain_N.n,WholeBrain N n,WholeBrain,N.n,species mean,primary,Eulipotyphla,Sarko_etal_2009_Table1,,
+WholeBrain_N.n_plusminus_reported,WholeBrain N n plusminus reported,WholeBrain,,reported +/- (type unstated),info,Eulipotyphla,Sarko_etal_2009_Table1,Numeric quantity printed after ±; paper does not identify SD versus SEM.,

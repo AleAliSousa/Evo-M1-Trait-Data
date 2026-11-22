@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,
+species_as_published,species as published,,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,Printed label retained from source,
+n,n,,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,
+hemisphere_basis,hemisphere basis,,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,See source table footnote; do not infer the opposite hemisphere.,
+CorticalPialArea_L.mm2,CorticalPialArea L mm2,cortex,Area.mm2,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,
+CorticalExposedArea_L.mm2,CorticalExposedArea L mm2,cortex,Area.mm2,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,
+CorticalFoldingIndex,CorticalFoldingIndex,cortex,index,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,
+CorticalThickness_L.mm,CorticalThickness L mm,cortex,Thickness.mm,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,
+CorticalGM_WM_InterfaceArea_L.mm2,CorticalGM WM InterfaceArea L mm2,cortex,Area.mm2,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,
+CorticalGM_Vol_L.mm3,CorticalGM Vol L mm3,cortex,Vol.mm3,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,
+CorticalWM_Vol_L.mm3,CorticalWM Vol L mm3,cortex,Vol.mm3,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table2,,

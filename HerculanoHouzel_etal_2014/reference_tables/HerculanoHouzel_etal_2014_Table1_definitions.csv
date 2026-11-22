@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,as row,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+species_as_published,species as published,as row,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,Printed label retained from source,
+n,n,as row,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+Structure_as_published,Structure as published,as row,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+Mass.g,Mass g,as row,Mass.g,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+N.n,N n,as row,N.n,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+O.n,O n,as row,N.n,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+N.p.mg,N p mg,as row,Density.p.mg,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+O.p.mg,O p mg,as row,Density.p.mg,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+O.p.N,O p N,as row,ratio,point,primary,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,,
+hemisphere_basis,hemisphere basis,as row,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,See source table footnote; do not infer the opposite hemisphere.,
+source_value_flag,source value flag,as row,,,info,Loxodonta africana,HerculanoHouzel_etal_2014_Table1,The printed Rest of brain O/N value is anomalous and is retained literally.,

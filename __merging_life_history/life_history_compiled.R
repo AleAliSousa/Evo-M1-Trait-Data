@@ -1,7 +1,10 @@
 ## =============================================================================
 ## life_history_compiled.R -- reproductive life-history merge: Asdell's root compendium
 ## (Hayssen et al. 1993, per-value cited) + the compilations that cite it
-## (PanTHERIA WR05, AnAge build 15, Ernest 2003, Myhrvold 2015 Amniote database).
+## (PanTHERIA WR05, AnAge build 15, Ernest 2003, Myhrvold 2015 Amniote database)
+## + four paper literature tables folded in from the old Body & ecology merge in the
+## 2026-11-21 split (section 2b: Lewitus et al. 2014, Isler et al. 2008,
+## Garwicz et al. 2009, Eagleman & Vaughn 2021 -- the old merge's life_history class).
 ## =============================================================================
 ## Everything is harvested from __Public/comparative-data (the registered TSVs); nothing
 ## is read across the public/private boundary. The comparison that judges these data
@@ -214,7 +217,8 @@ TSV[] <- vapply(TSV, function(f) {
   if (length(alt)) { message("  note: ", f, " not found; using ", alt[1]); alt[1] } else f
 }, character(1))
 has_key <- function(refs, key, sep) vapply(str_split(refs, sep), function(t) key %in% str_squish(t), logical(1))
-ID_TAG <- c(Jones_etal_2009 = "PAN", `deMagalhães_etal_2024` = "ANAGE", Ernest__2003 = "ERNEST", Myhrvold_etal_2015 = "MYH")   # ASCII record-id prefixes
+ID_TAG <- c(Jones_etal_2009 = "PAN", `deMagalhães_etal_2024` = "ANAGE", Ernest__2003 = "ERNEST", Myhrvold_etal_2015 = "MYH",
+            Lewitus_etal_2014 = "LEW", Isler_etal_2008 = "ISL", Garwicz_etal_2009 = "GAR", Eagleman_Vaughn_2021 = "EAG")   # ASCII record-id prefixes
 wide_to_records <- function(d, ds, species, refs, cites, stat, locator_prefix) {
   m <- COMP_MAP %>% filter(dataset == ds); tag <- unname(ID_TAG[ds])
   miss <- setdiff(m$source_column, names(d)); if (length(miss)) stop(ds, ": columns missing: ", paste(miss, collapse = ","), call. = FALSE)
@@ -250,7 +254,49 @@ myh_rec <- myh %>% mutate(k = match(trait, mm$source_column)) %>% transmute(
   cites_hayssen = str_detect(reference, fixed("Hayssen")), role = ifelse(cites_hayssen, "derived_from_root", "independent_compilation"),
   cited_work = reference, cited_work_system = "Amniote database reference string (derivation)", compilation_statistic = "median/mean over sparse-table records (see reference string)",
   locator = paste0(TSV["Myhrvold_etal_2015"], " | class Mammalia | ", trait), population_status = NA_character_)
-comp_rec <- bind_rows(pan_rec, ana_rec, ern_rec, myh_rec)
+## ---- 2b. paper literature tables (the old Body & ecology life_history class) -------------------------
+## Added 2026-11-21 (body_ecology split, Option A). The old __merging_body_ecology merge harvested
+## five life-history measures from four literature tables (its section 3); those harvests join this
+## merge here as additional compilation parties under this merge's labels. The column map, species
+## columns and admission filter (numeric, > 0, no cross-unit conversion -- every column is already
+## in the canonical unit) mirror body_ecology_compiled.R section 3 exactly, so the harvested values
+## are the old merge's, unchanged. Isler's lactation length stays a weaning-age proxy, as there.
+## These tables carry no per-record reference lists, so the cites-Hayssen test cannot be applied to
+## them; they enter as independent parties (role "independent_compilation", cites_hayssen FALSE).
+PAPER_MAP <- tribble(~dataset, ~source_column, ~Measure, ~species_column, ~note,
+  "Lewitus_etal_2014",    "Maximum_lifespan_yrs",        "maximum_longevity_y",   "species_sci",   "",
+  "Lewitus_etal_2014",    "Gestation_days",              "gestation_d",           "species_sci",   "",
+  "Lewitus_etal_2014",    "Weaning_period_days",         "weaning_age_d",         "species_sci",   "",
+  "Lewitus_etal_2014",    "Litter_size",                 "litter_size_n",         "species_sci",   "",
+  "Lewitus_etal_2014",    "Female_sexual_maturity_days", "female_maturity_age_d", "species_sci",   "",
+  "Isler_etal_2008",      "Gestation length (d)",        "gestation_d",           "Genus species", "",
+  "Isler_etal_2008",      "Lactation length (d)",        "weaning_age_d",         "Genus species", "lactation length as weaning-age proxy (the body_ecology convention)",
+  "Garwicz_etal_2009",    "Gestation (days)",            "gestation_d",           "Species",       "",
+  "Eagleman_Vaughn_2021", "Time_to_weaning_days",        "weaning_age_d",         "Species",       "common names as printed; resolved with the paper scope")
+PAPER_TSV <- c(Lewitus_etal_2014 = "10.1371%2Fjournal.pbio.1002000_TableS1.tsv",
+               Isler_etal_2008 = "10.1016%2Fj.jhevol.2008.08.004_TableS3.tsv",
+               Garwicz_etal_2009 = "10.1073%2Fpnas.0905777106_TableS1.tsv",
+               Eagleman_Vaughn_2021 = "10.3389%2Ffnins.2021.632853_TABLE1.tsv")
+paper_to_records <- function(ds) {
+  f <- PAPER_TSV[[ds]]; d <- read_bom(file.path(pub, f), "\t")
+  m <- PAPER_MAP %>% filter(dataset == ds); tag <- unname(ID_TAG[ds])
+  miss <- setdiff(c(m$source_column, unique(m$species_column)), names(d)); if (length(miss)) stop(ds, ": columns missing: ", paste(miss, collapse = ","), call. = FALSE)
+  bind_rows(lapply(seq_len(nrow(m)), function(k) {
+    v <- d[[m$source_column[k]]]; sp <- d[[m$species_column[k]]]
+    keep <- !is.na(v) & v != "" & !is.na(num(v)) & num(v) > 0
+    tibble(dataset = ds, record_id = paste0(tag, ":", which(keep), ":", m$source_column[k]), table_row = which(keep),
+           species_printed = sp[keep], Measure = m$Measure[k],
+           Units = MEASURES$Units[match(m$Measure[k], MEASURES$Measure)], source_column = m$source_column[k], value_printed = v[keep],
+           value_canonical = num(v[keep]), derivation = NA_character_,
+           admitted = TRUE, admission_reason = "admitted", role = "independent_compilation",
+           cited_work = NA_character_, cites_hayssen = FALSE, compilation_statistic = "species value as published (single literature table)",
+           locator = paste0(f, " | row ", which(keep), " | ", m$source_column[k]),
+           cited_work_system = NA_character_, population_status = NA_character_)
+  }))
+}
+paper_rec <- bind_rows(lapply(names(PAPER_TSV), paper_to_records))
+cat("paper-table records (ex body_ecology):", nrow(paper_rec), "\n"); print(paper_rec %>% count(dataset, Measure) %>% as.data.frame(), row.names = FALSE)
+comp_rec <- bind_rows(pan_rec, ana_rec, ern_rec, myh_rec, paper_rec)
 cat("compilation records:", nrow(comp_rec), "\n"); print(comp_rec %>% count(dataset, cites_hayssen) %>% as.data.frame(), row.names = FALSE)
 
 ## ---- 3. unfiltered table + species resolution --------------------------------------------------------
@@ -294,7 +340,8 @@ print(long %>% group_by(Measure) %>% summarise(species = n(), with_hayssen = sum
 wide <- long %>% filter(!is.na(Value)) %>% select(Species, Measure, Value) %>% pivot_wider(names_from = Measure, values_from = Value) %>% arrange(Species)
 write_bom(wide, file.path(out, "life_history_wide.csv"))
 src_cols <- bind_rows(HAYSSEN_MAP %>% transmute(dataset = "Hayssen_etal_1993", source_column = topic, Measure, unit_scale = NA_real_, rule = paste0("label: ", label_rule, ifelse(nzchar(label_set), paste0(" [", label_set, "]"), ""), "; sex: ", sex_rule, "; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (", paste(LITTER_PROXY, collapse = ","), ") not admitted")),
-                      COMP_MAP %>% transmute(dataset, source_column, Measure, unit_scale, rule = ifelse(nzchar(note), note, "value as published; -999/blank = not published"))) %>%
+                      COMP_MAP %>% transmute(dataset, source_column, Measure, unit_scale, rule = ifelse(nzchar(note), note, "value as published; -999/blank = not published")),
+                      PAPER_MAP %>% transmute(dataset, source_column, Measure, unit_scale = 1, rule = ifelse(nzchar(note), note, "value as published; numeric and > 0 only (the body_ecology section 3 filter)"))) %>%
   mutate(hayssen_key_in_reference_system = ifelse(dataset == "Hayssen_etal_1993", NA_character_, unname(HAYSSEN_KEY[dataset])))
 write_bom(src_cols, file.path(out, "life_history_source_columns.csv"))
 

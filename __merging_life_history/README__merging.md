@@ -72,3 +72,33 @@ independent data — is in `Evo-M1-Trait-Data-restricted/__life_history_root_com
 `Rscript __merging_life_history/life_history_compiled.R` (conda env `evom1-r`; ~1 min). Input problems stop; every
 count is printed; outputs are UTF-8 BOM CSVs read back after writing (the read-back also refuses parse problems and
 embedded NULs — a UTF-8 LC_CTYPE is set first because the C locale mangles the non-ASCII folder name).
+
+## Update (2026-11-21): the body_ecology life-history class folded in — open item closed
+
+The second open item above is now done. In the split of `__merging_body_ecology`,
+its `life_history` class (Lewitus 2014, Isler 2008, Garwicz 2009, Eagleman &
+Vaughn 2021 — the old merge's section 3 harvest) was folded into this merge as
+additional compilation parties (section 2b of the script), under this merge's
+labels: `Gestation` → `gestation_d`, `Weaning_age` → `weaning_age_d`,
+`Litter_size` → `litter_size_n`, `Maximum_longevity` → `maximum_longevity_y`,
+`Female_sexual_maturity` → `female_maturity_age_d`. The column map, species
+columns and admission filter (numeric, > 0, no cross-unit conversion) mirror the
+old section 3 exactly — the 582 harvested records are the old merge's values,
+unchanged — and Isler's lactation length stays a weaning-age proxy, as there.
+These tables carry no per-record reference lists, so the cites-Hayssen test
+cannot be applied; the records enter as independent parties
+(`cites_hayssen = FALSE`). Nothing was overwritten: pooled values are still the
+median over independent parties, now with the paper parties included.
+
+Effect at the fold-in run: unfiltered 83,923 → 84,505 rows (+582, all of them
+the paper records; every pre-existing record unchanged); the five traits gain
+6–8 species with a pooled value each (plus 5 species × trait rows that already
+existed but had no independent party and now gain a value); no species lost.
+Five >2× disagreements between the old body_ecology pooled values and this
+merge's are on record (rabbit female maturity 730 d vs 184 d; tammar wallaby
+gestation 28 d vs 112.9 d; Erythrocebus patas weaning 225 d vs 102 d;
+Mesocricetus auratus longevity 3.9 yr vs 10 yr; Varecia variegata longevity
+13 yr vs 36.1 yr) — flagged here, not resolved in either direction; the
+party-median rule moves each pooled value only as the new parties dictate.
+`__merging_body_ecology` itself is retired by the same split (body traits →
+`__merging_body/`, diet & ecology → `__merging_ecology/`).

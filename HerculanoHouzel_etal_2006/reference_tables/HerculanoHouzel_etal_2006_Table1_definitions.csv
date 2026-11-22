@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species,,,,info,Rodentia,HerculanoHouzel_etal_2006_Table1,Accepted binomial (see README on the paper's three misspelled binomials),
+Order,Order: Rodentia,,Order,,info,Rodentia,HerculanoHouzel_etal_2006_Table1,,
+Common name,Common name as printed in the source table,,,,info,Rodentia,HerculanoHouzel_etal_2006_Table1,Printed label retained from source,
+Number,Number of individuals,,,,info,Rodentia,HerculanoHouzel_etal_2006_Table1,From the Methods (Animals paragraph); not printed in Table 1,
+Body mass, g,Body Mass g,,Mass.g,mean,primary,Rodentia,HerculanoHouzel_etal_2006_Table1,,
+Body mass, g SD,Body Mass g SD,,Mass.g,SD,primary,Rodentia,HerculanoHouzel_etal_2006_Table1,Printed +/- is SD per the table footnote ("Values are mean +/- SD"),
+Brain mass, g,Brain Mass g,,Mass.g,mean,primary,Rodentia,HerculanoHouzel_etal_2006_Table1,Whole-brain mass as printed (direct measurement; cf. HH2011 structure-sum values),
+Brain mass, g SD,Brain Mass g SD,,Mass.g,SD,primary,Rodentia,HerculanoHouzel_etal_2006_Table1,Printed +/- is SD per the table footnote,
+Whole brain Cells,Whole brain total cells,Whole brain,Cells.n,mean,primary,Rodentia,HerculanoHouzel_etal_2006_Table1,Printed x10^6 converted to absolute counts,
+Whole brain Cells SD,Whole brain total cells SD,Whole brain,Cells.n,SD,primary,Rodentia,HerculanoHouzel_etal_2006_Table1,Printed +/- is SD per the table footnote; x10^6 converted to absolute counts,
+Whole brain Neurons,Whole brain total neurons,Whole brain,N.n,mean,primary,Rodentia,HerculanoHouzel_etal_2006_Table1,Printed x10^6 converted to absolute counts,
+Whole brain Neurons SD,Whole brain total neurons SD,Whole brain,N.n,SD,primary,Rodentia,HerculanoHouzel_etal_2006_Table1,"Printed +/- is SD per the table footnote; x10^6 converted. Agouti SD not printed in the source table (PDF and PMC agree); left empty",

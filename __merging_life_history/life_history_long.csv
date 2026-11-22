@@ -1,4 +1,4 @@
-﻿"Species","measure_class","Measure","Units","Value","n_sources","n_independent","n_derived","Teams","roles","value_min","value_max","disagreement","hayssen_median","hayssen_n_lines","hayssen_min","hayssen_max","hayssen_refs","derived_values","derived_outside_root_range"
+"Species","measure_class","Measure","Units","Value","n_sources","n_independent","n_derived","Teams","roles","value_min","value_max","disagreement","hayssen_median","hayssen_n_lines","hayssen_min","hayssen_max","hayssen_refs","derived_values","derived_outside_root_range"
 "Abditomys latidens","mass","adult_body_mass_g","g",268.09,2,2,0,"Jones_etal_2009|Myhrvold_etal_2015","independent_compilation|independent_compilation",268.09,268.09,FALSE,,,,,,"",FALSE
 "Abeomelomys sevia","mass","adult_body_mass_g","g",57.89,2,1,1,"Jones_etal_2009|Myhrvold_etal_2015","derived_from_root|independent_compilation",57.89,57.89,FALSE,,,,,,"54.88",FALSE
 "Abeomelomys sevia","reproduction","litter_size_n","n",1,2,1,1,"Jones_etal_2009|Myhrvold_etal_2015","derived_from_root|independent_compilation",1,1,FALSE,,,,,,"1",FALSE

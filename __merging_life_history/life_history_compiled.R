@@ -52,7 +52,11 @@ suppressPackageStartupMessages({ library(dplyr); library(readr); library(stringr
 source(file.path(repo, "_keys", "resolve_species.R"))
 read_bom <- function(f, delim = ",") { if (!file.exists(f)) stop("Missing input: ", f, call. = FALSE); d <- read_delim(f, delim = delim, show_col_types = FALSE, col_types = cols(.default = "c"), na = character(), progress = FALSE)
   pr <- problems(d); if (nrow(pr)) { print(as.data.frame(head(pr, 5))); stop("parsing problems in ", basename(f), call. = FALSE) }; d }
-write_bom <- function(x, f) { write_excel_csv(x, f, na = ""); rb <- read_csv(f, show_col_types = FALSE, col_types = cols(.default = "c"), progress = FALSE)
+# Outputs are written WITHOUT the UTF-8 byte-order mark that write_excel_csv
+# adds: the apps read these files with read.csv(), which glues the BOM to the
+# first column name ("Species") and breaks their loaders. Quoting stays "all",
+# matching the previous files field for field.
+write_out <- function(x, f) { write_delim(x, f, delim = ",", quote = "all", na = ""); rb <- read_csv(f, show_col_types = FALSE, col_types = cols(.default = "c"), progress = FALSE)
   pr <- problems(rb); if (nrow(pr)) { print(as.data.frame(head(pr, 5))); stop("parsing problems reading back ", f, call. = FALSE) }
   if (nrow(rb) != nrow(x)) stop("row count changed on write: ", f, call. = FALSE); cat("  written", basename(f), nrow(x), "rows\n") }
 num <- function(x) suppressWarnings(as.numeric(x))
@@ -310,7 +314,7 @@ unf <- unf %>% mutate(value_canonical_any = coalesce(value_canonical_any, value_
                       admitted, admission_reason, cites_hayssen, cited_work, cited_work_system, compilation_statistic, value_type, value_label, sex, count_unit, n,
                       population_status, source_column, record_id, locator)
 if (any(vapply(unf, function(col) any(grepl("\\x00", col, useBytes = TRUE)), logical(1)))) stop("embedded NUL in the unfiltered table", call. = FALSE)
-write_bom(unf, file.path(out, "life_history_unfiltered.csv"))
+write_out(unf, file.path(out, "life_history_unfiltered.csv"))
 
 ## ---- 4. pooled long table (species x measure), compilation-aware ---------------------------------------
 adm <- unf %>% filter(admitted, !is.na(value_canonical))
@@ -333,17 +337,17 @@ long <- parties %>% group_by(Species, Measure) %>% summarise(
          derived_outside_root_range = !is.na(hayssen_median) & n_derived > 0 & vapply(seq_len(n()), function(i) { v <- num(str_split(derived_values[i], "\\|")[[1]]); any(!is.na(v) & (v < hayssen_min[i] * 0.995 | v > hayssen_max[i] * 1.005)) }, logical(1))) %>%
   select(Species, measure_class, Measure, Units, Value, n_sources, n_independent, n_derived, Teams, roles, value_min, value_max, disagreement,
          hayssen_median, hayssen_n_lines, hayssen_min, hayssen_max, hayssen_refs, derived_values, derived_outside_root_range) %>% arrange(Species, Measure)
-write_bom(long, file.path(out, "life_history_long.csv"))
+write_out(long, file.path(out, "life_history_long.csv"))
 cat("long: species", n_distinct(long$Species), "; species x measure", nrow(long), "; with a Hayssen value", sum(!is.na(long$hayssen_median)),
     "; disagreement among independent parties", sum(long$disagreement), "; derived value outside the root's range", sum(long$derived_outside_root_range), "\n")
 print(long %>% group_by(Measure) %>% summarise(species = n(), with_hayssen = sum(!is.na(hayssen_median)), derived = sum(n_derived > 0), disagree = sum(disagreement), derived_outside = sum(derived_outside_root_range)) %>% as.data.frame(), row.names = FALSE)
 wide <- long %>% filter(!is.na(Value)) %>% select(Species, Measure, Value) %>% pivot_wider(names_from = Measure, values_from = Value) %>% arrange(Species)
-write_bom(wide, file.path(out, "life_history_wide.csv"))
+write_out(wide, file.path(out, "life_history_wide.csv"))
 src_cols <- bind_rows(HAYSSEN_MAP %>% transmute(dataset = "Hayssen_etal_1993", source_column = topic, Measure, unit_scale = NA_real_, rule = paste0("label: ", label_rule, ifelse(nzchar(label_set), paste0(" [", label_set, "]"), ""), "; sex: ", sex_rule, "; central numeric values only (point/mean/mode/median; range -> midpoint); litter-size proxies (", paste(LITTER_PROXY, collapse = ","), ") not admitted")),
                       COMP_MAP %>% transmute(dataset, source_column, Measure, unit_scale, rule = ifelse(nzchar(note), note, "value as published; -999/blank = not published")),
                       PAPER_MAP %>% transmute(dataset, source_column, Measure, unit_scale = 1, rule = ifelse(nzchar(note), note, "value as published; numeric and > 0 only (the body_ecology section 3 filter)"))) %>%
   mutate(hayssen_key_in_reference_system = ifelse(dataset == "Hayssen_etal_1993", NA_character_, unname(HAYSSEN_KEY[dataset])))
-write_bom(src_cols, file.path(out, "life_history_source_columns.csv"))
+write_out(src_cols, file.path(out, "life_history_source_columns.csv"))
 
 ## ---- 5. species-alignment candidates (roadmap for _keys, not applied) ----------------------------------------
 ## Hayssen names that match no compilation species: OCR residue the within-family canonicalisation could not absorb
@@ -360,6 +364,6 @@ cand <- bind_rows(lapply(unmatched, function(nm) {
   if (length(d) && min(d) <= 2) { j <- which(d == min(d)); tibble(hayssen_species = nm, candidate = paste(pool[j], collapse = " | "), edit_distance = as.integer(min(d)), kind = ifelse(length(j) == 1, "glyph-aware nearest name in the genus", "ambiguous")) }
   else tibble(hayssen_species = nm, candidate = NA_character_, edit_distance = NA_integer_, kind = ifelse(length(pool), "no near name in the genus (synonym or OCR)", "genus absent from the compilations (synonym or OCR)")) }))
 cand <- cand %>% mutate(n_hayssen_lines = as.integer(table(unf$Species[unf$dataset == "Hayssen_etal_1993"])[hayssen_species])) %>% arrange(kind, hayssen_species)
-write_bom(cand, file.path(out, "life_history_species_alignment_candidates.csv"))
+write_out(cand, file.path(out, "life_history_species_alignment_candidates.csv"))
 cat("Hayssen species:", length(hay_sp), "; matched to a compilation species:", length(hay_sp) - length(unmatched), "; unmatched:", length(unmatched), "\n"); print(table(cand$kind))
 cat("DONE\n")

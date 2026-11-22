@@ -37,6 +37,20 @@ item_name <- c(
   "HerculanoHouzel_etal_2015_Table3",
   "HerculanoHouzel_etal_2015_Table4",
   "HerculanoHouzel_etal_2015_Table5",
+  "HerculanoHouzel_etal_2014_Table1",   # PRIMARY source for the elephant rows HH 2015 re-reported:
+                                       #   pinned above the 2015 tables in sec 8.2.H (compilation
+                                       #   rule). Corrects the 2015 Table 1 cortex O misprint.
+                                       #   Its TSV is long-format; sec 1.5 reshapes it. Two
+                                       #   thousands-separator capture artefacts are fixed
+                                       #   in sec 3.4h.
+  "Sarko_etal_2009_Table1",             # PRIMARY source for the five eulipotyphlan species HH 2015
+                                       #   re-reported (whole brain incl. olfactory bulb): pinned
+                                       #   above the 2015 tables in sec 8.2.H. Long-format TSV;
+                                       #   sec 1.5 reshapes it.
+  "Sarko_etal_2009_Table2",             # PRIMARY per-structure companion to Sarko Table 1: pinned
+                                       #   above the 2015 tables in sec 8.2.H; carries one guarded
+                                       #   misprint fix in sec 3.4f (Blarina cortex neurons).
+                                       #   Long-format TSV; sec 1.5 reshapes it.
   "HerculanoHouzel_etal_2011_Table1",   # PRIMARY source for the Glires rows HH 2015 re-reported:
                                        #   pinned above the 2015 tables in sec 8.2.H (compilation
                                        #   rule) and carries one guarded misprint fix in sec 3.4d.
@@ -101,6 +115,138 @@ for (i in seq_along(item_name)) {
   # Store the data frame in the list with the corresponding item name
   cell_counts_isotropic_fractionator_data_list[[item_name[i]]] <- item_data
 }
+
+
+## 1.5 Reshape the long-format primary TSVs (HH2014 Table 1; Sarko 2009 Tables 1-2)
+# The 2026-11 builds of these three items are LONG (one row per structure);
+# every other item in this merge is wide (one row per species), and sec 2's
+# column-name standardization assumes the wide layout. This step converts
+# the three data frames in place, producing exactly the column sets of the
+# verified wide builds of the same tables, so the standardized-term files
+# and every downstream section apply unchanged. Sarko Table 2's TOTAL CORTEX
+# and TOTAL HIPPOCAMPUS blocks are summed into "Cerebral cortex" (the
+# convention Herculano-Houzel et al. 2015 used for this paper); the combined
+# SDs and densities are not printed and stay NA -- sec 3.7 derives them.
+
+reshape_primaries <- function(lst) {
+
+  ## ---- Herculano-Houzel et al. 2014, Table 1 (long -> wide) -------------
+  d <- lst$HerculanoHouzel_etal_2014_Table1
+  if (!is.null(d) && "Structure_as_published" %in% colnames(d)) {
+    smap <- c("Whole brain" = "Whole brain",
+              "Cerebral cortex, GM + WM*" = "Cerebral cortex",
+              "Cerebral cortex, GM**" = "Cerebral cortex GM",
+              "Cerebral cortex, WM" = "Cerebral cortex WM",
+              "Cerebellum" = "Cerebellum", "Rest of brain" = "Rest of brain",
+              "Hippocampus" = "Hippocampus", "Amygdala" = "Amygdala",
+              "Striatum" = "Striatum", "Diencephalon" = "Diencephalon",
+              "Mesencephalon" = "Mesencephalon", "Pons" = "Pons",
+              "Medulla" = "Medulla", "Olfactory bulb" = "Olfactory bulb")
+    mmap <- c("Mass.g" = "Mass, g", "N.n" = "N, n", "O.n" = "O, n",
+              "N.p.mg" = "N/mg", "O.p.mg" = "O/mg", "O.p.N" = "O/N")
+    if (!all(d$Structure_as_published %in% names(smap)))
+      stop("1.5 reshape: unmapped Structure_as_published in HerculanoHouzel_etal_2014_Table1: ",
+           paste(setdiff(d$Structure_as_published, names(smap)), collapse = ", "), call. = FALSE)
+    w <- data.frame(Species = unique(d$Species), Order = "Afrotheria",
+                    stringsAsFactors = FALSE, check.names = FALSE)
+    for (i in seq_len(nrow(d))) {
+      s <- smap[[d$Structure_as_published[i]]]
+      for (mc in names(mmap)) {
+        w[[paste(s, mmap[[mc]])]][1] <- suppressWarnings(as.numeric(d[[mc]][i]))
+      }
+    }
+    lst$HerculanoHouzel_etal_2014_Table1 <- w
+  }
+
+  ## ---- Sarko et al. 2009, Table 1 (column renaming + derived O) ---------
+  d <- lst$Sarko_etal_2009_Table1
+  if (!is.null(d) && "WholeBrain_Mass.g" %in% colnames(d)) {
+    ## The long Table 1 build carries no n column; the paper's per-species n
+    ## is printed in Table 2 (same animals, one n per species across blocks).
+    wb_n <- d$WholeBrain_n
+    if (is.null(wb_n)) {
+      t2 <- lst$Sarko_etal_2009_Table2
+      wb_n <- vapply(d$Species, function(sp) {
+        ns <- unique(suppressWarnings(as.numeric(t2$n[t2$Species == sp])))
+        ns <- ns[!is.na(ns)]
+        if (length(ns) != 1L)
+          stop("1.5 reshape: expected one n for ", sp, " in Sarko_etal_2009_Table2; found ",
+               paste(ns, collapse = ", "), ".", call. = FALSE)
+        ns
+      }, numeric(1))
+    }
+    w <- data.frame(Species = d$Species, Order = "Eulipotyphla",
+                    "Common name" = d$species_as_published,
+                    "Whole brain n" = wb_n,
+                    "Body mass, g" = d$Body_Mass.g,
+                    "Body mass, g SD" = d$Body_Mass.g_plusminus_reported,
+                    "Brain mass, g" = d$WholeBrain_Mass.g,
+                    "Brain mass, g SD" = d$WholeBrain_Mass.g_plusminus_reported,
+                    "Whole brain Cells" = d$WholeBrain_Cells.n,
+                    "Whole brain Cells SD" = d$WholeBrain_Cells.n_plusminus_reported,
+                    "Whole brain Neurons" = d$WholeBrain_N.n,
+                    "Whole brain Neurons SD" = d$WholeBrain_N.n_plusminus_reported,
+                    # Not printed in the paper; total cells - total neurons
+                    # (exact on the printed means), as in the verified build.
+                    "Whole brain Other cells" = d$WholeBrain_Cells.n - d$WholeBrain_N.n,
+                    "Whole brain Other cells SD" = NA_real_,
+                    "Whole brain Source" = "Sarko et al., 2009",
+                    stringsAsFactors = FALSE, check.names = FALSE)
+    lst$Sarko_etal_2009_Table1 <- w
+  }
+
+  ## ---- Sarko et al. 2009, Table 2 (long -> wide, cortex+hippocampus) ----
+  d <- lst$Sarko_etal_2009_Table2
+  if (!is.null(d) && "Structure_as_published" %in% colnames(d)) {
+    mmap <- c("Mass.g" = "Mass, g", "Mass.g_plusminus_reported" = "Mass, g SD",
+              "N.n" = "N, n", "N.n_plusminus_reported" = "N, n SD",
+              "N.p.mg" = "N/mg", "N.p.mg_plusminus_reported" = "N/mg SD",
+              "O.n" = "O, n", "O.n_plusminus_reported" = "O, n SD",
+              "O.p.mg" = "O/mg", "O.p.mg_plusminus_reported" = "O/mg SD")
+    blocks <- list("Cerebellum" = "CEREBELLUM", "RoB" = "REMAINING AREAS",
+                   "Olfactory bulb" = "TOTAL OLFACTORY BULBS")
+    species <- unique(d$Species)
+    w <- data.frame(Species = species, Order = "Eulipotyphla",
+                    stringsAsFactors = FALSE, check.names = FALSE)
+    for (sp in species) {
+      r <- match(sp, species)
+      ## Cerebral cortex = TOTAL CORTEX + TOTAL HIPPOCAMPUS (sums of the
+      ## printed means; SDs and densities of the sum are not printed -> NA)
+      cx <- d[d$Species == sp & d$Structure_as_published == "TOTAL CORTEX", , drop = FALSE]
+      hp <- d[d$Species == sp & d$Structure_as_published == "TOTAL HIPPOCAMPUS", , drop = FALSE]
+      if (nrow(cx) != 1L || nrow(hp) != 1L)
+        stop("1.5 reshape: expected one TOTAL CORTEX and one TOTAL HIPPOCAMPUS row for ",
+             sp, " in Sarko_etal_2009_Table2.", call. = FALSE)
+      for (mc in c("Mass.g", "N.n", "O.n"))
+        w[[paste("Cerebral cortex", mmap[[mc]])]][r] <-
+          suppressWarnings(as.numeric(cx[[mc]])) + suppressWarnings(as.numeric(hp[[mc]]))
+      for (mc in c("Mass.g_plusminus_reported", "N.n_plusminus_reported",
+                   "N.p.mg", "N.p.mg_plusminus_reported",
+                   "O.n_plusminus_reported", "O.p.mg", "O.p.mg_plusminus_reported"))
+        w[[paste("Cerebral cortex", mmap[[mc]])]][r] <- NA_real_
+      w[["Cerebral cortex O/N"]][r] <- NA_real_
+      w[["Cerebral cortex O/N SD"]][r] <- NA_real_
+      w[["Cerebral cortex Source"]][r] <- "Sarko et al., 2009"
+      ## Remaining structures map block-by-block
+      for (s in names(blocks)) {
+        b <- d[d$Species == sp & d$Structure_as_published == blocks[[s]], , drop = FALSE]
+        if (nrow(b) != 1L)
+          stop("1.5 reshape: expected one ", blocks[[s]], " row for ", sp,
+               " in Sarko_etal_2009_Table2.", call. = FALSE)
+        for (mc in names(mmap))
+          w[[paste(s, mmap[[mc]])]][r] <- suppressWarnings(as.numeric(b[[mc]]))
+        w[[paste(s, "O/N")]][r] <- NA_real_      # not printed in the paper
+        w[[paste(s, "O/N SD")]][r] <- NA_real_
+        w[[paste(s, "Source")]][r] <- "Sarko et al., 2009"
+      }
+    }
+    lst$Sarko_etal_2009_Table2 <- w
+  }
+  lst
+}
+
+cell_counts_isotropic_fractionator_data_list <- reshape_primaries(cell_counts_isotropic_fractionator_data_list)
+rm(reshape_primaries)
 
 ## 2 Change to standardized terminology for all variables in those dataframes
 
@@ -390,6 +536,104 @@ if (!is.null(dossantos_df)) {
   rm(dossantos_fixes, dossantos_errata_file, dossantos_errata, fix, erratum, target, printed_value)
 }
 rm(dossantos_df)
+
+# 3.4f Misprint fix for Sarko et al. 2009 Table 2: Blarina brevicauda cerebral cortex neurons.
+#      In the printed TOTAL CORTEX block, the number of neurons for the short-tailed shrew
+#      (14.20 +/- 1.04 x 10^6) duplicates the number of non-neuronal cells in the same row
+#      (also 14.20 +/- 1.04). The paper's own neuronal density (59.28 x 10^3/mg over a
+#      0.1794 g cortex = 10.64 x 10^6), its percentage of neurons (42.82% of 24.86 x 10^6
+#      total cells = 10.65 x 10^6) and total minus non-neurons (24.86 - 14.20 = 10.66 x 10^6)
+#      all give ~10.64-10.66 x 10^6, and Herculano-Houzel et al. 2015 -- whose "Cerebral
+#      cortex" for this species is the cortex + hippocampus sum of this table -- used
+#      11,876,000 for the combined structure, i.e. the correct underlying value. The frozen
+#      snapshot and the built TSV stay verbatim (combined cortex + hippocampus neurons
+#      = 14.20 + 1.2206 = 15.4206 x 10^6); the value is corrected here, before any derivation
+#      (3.6/3.7) consumes it, to the combined value implied by the paper's internally
+#      consistent cells: (24.86 - 14.20) + 1.2206 = 11.8806 x 10^6. The guards below stop
+#      the merge unless the as-printed combined value is exactly the expected one.
+sarko2009_t2_df <- cell_counts_isotropic_fractionator_data_list$Sarko_etal_2009_Table2
+if (!is.null(sarko2009_t2_df)) {
+  blarina <- !is.na(sarko2009_t2_df$Species) & sarko2009_t2_df$Species == "Blarina brevicauda"
+  if (!("CerebralCortex_N.n" %in% colnames(sarko2009_t2_df)) || sum(blarina) != 1L)
+    stop("3.4f: expected exactly one 'Blarina brevicauda' row with a CerebralCortex_N.n column in ",
+         "Sarko_etal_2009_Table2; found ", sum(blarina), " row(s). The source table or ",
+         "its standardized terms changed -- re-check this correction before applying it.",
+         call. = FALSE)
+  printed_ctx <- suppressWarnings(as.numeric(sarko2009_t2_df$CerebralCortex_N.n[blarina]))
+  if (!isTRUE(all.equal(printed_ctx, 15420600, tolerance = 1e-9)))
+    stop("3.4f: expected the as-printed combined Blarina brevicauda CerebralCortex_N.n of ",
+         "15420600; found ", printed_ctx, ". The source table changed -- ",
+         "re-check this correction before applying it.", call. = FALSE)
+  sarko2009_t2_df$CerebralCortex_N.n[blarina] <- 11880600
+  cell_counts_isotropic_fractionator_data_list$Sarko_etal_2009_Table2 <- sarko2009_t2_df
+}
+rm(sarko2009_t2_df)
+
+# 3.4g Undo sec 3.2's density/ratio subtraction for Herculano-Houzel et al. 2014 Table 1.
+#      Sec 3.2 derives "WholeBrain_" from "WholeBrainOlfactoryBulb_" minus "OlfactoryBulb_"
+#      for EVERY shared suffix. That is right for masses and cell counts, but this item is
+#      the first to report whole-brain DENSITIES and the O/N ratio alongside the bulb's:
+#      subtraction there is meaningless and yields impossible values (WholeBrain_O.p.mg
+#      = 47,130 - 68,230 = -21,100; WholeBrain_O.p.N = 0.841 - 3.146 = -2.305). The three
+#      affected columns are blanked here, before sec 3.7, which re-derives them from this
+#      item's (correctly subtracted) whole-brain counts and mass. The printed
+#      WholeBrainOlfactoryBulb densities themselves (56,071 / 47,130 / 0.841) are untouched.
+#      Guards stop the merge unless the subtracted values are exactly the expected ones.
+hh2014_df <- cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2014_Table1
+if (!is.null(hh2014_df)) {
+  ele <- !is.na(hh2014_df$Species) & hh2014_df$Species == "Loxodonta africana"
+  need <- c("WholeBrain_N.p.mg", "WholeBrain_O.p.mg", "WholeBrain_O.p.N")
+  if (!all(need %in% colnames(hh2014_df)) || sum(ele) != 1L)
+    stop("3.4g: expected exactly one 'Loxodonta africana' row with WholeBrain density/ratio ",
+         "columns in HerculanoHouzel_etal_2014_Table1; found ", sum(ele), " row(s). The source ",
+         "table or its standardized terms changed -- re-check this correction before applying ",
+         "it.", call. = FALSE)
+  got <- suppressWarnings(as.numeric(c(hh2014_df$WholeBrain_N.p.mg[ele],
+                                       hh2014_df$WholeBrain_O.p.mg[ele],
+                                       hh2014_df$WholeBrain_O.p.N[ele])))
+  if (!isTRUE(all.equal(got, c(34384, -21100, -2.305), tolerance = 1e-9)))
+    stop("3.4g: expected the sec-3.2-subtracted WholeBrain densities/ratio 34384, -21100, ",
+         "-2.305; found ", paste(got, collapse = ", "), ". The source table changed -- ",
+         "re-check this correction before applying it.", call. = FALSE)
+  hh2014_df$WholeBrain_N.p.mg[ele] <- NA
+  hh2014_df$WholeBrain_O.p.mg[ele] <- NA
+  hh2014_df$WholeBrain_O.p.N[ele]  <- NA
+  cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2014_Table1 <- hh2014_df
+}
+rm(hh2014_df)
+
+# 3.4h Thousands-separator fixes for Herculano-Houzel et al. 2014 Table 1 (2026-11 build).
+#      Two printed densities in the elephant table use a comma as the thousands
+#      separator -- cortical GM neurons/mg "3,661" and rest-of-brain O/N "36,948" --
+#      and the 2026-11 long-format build captured them literally as 3.661 and 36948
+#      (the registry row flags both as retained-as-printed). Every other source
+#      agrees on the intended readings: the PMC rendering of the same table, and
+#      Herculano-Houzel et al. 2015, which re-reports this table. A density of
+#      3.661 neurons/mg beside 38,910 other-cells/mg in the same row, and an O/N
+#      ratio of 36,948 beside this paper's 0.154-54.195 range, are impossible.
+#      The frozen TSV keeps the literal captures; the values are corrected here,
+#      guarded on the exact artefact values.
+hh2014b_df <- cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2014_Table1
+if (!is.null(hh2014b_df)) {
+  ele <- !is.na(hh2014b_df$Species) & hh2014b_df$Species == "Loxodonta africana"
+  if (sum(ele) != 1L ||
+      !all(c("CerebralCortexGrey_N.p.mg", "RoB_O.p.N") %in% colnames(hh2014b_df)))
+    stop("3.4h: expected exactly one 'Loxodonta africana' row with CerebralCortexGrey_N.p.mg ",
+         "and RoB_O.p.N columns in HerculanoHouzel_etal_2014_Table1. The source table or ",
+         "its standardized terms changed -- re-check these corrections before applying them.",
+         call. = FALSE)
+  gm_npmg <- suppressWarnings(as.numeric(hh2014b_df$CerebralCortexGrey_N.p.mg[ele]))
+  rob_opn <- suppressWarnings(as.numeric(hh2014b_df$RoB_O.p.N[ele]))
+  if (!isTRUE(all.equal(gm_npmg, 3.661, tolerance = 1e-9)) ||
+      !isTRUE(all.equal(rob_opn, 36948, tolerance = 1e-9)))
+    stop("3.4h: expected the captured artefacts CerebralCortexGrey_N.p.mg = 3.661 and ",
+         "RoB_O.p.N = 36948; found ", gm_npmg, " and ", rob_opn, ". The source table ",
+         "changed -- re-check these corrections before applying them.", call. = FALSE)
+  hh2014b_df$CerebralCortexGrey_N.p.mg[ele] <- 3661
+  hh2014b_df$RoB_O.p.N[ele] <- 36.948
+  cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2014_Table1 <- hh2014b_df
+}
+rm(hh2014b_df)
 
 # 3.6 Calculate Cell number where not already available (it was only reported in Dos Santos et al., 2020)
 # Formula _C.n = _N.n + _O.n
@@ -933,6 +1177,38 @@ if ("HerculanoHouzel_etal_2011_Table1" %in% worth_dataframe$source) {
   rownames(worth_dataframe) <- NULL
   worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
 }
+
+# HH2014 / Sarko2009 precedence pin (2026-11): Herculano-Houzel et al. 2014 (the elephant
+# paper) and Sarko et al. 2009 (the insectivore paper) are the PRIMARY publications of the
+# cell counts that Herculano-Houzel et al. 2015 re-reported in its Tables 1-5 -- the 2015
+# tables' own Source columns cite them. Under the project's compilation rule the primary
+# source outranks the compilation for shared cells, so the three primary items are pinned
+# directly above the 2015 tables in this worth order (HH2014 first, then the two Sarko
+# tables), overriding the date rule for these pairs only; the 2015 tables remain the
+# fallback wherever a primary lacks a cell (sec 8.3 keeps the best-priority non-NA value
+# per cell). This pin is what corrects the elephant CerebralCortex_O.n: HH 2015 Table 1
+# prints 55,698,998,687 (the 2014 paper's grey-matter-only value) where the 2014 GM+WM
+# value is 150.15 x 10^9, as the 2015 table's own O/N (26.844) and O/mg (52,721) confirm.
+pin_items <- c("HerculanoHouzel_etal_2014_Table1",
+               "Sarko_etal_2009_Table1",
+               "Sarko_etal_2009_Table2")
+pin_items <- pin_items[pin_items %in% worth_dataframe$source]
+if (length(pin_items)) {
+  hh2015_tables <- paste0("HerculanoHouzel_etal_2015_Table", 1:5)
+  if (!all(hh2015_tables %in% worth_dataframe$source))
+    stop("8.2.H pin: expected all five HerculanoHouzel_etal_2015 tables in the HH-team worth ",
+         "table. The item list changed -- re-check the HH2014/Sarko2009 precedence pin.",
+         call. = FALSE)
+  pin_rows <- worth_dataframe[match(pin_items, worth_dataframe$source), , drop = FALSE]
+  worth_dataframe <- worth_dataframe[!(worth_dataframe$source %in% pin_items), , drop = FALSE]
+  insert_at <- min(which(worth_dataframe$source %in% hh2015_tables))
+  worth_dataframe <- rbind(worth_dataframe[seq_len(insert_at - 1), , drop = FALSE],
+                           pin_rows,
+                           worth_dataframe[insert_at:nrow(worth_dataframe), , drop = FALSE])
+  rownames(worth_dataframe) <- NULL
+  worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
+}
+
 # Append a "priority" column to the "combined_data" dataframe by matching "Source" values with "source" in "worth_dataframe"
 combined_data$priority <- match(combined_data$Source,  worth_dataframe$source, worth_dataframe$priority)
 

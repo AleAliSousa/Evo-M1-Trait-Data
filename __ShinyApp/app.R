@@ -123,7 +123,12 @@ GH <- list(
   volumes    = "__merging_volumes/volumes_long.csv",
   cellcounts = "__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv",
   traits     = "__ShinyApp/data/evom1_traits_long.csv",
-  body       = "__merging_body_ecology/body_ecology_long.csv",
+  body       = "__merging_body/body_long.csv",
+  ecology    = "__merging_ecology/ecology_long.csv",
+  # 2026-11-22: the five life-history measures that used to ride in
+  # body_ecology were folded into the life-history merge (PR #97, Option A);
+  # std_life_history() below surfaces them under their existing labels.
+  life_history = "__merging_life_history/life_history_long.csv",
   brain_mass = "__merging_brain_mass/brain_mass_long.csv",
   brain_size = "__merging_brain_size/brain_size_long.csv",
   behaviour  = "__merging_behaviour/behaviour_long.csv",
@@ -165,7 +170,7 @@ SRC_DIR <- "__Public/comparative-data/"  # source tables (fetched on demand)
 
 # ---- Size consolidation: authoritative body/brain-mass merges ---------------
 # Body mass and brain mass each have a dedicated merge (single source of truth):
-# __merging_body_ecology and __merging_brain_mass. The app surfaces them from
+# __merging_body and __merging_brain_mass. The app surfaces them from
 # those merges. The raw per-table columns (Body_Mass.g in volumes, Brain_weight_g
 # in the trait table, ...) are SUPERSEDED — relabelled to the canonical variable
 # and kept only as a fallback for the few species a merge does not cover.
@@ -294,6 +299,39 @@ load_compiled <- function() {
       Teams = as.character(d$Teams),
       N_sources = suppressWarnings(as.integer(d$n_sources)),
       Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
+      stringsAsFactors = FALSE)
+  }
+
+  # Life-history merge (Hayssen-based, plus the paper tables folded in by
+  # PR #97). Its Measure/Units strings are terse (gestation_d / d), so a plain
+  # std_merge() would mint new labels and strand the canonical supersede rows
+  # and domain keys written against the long-standing labels. Surface ONLY the
+  # five measures the old body_ecology merge carried, relabelled onto those
+  # labels and units; the merge's other measures stay out of the app, as they
+  # always have. Values are already in days / counts / years.
+  std_life_history <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    lab_map <- c(gestation_d = "Gestation (days)",
+                 weaning_age_d = "Weaning_age (days)",
+                 litter_size_n = "Litter_size (count)",
+                 maximum_longevity_y = "Maximum_longevity (yr)",
+                 female_maturity_age_d = "Female_sexual_maturity (days)")
+    unit_map <- c("Gestation (days)" = "days", "Weaning_age (days)" = "days",
+                  "Litter_size (count)" = "count",
+                  "Maximum_longevity (yr)" = "yr",
+                  "Female_sexual_maturity (days)" = "days")
+    d <- d[d$Measure %in% names(lab_map), , drop = FALSE]
+    lab <- unname(lab_map[d$Measure])
+    unit <- unname(unit_map[lab])
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
+      Source = paste0("EvoM1 life history merge (", d$n_sources, " sources)"),
+      Items = field(d, "items"),
+      Source_details = field(d, "roles"),
+      Teams = as.character(d$Teams),
+      N_sources = suppressWarnings(as.integer(d$n_sources)),
+      Variable_raw = lab, Unit = unit, Unit_raw = unit,
       stringsAsFactors = FALSE)
   }
 
@@ -494,7 +532,9 @@ load_compiled <- function() {
     std_merge(GH$taste, file.path(data_dir, "taste_long.csv"), "Taste performance"),
     std_merge(GH$social_mirror_play, file.path(data_dir, "social_mirror_play_long.csv"), "Social composition, mirror tests & play"),
     std_merge(GH$claustrum_cerebellar, file.path(data_dir, "claustrum_cerebellar_long.csv"), "Claustrum & cerebellar anatomy"),
-    std_merge(GH$body,       file.path(data_dir, "body_ecology_long.csv"), "Body & ecology"),
+    std_merge(GH$body,       file.path(data_dir, "body_long.csv"), "Body"),
+    std_merge(GH$ecology,    file.path(data_dir, "ecology_long.csv"), "Ecology"),
+    std_life_history(GH$life_history, file.path(data_dir, "life_history_long.csv"), "Life history"),
     # Brain mass is emitted as PARALLEL variables, one per measurement basis
     # (measured, excluding olfactory bulbs, or explicitly derived estimates);
     # unresolved mixed-basis records are held for review. Endocranial volume
@@ -529,7 +569,7 @@ load_compiled <- function() {
             "Sensory performance"),
     std_weights(GH$weights, file.path(data_dir, "weights_long.csv"),
             "Brain-part weights"),
-    # Five PanTHERIA measures reuse body_ecology labels on purpose (Gestation,
+    # Five PanTHERIA measures reuse the shared labels on purpose (Gestation,
     # Weaning_age, Litter_size, Maximum_longevity, BMR_wholeanimal: identical
     # quantities, label_policy = shared in supplementary_sources.csv); the app
     # pools them like any second source. Everything else is a new label.
@@ -1211,7 +1251,7 @@ basis_conflict <- function(a, b) {
 
 # ---- Species-level consolidation --------------------------------------------
 # A species usually carries several rows for one variable: several sources
-# pooled by a merge, two merges sharing a label (Body_Mass from body_ecology and
+# pooled by a merge, two merges sharing a label (Body_Mass from the body merge and
 # PanTHERIA), or several specimens kept at row level. The plot and the
 # Regression tab need ONE value per species x variable, and that collapse is
 # where a single bad row does its damage. Before 2026-10-31 the collapse was the

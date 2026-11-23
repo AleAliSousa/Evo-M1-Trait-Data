@@ -209,7 +209,17 @@ papers <- tribble(
   # staged in _keys/General/species_key.csv; five names pass through unresolved
   # by design (Delphinus delphinus and the genus-level Sorex, Wallabia,
   # Tachyglossus and Lemur div. rows).
-  "Haug__1987_TABLE2",                    "Haug",               1987
+  "Haug__1987_TABLE2",                    "Haug",               1987,
+  # --- 2026-11-23 intake: Stacho et al. 2024 Table 3 (red nucleus). Only the four
+  # per-hemisphere red-nucleus columns are term-mapped; the brain-volume column is
+  # deliberately NOT mapped (wiring plan D1: held from pooling -- it corroborates the
+  # pooled Total_brain_net_volume for hominoids, ratios 0.92-1.04, but conflicts for
+  # most non-hominoids, where the brain-mass merge sides with the pool). Own Tier-2
+  # team: a new measurement series on its own specimens, and the RN labels are new,
+  # so no other team's values can average against these. The values carry the build's
+  # guarded correction (the printed Gorilla/Hylobates measurement transposition,
+  # demonstrated cross-paper; restricted repo __stacho2024_cross_paper_check).
+  "Stacho_etal_2024_Table3",              "Stacho",             2024
   # NOT wired: Schleifenbaum__1973_Tables1-2 (brain mass + part volumes of
   # poodles and wolves). Its folder README defers merge wiring until a
   # developmental-age policy is explicit -- all 12 sectioned profiles are

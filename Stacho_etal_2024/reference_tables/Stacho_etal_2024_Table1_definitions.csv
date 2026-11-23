@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Specimen,Specimen ID as printed (pm-number),,Specimen,,info,Primates,Stacho_etal_2024_Table1,"pm20 carries the paper's footnote (BigBrain model brain), kept in the snapshot as 'pm20*' and recorded in the Note column of this file",
+"Section type",Sectioning plane of the brain as printed (Coronal / Horizontal),,SectionPlane,,info,Primates,Stacho_etal_2024_Table1,,
+Sex,Sex as printed under the paper's 'Gender' heading (Male / Female),,Sex,,info,Primates,Stacho_etal_2024_Table1,,
+"Age, years",Age at death in years,,Age.years,,primary,Primates,Stacho_etal_2024_Table1,,
+"Fresh brain weight, g","Fresh brain weight, g",Brain,Mass.g,individual,primary,Primates,Stacho_etal_2024_Table1,"Printed with thousands separators (e.g. 1,260), stripped in this file. Table 3 of the same paper averages fresh brain VOLUME over n = 10 of these 11 brains",
+Note,Build note for the row,,Note,,info,Primates,Stacho_etal_2024_Table1,,

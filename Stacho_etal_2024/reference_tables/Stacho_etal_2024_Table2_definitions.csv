@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Taxon,"Taxon (family or group) as printed: Hominidae, Cercopithecidae, Platyrrhini or Prosimiae",,Taxon,,info,Primates,Stacho_etal_2024_Table2,,
+Species,Species binomial as printed,,Species,,info,Primates,Stacho_etal_2024_Table2,"One row is printed 'Cercopithecus Spec.' (indeterminate), as in the paper",
+Specimen,"Archive name of the brain as printed in the paper's 'Name' column (e.g. 3_97, YN81-146, 1,548)",,Specimen,,info,Primates,Stacho_etal_2024_Table2,"Numeric archive names keep their printed thousands separators. '3_97' (Hylobates lar) is the gibbon Disco of the specimen crosswalk (ZILLES-HYLOBATES-GPZ-5542) by the /97 cohort pattern; 'YN81-146' is YN81 of Semendeferi et al. 2011 Table 1",
+Sex,"Sex as printed (f / m / NA); NA is the paper's code for not available, not a missing cell",,Sex,,info,Primates,Stacho_etal_2024_Table2,,
+"Section plane",Sectioning plane as printed (Coronal / Horizontal),,SectionPlane,,info,Primates,Stacho_etal_2024_Table2,,
+Staining,"Staining as printed (Merker silver staining for cell bodies, or Nissl with cresyl violet)",,Staining,,info,Primates,Stacho_etal_2024_Table2,Per the table's footnote,

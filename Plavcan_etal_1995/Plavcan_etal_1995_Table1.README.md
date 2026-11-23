@@ -1,5 +1,8 @@
 # Plavcan et al. 1995: Table 1, behavioural classifications and residual maxillary canine crown height (94 primate species × 2 sexes)
 
+**Current build status (2026-11-23):** This item is registered in `__ReadMe.xlsx`. `Rscript --vanilla Plavcan_etal_1995/Plavcan_etal_1995_Table1.R` ran successfully, reproduced the existing analysis CSV and public TSV byte for byte, and passed all eight required file/registry checks. Table checks: 31 pass, 5 printed mismatches. The priority 1 Püschel source trace is in the restricted comparison folder; it does not authorize a merge. Earlier preparation notes below describe the 2026-11-10 state.
+
+
 Plavcan, J. M., van Schaik, C. P., & Kappeler, P. M. (1995). Competition, coalitions and canine size in primates. *Journal of Human Evolution*, 28(3), 245–276. https://doi.org/10.1006/jhev.1995.1019
 
 **Registry:** no row yet. The local copy of the live registry (2026-11-10) has only the two Plavcan & van Schaik 1997 rows (746–747). The row to paste is `out/registry_rows_plavcan1995.json`:

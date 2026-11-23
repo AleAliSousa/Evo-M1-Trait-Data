@@ -1,5 +1,8 @@
 # Melchionna et al. 2020: Supplementary Appendix S1, body mass, ECV and EQ of 317 primate species
 
+**Current build status (2026-11-23):** This item is registered in `__ReadMe.xlsx`. `Rscript --vanilla Melchionna_etal_2020/Melchionna_etal_2020_SupplementaryAppendix.R` ran successfully, reproduced the existing analysis CSV and public TSV byte for byte, and passed all eight required file/registry checks. Table checks: 320 pass. The priority 1 Püschel source trace is in the restricted comparison folder; it does not authorize a merge. Earlier preparation notes below describe the 2026-11-10 state.
+
+
 Melchionna, M., Mondanaro, A., Serio, C., Castiglione, S., Di Febbraro, M., Rook, L., Diniz-Filho, J. A. F., Manzi, G., Profico, A., Sansalone, G., & Raia, P. (2020). Macroevolutionary trends of brain mass in Primates. *Biological Journal of the Linnean Society*, *129*(1), 14–25. https://doi.org/10.1093/biolinnean/blz161
 
 **Registry:** no row yet in `__ReadMe.xlsx`. Item number (col D) **Supplementary Appendix** → Item name **`Melchionna_etal_2020_SupplementaryAppendix`**, Item encoded **`10.1093%2Fbiolinnean%2Fblz161_SupplementaryAppendix`**. The row to paste is in `out/registry_rows_digital.json`; the script looks both names up live.

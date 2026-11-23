@@ -1,8 +1,8 @@
 # Zilles_etal_1989_Table1
 
-## Status — ready for owner registration, NOT FINISHED
+## Status — built in AddON registry on 2026-11-23
 
-Frozen source, R reader, analysis schema and definitions are supplied. Registration and the canonical registry-named public TSV are pending. R execution/validation status will be recorded below after runtime checks; no registry invariant is claimed passed. No workbook, shared taxonomy key, merge script or comparison folder was edited.
+Frozen source, R reader, analysis CSV, definitions, AddON registry row and canonical registry-named public TSV are present. The main registry remains occupied; human visual signoff and merge review remain pending.
 
 ## Source → snapshot
 
@@ -12,7 +12,7 @@ Locus: **Table1 p.144 (PDF page2), with rightmost GIL confirmed in facing-page m
 
 ## Snapshot → data readable
 
-Run `Zilles_etal_1989_Table1.R` in a clean R session. It reads `Zilles_etal_1989_Table1_snapshot.csv`, writes `Zilles_etal_1989_Table1.csv`, and looks up Item encoded by exact Item name in a fresh Sheet1 read. If unregistered, only the analysis CSV is written and a warning explains why TSV export is withheld. Public TSV naming is never guessed. After owner paste/recalculation, re-run the reader to write the authoritative TSV under repo-level `__Public/comparative-data/`.
+Run `Zilles_etal_1989_Table1.R` in a clean R session. It reads `Zilles_etal_1989_Table1_snapshot.csv`, writes `Zilles_etal_1989_Table1.csv`, and looks up Item encoded by exact Item name in a fresh Sheet1 read of the main registry or `__ReadMeAddON.xlsx`. It writes the canonical public TSV under repo-level `__Public/comparative-data/`. Public TSV naming is registry-derived.
 
 Method: Serial20-μm histological sections; cresyl violet; approximately40 equidistant sections/brain; digitized contours; GI=sum complete contours/sum outer contours.
 
@@ -26,10 +26,10 @@ Data role: **both**. Row/measure role columns gate secondary data. Per-source ci
 
 ## QA and online database
 
-Visually read and checked against source PDF on 2026-10-10. No preexisting curated comparison was supplied, so no claim of an independent 0-mismatch audit is made and no public comparison folder is created. Expected analysis rows: **56**. Definitions have the fixed10-column schema. Proposed encoded stem (NOT registry authority): `10.1159%2F000116500_Table1`. All proposed TSVs, if staged by the coordinator, must remain outside the public repository until registry authority is established.
+Visually read and checked against source PDF on 2026-10-10. No preexisting curated comparison was supplied, so no claim of an independent 0-mismatch audit is made and no public comparison folder is created. Expected analysis rows: **56**. Definitions have the fixed10-column schema. AddON registry encoded stem: `10.1159%2F000116500_Table1`. The canonical public TSV is now in `__Public/comparative-data/`.
 
-Pending: owner registry row paste and formula/file-list recalculation; clean R audit→dry-run→build→validate; collection-scoped species mapping; then authoritative public TSV verification. Secondary rows/columns must not enter primary merges. The source disposition register has no existing exclusion for this source; this does not authorize any automatic merge change.
+Pending: transfer the AddON row to the main registry when available; collection-scoped species mapping and specimen/source overlap review before merge. Secondary rows/columns must not enter primary merges. No merge script was changed. This is a table item, so no figure replot applies.
 
-### Execution evidence (2026-10-10)
+### Execution evidence (2026-11-23)
 
-The analysis CSV is presently a provisional Python transformation of the frozen snapshot, independently mirroring the supplied R reader. Python structural/value checks passed (expected row counts, dictionary coverage, sample/measurement count separation, provenance gates, missingness and unit conversion). **R has not run**; these checks do not satisfy clean-R or registry/public-TSV invariants. The proposed TSV candidate stays in audit scratch outside this repository and is not published.
+`Rscript --vanilla Zilles_etal_1989_Table1.README.R` ran from repository root and wrote 56 analysis rows plus a public TSV using the AddON registry code. The R reader retained source row/measure roles and unit conversions. The frozen snapshot had a prior source-side AI visual check on 2026-10-10; human visual signoff remains pending.

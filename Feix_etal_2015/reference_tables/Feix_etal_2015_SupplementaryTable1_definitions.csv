@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source
+source_row,Printed table row,,,,metadata,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+group_as_published,Group as printed; blank for Daubentonia row,,,,metadata,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+species_as_published,Species or model label as printed,,,,metadata,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+N_as_published,N as printed; models not independent subjects,,,,metadata,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+peak_workspace,Position of peak workspace; source scale not specified in caption,,,,primary modeled output,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+relative_object_size_R,Relative object size R; dimensionless,,,,primary modeled output,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+real_object_size_R_mm,Real object size R (mm),,,,primary modeled output,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+model_variant,Pan or Human ROM model for fossil alternatives,,,,metadata,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+Species,Collection-key taxon anchor,,,,metadata,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+observation_level,Taxon model summary or fossil individual/composite model,,,,metadata,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1
+data_role,Primary modeled output from source hand measurements,,,,metadata,,Feix_etal_2015,Keep fossil model variants separate; do not treat N as independent modeled rows.,Supplementary Table 1

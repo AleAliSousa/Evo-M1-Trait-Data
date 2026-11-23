@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source
+source_row,Printed row index,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+case_as_published,Case identifier or Average as printed,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+cortical_area,Cortical area column as printed,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+threshold_as_published,"Printed threshold cell, including n/a or nm",,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+n_as_published,Printed site n or N cell,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+case_id,Case identifier normalized for joins,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+mean_threshold_uA,"Mean threshold in microamperes, blank for n/a or nm",,,,primary,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+sites_n,"Number of sites contributing to mean, when printed",,,,primary,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+threshold_status,"Measured, not measured (nm), or n/a as printed",,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+species_as_published,"Species of all cases, from paper methods",,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+observation_level,"Case by area, or across-case source summary",,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4
+data_role,Primary case means versus source summary,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 4

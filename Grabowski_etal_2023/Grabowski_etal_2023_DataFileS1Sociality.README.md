@@ -1,5 +1,8 @@
 # Grabowski et al. 2023: Data File S1, social and mating system (177 species rows)
 
+**Current build status (2026-11-23):** This item is registered in `__ReadMe.xlsx`. `Rscript --vanilla Grabowski_etal_2023/Grabowski_etal_2023_DataFileS1Sociality.R` ran successfully, reproduced the existing analysis CSV and public TSV byte for byte, and passed all eight required file/registry checks. Table checks: 354 pass, 1 printed mismatch. The priority 1 Püschel source trace is in the restricted comparison folder; it does not authorize a merge. Earlier preparation notes below describe the 2026-11-10 state.
+
+
 Grabowski, M., Kopperud, B. T., Tsuboi, M., & Hansen, T. F. (2023). Both diet and sociality affect primate brain-size evolution. *Systematic Biology*, *72*(2), 404–418. https://doi.org/10.1093/sysbio/syac075
 
 Data: Dryad, https://doi.org/10.5061/dryad.2547d7wpg (Data File S1).

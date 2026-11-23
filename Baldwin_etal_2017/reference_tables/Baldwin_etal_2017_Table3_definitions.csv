@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source
+source_row,Printed row index,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+case_as_published,Case identifier as printed; superscript a marks incomplete recording,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+case_id,Case identifier without printed footnote mark,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+species_as_published,"Species of all cases, from paper methods",,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+sites_tested,Total ICMS sites tested,,,,primary,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+sites_with_movements_LT_ICMS,Sites eliciting movements under long-train ICMS,,,,primary,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+multijoint_as_published,"Printed multijoint entry, including incomplete recording text",,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+multibody_part_as_published,Printed multibody-part entry,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+multibody_part_multijoint_as_published,Printed overlapping combination entry,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+total_complex_as_published,Printed total complex movement entry,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+total_complex_numeric,Numeric total complex count as printed,,,,primary,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+recording_incomplete,Case has printed superscript a,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+observation_level,One experimental case,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3
+data_role,Primary case measurements,,,,metadata,,Baldwin_etal_2017,See item README for overlapping categories or source summary.,Table 3

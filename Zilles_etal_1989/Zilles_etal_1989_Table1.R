@@ -36,6 +36,11 @@ if (requireNamespace("readxl", quietly = TRUE) && file.exists(file.path(base, "_
   i <- which(!is.na(filecodes[["Item name"]]) & filecodes[["Item name"]] == item_name)
   if (length(i) == 1L) item_encoded <- filecodes[["Item encoded"]][i]
 }
+if (is.na(item_encoded) && requireNamespace("readxl", quietly = TRUE) && file.exists(file.path(base, "__ReadMeAddON.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMeAddON.xlsx"), sheet = "Sheet1")
+  i <- which(!is.na(filecodes[["Item name"]]) & filecodes[["Item name"]] == item_name)
+  if (length(i) == 1L) item_encoded <- filecodes[["Item encoded"]][i]
+}
 if (length(item_encoded) == 1L && !is.na(item_encoded) && nzchar(item_encoded) && !grepl("_$", item_encoded)) {
   out <- file.path(base, "__Public", "comparative-data")
   dir.create(out, recursive = TRUE, showWarnings = FALSE)

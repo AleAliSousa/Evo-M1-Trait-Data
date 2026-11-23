@@ -324,7 +324,7 @@ Removal candidates, largest first. Nothing here is to be removed before its prec
 | `____EvoM1_TraitTable/` workbooks | under 1 MB | D7: archive as a source, or keep as a living input |
 | Two of the three sweep runners (`_run_all_scripts.sh`, `_v2.R`, `_v3.py`) | small | decide which is current; notes refer to v2 |
 | Dated one-off tools in `_tools/` (`__rename_cell_counts_20261104.R` and its log, `add_sequence_letters_20261110.py`, `__edit_all_directories.R`) | small | move to `_archive/` |
-| Root-level working files: `mmc2.xlsx`, `Püschel_etal_2026_sources_to_get.xlsx`, `_Evo-M1 primary-data candidates (merged 2026-11-06).xlsx`, `out/`, the empty `animaltraits_raw_Mammalia/` | small | each needs a home or removal; `_REPO_BOUNDARY.md` §5 says the root holds only what the README lists |
+| Root-level working files: `mmc2.xlsx`, `Püschel_etal_2026_sources_to_get (updated 2026-11-23).xlsx`, `_Evo-M1 primary-data candidates (merged 2026-11-23).xlsx`, `out/`, the empty `animaltraits_raw_Mammalia/` | small | each needs a home or removal; `_REPO_BOUNDARY.md` §5 says the root holds only what the README lists |
 | Roadmap lines 734–1100 and 1162–1388 (dated build passes and the superseded 2026-10-28 order) | about 590 of 1,558 lines | move to `_archive/` |
 | Records of finished work: `__ShinyApp/AUDIT_app_variable_organization.md`, `_UNCLASSIFIED_VARIABLES_SUMMARY.md` | small | move to `_archive/` |
 | Planning notes replaced by this file | small | section 8 |

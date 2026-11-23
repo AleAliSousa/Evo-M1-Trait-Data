@@ -4369,3 +4369,85 @@ Cercopithecus aetiops,Chlorocebus aethiops,Haug__1987,General,,hypothesis,"item:
 Globicephala macrorryncha,Globicephala macrorhynchus,Haug__1987,General,,spelling,item: Haug__1987_TABLE2; spelling (printed macrorryncha)
 Talpa europaeus,Talpa europaea,Haug__1987,General,,spelling,item: Haug__1987_TABLE2; gender agreement; europaea is the valid form
 Sorex,Sorex sp.,Haug__1987,General,9379,lump,"item: Haug__1987_TABLE2; Haug prints the genus only (register row, no species), so the row is kept at genus level per the merge's genus-entity convention (Gorilla sp. / Pongo sp.; cf. the Brodmann__1913 Sorex sp. anchor). Added 2026-11-19 with the volumes wiring of Haug 1987 Table 2: without a paper-scoped row, the shared resolver's variant-level fallback assigns Haug's Sorex to Sorex minutus via the Kowiański_etal_1999 spoke -- whose note rests on that paper's Methods identifying ITS Sorex as S. minutus, a paper-specific fact that does not transfer -- and the genus-level value would be averaged into the Stephan_collection Sorex minutus figure."
+Shrew,Suncus etruscus,Naumann_etal_2016,General,,publication,common name in Table 4; scientific name in paper text
+Mouse,Mus musculus,Naumann_etal_2016,General,,publication,common name in Table 4; scientific name in paper text
+Rat,Rattus norvegicus,Naumann_etal_2016,General,,publication,common name in Table 4; scientific name in paper text
+Egyptian fruit bat,Rousettus aegyptiacus,Naumann_etal_2016,General,,publication,common name in Table 4; scientific name in paper text
+Human,Homo sapiens,Naumann_etal_2016,General,,publication,common name in Table 4; scientific name in paper text
+H. l.,Hylobates lar,Caspar_etal_2018,General,,publication,Table 4 footnote
+H. m.,Hylobates muelleri,Caspar_etal_2018,General,,publication,Table 4 footnote
+N. g.,Nomascus gabriellae,Caspar_etal_2018,General,,publication,Table 4 footnote
+N. l.,Nomascus leucogenys,Caspar_etal_2018,General,,publication,Table 4 footnote
+N. s.,Nomascus siki,Caspar_etal_2018,General,,publication,Table 4 footnote
+S. s.,Symphalangus syndactylus,Caspar_etal_2018,General,,publication,Table 4 footnote
+Gorillas,Gorilla gorilla,Hopkins_etal_2003,General,,publication,Table 1 group; paper title supplies Gorilla gorilla.
+Orangutans,Pongo sp.,Hopkins_etal_2003,General,,unspecified_in_source,Table 1 group; article labels the sample Pongo pygmaeus in the pre-split broad sense. Individual current species identities unresolved; retain genus-level anchor.
+rhesus monkey infants,Macaca mulatta,Nelson_etal_2011,General,,publication,Paper title identifies Macaca mulatta; Table 3 is individual infants.
+tree shrews,Tupaia belangeri,Baldwin_etal_2017,General,,publication,Paper title and Methods identify Tupaia belangeri for all ten cases in Table 2.
+Galago garnetti,Otolemur garnettii,Wu_etal_2000,General,30611,synonym,Source label Galago garnetti retained; NCBI taxid 30611 and MDD 1001050 list this as a synonym of Otolemur garnettii (checked 2026-11-23).
+Chimpanzees,Pan troglodytes,Phillips_Hopkins_2007,General,9598,group header + title,Table 1 group; title supplies Pan troglodytes; item: Table1
+Capuchins,Sapajus apella,Phillips_Hopkins_2007,General,9515,synonym:NCBI,Table 1 group; title Cebus apella; NCBI taxid 9515 Sapajus apella lists Cebus apella synonym; item: Table1
+Ateles fusciceps rufiventris,Ateles fusciceps,Nelson_etal_2015,General,9508,subspecies to species,MDD lists rufiventris under Ateles fusciceps; preserve published subspecies.
+Nomascus leucogenys,Nomascus leucogenys,Fan_etal_2017,General,61853,exact,Published species.
+Microcebus murinus,Microcebus murinus,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Galago moholi,Galago moholi,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Callithrix jacchus,Callithrix jacchus,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Otolemur garnettii,Otolemur garnettii,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Eulemur mongoz,Eulemur mongoz,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Aotus trivirgatus,Aotus trivirgatus,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Lemur catta,Lemur catta,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Propithecus verreauxi,Propithecus verreauxi,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+M. mulatta,Macaca mulatta,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Papio cynocephalus,Papio cynocephalus,Collins_etal_2013,General,,source name,Single-hemisphere table label.
+Alouatta semiculus,Alouatta seniculus,Feix_etal_2015,General,9503,spelling,"Printed semiculus; inferred typo for seniculus. NCBI taxid 9503 and MDD 1000765 recognize seniculus; preserve source spelling."
+Cebus albifrons,Cebus albifrons,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Sapajus apella,Sapajus apella,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Macaca fascicularis,Macaca fascicularis,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Macaca mulatta,Macaca mulatta,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Papio hamadryas,Papio hamadryas,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Presbytis cristata,Trachypithecus cristatus,Feix_etal_2015,General,122765,synonym:NCBI,NCBI taxid 122765 lists Presbytis cristata as a homotypic synonym of Trachypithecus cristatus; source label retained.
+Au. afarensis comp H,Australopithecus afarensis,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Au. afarensis comp P,Australopithecus afarensis,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Au. sediba MH2 H,Australopithecus sediba,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Au. sediba MH2 P,Australopithecus sediba,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Homo neanderthalensis,Homo neanderthalensis,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Homo sapiens Ohalo II H2,Homo sapiens,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Homo sapiens Qafzeh 9,Homo sapiens,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Gorilla gorilla,Gorilla gorilla,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Homo sapiens,Homo sapiens,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Pan paniscus,Pan paniscus,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Pan troglodytes,Pan troglodytes,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+Pongo pygmaeus,Pongo sp.,Feix_etal_2015,General,,identity_unresolved,Published museum specimens labeled Pongo pygmaeus; individual current species identity not established here; retain source binomial and genus-level analysis anchor.
+Hylobates lar,Hylobates lar,Feix_etal_2015,General,,source name,Keep specimen/source label and model variant.
+early H. sapiens Qafzeh 9,Homo sapiens,Feix_etal_2015,General,,source label resolved,Source label and fossil model variant retained; do not count alternate models as independent specimens.
+early H. sapiens Ohalo II H2,Homo sapiens,Feix_etal_2015,General,,source label resolved,Source label and fossil model variant retained; do not count alternate models as independent specimens.
+H. neanderthalensis,Homo neanderthalensis,Feix_etal_2015,General,,source label resolved,Source label and fossil model variant retained; do not count alternate models as independent specimens.
+Au. sediba MH2 (Pan),Australopithecus sediba,Feix_etal_2015,General,,source label resolved,Source label and fossil model variant retained; do not count alternate models as independent specimens.
+Au. sediba MH2 (Human),Australopithecus sediba,Feix_etal_2015,General,,source label resolved,Source label and fossil model variant retained; do not count alternate models as independent specimens.
+Au. afarensis comp (Pan),Australopithecus afarensis,Feix_etal_2015,General,,source label resolved,Source label and fossil model variant retained; do not count alternate models as independent specimens.
+Au. afarensis comp (Human),Australopithecus afarensis,Feix_etal_2015,General,,source label resolved,Source label and fossil model variant retained; do not count alternate models as independent specimens.
+Tarsius syrichta,Tarsius syrichta,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Tarsius bancanus,Tarsius bancanus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Lepilemur leucopus,Lepilemur leucopus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Varecia variegata,Varecia variegata,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Lemur catta,Lemur catta,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Hapalemur griseus,Hapalemur griseus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Eulemur mangoz,Eulemur mongoz,Feix_etal_2015,General,,source label resolved,Source label retained; check identity before pooling.
+Eulemur macaco,Eulemur macaco,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Eulemur fulvus,Eulemur fulvus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Propithecus verreauxi,Propithecus verreauxi,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Propithecus diadema,Propithecus diadema,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Indri indri,Indri indri,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Avahi laniger,Avahi laniger,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Microcebus murinus,Microcebus murinus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Cheirogaleus medius,Cheirogaleus medius,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Cheirogaleus major,Cheirogaleus major,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+D. madagascariensis,Daubentonia madagascariensis,Feix_etal_2015,General,,source label resolved,Source label retained; check identity before pooling.
+Nycticebus coucang,Nycticebus coucang,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Loris tardigradus,Loris tardigradus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Otolemur garnettii,Otolemur garnettii,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Otolemur crassicaudatus,Otolemur crassicaudatus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Galago senegalesis,Galago senegalensis,Feix_etal_2015,General,,source label resolved,Source label retained; check identity before pooling.
+Galago moholi,Galago moholi,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
+Galago demidoff,Galagoides demidoff,Feix_etal_2015,General,,source label resolved,Source label retained; check identity before pooling.
+Euoticus elegantulus,Euoticus elegantulus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.

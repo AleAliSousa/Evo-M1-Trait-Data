@@ -37,14 +37,14 @@ A paper does not need a new team folder merely because it has a new author. Duri
 
 ## App feed list (added 2026-11-23)
 
-- **`app_feeds.csv`** — the one list of compiled tables ("feeds") the two apps load: one row per feed
-  (`feed` = the key used in `__ShinyApp/app.R`, `path` = repo-relative file). `evo_m1_app` = TRUE rows
-  give the Evo-M1 app its table paths (`feed_path()` in `app.R`; start-up stops, naming the feed, if a
-  feed the app loads has no such row or its file cannot be read). `traitexplorer` = TRUE rows are the
-  merge files TraitExplorer loads, in file order, as dataset `te_label` with loader `te_loader`
-  (`load_harmonized_sources()` in its `data_layer.R`). `evo_m1_dataset_label`, `evo_m1_loader`, `status`
-  and `note` are descriptive; neither app reads them. To move or rename a compiled table, edit `path`
-  here and push; no app code changes. Also read by `__merging_trees/build_species_universe.py`.
+- **`app_feeds.csv`** — the input list of `__compiled/build_compiled.R`, which builds the one table both
+  apps read (`__compiled/compiled_long.csv.gz`; see `__compiled/README.md`). One row per merge output
+  ("feed"): `feed` = the key the builder uses, `path` = repo-relative file. The rows with
+  `evo_m1_app = TRUE` are loaded; a feed the builder loads that has no such row, or whose file is
+  missing or unreadable, stops the build and names the feed. To move or rename a merge output, edit
+  `path` here and rebuild. Since 2026-11-23 neither app reads this list: `traitexplorer`, `te_label`
+  and `te_loader` are no longer used by anything, and `evo_m1_dataset_label`, `evo_m1_loader`,
+  `status` and `note` remain descriptive. Also read by `__merging_trees/build_species_universe.py`.
 
 ## Cross-domain structure references (added 2026-10-07, all rows `drafted`)
 

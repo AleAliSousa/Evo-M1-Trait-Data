@@ -25,6 +25,7 @@ Consequences of the rule, and why it is worth keeping:
 | `registry_snapshot.R` | writes a plain-text copy of `__ReadMe.xlsx` Sheet1 and names any row that has vanished since the last run |
 | `find_csv_tsv_creators.R` | which script creates each CSV/TSV, and which data files have no creator |
 | `find_orphan_R_scripts.R` | scripts with no data input or output |
+| `check_compiled_current.R` | `__compiled/compiled_long.csv.gz`, the one table both apps read, is what the merges and keys produce today: rebuilds it into a temporary folder and fails if the committed file differs |
 | `check_cell_count_methods.R` | the counting-method tables in `_keys/cell_count_methods/`: ids resolve, values are in the vocabulary, accepted rows cite accepted reviews, exclusions carry a reason and evidence |
 | `shiny_taxonomy_sources.py` | traces every remaining Shiny Unknown label to its publication, extracted source table and original column; writes a full CSV and a paper-grouped HTML list without changing source data |
 

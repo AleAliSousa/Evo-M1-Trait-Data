@@ -225,25 +225,24 @@ At runtime the app reads its data over HTTP from the public GitHub repo
 
 | Data | Fetched from (GitHub) |
 |------|-----------------------|
-| Brain-structure volumes | `__merging_volumes/volumes_long.csv` |
-| Cell counts | `__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv` |
-| Cell counts (histology) | `__merging_cell_counts_histology/cell_counts_histology_long.csv` |
-| EvoM1 traits (derived) | `__ShinyApp/data/evom1_traits_long.csv` |
+| Every trait value (built from the merges) | `__compiled/compiled_long.csv.gz` |
 | Source-table catalogue (derived) | `__ShinyApp/data/source_manifest.csv` |
 | The source tables | `__Public/comparative-data/…` (fetched on demand) |
 
-The table above lists the two startup files that live in `data/`; every other
-merge and key is read from its canonical folder (`__merging_*/`, `_keys/`) the
-same way.
+The keys are read from `_keys/` the same way. Of the two files in `data/`, the
+app itself reads `source_manifest.csv`; `evom1_traits_long.csv` is an input of
+the compiled table.
 
-Which compiled tables the app loads, and where each one is, is listed in
-`_keys/app_feeds.csv` (one row per feed; TraitExplorer reads the same list). The
-app takes every table path from that file at start-up, through the same
-GitHub-or-local route as the tables themselves, so moving or renaming a compiled
-table is an edit to its row plus a `git push`, with no redeploy. If a feed the
-app loads has no `evo_m1_app = TRUE` row, or its file cannot be read, the app
-stops at start-up with an error naming the feed. Push `_keys/app_feeds.csv`
-before (or together with) any `app.R` that reads it.
+Every trait value the app shows comes from ONE file,
+`__compiled/compiled_long.csv.gz`, which the app reads at start-up through the
+same GitHub-or-local route as its keys (TraitExplorer reads the same file).
+`__compiled/build_compiled.R` builds it from the merge outputs listed in
+`_keys/app_feeds.csv`; the loader that used to run inside `app.R` lives there
+now. `build_data.R` runs the builder as its last step, so the updater rebuilds
+the file before every push. A change to a merge or to a key the builder uses
+reaches the live app only when the rebuilt file is pushed;
+`_checks/check_compiled_current.R` fails if the committed file is stale. If the
+file cannot be read the app stops at start-up with an error naming it.
 
 Because it reads the repo directly, **nothing is duplicated in the app**, and
 updating the data is just a `git push` — no redeploy needed. If GitHub is

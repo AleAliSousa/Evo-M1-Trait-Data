@@ -168,6 +168,9 @@ stage_of <- function(p) {
   if (startsWith(p, "____EvoM1_TraitTable/")) return(3)
   if (p == "__ShinyApp/build_data.R") return(4)
   if (startsWith(p, "__merging_")) return(5)
+  ## the one table both apps read: after the merges it is built from, before the
+  ## keys/tools/checks that read it through __ShinyApp/app.R
+  if (p == "__compiled/build_compiled.R") return(5.5)
   if (startsWith(p, "_checks/")) return(7)
   6
 }

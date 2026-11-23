@@ -124,6 +124,18 @@ if (DO_PUSH) {
   if (Sys.which("git") == "")
     .die("git is not installed. Install it from https://git-scm.com and re-run, ",
          "or use --no-push to skip this step.")
+  # Both apps read ONE table, __compiled/compiled_long.csv.gz. It must match the
+  # merges being pushed. build_data.R (step 1) rebuilds it; with --no-build that
+  # step was skipped, so rebuild the table alone before staging.
+  if (!DO_BUILD) {
+    .step("Rebuilding the compiled table (__compiled/build_compiled.R) …")
+    rc <- system2(file.path(R.home("bin"), "Rscript"),
+                  shQuote(file.path(REPO, "__compiled", "build_compiled.R")))
+    if (rc != 0)
+      .die("build_compiled.R failed (see the error above). Nothing was pushed or ",
+           "deployed. Fix the data problem and re-run.")
+    .ok("Compiled table rebuilt.")
+  }
   .step("2/3  Committing + pushing to GitHub …")
   if (STAGE_ALL) {
     invisible(git("add", "-A"))
@@ -133,7 +145,7 @@ if (DO_PUSH) {
     # repo (documents, paper folders, PDFs, drafts) stays unstaged, so a data
     # refresh cannot publish unrelated work in progress. --all restores the old
     # behaviour.
-    stage_paths <- c("__ShinyApp",
+    stage_paths <- c("__ShinyApp", "__compiled",
                      grep("^__merging_", list.files(REPO), value = TRUE),
                      "_keys", "__Public", "____EvoM1_TraitTable", "__ReadMe.xlsx")
     stage_paths <- stage_paths[file.exists(file.path(REPO, stage_paths))]

@@ -73,10 +73,6 @@ pct <- function(s) {
 # SOURCE = "github": GitHub first, ./data as a fallback.
 read_gh <- function(gh_rel, local, reader, required = TRUE) {
   try_read <- function(x) tryCatch(reader(x), error = function(e) NULL)
-  # If gh_rel is a feed (a row of _keys/app_feeds.csv, read below), say which.
-  feed <- if (exists("app_feeds")) app_feeds$feed[app_feeds$path %in% gh_rel] else character(0)
-  feed <- if (length(feed)) paste0("Feed '", feed[1], "' cannot be read (check its path in ",
-                                   "_keys/app_feeds.csv). ") else ""
   if (SOURCE == "local") {
     in_repo <- file.path(repo_dir, gh_rel)
     if (file.exists(in_repo)) {
@@ -88,7 +84,7 @@ read_gh <- function(gh_rel, local, reader, required = TRUE) {
       if (!is.null(res)) return(res)
     }
     if (required)
-      stop(feed, "Could not load ", gh_rel, " from the repo or ./data. ",
+      stop("Could not load ", gh_rel, " from the repo or ./data. ",
            "Run build_data.R, or set EVOM1_SOURCE=github.")
     return(NULL)
   }
@@ -103,7 +99,7 @@ read_gh <- function(gh_rel, local, reader, required = TRUE) {
     return(try_read(local))
   }
   if (required)
-    stop(feed, "Could not load ", gh_rel, " from GitHub (", GH_BASE, ").\n",
+    stop("Could not load ", gh_rel, " from GitHub (", GH_BASE, ").\n",
          "This app reads one canonical copy of each file and keeps no offline ",
          "fallback for it, so it stops here rather than showing data of ",
          "unknown vintage. Most likely raw.githubusercontent.com is ",
@@ -118,78 +114,16 @@ read_delim_gh <- function(gh_rel, local, required = TRUE) read_gh(gh_rel, local,
   function(x) read.delim(x, stringsAsFactors = FALSE, check.names = FALSE),
   required = required)
 
-# GitHub locations. The compiled tables ("feeds") are named in ONE shared
-# list, _keys/app_feeds.csv, which TraitExplorer reads too; it comes through
-# read_gh() like every other file, so it follows EVOM1_SOURCE. A feed's PATH is
-# in that file and not in this one: to move or rename a compiled table, edit its
-# row. feed_path("x") is the path of feed x; if x has no row there with
-# evo_m1_app = TRUE, start-up stops here and names the feed. A feed whose file
-# cannot be read stops in read_gh(), which names it as well. The Dataset name
-# and the loader of each feed stay in load_compiled() below.
-app_feeds <- read_csv_gh("_keys/app_feeds.csv", file.path(data_dir, "app_feeds.csv"))
-if (!all(c("feed", "path", "evo_m1_app") %in% names(app_feeds)))
-  stop("_keys/app_feeds.csv must have columns: feed, path, evo_m1_app. Found: ",
-       paste(names(app_feeds), collapse = ", "))
-for (cl in c("feed", "path", "evo_m1_app")) app_feeds[[cl]] <- trimws(as.character(app_feeds[[cl]]))
-feed_path <- function(feed) {
-  p <- app_feeds$path[app_feeds$feed == feed & toupper(app_feeds$evo_m1_app) == "TRUE"]
-  p <- p[!is.na(p) & nzchar(p)]
-  if (length(p) != 1L)
-    stop("Feed '", feed, "' is loaded by app.R, but _keys/app_feeds.csv has ", length(p),
-         " row(s) with feed = '", feed, "', evo_m1_app = TRUE and a path; exactly one ",
-         "is needed (source: ", SOURCE, ").")
-  p
-}
-# The two derived tables come from the committed build output under __ShinyApp/data.
+# GitHub locations. Every trait value comes from ONE file, __compiled/
+# compiled_long.csv.gz, which __compiled/build_compiled.R builds from the merge
+# outputs listed in _keys/app_feeds.csv. The feed list and its missing-feed
+# checks moved to that builder with the loader (see "The compiled table" below).
 GH <- list(
-  taste = feed_path("taste"),
-  social_mirror_play = feed_path("social_mirror_play"),
-  claustrum_cerebellar = feed_path("claustrum_cerebellar"),
-  volumes    = feed_path("volumes"),
-  cellcounts = feed_path("cellcounts"),
-  traits     = feed_path("traits"),
-  body       = feed_path("body"),
-  ecology    = feed_path("ecology"),
-  # 2026-11-22: the five life-history measures that used to ride in
-  # body_ecology were folded into the life-history merge (PR #97, Option A);
-  # std_life_history() below surfaces them under their existing labels.
-  life_history = feed_path("life_history"),
-  brain_mass = feed_path("brain_mass"),
-  brain_size = feed_path("brain_size"),
-  behaviour  = feed_path("behaviour"),
-  cerebellar = feed_path("cerebellar"),
-  # 2026-11-19: postcranial anatomy, hand use and limb function. Only the numeric, extant,
-  # species-level table is served; specimen, fossil, record-level and categorical tables stay in the
-  # merge folder. Same long schema as std_merge(); methods are separate Measure names, never pooled.
-  postcranial = feed_path("postcranial"),
-  cmr        = feed_path("cmr"),
-  ecv        = feed_path("ecv"),
-  gli        = feed_path("gli"),
-  cortical_areas  = feed_path("cortical_areas"),
-  cortical_layers = feed_path("cortical_layers"),
-  cell_morphology = feed_path("cell_morphology"),
-  # 2026-11-04: cells counted in tissue sections (design-based stereology first;
-  # model-based profile counts kept but off by default). Same long schema as
-  # cell_morphology, read by std_cell_morphology(). Every label carries its
-  # counting method, e.g. "[stereology]", so it never averages with the
-  # isotropic-fractionator values under "Cell counts". Which sources come in is
-  # set by _keys/cell_count_methods/source_methods.csv; see
-  # __merging_cell_counts_histology/README__merging.md.
-  cell_counts_histology = feed_path("cell_counts_histology"),
-  fossil_bgu = feed_path("fossil_bgu"),
-  gyrification = feed_path("gyrification"),
-  sensory    = feed_path("sensory"),
-  weights    = feed_path("weights"),
-  # 2026-10-15: mapping-driven merge of built public tables no other merge
-  # consumed (PanTHERIA life history/ecology, deSousa 2022 acuity compilation,
-  # Boyer & Harrington 2019 blood flow, Navarrete 2016 innovation, ...). Same
-  # schema as the std_merge() merges; see __merging_supplementary/README__merging.md.
-  supplementary = feed_path("supplementary"),
+  compiled   = "__compiled/compiled_long.csv.gz",
   manifest   = "__ShinyApp/data/source_manifest.csv",
   cohorts    = "_keys/species_cohorts.csv",
-  # read-time wild/domestic pooling keys (no merge reads them; see _keys/README_species_pooling.md)
-  pooling    = "_keys/species_pooling.csv",
-  population = "_keys/population_status.csv"
+  # read-time wild/domestic pooling key (no merge reads it; see _keys/README_species_pooling.md)
+  pooling    = "_keys/species_pooling.csv"
 )
 SRC_DIR <- "__Public/comparative-data/"  # source tables (fetched on demand)
 
@@ -260,404 +194,38 @@ if (!is.null(cohorts)) {
   cohorts <- cohorts[nzchar(cohorts$species_sci), , drop = FALSE]
 }
 
-# ---- Load & harmonize compiled data (once, at startup) ----------------------
-
-load_compiled <- function() {
-  # Some merges retain richer provenance than others. Never discard those
-  # columns merely to make their schemas line up.
-  bind_compiled <- function(...) {
-    frames <- list(...)
-    cols <- unique(unlist(lapply(frames, names)))
-    do.call(rbind, lapply(frames, function(d) {
-      for (cl in setdiff(cols, names(d))) d[[cl]] <- rep("", nrow(d))
-      d[cols]
-    }))
+# ---- The compiled table (one file, read once at startup) ---------------------
+# `compiled` used to be assembled here from 26 merge files by load_compiled().
+# That loader now lives, unchanged, in __compiled/build_compiled.R, which writes
+# the table to __compiled/compiled_long.csv.gz; build_data.R runs it. The app
+# reads the 14 columns it has always had. The file's two further columns
+# (domain, measure_class) are for other readers: the app goes on classifying
+# labels from _keys/variable_definitions.csv below, so a key edit shows without
+# a rebuild.
+COMPILED_COLS <- c(Species = "character", Dataset = "character", Variable = "character",
+                   Value = "character", Value_num = "numeric", Source = "character",
+                   Items = "character", Source_details = "character", Teams = "character",
+                   N_sources = "integer", Variable_raw = "character", Unit = "character",
+                   Unit_raw = "character", population_verdict = "character")
+# `x` is a path or, from GitHub, a URL. The file is gzip: a path opens as it is,
+# a URL is fetched to a temporary file first (read.csv cannot unzip a URL).
+read_compiled <- function(x) {
+  if (grepl("^(https?|ftp|file)://", x)) {
+    tmp <- tempfile(fileext = ".csv.gz"); on.exit(unlink(tmp))
+    utils::download.file(x, tmp, mode = "wb", quiet = TRUE)
+    x <- tmp
   }
-  field <- function(d, name) if (name %in% names(d)) as.character(d[[name]]) else rep("", nrow(d))
-  # Value is kept as text (so categorical traits like Diet are shown as-is);
-  # Value_num is the numeric parse used for plotting.
-  std <- function(gh_rel, local, dataset, source_col, n_col = NULL) {
-    d <- read_csv_gh(gh_rel, local)
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = d$Variable,
-      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-      Source = d[[source_col]],
-      Items = if ("Sources" %in% names(d)) field(d, "Sources") else field(d, source_col),
-      Source_details = field(d, "Source_detail"),
-      Teams = as.character(d[[source_col]]),
-      N_sources = if (!is.null(n_col)) suppressWarnings(as.integer(d[[n_col]])) else NA_integer_,
-      Variable_raw = d$Variable, Unit = NA_character_, Unit_raw = NA_character_,
-      stringsAsFactors = FALSE)
-  }
-  # A merge long file has Measure/Units/Value/n_sources/Teams (no Variable/Source).
-  std_merge <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    # Unresolved mixed-basis records belong in the review table, including when
-    # an older merge is loaded. No species has an approved ambiguous fallback.
-    if (dataset == "Brain mass") {
-      d <- d[d$Measure != "Brain_Mass_mass_or_volume", , drop = FALSE]
-      d$Measure[d$Measure == "Brain_Mass_from_volume_or_ecv"] <- "Brain_Mass_estimated_from_volume"
-      reports <- read_csv_gh("__merging_brain_mass/brain_mass_unfiltered.csv",
-                             file.path(data_dir, "brain_mass_unfiltered.csv"))
-      d$items <- brain_mass_items(d, reports)
-    }
-    lab <- paste0(d$Measure, " (", d$Units, ")")
-    provenance <- paste0("EvoM1 ", tolower(d$Measure), " merge (", d$n_sources, " sources)")
-    if (dataset == "Combined brain size") {
-      provenance <- paste0("Pooled brain size; ", d$n_sources, " contributing reports; ",
-                           d$n_teams, " source teams; ", d$reports_with_unknown_n,
-                           " reports with unknown sample size")
-      d$measurement_method <- paste(d$measurement_method, d$weighting, d$conversion, sep = "; ")
-    }
-    if (dataset == "Brain mass" && all(c("selected_measure", "measurement_method") %in% names(d))) {
-      selected <- d$Measure == "Brain mass (measured or estimated from volume)"
-      provenance[selected] <- paste0("Selected ", d$measurement_method[selected],
-                                    "; ", d$selected_measure[selected],
-                                    " (", d$n_sources[selected], " source reports)")
-    }
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-      Source = provenance,
-      Items = field(d, "items"),
-      Source_details = if ("measurement_method" %in% names(d)) field(d, "measurement_method") else field(d, "roles"),
-      Teams = as.character(d$Teams),
-      N_sources = suppressWarnings(as.integer(d$n_sources)),
-      Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
-      stringsAsFactors = FALSE)
-  }
-
-  # Life-history merge (Hayssen-based, plus the paper tables folded in by
-  # PR #97). Its Measure/Units strings are terse (gestation_d / d), so a plain
-  # std_merge() would mint new labels and strand the canonical supersede rows
-  # and domain keys written against the long-standing labels. Surface ONLY the
-  # five measures the old body_ecology merge carried, relabelled onto those
-  # labels and units; the merge's other measures stay out of the app, as they
-  # always have. Values are already in days / counts / years.
-  std_life_history <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    lab_map <- c(gestation_d = "Gestation (days)",
-                 weaning_age_d = "Weaning_age (days)",
-                 litter_size_n = "Litter_size (count)",
-                 maximum_longevity_y = "Maximum_longevity (yr)",
-                 female_maturity_age_d = "Female_sexual_maturity (days)")
-    unit_map <- c("Gestation (days)" = "days", "Weaning_age (days)" = "days",
-                  "Litter_size (count)" = "count",
-                  "Maximum_longevity (yr)" = "yr",
-                  "Female_sexual_maturity (days)" = "days")
-    d <- d[d$Measure %in% names(lab_map), , drop = FALSE]
-    lab <- unname(lab_map[d$Measure])
-    unit <- unname(unit_map[lab])
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-      Source = paste0("EvoM1 life history merge (", d$n_sources, " sources)"),
-      Items = field(d, "items"),
-      Source_details = field(d, "roles"),
-      Teams = as.character(d$Teams),
-      N_sources = suppressWarnings(as.integer(d$n_sources)),
-      Variable_raw = lab, Unit = unit, Unit_raw = unit,
-      stringsAsFactors = FALSE)
-  }
-
-  # The cerebral-metabolic-rate merge is keyed Species x REGION x Measure, so its
-  # label has to carry the region: "Neocortex_CMRgl", "Whole_brain_CMRO2". It also
-  # names its provenance columns differently from the other merges (n_studies /
-  # Compilations, because its sources are compilations resolved down to
-  # primary-study level), hence its own loader rather than std_merge().
-  std_cmr <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    lab <- paste0(d$Region, "_", d$Measure, " (", d$Units, ")")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-      Source = paste0("EvoM1 cerebral metabolic rate merge (", d$n_studies,
-                      " primary studies; ", d$Compilations, ")"),
-      Items = field(d, "Compilations_used"),
-      Source_details = field(d, "Primary_references"),
-      Teams = as.character(d$Compilations),
-      N_sources = suppressWarnings(as.integer(d$n_studies)),
-      Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
-      stringsAsFactors = FALSE)
-  }
-
-  # ---- 2026-09-22: seven merges built but never wired into the app ----------
-  # Each has a schema that does not match std()/std_merge()/std_cmr(), so each
-  # gets its own small loader, following the same output-shape contract
-  # (Species, Dataset, Variable, Value, Value_num, Source, Teams, N_sources,
-  # Variable_raw, Unit, Unit_raw). `Teams` is the merge row's provenance tokens
-  # (its Teams / Sources / source column, ";"-separated), kept verbatim so the
-  # read-time pooling layer below can look each token up in population_status.csv.
-
-  # Cytoarchitectonic grey-level index (GLI): Species x area x cortical stratum.
-  std_gli <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    lab <- paste0("GLI_", d$area_as_published, "_", d$stratum, " (%)")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$GLI_pct), Value_num = suppressWarnings(as.numeric(d$GLI_pct)),
-      Source = d$source,
-      Teams = as.character(d$source),
-      N_sources = suppressWarnings(as.integer(d$n_specimens)),
-      Variable_raw = lab, Unit = "%", Unit_raw = "%",
-      stringsAsFactors = FALSE)
-  }
-
-  # Cortical-area count / surface / thickness / folding-index merge. `status`
-  # marks rows superseded by a later source or held pending an unresolved
-  # check (e.g. Finlay 2006 vs Project Kaskan) -- only "active" rows are shown.
-  std_cortical_areas <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    d <- d[!is.na(d$status) & d$status == "active", ]
-    lab <- d$Standardized_Term
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$value), Value_num = suppressWarnings(as.numeric(d$value)),
-      Source = d$source,
-      Teams = as.character(d$source),
-      N_sources = NA_integer_,
-      Variable_raw = lab, Unit = NA_character_, Unit_raw = NA_character_,
-      stringsAsFactors = FALSE)
-  }
-
-  # M1 cortical-layer thickness. `merge_default` marks the one row per
-  # species/layer/measure meant for cross-species use when a source offers
-  # more than one observation level (individual vs species summary, etc.).
-  std_cortical_layers <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    d <- d[!is.na(d$merge_default) & d$merge_default & !is.na(d$value), ]
-    meas <- ifelse(d$measure == "absolute thickness", "Thickness_abs", "Thickness_prop")
-    layer <- gsub("[^A-Za-z0-9]+", "_", d$layer)
-    lab <- paste0("M1_Layer", layer, "_", meas, " (", d$unit, ")")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$value), Value_num = suppressWarnings(as.numeric(d$value)),
-      Source = d$source,
-      Teams = as.character(d$source),
-      N_sources = NA_integer_,
-      Variable_raw = lab, Unit = d$unit, Unit_raw = d$unit,
-      stringsAsFactors = FALSE)
-  }
-
-  # Cell type x soma size x dendritic / spine morphology (soma volume, dendritic
-  # length, spine density, VEN counts, interlaminar astrocytes, ...). The merge is
-  # long over species x region x layer x cell_type x measure x statistic and is
-  # never pooled across methods (a Golgi soma AREA and a nucleator soma AREA are
-  # different quantities), so the merge itself supplies `variable_label` =
-  # region_cellType_measure[_variant] [method_class]; the app only appends the
-  # unit. Rows kept: merge_default (drops values already merged from their own
-  # table, e.g. Elston 2006 footnote-t re-reports), central statistics only
-  # (mean / estimate / value / category -- never sd, sem, min, max, cv, ce),
-  # species-level taxa (Hylobates sp. stays out). Individual-level rows
-  # (Armstrong 1979 specimens, Hakeem 2009 hemispheres) are kept because no
-  # species summary exists for them; the plot's per-species mean averages them.
-  # Categorical values (Falcone ILA presence) keep Value as text, Value_num NA.
-  # See __merging_cell_morphology/README__merging.md.
-  std_cell_morphology <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    d <- d[!is.na(d$merge_default) & d$merge_default &
-             d$statistic %in% c("mean", "estimate", "value", "category") &
-             !is.na(d$taxon_level) & d$taxon_level == "species", ]
-    val <- ifelse(!is.na(d$value), as.character(d$value), as.character(d$value_text))
-    d <- d[!is.na(val) & nzchar(val), ]; val <- val[!is.na(val) & nzchar(val)]
-    lab <- paste0(d$variable_label, " (", d$unit, ")")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = val, Value_num = suppressWarnings(as.numeric(d$value)),
-      Source = d$source,
-      Teams = as.character(d$source),
-      N_sources = NA_integer_,
-      Variable_raw = lab, Unit = d$unit, Unit_raw = d$unit,
-      stringsAsFactors = FALSE)
-  }
-
-  # Fossil-hominin whole-brain glucose utilization (BGU): per specimen, per
-  # estimator team -- rows are NOT averaged across teams, so each team's
-  # estimate (and its modern-human-relative ratio) shows as its own point.
-  std_fossil_bgu <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    lab_bgu   <- paste0("Fossil_", d$Measure, " (", d$Units, ") - ", d$Team)
-    lab_ratio <- paste0("Fossil_", d$Measure, "_Ratio_MH - ", d$Team)
-    rbind(
-      data.frame(
-        Species = d$Species, Dataset = dataset, Variable = lab_bgu,
-        Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-        Source = d$Source, Teams = as.character(d$Source), N_sources = NA_integer_,
-        Variable_raw = lab_bgu, Unit = d$Units, Unit_raw = d$Units,
-        stringsAsFactors = FALSE),
-      data.frame(
-        Species = d$Species, Dataset = dataset, Variable = lab_ratio,
-        Value = as.character(d$Ratio_MH), Value_num = suppressWarnings(as.numeric(d$Ratio_MH)),
-        Source = d$Source, Teams = as.character(d$Source), N_sources = NA_integer_,
-        Variable_raw = lab_ratio, Unit = "ratio to modern human", Unit_raw = "ratio",
-        stringsAsFactors = FALSE)
-    )
-  }
-
-  # Zilles-method gyrification index (GI). Supersedes the raw Lewitus et al.
-  # 2014 "GI" column in EvoM1 traits via variable_canonical.csv (broader
-  # source coverage; see __merging_gyrification/README__merging.md).
-  std_gyrification <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = "GI",
-      Value = as.character(d$GI), Value_num = suppressWarnings(as.numeric(d$GI)),
-      Source = d$source,
-      Teams = as.character(d$source),
-      N_sources = NA_integer_,
-      Variable_raw = "GI", Unit = "ratio", Unit_raw = "ratio",
-      stringsAsFactors = FALSE)
-  }
-
-  # Sensory psychophysics (percepts only -- see README__merging.md for what is
-  # deliberately excluded). Shape matches std_merge() except for its
-  # provenance columns (n_studies / Sources instead of n_sources / Teams).
-  std_sensory <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    # Measure names here already carry the unit as a dot suffix (Visual_acuity.cdeg,
-    # Audible_freq_high_60dB.kHz, ...) -- unlike other merges' bare Measure names, so
-    # do NOT also append " (Units)" or the unit shows twice.
-    lab <- d$Measure
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-      Source = ifelse(!is.na(d$Sources) & nzchar(d$Sources), d$Sources,
-                      paste0("EvoM1 sensory merge (", d$n_studies, " studies)")),
-      Teams = as.character(d$Sources),
-      N_sources = suppressWarnings(as.integer(d$n_studies)),
-      Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
-      stringsAsFactors = FALSE)
-  }
-
-  # Brain-part (sub-regional) wet mass. Rows with no canonical_structure yet
-  # assigned (see mapping_gap) are dropped rather than shown as blank labels.
-  std_weights <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    d <- d[!is.na(d$canonical_structure) & nzchar(trimws(d$canonical_structure)), ]
-    lab <- paste0(d$canonical_structure, "_Mass (g)")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$mass_g), Value_num = suppressWarnings(as.numeric(d$mass_g)),
-      Source = ifelse(!is.na(d$citation) & nzchar(d$citation), d$citation, d$source),
-      Teams = as.character(d$source),
-      N_sources = NA_integer_,
-      Variable_raw = lab, Unit = "g", Unit_raw = d$unit_original,
-      stringsAsFactors = FALSE)
-  }
-
-  base <- bind_compiled(
-    std(GH$volumes,    file.path(data_dir, "volumes_long.csv"),
-        "Brain-structure volumes", "Teams", "n_teams"),
-    std(GH$cellcounts, file.path(data_dir, "cell_counts_isotropic_fractionator_long.csv"),
-        "Cell counts", "Source"),
-    std(GH$traits,     file.path(data_dir, "evom1_traits_long.csv"),
-        "EvoM1 traits", "Source")
-  )
-  merges <- bind_compiled(
-    std_merge(GH$taste, file.path(data_dir, "taste_long.csv"), "Taste performance"),
-    std_merge(GH$social_mirror_play, file.path(data_dir, "social_mirror_play_long.csv"), "Social composition, mirror tests & play"),
-    std_merge(GH$claustrum_cerebellar, file.path(data_dir, "claustrum_cerebellar_long.csv"), "Claustrum & cerebellar anatomy"),
-    std_merge(GH$body,       file.path(data_dir, "body_long.csv"), "Body"),
-    std_merge(GH$ecology,    file.path(data_dir, "ecology_long.csv"), "Ecology"),
-    std_life_history(GH$life_history, file.path(data_dir, "life_history_long.csv"), "Life history"),
-    # Brain mass is emitted as PARALLEL variables, one per measurement basis
-    # (measured, excluding olfactory bulbs, or explicitly derived estimates);
-    # unresolved mixed-basis records are held for review. Endocranial volume
-    # retains its own native-volume merge. The explicit combined view below
-    # additionally uses ECV as a proxy under the AnimalTraits density convention.
-    std_merge(GH$brain_mass, file.path(data_dir, "brain_mass_long.csv"),   "Brain mass"),
-    std_merge(GH$brain_size, file.path(data_dir, "brain_size_long.csv"), "Combined brain size"),
-    std_merge(GH$ecv, file.path(data_dir, "endocranial_volume_long.csv"),
-              "Endocranial volume"),
-    std_merge(GH$behaviour,  file.path(data_dir, "behaviour_long.csv"),    "Behaviour"),
-    std_merge(GH$cerebellar, file.path(data_dir, "cerebellar_folding_long.csv"),
-              "Cerebellar folding"),
-    std_merge(GH$postcranial, file.path(data_dir, "postcranial_species_long.csv"),
-              "Postcranial & limb function"),
-    std_cmr(GH$cmr, file.path(data_dir, "cerebral_metabolic_rate_long.csv"),
-            "Cerebral metabolic rate"),
-    std_gli(GH$gli, file.path(data_dir, "GLI_long.csv"),
-            "Grey-level index"),
-    std_cortical_areas(GH$cortical_areas, file.path(data_dir, "cortical_areas_long.csv"),
-            "Cortical areas & surfaces"),
-    std_cortical_layers(GH$cortical_layers, file.path(data_dir, "cortical_layers_m1_long.csv"),
-            "Cortical layer thickness"),
-    std_cell_morphology(GH$cell_morphology, file.path(data_dir, "cell_morphology_long.csv"),
-            "Cell type, size & morphology"),
-    std_cell_morphology(GH$cell_counts_histology,
-            file.path(data_dir, "cell_counts_histology_long.csv"), "Cell counts (histology)"),
-    std_fossil_bgu(GH$fossil_bgu, file.path(data_dir, "fossil_brain_glucose_long.csv"),
-            "Fossil brain glucose"),
-    std_gyrification(GH$gyrification, file.path(data_dir, "gyrification_long.csv"),
-            "Gyrification (GI)"),
-    std_sensory(GH$sensory, file.path(data_dir, "sensory_long.csv"),
-            "Sensory performance"),
-    std_weights(GH$weights, file.path(data_dir, "weights_long.csv"),
-            "Brain-part weights"),
-    # Five PanTHERIA measures reuse the shared labels on purpose (Gestation,
-    # Weaning_age, Litter_size, Maximum_longevity, BMR_wholeanimal: identical
-    # quantities, label_policy = shared in supplementary_sources.csv); the app
-    # pools them like any second source. Everything else is a new label.
-    std_merge(GH$supplementary, file.path(data_dir, "supplementary_long.csv"),
-              "Additional published datasets")
-  )
-
-  # unify species labels everywhere so synonyms line up
-  base$Species   <- unalias(base$Species)
-  merges$Species <- unalias(merges$Species)
-
-  # Supersede raw columns with authoritative compiled labels (compiled-first +
-  # fallback). Coverage is checked across the compiled output already loaded
-  # above, not just the later merge files: brain-structure volumes are loaded as
-  # a base table but are still the canonical source for raw trait-table volumes.
-  if (!is.null(canon) && nrow(canon)) {
-    sup <- canon[!is.na(canon$action) & canon$action == "supersede", ]
-    coverage <- rbind(base, merges)
-    cov <- split(coverage$Species, coverage$Variable)   # species each compiled label covers
-    label_for <- function(v, u) {
-      if (v %in% names(cov)) return(v)
-      lab_unit <- paste0(v, " (", u, ")")
-      if (lab_unit %in% names(cov)) return(lab_unit)
-      lab_unit
-    }
-    keep <- rep(TRUE, nrow(base))
-    for (i in seq_len(nrow(sup))) {
-      lab <- label_for(sup$canonical_variable[i], sup$canonical_unit[i])
-      f   <- suppressWarnings(as.numeric(sup$to_canonical_factor[i])); if (is.na(f)) f <- 1
-      sel <- base$Variable_raw == sup$raw_variable[i]
-      ds  <- trimws(as.character(sup$match_dataset[i]))
-      if (!is.na(ds) && nzchar(ds)) sel <- sel & base$Dataset == ds
-      if (!any(sel)) next
-      conv <- base$Value_num[sel] * f
-      base$Variable[sel]  <- lab
-      base$Unit[sel]      <- sup$canonical_unit[i]; base$Unit_raw[sel] <- sup$raw_unit[i]
-      base$Value_num[sel] <- conv
-      base$Value[sel]     <- ifelse(is.na(conv), base$Value[sel],
-                                    formatC(conv, format = "g", digits = 8))
-      keep[sel] <- !(base$Species[sel] %in% cov[[lab]])   # drop where merge covers it
-    }
-    base <- base[keep, ]
-  }
-
-  out <- bind_compiled(base, merges)
-  for (cl in c("Items", "Source_details")) out[[cl]][is.na(out[[cl]])] <- ""
-  # Lewitus Table S2 defines nominal social-system codes, not quantitative scores.
-  # Preserve source data; decode only this source variable at the app boundary.
-  social_labels <- c(`1` = "Solitary", `2` = "Monogamous",
-                     `3` = "Multi-male", `4` = "Harem")
-  social_rows <- out$Variable == "Social_system" & out$Dataset == "EvoM1 traits"
-  social_values <- trimws(out$Value[social_rows])
-  valid <- is.na(social_values) | social_values %in% c(names(social_labels), unname(social_labels))
-  if (any(!valid)) stop("Unknown Lewitus Social_system code: ",
-                       paste(unique(social_values[!valid]), collapse = ", "))
-  decoded <- unname(social_labels[social_values])
-  out$Value[social_rows] <- ifelse(is.na(decoded), social_values, decoded)
-  out$Value_num[social_rows] <- NA_real_
-  out <- out[!is.na(out$Value) & nzchar(out$Value), ]
-  out[order(out$Species, out$Variable), ]
+  read.csv(x, colClasses = c(COMPILED_COLS, domain = "character", measure_class = "character"),
+           check.names = FALSE, stringsAsFactors = FALSE)
 }
-
-compiled <- load_compiled()
+compiled <- read_gh(GH$compiled, file.path(data_dir, "compiled_long.csv.gz"), read_compiled)
+if (!nrow(compiled) || !all(names(COMPILED_COLS) %in% names(compiled)))
+  stop(GH$compiled, " was read but is not the compiled table: it needs rows and the columns ",
+       paste(names(COMPILED_COLS), collapse = ", "), ". Rebuild it: Rscript __compiled/build_compiled.R")
+compiled <- compiled[names(COMPILED_COLS)]
+# The file is in byte order. load_compiled() ordered rows by species, then
+# variable, in the session's own collation; keep that order (ties as in the file).
+compiled <- compiled[order(compiled$Species, compiled$Variable), ]
 
 # ---- Labels that arrive from more than one dataset ---------------------------
 # A label served by two datasets is two routes to one trait. Some are deliberate
@@ -913,8 +481,6 @@ cov_n <- table(paste(compiled$Species, compiled$Variable, sep = "\r"))
 POOLING_MODES <- c("off", "domestic_evidence", "all")
 pooling_key <- tryCatch(read_csv_gh(GH$pooling, file.path(data_dir, "species_pooling.csv")),
                         error = function(e) NULL)
-population_key <- tryCatch(read_csv_gh(GH$population, file.path(data_dir, "population_status.csv")),
-                           error = function(e) NULL)
 pk <- if (!is.null(pooling_key) && nrow(pooling_key)) {
   p <- pooling_key[trimws(as.character(pooling_key$axis)) == "domestication", , drop = FALSE]
   for (cl in c("pool_id", "member", "relation")) p[[cl]] <- trimws(as.character(p[[cl]]))
@@ -928,7 +494,6 @@ pk <- if (!is.null(pooling_key) && nrow(pooling_key)) {
             paste(names(n_dom)[n_dom != 1L], collapse = ", "))
   p
 } else NULL
-wild_labels <- if (is.null(pk)) character(0) else unique(pk$label[pk$relation == "wild_form"])
 # wild-form partner label(s) of a compiled label that is a domestic form; character(0) otherwise
 pool_wild_of <- function(label) {
   if (is.null(pk)) return(character(0))
@@ -936,30 +501,9 @@ pool_wild_of <- function(label) {
   if (!length(ids)) return(character(0))
   unique(pk$label[pk$relation == "wild_form" & pk$pool_id %in% ids])
 }
-# Row-level population verdict for compiled rows under a wild-form label. A row is
-# one merge cell and may pool several source tokens (compiled$Teams, ";"-separated).
-# Each token is looked up by (label, token). The verdict is domestic if every token
-# is domestic, wild if every token is wild, mixed if any token is domestic or mixed,
-# otherwise unknown -- a token missing from the key counts as unknown.
-row_population <- function(species, teams) {
-  if (is.null(population_key) || !nrow(population_key)) return(rep("unknown", length(species)))
-  pop <- setNames(trimws(as.character(population_key$population)),
-                  paste(unalias(trimws(as.character(population_key$accepted_name))),
-                        trimws(as.character(population_key$source_table)), sep = "\r"))
-  vapply(seq_along(species), function(i) {
-    tk <- if (is.na(teams[i])) character(0) else trimws(strsplit(teams[i], ";", fixed = TRUE)[[1]])
-    tk <- tk[nzchar(tk)]
-    if (!length(tk)) return("unknown")
-    p <- unname(pop[paste(species[i], tk, sep = "\r")]); p[is.na(p)] <- "unknown"
-    if (all(p == "domestic")) "domestic" else if (all(p == "wild")) "wild"
-    else if (any(p %in% c("domestic", "mixed"))) "mixed" else "unknown"
-  }, character(1))
-}
-compiled$population_verdict <- NA_character_
-is_wild_row <- compiled$Species %in% wild_labels
-if (any(is_wild_row))
-  compiled$population_verdict[is_wild_row] <-
-    row_population(compiled$Species[is_wild_row], compiled$Teams[is_wild_row])
+# Row-level population verdict for compiled rows under a wild-form label
+# (wild / domestic / mixed / unknown, from _keys/population_status.csv): computed
+# by __compiled/build_compiled.R and read as compiled$population_verdict.
 # Which compiled rows a cohort key `k` (from cohort_species()) may count. Only
 # domestic_evidence filters anything: rows under a wild label that a member ADOPTED
 # count only when their verdict is domestic or mixed. A wild label that is some

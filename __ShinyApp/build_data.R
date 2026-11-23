@@ -5,10 +5,11 @@
 #   * evom1_traits_long.csv  (DERIVED: melted from ____EvoM1_TraitTable/*.xlsx)
 #   * source_manifest.csv    (DERIVED: source-table catalogue + citations)
 #
-# Everything else the app needs is read from its canonical home (_keys/,
-# __merging_*/) over GitHub at runtime -- there are no fallback copies, by
-# design; see section 1 below. Re-run whenever the merge or trait tables
-# change, then commit + push:
+# Everything else the app needs is read from its canonical home over GitHub at
+# runtime -- there are no fallback copies, by design; see section 1 below. The
+# trait values come from ONE file, __compiled/compiled_long.csv.gz, which this
+# script rebuilds as its last step (__compiled/build_compiled.R). Re-run
+# whenever the merge or trait tables change, then commit + push:
 #
 #     Rscript __ShinyApp/build_data.R
 #
@@ -312,4 +313,9 @@ python <- Sys.which("python3")
 if (!nzchar(python)) stop("python3 is required to build the combined brain-size traits.")
 status <- system2(python, shQuote(file.path(repo, "__merging_brain_size", "build_brain_size.py")))
 if (status != 0L) stop("Combined brain-size build failed; no deployment should proceed.")
+# Rebuild the one table both apps read (__compiled/compiled_long.csv.gz), last,
+# so it is built from the trait table and the merges as they now stand.
+status <- system2(file.path(R.home("bin"), "Rscript"),
+                  shQuote(file.path(repo, "__compiled", "build_compiled.R")))
+if (status != 0L) stop("Compiled-table build failed (__compiled/build_compiled.R); no deployment should proceed.")
 message("DONE -> ", out)

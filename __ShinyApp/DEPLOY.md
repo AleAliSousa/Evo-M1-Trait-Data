@@ -236,6 +236,15 @@ The table above lists the two startup files that live in `data/`; every other
 merge and key is read from its canonical folder (`__merging_*/`, `_keys/`) the
 same way.
 
+Which compiled tables the app loads, and where each one is, is listed in
+`_keys/app_feeds.csv` (one row per feed; TraitExplorer reads the same list). The
+app takes every table path from that file at start-up, through the same
+GitHub-or-local route as the tables themselves, so moving or renaming a compiled
+table is an edit to its row plus a `git push`, with no redeploy. If a feed the
+app loads has no `evo_m1_app = TRUE` row, or its file cannot be read, the app
+stops at start-up with an error naming the feed. Push `_keys/app_feeds.csv`
+before (or together with) any `app.R` that reads it.
+
 Because it reads the repo directly, **nothing is duplicated in the app**, and
 updating the data is just a `git push` — no redeploy needed. If GitHub is
 unreachable the app stops with an explicit error rather than falling back to a

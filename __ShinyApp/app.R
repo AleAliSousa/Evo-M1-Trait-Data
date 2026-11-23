@@ -73,6 +73,10 @@ pct <- function(s) {
 # SOURCE = "github": GitHub first, ./data as a fallback.
 read_gh <- function(gh_rel, local, reader, required = TRUE) {
   try_read <- function(x) tryCatch(reader(x), error = function(e) NULL)
+  # If gh_rel is a feed (a row of _keys/app_feeds.csv, read below), say which.
+  feed <- if (exists("app_feeds")) app_feeds$feed[app_feeds$path %in% gh_rel] else character(0)
+  feed <- if (length(feed)) paste0("Feed '", feed[1], "' cannot be read (check its path in ",
+                                   "_keys/app_feeds.csv). ") else ""
   if (SOURCE == "local") {
     in_repo <- file.path(repo_dir, gh_rel)
     if (file.exists(in_repo)) {
@@ -84,7 +88,7 @@ read_gh <- function(gh_rel, local, reader, required = TRUE) {
       if (!is.null(res)) return(res)
     }
     if (required)
-      stop("Could not load ", gh_rel, " from the repo or ./data. ",
+      stop(feed, "Could not load ", gh_rel, " from the repo or ./data. ",
            "Run build_data.R, or set EVOM1_SOURCE=github.")
     return(NULL)
   }
@@ -99,7 +103,7 @@ read_gh <- function(gh_rel, local, reader, required = TRUE) {
     return(try_read(local))
   }
   if (required)
-    stop("Could not load ", gh_rel, " from GitHub (", GH_BASE, ").\n",
+    stop(feed, "Could not load ", gh_rel, " from GitHub (", GH_BASE, ").\n",
          "This app reads one canonical copy of each file and keeps no offline ",
          "fallback for it, so it stops here rather than showing data of ",
          "unknown vintage. Most likely raw.githubusercontent.com is ",
@@ -114,35 +118,56 @@ read_delim_gh <- function(gh_rel, local, required = TRUE) read_gh(gh_rel, local,
   function(x) read.delim(x, stringsAsFactors = FALSE, check.names = FALSE),
   required = required)
 
-# GitHub locations: compiled tables from their canonical repo paths; the two
-# derived tables from the committed build output under __ShinyApp/data.
+# GitHub locations. The compiled tables ("feeds") are named in ONE shared
+# list, _keys/app_feeds.csv, which TraitExplorer reads too; it comes through
+# read_gh() like every other file, so it follows EVOM1_SOURCE. A feed's PATH is
+# in that file and not in this one: to move or rename a compiled table, edit its
+# row. feed_path("x") is the path of feed x; if x has no row there with
+# evo_m1_app = TRUE, start-up stops here and names the feed. A feed whose file
+# cannot be read stops in read_gh(), which names it as well. The Dataset name
+# and the loader of each feed stay in load_compiled() below.
+app_feeds <- read_csv_gh("_keys/app_feeds.csv", file.path(data_dir, "app_feeds.csv"))
+if (!all(c("feed", "path", "evo_m1_app") %in% names(app_feeds)))
+  stop("_keys/app_feeds.csv must have columns: feed, path, evo_m1_app. Found: ",
+       paste(names(app_feeds), collapse = ", "))
+for (cl in c("feed", "path", "evo_m1_app")) app_feeds[[cl]] <- trimws(as.character(app_feeds[[cl]]))
+feed_path <- function(feed) {
+  p <- app_feeds$path[app_feeds$feed == feed & toupper(app_feeds$evo_m1_app) == "TRUE"]
+  p <- p[!is.na(p) & nzchar(p)]
+  if (length(p) != 1L)
+    stop("Feed '", feed, "' is loaded by app.R, but _keys/app_feeds.csv has ", length(p),
+         " row(s) with feed = '", feed, "', evo_m1_app = TRUE and a path; exactly one ",
+         "is needed (source: ", SOURCE, ").")
+  p
+}
+# The two derived tables come from the committed build output under __ShinyApp/data.
 GH <- list(
-  taste = "__merging_sensory/taste_long.csv",
-  social_mirror_play = "__merging_behaviour/social_mirror_play_long.csv",
-  claustrum_cerebellar = "__merging_volumes/claustrum_cerebellar_long.csv",
-  volumes    = "__merging_volumes/volumes_long.csv",
-  cellcounts = "__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_long.csv",
-  traits     = "__ShinyApp/data/evom1_traits_long.csv",
-  body       = "__merging_body/body_long.csv",
-  ecology    = "__merging_ecology/ecology_long.csv",
+  taste = feed_path("taste"),
+  social_mirror_play = feed_path("social_mirror_play"),
+  claustrum_cerebellar = feed_path("claustrum_cerebellar"),
+  volumes    = feed_path("volumes"),
+  cellcounts = feed_path("cellcounts"),
+  traits     = feed_path("traits"),
+  body       = feed_path("body"),
+  ecology    = feed_path("ecology"),
   # 2026-11-22: the five life-history measures that used to ride in
   # body_ecology were folded into the life-history merge (PR #97, Option A);
   # std_life_history() below surfaces them under their existing labels.
-  life_history = "__merging_life_history/life_history_long.csv",
-  brain_mass = "__merging_brain_mass/brain_mass_long.csv",
-  brain_size = "__merging_brain_size/brain_size_long.csv",
-  behaviour  = "__merging_behaviour/behaviour_long.csv",
-  cerebellar = "__merging_cerebellar_folding/cerebellar_folding_long.csv",
+  life_history = feed_path("life_history"),
+  brain_mass = feed_path("brain_mass"),
+  brain_size = feed_path("brain_size"),
+  behaviour  = feed_path("behaviour"),
+  cerebellar = feed_path("cerebellar"),
   # 2026-11-19: postcranial anatomy, hand use and limb function. Only the numeric, extant,
   # species-level table is served; specimen, fossil, record-level and categorical tables stay in the
   # merge folder. Same long schema as std_merge(); methods are separate Measure names, never pooled.
-  postcranial = "__merging_postcranial/postcranial_species_long.csv",
-  cmr        = "__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv",
-  ecv        = "__merging_endocranial_volume/endocranial_volume_long.csv",
-  gli        = "__merging_GLI/GLI_long.csv",
-  cortical_areas  = "__merging_cortical_areas/cortical_areas_long.csv",
-  cortical_layers = "__merging_cortical_layers/cortical_layers_m1_long.csv",
-  cell_morphology = "__merging_cell_morphology/cell_morphology_long.csv",
+  postcranial = feed_path("postcranial"),
+  cmr        = feed_path("cmr"),
+  ecv        = feed_path("ecv"),
+  gli        = feed_path("gli"),
+  cortical_areas  = feed_path("cortical_areas"),
+  cortical_layers = feed_path("cortical_layers"),
+  cell_morphology = feed_path("cell_morphology"),
   # 2026-11-04: cells counted in tissue sections (design-based stereology first;
   # model-based profile counts kept but off by default). Same long schema as
   # cell_morphology, read by std_cell_morphology(). Every label carries its
@@ -150,16 +175,16 @@ GH <- list(
   # isotropic-fractionator values under "Cell counts". Which sources come in is
   # set by _keys/cell_count_methods/source_methods.csv; see
   # __merging_cell_counts_histology/README__merging.md.
-  cell_counts_histology = "__merging_cell_counts_histology/cell_counts_histology_long.csv",
-  fossil_bgu = "__merging_fossil_brain_glucose/fossil_brain_glucose_long.csv",
-  gyrification = "__merging_gyrification/gyrification_long.csv",
-  sensory    = "__merging_sensory/sensory_long.csv",
-  weights    = "__merging_weights/weights_long.csv",
+  cell_counts_histology = feed_path("cell_counts_histology"),
+  fossil_bgu = feed_path("fossil_bgu"),
+  gyrification = feed_path("gyrification"),
+  sensory    = feed_path("sensory"),
+  weights    = feed_path("weights"),
   # 2026-10-15: mapping-driven merge of built public tables no other merge
   # consumed (PanTHERIA life history/ecology, deSousa 2022 acuity compilation,
   # Boyer & Harrington 2019 blood flow, Navarrete 2016 innovation, ...). Same
   # schema as the std_merge() merges; see __merging_supplementary/README__merging.md.
-  supplementary = "__merging_supplementary/supplementary_long.csv",
+  supplementary = feed_path("supplementary"),
   manifest   = "__ShinyApp/data/source_manifest.csv",
   cohorts    = "_keys/species_cohorts.csv",
   # read-time wild/domestic pooling keys (no merge reads them; see _keys/README_species_pooling.md)
@@ -633,6 +658,43 @@ load_compiled <- function() {
 }
 
 compiled <- load_compiled()
+
+# ---- Labels that arrive from more than one dataset ---------------------------
+# A label served by two datasets is two routes to one trait. Some are deliberate
+# (the five PanTHERIA measures above, label_policy = shared); the rest are what
+# the one-route-per-trait migration removes. Start-up RECORDS them and does not
+# stop: 45 labels did this on 2026-11-23. `multi_dataset_labels` has one row per
+# label x dataset (Variable, Dataset, species, rows) for the app to show.
+# To make start-up STOP on any other label, set MULTI_DATASET_ALLOW to the
+# labels that are allowed (a character vector, e.g. the Variable column of an
+# allow-list key in _keys/); NULL = report only.
+MULTI_DATASET_ALLOW <- NULL
+multi_dataset_labels <- local({
+  n_ds <- tapply(compiled$Dataset, compiled$Variable, function(x) length(unique(x)))
+  d <- compiled[compiled$Variable %in% names(n_ds)[n_ds > 1], c("Variable", "Dataset", "Species")]
+  g <- paste(d$Variable, d$Dataset, sep = "\r")
+  one <- !duplicated(g)
+  out <- data.frame(
+    Variable = d$Variable[one], Dataset = d$Dataset[one],
+    species = as.integer(tapply(d$Species, g, function(x) length(unique(x)))[g[one]]),
+    rows = as.integer(table(g)[g[one]]), stringsAsFactors = FALSE)
+  out <- out[order(out$Variable, out$Dataset), ]
+  rownames(out) <- NULL
+  out
+})
+if (nrow(multi_dataset_labels)) {
+  multi_labels <- unique(multi_dataset_labels$Variable)
+  message(sprintf("%d labels arrive from more than one dataset (see multi_dataset_labels).",
+                  length(multi_labels)))
+  message("  ", paste(utils::head(multi_labels, 8), collapse = " | "),
+          if (length(multi_labels) > 8) sprintf(" ... and %d more", length(multi_labels) - 8) else "")
+  multi_new <- if (is.null(MULTI_DATASET_ALLOW)) character(0) else setdiff(multi_labels, MULTI_DATASET_ALLOW)
+  if (length(multi_new))
+    stop("Label(s) served by more than one dataset and not in MULTI_DATASET_ALLOW: ",
+         paste(multi_new, collapse = " | "), ". Datasets: ",
+         paste(unique(multi_dataset_labels$Dataset[multi_dataset_labels$Variable %in% multi_new]),
+               collapse = ", "), ".")
+}
 
 manifest <- read_csv_gh(GH$manifest, file.path(data_dir, "source_manifest.csv"))
 manifest <- manifest[order(manifest$identifier, manifest$table_label), ]

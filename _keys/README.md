@@ -35,6 +35,17 @@ A paper does not need a new team folder merely because it has a new author. Duri
   evidence from the source row. Drives the `domestic_evidence` mode. Seeded by
   `build_population_status.py`; hand edits survive a re-run. `README_population_status.md`.
 
+## App feed list (added 2026-11-23)
+
+- **`app_feeds.csv`** — the one list of compiled tables ("feeds") the two apps load: one row per feed
+  (`feed` = the key used in `__ShinyApp/app.R`, `path` = repo-relative file). `evo_m1_app` = TRUE rows
+  give the Evo-M1 app its table paths (`feed_path()` in `app.R`; start-up stops, naming the feed, if a
+  feed the app loads has no such row or its file cannot be read). `traitexplorer` = TRUE rows are the
+  merge files TraitExplorer loads, in file order, as dataset `te_label` with loader `te_loader`
+  (`load_harmonized_sources()` in its `data_layer.R`). `evo_m1_dataset_label`, `evo_m1_loader`, `status`
+  and `note` are descriptive; neither app reads them. To move or rename a compiled table, edit `path`
+  here and push; no app code changes. Also read by `__merging_trees/build_species_universe.py`.
+
 ## Cross-domain structure references (added 2026-10-07, all rows `drafted`)
 
 Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merge.

@@ -465,8 +465,9 @@ def check():
     if shiny_copy is not None:
         assert shiny_copy == merged
     else:
-        # Current main serves the canonical merge directly from GitHub.
-        assert '"__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv"' in (BASE / "__ShinyApp/app.R").read_text()
+        # Current main serves the canonical merge directly from GitHub; app.R takes
+        # the path from the shared feed list.
+        assert ",__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv,TRUE," in (BASE / "_keys/app_feeds.csv").read_text()
     assert {(row["compilation"], row["issue_type"]) for row in issues} == {
         ("Kaufman__2004", "unresolved_missing_bibliography"),
         ("Kaufman__2004", "secondary_source_without_primary_lineage"),

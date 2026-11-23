@@ -8,8 +8,9 @@ species, so that list became a ceiling: every species added to a merge afterward
 was dropped from PGLS however good its data. This script replaces the ceiling with
 the UNION of
 
-  * every Species label in the tables __ShinyApp/app.R actually loads (the `GH`
-    list is parsed out of app.R, so a table added to the app is picked up here
+  * every Species label in the tables __ShinyApp/app.R actually loads (the rows of
+    _keys/app_feeds.csv with evo_m1_app = TRUE, which is where app.R takes its
+    table paths from, so a table added to the app is picked up here
     without editing this file), after the app's own display aliases
     (_keys/species_display_aliases.csv, variant -> canonical) are applied, and
   * every accepted_name in _keys/species_reference.csv (the curated core).
@@ -30,7 +31,7 @@ Each name gets a `scope`:
 Out-of-scope names are listed, never silently dropped, and are NOT reported as
 "missing from the tree".
 
-INPUT   __ShinyApp/app.R, the tables it names, _keys/species_display_aliases.csv,
+INPUT   _keys/app_feeds.csv, the tables it names, _keys/species_display_aliases.csv,
         _keys/species_taxonomy.csv, _keys/species_reference.csv,
         __merging_trees/reference_tables/mdd_names_extract.csv (genus list only)
 OUTPUT  __merging_trees/species_universe.csv
@@ -92,17 +93,14 @@ def name_form(n):
 
 
 def app_tables():
-    """Relative paths of the long tables app.R loads (its GH <- list(...) block)."""
-    with open(os.path.join(REPO, "__ShinyApp", "app.R"), encoding="utf-8") as f:
-        txt = f.read()
-    m = re.search(r"\nGH\s*<-\s*list\((.*?)\n\)", txt, flags=re.S)
-    if not m:
-        sys.exit("could not find the GH <- list(...) block in __ShinyApp/app.R")
-    body = "\n".join(l for l in m.group(1).split("\n") if not l.strip().startswith("#"))
-    paths = re.findall(r'=\s*"([^"]+_long\.csv)"', body)
+    """Relative paths of the long tables app.R loads (_keys/app_feeds.csv, evo_m1_app = TRUE)."""
+    with open(os.path.join(REPO, "_keys", "app_feeds.csv"), newline="", encoding="utf-8-sig") as f:
+        paths = [r["path"].strip() for r in csv.DictReader(f)
+                 if (r.get("evo_m1_app") or "").strip().upper() == "TRUE"
+                 and (r.get("path") or "").strip().endswith("_long.csv")]
     if len(paths) < 10:
-        sys.exit(f"only {len(paths)} *_long.csv tables parsed from app.R GH list -- "
-                 "the block layout has changed; fix app_tables()")
+        sys.exit(f"only {len(paths)} *_long.csv tables with evo_m1_app = TRUE in _keys/app_feeds.csv -- "
+                 "the feed list has changed; fix app_tables()")
     return paths
 
 
@@ -120,7 +118,7 @@ def main():
     for rel in app_tables():
         path = os.path.join(REPO, rel)
         if not os.path.exists(path):
-            sys.exit(f"app.R names {rel}, which does not exist")
+            sys.exit(f"_keys/app_feeds.csv names {rel}, which does not exist")
         tag = os.path.basename(rel).replace("_long.csv", "")
         with open(path, newline="", encoding="utf-8-sig", errors="replace") as f:
             rd = csv.DictReader(f)

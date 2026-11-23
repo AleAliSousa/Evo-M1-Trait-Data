@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+ape_name,Individual ape name printed in Table 1,,Specimen,,secondary,Apes (Hominoidea),Erbaba_etal_2025,,
+reference_key,Reference number or numbers printed beside the ape name,,Source citation key,,secondary,Apes (Hominoidea),Erbaba_etal_2025,"Multiple keys separated by ;; join to item-scoped references lookup if built",
+species_printed,Common-name species category printed in Table 1,,Species,,secondary,Apes (Hominoidea),Erbaba_etal_2025,Preserved verbatim,
+species_unresolved,Conservative scientific-name mapping from printed common name,,Species,,derived,Apes (Hominoidea),Erbaba_etal_2025,Orangutan retained as Pongo sp. because species is not given,
+sex,Sex coded F or M from printed Female or Male,,Sex,,secondary,Apes (Hominoidea),Erbaba_etal_2025,,
+first_exposure_printed,Age/description of first exposure to signs or symbols as printed,,Age,,secondary,Apes (Hominoidea),Erbaba_etal_2025,,
+first_exposure_age_years,Numeric age in years derived only from explicit weeks/months/years,,Age.years,,derived,Apes (Hominoidea),Erbaba_etal_2025,Infant/Early Age/Adult not inferred,
+language_type,Communication system printed in Table 1,,Language training modality,,secondary,Apes (Hominoidea),Erbaba_etal_2025,,
+age_status_printed,Age at death or current-age statement as printed,,Age/status,,secondary,Apes (Hominoidea),Erbaba_etal_2025,Current ages are publication-time statements,
+source,Repository source token,,Source,,derived,Apes (Hominoidea),Erbaba_etal_2025,,

@@ -1,0 +1,30 @@
+{
+  "tool": "artifact-validator",
+  "schemaVersion": "2.0",
+  "validatorVersion": "3.2.13",
+  "result": "valid",
+  "exitCode": 0,
+  "input": {
+    "path": "/mnt/data/Erbaba_etal_2025/Erbaba_etal_2025_Table1_registry_row.xlsx",
+    "sha256": "5d304cf806cc10da3e59a4a2d25aa192f32c0dbe4703be52ae8956e5b169dfe5",
+    "sizeBytes": 5650,
+    "kind": "xlsx"
+  },
+  "output": null,
+  "backup": null,
+  "repair": {
+    "mode": "compat",
+    "applied": [],
+    "revalidated": false,
+    "status": "not_needed",
+    "outputPublished": false
+  },
+  "packageError": null,
+  "summary": {
+    "errorCount": 0,
+    "warningCount": 0,
+    "repairableCount": 0,
+    "issueCount": 0
+  },
+  "issues": []
+}

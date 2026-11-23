@@ -20,7 +20,7 @@ The 14 columns the app's `compiled` table has, in its order: `Species`, `Dataset
   `_keys/variable_definitions.csv`. A label with no row there is `Unclassified`; a blank class is
   `other`.
 
-`Dataset` names the merge a row came from (26 values). Missing cells are `NA`; text is always
+`Dataset` names the merge a row came from (28 values). Missing cells are `NA`; text is always
 quoted, so an empty string stays distinct from missing. Rows are ordered by `Species`, then
 `Variable`, in byte order; ties stay in feed order.
 
@@ -30,9 +30,15 @@ The feeds listed in `_keys/app_feeds.csv` (rows with `evo_m1_app = TRUE`): that 
 builder's input list. To add, move or drop a merge output, edit its row there and, for a new kind
 of table, add its loader in `build_compiled.R`. A feed the builder loads that has no row, or whose
 file is missing or unreadable, stops the build and names the feed. The builder also reads
-`__merging_brain_mass/brain_mass_unfiltered.csv` and five keys (`variable_canonical.csv`,
+`__merging_brain_mass/brain_mass_unfiltered.csv` and six keys (`variable_canonical.csv`,
 `species_display_aliases.csv`, `species_pooling.csv`, `population_status.csv`,
-`variable_definitions.csv`), and sources `__ShinyApp/explorer.R` for `brain_mass_items()`.
+`variable_definitions.csv`, `label_precedence.csv`), and sources `__ShinyApp/explorer.R` for `brain_mass_items()`.
+
+## One value per label and species
+
+Where two datasets carry the same label for the same species, `_keys/label_precedence.csv` says
+which one is served: one row per label and pair of datasets. The yielding dataset keeps the species
+the winner lacks. A row naming a label or dataset that is not served stops the build.
 
 ## Building
 

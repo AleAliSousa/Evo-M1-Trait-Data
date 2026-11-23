@@ -11,8 +11,8 @@ datasets).
 ## Scope: Heuer 2019 only, kept separate
 
 Heuer 2019's folding measures come from **3-D MRI surface reconstructions**:
-an absolute gyrification index defined as the excess of the cortical surface
-over its volume-normalised convex hull, plus folding length, fold number,
+an absolute gyrification index defined as the ratio between the cerebral surface
+area and the surface area of a sphere of the same volume, plus folding length, fold number,
 fold wavelength (Lambda) and fold depth (Delta).
 
 **Deliberately excluded from every other folding merge (kept completely
@@ -91,9 +91,9 @@ dropped or lumped in this build.
 |---|---|---|
 | `Cerebral_surface_area` | total pial surface, both hemispheres | mm2 |
 | `Cerebral_volume` | cerebral volume, both hemispheres | mm3 |
-| `Absolute_gyrification_index` | 3-D GI: surface excess over volume-normalised convex hull | ratio |
-| `Folding_length` | summed length of the fold curves | mm |
-| `Folding_number` | number of folds | count |
+| `Absolute_gyrification_index` | cerebral surface area / surface area of a sphere of the same volume (Heuer's definition; not the Zilles GI) | ratio |
+| `Folding_length` | total length of the curves dividing sulci from gyri (mean-curvature map) | mm |
+| `Folding_number` | estimated number of sulci (regions of negative mean curvature) | count |
 | `Fold_wavelength` | mean fold wavelength (Lambda) | mm |
 | `Fold_depth` | mean fold depth (Delta) | mm |
 

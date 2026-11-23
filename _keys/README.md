@@ -50,6 +50,8 @@ A paper does not need a new team folder merely because it has a new author. Duri
 
 Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merge.
 
+- **`label_precedence.csv`** — which dataset is served where two datasets carry the same label for the same
+  species (read by `__compiled/build_compiled.R`). One row per label and pair of datasets; owner decisions.
 - **`anatomy_crosswalk.csv`** — one row per concept × domain × term (domains: `volumes`, `cellcounts`,
   `cortical_areas`, `CMR`, `GLI`, `cortical_layers`). `relation` says how the term relates to the concept
   (`same`, `contains`, `part_of`, `overlaps`, …); `link_class` is `direct` or `proxy`; `boundary_basis`

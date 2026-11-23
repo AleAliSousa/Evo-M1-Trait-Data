@@ -25,3 +25,5 @@ gyrification,__merging_gyrification/gyrification_long.csv,TRUE,Gyrification (GI)
 sensory,__merging_sensory/sensory_long.csv,TRUE,Sensory performance,std_sensory,TRUE,Sensory performance,sensory,active,
 weights,__merging_weights/weights_long.csv,TRUE,Brain-part weights,std_weights,TRUE,Brain-part weights,weights,active,
 supplementary,__merging_supplementary/supplementary_long.csv,TRUE,Additional published datasets,std_merge,TRUE,Supplementary sources,merge,active,The two apps name this dataset differently (TraitExplorer still uses the label the Evo-M1 app replaced).
+sleep,__merging_sleep/sleep_long.csv,TRUE,Sleep & torpor,std_sleep,FALSE,,,active,"Added 2026-11-23. The same values were served from the trait table (EvoM1 traits) until then; _keys/variable_canonical.csv now supersedes those columns."
+cerebral_surface_folding,__merging_heuer2019/heuer2019_long.csv,TRUE,Cerebral surface & folding (MRI),std_single_source,FALSE,,,active,"Added 2026-11-23. Heuer et al. 2019: 3-D MRI surface reconstructions of 34 primate species. Its absolute gyrification index is not the Zilles GI of the gyrification feed."

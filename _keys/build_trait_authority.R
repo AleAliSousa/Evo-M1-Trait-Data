@@ -98,7 +98,10 @@ DS <- c(
   ## added 2026-10-31: three app.R std_merge() tables whose long files live in existing merge folders
   "Taste performance"        = "__merging_sensory",
   "Social composition, mirror tests & play" = "__merging_behaviour",
-  "Claustrum & cerebellar anatomy" = "__merging_volumes"
+  "Claustrum & cerebellar anatomy" = "__merging_volumes",
+  ## added 2026-11-23: two merges now served as their own datasets
+  "Sleep & torpor"           = "__merging_sleep",
+  "Cerebral surface & folding (MRI)" = "__merging_heuer2019"
 )
 seen <- unique(compiled$Dataset)
 unmapped <- setdiff(seen, names(DS))

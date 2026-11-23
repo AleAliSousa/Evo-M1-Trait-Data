@@ -136,6 +136,9 @@ GH <- list(
   # Boyer & Harrington 2019 blood flow, Navarrete 2016 innovation, ...). Same
   # schema as the std_merge() merges; see __merging_supplementary/README__merging.md.
   supplementary = feed_path("supplementary"),
+  # 2026-11-23: two merges the apps did not load as datasets before.
+  sleep = feed_path("sleep"),
+  cerebral_surface_folding = feed_path("cerebral_surface_folding"),
   # read-time wild/domestic pooling keys (no merge reads them; see _keys/README_species_pooling.md)
   pooling    = "_keys/species_pooling.csv",
   population = "_keys/population_status.csv"
@@ -161,6 +164,13 @@ unalias <- function(sp) {
 }
 if (is.null(canon) || is.null(aliases))
   stop("_keys/variable_canonical.csv and _keys/species_display_aliases.csv are both needed.", call. = FALSE)
+
+# Which dataset is served where two datasets carry the same label for the same
+# species: one row per label and pair of datasets, decided by the owner.
+precedence <- read_csv_gh("_keys/label_precedence.csv", file.path(data_dir, "label_precedence.csv"))
+if (!all(c("variable", "winning_dataset", "yielding_dataset") %in% names(precedence)))
+  stop("_keys/label_precedence.csv must have columns: variable, winning_dataset, yielding_dataset.", call. = FALSE)
+for (cl in c("variable", "winning_dataset", "yielding_dataset")) precedence[[cl]] <- trimws(as.character(precedence[[cl]]))
 
 # ---- Load & harmonize compiled data (moved from app.R) -----------------------
 
@@ -411,6 +421,45 @@ load_compiled <- function() {
       stringsAsFactors = FALSE)
   }
 
+  # Sleep & torpor merge. Its terms are the labels the trait table has always
+  # used (REM_sleep_pct, Torpor_type ...), so the labels, their definitions and
+  # their domain rows carry over unchanged; _keys/variable_canonical.csv
+  # supersedes the trait-table columns that held the same values.
+  std_sleep <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = d$Standardized_Term,
+      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
+      Source = d$source,
+      Items = field(d, "source"),
+      Source_details = field(d, "ref"),
+      Teams = as.character(d$team),
+      N_sources = 1L,
+      Variable_raw = d$Standardized_Term,
+      Unit = ifelse(grepl("|", d$Units, fixed = TRUE), "category", d$Units), Unit_raw = d$Units,
+      stringsAsFactors = FALSE)
+  }
+
+  # A merge with one source per value: Measure/Units/Value plus the number of
+  # specimens and their range (no n_sources/Teams columns). Used for the
+  # Heuer et al. 2019 MRI surface measures; its Absolute_gyrification_index is
+  # a surface-to-sphere ratio and is never relabelled to, or pooled with, GI.
+  std_single_source <- function(gh_rel, local, dataset) {
+    d <- read_csv_gh(gh_rel, local)
+    lab <- paste0(d$Measure, " (", d$Units, ")")
+    data.frame(
+      Species = d$Species, Dataset = dataset, Variable = lab,
+      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
+      Source = d$source,
+      Items = field(d, "source"),
+      Source_details = paste0("species mean of ", d$n_specimens, " specimen(s); range ",
+                              d$value_min, " to ", d$value_max),
+      Teams = as.character(d$source),
+      N_sources = 1L,
+      Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
+      stringsAsFactors = FALSE)
+  }
+
   # Sensory psychophysics (percepts only -- see README__merging.md for what is
   # deliberately excluded). Shape matches std_merge() except for its
   # provenance columns (n_studies / Sources instead of n_sources / Teams).
@@ -496,6 +545,9 @@ load_compiled <- function() {
             "Sensory performance"),
     std_weights(GH$weights, file.path(data_dir, "weights_long.csv"),
             "Brain-part weights"),
+    std_sleep(GH$sleep, file.path(data_dir, "sleep_long.csv"), "Sleep & torpor"),
+    std_single_source(GH$cerebral_surface_folding, file.path(data_dir, "heuer2019_long.csv"),
+            "Cerebral surface & folding (MRI)"),
     # Five PanTHERIA measures reuse the shared labels on purpose (Gestation,
     # Weaning_age, Litter_size, Maximum_longevity, BMR_wholeanimal: identical
     # quantities, label_policy = shared in supplementary_sources.csv); the app
@@ -556,6 +608,23 @@ load_compiled <- function() {
   out$Value[social_rows] <- ifelse(is.na(decoded), social_values, decoded)
   out$Value_num[social_rows] <- NA_real_
   out <- out[!is.na(out$Value) & nzchar(out$Value), ]
+  # Label precedence (_keys/label_precedence.csv): where the winning dataset has
+  # a species for the label, the yielding dataset's row for it is not served.
+  # A species only the yielding dataset has keeps its row. Applied after empty
+  # values are removed, so an empty cell never wins.
+  yield <- rep(FALSE, nrow(out))
+  for (i in seq_len(nrow(precedence))) {
+    v <- precedence$variable[i]
+    win <- out$Variable == v & out$Dataset == precedence$winning_dataset[i]
+    los <- out$Variable == v & out$Dataset == precedence$yielding_dataset[i]
+    if (!any(win) || !any(los))
+      stop("_keys/label_precedence.csv row ", i, " (", v, "): ",
+           if (!any(win)) precedence$winning_dataset[i] else precedence$yielding_dataset[i],
+           " serves no such label. Correct or remove the row.", call. = FALSE)
+    yield <- yield | (los & out$Species %in% out$Species[win])
+  }
+  message("label precedence: ", sum(yield), " row(s) not served because another dataset wins")
+  out <- out[!yield, ]
   out[order(out$Species, out$Variable), ]
 }
 

@@ -26,13 +26,13 @@ Toro, R. (2019). *Evolution of neocortical folding: a phylogenetic comparative a
 Owner decision (2026-07-31), confirmed against the paper's methods. The gyrification merge pools
 **only the Zilles-method GI** — a **2-D** ratio on coronal sections (inner+buried pial contour ÷ outer
 contour) — and deliberately excludes other folding constructs (e.g. Mota & Herculano-Houzel FI).
-**Heuer 2019 uses a different method:** a **3-D** absolute gyrification index (the "excess" of the
-cortical surface over its volume-normalised convex hull) plus folding length / wavelength / depth —
+**Heuer 2019 uses a different method:** a **3-D** absolute gyrification index (the ratio between the cerebral
+surface area and the surface area of a sphere of the same volume) plus folding length / wavelength / depth —
 metrics the Zilles coronal method does not produce. The paper itself presents these as an
 *alternative* to the classical Zilles GI. So:
 
 - **Do not reconcile to, or pool with, the Zilles GI merge.** Even Heuer's "gyrification index" is the
-  3-D convex-hull variant, not the Zilles coronal-contour GI — not interchangeable.
+  3-D surface-to-sphere ratio, not the Zilles coronal-contour GI — not interchangeable.
 - **House it here** as its own MRI folding source (exactly as Mota FI lives in its own folder).
 - Its **cerebral / convex-hull surface-area** columns belong with cortical-surface data
   (`__merging_cortical_areas`) if ever merged — same rule the GI README applies to Mota — **not** the

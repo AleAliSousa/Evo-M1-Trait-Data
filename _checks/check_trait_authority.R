@@ -92,6 +92,7 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "Cell type, size & morphology"="__merging_cell_morphology",  # added 2026-09-27
         "Supplementary sources"="__merging_supplementary",
         "Additional published datasets"="__merging_supplementary",
+        "Sleep & torpor"="__merging_sleep","Cerebral surface & folding (MRI)"="__merging_heuer2019",  # added 2026-11-23
         "Taste performance"="__merging_sensory",
         "Social composition, mirror tests & play"="__merging_behaviour",
         "Claustrum & cerebellar anatomy"="__merging_volumes")

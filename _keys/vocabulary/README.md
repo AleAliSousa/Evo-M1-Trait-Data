@@ -1,0 +1,78 @@
+# Vocabulary links
+
+Links from this database's own terms to published vocabularies.
+
+**Status.** Accepted as a set by the owner on 23 November 2026, to get started. The less certain
+links stay marked by `relation` and `confidence`; one link was rejected on review. Nothing reads
+these files yet.
+
+| File | What it is |
+|---|---|
+| `vocabulary_links.csv` | 1,362 rows: one per project term and ontology term. `relation` says how the two relate, `reason` says why, `mapping_status` is `accepted` or `rejected`. |
+| `vocabulary_term_labels.csv` | Which variable labels use which project term, so a link can be followed to the labels it describes. |
+| `units_variants.csv` | Unit spellings that denote the same unit (for example `%`, `pct`, `percent`). Nothing was changed. |
+| `notes/` | One note per slice: what was mapped, the least certain choices, what to look at first. |
+
+## What was mapped
+
+Best accepted relation per project term (885 terms):
+
+| Slice | Terms and vocabularies | Terms | exact | close | narrow | broad | related | none |
+|---|---|---|---|---|---|---|---|---|
+| Anatomy | canonical structures → Uberon | 224 | 113 | 70 | 19 | 20 | 1 | 1 |
+| Behaviour | behaviour and sensory traits and measure classes → NBO, VT, OBA, GO, Uberon | 204 | 0 | 13 | 6 | 81 | 37 | 67 |
+| Life history | life history, diet, ecology, body, physiology traits; measure classes; the 11 domains → VT, OBA, ENVO, PATO, ECOCORE | 139 | 26 | 22 | 3 | 15 | 42 | 31 |
+| Cells | cell types, molecules, processes, measured quantities → CL, PR, ChEBI, GO, OBA, PATO | 118 | 18 | 20 | 3 | 62 | 8 | 7 |
+| Units | units → UO; measure classes and measure codes → PATO, OBA | 200 | 36 | 35 | 4 | 68 | 36 | 21 |
+| **All** | | **885** | **193** | **160** | **35** | **246** | **124** | **127** |
+
+- `exact`: the definitions agree. `close`: nearly, with the difference stated. `broad`: the ontology
+  term is wider than ours. `narrow`: it is narrower. `related`: connected but not the same kind of
+  thing (for example our term is a measurement of the ontology's entity). `none`: nothing adequate found.
+- No single published scheme reproduces the eleven domains. The Vertebrate Trait Ontology's upper
+  classes come closest for seven of them (close, narrow or broad); `life history` has a close term
+  in ECOCORE; `diet` and `ecology & ranging` have only related terms; `dataset metadata` has none.
+
+## Rules applied on review
+
+1. **Brodmann areas.** Uberon's `Brodmann (1909) area N` classes are cytoarchitectonic areas of
+   Brodmann's primate maps (areas 4 and 25, for example, carry the synonym "area N of Brodmann (guenon)"). A project
+   term is linked to one as `exact` or `close` only where its sources delineate or name that area
+   in primates. A region defined by position or function gets its positional or functional Uberon
+   term, and a Brodmann number at most as `related`. Applied to `M1` (59 species in 9 orders;
+   exact link is primary motor cortex) and `V1` (56 species in 11 orders; exact link is primary
+   visual cortex): their Brodmann links were lowered from `close` to `related`.
+2. **`ACC_subgenual` and Brodmann area 25: rejected.** The values are von Economo neuron counts in
+   two dolphins from Butti et al. 2009, Table 5. The paper lists SUBG ("subgenual cortex") as a
+   region of interest by position, separate from ACC, and never names a Brodmann area. The link to
+   the anterior cingulate cortex was lowered to `related`, because the paper does not say SUBG is
+   part of it; that reading comes from the project's own name for the region.
+3. **Glossary codes that no label uses.** Seventeen measure codes are defined in
+   `_keys/glossary.csv` for source tables that are not served (for example `C.p.g`, cells per gram,
+   from Seelke et al. 2014). They were mapped because the glossary defines them; `n_labels` is 0
+   and `example_label` says so.
+
+## How it was made
+
+- Five automated passes, one per slice, on 23 November 2026, against the EBI Ontology Lookup
+  Service (OLS4). Every identifier was taken from an OLS response and fetched again by id.
+- All 560 distinct identifiers were then fetched once more in a separate check: all exist, none is
+  obsolete, and every stored label equals the label OLS returns. That check covers the identifiers,
+  not whether each match is right.
+- Ontology versions are in the `ontology_version` column.
+
+## Limits
+
+- The matches rest on this repository's definitions, glossary and READMEs. Only the source paper of
+  the one link queried on review was opened.
+- Trait labels were grouped into terms by rule (source suffixes, months, conditions removed):
+  308 behaviour and sensory labels became 194 terms, 212 life-history, ecology and body labels
+  became 119. `vocabulary_term_labels.csv` lists the grouping.
+- `none` means not found within the search depth used (the top hits per query in the named
+  vocabularies), not that no term exists anywhere.
+- 21 cortical-layer rows were generated by rule. Values of categorical variables, method tags
+  (Golgi, Nissl, stereology), antibodies and 35 glossary acronyms were not mapped.
+- Four of the five passes read the keys before the seven Heuer et al. 2019 labels were added on
+  the same day, so label counts (`n_labels`) for their terms do not include those labels.
+- Acceptance was given for the set, not link by link. A link can be changed at any time: edit
+  `relation`, `mapping_status` and `reason`, and date the change in `review_date`.

@@ -1,0 +1,38 @@
+variant_group,group_status,unit_string,n_labels,example_label,uo_id,uo_label,uo_component_ids,uo_component_labels,note
+percent,same unit,%,84,Feeding_share_of_active_period_Chivers1984 (%),UO:0000187,percent,,,Three spellings of percent.
+percent,same unit,pct,13,A1_Surface_Area.pct_Neocortex,UO:0000187,percent,,,Three spellings of percent.
+percent,same unit,percent,75,Angular_utilization_index_FL (percent),UO:0000187,percent,,,Three spellings of percent.
+day,same unit,d,2,Breeding_season.d (d),UO:0000033,day,,,
+day,same unit,days,20,Age_at_eye_opening_days,UO:0000033,day,,,
+year,same unit,yr,2,Maximum_lifespan_yrs,UO:0000036,year,,,
+year,same unit,years,1,Juvenility_primates_years,UO:0000036,year,,,
+hour per day,same unit,h/day,2,Sleep_Campbell1984 (h/day),,,UO:0000032; UO:0000033,hour; day,"min/day is the same dimension at 1/60 the magnitude (convertible, not identical)."
+hour per day,same unit,hours/day,3,NREM_duration_Nunn2018 (hours/day),,,UO:0000032; UO:0000033,hour; day,"min/day is the same dimension at 1/60 the magnitude (convertible, not identical)."
+degree of angle,same unit,deg,5,Sound_localization_threshold.deg,UO:0000185,degree,,,"'degrees' is used for latitude (a coordinate), 'deg' for measured angles."
+degree of angle,same unit,degrees,1,Midrange_latitude_Kamilar2013 (degrees),UO:0000185,degree,,,"'degrees' is used for latitude (a coordinate), 'deg' for measured angles."
+count,same unit,count,220,Behavioural_repertoire_size (count),UO:0000189,count unit,,,'N' is used for numbers of adult females / males.
+count,same unit,N,2,Adult_females.N (N),UO:0000189,count unit,,,'N' is used for numbers of adult females / males.
+count of a named thing,"same unit, counted entity differs",articles,2,Journal_search_article_count (articles),UO:0000189,count unit,,,All are counts; the unit string names what is counted (or a per-subject mean). Not interchangeable as variables.
+count of a named thing,"same unit, counted entity differs",reports,7,Extractive_foraging_reduced_report_count (reports),UO:0000189,count unit,,,All are counts; the unit string names what is counted (or a per-subject mean). Not interchangeable as variables.
+count of a named thing,"same unit, counted entity differs",intersections,3,occipital_pyramidal_L3_peak_branching_complexity [LYinj] (intersections),UO:0000189,count unit,,,All are counts; the unit string names what is counted (or a per-subject mean). Not interchangeable as variables.
+count of a named thing,"same unit, counted entity differs",mean count/subject,14,Mirror_Directing_the_hindquarter_to_the_mirror_and_looking_behind_toward_the_mirror_Chang2017_control (mean count/subject),UO:0000189,count unit,,,All are counts; the unit string names what is counted (or a per-subject mean). Not interchangeable as variables.
+binary 0/1,same coding,0/1,22,Vocal_character_1_Type_2_quavered_Gautier1988 (0/1),,,,,Not a unit; both mean presence/absence or yes/no.
+binary 0/1,same coding,binary,12,Cathemeral_Nunn2018 (binary),,,,,Not a unit; both mean presence/absence or yes/no.
+fraction of a whole (0-1),same unit,fraction,2,Male_fraction_Pasquaretta2014 (fraction),UO:0000191,fraction,,,'proportion correct' adds a qualifier. Same quantity as percent at 1/100 the magnitude.
+fraction of a whole (0-1),same unit,proportion,11,Mirror_dye_mark_pass_fraction_Chang2015_somatosensory_trained_home_cage (proportion),UO:0000191,fraction,,,'proportion correct' adds a qualifier. Same quantity as percent at 1/100 the magnitude.
+fraction of a whole (0-1),same unit,proportion correct,4,ShortTermMemory_prop_correct (proportion correct),UO:0000191,fraction,,,'proportion correct' adds a qualifier. Same quantity as percent at 1/100 the magnitude.
+ordinal score,"same kind, scales differ",ordinal,7,Hand–eye,,,,,Not units; each has its own scale and they must not be merged. 'as printed' here is an ordinal 1-8 score.
+ordinal score,"same kind, scales differ",ordinal 0-2,1,CST_termination_grade (ordinal 0-2),,,,,Not units; each has its own scale and they must not be merged. 'as printed' here is an ordinal 1-8 score.
+ordinal score,"same kind, scales differ",1-7 scale,1,Dexterity (1-7 scale),,,,,Not units; each has its own scale and they must not be merged. 'as printed' here is an ordinal 1-8 score.
+ordinal score,"same kind, scales differ",score,9,Dexterity_Heffner1975 (score),,,,,Not units; each has its own scale and they must not be merged. 'as printed' here is an ordinal 1-8 score.
+ordinal score,"same kind, scales differ",as printed,1,Length,,,,,Not units; each has its own scale and they must not be merged. 'as printed' here is an ordinal 1-8 score.
+cubic millimeter,"same unit, one unverified",mm3,187,Brain_volume_Dunn2018 (mm3),UO:0000101,microliter,UO:0000016,millimeter,"'as printed' flags an unverified source unit. mL is the same dimension at 1000x (convertible, not identical)."
+cubic millimeter,"same unit, one unverified",mm3 as printed,1,PFC_area9_GLUT1_vessel_volume (mm3 as printed),UO:0000101,microliter,,,"'as printed' flags an unverified source unit. mL is the same dimension at 1000x (convertible, not identical)."
+handedness index,same scale family,HI,3,Handedness_index_mean (HI),UO:0000186,dimensionless unit,,,abs(HI) is the unsigned strength; not interchangeable with signed HI.
+handedness index,same scale family,abs(HI),1,Handedness_strength_mean_Püschel2026 (abs(HI)),UO:0000186,dimensionless unit,,,abs(HI) is the unsigned strength; not interchangeable with signed HI.
+spines per length of dendrite,"convertible, not identical",spines/um,21,frontal_extraverted_spine_density [golgi] (spines/um),,,UO:0000189; UO:0000017,count unit; micrometer,Factor of 10; the glossary says the per-10-um maximum is deliberately not rescaled.
+spines per length of dendrite,"convertible, not identical",spines/10um,3,occipital_pyramidal_L3_max_spine_density [LYinj] (spines/10um),,,UO:0000189; UO:0000017,count unit; micrometer,Factor of 10; the glossary says the per-10-um maximum is deliberately not rescaled.
+population density per km2,"same denominator, counted entity differs",n/km2,1,Population_density (n/km2),,,UO:0000189; UO:0010066,count unit; kilometer,Individuals vs groups; not interchangeable.
+population density per km2,"same denominator, counted entity differs",groups/km2,1,Population_density_Chivers1984 (groups/km2),,,UO:0000189; UO:0010066,count unit; kilometer,Individuals vs groups; not interchangeable.
+micromole per minute,mixed unit string,umol/min,1,Whole_brain_Total_glucose_utilization (umol/min),,,UO:0000039; UO:0000031,micromole; minute,'umol/min or ratio' covers three umol/min labels and three dimensionless ratios.
+micromole per minute,mixed unit string,umol/min or ratio,6,Fossil_BGU (umol/min) - Boyer_ACA_scaled,,,UO:0000039; UO:0000031; UO:0010006,micromole; minute; ratio,'umol/min or ratio' covers three umol/min labels and three dimensionless ratios.

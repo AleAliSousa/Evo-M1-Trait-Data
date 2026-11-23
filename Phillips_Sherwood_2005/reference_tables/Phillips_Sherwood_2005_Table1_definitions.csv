@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species binomial resolved from the printed name,,Species,,info,Primates,Phillips_Sherwood_2005_Table1,The paper prints Cebus apella; resolved to Sapajus apella (current taxonomy), printed form kept in 'Species (printed)',
+"Species (printed)",Species name as printed in the paper (Cebus apella),,Species,,info,Primates,Phillips_Sherwood_2005_Table1,,
+Monkey ID,Monkey identification code as printed,,Specimen,,info,Primates,Phillips_Sherwood_2005_Table1,The 7 codes map to named animals in Phillips_Sherwood_2007_Table1 by exact tube-task MHI/z matches (probable-grade; see the Note column),
+Sex,Sex (M for all seven subjects),,Sex,,info,Primates,Phillips_Sherwood_2005_Table1,Not printed in the table; the Subjects text states all seven subjects are male,
+"Age, years","Age in years",,Age.years,,primary,Primates,Phillips_Sherwood_2005_Table1,,
+Simple reaching HI,Handedness index for the simple reaching task ((R - L)/(R + L); negative = left-hand preference),,Handedness index,,primary,Primates,Phillips_Sherwood_2005_Table1,As printed; its z-scores do not always carry its sign (see README),
+Simple reaching z,Binomial z-score for the simple reaching hand preference,,z-score,,primary,Primates,Phillips_Sherwood_2005_Table1,As printed (sign anomalies against the HI column are in the paper; see README),
+Tube task MHI,Mean handedness index for the coordinated bimanual tube task ((R - L)/(R + L); negative = left-hand preference),,Handedness index,,primary,Primates,Phillips_Sherwood_2005_Table1,The same values are printed for these animals (under names) in Phillips_Sherwood_2007_Table1,
+Tube task z,Binomial z-score for the tube-task hand preference (|z| > 1.95 = unambiguous preference in the paper's classification rule),,z-score,,primary,Primates,Phillips_Sherwood_2005_Table1,,
+Central sulcus AQ,"Asymmetry quotient for central sulcus depth from MRI (positive = right-hemisphere dominance)",Central sulcus,Asymmetry quotient,individual,primary,Primates,Phillips_Sherwood_2005_Table1,AQ only -- no per-hemisphere central sulcus depths are printed in the paper,
+Note,Build note for the row,,Note,,info,Primates,Phillips_Sherwood_2005_Table1,Records the probable 2007 name for each coded animal,

@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Published Table 3 subject row order,,,,metadata,,Nelson_etal_2011,,Table3
+sex_as_published,Male/female block printed in table,,,,metadata,,Nelson_etal_2011,,Table3
+subject_as_published,Infant rhesus subject code,,,,metadata,,Nelson_etal_2011,,Table3
+task,Hand-use task corresponding to printed column,,,,metadata,,Nelson_etal_2011,,Table3
+index_label_as_published,"HFace, Reach or TUBE as printed",,,,metadata,,Nelson_etal_2011,,Table3
+laterality_index,Printed laterality index; positive is right bias,,Laterality index,printed or derived value,primary,,Nelson_etal_2011,"Keep task, series, source row, and printed labels; no cross-item merge here.",Table3
+li_as_published,"Original two-decimal LI string, including sign and trailing zeros",,,,metadata,,Nelson_etal_2011,,Table3
+Species,Scientific species name from title,,,,metadata,,Nelson_etal_2011,,Table3
+observation_level,Individual by task,,,,metadata,,Nelson_etal_2011,,Table3
+source_locator,Published item,,,,metadata,,Nelson_etal_2011,,Table3
+data_role,Primary or secondary source status,,,,metadata,,Nelson_etal_2011,,Table3

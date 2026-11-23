@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Published Table 2 row order,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+case_as_published,Animal case identifier; Total denotes pooled row,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+stimulus_duration_ms,ICMS stimulation train duration in milliseconds,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+area_as_published,Cortical area abbreviation as printed; Total is row aggregate,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+responsive_sites,Number of tested sites with evoked movements,motor/somatosensory cortex,Count,printed or derived value,primary,,Baldwin_etal_2017,"Keep task, series, source row, and printed labels; no cross-item merge here.",Table2
+tested_sites,Number of tested ICMS sites,motor/somatosensory cortex,Count,printed or derived value,primary,,Baldwin_etal_2017,"Keep task, series, source row, and printed labels; no cross-item merge here.",Table2
+fraction_as_published,"Responsive/tested cell as printed, including published total inconsistencies",motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+row_role,Case observation or cross-case total,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+area_role,Brain area or printed row total,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+Species,Scientific species name from article Methods,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+species_as_published,Common-name label in article,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+observation_level,Case-duration-area unit,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+source_locator,Published item,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2
+data_role,Primary or secondary source status,motor/somatosensory cortex,,,metadata,,Baldwin_etal_2017,,Table2

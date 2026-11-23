@@ -1,0 +1,53 @@
+Table 1,Descriptive Data for the Gorilla and Orangutan Samples,,,,,,,
+Group,Subject,Sex,Rearing,Age (years),#L,#R,z,Handedness
+Gorillas,Jasiri,M,"Captive, MR, ZA",3,8,46,5.17,R
+Gorillas,Kidogo,M,"Captive, MR, ZA",3,55,30,⫺2.71,L
+Gorillas,Bengati,M,"Captive, MR, LP",4,0,13,3.60,R
+Gorillas,Charlie,M,"Captive, MR, ZA",5,76,83,0.55,A
+Gorillas,Jelani,M,"Captive, MR, LP",5,81,31,⫺4.72,L
+Gorillas,Kudzoo,M,"Captive, MR, ZA",7,150,1,⫺12.13,L
+Gorillas,Stadi,M,"Captive, MR, ZA",10,39,64,2.46,R
+Gorillas,Taz,M,"Captive, MR, ZA",12,101,31,⫺6.09,L
+Gorillas,Kekla,M,"Captive, MR, ZA",12,9,81,⫺7.58,L
+Gorillas,Carlos,M,"Wild caught, ZA",30,1,112,10.44,R
+Gorillas,Frank,M,"Wild caught, LP",38,25,50,2.88,R
+Gorillas,Ivan,M,"Wild caught, ZA",39,33,0,⫺5.74,L
+Gorillas,Ozoum,M,"Wild caught, ZA",40,44,16,⫺3.61,L
+Gorillas,Sukari,F,"Captive, MR, ZA",3,9,40,4.43,R
+Gorillas,Olympia,F,"Captive, MR, ZA",5,37,83,4.20,R
+Gorillas,Mumbali,F,"Captive, HR, LP",5,74,5,⫺7.76,L
+Gorillas,Madini,F,"Captive, MR, LP",6,56,26,⫺3.31,L
+Gorillas,Rollie,F,"Captive, HR, LP",6,96,0,⫺9.80,L
+Gorillas,Kashata,F,"Captive, MR, ZA",8,33,117,6.86,R
+Gorillas,Tabibu,F,"Captive, HR, LP",10,63,38,⫺2.49,L
+Gorillas,Mia Moja,F,"Captive, MR, ZA",12,113,113,⫺0.07,A
+Gorillas,Bahati,F,"Captive, MR, LP",12,25,23,⫺0.29,A
+Gorillas,Makari,F,"Captive, HR, LP",15,48,41,⫺0.74,A
+Gorillas,Kuchi,F,"Captive, MR, ZA",17,73,50,⫺2.07,L
+Gorillas,Machi,F,"Captive, MR, ZA",25,72,46,⫺2.39,L
+Gorillas,Debbie,F,"Wild caught, LP",36,52,71,1.71,R
+Gorillas,Paki,F,"Wild caught, ZA",38,8,91,8.34,R
+Gorillas,Choomba,F,"Wild caught, ZA",38,15,76,6.39,R
+Gorillas,Banga,F,"Wild caught, ZA",37,42,80,5.47,R
+Gorillas,Shamba,F,"Wild caught, ZA",42,0,43,6.56,R
+Gorillas,Helen,F,"Wild caught, LP",44,42,80,3.44,R
+Orangutans,Lokan,M,"Captive, MR, YP",4,23,0,⫺4.79,L
+Orangutans,Mentubar,M,"Captive, HR, YP",6,91,47,⫺3.74,L
+Orangutans,Sulango,M,"Captive, MR, ZA",9,94,10,⫺8.24,L
+Orangutans,Solok,M,"Captive, HR, YP",10,20,38,2.36,R
+Orangutans,Jantan,M,"Captive, MR, ZA",13,50,11,⫺4.99,L
+Orangutans,Minyak,M,"Captive, HR, YP",13,113,49,⫺5.02,L
+Orangutans,Molek,M,"Captive, MR, YP",16,113,151,2.33,R
+Orangutans,Gelar,M,"Captive, MR, YP",17,88,60,⫺2.30,L
+Orangutans,Chantak,M,"Captive, HR, ZA",25,128,0,⫺11.31,L
+Orangutans,Loklok,M,"Captive, MR, YP",25,30,329,15.78,R
+Orangutans,Allen,M,"Captive, MR, ZA",31,35,17,⫺2.50,L
+Orangutans,Miri,F,"Captive, HR, ZA",10,94,44,⫺4.26,L
+Orangutans,Penari,F,"Captive, MR, YP",15,100,43,⫺4.76,L
+Orangutans,Madu,F,"Captive, HR, ZA",19,120,47,⫺5.64,L
+Orangutans,Daisy,F,"Captive, HR, ZA",21,49,25,⫺2.79,L
+Orangutans,Hati,F,"Captive, HR, ZA",24,43,24,⫺2.32,L
+Orangutans,Biji,F,"Captive, MR, ZA",32,114,26,⫺7.44,L
+Orangutans,Tupa,F,"Wild caught, YP",37,183,94,⫺5.35,L
+Orangutans,Sibu,F,"Wild caught, ZA",44,20,116,8.23,R
+Note.,MR = mother reared; HR = human reared; ZA = Zoo Atlanta; LP = Lincoln Park Zoo; YP = Yerkes National Primate Research Center; R = right-handed; L = left-handed; A = ambiguously handed. Classification threshold: |z| > 1.64.,,,,,,,

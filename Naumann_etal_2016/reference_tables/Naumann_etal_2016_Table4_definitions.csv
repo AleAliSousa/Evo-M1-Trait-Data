@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Row order in printed Table 4,,Order,,metadata,,Naumann_etal_2016,,Table 4
+species_as_published,Common-name species label as printed,,Species,,metadata,,Naumann_etal_2016,,Table 4
+Species,Scientific species name resolved from article text via the General species key,,Species,,metadata,,Naumann_etal_2016,,Table 4
+patch_count_per_hemisphere,"Number of medial/caudal entorhinal cortex patches in one hemisphere, central value",medial/caudal entorhinal cortex,Count,central value,primary,,Naumann_etal_2016,Table 4 does not identify the ± statistic,Table 4
+patch_count_plusminus_as_published,Unsigned value following ± for patch count; statistic unspecified,medial/caudal entorhinal cortex,Count,± value as printed,primary,,Naumann_etal_2016,Do not interpret as SD or SEM,Table 4
+patch_count_printed,"Patch-count cell as printed, including ±",medial/caudal entorhinal cortex,Count,printed cell,metadata,,Naumann_etal_2016,,Table 4
+patch_diameter_um,Patch diameter central value in micrometres,medial/caudal entorhinal cortex,Diameter µm,central value,primary,,Naumann_etal_2016,,Table 4
+patch_diameter_plusminus_um_as_published,Unsigned value following ± for patch diameter; statistic unspecified,medial/caudal entorhinal cortex,Diameter µm,± value as printed,primary,,Naumann_etal_2016,Do not interpret as SD or SEM,Table 4
+patch_diameter_printed,"Patch-diameter cell as printed, including ±",medial/caudal entorhinal cortex,Diameter µm,printed cell,metadata,,Naumann_etal_2016,Shrew table value 103 ± 23 differs from prose 104 ± 25; table retained,Table 4
+linear_patch_density_per_mm,Number of patches per mm in dorsoventral direction,medial/caudal entorhinal cortex,Linear density /mm,printed value,primary,,Naumann_etal_2016,,Table 4
+patch_density_per_mm2,Number of patches per square mm,medial/caudal entorhinal cortex,Areal density /mm2,printed value,primary,,Naumann_etal_2016,,Table 4
+plusminus_type,Type of ± statistic in Table 4,,Statistic label,,metadata,,Naumann_etal_2016,Unspecified in table; not inferred,Table 4
+observation_level,Level of each data row,,Level,,metadata,,Naumann_etal_2016,Species summary; not individual observations,Table 4
+source_locator,Printed source table,,Locator,,metadata,,Naumann_etal_2016,,Table 4
+data_role,Primary or secondary source status,,Role,,metadata,,Naumann_etal_2016,,Table 4

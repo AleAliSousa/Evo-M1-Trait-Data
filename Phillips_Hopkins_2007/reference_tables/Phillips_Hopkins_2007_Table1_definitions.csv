@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Published Table 1 individual row order,,,,metadata,,Phillips_Hopkins_2007,,Table1
+subject_as_published,Individual name printed in Table 1,,,,metadata,,Phillips_Hopkins_2007,,Table1
+group_as_published,Chimpanzees or Capuchins group header,,,,metadata,,Phillips_Hopkins_2007,,Table1
+MHI_as_published,Original MHI string including sign and precision,,,,metadata,,Phillips_Hopkins_2007,,Table1
+MHI,Mean handedness index on coordinated bimanual TUBE task,,Laterality index,mean across trials,primary,,Phillips_Hopkins_2007,Positive values indicate right preference.,Table1
+dextral_group_as_published,R or NR classification as printed,,,,metadata,,Phillips_Hopkins_2007,,Table1
+whole_cerebellar_volume_cc,Printed whole cerebellar volume in cubic centimeters,,Cerebellar volume,individual,primary,,Phillips_Hopkins_2007,cc equals cm3.,Table1
+anterior_cerebellar_AQ,Printed anterior cerebellar asymmetry quotient,,Asymmetry quotient,individual,primary,,Phillips_Hopkins_2007,Positive is right bias.,Table1
+posterior_cerebellar_AQ,Printed posterior cerebellar asymmetry quotient,,Asymmetry quotient,individual,primary,,Phillips_Hopkins_2007,Positive is right bias.,Table1
+Species,Scientific name harmonized from paper's species labels,,,,metadata,,Phillips_Hopkins_2007,Source uses Cebus apella; key maps to Sapajus apella.,Table1
+task,Coordinated bimanual TUBE task,,,,metadata,,Phillips_Hopkins_2007,,Table1
+observation_level,Individual subject,,,,metadata,,Phillips_Hopkins_2007,,Table1
+source_locator,Published item,,,,metadata,,Phillips_Hopkins_2007,,Table1
+data_role,Primary source status,,,,metadata,,Phillips_Hopkins_2007,,Table1

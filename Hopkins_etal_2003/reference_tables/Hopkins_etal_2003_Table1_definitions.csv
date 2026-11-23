@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Published Table 1 row order,,,,metadata,,Hopkins_etal_2003,,Table1
+group_as_published,Gorilla or orangutan block printed in table,,,,metadata,,Hopkins_etal_2003,,Table1
+subject_as_published,Individual ape name as printed,,,,metadata,,Hopkins_etal_2003,,Table1
+sex_as_published,Printed M/F sex label,,,,metadata,,Hopkins_etal_2003,,Table1
+rearing_as_published,"Captive/wild-caught, rearing class, and facility as printed",,,,metadata,,Hopkins_etal_2003,,Table1
+age_years,Age in years as printed,,,,metadata,,Hopkins_etal_2003,,Table1
+left_uses,Number of left-hand tube-task uses,,Count,printed or derived value,primary,,Hopkins_etal_2003,"Keep task, series, source row, and printed labels; no cross-item merge here.",Table1
+right_uses,Number of right-hand tube-task uses,,Count,printed or derived value,primary,,Hopkins_etal_2003,"Keep task, series, source row, and printed labels; no cross-item merge here.",Table1
+z_as_published,Published z-score; retained despite two count discrepancies,,,printed or derived value,primary,,Hopkins_etal_2003,"Keep task, series, source row, and printed labels; no cross-item merge here.",Table1
+handedness_as_published,Published R/L/A handedness classification,,,printed or derived value,primary,,Hopkins_etal_2003,"Keep task, series, source row, and printed labels; no cross-item merge here.",Table1
+pooled_LI_from_counts,Derived pooled (R-L)/(R+L) from printed total counts; not the paper mean-across-tests MHI,,Laterality index,printed or derived value,primary,,Hopkins_etal_2003,"Keep task, series, source row, and printed labels; no cross-item merge here.",Table1
+Species,Source-scoped taxon mapping; orangutans unresolved to current species,,,,metadata,,Hopkins_etal_2003,,Table1
+species_resolution_note,Taxonomic resolution note from paper-specific key,,,,metadata,,Hopkins_etal_2003,,Table1
+task,Coordinated bimanual tube task,,,,metadata,,Hopkins_etal_2003,,Table1
+observation_level,Individual animal,,,,metadata,,Hopkins_etal_2003,,Table1
+source_locator,Published item,,,,metadata,,Hopkins_etal_2003,,Table1
+data_role,Primary or secondary source status,,,,metadata,,Hopkins_etal_2003,,Table1

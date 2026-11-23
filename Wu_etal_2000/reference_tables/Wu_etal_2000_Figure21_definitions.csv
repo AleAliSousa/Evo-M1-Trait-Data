@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_order,Left-to-right source bar order,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+area_as_published,Motor area label as printed in Figure 21,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+series_as_published,Evoked movement category in source legend,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+group_order,Left-to-right area order,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+series_order,Physical series order within source figure,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+mean_threshold_uA_approx,Digitized mean stimulation threshold in microamperes; approximate,frontal/cingulate motor areas,Threshold µA,approximate mean,primary,,Wu_etal_2000,"Keep task, series, source row, and printed labels; no cross-item merge here.",Figure21
+upper_sem_endpoint_uA_approx,Digitized upper endpoint of the SEM whisker in microamperes; approximate; blank if unreadable,frontal/cingulate motor areas,Threshold µA,approximate SEM endpoint,primary,,Wu_etal_2000,"Keep task, series, source row, and printed labels; no cross-item merge here.",Figure21
+sem_uA_approx,"Upper endpoint minus mean, approximating SEM in microamperes; blank if unreadable",frontal/cingulate motor areas,Threshold µA,printed or derived value,primary,,Wu_etal_2000,"Keep task, series, source row, and printed labels; no cross-item merge here.",Figure21
+digitization_halfwidth_uA,Approximate halfwidth from three-pixel reading uncertainty in microamperes; not a biological interval,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+errorbar_type,Figure caption identifies error bars as SEM,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+Species,Current scientific-name mapping for source taxon,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+species_as_published,Taxon label printed in paper,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+observation_level,Area-by-movement category mean across cases,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+source_locator,Published item,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21
+data_role,Primary or secondary source status,frontal/cingulate motor areas,,,metadata,,Wu_etal_2000,,Figure21

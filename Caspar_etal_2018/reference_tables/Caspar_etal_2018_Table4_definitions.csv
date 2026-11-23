@@ -1,0 +1,17 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Row order across the two printed task blocks,,Order,,metadata,,Caspar_etal_2018,,Table 4
+task,Experimental task corresponding to printed block,,Task,,metadata,,Caspar_etal_2018,Tube and object-choice observations stay separate,Table 4
+index_as_published,Printed handedness index label: HI_TT or I_OCT,,Index label,,metadata,,Caspar_etal_2018,,Table 4
+subject_as_published,Individual gibbon label as printed,,Subject,,metadata,,Caspar_etal_2018,Repeated subjects across tasks are separate observations,Table 4
+species_as_published,Abbreviated species label as printed,,Species,,metadata,,Caspar_etal_2018,Expanded using Table 4 footnote,Table 4
+Species,Scientific species name expanded from Table 4 footnote via General species key,,Species,,metadata,,Caspar_etal_2018,,Table 4
+handedness_index,Printed handedness index for the stated task,,Index,individual-task,primary,,Caspar_etal_2018,Range -1 to 1,Table 4
+bouts,Number of tube-task bouts; blank for OCT,,Count,individual-task,primary,,Caspar_etal_2018,,Table 4
+insertions,Number of tube-task insertions; blank for OCT,,Count,individual-task,primary,,Caspar_etal_2018,,Table 4
+z_score,Printed z-score for the stated task,,z-score,individual-task,primary,,Caspar_etal_2018,,Table 4
+p_as_published,"Two-sided p-value cell as printed, preserving scientific notation",,p-value,printed cell,metadata,,Caspar_etal_2018,,Table 4
+p_value,Numeric conversion of printed two-sided p-value,,p-value,individual-task,primary,,Caspar_etal_2018,Converted from superscript notation without rounding,Table 4
+hand_preference_as_published,Printed hand-preference classification,,Classification,individual-task,primary,,Caspar_etal_2018,mod. is moderately per table note,Table 4
+observation_level,Level of each data row,,Level,,metadata,,Caspar_etal_2018,Individual by task,Table 4
+source_locator,Printed source table,,Locator,,metadata,,Caspar_etal_2018,,Table 4
+data_role,Primary or secondary source status,,Role,,metadata,,Caspar_etal_2018,,Table 4

@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species binomial resolved from the printed group name,,Species,,info,Primates,Semendeferi_etal_2011_Table1,"The paper prints group names only. Gibbon = Hylobates lar (both specimens are lar gibbons in the collection records: Disco is ZILLES-HYLOBATES-GPZ-5542 in de Sousa et al. 2010 and MacLeod 2000; YN81 is the Hylobates lar 'YN81-146' of Stacho et al. 2024 Table 2). Orangutan = Pongo pygmaeus (YN85, Briggs and Harry in the same records)",
+Group (printed),Group name as printed in the table (Human / Bonobo / Chimpanzee / Gorilla / Orangutan / Gibbon),,Group,,info,Primates,Semendeferi_etal_2011_Table1,Printed only on the first row of each group in the paper; filled down in this file,
+Specimen,"Specimen name or code as printed (e.g. Disco, YN81, SN146)",,Specimen,,info,Primates,Semendeferi_etal_2011_Table1,"The young bonobo is printed 'Zahlie' (the Zahlia of the /97 cohort in de Sousa et al. 2010)",
+Sex,Sex as printed (M / F),,Sex,,info,Primates,Semendeferi_etal_2011_Table1,,
+"Age, years",Age at death in years,,Age.years,,primary,Primates,Semendeferi_etal_2011_Table1,"Empty for YN81: the paper prints 'Ad' (adult), recorded in the Note column",
+"Brain weight, g","Brain weight, g",Brain,Mass.g,individual,primary,Primates,Semendeferi_etal_2011_Table1,Per-specimen weights of the brains sectioned for the neuronal-spacing measures of Tables 2 and 3 of the same paper,
+Note,Build note for the row,,Note,,info,Primates,Semendeferi_etal_2011_Table1,,

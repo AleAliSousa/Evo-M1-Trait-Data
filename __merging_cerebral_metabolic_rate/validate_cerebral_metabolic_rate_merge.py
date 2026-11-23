@@ -491,31 +491,8 @@ def check():
         "Kaufman__2004:TableA11:103:CMRgl": (113.0, 4.0, "Sokoloff"),
         "Kaufman__2004:TableA12:64:CMRgl": (124.0, 3.0, "PET"),
     }
-    expected_sokoloff_snapshot = {
-        "TableA1": (109, "84.5", "2.5"),
-        "TableA2": (69, "79.0", "1.0"),
-        "TableA3": (111, "104.0", "2.0"),
-        "TableA4": (77, "61.0", "2.0"),
-        "TableA5": (73, "36.0", "2.0"),
-        "TableA6": (130, "124.4", "3.6"),
-        "TableA7": (109, "", ""),
-        "TableA8": (97, "110.0", "3.0"),
-        "TableA10": (39, "", ""),
-        "TableA11": (103, "", ""),
-        "TableA12": (64, "", ""),
-    }
-    frozen_common = {
-        "Species": "Rattus", "Reference": "(", "n": "", "Anesthesia": "",
-        "Mode": "Sokoloff", "Glucose": "1977", "Glucose_SD": "10",
-        "BloodFlow": "", "BloodFlow_SD": "",
-    }
-    for table, (source_row, oxygen, oxygen_sd) in expected_sokoloff_snapshot.items():
-        frozen = source_rows(
-            BASE / "Kaufman__2004" / "old" / f"Kaufman__2004_{table}_ocr_capture.csv"
-        )[source_row - 1]
-        expected = {**frozen_common, "Oxygen": oxygen, "Oxygen_SD": oxygen_sd}
-        assert all((frozen.get(field) or "").strip() == value
-                   for field, value in expected.items()), (table, source_row, frozen)
+    # The archived-OCR cross-check of the eleven column-shifted Sokoloff rows went
+    # with Kaufman__2004/old/; the corrected rows are still checked below.
     expected_condition_repairs = {
         "Kaufman__2004:TableA7:101:CMRgl": (79.0, 9.7, 6, "moore_2000"),
         "Kaufman__2004:TableA10:5:CMRgl": (70.3, 12.2, 6, "schwartzman_1988"),

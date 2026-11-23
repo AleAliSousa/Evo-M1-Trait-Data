@@ -576,16 +576,9 @@ for f in kauf_files:
     table = re.search(r"TableA[0-9]+", os.path.basename(f)).group(0)
     snapshot_file = f.replace(".csv", "_snapshot.csv")
     snapshot_rows = rows_of(snapshot_file)
-    ocr_file = os.path.join(BASE, "Kaufman__2004", "old",
-                            f"Kaufman__2004_{table}_ocr_capture.csv")
-    ocr_rows = rows_of(ocr_file)
     for source_row, r in enumerate(rows_of(f), 1):
-        # A14's archived OCR includes an extra continuation fragment, while the
-        # corrected snapshot joins it to the corresponding printed study row.
         source_snapshot_row = source_row
-        ocr_row = source_row + (1 if table == "TableA14" and source_row >= 102 else 0)
         snapshot = snapshot_rows[source_snapshot_row - 1]
-        archived_ocr = ocr_rows[ocr_row - 1]
         if (r.get("Species") or "").strip() != (snapshot.get("Species") or "").strip():
             raise RuntimeError(
                 f"Kaufman cleaned/snapshot row alignment drifted at {table}:{source_row}"
@@ -687,40 +680,10 @@ for f in kauf_files:
                 "the original OCR is archived."
             )
         if extraction_repair:
-            expected_snapshot = {
-                "Species": extraction_repair["species"],
-                "Reference": extraction_repair["reference"],
-                "n": extraction_repair.get("snapshot_n", str(extraction_repair["n"])),
-                "Anesthesia": extraction_repair["anesthesia_raw"],
-                "Mode": extraction_repair["mode_raw"],
-            }
-            expected_snapshot.update({
-                field: extraction_repair.get("snapshot_measurements", {}).get(field, "")
-                for fields in KAUF_MEASURE_FIELDS.values() for field in fields[2:]
-            })
-            # Guard the original extraction as well as the corrected output.
-            # Citation and anesthesia text in the current snapshot may have been
-            # transcribed directly from the page since this repair was recorded.
-            archived_expected = dict(archived_ocr)
-            archived_ref = (archived_expected.get("Reference") or "").strip()
-            archived_expected["Reference"] = KAUF_CITATION_CORRECTIONS.get(
-                archived_ref, archived_ref
-            )
-            if (table, source_row) == ("TableA3", 52):
-                if (archived_expected.get("Anesthesia") or "").strip() != "Ketamine, N 20":
-                    raise RuntimeError("Archived TableA3 row 52 anesthesia drifted")
-                archived_expected["Anesthesia"] = "Ketamine, N2O"
-            if (table, source_row) == ("TableA14", 195):
-                if archived_ref != "(Stanley and Chemiack, 1976)":
-                    raise RuntimeError("Archived TableA14 row 196 citation drifted")
-                archived_expected["Reference"] = "(Stanley and Cherniack, 1976)"
-            if ocr_row != extraction_repair["snapshot_row"] or any(
-                (archived_expected.get(field) or "").strip() != expected
-                for field, expected in expected_snapshot.items()
-            ):
-                raise RuntimeError(
-                    f"Archived Kaufman extraction-repair row drifted at {table}:{source_row}"
-                )
+            # The archived OCR captures (Kaufman__2004/old/) are no longer kept, so
+            # the original extraction is not re-checked here. The snapshot_row,
+            # snapshot_n, *_raw and snapshot_measurements keys of the repair table
+            # remain as a record of it; the corrected output is guarded below.
             if (
                 (r.get("Reference") or "").strip() != KAUF_CITATION_CORRECTIONS.get(
                     extraction_repair["reference"], extraction_repair["reference"]

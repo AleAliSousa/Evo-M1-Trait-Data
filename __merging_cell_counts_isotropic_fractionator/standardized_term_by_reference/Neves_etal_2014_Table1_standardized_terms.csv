@@ -1,0 +1,91 @@
+Original_Term,Reference,Standardized_Term
+Species,Neves_etal_2014_Table1,Species
+Order,Neves_etal_2014_Table1,Order
+Common name,Neves_etal_2014_Table1,CommonName
+Number,Neves_etal_2014_Table1,Sample_n
+"Body mass, g",Neves_etal_2014_Table1,Body_Mass.g
+"Body mass, g SD",Neves_etal_2014_Table1,Body_Mass.g_SD
+"Brain mass, g",Neves_etal_2014_Table1,WholeBrain_Mass.g
+"Brain mass, g SD",Neves_etal_2014_Table1,WholeBrain_Mass.g_SD
+Whole brain Neurons,Neves_etal_2014_Table1,WholeBrain_N.n
+Whole brain Neurons SD,Neves_etal_2014_Table1,WholeBrain_N.n_SD
+Whole brain Other cells,Neves_etal_2014_Table1,WholeBrain_O.n
+Whole brain Other cells SD,Neves_etal_2014_Table1,WholeBrain_O.n_SD
+Whole brain N/mg,Neves_etal_2014_Table1,WholeBrain_N.p.mg
+Whole brain N/mg SD,Neves_etal_2014_Table1,WholeBrain_N.p.mg_SD
+Whole brain O/mg,Neves_etal_2014_Table1,WholeBrain_O.p.mg
+Whole brain O/mg SD,Neves_etal_2014_Table1,WholeBrain_O.p.mg_SD
+Whole brain O/N,Neves_etal_2014_Table1,WholeBrain_O.p.N
+Whole brain O/N SD,Neves_etal_2014_Table1,WholeBrain_O.p.N_SD
+"Cerebral cortex Mass, g",Neves_etal_2014_Table1,CerebralCortexNoHippocampus_Mass.g
+"Cerebral cortex Mass, g SD",Neves_etal_2014_Table1,CerebralCortexNoHippocampus_Mass.g_SD
+"Cerebral cortex N, n",Neves_etal_2014_Table1,CerebralCortexNoHippocampus_N.n
+"Cerebral cortex N, n SD",Neves_etal_2014_Table1,CerebralCortexNoHippocampus_N.n_SD
+"Cerebral cortex O, n",Neves_etal_2014_Table1,CerebralCortexNoHippocampus_O.n
+"Cerebral cortex O, n SD",Neves_etal_2014_Table1,CerebralCortexNoHippocampus_O.n_SD
+Cerebral cortex N/mg,Neves_etal_2014_Table1,CerebralCortexNoHippocampus_N.p.mg
+Cerebral cortex N/mg SD,Neves_etal_2014_Table1,CerebralCortexNoHippocampus_N.p.mg_SD
+Cerebral cortex O/mg,Neves_etal_2014_Table1,CerebralCortexNoHippocampus_O.p.mg
+Cerebral cortex O/mg SD,Neves_etal_2014_Table1,CerebralCortexNoHippocampus_O.p.mg_SD
+Cerebral cortex O/N,Neves_etal_2014_Table1,CerebralCortexNoHippocampus_O.p.N
+Cerebral cortex O/N SD,Neves_etal_2014_Table1,CerebralCortexNoHippocampus_O.p.N_SD
+"Hippocampus Mass, g",Neves_etal_2014_Table1,Hippocampus_Mass.g
+"Hippocampus Mass, g SD",Neves_etal_2014_Table1,Hippocampus_Mass.g_SD
+"Hippocampus N, n",Neves_etal_2014_Table1,Hippocampus_N.n
+"Hippocampus N, n SD",Neves_etal_2014_Table1,Hippocampus_N.n_SD
+"Hippocampus O, n",Neves_etal_2014_Table1,Hippocampus_O.n
+"Hippocampus O, n SD",Neves_etal_2014_Table1,Hippocampus_O.n_SD
+Hippocampus N/mg,Neves_etal_2014_Table1,Hippocampus_N.p.mg
+Hippocampus N/mg SD,Neves_etal_2014_Table1,Hippocampus_N.p.mg_SD
+Hippocampus O/mg,Neves_etal_2014_Table1,Hippocampus_O.p.mg
+Hippocampus O/mg SD,Neves_etal_2014_Table1,Hippocampus_O.p.mg_SD
+Hippocampus O/N,Neves_etal_2014_Table1,Hippocampus_O.p.N
+Hippocampus O/N SD,Neves_etal_2014_Table1,Hippocampus_O.p.N_SD
+"Cerebral cortex total Mass, g",Neves_etal_2014_Table1,CerebralCortex_Mass.g
+"Cerebral cortex total Mass, g SD",Neves_etal_2014_Table1,CerebralCortex_Mass.g_SD
+"Cerebral cortex total N, n",Neves_etal_2014_Table1,CerebralCortex_N.n
+"Cerebral cortex total N, n SD",Neves_etal_2014_Table1,CerebralCortex_N.n_SD
+"Cerebral cortex total O, n",Neves_etal_2014_Table1,CerebralCortex_O.n
+"Cerebral cortex total O, n SD",Neves_etal_2014_Table1,CerebralCortex_O.n_SD
+Cerebral cortex total N/mg,Neves_etal_2014_Table1,CerebralCortex_N.p.mg
+Cerebral cortex total N/mg SD,Neves_etal_2014_Table1,CerebralCortex_N.p.mg_SD
+Cerebral cortex total O/mg,Neves_etal_2014_Table1,CerebralCortex_O.p.mg
+Cerebral cortex total O/mg SD,Neves_etal_2014_Table1,CerebralCortex_O.p.mg_SD
+Cerebral cortex total O/N,Neves_etal_2014_Table1,CerebralCortex_O.p.N
+Cerebral cortex total O/N SD,Neves_etal_2014_Table1,CerebralCortex_O.p.N_SD
+"Cerebellum Mass, g",Neves_etal_2014_Table1,Cerebellum_Mass.g
+"Cerebellum Mass, g SD",Neves_etal_2014_Table1,Cerebellum_Mass.g_SD
+"Cerebellum N, n",Neves_etal_2014_Table1,Cerebellum_N.n
+"Cerebellum N, n SD",Neves_etal_2014_Table1,Cerebellum_N.n_SD
+"Cerebellum O, n",Neves_etal_2014_Table1,Cerebellum_O.n
+"Cerebellum O, n SD",Neves_etal_2014_Table1,Cerebellum_O.n_SD
+Cerebellum N/mg,Neves_etal_2014_Table1,Cerebellum_N.p.mg
+Cerebellum N/mg SD,Neves_etal_2014_Table1,Cerebellum_N.p.mg_SD
+Cerebellum O/mg,Neves_etal_2014_Table1,Cerebellum_O.p.mg
+Cerebellum O/mg SD,Neves_etal_2014_Table1,Cerebellum_O.p.mg_SD
+Cerebellum O/N,Neves_etal_2014_Table1,Cerebellum_O.p.N
+Cerebellum O/N SD,Neves_etal_2014_Table1,Cerebellum_O.p.N_SD
+"RoB Mass, g",Neves_etal_2014_Table1,RoB_Mass.g
+"RoB Mass, g SD",Neves_etal_2014_Table1,RoB_Mass.g_SD
+"RoB N, n",Neves_etal_2014_Table1,RoB_N.n
+"RoB N, n SD",Neves_etal_2014_Table1,RoB_N.n_SD
+"RoB O, n",Neves_etal_2014_Table1,RoB_O.n
+"RoB O, n SD",Neves_etal_2014_Table1,RoB_O.n_SD
+RoB N/mg,Neves_etal_2014_Table1,RoB_N.p.mg
+RoB N/mg SD,Neves_etal_2014_Table1,RoB_N.p.mg_SD
+RoB O/mg,Neves_etal_2014_Table1,RoB_O.p.mg
+RoB O/mg SD,Neves_etal_2014_Table1,RoB_O.p.mg_SD
+RoB O/N,Neves_etal_2014_Table1,RoB_O.p.N
+RoB O/N SD,Neves_etal_2014_Table1,RoB_O.p.N_SD
+"Olfactory bulb Mass, g",Neves_etal_2014_Table1,OlfactoryBulb_Mass.g
+"Olfactory bulb Mass, g SD",Neves_etal_2014_Table1,OlfactoryBulb_Mass.g_SD
+"Olfactory bulb N, n",Neves_etal_2014_Table1,OlfactoryBulb_N.n
+"Olfactory bulb N, n SD",Neves_etal_2014_Table1,OlfactoryBulb_N.n_SD
+"Olfactory bulb O, n",Neves_etal_2014_Table1,OlfactoryBulb_O.n
+"Olfactory bulb O, n SD",Neves_etal_2014_Table1,OlfactoryBulb_O.n_SD
+Olfactory bulb N/mg,Neves_etal_2014_Table1,OlfactoryBulb_N.p.mg
+Olfactory bulb N/mg SD,Neves_etal_2014_Table1,OlfactoryBulb_N.p.mg_SD
+Olfactory bulb O/mg,Neves_etal_2014_Table1,OlfactoryBulb_O.p.mg
+Olfactory bulb O/mg SD,Neves_etal_2014_Table1,OlfactoryBulb_O.p.mg_SD
+Olfactory bulb O/N,Neves_etal_2014_Table1,OlfactoryBulb_O.p.N
+Olfactory bulb O/N SD,Neves_etal_2014_Table1,OlfactoryBulb_O.p.N_SD

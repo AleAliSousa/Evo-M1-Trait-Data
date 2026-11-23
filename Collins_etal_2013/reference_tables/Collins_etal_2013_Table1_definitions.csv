@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source,Note
+source_row,Source row,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+species_as_published,Species as published,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+Species,Species,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+n_individuals,N individuals,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+n_hemispheres,N hemispheres,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+structure,Structure,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+measure,Measure,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+value,"Printed mean or single-hemisphere value; g for mass, absolute count for neurons",,,,mixed,,Collins_etal_2013,Use each analysis row data_role: visual structures are primary; Brain and GM are secondary.,Table 1
+sd,Printed standard deviation in the same unit as value; blank where absent,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+unit,Unit,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+as_published,As published,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+measurement_scope,Measurement scope,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1
+data_role,Data role,,,,metadata,,Collins_etal_2013,See item README for source scope and printed discrepancies.,Table 1

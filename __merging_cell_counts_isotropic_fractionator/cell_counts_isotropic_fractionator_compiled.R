@@ -54,6 +54,45 @@ item_name <- c(
   "HerculanoHouzel_etal_2011_Table1",   # PRIMARY source for the Glires rows HH 2015 re-reported:
                                        #   pinned above the 2015 tables in sec 8.2.H (compilation
                                        #   rule) and carries one guarded misprint fix in sec 3.4d.
+  "HerculanoHouzel_etal_2006_Table1",   # PRIMARY source (rodents, whole brain only) for the rows
+                                       #   HH 2015 cites to it in 30 cells: pinned above BOTH the
+                                       #   2015 tables and the 2011 table in sec 8.2.H, so its
+                                       #   printed DIRECT whole-brain totals take the WholeBrain
+                                       #   rows for the six rodent species (decision D1); the
+                                       #   2011 structure sums keep every other variable.
+  "Azevedo_etal_2009_Table1",           # PRIMARY source for the Homo sapiens rows HH 2015
+                                       #   re-reported: pinned above the 2015 tables in sec 8.2.H.
+                                       #   Observed columns only (the table's Expected columns
+                                       #   stay in the snapshot). Prints no SDs, so HH 2015's
+                                       #   human SDs stay with the 2015 items; one of them is
+                                       #   corrected in sec 3.4l.
+  "Gabi_etal_2010_Table1",              # PRIMARY source for five primate species HH 2015
+                                       #   re-reported: pinned above the 2015 tables in
+                                       #   sec 8.2.H. Two printed cells are corrected in
+                                       #   sec 3.4i / 3.4j (decision D2). Prints no SDs.
+  "Neves_etal_2014_Table1",             # PRIMARY source for the five afrotherian species HH 2015
+                                       #   re-reported: pinned above the 2015 tables in
+                                       #   sec 8.2.H (decision D3). Terminology (see the item's
+                                       #   standardized-term file): its "Cerebral cortex total"
+                                       #   (CxT, cortex INCLUDING hippocampus) maps to
+                                       #   CerebralCortex_; its "Cerebral cortex" (CX, EXCLUDING
+                                       #   hippocampus) maps to CerebralCortexNoHippocampus_;
+                                       #   its hippocampus maps to Hippocampus_. One guarded
+                                       #   fix in sec 3.4k.
+  "Ribeiro_etal_2014_Table1",           # PRIMARY source for the olfactory-bulb rows HH 2015
+                                       #   Table 4 cites to it (five primates), plus the rat,
+                                       #   squirrel and Tupaia rows Table 4 carries at this
+                                       #   paper's values under other citations: pinned above
+                                       #   the 2015 tables AND the 2011 table in sec 8.2.H
+                                       #   (decision D5). Sec 1.6 keeps only this paper's 8
+                                       #   own-measurement species; its 15 compiled rows stay
+                                       #   with their source items (compilation rule).
+  "HerculanoHouzel_Kaas_2011_Table2",   # PRIMARY source for the Gorilla and Pongo cerebellar
+                                       #   totals HH 2015's ape rows rest on: pinned above the
+                                       #   2015 tables in sec 8.2.H (decision D6). Sec 1.6 keeps
+                                       #   only the two own-measurement species; the neuron /
+                                       #   non-neuron splits HH 2015 took from this paper's
+                                       #   TEXT stay with the 2015 items, unsourced to here.
   "HerculanoHouzel_etal_2020_TABLE1",
   "HerculanoHouzel_etal_2020_TABLE2",
   "JardimMesseder_etal_2017_Table1",
@@ -109,7 +148,13 @@ for (i in seq_along(item_name)) {
   if (!file.exists(path.expand(item_tsv)))
     stop("read of '", item_name[i], "': registry resolves to a TSV that is not on disk -> ",
          item_tsv, " (run that source's own build script, or fix 'Item encoded').", call. = FALSE)
-  item_data <- read.table(file = item_tsv,
+  # sep = "\t" (2026-11 wiring): the files ARE tab-separated, and read.table's default
+  # whitespace splitting silently collapses EMPTY fields -- the 2026-11 builds of the
+  # six HH 2015 primary sources write missing values as empty fields, where every
+  # earlier build writes "NA", so the default read cannot read the new TSVs at all
+  # (scan error: "line N did not have M elements"). Verified 2026-11: reading all 19
+  # pre-existing items with sep = "\t" gives data frames identical to the default read.
+  item_data <- read.table(file = item_tsv, sep = "\t",
                           header = TRUE, stringsAsFactors = FALSE, check.names = FALSE)
 
   # Store the data frame in the list with the corresponding item name
@@ -247,6 +292,58 @@ reshape_primaries <- function(lst) {
 
 cell_counts_isotropic_fractionator_data_list <- reshape_primaries(cell_counts_isotropic_fractionator_data_list)
 rm(reshape_primaries)
+
+## 1.6 Scope restrictions for compilation-bearing primaries (2026-11 wiring of the six
+##     HH 2015 primary sources; decisions D5 and D6).
+##     Two of the six newly wired items are themselves part-compilations: most of their
+##     rows re-report an earlier item that is also wired here. Under the compilation
+##     rule those rows must not enter from the compiling item -- that would double-count
+##     the source paper and, through the sec 8.2.H pins, could outrank it -- so each
+##     item is cut to its own-measurement species BEFORE standardisation. The cuts are
+##     guarded on the exact row counts and species sets recorded in the builds (the
+##     per-row provenance is carried in each build's Source column).
+
+# Ribeiro et al. 2014, Table 1 (olfactory bulb): own measurements for 8 of 23 species
+# -- the five primates, Tupaia glis, and the rat and squirrel at larger samples than
+# HH 2011 (rat n = 5, squirrel n = 9). The other 15 rows re-report HH 2011 (7 glires),
+# Sarko et al. 2009 (5 eulipotyphlans) and Neves et al. 2014 (3 afrotherians) and stay
+# with those items.
+rib_df <- cell_counts_isotropic_fractionator_data_list$Ribeiro_etal_2014_Table1
+if (!is.null(rib_df)) {
+  rib_own <- c("Rattus norvegicus", "Sciurus carolinensis", "Microcebus murinus",
+               "Callithrix jacchus", "Otolemur garnettii", "Aotus trivirgatus",
+               "Macaca mulatta", "Tupaia glis")
+  if (nrow(rib_df) != 23L || !all(rib_own %in% rib_df$Species))
+    stop("1.6: expected the full 23-row Ribeiro_etal_2014_Table1 including its 8 ",
+         "own-measurement species. The source table changed -- re-check the D5 scope ",
+         "restriction before applying it.", call. = FALSE)
+  rib_df <- rib_df[rib_df$Species %in% rib_own, , drop = FALSE]
+  if (nrow(rib_df) != 8L)
+    stop("1.6: Ribeiro scope restriction kept ", nrow(rib_df), " rows, expected 8.",
+         call. = FALSE)
+  cell_counts_isotropic_fractionator_data_list$Ribeiro_etal_2014_Table1 <- rib_df
+}
+rm(rib_df)
+
+# Herculano-Houzel & Kaas 2011, Table 2 (cerebellar totals): own measurements for 2 of
+# 9 species -- Gorilla gorilla (n = 1) and Pongo pygmaeus (n = 3), Yerkes cerebella.
+# The Homo sapiens row compiles Azevedo et al. 2009 (and enters from that item
+# instead); the other six rows compile Herculano-Houzel et al. 2007, which is not an
+# item here, and stay out.
+hhk_df <- cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_Kaas_2011_Table2
+if (!is.null(hhk_df)) {
+  hhk_own <- c("Gorilla gorilla", "Pongo pygmaeus")
+  if (nrow(hhk_df) != 9L || !all(hhk_own %in% hhk_df$Species))
+    stop("1.6: expected the full 9-row HerculanoHouzel_Kaas_2011_Table2 including ",
+         "Gorilla gorilla and Pongo pygmaeus. The source table changed -- re-check ",
+         "the D6 scope restriction before applying it.", call. = FALSE)
+  hhk_df <- hhk_df[hhk_df$Species %in% hhk_own, , drop = FALSE]
+  if (nrow(hhk_df) != 2L)
+    stop("1.6: HH & Kaas scope restriction kept ", nrow(hhk_df), " rows, expected 2.",
+         call. = FALSE)
+  cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_Kaas_2011_Table2 <- hhk_df
+}
+rm(hhk_df)
 
 ## 2 Change to standardized terminology for all variables in those dataframes
 
@@ -634,6 +731,136 @@ if (!is.null(hh2014b_df)) {
   cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2014_Table1 <- hh2014b_df
 }
 rm(hh2014b_df)
+
+# 3.4i Gabi et al. 2010 Table 1: Macaca radiata whole-brain neurons (2026-11 wiring,
+#      decision D2). The table prints 3.78 x 10^9 whole-brain neurons, but its own
+#      structure values sum to 3,761,360,000, and its printed % neuronal cells (43.5)
+#      and O/N (1.299) both fit the sum, not the printed total; Herculano-Houzel
+#      et al. 2015 likewise carries the sum (unrounded). The frozen TSV keeps the
+#      printed total; the structure sum is adopted here, guarded on both numbers.
+gabi_df <- cell_counts_isotropic_fractionator_data_list$Gabi_etal_2010_Table1
+if (!is.null(gabi_df)) {
+  rad <- !is.na(gabi_df$Species) & gabi_df$Species == "Macaca radiata"
+  if (sum(rad) != 1L || !all(c("WholeBrain_N.n", "CerebralCortex_N.n", "Cerebellum_N.n",
+                               "RoB_N.n") %in% colnames(gabi_df)))
+    stop("3.4i: expected exactly one 'Macaca radiata' row with whole-brain and structure ",
+         "neuron columns in Gabi_etal_2010_Table1. The source table or its standardized ",
+         "terms changed -- re-check this correction before applying it.", call. = FALSE)
+  wb_n <- suppressWarnings(as.numeric(gabi_df$WholeBrain_N.n[rad]))
+  parts <- sum(suppressWarnings(as.numeric(gabi_df$CerebralCortex_N.n[rad])),
+               suppressWarnings(as.numeric(gabi_df$Cerebellum_N.n[rad])),
+               suppressWarnings(as.numeric(gabi_df$RoB_N.n[rad])))
+  if (!isTRUE(all.equal(wb_n, 3780000000)) || !isTRUE(all.equal(parts, 3761360000)))
+    stop("3.4i: expected printed WholeBrain_N.n = 3780000000 and structure sum ",
+         "3761360000 for Macaca radiata; found ", wb_n, " and ", parts, ". The source ",
+         "table changed -- re-check this correction before applying it.", call. = FALSE)
+  gabi_df$WholeBrain_N.n[rad] <- parts
+  cell_counts_isotropic_fractionator_data_list$Gabi_etal_2010_Table1 <- gabi_df
+}
+rm(gabi_df)
+
+# 3.4j Gabi et al. 2010 Table 1: Microcebus murinus rest-of-brain non-neuronal density
+#      (2026-11 wiring, decision D2). The table prints 93,254 other cells/mg --
+#      digit-for-digit the Callimico goeldii value beside it -- where the printed
+#      count and mass give 101,731/mg, the value that also reproduces the printed
+#      total cells exactly ((22,029 + 101,731) x 500 mg) and the value HH 2015
+#      carries. The frozen TSV keeps the printed density; 101,731 is adopted here,
+#      guarded on the printed value.
+gabi2_df <- cell_counts_isotropic_fractionator_data_list$Gabi_etal_2010_Table1
+if (!is.null(gabi2_df)) {
+  mic <- !is.na(gabi2_df$Species) & gabi2_df$Species == "Microcebus murinus"
+  if (sum(mic) != 1L || !"RoB_O.p.mg" %in% colnames(gabi2_df))
+    stop("3.4j: expected exactly one 'Microcebus murinus' row with a RoB_O.p.mg column ",
+         "in Gabi_etal_2010_Table1. The source table or its standardized terms ",
+         "changed -- re-check this correction before applying it.", call. = FALSE)
+  rob_opmg <- suppressWarnings(as.numeric(gabi2_df$RoB_O.p.mg[mic]))
+  if (!isTRUE(all.equal(rob_opmg, 93254)))
+    stop("3.4j: expected the printed RoB_O.p.mg = 93254 for Microcebus murinus; found ",
+         rob_opmg, ". The source table changed -- re-check this correction before ",
+         "applying it.", call. = FALSE)
+  gabi2_df$RoB_O.p.mg[mic] <- 101731
+  cell_counts_isotropic_fractionator_data_list$Gabi_etal_2010_Table1 <- gabi2_df
+}
+rm(gabi2_df)
+
+# 3.4k Neves et al. 2014 Table 1: Procavia capensis olfactory-bulb mass (2026-11
+#      wiring, decision D3). Neves prints 0.290 g, but its own bulb count and density
+#      (20,909,000 neurons at 73,110 neurons/mg) imply 0.286 g; Ribeiro et al. 2014
+#      prints 0.286 g and HH 2015 Table 4 carries 0.286 g. The frozen TSV keeps
+#      0.290 g as printed in Neves; 0.286 g is adopted here, guarded on the printed
+#      value, so wiring the primary does not reintroduce the inconsistent mass over
+#      the compilation's consistent one.
+neves_df <- cell_counts_isotropic_fractionator_data_list$Neves_etal_2014_Table1
+if (!is.null(neves_df)) {
+  pcap <- !is.na(neves_df$Species) & neves_df$Species == "Procavia capensis"
+  if (sum(pcap) != 1L || !"OlfactoryBulb_Mass.g" %in% colnames(neves_df))
+    stop("3.4k: expected exactly one 'Procavia capensis' row with an OlfactoryBulb_Mass.g ",
+         "column in Neves_etal_2014_Table1. The source table or its standardized terms ",
+         "changed -- re-check this correction before applying it.", call. = FALSE)
+  ob_mass <- suppressWarnings(as.numeric(neves_df$OlfactoryBulb_Mass.g[pcap]))
+  if (!isTRUE(all.equal(ob_mass, 0.29, tolerance = 1e-9)))
+    stop("3.4k: expected the printed OlfactoryBulb_Mass.g = 0.29 for Procavia capensis; ",
+         "found ", ob_mass, ". The source table changed -- re-check this correction ",
+         "before applying it.", call. = FALSE)
+  neves_df$OlfactoryBulb_Mass.g[pcap] <- 0.286
+  cell_counts_isotropic_fractionator_data_list$Neves_etal_2014_Table1 <- neves_df
+}
+rm(neves_df)
+
+# 3.4l Herculano-Houzel et al. 2015 Table 2: Homo sapiens cerebellar other-cells SD
+#      (2026-11 wiring, decision D4). Table 2 prints the SD as 2,170,000; Azevedo
+#      et al. 2009, the primary source for the human row, gives 16.04 +/- 2.17
+#      BILLION other cells in its text -- the 2015 table dropped three zeros. The
+#      frozen HH 2015 build keeps the printed SD; it is corrected here, guarded on
+#      the printed value. (SD columns are annexed to metadata in sec 6, so this
+#      changes the unfiltered table, not the filtered long table.)
+hh2015t2_df <- cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2015_Table2
+if (!is.null(hh2015t2_df)) {
+  hum <- !is.na(hh2015t2_df$Species) & hh2015t2_df$Species == "Homo sapiens"
+  if (sum(hum) != 1L || !"Cerebellum_O.n_SD" %in% colnames(hh2015t2_df))
+    stop("3.4l: expected exactly one 'Homo sapiens' row with a Cerebellum_O.n_SD column ",
+         "in HerculanoHouzel_etal_2015_Table2. The source table or its standardized ",
+         "terms changed -- re-check this correction before applying it.", call. = FALSE)
+  cb_o_sd <- suppressWarnings(as.numeric(hh2015t2_df$Cerebellum_O.n_SD[hum]))
+  if (!isTRUE(all.equal(cb_o_sd, 2170000)))
+    stop("3.4l: expected the printed Cerebellum_O.n_SD = 2170000 for Homo sapiens; ",
+         "found ", cb_o_sd, ". The source table changed -- re-check this correction ",
+         "before applying it.", call. = FALSE)
+  hh2015t2_df$Cerebellum_O.n_SD[hum] <- 2170000000
+  cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2015_Table2 <- hh2015t2_df
+}
+rm(hh2015t2_df)
+
+# ================================================================================
+# 3.4m DECISION D7 -- SEPARATELY REMOVABLE GUARD (2026-11 wiring).
+#      Herculano-Houzel et al. 2015 Table 5: Blarina brevicauda whole-brain neurons.
+#      Table 5 prints 55,190,000, but the paper's own structure tables (Tables 1-4)
+#      sum to 51,646,000 and Sarko et al. 2009 -- the primary source for this
+#      species, wired above -- corroborates the structure sum (51,646,400). The
+#      HH 2015 internal checks diagnose the Table 5 value as the misprint. The
+#      frozen build keeps the printed value; the structure sum is adopted here,
+#      guarded on the printed value.
+#      TO STRIKE D7: delete this whole block (from this banner to the matching
+#      rm() below). Nothing else in the wiring depends on it.
+# ================================================================================
+hh2015t5_df <- cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2015_Table5
+if (!is.null(hh2015t5_df)) {
+  bla <- !is.na(hh2015t5_df$Species) & hh2015t5_df$Species == "Blarina brevicauda"
+  if (sum(bla) != 1L || !"WholeBrain_N.n" %in% colnames(hh2015t5_df))
+    stop("3.4m (D7): expected exactly one 'Blarina brevicauda' row with a WholeBrain_N.n ",
+         "column in HerculanoHouzel_etal_2015_Table5. The source table or its ",
+         "standardized terms changed -- re-check this correction before applying it.",
+         call. = FALSE)
+  bla_n <- suppressWarnings(as.numeric(hh2015t5_df$WholeBrain_N.n[bla]))
+  if (!isTRUE(all.equal(bla_n, 55190000)))
+    stop("3.4m (D7): expected the printed WholeBrain_N.n = 55190000 for Blarina ",
+         "brevicauda; found ", bla_n, ". The source table changed -- re-check this ",
+         "correction before applying it.", call. = FALSE)
+  hh2015t5_df$WholeBrain_N.n[bla] <- 51646000
+  cell_counts_isotropic_fractionator_data_list$HerculanoHouzel_etal_2015_Table5 <- hh2015t5_df
+}
+rm(hh2015t5_df)
+# ============================ end of D7 block ===================================
 
 # 3.6 Calculate Cell number where not already available (it was only reported in Dos Santos et al., 2020)
 # Formula _C.n = _N.n + _O.n
@@ -1202,6 +1429,47 @@ if (length(pin_items)) {
   pin_rows <- worth_dataframe[match(pin_items, worth_dataframe$source), , drop = FALSE]
   worth_dataframe <- worth_dataframe[!(worth_dataframe$source %in% pin_items), , drop = FALSE]
   insert_at <- min(which(worth_dataframe$source %in% hh2015_tables))
+  worth_dataframe <- rbind(worth_dataframe[seq_len(insert_at - 1), , drop = FALSE],
+                           pin_rows,
+                           worth_dataframe[insert_at:nrow(worth_dataframe), , drop = FALSE])
+  rownames(worth_dataframe) <- NULL
+  worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
+}
+
+# HH2015-primaries precedence pin (2026-11): the six primary sources Herculano-Houzel
+# et al. 2015 re-reported from, wired as items in this round -- Herculano-Houzel et al.
+# 2006 (rodents), Azevedo et al. 2009 (human), Gabi et al. 2010 (primates), Neves et al.
+# 2014 (afrotherians), Ribeiro et al. 2014 (olfactory bulb) and Herculano-Houzel & Kaas
+# 2011 Table 2 (ape cerebellar totals). Under the compilation rule each takes
+# precedence over the 2015 tables for the cells it measures, so the block is inserted
+# directly above the 2015 tables -- and also above HerculanoHouzel_etal_2011_Table1,
+# for two cell groups: HH 2006's printed DIRECT whole-brain totals take the WholeBrain
+# rows of its six rodent species over the 2011 structure sums (decision D1), and
+# Ribeiro 2014's rat and squirrel bulb rows (larger samples than 2011; the values
+# HH 2015 Table 4 already carries under other citations) take the bulb rows over both
+# the 2011 table and the 2015 table (decision D5). The block sits below the HH2014 /
+# Sarko pin: those items share no species with the six, so the relative order cannot
+# matter. Within the block, Neves precedes Ribeiro so Neves keeps precedence for the
+# afrotherian bulb cells the two share (decision D5); after the sec 1.6 scope
+# restrictions the six otherwise share no species x variable cells with each other.
+pin_items <- c("HerculanoHouzel_etal_2006_Table1",
+               "Azevedo_etal_2009_Table1",
+               "Gabi_etal_2010_Table1",
+               "Neves_etal_2014_Table1",
+               "Ribeiro_etal_2014_Table1",
+               "HerculanoHouzel_Kaas_2011_Table2")
+pin_items <- pin_items[pin_items %in% worth_dataframe$source]
+if (length(pin_items)) {
+  hh2015_tables <- paste0("HerculanoHouzel_etal_2015_Table", 1:5)
+  if (!all(hh2015_tables %in% worth_dataframe$source) ||
+      !"HerculanoHouzel_etal_2011_Table1" %in% worth_dataframe$source)
+    stop("8.2.H pin: expected all five HerculanoHouzel_etal_2015 tables and ",
+         "HerculanoHouzel_etal_2011_Table1 in the HH-team worth table. The item list ",
+         "changed -- re-check the HH2015-primaries precedence pin.", call. = FALSE)
+  pin_rows <- worth_dataframe[match(pin_items, worth_dataframe$source), , drop = FALSE]
+  worth_dataframe <- worth_dataframe[!(worth_dataframe$source %in% pin_items), , drop = FALSE]
+  insert_at <- min(which(worth_dataframe$source %in%
+                           c("HerculanoHouzel_etal_2011_Table1", hh2015_tables)))
   worth_dataframe <- rbind(worth_dataframe[seq_len(insert_at - 1), , drop = FALSE],
                            pin_rows,
                            worth_dataframe[insert_at:nrow(worth_dataframe), , drop = FALSE])

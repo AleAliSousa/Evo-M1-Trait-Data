@@ -60,6 +60,17 @@ item_name <- c(
                                        #   printed DIRECT whole-brain totals take the WholeBrain
                                        #   rows for the six rodent species (decision D1); the
                                        #   2011 structure sums keep every other variable.
+  "HerculanoHouzel_etal_2007_Table1",   # PRIMARY source (primate brains, whole brain only) for
+                                       #   the rows HH 2015 cites to it in 245 cells: pinned
+                                       #   above the 2015 tables in sec 8.2.H, so its printed
+                                       #   DIRECT whole-brain totals take the WholeBrain rows
+                                       #   for Tupaia glis and the six primate species (the
+                                       #   HH 2006 / D1 precedent). The structure-level values
+                                       #   behind most 2015 citations are in the paper's SI
+                                       #   Table 2 (online only, not built); the 2015 tables
+                                       #   keep every structure row. Rebuilt to standard
+                                       #   2026-11-23 from the PMC full text (PMC1805542),
+                                       #   superseding the 2026-10-21 eye-read build.
   "Azevedo_etal_2009_Table1",           # PRIMARY source for the Homo sapiens rows HH 2015
                                        #   re-reported: pinned above the 2015 tables in sec 8.2.H.
                                        #   Observed columns only (the table's Expected columns
@@ -1440,7 +1451,14 @@ if (length(pin_items)) {
 # et al. 2015 re-reported from, wired as items in this round -- Herculano-Houzel et al.
 # 2006 (rodents), Azevedo et al. 2009 (human), Gabi et al. 2010 (primates), Neves et al.
 # 2014 (afrotherians), Ribeiro et al. 2014 (olfactory bulb) and Herculano-Houzel & Kaas
-# 2011 Table 2 (ape cerebellar totals). Under the compilation rule each takes
+# 2011 Table 2 (ape cerebellar totals). Herculano-Houzel et al. 2007 (primate brains,
+# whole brain only) joins the block in the 2026-11-23 follow-up round: it is the most-
+# cited source in the 2015 tables (245 cells) and, on the same D1 basis as HH 2006, its
+# printed direct whole-brain totals take the WholeBrain rows for its seven species over
+# the 2015 re-reports. It shares no species x variable cells with the other block
+# members (its species overlap the HH & Kaas compiled rows, which carry cerebellar
+# totals only, and Ribeiro's Tupaia row, which is olfactory-bulb only), so its position
+# inside the block cannot matter. Under the compilation rule each takes
 # precedence over the 2015 tables for the cells it measures, so the block is inserted
 # directly above the 2015 tables -- and also above HerculanoHouzel_etal_2011_Table1,
 # for two cell groups: HH 2006's printed DIRECT whole-brain totals take the WholeBrain
@@ -1453,6 +1471,7 @@ if (length(pin_items)) {
 # afrotherian bulb cells the two share (decision D5); after the sec 1.6 scope
 # restrictions the six otherwise share no species x variable cells with each other.
 pin_items <- c("HerculanoHouzel_etal_2006_Table1",
+               "HerculanoHouzel_etal_2007_Table1",
                "Azevedo_etal_2009_Table1",
                "Gabi_etal_2010_Table1",
                "Neves_etal_2014_Table1",

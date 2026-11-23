@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species binomial (Pan troglodytes),,Species,,info,Primates,Sherwood_etal_2007_Table2,,
+Variable,"Variable summarised (HI and the 11 neuroanatomical measures of Sherwood_etal_2007_Table1)",,Variable,,info,Primates,Sherwood_etal_2007_Table2,The printed table's first column carries no heading; named 'Variable' in the snapshot (documented),
+Mean AQ,"Group mean of the asymmetry quotient (n = 18), AQ = (R - L)/((R + L) x 0.5)",Primary motor cortex,Asymmetry quotient,mean,primary,Primates,Sherwood_etal_2007_Table2,"Recomputed from Sherwood_etal_2007_Table1 in the build: agrees within 0.006 (printed rounding)",
+SD,Standard deviation of the asymmetry quotient across the 18 animals,Primary motor cortex,Asymmetry quotient,SD,primary,Primates,Sherwood_etal_2007_Table2,Recomputed from Table 1 in the build (agrees within rounding),
+t,One-sample t statistic against zero as printed,,t statistic,,primary,Primates,Sherwood_etal_2007_Table2,Carried as printed; not recomputed (not exactly reproducible from rounded inputs),
+P,P value of the one-sample t test as printed,,P value,,primary,Primates,Sherwood_etal_2007_Table2,Carried as printed,
+Note,Build note for the row,,Note,,info,Primates,Sherwood_etal_2007_Table2,,

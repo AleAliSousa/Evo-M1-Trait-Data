@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species binomial (Pan troglodytes),,Species,,info,Primates,Sherwood_etal_2010_SupplementaryTableS1,,
+Subject,Yerkes-style subject code as printed,,Specimen,,info,Primates,Sherwood_etal_2010_SupplementaryTableS1,The same 33 animals as Sherwood_etal_2010_Table1, in the same order,
+Sex,Sex as printed (M / F),,Sex,,info,Primates,Sherwood_etal_2010_SupplementaryTableS1,,
+"Age at death, years","Age at death in years (printed as 'Age')",,Age.years,,primary,Primates,Sherwood_etal_2010_SupplementaryTableS1,Agrees with Sherwood_etal_2010_Table1 for all 33 animals,
+"SY-ir puncta density, left (per 10^8/mm3)","Synaptophysin-immunoreactive puncta density in the LEFT primary motor cortex hand representation, number of puncta per 10^8/mm3",Primary motor cortex,Density,individual,primary,Primates,Sherwood_etal_2010_SupplementaryTableS1,Per-hemisphere raw value as printed,
+"SY-ir puncta density, right (per 10^8/mm3)","Synaptophysin-immunoreactive puncta density in the RIGHT primary motor cortex hand representation, number of puncta per 10^8/mm3",Primary motor cortex,Density,individual,primary,Primates,Sherwood_etal_2010_SupplementaryTableS1,Per-hemisphere raw value as printed,
+SY-ir puncta density AQ,"Asymmetry quotient of the SY-ir puncta density, AQ = (R - L)/((R + L) x 0.5); positive = right-hemisphere dominance",Primary motor cortex,Asymmetry quotient,individual,primary,Primates,Sherwood_etal_2010_SupplementaryTableS1,"As printed; agrees exactly with Sherwood_etal_2010_Table1's density AQ for all 33 animals. C0594's printed AQ (0.02) does not recompute from the printed densities (0.035) -- see the Note column and README",
+Note,Build note for the row,,Note,,info,Primates,Sherwood_etal_2010_SupplementaryTableS1,Flags the C0594 AQ recomputation case,

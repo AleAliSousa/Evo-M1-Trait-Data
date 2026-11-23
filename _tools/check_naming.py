@@ -44,7 +44,7 @@ DELIBERATE = {
     ('PUB', 'Armstrong__1979/Armstrong__1979_Tables1-9.R', 84),
     ('PUB', 'Armstrong__1979/Armstrong__1979_Tables1-9.R', 107),
     ('PUB', '_keys/build_variable_definitions.R', 217),
-    ('PUB', 'Weaver__2001/Weaver__2001_TableA-15.ReadMe.md', 11),
+    ('PUB', 'Weaver__2001/Weaver__2001_TableA-15.README.md', 11),
     ('PUB', '_keys/specimen_crosswalk/IDENTIFIER_JOIN_PASS_METHOD.md', 61),
     ('RES', 'specimen_registry/derived/RESTRICTED_identifier_join_results.md', 92),
 }

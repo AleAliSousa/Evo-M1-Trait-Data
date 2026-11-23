@@ -13,7 +13,7 @@ birds and 171 mammals, per the paper's abstract.
 | `Ruf_Geiser_2015_Table1_snapshot.csv` | Table 1 as printed |
 | `Ruf_Geiser_2015_Table1.csv` | cleaned, analysis-ready data ("use this") |
 | `Ruf_Geiser_2015_Table1.R` | script that turns the snapshot into the clean CSV |
-| `Ruf_Geiser_2015_Table1.ReadMe.md` | this file |
+| `Ruf_Geiser_2015_Table1.README.md` | this file |
 | `reference_tables/Ruf_Geiser_2015_Table1_definitions.csv` | measurement basis per column |
 | `reference_tables/Ruf_Geiser_2015_Table1_references.csv` | the 265 works cited in the `References` column |
 

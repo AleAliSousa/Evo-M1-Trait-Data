@@ -35,7 +35,7 @@ setwd(folder)
 
 ## ---- region label follows the dissertation's OWN Appendix numbering ----
 ##  NOTE: the printed dissertation numbers A12 = Sensorimotor Cortex and
-##        A13 = Cingulate Cortex. See Kaufman__2004.ReadMe.md.
+##        A13 = Cingulate Cortex. See Kaufman__2004.README.md.
 region_map <- c(
   Kaufman__2004_TableA1  = "Basal Ganglia",
   Kaufman__2004_TableA2  = "Hippocampus",

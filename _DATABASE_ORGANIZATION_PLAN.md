@@ -400,8 +400,8 @@ of the roadmap with Part 3 cut to a 17-line pointer, which keeps the five "do-fi
 other files refer to, has been prepared but not applied.
 
 Two item READMEs cite §3 of the removed species standardization plan (the rule for
-common-name-only tables): `Finlay_etal_2006/Finlay_etal_2006_Table6.1.ReadMe.md` line 24 and
-`Changizi__2001/Changizi__2001_Figure3.ReadMe.md` line 20. The rule: add a real binomial
+common-name-only tables): `Finlay_etal_2006/Finlay_etal_2006_Table6.1.README.md` line 24 and
+`Changizi__2001/Changizi__2001_Figure3.README.md` line 20. The rule: add a real binomial
 `Species` column and keep the common names under `common_name`; never overload `Species` with
 common names.
 

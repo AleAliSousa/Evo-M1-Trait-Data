@@ -100,7 +100,7 @@ tryCatch({
   unlink(specific_def)
 
   # Item README wins over a shared README and mixed-case names are accepted.
-  specific_readme <- path("Paper_TableB.ReadMe.md")
+  specific_readme <- path("Paper_TableB.README.md")
   writeLines("item notes", specific_readme)
   run("Paper_TableB")
   stopifnot(basename(observed$readme_file) == basename(specific_readme))

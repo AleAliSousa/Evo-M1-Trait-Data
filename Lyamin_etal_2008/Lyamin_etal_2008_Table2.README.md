@@ -13,7 +13,7 @@ Note: this folder uses Table 2 (the quantitative sleep parameters table), not Ta
 | `Lyamin_etal_2008_Table2_snapshot.csv` | frozen, faithful copy of Table 2 as printed (see reorientation note below) |
 | `Lyamin_etal_2008_Table2.csv` | cleaned, analysis-ready data |
 | `Lyamin_etal_2008_Table2.R` | script that turns the snapshot into the clean CSV |
-| `Lyamin_etal_2008_Table2.ReadMe.md` | this file |
+| `Lyamin_etal_2008_Table2.README.md` | this file |
 
 ## Snapshot
 

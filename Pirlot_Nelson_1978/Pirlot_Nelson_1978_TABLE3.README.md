@@ -99,7 +99,7 @@ None of these values is changed. Owner, 15 Oct 2026: flag these values and compa
 | E007 | ECHIDNA Hip % | 6.65 | does not fit its volume (by 0.02) | 6.67 | proposed |
 | E008 | OPOSSUM Med | 572.13; 8.82% | repeats Bul; same brain gives 566.0 in Pirlot 1981 | — | proposed |
 
-Proposed values are for rule-based substitution or exclusion in merges, never edits of the data; the total-inferred medulla values are not independent measurements. Running `render_errata("Pirlot_Nelson_1978")` adds the matching notes to the definitions file. (It looks for `<Item>.README.md` or `<Item>.md`, so it will not find this `.ReadMe.md` file; this table is a hand-written summary, not its generated block.)
+Proposed values are for rule-based substitution or exclusion in merges, never edits of the data; the total-inferred medulla values are not independent measurements. Running `render_errata("Pirlot_Nelson_1978")` adds the matching notes to the definitions file. (It looks for `<Item>.README.md` or `<Item>.md`, so it will not find this `.README.md` file; this table is a hand-written summary, not its generated block.)
 
 ## Comparison with other data (same and similar species)
 

@@ -39,7 +39,7 @@ Worked example — Beatty_Laughlin_2006, the folder that prompted this:
 | `Beatty_Laughlin_2006_Table1.R` | 3 script | scripts |
 | `Beatty_Laughlin_2006_Table1.csv` | 4 output | outputs (or stays item-level, see decisions) |
 | `reference_tables/*_definitions.csv` | 4 output | reference_tables (unchanged) |
-| `*.ReadMe.md` / `*.README.md` | 4 documentation | stays with the item |
+| `*.README.md` / `*.README.md` | 4 documentation | stays with the item |
 
 The same mapping applies repo-wide: Michael-supplied paper PDFs (Kruska,
 Röhrs) and the Dryad/publisher downloads (Gonzalez-Voyer CSV, Baker XLSX) are
@@ -60,7 +60,7 @@ Beatty_Laughlin_2006/
                       Beatty_Laughlin_2006_Table1.R
   reference_tables/   definitions (unchanged)
   Beatty_Laughlin_2006_Table1.csv      (output, item level)
-  Beatty_Laughlin_2006.ReadMe.md
+  Beatty_Laughlin_2006.README.md
   Beatty_Laughlin_2006_Table1.README.md
 ```
 

@@ -10,7 +10,7 @@ For data in scatter plots, bar plots and others, you can use [http://arohatgi.in
 
 For each data table, create a `.tsv` file and use the DOI of the paper where the data comes from as name for the `.tsv` file. DOI codes have symbols that are not allowed in a file name. Convert them to an acceptable name using [http://meyerweb.com/eric/tools/dencoder/](http://meyerweb.com/eric/tools/dencoder/).
 
-Provide a correctly formatted `.tsv` file with the data (GitHub will let you know if there are any problems), and add further comments or legends in a file with the same DOI name plus `.ReadMe.md`.
+Provide a correctly formatted `.tsv` file with the data (GitHub will let you know if there are any problems), and add further comments or legends in a file with the same DOI name plus `.README.md`.
 
 Finally, to enjoy the fruit of your work, you can use [http://rawgraphs.io/](http://rawgraphs.io/) and pass a [https://rawgit.com](https://rawgit.com) link to the `.tsv` file to get beautiful d3 plots.
 

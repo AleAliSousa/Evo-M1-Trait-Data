@@ -41,7 +41,7 @@ All six values match. Latimer & Sawin also print cord length by dissection (280.
 
 The CSV and the public TSV were rewritten by a Python mirror of the updated script (header change only; the mirror reproduces the previous R output byte for byte before the change). Run MacLarnon__1996_Table1.R to confirm: the outputs should be identical. The script now also stops if the two rabbit rows ever change.
 
-Errata for this item are in reference_tables/MacLarnon__1996_errata.csv. render_errata.R looks for a README named MacLarnon__1996_Table1.README.md, so it will not update this ReadMe.md; the block below was written by hand in the same format. Renaming this file to MacLarnon__1996_Table1.README.md would let render_errata keep it up to date.
+Errata for this item are in reference_tables/MacLarnon__1996_errata.csv. render_errata.R looks for a README named MacLarnon__1996_Table1.README.md, so it will not update this README.md; the block below was written by hand in the same format. Renaming this file to MacLarnon__1996_Table1.README.md would let render_errata keep it up to date.
 
 
 <!-- errata:begin -->

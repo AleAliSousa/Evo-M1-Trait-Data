@@ -130,7 +130,7 @@ Generated from `reference_tables/DosSantos_etal_2020_errata.csv` by `_tools/data
 | file | |
 |---|---|
 | `DosSantos_etal_2020_Table1_snapshot.R` / `_snapshot.csv` | frozen copy of Table 1 as printed (pp. 4625–4627) |
-| `DosSantos_etal_2020_Table1.R` / `.csv` / `.ReadMe.md` | reformat of the snapshot to one row per species; item notes |
+| `DosSantos_etal_2020_Table1.R` / `.csv` / `.README.md` | reformat of the snapshot to one row per species; item notes |
 | `reference_tables/DosSantos_etal_2020_Table1_definitions.csv` | one row per column of the item, with its role (measured, derived, re-reported) |
 | `reference_tables/DosSantos_etal_2020_errata.csv` | the errata source file (rendered above by `render_errata`) |
 | `DosSantos_etal_2020_definitions.csv` | older paper-level code list (structure and measure codes) |

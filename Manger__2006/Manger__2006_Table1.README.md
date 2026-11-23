@@ -14,7 +14,7 @@ the analyses included in the present study"*, pp. 296–297.
 | `Manger__2006_Table1_snapshot.csv` | the extant-cetacean rows of Table 1 as printed |
 | `Manger__2006_Table1.csv` | cleaned, analysis-ready data ("use this") |
 | `Manger__2006_Table1.R` | script that turns the snapshot into the clean CSV |
-| `Manger__2006_Table1.ReadMe.md` | this file |
+| `Manger__2006_Table1.README.md` | this file |
 
 ## Pipeline
 

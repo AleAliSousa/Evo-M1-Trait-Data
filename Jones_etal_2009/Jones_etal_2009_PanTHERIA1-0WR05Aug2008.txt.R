@@ -155,7 +155,7 @@ write.table(final.dataframe, tsv_path, sep = "\t", row.names = FALSE, na = "", f
 # ---- 7. Validate ----
 checks <- validate_dataset_item(
   csv_file = csv_path, tsv_file = tsv_path,
-  readme_file = file.path(item_dir, paste0(item_name, ".ReadMe.md")),
+  readme_file = file.path(item_dir, paste0(item_name, ".README.md")),
   definitions_file = file.path(reftab, paste0(item_name, "_definitions.csv")),
   frozen_source_file = frozen, registry = filecodes, item_name = item_name, item_encoded = item_encoded)
 print(checks)

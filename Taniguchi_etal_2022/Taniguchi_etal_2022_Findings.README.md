@@ -17,7 +17,7 @@ from.
 | `Taniguchi_etal_2022_Findings_snapshot.csv` | **populated** — nine reported observations, each with its figure reference |
 | `Taniguchi_etal_2022_Findings.csv` | cleaned, analysis-ready ("use this") |
 | `Taniguchi_etal_2022_Findings.R` | script that turns the snapshot into the clean CSV |
-| `Taniguchi_etal_2022_Findings.ReadMe.md` | this file |
+| `Taniguchi_etal_2022_Findings.README.md` | this file |
 
 ## Pipeline
 

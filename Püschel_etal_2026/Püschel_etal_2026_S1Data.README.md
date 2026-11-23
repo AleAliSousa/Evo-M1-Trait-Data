@@ -78,7 +78,7 @@ Script section 5 runs 754 checks: 750 pass and 4 do not. The results stay in `ta
 - *Homo sapiens* substrate and dimorphism cite Galán-Acedo et al. 2019, which has no *Homo sapiens* row.
 
 ## App wiring (2026-11-03; R NOT RUN)
-- **Source-table browser:** a `__ShinyApp/data/source_manifest.csv` row for `10.1371%2Fjournal.pbio.3003771_S1Data.tsv`, with the source note `__Public/comparative-data/10.1371%2Fjournal.pbio.3003771_S1Data.ReadMe.md`. The row is in `build_data.R`'s format; rerun `build_data.R` to regenerate the manifest.
+- **Source-table browser:** a `__ShinyApp/data/source_manifest.csv` row for `10.1371%2Fjournal.pbio.3003771_S1Data.tsv`, with the source note `__Public/comparative-data/10.1371%2Fjournal.pbio.3003771_S1Data.README.md`. The row is in `build_data.R`'s format; rerun `build_data.R` to regenerate the manifest.
 - **Compiled database:** `__merging_supplementary` gains two `distinct` labels, `Handedness_index_mean_Püschel2026 (HI)` and `Handedness_strength_mean_Püschel2026 (abs(HI))`.
   - Per species, each is the sample-size-weighted mean of the study rows (new aggregate `wmean:sample_size`). That weighting reproduces Caspar 2022 Table 1 where the same samples are pooled.
   - They are secondary and never pooled with the behaviour merge's Caspar 2022 labels, because 26 S1 Data rows are Caspar's own samples and 23 more are literature samples Caspar pooled.

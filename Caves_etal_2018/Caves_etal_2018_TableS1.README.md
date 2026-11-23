@@ -11,7 +11,7 @@
 | `Caves_etal_2018_TableS1_snapshot.csv` | frozen, faithful copy of Table S1 as printed |
 | `Caves_etal_2018_TableS1.csv` | cleaned, analysis-ready data ("use this") |
 | `Caves_etal_2018_TableS1.R` | script that turns the snapshot into the clean CSV |
-| `Caves_etal_2018_TableS1.ReadMe.md` | this file |
+| `Caves_etal_2018_TableS1.README.md` | this file |
 
 ## Pipeline
 

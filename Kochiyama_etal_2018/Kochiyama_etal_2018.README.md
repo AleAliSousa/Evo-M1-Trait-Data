@@ -23,7 +23,7 @@ Each item has a `reference_tables/*_definitions.csv`. Public TSVs are written to
 > *legend* data. The updated registry splits this into **`Figure3legend`** (the MH
 > means) and **`Figure3`** (the figure = relative-volume bars). The files here follow
 > the new registry: `Figure3` is now the digitized relative volumes; the old
-> legend-era `Figure3.R`/`.ReadMe.md` were replaced.
+> legend-era `Figure3.R`/`.README.md` were replaced.
 
 ## Reconciliation of the relative volumes (the analysis)
 

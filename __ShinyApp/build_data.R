@@ -224,7 +224,7 @@ message("evom1 traits rows: ", nrow(traits))
 # ---- 3. index the public source tables (served from GitHub, not copied) -----
 pub  <- file.path(repo, "__Public", "comparative-data")
 tsvs <- sort(list.files(pub, pattern = "\\.tsv$"))
-mds  <- list.files(pub, pattern = "\\.ReadMe\\.md$")
+mds  <- list.files(pub, pattern = "\\.README\\.md$")
 message("source tables indexed (served from GitHub): ", length(tsvs))
 
 # ---- 4. build source_manifest.csv (filenames + citations from __ReadMe.xlsx) -
@@ -281,7 +281,7 @@ rows <- lapply(tsvs, function(fn) {
            else ident
 
   rm <- ""
-  for (cand in c(paste0(base, ".ReadMe.md"), paste0(ident_enc, ".ReadMe.md")))
+  for (cand in c(paste0(base, ".README.md"), paste0(ident_enc, ".README.md")))
     if (cand %in% mds) { rm <- cand; break }
 
   # Count rows/cols and read the header via readLines — robust to ragged rows

@@ -15,7 +15,7 @@ appears twice, as a calf and as an adult female.
 | `Lyamin_etal_2008_Table1.csv` | cleaned, analysis-ready data ("use this") |
 | `Lyamin_etal_2008_Table1.R` | script that turns the snapshot into the clean CSV |
 | `species_resolution_Lyamin_Table1.csv` | common name → binomial, with confidence flags |
-| `Lyamin_etal_2008_Table1.ReadMe.md` | this file |
+| `Lyamin_etal_2008_Table1.README.md` | this file |
 
 ## Pipeline
 

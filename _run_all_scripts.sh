@@ -91,14 +91,14 @@ all_r()      { find . -type f -name '*.R' ! -path '*/.*' | sed 's|^\./||' | LC_A
 selected_r() { all_r | grep -E -- "$pattern" || true; }
 readme_open() { [ -e "$root/"'~$__ReadMe.xlsx' ]; }
 
-# Item build scripts among the selection: <PaperFolder>/<Item>.R with <Item>.README.md (or .ReadMe.md)
+# Item build scripts among the selection: <PaperFolder>/<Item>.R with <Item>.README.md (or .README.md)
 # beside it; helper scripts (*compare*, *_extract_snapshot.R) and _/__ folders are not items.
 list_items() {
   selected_r | while IFS= read -r p; do
     case "$p" in _*|*/*/*) continue ;; */*) ;; *) continue ;; esac
     d="$(dirname "$p")"; b="$(basename "$p" .R)"
     case "$b" in *compare*|*_extract_snapshot) continue ;; esac
-    if [ -f "$d/$b.README.md" ] || [ -f "$d/$b.ReadMe.md" ]; then echo "$b"; fi
+    if [ -f "$d/$b.README.md" ] || [ -f "$d/$b.README.md" ]; then echo "$b"; fi
   done
 }
 

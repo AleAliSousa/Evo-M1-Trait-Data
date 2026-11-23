@@ -14,7 +14,7 @@ is named for its locus.
 | `Fritsches_etal_2005_Fig2_snapshot.csv` | the three-species comparison as stated in the paper |
 | `Fritsches_etal_2005_Fig2.csv` | cleaned, analysis-ready data ("use this") |
 | `Fritsches_etal_2005_Fig2.R` | script that turns the snapshot into the clean CSV |
-| `Fritsches_etal_2005_Fig2.ReadMe.md` | this file |
+| `Fritsches_etal_2005_Fig2.README.md` | this file |
 
 ## Pipeline
 

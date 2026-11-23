@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species binomial resolved from the printed group name,,Species,,info,Primates,Semendeferi_etal_2011_Table2,Resolution evidence as in the Table 1 definitions (Gibbon = Hylobates lar; Orangutan = Pongo pygmaeus),
+Group (printed),Group name as printed in the table,,Group,,info,Primates,Semendeferi_etal_2011_Table2,,
+"BA 10 HSD, µm","Mean horizontal spacing distance (HSD) between neurons in layer III of Brodmann area 10 (frontal pole), microns",Cerebral cortex BA 10 layer III,HSD.um,mean,primary,Primates,Semendeferi_etal_2011_Table2,"Species mean over the images of the individual specimens of Table 1 of the same paper; HSD is the paper's neuronal-spacing / minicolumn measure",
+"BA 10 HSD SD, µm",SD of BA 10 HSD,Cerebral cortex BA 10 layer III,SD,sd,info,Primates,Semendeferi_etal_2011_Table2,,
+"BA 4 HSD, µm","Mean horizontal spacing distance in layer III of Brodmann area 4 (primary motor cortex), microns",Cerebral cortex BA 4 layer III,HSD.um,mean,primary,Primates,Semendeferi_etal_2011_Table2,,
+"BA 4 HSD SD, µm",SD of BA 4 HSD,Cerebral cortex BA 4 layer III,SD,sd,info,Primates,Semendeferi_etal_2011_Table2,,
+"BA 3 HSD, µm","Mean horizontal spacing distance in layer III of Brodmann area 3 (primary somatosensory cortex), microns",Cerebral cortex BA 3 layer III,HSD.um,mean,primary,Primates,Semendeferi_etal_2011_Table2,,
+"BA 3 HSD SD, µm",SD of BA 3 HSD,Cerebral cortex BA 3 layer III,SD,sd,info,Primates,Semendeferi_etal_2011_Table2,,
+"BA 17 HSD, µm","Mean horizontal spacing distance in layer III of Brodmann area 17 (primary visual cortex), microns",Cerebral cortex BA 17 layer III,HSD.um,mean,primary,Primates,Semendeferi_etal_2011_Table2,,
+"BA 17 HSD SD, µm",SD of BA 17 HSD,Cerebral cortex BA 17 layer III,SD,sd,info,Primates,Semendeferi_etal_2011_Table2,,

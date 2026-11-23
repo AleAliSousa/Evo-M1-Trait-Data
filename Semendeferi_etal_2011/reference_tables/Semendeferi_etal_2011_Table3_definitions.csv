@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species binomial resolved from the printed group name,,Species,,info,Primates,Semendeferi_etal_2011_Table3,Resolution evidence as in the Table 1 definitions (Gibbon = Hylobates lar; Orangutan = Pongo pygmaeus),
+Group (printed),Group name as printed in the table,,Group,,info,Primates,Semendeferi_etal_2011_Table3,,
+"BA 10 GLR","Mean gray level ratio (GLR) in layer III of Brodmann area 10 (frontal pole), dimensionless",Cerebral cortex BA 10 layer III,GLR,mean,primary,Primates,Semendeferi_etal_2011_Table3,"Species mean over the images of the individual specimens of Table 1 of the same paper; GLR is the fraction of the image area occupied by stained cell bodies (a density proxy)",
+"BA 10 GLR SD",SD of BA 10 GLR,Cerebral cortex BA 10 layer III,SD,sd,info,Primates,Semendeferi_etal_2011_Table3,,
+"BA 4 GLR","Mean gray level ratio in layer III of Brodmann area 4 (primary motor cortex), dimensionless",Cerebral cortex BA 4 layer III,GLR,mean,primary,Primates,Semendeferi_etal_2011_Table3,,
+"BA 4 GLR SD",SD of BA 4 GLR,Cerebral cortex BA 4 layer III,SD,sd,info,Primates,Semendeferi_etal_2011_Table3,,
+"BA 3 GLR","Mean gray level ratio in layer III of Brodmann area 3 (primary somatosensory cortex), dimensionless",Cerebral cortex BA 3 layer III,GLR,mean,primary,Primates,Semendeferi_etal_2011_Table3,,
+"BA 3 GLR SD",SD of BA 3 GLR,Cerebral cortex BA 3 layer III,SD,sd,info,Primates,Semendeferi_etal_2011_Table3,,
+"BA 17 GLR","Mean gray level ratio in layer III of Brodmann area 17 (primary visual cortex), dimensionless",Cerebral cortex BA 17 layer III,GLR,mean,primary,Primates,Semendeferi_etal_2011_Table3,"The paper's text misattributes the ape range minimum (0.31) to the chimpanzee; in this table 0.31 is the bonobo mean and chimpanzee is 0.35",
+"BA 17 GLR SD",SD of BA 17 GLR,Cerebral cortex BA 17 layer III,SD,sd,info,Primates,Semendeferi_etal_2011_Table3,,

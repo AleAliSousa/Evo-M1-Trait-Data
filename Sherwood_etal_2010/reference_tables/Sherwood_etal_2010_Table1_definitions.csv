@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,Species binomial (Pan troglodytes),,Species,,info,Primates,Sherwood_etal_2010_Table1,,
+Subject,Yerkes-style subject code as printed,,Specimen,,info,Primates,Sherwood_etal_2010_Table1,"Animals are identified by code only, never named, in this paper; none of the 33 codes appears in the specimen crosswalk",
+Sex,Sex as printed (M / F),,Sex,,info,Primates,Sherwood_etal_2010_Table1,C0576 is printed M here but F in Sherwood_etal_2007_Table1 (see the Note column),
+"Age at death, years","Age at death in years",,Age.years,,primary,Primates,Sherwood_etal_2010_Table1,Ages conflict with Sherwood_etal_2007_Table1 for C0576 / C0573 / C0406 (see the Note column),
+"PMI, h","Postmortem interval in hours",,PMI.hours,,primary,Primates,Sherwood_etal_2010_Table1,Empty where the paper prints N/A (4 animals; see the Note column),
+Rearing history,"Rearing history as printed (C = captive-born, W = wild-born)",,Rearing,,info,Primates,Sherwood_etal_2010_Table1,,
+SY puncta density AQ,"Asymmetry quotient of synaptophysin-immunoreactive puncta density in the primary motor cortex hand representation, AQ = (R - L)/((R + L) x 0.5); positive = right-hemisphere dominance",Primary motor cortex,Asymmetry quotient,individual,primary,Primates,Sherwood_etal_2010_Table1,The per-hemisphere densities behind these AQs are in Sherwood_etal_2010_SupplementaryTableS1,
+SY protein expression AQ,Asymmetry quotient of synaptophysin protein expression level (Western blot) in the primary motor cortex hand representation (AQ formula as above),Primary motor cortex,Asymmetry quotient,individual,primary,Primates,Sherwood_etal_2010_Table1,"Empty for 12 of 33 animals as printed (Western blot subset n = 21); missing, never zero",
+HI,"Handedness index for the coordinated bimanual (tube) task, HI = (R - L)/(R + L); positive = right-hand preference",,Handedness index,,primary,Primates,Sherwood_etal_2010_Table1,Identical values are printed for the 18 shared animals in Sherwood_etal_2007_Table1,
+Handedness category,"Handedness classification as printed (R = right, L = left, NP = no preference)",,Handedness classification,,primary,Primates,Sherwood_etal_2010_Table1,NP is this paper's term for the ambidextrous construct called A in Sherwood_etal_2007,
+Note,Build note for the row,,Note,,info,Primates,Sherwood_etal_2010_Table1,Records PMI N/A rows and the demographic conflicts with Sherwood_etal_2007_Table1,

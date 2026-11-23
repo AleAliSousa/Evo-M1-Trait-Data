@@ -15,8 +15,8 @@ One row per member of a pooling group.
 |---|---|
 | `pool_id` | the group (`Sus_scrofa`, `Mustela_putorius`) |
 | `member` | a compiled species label, exactly as the `__merging_*` long files spell it (an `accepted_name` in `species_reference.csv`) |
-| `axis` | `domestication` — the only axis implemented. `subspecies`, `sensu` and `indet` are reserved by the design doc and are **not** honoured by any consumer yet |
-| `relation` | `wild_form` or `domestic_form`. A group has exactly one `domestic_form` and one or more `wild_form` rows |
+| `axis` | `domestication` (the read-time switch described here) or `subspecies` (since 2026-11-23, see below). `sensu` and `indet` are reserved by the design doc and are **not** honoured by any consumer yet |
+| `relation` | `wild_form` or `domestic_form`. A group has exactly one `domestic_form` and one or more `wild_form` rows. On the `subspecies` axis: one `species_rank` row (the species) and one `subspecies` or `nominate` row per subspecies name |
 | `basis` | why the two labels are one animal — required |
 | `authority` | the taxonomy that says so (NCBI taxid, MDD) — required |
 | `decided_by`, `decided_date`, `note` | provenance of the row |
@@ -88,3 +88,25 @@ cells table) rather than hiding it.
   population covariate (see `TAXON_POOLING_DESIGN.md`, "The two axes are
   different in kind").
 - It does not decide which mode is right. `off` is the default everywhere.
+
+## The subspecies axis (owner rule, 2026-11-23)
+
+**Rule.** A subspecies name is kept on record, and compiled data are filed under the species.
+
+- **On record.** The merges are not changed: each `__merging_*` long file keeps the name its
+  source printed (`species_printed`) and the label it resolved to. A subspecies label that reaches
+  the compiled table is filed here: one `species_rank` row for the species and one row per
+  subspecies name (`relation` = `subspecies`, or `nominate` where the epithet repeats).
+- **Compiled data.** `__compiled/build_compiled.R` serves every filed subspecies under its species
+  and writes the name it was filed under into the table's `Subspecies` column. Nothing is averaged
+  by the builder: a species can then hold several rows for one variable, told apart by `Subspecies`.
+- **Easy to find.** Every build writes `__compiled/subspecies_register.csv`: each filed subspecies
+  with its number of values, variables, datasets and sources, how many of its variables were also
+  measured in another subspecies of the same species, and every three-word label that is *not* filed
+  (domestic forms, species groups, names awaiting a decision).
+- **Not subspecies for this rule.** Domestic forms (`Canis lupus familiaris`, `Sus scrofa domesticus`
+  ...) stay separate labels; they belong to the domestication axis above. Species groups
+  (`Macaca mulatta group`) are a sensu question and are not filed.
+- **To file a new subspecies:** add its row (and a `species_rank` row if the species has none), rebuild.
+  **To serve a subspecies separately again** (enough data to compare, or the taxonomy changed):
+  delete its row, rebuild.

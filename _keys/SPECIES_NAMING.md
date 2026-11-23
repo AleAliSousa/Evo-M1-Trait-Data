@@ -90,6 +90,14 @@ Three schemas/paths for one job. The two merges can disagree; the per-paper scri
 
 ---
 
+### Subspecies (owner rule, 2026-11-23)
+
+A subspecies name is kept on record and compiled data are filed under the species. The record is
+`species_printed` in every merge and the `subspecies` rows of `species_pooling.csv`; the compiled
+table serves the value under the species and keeps the name in its `Subspecies` column;
+`__compiled/subspecies_register.csv` lists every subspecies in the table. Domestic forms are not
+subspecies for this rule. Details: `README_species_pooling.md`.
+
 ## 3. The pieces
 
 ```

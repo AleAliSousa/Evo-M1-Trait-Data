@@ -8,17 +8,21 @@ the one exception; see its README).
 | File | What it is |
 |---|---|
 | `build_compiled.R` | Builds the table. It holds the loader that used to run inside `app.R` at every start-up, moved here line for line, so the values are the ones the app has always shown. |
+| `subspecies_register.csv` | Written by every build: each subspecies filed under a species, with counts, and the three-word labels that are not filed. |
 | `compiled_long.csv.gz` | The output: one row per species × variable × dataset value. Gzip, because the plain CSV is 55.7 MB (3.9 MB zipped on 2026-11-23). UTF-8, LF line ends. |
 
 ## Columns
 
 The 14 columns the app's `compiled` table has, in its order: `Species`, `Dataset`, `Variable`,
 `Value`, `Value_num`, `Source`, `Items`, `Source_details`, `Teams`, `N_sources`, `Variable_raw`,
-`Unit`, `Unit_raw`, `population_verdict`. Then two category columns:
+`Unit`, `Unit_raw`, `population_verdict`. Then two category columns and one name column:
 
 - `domain` and `measure_class`: the two tiers of the app's variable picker, from
   `_keys/variable_definitions.csv`. A label with no row there is `Unclassified`; a blank class is
   `other`.
+- `Subspecies`: empty, or the subspecies name the value was filed under by its merge. `Species`
+  then holds the species (`_keys/species_pooling.csv`, `axis = subspecies`; rule in
+  `_keys/README_species_pooling.md`).
 
 `Dataset` names the merge a row came from (28 values). Missing cells are `NA`; text is always
 quoted, so an empty string stays distinct from missing. Rows are ordered by `Species`, then

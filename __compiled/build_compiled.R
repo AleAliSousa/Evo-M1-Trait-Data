@@ -172,6 +172,24 @@ if (!all(c("variable", "winning_dataset", "yielding_dataset") %in% names(precede
   stop("_keys/label_precedence.csv must have columns: variable, winning_dataset, yielding_dataset.", call. = FALSE)
 for (cl in c("variable", "winning_dataset", "yielding_dataset")) precedence[[cl]] <- trimws(as.character(precedence[[cl]]))
 
+# Subspecies (_keys/species_pooling.csv, axis = subspecies; owner rule of
+# 2026-11-23): compiled data are filed under the species. Each pool has one
+# species_rank row (the species) and one row per subspecies name.
+subspecies_key <- local({
+  k <- read_csv_gh("_keys/species_pooling.csv", file.path(data_dir, "species_pooling.csv"))
+  k <- k[trimws(as.character(k$axis)) == "subspecies", , drop = FALSE]
+  for (cl in c("pool_id", "member", "relation")) k[[cl]] <- trimws(as.character(k[[cl]]))
+  top <- k[k$relation == "species_rank", , drop = FALSE]
+  if (anyDuplicated(top$pool_id) || any(!k$pool_id %in% top$pool_id))
+    stop("_keys/species_pooling.csv: every subspecies pool needs exactly one species_rank row.", call. = FALSE)
+  low <- k[k$relation != "species_rank", , drop = FALSE]
+  if (anyDuplicated(low$member))
+    stop("_keys/species_pooling.csv: a subspecies name is filed twice: ",
+         paste(unique(low$member[duplicated(low$member)]), collapse = "; "), call. = FALSE)
+  data.frame(member = low$member, species = top$member[match(low$pool_id, top$pool_id)],
+             stringsAsFactors = FALSE)
+})
+
 # ---- Load & harmonize compiled data (moved from app.R) -----------------------
 
 load_compiled <- function() {
@@ -608,6 +626,13 @@ load_compiled <- function() {
   out$Value[social_rows] <- ifelse(is.na(decoded), social_values, decoded)
   out$Value_num[social_rows] <- NA_real_
   out <- out[!is.na(out$Value) & nzchar(out$Value), ]
+  # Subspecies: the value is served under the species; the name it was filed
+  # under stays in the Subspecies column. Done before label precedence, so
+  # precedence is decided at species rank.
+  hit <- match(out$Species, subspecies_key$member)
+  out$Subspecies <- ifelse(is.na(hit), "", out$Species)
+  out$Species[!is.na(hit)] <- subspecies_key$species[hit[!is.na(hit)]]
+  message("subspecies: ", sum(!is.na(hit)), " row(s) filed under their species")
   # Label precedence (_keys/label_precedence.csv): where the winning dataset has
   # a species for the label, the yielding dataset's row for it is not served.
   # A species only the yielding dataset has keeps its row. Applied after empty
@@ -708,7 +733,8 @@ COLS <- c(Species = "character", Dataset = "character", Variable = "character",
           Items = "character", Source_details = "character", Teams = "character",
           N_sources = "integer", Variable_raw = "character", Unit = "character",
           Unit_raw = "character", population_verdict = "character",
-          domain = "character", measure_class = "character")
+          domain = "character", measure_class = "character", Subspecies = "character")
+compiled <- compiled[c(setdiff(names(compiled), "Subspecies"), "Subspecies")]
 if (!identical(names(compiled), names(COLS)))
   stop("The loader produced columns [", paste(names(compiled), collapse = ", "),
        "]; expected [", paste(names(COLS), collapse = ", "), "].", call. = FALSE)
@@ -760,6 +786,45 @@ if (!identical(back, compiled)) {
   stop("The written file does not read back as the table that was built; nothing was replaced.", call. = FALSE)
 }
 if (!file.rename(tmp_file, out_file)) stop("Could not move the new file into place: ", out_file, call. = FALSE)
+
+# ---- subspecies register ----------------------------------------------------
+# What the table holds below species rank: every filed subspecies, and every
+# three-word label under a species of the table that is not filed (domestic
+# forms, species groups, names awaiting a decision). Written beside the table.
+all_cells <- table(paste(compiled$Species, compiled$Dataset, compiled$Variable, sep = "\r"))
+reg_rows <- function(d, name, species, status) {
+  cell <- paste(d$Species, d$Dataset, d$Variable, sep = "\r")
+  sib <- compiled[nzchar(compiled$Subspecies) & compiled$Species == species & compiled$Subspecies != name, , drop = FALSE]
+  data.frame(name = name, species = species, status = status, n_values = nrow(d),
+             n_variables = length(unique(d$Variable)),
+             n_cells_shared_with_other_rows_of_the_species = if (status == "filed") sum(all_cells[unique(cell)] > 1L) else NA_integer_,
+             n_variables_also_measured_in_another_subspecies = if (status == "filed") length(intersect(unique(d$Variable), unique(sib$Variable))) else NA_integer_,
+             datasets = paste(sort(unique(d$Dataset)), collapse = "; "),
+             sources = paste(sort(unique(trimws(unlist(strsplit(d$Teams[!is.na(d$Teams)], ";", fixed = TRUE))))), collapse = "; "),
+             stringsAsFactors = FALSE)
+}
+filed <- split(compiled[nzchar(compiled$Subspecies), , drop = FALSE], compiled$Subspecies[nzchar(compiled$Subspecies)])
+reg <- lapply(names(filed), function(nm) reg_rows(filed[[nm]], nm, filed[[nm]]$Species[1], "filed"))
+three <- unique(compiled$Species[grepl("^[A-Z][a-z]+ [a-z][a-z-]+ [a-z][a-z-]+$", compiled$Species)])
+three <- three[sub(" [^ ]+$", "", three) %in% compiled$Species]
+dom_forms <- if (is.null(pk)) character(0) else pk$label[pk$relation == "domestic_form"]
+for (nm in sort(three, method = "radix")) {
+  ep <- sub("^.* ", "", nm)
+  st <- if (nm %in% dom_forms) "not filed: domestic form (domestication axis)"
+        else if (ep == "group") "not filed: species group, not a subspecies"
+        else if (ep %in% c("familiaris", "domesticus", "domestica", "furo", "hircus", "caballus", "indicus", "taurus", "catus", "aries", "asinus", "dingo", "hallstromi"))
+          "not filed: domestic or feral form, awaiting a decision"
+        else "not filed: awaiting a decision"
+  reg[[length(reg) + 1L]] <- reg_rows(compiled[compiled$Species == nm, , drop = FALSE], nm, sub(" [^ ]+$", "", nm), st)
+}
+reg <- if (length(reg)) do.call(rbind, reg) else reg_rows(compiled[0, ], character(0), character(0), character(0))[0, ]
+reg <- reg[order(reg$status != "filed", reg$species, reg$name, method = "radix"), ]
+reg_cells <- lapply(names(reg), function(nm) if (is.character(reg[[nm]])) fmt_chr(reg[[nm]]) else fmt_int(as.integer(reg[[nm]])))
+reg_lines <- c(paste0("\"", names(reg), "\"", collapse = ","), do.call(paste, c(reg_cells, sep = ",")))
+reg_con <- file(file.path(out_dir, "subspecies_register.csv"), open = "wb")
+writeLines(reg_lines, reg_con, sep = "\n", useBytes = TRUE)
+close(reg_con)
+cat(sprintf("subspecies register: %d filed, %d not filed\n", sum(reg$status == "filed"), sum(reg$status != "filed")))
 
 csv_bytes <- sum(nchar(lines, type = "bytes")) + length(lines)
 cat(sprintf("compiled: %d rows, %d species, %d variables, %d datasets, %d columns\n", nrow(compiled),

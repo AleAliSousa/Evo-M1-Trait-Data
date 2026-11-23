@@ -23,6 +23,13 @@ fixed in the spokes the same day; that was step 1 of the order below. Steps 2,
 3 and 5, and the `pool=` argument on the resolver itself, remain as written.
 The sensu / subspecies axis is still unimplemented, deliberately.
 
+**Status 2026-11-23.** The subspecies axis is now built for the compiled table, by owner rule:
+subspecies are kept on record and compiled data are filed under the species. The rows are in
+`species_pooling.csv` (`axis = subspecies`), `__compiled/build_compiled.R` applies them and keeps
+the filed name in the table's `Subspecies` column, and `__compiled/subspecies_register.csv` lists
+what is filed and what is not. The merges are unchanged, as this document requires. The sensu axis
+(species groups, pre-split names) remains unimplemented. See `README_species_pooling.md`.
+
 Below this line the document is the original map.
 
 

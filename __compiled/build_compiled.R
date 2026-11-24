@@ -776,6 +776,15 @@ compiled$domain[!nzchar(compiled$domain)] <- "Unclassified"
 compiled$measure_class <- look(lab_class, compiled$Variable)
 compiled$measure_class[!nzchar(compiled$measure_class)] <- "other"
 
+# Not a measurement (owner rule of 2026-11-24): a label the key marks
+# is_measurement = False is a note about the data, such as how a species name
+# was determined. It is not a variable and is not served; it stays on record in
+# the file it came from.
+not_meas <- tolower(look(vd_get("is_measurement"), compiled$Variable)) == "false"
+message("not a measurement: ", sum(not_meas), " row(s) of ", length(unique(compiled$Variable[not_meas])),
+        " label(s) not served")
+compiled <- compiled[!not_meas, , drop = FALSE]
+
 # ---- write ------------------------------------------------------------------
 COLS <- c(Species = "character", Dataset = "character", Variable = "character",
           Value = "character", Value_num = "numeric", Source = "character",

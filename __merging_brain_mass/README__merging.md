@@ -417,3 +417,14 @@ so on a fresh harvest the builders' catalogue-derived role for this paper
 defaults to "secondary"; the pooled values are unaffected (the team is alone
 in its basis family for these species), but a catalogue row would be needed
 to make a fresh harvest reproduce the "primary" annotation.
+
+## Hemispheres
+The hemisphere rule (`_keys/README_hemisphere_basis.md`) holds here as in every dataset. This merge
+doubles nothing itself. Where a source publishes a brain mass that is twice one weighed hemisphere,
+the value is served as published and marked: the source table and column go in
+`laterality_known.csv` (species measured on both sides: `laterality_known_exceptions.csv`), and
+`brain_mass_hemisphere_flags.R` writes `brain_mass_flags.csv`, which the one-table builder reads to
+fill the `Hemispheres` column. Run it after the merge is rebuilt
+(`Rscript __merging_brain_mass/brain_mass_hemisphere_flags.R`, from the repository root).
+So far one source is registered: Table 1 of Herculano-Houzel et al. 2020 (bats; 12 species doubled
+by the authors, *Chaerephon pumilus* measured on both sides).

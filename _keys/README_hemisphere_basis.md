@@ -43,9 +43,13 @@ Values of `Hemispheres`:
 |---|---|
 | Brain-structure volumes | Under the rule (`__merging_volumes/laterality_known.csv`, `volumes_flags.csv`). |
 | Cell counts | Under the rule (`__merging_cell_counts_isotropic_fractionator/laterality_known.csv`, `cell_counts_isotropic_fractionator_flags.csv`): every one-hemisphere source of the merge is in its register (Seelke et al. 2014; Herculano-Houzel et al. 2013; Young et al. 2013; Collins et al. 2010 and 2016; the raccoon hippocampus mass of Jardim-Messeder et al. 2017). The bat neuron numbers and brain masses of Herculano-Houzel et al. 2020 are marked as doubled by the authors; *Chaerephon pumilus* was measured on both sides (`laterality_known_exceptions.csv`). |
-| Brain mass | Not yet under the rule. Known: it serves 11 bat brain masses of Herculano-Houzel et al. 2020 that the authors doubled; they are not marked there. |
+| Brain mass | Under the rule (`__merging_brain_mass/laterality_known.csv`, `brain_mass_flags.csv`, written by `brain_mass_hemisphere_flags.R`). The merge doubles nothing itself; it marks what a source doubled. So far one source: the brain masses of the 12 one-hemisphere bats of Herculano-Houzel et al. 2020 (the same values and the same evidence as in the cell-count register). Other sources of this merge have not yet been read for one-hemisphere weights. |
 | Cortical areas & surfaces | Written exception: cortical surface areas are served per one hemisphere (`__merging_cortical_areas/README__merging.md`). |
 | Every other dataset | Not yet reviewed against the rule. |
+
+A doubled value carries its mark in every dataset that serves it: when one publication feeds two
+merges (the bat brain masses reach the table through Brain mass and through Cell counts), each
+merge's register has its own row for it.
 
 To bring a dataset under the rule: give its merge a register and a flags file as above, then add
 one row to `_keys/hemisphere_basis.csv`. The builder stops if a listed flags file is missing.

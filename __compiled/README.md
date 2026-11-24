@@ -45,6 +45,12 @@ file is missing or unreadable, stops the build and names the feed. The builder a
 `variable_definitions.csv`, `label_precedence.csv`, `hemisphere_basis.csv`) and the flags files the
 last one lists, and sources `__ShinyApp/explorer.R` for `brain_mass_items()`.
 
+## What is not served
+
+A label that `_keys/variable_definitions.csv` marks `is_measurement = False` is a note about the data
+(for example the species name as printed, or the basis on which a name was resolved), not a
+variable. Its rows are not served; they stay on record in the file they came from.
+
 ## One value per label and species
 
 Where two datasets carry the same label for the same species, `_keys/label_precedence.csv` says

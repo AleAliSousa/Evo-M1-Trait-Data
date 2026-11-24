@@ -29,6 +29,12 @@
 ## (n_derived) and kept in the unfiltered table but do not enter the pooled value, because
 ## they re-export the root. No value is changed; disagreement between parties is flagged, not
 ## resolved (disagreement = max/min over parties > 1.25, or absolute difference > 1 for counts).
+## Same data (owner's rule of 24 November 2026; _keys/same_data.R, _keys/compilation_cited_sources.csv):
+## an Amniote database record whose value comes, by the Amniote database's own per-cell derivation, only
+## from PanTHERIA, AnAge, Ernest 2003 or Hayssen 1993, and agrees within 0.5 % with that source's value
+## here, is the same data: it is counted once, from the source, and is not a party of its own (role
+## "same_data"). Every Amniote record is listed with its status in life_history_same_data.csv; records
+## whose value differs from the source they copy stay parties and are listed for the owner.
 ## Conventions: input problems stop(); every count is printed; CSVs written with a UTF-8 BOM.
 ## =============================================================================
 options(stringsAsFactors = FALSE, scipen = 999, width = 200)
@@ -318,13 +324,45 @@ write_out(unf, file.path(out, "life_history_unfiltered.csv"))
 
 ## ---- 4. pooled long table (species x measure), compilation-aware ---------------------------------------
 adm <- unf %>% filter(admitted, !is.na(value_canonical))
+## same data, per Amniote record (see the header): the value its sources give here, then the status
+source(file.path(repo, "_keys", "same_data.R"))
+avs <- amniote_value_sources(repo)
+party_val <- bind_rows(
+  adm %>% filter(dataset == "Hayssen_etal_1993") %>% group_by(Species, Measure) %>% summarise(value = median(value_canonical), .groups = "drop") %>% mutate(party = "Hayssen_etal_1993"),
+  adm %>% filter(!dataset %in% c("Hayssen_etal_1993", "Myhrvold_etal_2015")) %>% group_by(Species, Measure, party = dataset) %>% summarise(value = median(value_canonical), .groups = "drop"))
+party_key <- paste(party_val$Species, party_val$Measure, party_val$party, sep = "\r")
+myh_sd <- adm %>% filter(dataset == "Myhrvold_etal_2015") %>% select(record_id, Species, species_printed, Measure, source_column, value_canonical) %>%
+  left_join(avs, by = c("species_printed", source_column = "trait"))
+if (anyNA(myh_sd$cell_form)) stop("an Amniote record has no parsed cell derivation (", sum(is.na(myh_sd$cell_form)), ")", call. = FALSE)
+myh_sd$expected <- vapply(seq_len(nrow(myh_sd)), function(i) {
+  if (!myh_sd$all_in_database[i]) return(NA_real_)
+  p <- strsplit(myh_sd$cited_papers[i], " + ", fixed = TRUE)[[1]]
+  v <- party_val$value[match(paste(myh_sd$Species[i], myh_sd$Measure[i], p, sep = "\r"), party_key)]
+  if (anyNA(v)) NA_real_ else mean(v) }, numeric(1))
+myh_sd$status <- same_data_status(myh_sd$all_in_database, myh_sd$any_in_database, myh_sd$value_canonical, myh_sd$expected)
+adm$same_data <- adm$record_id %in% myh_sd$record_id[myh_sd$status == "same_data"]
+write_out(myh_sd %>% transmute(Species, species_printed, Measure, amniote_trait = source_column, value = value_canonical, cell_form,
+                               value_sources, value_of_sources_here = expected, status, record_id) %>% arrange(Species, Measure),
+          file.path(out, "life_history_same_data.csv"))
+cat("Amniote records by same-data status:\n"); print(table(myh_sd$status))
 hay_sum <- adm %>% filter(dataset == "Hayssen_etal_1993") %>% group_by(Species, Measure) %>%
   summarise(hayssen_median = median(value_canonical), hayssen_n_lines = n(), hayssen_min = min(value_canonical), hayssen_max = max(value_canonical),
             hayssen_refs = paste(sort(unique(unlist(str_split(cited_work[!is.na(cited_work) & cited_work != ""], ";")))), collapse = ";"), .groups = "drop")
 comp_sum <- adm %>% filter(dataset != "Hayssen_etal_1993") %>% group_by(Species, Measure, dataset) %>%
-  summarise(value = median(value_canonical), cites = any(cites_hayssen), n_rec = n(), .groups = "drop")   # several printed names of one accepted species -> median within dataset
+  summarise(value = median(value_canonical), cites = any(cites_hayssen), same = all(same_data), n_rec = n(), .groups = "drop")   # several printed names of one accepted species -> median within dataset
 parties <- bind_rows(hay_sum %>% transmute(Species, Measure, party = "Hayssen_etal_1993", value = hayssen_median, independent = TRUE, role = "root_compendium"),
-                     comp_sum %>% transmute(Species, Measure, party = dataset, value, independent = !cites, role = ifelse(cites, "derived_from_root", "independent_compilation")))
+                     comp_sum %>% transmute(Species, Measure, party = dataset, value, independent = !cites & !same,
+                                            role = ifelse(cites, "derived_from_root", ifelse(same, "same_data", "independent_compilation"))))
+## The source is served in place of its copy: where a same-data Amniote party was the only party that
+## counted (the parties it copies cite Hayssen, whose own record for the species is not in this merge),
+## the parties it copies count in its place (role "source_of_same_data").
+sd_src <- myh_sd %>% filter(status == "same_data") %>% distinct(Species, Measure, cited_papers) %>%
+  mutate(p = strsplit(cited_papers, " + ", fixed = TRUE)) %>% select(Species, Measure, p) %>% tidyr::unnest(p) %>% distinct(Species, Measure, party = p)
+lone <- parties %>% group_by(Species, Measure) %>% summarise(none = !any(independent), sd = any(role == "same_data"), .groups = "drop") %>% filter(none, sd)
+stand_in <- paste(parties$Species, parties$Measure, parties$party, sep = "\r") %in%
+  paste(sd_src$Species, sd_src$Measure, sd_src$party, sep = "\r")[paste(sd_src$Species, sd_src$Measure, sep = "\r") %in% paste(lone$Species, lone$Measure, sep = "\r")]
+parties$independent[stand_in] <- TRUE; parties$role[stand_in] <- "source_of_same_data"
+cat("same data: parties counted in place of their Amniote copy:", sum(stand_in), "in", nrow(lone), "species x measure\n")
 long <- parties %>% group_by(Species, Measure) %>% summarise(
   Value = if (any(independent)) median(value[independent]) else NA_real_,
   n_sources = n(), n_independent = sum(independent), n_derived = sum(!independent),

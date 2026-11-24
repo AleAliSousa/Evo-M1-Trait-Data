@@ -18,11 +18,23 @@ sources**; TraitExplorer discovers the folder automatically; `__Cytosplore_expor
 - `supplementary_sources.csv` -- the mapping (one row = one source column -> one label). Columns are
   documented at the top of `supplementary_compiled.R`.
 - `supplementary_long.csv` -- std_merge schema + `n_specimens`, `items`, `label_policy`.
+- `supplementary_same_data.csv` -- every Amniote database value with its same-data status
+  (`_keys/README_same_data.md`), the sources of its value and their value here.
 - `supplementary_unresolved_species.csv` -- printed names `resolve_species()` could not anchor; they
   are kept in the long table under the cleaned printed string with `species_basis = unresolved`.
 - `supplementary_label_definitions.csv` -- definitions for labels whose source column carries no
   label-specific definition (one `state` column serves many traits). `Code` = the label without its
   unit; `_keys/build_variable_definitions.R` finds it as a whole-label source definition (pass 1).
+
+## Same data: Amniote copies counted once (2026-11-24)
+
+Owner's rule of 24 November 2026 (`_keys/README_same_data.md`). Before items are pooled, an
+Amniote database value that comes, by the Amniote database's own per-cell derivation, only from
+items pooled here for the same species and label (PanTHERIA, AnAge), and agrees with their value
+within 0.5 %, is the same data and leaves the pool: it is counted once, from those items.
+Of 23,531 Amniote values, 5,122 are the same data and 319 differ from the source they copy
+by more than 0.5 % (they stay in the pool and are listed for the owner). Every Amniote value and
+its status is in `supplementary_same_data.csv`.
 
 ## Decisions
 - **Shared labels (5).** PanTHERIA gestation, weaning age, litter size, maximum longevity (months/12)

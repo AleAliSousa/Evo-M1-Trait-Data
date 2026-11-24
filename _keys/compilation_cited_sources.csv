@@ -1,0 +1,5 @@
+compilation_paper,ref_key,cited_paper,match_basis,status,note
+Myhrvold_etal_2015,"Jones, K., Bielby, J., Cardillo, M. et al., 2009",Jones_etal_2009,"author, year and title (PanTHERIA 1.0)",confirmed with step 13,PanTHERIA; the merges hold its WR05 release
+Myhrvold_etal_2015,"de Magalhaes and Costa, 2009",deMagalhães_etal_2024,rule: the 2009 paper is registered as citation only and its data are served as AnAge (deMagalhães_etal_2024); SR224,confirmed with step 13,AnAge
+Myhrvold_etal_2015,"Ernest et al., 2003",Ernest__2003,numeric: 212 of 214 single-source Amniote cells under this key reproduce the built Ernest 2003 value within 1 %,confirmed with step 13,Myhrvold_etal_2015_references.csv attaches a different Ernest et al. 2003 paper to the key
+Myhrvold_etal_2015,"Hayssen, V.D. and A. Van Tienhoven, 1993",Hayssen_etal_1993,author and year,confirmed with step 13,Asdell's patterns of mammalian reproduction; Hayssen's later Mammalian Species accounts (2008-2011) are other keys and are not this item

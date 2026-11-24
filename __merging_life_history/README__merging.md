@@ -20,6 +20,7 @@ measurement. The two merges should be reconciled once this one has been reviewed
 | `life_history_unfiltered.csv` | **one row per source record, nothing dropped** (83,923 rows): every Hayssen data line of a mapped topic (27,211; 17,282 admitted) and every published compilation cell of a mapped column; `value_canonical` in the canonical unit (admitted lines only), `value_canonical_any` the same number for every numeric Hayssen line whether admitted or not (used by the restricted `__life_history_root_comparison`), `derivation` where a unit scale or a range midpoint was applied (ranges, and `mode 3-4`-type lines, enter as midpoints), `admitted` + `admission_reason`, `role`, `cites_hayssen`, `cited_work` (Hayssen Literature Cited numbers / PanTHERIA reference list / AnAge BIBLIOIDs / Ernest numbers / Amniote derivation string), species resolution (`Species` = `_keys` accepted name or the cleaned printed name, `species_basis`) |
 | `life_history_long.csv` | one row per `Species × Measure` (27,801 rows, 5,192 species): `Value` = median over **independent parties**, `n_independent`, `n_derived`, `Teams`, `roles`, `value_min/max`, `disagreement`; the root summarised beside it (`hayssen_median`, `hayssen_n_lines`, `hayssen_min/max`, `hayssen_refs`); `derived_values` and `derived_outside_root_range` for compilation values that cite Hayssen |
 | `life_history_wide.csv` | Species × Measure matrix of `Value` |
+| `life_history_same_data.csv` | every Amniote database record with its same-data status (`_keys/README_same_data.md`), the sources of its value and their value here |
 | `life_history_species_alignment_candidates.csv` | Hayssen names matching no compilation species (406), each with the glyph-aware nearest name in the genus when one exists — a roadmap for `_keys` rows, **not applied** |
 
 ## Measures
@@ -56,6 +57,18 @@ species) are flags, not resolutions. Counts at the last run: 6,811 Species × Me
 
 The record-level judgement of these flags — which are copying errors, unit slips, taxonomic mismatches or genuine
 independent data — is in `Evo-M1-Trait-Data-restricted/__life_history_root_comparison/`.
+
+## Same data: Amniote copies counted once (2026-11-24)
+
+Owner's rule of 24 November 2026 (`_keys/README_same_data.md`). An Amniote database record whose
+value comes, by the Amniote database's own per-cell derivation, only from PanTHERIA, AnAge,
+Ernest 2003 or Hayssen 1993, and agrees within 0.5 % with that source's value here, is the same
+data: it is no longer a party of its own (role `same_data`). Where it had been the only party
+that counted (the parties it copies cite Hayssen, whose own record for the species is not in this
+merge), the parties it copies count in its place (role `source_of_same_data`), so no value is lost.
+Of 24,759 Amniote records, 10,823 are the same data and 814 copy one of these
+sources but differ from it by more than 0.5 %: those stay parties and are listed for the owner.
+Every Amniote record and its status is in `life_history_same_data.csv`.
 
 ## Open items
 

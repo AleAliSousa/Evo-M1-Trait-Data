@@ -222,12 +222,47 @@ for (i in seq_len(nrow(map))) {
       species_basis = paste(unique(g$basis), collapse = "; "),
       reidentified = any(g$reident), label_policy = m$label_policy,
       precedence = suppressWarnings(as.numeric(m$precedence)),
+      amniote_trait = if (m$source_publication == "Myhrvold_etal_2015") sub('.*trait == "([^"]+)".*', "\\1", m$filter) else "",
       stringsAsFactors = FALSE)
   })
   out[[length(out) + 1]] <- do.call(rbind, rows)
   message(sprintf("  %-42s %-38s %4d species", m$item, m$Measure, length(rows)))
 }
 long1 <- do.call(rbind, out)
+
+# ---- same data (owner's rule of 24 November 2026; _keys/same_data.R) ---------------------------
+# An Amniote database value that comes, by the Amniote database's own per-cell derivation, only from
+# sources whose items are pooled here for the same species and label (PanTHERIA, AnAge), and agrees
+# with their value within 0.5 %, is the same data: it is counted once, from those items, and leaves
+# the pool. Every Amniote value is listed with its status in supplementary_same_data.csv; a value
+# that differs from the source it copies stays in the pool and is listed for the owner.
+source(file.path(repo, "_keys", "same_data.R"))
+avs <- amniote_value_sources(repo)
+ii <- which(long1$team == "Myhrvold_etal_2015")
+gk <- paste(long1$Species, long1$Measure, long1$Units, sep = "\r")
+tk <- paste(gk, long1$team, sep = "\r")
+item_val <- suppressWarnings(as.numeric(long1$Value))
+pr <- vapply(strsplit(long1$species_printed[ii], "; ", fixed = TRUE), `[`, character(1), 1)   # aggregate "first"
+a <- avs[match(paste(pr, long1$amniote_trait[ii], sep = "\r"), paste(avs$species_printed, avs$trait, sep = "\r")), , drop = FALSE]
+if (anyNA(a$cell_form)) stop("an Amniote value has no parsed cell derivation (", sum(is.na(a$cell_form)), ")", call. = FALSE)
+expv <- vapply(seq_along(ii), function(j) {
+  if (!a$all_in_database[j]) return(NA_real_)
+  p <- strsplit(a$cited_papers[j], " + ", fixed = TRUE)[[1]]
+  v <- item_val[match(paste(gk[ii[j]], p, sep = "\r"), tk)]
+  if (anyNA(v)) NA_real_ else mean(v) }, numeric(1))
+sd <- data.frame(Species = long1$Species[ii], species_printed = pr, Measure = long1$Measure[ii], Units = long1$Units[ii],
+                 amniote_trait = long1$amniote_trait[ii], value = item_val[ii], cell_form = a$cell_form,
+                 value_sources = a$value_sources, value_of_sources_here = expv,
+                 status = same_data_status(a$all_in_database, a$any_in_database, item_val[ii], expv), stringsAsFactors = FALSE)
+if (length(ii) && any(sd$status == "same_data")) long1 <- long1[-ii[sd$status == "same_data"], , drop = FALSE]
+sd <- sd[order(sd$Measure, sd$Species), , drop = FALSE]
+sd_file <- file.path(here, "supplementary_same_data.csv")
+if (incremental && file.exists(sd_file)) {
+  old_sd <- read.csv(sd_file, colClasses = "character", check.names = FALSE, encoding = "UTF-8")
+  sd <- rbind(old_sd[!paste(old_sd$Measure, old_sd$Units, sep = "\r") %in% refresh_labels, , drop = FALSE], sd)
+}
+write.csv(sd, sd_file, row.names = FALSE, na = "", fileEncoding = "UTF-8")
+message("same data (Amniote values): ", paste(names(table(sd$status)), table(sd$status), sep = " ", collapse = "; "))
 
 # pool across items that map to the same Species x Measure x Units (rare here)
 pool <- long1 %>%

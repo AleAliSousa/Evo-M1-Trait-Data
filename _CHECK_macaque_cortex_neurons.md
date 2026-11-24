@@ -114,3 +114,21 @@ deferred to later, should put every source on the table at once:
 neurons separately from non-neuronal cells (the glia counts diverge across
 all sources even where neuron counts converge), and settle what the dataset
 should carry for *M. mulatta* cortex neurons and on what provenance.
+
+## To build: HH2007 Supplementary Table 2 (Michael, 2026-11-24)
+
+The HH2007 Supporting Information table ("SI Table 2 — Table 2. Cellular
+composition of primate brains", attached to PMC1805542 as
+pnas_0611396104_index.html) needs to be built as a registered HH2007 item.
+It is the better of the paper's two tables: the printed Table 1 (already
+built) gives whole-brain values only, while the supplement carries the
+cellular composition per structure — cerebral cortex, cerebellum and
+remaining areas: mass, neuron and non-neuronal counts, and densities — for
+all seven species (Tupaia glis, Callithrix jacchus, Otolemur garnetti,
+Aotus trivirgatus, Saimiri sciureus, Cebus apella, Macaca mulatta).
+Building it also supplies the missing primary behind the 175
+still-uncompared structure-level cells in the HH2015 cross-paper
+comparison, so those can be re-run. Two supplement misprints to guard in
+the build: the cerebellar and remaining-areas non-neuronal counts for
+*M. mulatta* are printed with a ×10^9 exponent that is internally
+consistent only as ×10^6 (see evom1-hh2007-si/CHECK.md).

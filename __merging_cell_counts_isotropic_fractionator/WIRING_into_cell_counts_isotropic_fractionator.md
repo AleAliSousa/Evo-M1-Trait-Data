@@ -51,8 +51,8 @@ Recorded as review `RV-2026-012` in `_keys/cell_count_methods/expert_reviews.csv
 
 ## Owner decisions, 2026-11-24
 
-Recorded as reviews `RV-2026-017` to `RV-2026-021`. How each is built is in `README__merging.md`,
-**Step 7b**.
+Recorded as reviews `RV-2026-017` to `RV-2026-022` (and `RV-2026-013`). How each is built is in
+`README__merging.md`, **Step 7b** and **Step 7c**.
 
 - **Mouse area names** (Herculano-Houzel 2013). *"the table gives definition to what is included
   under the umbrella terms Motor, Frontal, Parietal and Auditory"*: the names stand.
@@ -74,8 +74,20 @@ Recorded as reviews `RV-2026-017` to `RV-2026-021`. How each is built is in `REA
   just register that to avoid double counting."* Both wired.
 - **Herculano-Houzel 2020, brain mass** — answered on 2026-11-24 by the internal check the owner
   asked for: `MBRAIN` is the sum of the dissected structures, on the same basis as the neuron
-  numbers (`HerculanoHouzel_etal_2020/internal_checks/`). Registered `by_source`; review
-  `RV-2026-013` stays `proposed` until the owner has seen it.
+  numbers (`HerculanoHouzel_etal_2020/internal_checks/`). Registered `by_source`. *"the
+  hemisphere rule applies to all bats of course"* (2026-11-24): review `RV-2026-013` is
+  `accepted`, and the three regional masses this merge computes from the bats' doubled neuron
+  numbers (`CerebralCortex_`, `Cerebellum_`, `RoB_Mass.g`; 36 values) are flagged
+  `published_bilateral_estimate` as well.
+- **Collins 2010, macaque 08-59 and galago 07-104** (*"I agree"*, 2026-11-24; `RV-2026-022`).
+  The whole-neocortex cells and neurons of both cases are served from the sum of the supplement's
+  samples. Macaque: the weight too. Galago: the species' cells and neurons are the mean of cases
+  08-07 and 07-104 (one hemisphere, a right and a left: `Neocortex_unilateral_`); the weight of
+  07-104 is not served and no density is derived from it (its area and weight are about 0.6 of
+  the other galago hemispheres'), so the species' weight and neurons per mg stay case 08-07. The
+  text figures that disagree with the supplement are registered. Whether a case's sum is served
+  is now a recorded decision per case (`Collins_etal_2010_case_decisions.csv`), not the 1 % rule.
+  Evidence: `Collins_etal_2010/internal_checks/Collins_etal_2010_DatasetS1_internal_check.csv`.
 
 ## Wired
 
@@ -87,10 +99,10 @@ Recorded as reviews `RV-2026-017` to `RV-2026-021`. How each is built is in `REA
 | `HerculanoHouzel_etal_2013_Table1-a` | 18 mouse areas × `N.n`, `O.n`, `C.n` (2 × estimate) and `_unilateral_N.n`, `_O.n`, `_C.n` (as measured; `C.n` is the sum of the two printed means); `N.p.mm2`, `N.p.mm3` (as printed; atlas denominators); `O.p.N` and `p.C.N` derived by step 3.7 | thickness and two % columns (`no_measure_code`); % of cortical neurons (`derived_from_registered`); the Total row is not in the TSV | Herculano-Houzel |
 | `Young_etal_2013_a_Table1` | `M1_Mass.g` (2 × estimate), `M1_unilateral_Mass.g`, `M1_C.p.mg`, `M1_N.p.mg`, `M1_p.C.N`, `M1_C.p.mm2`, `M1_N.p.mm2`; six species, the baboon as the mean of two cases | M1 area (`other_merge`); % of total mass, % of total area, % neuron difference (`no_measure_code`) | Kaas |
 | `Collins_etal_2016_Table1` | `Neocortex_`, `V1_`, `V2_`, `M1_` × `C.n`, `N.n` (2 × estimate) and `_right_C.n`, `_right_N.n`; `p.C.N`; `C.p.mg`, `N.p.mg`, `C.p.mm2`, `N.p.mm2` (V1, V2; for M1 these five are the same data as Young's and are counted once) | somatosensory, premotor and prefrontal blocks (`not_a_database_structure`); left V1 volume (`no_measure_code`); surface area, brain and body mass (`other_merge`) | Kaas |
-| `Collins_etal_2010_DatasetS1` | galago 08-07 and owl monkey 07-78: `V1_`, `V2_`, `dV3_`, `vV3_`, `S1_`, `M1_`, `A1_`, `MT_`, `DL_` × `Mass.g`, `C.n`, `N.n` (2 × estimate) and `_right_` / `_left_` (as measured), `p.C.N`, `C.p.mg`, `N.p.mg`, `C.p.mm2`, `N.p.mm2` (for M1 the measures Young also gives are the same data and are counted once); `Neocortex_` × `Mass.g`, `C.n`, `N.n` as the sum of the pieces for 08-07, 07-78 and baboon 09-27, with `N.p.mg` and `p.C.N` derived | premotor, remaining and surrounding pieces, single grid pieces (`not_a_database_structure`); the whole-hemisphere totals of galago 07-104 and macaque 08-59 (`disagrees_with_text`); surface area (`other_merge`) | Kaas |
+| `Collins_etal_2010_DatasetS1` | galago 08-07 and owl monkey 07-78: `V1_`, `V2_`, `dV3_`, `vV3_`, `S1_`, `M1_`, `A1_`, `MT_`, `DL_` × `Mass.g`, `C.n`, `N.n` (2 × estimate) and `_right_` / `_left_` (as measured), `p.C.N`, `C.p.mg`, `N.p.mg`, `C.p.mm2`, `N.p.mm2` (for M1 the measures Young also gives are the same data and are counted once); `Neocortex_` × `Mass.g`, `C.n`, `N.n` as the sum of the pieces of each case (all five cases, by the decisions in `Collins_etal_2010_case_decisions.csv`; the galago's cells and neurons are the mean of cases 08-07 and 07-104, served as `Neocortex_unilateral_` and 2 × it; the weight of 07-104 is not served), with `N.p.mg` and `p.C.N` derived | premotor, remaining and surrounding pieces, single grid pieces (`not_a_database_structure`); the weight of galago 07-104 (`excluded`); the text's whole-hemisphere figures for galago 07-104 and macaque 08-59 (`disagrees_with_text`); surface area (`other_merge`) | Kaas |
 
 Served values: *Monodelphis domestica* 52 (Seelke); *Mus musculus* 180 (Herculano-Houzel 2013);
-six primates 40 (Young 2013); *Pan troglodytes* 27 (Collins 2016); three primates 208 (Collins
+six primates 40 (Young 2013); *Pan troglodytes* 27 (Collins 2016); four primates 216 (Collins
 2010). Where each piece lives in `cell_counts_isotropic_fractionator_compiled.R`: item list
 (step 1), the not-served register (1.6b), reshapes (1.7 Seelke, 1.8 Herculano-Houzel 2013, 1.9
 Young, 1.10 Collins 2016, 1.11 Collins 2010; each guarded on the printed rows and checked against
@@ -98,13 +110,13 @@ Young, 1.10 Collins 2016, 1.11 Collins 2010; each guarded on the printed rows an
 guard (3.4o), doubling (3.5), specimen identifiers (4.3b), `_pm` / `_SD` / `_SEM` / `_n` /
 `Specimen` annexed (6), the specimen rule (6b), teams (7, 8.1–8.3.S Krubitzer, 8.1–8.3.Y Kaas), no
 `_unilateral_` derivations (9.1), no-overlap guards (8.Y, 9.2), source details (9.2), flags file
-(9.3). Keys: term files in `standardized_term_by_reference/`; `laterality_known.csv` (144 rows),
+(9.3). Keys: term files in `standardized_term_by_reference/`; `laterality_known.csv` (146 rows),
 `laterality_known_exceptions.csv`, `laterality_case_side.csv`; `specimen_key.csv`;
-`not_served.csv`; `Collins_etal_2010_text_totals.csv`;
+`not_served.csv`; `Collins_etal_2010_text_totals.csv`; `Collins_etal_2010_case_decisions.csv`;
 `cell_counts_isotropic_fractionator_label_definitions.csv` (337 definitions; one per label, naming
 every source); rows in `_keys/variable_domain.csv`; `C.p.mg`, `C.p.mm2`, `N.p.mm2`, `N.p.mm3` in
 `_keys/glossary.csv`; `_keys/cell_count_methods/source_methods.csv` and reviews `RV-2026-012` to
-`RV-2026-021`.
+`RV-2026-022`.
 
 ## Structure names (per-area labels)
 
@@ -144,12 +156,10 @@ Atlas abbreviations are as printed in the paper's Table 1 (Franklin & Paxinos 20
 
 ## Decisions still needed
 
-1. **Collins 2010, macaque 08-59 and galago 07-104: which figure to trust.** No whole-neocortex
-   total is served for either. Macaque: the 42 pieces sum to 3.41 billion cells and 1.36 billion
-   neurons; the Results say "nearly 3.5 billion" and 1.4 billion; the Discussion says 1.36 billion
-   neurons, which is the sum. Galago 07-104: the supplement has 36 pieces (1,138 mm², 239.5 million
-   cells); the paper describes a grid of 46 pieces (2,261 mm², "≈326 million" cells), so the
-   supplement appears to lack pieces.
+1. *(Decided 2026-11-24, see above: Collins 2010, macaque 08-59 and galago 07-104 are served from
+   the supplement's sums; `RV-2026-022`.)* The internal check does not support the earlier reading
+   that the supplement lacks pieces of galago 07-104: the paper says its 46 pieces were "processed
+   as 36 samples", and the supplement has 36.
 2. **Which table serves a measure two tables give for the same animal.** Built: Young et al. 2013
    for M1 (`serve_rank` in `specimen_key.csv`), following the 2026-08-25 cortical-areas decision.
    For the owl monkey the two tables print the same numbers (Young rounds them); for the
@@ -160,7 +170,7 @@ Atlas abbreviations are as printed in the paper's Table 1 (Franklin & Paxinos 20
    do not multiply up (chimpanzee: 625 million cells against 73.01 million per g × 7.52 g = 549
    million). The definitions say so; say if the numbers should carry a visible mark as well.
 4. **Collins 2010 choices made in the wiring.** The label `Neocortex` for the paper's "cortex"; the
-   1 % agreement rule; the side of baboon 09-27 (right, from the Fig. 3 legend and Young et al.
+   1 % tolerance above which a text figure is registered as disagreeing; the side of baboon 09-27 (right, from the Fig. 3 legend and Young et al.
    2013b; not in the supplement); the premotor pieces not served (in the owl monkey the piece is
    "dorsal premotor plus prefrontal cortex").
 5. **The baboon name.** The mean row is served as *Papio cynocephalus anubis* (the name printed
@@ -216,11 +226,13 @@ piece and has no totals of its own.
   "Remain Ctx", "Surr Ctx". Nine are served as structures; the premotor, remaining and
   surrounding pieces are counted only inside the whole-neocortex sum. The other three cases
   (galago 07-104, macaque 08-59, baboon 09-27) are numbered grids: no per-area values.
-- *Whole neocortex.* The sum of a case's pieces, made by this project, where it agrees with the
-  whole-hemisphere figures of the paper's text: galago 08-07 (242.5 million cells against "243
-  million"), owl monkey (553.2 against "more than 553 million"), baboon (4.674 billion against
-  "4.67 billion"). Not for macaque 08-59 (3.41 billion against "nearly 3.5 billion") and galago
-  07-104 (239 million against "≈326 million"): both figures registered, no total served.
+- *Whole neocortex.* The sum of a case's pieces, made by this project, for every case, by a
+  recorded decision per case (`Collins_etal_2010_case_decisions.csv`). It agrees with the
+  whole-hemisphere figures of the paper's text for galago 08-07 (242.5 million cells against "243
+  million"), owl monkey (553.2 against "more than 553 million") and baboon (4.674 billion against
+  "4.67 billion"). It does not for macaque 08-59 (3.41 billion against "nearly 3.5 billion") and
+  galago 07-104 (239 million against "≈326 million"): the sum is served, the text figures are
+  registered as disagreeing. The weight of galago 07-104 is not served.
 - *Specimens.* Owl monkey 07-78, galago 08-07 and baboon 09-27 are animals of Young 2013:
   `specimen_key.csv` and the specimen rule.
 - *Sides.* Right for 08-07 and 09-27, left for 07-78: side-specific columns, one register row each.

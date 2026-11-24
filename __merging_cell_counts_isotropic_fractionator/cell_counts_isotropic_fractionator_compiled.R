@@ -787,17 +787,34 @@ rm(collins2016_item)
 ##          1 mm2 of cortical surface. The surface area of each piece belongs to
 ##          __merging_cortical_areas and is not served here.
 ##     (ii) WHOLE NEOCORTEX PER CASE = THE SUM OF THE SUPPLEMENT'S PIECES of that case (weight,
-##          cells, neurons). This sum is made by this project, not printed by the paper. It is
-##          served ONLY where it agrees with every whole-hemisphere figure the paper's text gives
-##          for the case (Collins_etal_2010_text_totals.csv; within 1 %): today galago 08-07,
-##          owl monkey 07-78 and baboon 09-27. For macaque 08-59 and galago 07-104 the sum and
-##          the text disagree: both figures are registered (the comparison is written on every
-##          run to cell_counts_isotropic_fractionator_sums_vs_text.csv) and NO total is served.
+##          cells, neurons). This sum is made by this project, not printed by the paper.
+##          WHETHER IT IS SERVED IS AN EXPLICIT DECISION PER CASE, in
+##          Collins_etal_2010_case_decisions.csv (specimen, serve_sum, serve_weight, reason,
+##          decided_by, decided_on, evidence), not an automatic rule (step 7c, 2026-11-24; until
+##          then a sum was served where it agreed within 1 % with the paper's text). The sums
+##          are still compared with every whole-hemisphere figure of the text
+##          (Collins_etal_2010_text_totals.csv) and the comparison is written on every run to
+##          cell_counts_isotropic_fractionator_sums_vs_text.csv, with the as-measured sums of
+##          every case; a case without a decision row stops the merge. Today, by the owner's
+##          decisions of 2026-11-24 (evidence: Collins_etal_2010/internal_checks/):
+##            08-07, 07-78, 09-27  cells, neurons and weight served: the sums agree with the text;
+##            08-59 (macaque)      cells, neurons and weight served: the sums are the figures of
+##                                 the Discussion (1.36 billion neurons) and of the 40 % neuron
+##                                 share; "nearly 3.5 billion" and "1.4 billion" are loose rounding;
+##            07-104 (galago)      cells and neurons served; WEIGHT NOT SERVED and no density
+##                                 derived from it: this hemisphere's area and weight are about
+##                                 0.62 of the other galago hemispheres, so its weight and
+##                                 densities are not comparable. The text's 2,261 mm2, "about 326
+##                                 million" cells and 127 million neurons disagree with the
+##                                 supplement and are registered as such (not_served.csv).
 ##     (iii) ONE ROW PER SPECIES. Where several cases of a species give the same measure, the
-##          row is their unweighted mean. Today each served measure comes from one case only:
-##          galago 07-104 serves nothing (no named areas; its sum disagrees with the text), so
-##          the Otolemur row is case 08-07 alone. Two cases measured on DIFFERENT sides would
-##          need a label that is neither _left_ nor _right_: the merge stops there, undecided.
+##          row is their unweighted mean. The galago's whole-neocortex cell and neuron numbers
+##          are the mean of cases 08-07 and 07-104 (as the two baboon cases of Young et al. 2013
+##          are averaged); its areas, its neocortex weight and the density from that weight are
+##          case 08-07 alone. The two cases were measured on DIFFERENT sides (right, left), so
+##          their mean is neither: it is served as Neocortex_unilateral_ (one hemisphere), with
+##          the 2 x estimate under the plain label; the two as-measured sums stay in SampleInfo
+##          (unfiltered table) and in the sums-versus-text file.
 ##     (iv) SIDE PER CASE. The side is the case's own (item column `hemisphere`; where the item
 ##          gives none -- baboon 09-27 -- laterality_case_side.csv, with its evidence). The
 ##          weight and number columns are built per side ("V1 total_cells (right hemisphere)",
@@ -808,8 +825,8 @@ rm(collins2016_item)
 ##     NOT SERVED (status and reason for each in not_served.csv, checked in this step): the
 ##          pieces "premotor", "Remain Ctx" and "Surr Ctx" of the two area cases as structures
 ##          of their own (they are counted inside the whole-neocortex sum); single grid pieces;
-##          the whole-hemisphere totals of 07-104 and 08-59; surface area and the descriptive
-##          columns.
+##          the whole-hemisphere weight of 07-104; the text figures that disagree with the
+##          supplement (07-104, 08-59); surface area and the descriptive columns.
 ##     The guard stops the merge unless the table still has its five cases and 244 pieces.
 collins2010_item <- "Collins_etal_2010_DatasetS1"
 sums_vs_text <- NULL
@@ -851,37 +868,82 @@ if (!is.null(cell_counts_isotropic_fractionator_data_list[[collins2010_item]])) 
          "table (", paste(case_side$case[!is.na(c10_side[case_side$case])], collapse = ", "),
          "); remove the row.", call. = FALSE)
   c10_side[case_side$case] <- case_side$side
-  # (ii) sum of the pieces of each case, against every whole-hemisphere figure in the paper's text
+  # (ii) the sum of the pieces of each case, the figures of the paper's text, and the DECISION
+  #      per case (Collins_etal_2010_case_decisions.csv). Until 2026-11-24 a sum was served where
+  #      it agreed within 1 % with the text; since step 7c the decision is explicit, one row per
+  #      case: serve_sum (cells and neurons), serve_weight, reason, decided_by, decided_on,
+  #      evidence. The 1 % comparison is still made and written out, and a case has no default:
+  #      a case without a decision row stops the merge, whether its sum agrees with the text or not.
   text_totals <- read.csv("Collins_etal_2010_text_totals.csv", stringsAsFactors = FALSE, check.names = FALSE,
                           colClasses = c(specimen = "character"))
+  c10_quantities <- c("tissue_weight_g", "surface_area_mm2", "total_cells", "total_neurons")
   if (!identical(colnames(text_totals), c("specimen", "quantity", "text_value", "as_printed", "where")) ||
       !setequal(unique(text_totals$specimen), names(c10_pieces)) ||
-      length(setdiff(text_totals$quantity, c("total_cells", "total_neurons"))))
+      length(setdiff(text_totals$quantity, c10_quantities)))
     stop("Collins_etal_2010_text_totals.csv must have the columns specimen, quantity, text_value, ",
-         "as_printed, where; a row for each of the five cases; quantity = total_cells or total_neurons",
-         call. = FALSE)
-  piece_sum <- function(case, col) sum(d[[col]][d$specimen == case])
-  sums_vs_text <- text_totals
-  sums_vs_text$sum_of_pieces <- mapply(piece_sum, text_totals$specimen, text_totals$quantity)
-  sums_vs_text$n_pieces <- as.integer(c10_pieces[text_totals$specimen])
+         "as_printed, where; a row for each of the five cases; quantity one of ",
+         paste(c10_quantities, collapse = ", "), call. = FALSE)
+  d$surface_area_mm2 <- suppressWarnings(as.numeric(d$surface_area_mm2))
+  piece_sum <- function(case, col) sum(d[[col]][d$specimen == case], na.rm = TRUE)
+  pieces_with <- function(case, col) sum(!is.na(d[[col]][d$specimen == case]))
+  sums_vs_text <- do.call(rbind, lapply(names(c10_pieces), function(case) do.call(rbind, lapply(c10_quantities, function(q) {
+    if (pieces_with(case, q) == 0L) return(NULL)            # macaque 08-59: no surface areas
+    printed <- text_totals[text_totals$specimen == case & text_totals$quantity == q, , drop = FALSE]
+    if (!nrow(printed)) printed <- data.frame(specimen = case, quantity = q, text_value = NA_real_,
+                                              as_printed = "", where = "", stringsAsFactors = FALSE)
+    data.frame(specimen = case, n_pieces = as.integer(c10_pieces[[case]]), quantity = q,
+               pieces_with_value = pieces_with(case, q), sum_of_pieces = piece_sum(case, q),
+               printed[, c("text_value", "as_printed", "where")], stringsAsFactors = FALSE)
+  }))))
   sums_vs_text$difference_pct <- round(100 * (sums_vs_text$sum_of_pieces - sums_vs_text$text_value) / sums_vs_text$text_value, 2)
-  sums_vs_text$agrees <- abs(sums_vs_text$difference_pct) <= 1
-  c10_sum_cases <- names(c10_pieces)[vapply(names(c10_pieces), function(s)
-    all(sums_vs_text$agrees[sums_vs_text$specimen == s]) &&
-      setequal(sums_vs_text$quantity[sums_vs_text$specimen == s], c("total_cells", "total_neurons")), logical(1))]
-  sums_vs_text$total_served <- sums_vs_text$specimen %in% c10_sum_cases
+  sums_vs_text$agrees <- abs(sums_vs_text$difference_pct) <= 1          # NA where the text gives no figure
+  decisions <- read.csv("Collins_etal_2010_case_decisions.csv", stringsAsFactors = FALSE, check.names = FALSE,
+                        colClasses = "character")
+  if (!identical(colnames(decisions), c("specimen", "serve_sum", "serve_weight", "reason", "decided_by",
+                                        "decided_on", "evidence")) ||
+      anyDuplicated(decisions$specimen) || length(setdiff(decisions$specimen, names(c10_pieces))) ||
+      length(setdiff(c(decisions$serve_sum, decisions$serve_weight), c("yes", "no"))) ||
+      any(decisions$serve_weight == "yes" & decisions$serve_sum == "no") ||
+      any(!nzchar(decisions$reason) | !nzchar(decisions$decided_by) | !nzchar(decisions$evidence)) ||
+      any(!grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", decisions$decided_on)))
+    stop("Collins_etal_2010_case_decisions.csv must have exactly the columns specimen, serve_sum, ",
+         "serve_weight, reason, decided_by, decided_on, evidence; one row per case of the table; yes or ",
+         "no in the two serve columns (a weight is served only with its counts); and a reason, a ",
+         "decided_by, a decided_on (YYYY-MM-DD) and an evidence text in every row", call. = FALSE)
+  undecided <- setdiff(names(c10_pieces), decisions$specimen)
+  if (length(undecided))
+    stop("1.11: no decision row in Collins_etal_2010_case_decisions.csv for case(s) ",
+         paste(vapply(undecided, function(case) {
+           worst <- suppressWarnings(max(abs(sums_vs_text$difference_pct[sums_vs_text$specimen == case]), na.rm = TRUE))
+           sprintf("%s (sum of pieces differs from the paper's text by up to %s %%)", case, format(worst))
+         }, character(1)), collapse = "; "),
+         ". Nothing is served for a case by default: add the row (serve_sum, serve_weight, reason, who ",
+         "decided, when, evidence).", call. = FALSE)
+  c10_sum_cases    <- decisions$specimen[decisions$serve_sum == "yes"]
+  c10_weight_cases <- decisions$specimen[decisions$serve_weight == "yes"]
+  c10_text_differs <- unique(sums_vs_text$specimen[!is.na(sums_vs_text$agrees) & !sums_vs_text$agrees])
+  in_decisions <- match(sums_vs_text$specimen, decisions$specimen)
+  sums_vs_text$served <- ifelse(sums_vs_text$quantity %in% c("total_cells", "total_neurons"),
+                                sums_vs_text$specimen %in% c10_sum_cases,
+                                sums_vs_text$quantity == "tissue_weight_g" & sums_vs_text$specimen %in% c10_weight_cases)
   sums_vs_text <- data.frame(Source = collins2010_item, Species = as.vector(c10_species[sums_vs_text$specimen]),
-                             sums_vs_text[, c("specimen", "n_pieces", "quantity", "sum_of_pieces", "text_value",
-                                              "as_printed", "where", "difference_pct", "agrees", "total_served")],
-                             stringsAsFactors = FALSE)
+                             specimen = sums_vs_text$specimen, side = as.vector(c10_side[sums_vs_text$specimen]),
+                             sums_vs_text[, c("n_pieces", "quantity", "pieces_with_value", "sum_of_pieces", "text_value",
+                                              "as_printed", "where", "difference_pct", "agrees", "served")],
+                             decision = decisions$reason[in_decisions], decided_by = decisions$decided_by[in_decisions],
+                             decided_on = decisions$decided_on[in_decisions], stringsAsFactors = FALSE)
   # what is left out must be exactly what not_served.csv registers (sec 1.6b)
   check_not_served(collins2010_item,
                    rows = c(as.vector(outer(c10_area_cases, c10_other_pieces, paste)),
                             paste(setdiff(names(c10_pieces), c10_area_cases), "single pieces"),
-                            paste(setdiff(names(c10_pieces), c10_sum_cases), "whole-hemisphere total")),
+                            if (length(setdiff(names(c10_pieces), c10_sum_cases)))
+                              paste(setdiff(names(c10_pieces), c10_sum_cases), "whole-hemisphere total"),
+                            if (length(setdiff(c10_sum_cases, c10_weight_cases)))
+                              paste(setdiff(c10_sum_cases, c10_weight_cases), "whole-hemisphere weight"),
+                            if (length(c10_text_differs)) paste(c10_text_differs, "text figures")),
                    columns = setdiff(colnames(d), need))
-  # one row per case, then one row per species
-  per_case <- lapply(names(c10_pieces), function(case) {
+  # one row per case (the cases dissected into named areas first), then one row per species
+  per_case <- lapply(c(c10_area_cases, setdiff(names(c10_pieces), c10_area_cases)), function(case) {
     side <- c10_side[[case]]
     if (is.na(side)) stop("1.11: no side for case ", case, " in the item or in laterality_case_side.csv", call. = FALSE)
     row <- list()
@@ -891,45 +953,98 @@ if (!is.null(cell_counts_isotropic_fractionator_data_list[[collins2010_item]])) 
         for (col in c10_extensive) row[[sprintf("%s %s (%s hemisphere)", a, col, side)]] <- d[[col]][r]
         for (col in c10_intensive) row[[paste(a, col)]] <- d[[col]][r]
       }
-    if (case %in% c10_sum_cases)
-      for (col in c10_extensive)
+    for (col in c10_extensive)
+      if (case %in% (if (col == "tissue_weight_g") c10_weight_cases else c10_sum_cases))
         row[[sprintf("Neocortex sum of pieces %s (%s hemisphere)", col, side)]] <- piece_sum(case, col)
     if (!length(row)) return(NULL)
     data.frame(Species = c10_species[[case]], case = case, side = side, as.data.frame(row, check.names = FALSE),
                stringsAsFactors = FALSE, check.names = FALSE)
   })
   per_case <- per_case[!vapply(per_case, is.null, logical(1))]
+  side_free <- function(col) sub(" \\((left|right) hemisphere\\)$", "", col)
   w <- bind_rows(lapply(unique(vapply(per_case, function(x) x$Species, character(1))), function(sp) {
     cases <- per_case[vapply(per_case, function(x) x$Species == sp, logical(1))]
-    if (length(unique(vapply(cases, function(x) x$side, character(1)))) > 1L)
-      stop("1.11: two cases of ", sp, " measured on different sides would be averaged; the label and ",
-           "register row for such a mean are not decided (README__merging.md, Collins et al. 2010).",
-           call. = FALSE)
+    case_ids <- vapply(cases, function(x) x$case, character(1))
+    case_sides <- vapply(cases, function(x) x$side, character(1))
     value_cols <- unique(unlist(lapply(cases, function(x) setdiff(colnames(x), c("Species", "case", "side")))))
     row <- data.frame(Species = sp, n_animals = length(cases), stringsAsFactors = FALSE, check.names = FALSE)
-    for (col in value_cols)
-      row[[col]] <- mean(unlist(lapply(cases, function(x) if (col %in% colnames(x)) x[[col]] else NULL)))
-    case_ids <- vapply(cases, function(x) x$case, character(1))
-    row$SampleInfo <- paste0("(1H, ", cases[[1]]$side, ") case ", paste(case_ids, collapse = ", "),
-                             "; one flattened cortical hemisphere (", cases[[1]]$side, "). _", cases[[1]]$side,
-                             "_ weights and numbers = as measured (one hemisphere); the plain weight and ",
-                             "number labels = 2x, the both-hemisphere estimate made by this merge. ",
-                             "Neocortex_ = the sum of all ", sum(c10_pieces[case_ids]), " tissue pieces of the ",
-                             "case in Dataset S1, made by this project")
+    # One value per measure: the unweighted mean of the cases that give it. Where those cases were
+    # measured on DIFFERENT sides (a right and a left hemisphere), the mean is neither a right nor a
+    # left value: it gets one column, "(one hemisphere, mean of cases measured on different sides)",
+    # whose term carries _unilateral_; the per-case values stay in SampleInfo and in
+    # cell_counts_isotropic_fractionator_sums_vs_text.csv.
+    for (measure in unique(side_free(value_cols))) {
+      cols <- value_cols[side_free(value_cols) == measure]
+      values <- unlist(lapply(cases, function(x) unlist(x[1, intersect(cols, colnames(x)), drop = TRUE])))
+      row[[if (length(cols) == 1L) cols else
+        paste0(measure, " (one hemisphere, mean of cases measured on different sides)")]] <- mean(values)
+    }
+    flattened <- vapply(case_ids, function(case) pieces_with(case, "surface_area_mm2") > 0L, logical(1))
+    if (length(cases) == 1L) {
+      row$SampleInfo <- paste0("(1H, ", case_sides, ") case ", case_ids, "; one ",
+                               if (flattened) "flattened cortical hemisphere" else "cortical hemisphere, dissected into pieces without flattening",
+                               " (", case_sides, "). _", case_sides,
+                               "_ weights and numbers = as measured (one hemisphere); the plain weight and ",
+                               "number labels = 2x, the both-hemisphere estimate made by this merge. ",
+                               "Neocortex_ = the sum of all ", c10_pieces[[case_ids]], " tissue pieces of the ",
+                               "case in Dataset S1, made by this project")
+    } else {
+      counted <- intersect(case_ids, c10_sum_cases); weighed <- intersect(case_ids, c10_weight_cases)
+      row$SampleInfo <- paste0(
+        "(1H) cases ", paste0(case_ids, " (", case_sides, ")", collapse = " and "), ", one cortical hemisphere each. ",
+        "Per-area values: case ", paste(intersect(case_ids, c10_area_cases), collapse = ", "), " alone. ",
+        "Neocortex cell and neuron numbers: the mean of cases ", paste(counted, collapse = " and "),
+        ", each the sum of its tissue pieces in Dataset S1 (Neocortex_unilateral_ = that mean, one hemisphere; ",
+        "the plain labels = 2x, the both-hemisphere estimate made by this merge). ",
+        "Neocortex weight and the density derived from it: case ", paste(weighed, collapse = " and "), " alone. ",
+        "Sums of the pieces, as measured: ",
+        paste(vapply(case_ids, function(case) sprintf(
+          "case %s (%s, %d pieces): %s g, %s mm2, %s cells, %s neurons", case, c10_side[[case]], c10_pieces[[case]],
+          format(piece_sum(case, "tissue_weight_g"), digits = 15), format(piece_sum(case, "surface_area_mm2"), digits = 15),
+          format(piece_sum(case, "total_cells"), digits = 15, scientific = FALSE),
+          format(piece_sum(case, "total_neurons"), digits = 15, scientific = FALSE)), character(1)), collapse = "; "),
+        if (length(setdiff(counted, weighed)))
+          paste0(". The weight of case ", paste(setdiff(counted, weighed), collapse = ", "),
+                 " is not in the species weight and no density is derived from it (not_served.csv)"))
+      # the density of the species comes only from the case(s) whose weight is served: built here,
+      # exactly as sec 3.7 would build it (2 x neurons / (2 x weight) x 0.001), so that sec 3.7,
+      # which is fill-only, cannot divide the mean neuron number of all cases by one case's weight
+      if (length(setdiff(counted, weighed)) && length(weighed))
+        row[["Neocortex neurons per mg (cases whose weight is served)"]] <- mean(vapply(weighed, function(case)
+          (2 * piece_sum(case, "total_neurons")) / (2 * piece_sum(case, "tissue_weight_g")) * 0.001, numeric(1)))
+    }
+    if (length(cases) == 1L) {
+      note <- data.frame(label_pattern = "^Neocortex_",
+                         detail = paste0("from the sum of the ", c10_pieces[[case_ids]], " tissue pieces of case ", case_ids,
+                                         " in Dataset S1; the sum is made by this project (the supplement prints no total)"),
+                         stringsAsFactors = FALSE)
+    } else {
+      counted <- intersect(case_ids, c10_sum_cases); weighed <- intersect(case_ids, c10_weight_cases)
+      note <- data.frame(
+        label_pattern = c("^Neocortex_((unilateral|left|right)_)?(C|N)\\.n$|^Neocortex_p\\.C\\.N$",
+                          "^Neocortex_((unilateral|left|right)_)?Mass\\.g$|^Neocortex_N\\.p\\.mg$"),
+        detail = c(paste0("mean of ", c("two", "three", "four", "five")[length(counted) - 1L], " cases (", paste(counted, collapse = ", "), "); for each case the sum of its ",
+                          "tissue pieces in Dataset S1 (", paste(c10_pieces[counted], collapse = " and "),
+                          "), made by this project (the supplement prints no total)"),
+                   paste0("from the sum of the ", paste(c10_pieces[weighed], collapse = " and "), " tissue pieces of case ",
+                          paste(weighed, collapse = ", "), " in Dataset S1; the sum is made by this project (the supplement ",
+                          "prints no total)", if (length(setdiff(counted, weighed)))
+                            paste0("; case ", paste(setdiff(counted, weighed), collapse = ", "),
+                                   " is not in this value: its weight is not comparable (not_served.csv)"))),
+        stringsAsFactors = FALSE)
+    }
+    if (any(case_ids %in% c10_sum_cases))
+      source_detail_notes <<- rbind(source_detail_notes, data.frame(
+        Source = collins2010_item, Species_Name_Source = sp, note, stringsAsFactors = FALSE)[, colnames(source_detail_notes)])
     row
   }))
   w <- as.data.frame(w, stringsAsFactors = FALSE, check.names = FALSE)
-  for (case in c10_sum_cases)
-    source_detail_notes <- rbind(source_detail_notes, data.frame(
-      Source = collins2010_item, Species_Name_Source = c10_species[[case]], label_pattern = "^Neocortex_",
-      detail = paste0("from the sum of the ", c10_pieces[[case]], " tissue pieces of case ", case,
-                      " in Dataset S1; the sum is made by this project (the supplement prints no total)"),
-      stringsAsFactors = FALSE))
   w <- w[, c("Species", "n_animals", "SampleInfo", setdiff(colnames(w), c("Species", "n_animals", "SampleInfo"))), drop = FALSE]
   rownames(w) <- NULL
   cell_counts_isotropic_fractionator_data_list[[collins2010_item]] <- w
   rm(d, c10_pieces, c10_area_cases, c10_areas, c10_other_pieces, c10_extensive, c10_intensive, need, col,
-     c10_species, c10_side, case_side, text_totals, piece_sum, c10_sum_cases, per_case, w, case)
+     c10_species, c10_side, case_side, text_totals, c10_quantities, piece_sum, pieces_with, decisions, undecided,
+     c10_sum_cases, c10_weight_cases, c10_text_differs, in_decisions, per_case, side_free, w)
 }
 rm(collins2010_item)
 
@@ -974,6 +1089,10 @@ laterality_one_side  <- data.frame(Reference = character(0), Standardized_Term =
                                    Plain_Term = character(0), stringsAsFactors = FALSE)
 laterality_by_source <- data.frame(Reference = character(0), Standardized_Term = character(0),
                                    stringsAsFactors = FALSE)
+# weights or numbers that THIS MERGE computes from a column registered doubling = by_source
+# (filled where the computation is made, sec 3.4; marked in sec 9.3 like the column they come from)
+laterality_derived_by_source <- data.frame(Reference = character(0), Standardized_Term = character(0),
+                                           computed_as = character(0), stringsAsFactors = FALSE)
 # every both-hemisphere estimate this run makes: item, the item's own species name, the plain
 # label that carries 2x, and the _unilateral label that carries the measured value (filled in sec
 # 3.4c and 3.5, written out in sec 9.3)
@@ -1159,6 +1278,16 @@ for (prefix in prefixes) {
     if (nn_column %in% colnames(df) && npm_column %in% colnames(df) &&
         !any(is.na(df[[nn_column]])) && !any(is.na(df[[npm_column]]))) {
       df[[mass_column]] <- (df[[nn_column]] / df[[npm_column]]) / 1000  # mg -> g
+      # Hemisphere rule (2026-11-24; owner: "the hemisphere rule applies to all bats of course").
+      # Where the neuron number is registered as published 2 x one hemisphere (laterality_known.csv,
+      # doubling = by_source), the mass computed from it here is 2 x one hemisphere too: it is
+      # recorded, and sec 9.3 marks it published_bilateral_estimate like the number it comes from.
+      # No value is changed.
+      if (any(laterality_by_source$Reference == "HerculanoHouzel_etal_2020_TABLE2" &
+              laterality_by_source$Standardized_Term == nn_column))
+        laterality_derived_by_source <- rbind(laterality_derived_by_source, data.frame(
+          Reference = "HerculanoHouzel_etal_2020_TABLE2", Standardized_Term = mass_column,
+          computed_as = paste(nn_column, "/", npm_column), stringsAsFactors = FALSE))
     }
   }
 }
@@ -1690,7 +1819,9 @@ if ("Collins_etal_2016_Table1" %in% item_name) {
 }
 if ("Collins_etal_2010_DatasetS1" %in% item_name) {
   df <- cell_counts_isotropic_fractionator_data_list[["Collins_etal_2010_DatasetS1"]]
-  density_cols  <- grep("_(C|N)\\.p\\.mg$", colnames(df), value = TRUE)
+  # (Neocortex_N.p.mg is not a column of the supplement: where sec 1.11 builds it, it is already
+  #  per mg; elsewhere sec 3.7 derives it)
+  density_cols  <- setdiff(grep("_(C|N)\\.p\\.mg$", colnames(df), value = TRUE), "Neocortex_N.p.mg")
   surface_cols  <- grep("_(C|N)\\.p\\.mm2$", colnames(df), value = TRUE)
   fraction_cols <- grep("_p\\.C\\.N$", colnames(df), value = TRUE)
   if (length(density_cols) != 18L || length(surface_cols) != 18L || length(fraction_cols) != 9L)
@@ -3037,8 +3168,10 @@ write_csv(cell_counts_isotropic_fractionator_wide, "cell_counts_isotropic_fracti
 ## Provenance, never a veto: no value is removed here. A value is flagged only where the item
 ## that made the estimate is the one the merge serves for that Species x Variable (sec 8); the
 ## guard stops the merge unless every flagged value is exactly 2x the _unilateral value served
-## beside it. Values DERIVED from an estimate (a density over a doubled mass) are not flagged:
-## the flag marks the estimate itself.
+## beside it. A density, percentage or ratio DERIVED from an estimate (a density over a doubled
+## mass) is not flagged: it is the same for one hemisphere as for both. A weight or number that
+## this merge computes from an author-doubled number IS flagged like that number (2026-11-24: the
+## regional masses of the Herculano-Houzel et al. 2020 bats, sec 3.4).
 long_key <- paste(cell_counts_isotropic_fractionator_long$Species, cell_counts_isotropic_fractionator_long$Variable, sep = "\r")
 cell_counts_isotropic_fractionator_flags <- data.frame(Species = character(0), Variable = character(0),
                                                        flag = character(0), detail = character(0),
@@ -3071,22 +3204,22 @@ if (nrow(laterality_estimates)) {
   }
   rm(est, served)
 }
+# species the paper measured on both sides inside an author-doubled column: no flag
+not_excepted <- function(rows) {
+  if (!nrow(laterality_exceptions) || !nrow(rows)) return(rows)
+  exc_species <- source_species_ids$Species_Name[match(
+    paste(laterality_exceptions$Reference, laterality_exceptions$Species, sep = "\r"),
+    paste(source_species_ids$Source_Species, source_species_ids$Species_Name_Source, sep = "\r"))]
+  if (anyNA(exc_species))
+    stop("9.3: laterality_known_exceptions.csv names a species its item does not have: ",
+         paste(paste(laterality_exceptions$Reference, laterality_exceptions$Species)[is.na(exc_species)],
+               collapse = "; "), call. = FALSE)
+  rows[!(paste(rows$Source, rows$Species, sep = "\r") %in%
+           paste(laterality_exceptions$Reference, exc_species, sep = "\r")), , drop = FALSE]
+}
 if (nrow(laterality_by_source)) {
-  pub <- merge(as.data.frame(cell_counts_isotropic_fractionator_long[, c("Species", "Variable", "Source")]),
-               laterality_by_source, by.x = c("Source", "Variable"), by.y = c("Reference", "Standardized_Term"))
-  if (nrow(laterality_exceptions)) {
-    # species the paper measured on both sides inside an author-doubled column: no flag
-    exc_species <- source_species_ids$Species_Name[match(
-      paste(laterality_exceptions$Reference, laterality_exceptions$Species, sep = "\r"),
-      paste(source_species_ids$Source_Species, source_species_ids$Species_Name_Source, sep = "\r"))]
-    if (anyNA(exc_species))
-      stop("9.3: laterality_known_exceptions.csv names a species its item does not have: ",
-           paste(paste(laterality_exceptions$Reference, laterality_exceptions$Species)[is.na(exc_species)],
-                 collapse = "; "), call. = FALSE)
-    pub <- pub[!(paste(pub$Source, pub$Species, sep = "\r") %in%
-                   paste(laterality_exceptions$Reference, exc_species, sep = "\r")), , drop = FALSE]
-    rm(exc_species)
-  }
+  pub <- not_excepted(merge(as.data.frame(cell_counts_isotropic_fractionator_long[, c("Species", "Variable", "Source")]),
+                            laterality_by_source, by.x = c("Source", "Variable"), by.y = c("Reference", "Standardized_Term")))
   if (nrow(pub))
     cell_counts_isotropic_fractionator_flags <- rbind(cell_counts_isotropic_fractionator_flags, data.frame(
       Species = pub$Species, Variable = pub$Variable, flag = "published_bilateral_estimate",
@@ -3095,6 +3228,25 @@ if (nrow(laterality_by_source)) {
       stringsAsFactors = FALSE))
   rm(pub)
 }
+# A weight or number this merge COMPUTES from an author-doubled number is 2 x one hemisphere too
+# (owner, 2026-11-24: "the hemisphere rule applies to all bats of course"): the regional masses
+# of the Herculano-Houzel et al. 2020 bats, = neurons / neurons per mg (sec 3.4). Same flag, with
+# a detail that says the value is computed here from a number the source doubled. Same species
+# exceptions. Densities, percentages and ratios stay unflagged.
+if (nrow(laterality_derived_by_source)) {
+  der <- not_excepted(merge(as.data.frame(cell_counts_isotropic_fractionator_long[, c("Species", "Variable", "Source")]),
+                            unique(laterality_derived_by_source), by.x = c("Source", "Variable"),
+                            by.y = c("Reference", "Standardized_Term")))
+  if (nrow(der))
+    cell_counts_isotropic_fractionator_flags <- rbind(cell_counts_isotropic_fractionator_flags, data.frame(
+      Species = der$Species, Variable = der$Variable, flag = "published_bilateral_estimate",
+      detail = paste0("computed by this merge as ", der$computed_as, " / 1000, from a neuron number the ",
+                      "source published as 2x one hemisphere (doubled by the source, not by this merge): ",
+                      der$Source, " -- see laterality_known.csv"),
+      stringsAsFactors = FALSE))
+  rm(der)
+}
+rm(not_excepted)
 cell_counts_isotropic_fractionator_flags <- cell_counts_isotropic_fractionator_flags[
   order(cell_counts_isotropic_fractionator_flags$Species, cell_counts_isotropic_fractionator_flags$Variable,
         method = "radix"), , drop = FALSE]

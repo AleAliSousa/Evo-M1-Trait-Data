@@ -10760,8 +10760,8 @@
 "Pan troglodytes","V2_N.n","Collins_etal_2016_Table1","7.92e+08"
 "Pan troglodytes","Species_Source","Collins_etal_2016_Table1","Pan troglodytes"
 "Pan troglodytes","Specimen","Collins_etal_2016_Table1","KAAS-PAN-11_38 (link: matched)"
-"Otolemur garnettii","Sample_n","Collins_etal_2010_DatasetS1","1"
-"Otolemur garnettii","SampleInfo","Collins_etal_2010_DatasetS1","(1H, right) case 08-07; one flattened cortical hemisphere (right). _right_ weights and numbers = as measured (one hemisphere); the plain weight and number labels = 2x, the both-hemisphere estimate made by this merge. Neocortex_ = the sum of all 12 tissue pieces of the case in Dataset S1, made by this project"
+"Otolemur garnettii","Sample_n","Collins_etal_2010_DatasetS1","2"
+"Otolemur garnettii","SampleInfo","Collins_etal_2010_DatasetS1","(1H) cases 08-07 (right) and 07-104 (left), one cortical hemisphere each. Per-area values: case 08-07 alone. Neocortex cell and neuron numbers: the mean of cases 08-07 and 07-104, each the sum of its tissue pieces in Dataset S1 (Neocortex_unilateral_ = that mean, one hemisphere; the plain labels = 2x, the both-hemisphere estimate made by this merge). Neocortex weight and the density derived from it: case 08-07 alone. Sums of the pieces, as measured: case 08-07 (right, 12 pieces): 2.8721 g, 1849.493 mm2, 242497658 cells, 106733204 neurons; case 07-104 (left, 36 pieces): 1.7644 g, 1137.551 mm2, 239468760 cells, 94095164 neurons. The weight of case 07-104 is not in the species weight and no density is derived from it (not_served.csv)"
 "Otolemur garnettii","V1_right_Mass.g","Collins_etal_2010_DatasetS1","0.2913"
 "Otolemur garnettii","V1_right_C.n","Collins_etal_2010_DatasetS1","50634766"
 "Otolemur garnettii","V1_right_N.n","Collins_etal_2010_DatasetS1","34770894"
@@ -10835,8 +10835,9 @@
 "Otolemur garnettii","DL_C.p.mm2","Collins_etal_2010_DatasetS1","148349"
 "Otolemur garnettii","DL_N.p.mm2","Collins_etal_2010_DatasetS1","50290"
 "Otolemur garnettii","Neocortex_right_Mass.g","Collins_etal_2010_DatasetS1","2.8721"
-"Otolemur garnettii","Neocortex_right_C.n","Collins_etal_2010_DatasetS1","242497658"
-"Otolemur garnettii","Neocortex_right_N.n","Collins_etal_2010_DatasetS1","106733204"
+"Otolemur garnettii","Neocortex_unilateral_C.n","Collins_etal_2010_DatasetS1","240983209"
+"Otolemur garnettii","Neocortex_unilateral_N.n","Collins_etal_2010_DatasetS1","100414184"
+"Otolemur garnettii","Neocortex_N.p.mg","Collins_etal_2010_DatasetS1","37162.0779220779"
 "Otolemur garnettii","V1_left_Mass.g","Collins_etal_2010_DatasetS1",NA
 "Otolemur garnettii","V1_left_C.n","Collins_etal_2010_DatasetS1",NA
 "Otolemur garnettii","V1_left_N.n","Collins_etal_2010_DatasetS1",NA
@@ -10867,6 +10868,8 @@
 "Otolemur garnettii","Neocortex_left_Mass.g","Collins_etal_2010_DatasetS1",NA
 "Otolemur garnettii","Neocortex_left_C.n","Collins_etal_2010_DatasetS1",NA
 "Otolemur garnettii","Neocortex_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Otolemur garnettii","Neocortex_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Otolemur garnettii","Neocortex_right_N.n","Collins_etal_2010_DatasetS1",NA
 "Otolemur garnettii","A1_Mass.g","Collins_etal_2010_DatasetS1","0.0626"
 "Otolemur garnettii","A1_C.n","Collins_etal_2010_DatasetS1","9222656"
 "Otolemur garnettii","A1_N.n","Collins_etal_2010_DatasetS1","3188272"
@@ -10883,8 +10886,8 @@
 "Otolemur garnettii","MT_C.n","Collins_etal_2010_DatasetS1","9621094"
 "Otolemur garnettii","MT_N.n","Collins_etal_2010_DatasetS1","3161492"
 "Otolemur garnettii","Neocortex_Mass.g","Collins_etal_2010_DatasetS1","5.7442"
-"Otolemur garnettii","Neocortex_C.n","Collins_etal_2010_DatasetS1","484995316"
-"Otolemur garnettii","Neocortex_N.n","Collins_etal_2010_DatasetS1","213466408"
+"Otolemur garnettii","Neocortex_C.n","Collins_etal_2010_DatasetS1","481966418"
+"Otolemur garnettii","Neocortex_N.n","Collins_etal_2010_DatasetS1","200828368"
 "Otolemur garnettii","S1_Mass.g","Collins_etal_2010_DatasetS1","0.2142"
 "Otolemur garnettii","S1_C.n","Collins_etal_2010_DatasetS1","21229688"
 "Otolemur garnettii","S1_N.n","Collins_etal_2010_DatasetS1","8617130"
@@ -10897,8 +10900,7 @@
 "Otolemur garnettii","vV3_Mass.g","Collins_etal_2010_DatasetS1","0.0882"
 "Otolemur garnettii","vV3_C.n","Collins_etal_2010_DatasetS1","10898438"
 "Otolemur garnettii","vV3_N.n","Collins_etal_2010_DatasetS1","4496696"
-"Otolemur garnettii","Neocortex_N.p.mg","Collins_etal_2010_DatasetS1","37162.0779220779"
-"Otolemur garnettii","Neocortex_p.C.N","Collins_etal_2010_DatasetS1","44.0141174476827"
+"Otolemur garnettii","Neocortex_p.C.N","Collins_etal_2010_DatasetS1","41.6685396533167"
 "Otolemur garnettii","Species_Source","Collins_etal_2010_DatasetS1","Otolemur garnetti"
 "Otolemur garnettii","Specimen","Collins_etal_2010_DatasetS1","KAAS-OTO-08-07 (link: matched)"
 "Aotus nancymaae","Sample_n","Collins_etal_2010_DatasetS1","1"
@@ -10976,8 +10978,9 @@
 "Aotus nancymaae","DL_C.p.mm2","Collins_etal_2010_DatasetS1","311373"
 "Aotus nancymaae","DL_N.p.mm2","Collins_etal_2010_DatasetS1","115214"
 "Aotus nancymaae","Neocortex_right_Mass.g","Collins_etal_2010_DatasetS1",NA
-"Aotus nancymaae","Neocortex_right_C.n","Collins_etal_2010_DatasetS1",NA
-"Aotus nancymaae","Neocortex_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Aotus nancymaae","Neocortex_unilateral_C.n","Collins_etal_2010_DatasetS1",NA
+"Aotus nancymaae","Neocortex_unilateral_N.n","Collins_etal_2010_DatasetS1",NA
+"Aotus nancymaae","Neocortex_N.p.mg","Collins_etal_2010_DatasetS1","40735.1399156361"
 "Aotus nancymaae","V1_left_Mass.g","Collins_etal_2010_DatasetS1","0.492"
 "Aotus nancymaae","V1_left_C.n","Collins_etal_2010_DatasetS1","81210938"
 "Aotus nancymaae","V1_left_N.n","Collins_etal_2010_DatasetS1","47566406.54"
@@ -11008,6 +11011,8 @@
 "Aotus nancymaae","Neocortex_left_Mass.g","Collins_etal_2010_DatasetS1","5.2155"
 "Aotus nancymaae","Neocortex_left_C.n","Collins_etal_2010_DatasetS1","553191406.77"
 "Aotus nancymaae","Neocortex_left_N.n","Collins_etal_2010_DatasetS1","212454122.23"
+"Aotus nancymaae","Neocortex_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Aotus nancymaae","Neocortex_right_N.n","Collins_etal_2010_DatasetS1",NA
 "Aotus nancymaae","A1_Mass.g","Collins_etal_2010_DatasetS1","0.1"
 "Aotus nancymaae","A1_C.n","Collins_etal_2010_DatasetS1","17832031.26"
 "Aotus nancymaae","A1_N.n","Collins_etal_2010_DatasetS1","6778843.34"
@@ -11038,10 +11043,152 @@
 "Aotus nancymaae","vV3_Mass.g","Collins_etal_2010_DatasetS1","0.15"
 "Aotus nancymaae","vV3_C.n","Collins_etal_2010_DatasetS1","29570312.5"
 "Aotus nancymaae","vV3_N.n","Collins_etal_2010_DatasetS1","11437573.7"
-"Aotus nancymaae","Neocortex_N.p.mg","Collins_etal_2010_DatasetS1","40735.1399156361"
 "Aotus nancymaae","Neocortex_p.C.N","Collins_etal_2010_DatasetS1","38.4051739831765"
 "Aotus nancymaae","Species_Source","Collins_etal_2010_DatasetS1","Aotus nancymae"
 "Aotus nancymaae","Specimen","Collins_etal_2010_DatasetS1","KAAS-AOTUS-07-78 (link: matched)"
+"Macaca mulatta","Sample_n","Collins_etal_2010_DatasetS1","1"
+"Macaca mulatta","SampleInfo","Collins_etal_2010_DatasetS1","(1H, right) case 08-59; one cortical hemisphere, dissected into pieces without flattening (right). _right_ weights and numbers = as measured (one hemisphere); the plain weight and number labels = 2x, the both-hemisphere estimate made by this merge. Neocortex_ = the sum of all 42 tissue pieces of the case in Dataset S1, made by this project"
+"Macaca mulatta","V1_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_right_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_right_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_right_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_p.C.N","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_C.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_N.p.mg","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_C.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_N.p.mm2","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_right_Mass.g","Collins_etal_2010_DatasetS1","21.984"
+"Macaca mulatta","Neocortex_unilateral_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_unilateral_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_N.p.mg","Collins_etal_2010_DatasetS1","61929.1927765648"
+"Macaca mulatta","V1_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_left_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_left_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_right_C.n","Collins_etal_2010_DatasetS1","3412640628"
+"Macaca mulatta","Neocortex_right_N.n","Collins_etal_2010_DatasetS1","1361451374"
+"Macaca mulatta","A1_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","A1_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","DL_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","dV3_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","M1_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","MT_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_Mass.g","Collins_etal_2010_DatasetS1","43.968"
+"Macaca mulatta","Neocortex_C.n","Collins_etal_2010_DatasetS1","6825281256"
+"Macaca mulatta","Neocortex_N.n","Collins_etal_2010_DatasetS1","2722902748"
+"Macaca mulatta","S1_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","S1_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V1_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","V2_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_Mass.g","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_C.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","vV3_N.n","Collins_etal_2010_DatasetS1",NA
+"Macaca mulatta","Neocortex_p.C.N","Collins_etal_2010_DatasetS1","39.8943669259979"
+"Macaca mulatta","Species_Source","Collins_etal_2010_DatasetS1","Macaca mulatta"
+"Macaca mulatta","Specimen","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","Sample_n","Collins_etal_2010_DatasetS1","1"
 "Papio cynocephalus anubis","SampleInfo","Collins_etal_2010_DatasetS1","(1H, right) case 09-27; one flattened cortical hemisphere (right). _right_ weights and numbers = as measured (one hemisphere); the plain weight and number labels = 2x, the both-hemisphere estimate made by this merge. Neocortex_ = the sum of all 142 tissue pieces of the case in Dataset S1, made by this project"
 "Papio cynocephalus anubis","V1_right_Mass.g","Collins_etal_2010_DatasetS1",NA
@@ -11117,8 +11264,9 @@
 "Papio cynocephalus anubis","DL_C.p.mm2","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","DL_N.p.mm2","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","Neocortex_right_Mass.g","Collins_etal_2010_DatasetS1","50.0366"
-"Papio cynocephalus anubis","Neocortex_right_C.n","Collins_etal_2010_DatasetS1","4674035175"
-"Papio cynocephalus anubis","Neocortex_right_N.n","Collins_etal_2010_DatasetS1","2357031189"
+"Papio cynocephalus anubis","Neocortex_unilateral_C.n","Collins_etal_2010_DatasetS1",NA
+"Papio cynocephalus anubis","Neocortex_unilateral_N.n","Collins_etal_2010_DatasetS1",NA
+"Papio cynocephalus anubis","Neocortex_N.p.mg","Collins_etal_2010_DatasetS1","47106.1420839945"
 "Papio cynocephalus anubis","V1_left_Mass.g","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","V1_left_C.n","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","V1_left_N.n","Collins_etal_2010_DatasetS1",NA
@@ -11149,6 +11297,8 @@
 "Papio cynocephalus anubis","Neocortex_left_Mass.g","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","Neocortex_left_C.n","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","Neocortex_left_N.n","Collins_etal_2010_DatasetS1",NA
+"Papio cynocephalus anubis","Neocortex_right_C.n","Collins_etal_2010_DatasetS1","4674035175"
+"Papio cynocephalus anubis","Neocortex_right_N.n","Collins_etal_2010_DatasetS1","2357031189"
 "Papio cynocephalus anubis","A1_Mass.g","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","A1_C.n","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","A1_N.n","Collins_etal_2010_DatasetS1",NA
@@ -11179,7 +11329,6 @@
 "Papio cynocephalus anubis","vV3_Mass.g","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","vV3_C.n","Collins_etal_2010_DatasetS1",NA
 "Papio cynocephalus anubis","vV3_N.n","Collins_etal_2010_DatasetS1",NA
-"Papio cynocephalus anubis","Neocortex_N.p.mg","Collins_etal_2010_DatasetS1","47106.1420839945"
 "Papio cynocephalus anubis","Neocortex_p.C.N","Collins_etal_2010_DatasetS1","50.4281867968612"
 "Papio cynocephalus anubis","Species_Source","Collins_etal_2010_DatasetS1","Papio cynocephalus anubis"
 "Papio cynocephalus anubis","Specimen","Collins_etal_2010_DatasetS1","KAAS-PAPIO-09-27 (link: matched)"

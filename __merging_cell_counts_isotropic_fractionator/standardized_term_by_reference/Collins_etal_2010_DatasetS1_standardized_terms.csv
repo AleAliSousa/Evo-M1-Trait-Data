@@ -107,3 +107,6 @@ Neocortex sum of pieces total_neurons (right hemisphere),Collins_etal_2010_Datas
 Neocortex sum of pieces tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,Neocortex_left_Mass.g
 Neocortex sum of pieces total_cells (left hemisphere),Collins_etal_2010_DatasetS1,Neocortex_left_C.n
 Neocortex sum of pieces total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,Neocortex_left_N.n
+"Neocortex sum of pieces total_cells (one hemisphere, mean of cases measured on different sides)",Collins_etal_2010_DatasetS1,Neocortex_unilateral_C.n
+"Neocortex sum of pieces total_neurons (one hemisphere, mean of cases measured on different sides)",Collins_etal_2010_DatasetS1,Neocortex_unilateral_N.n
+Neocortex neurons per mg (cases whose weight is served),Collins_etal_2010_DatasetS1,Neocortex_N.p.mg

@@ -72,7 +72,10 @@ convention `__merging_volumes` already uses, with the same file format, flags an
   detail`; written by step 9.3 on every run; `Species` and `Variable` exactly as in
   `cell_counts_isotropic_fractionator_long.csv`). A row is written only where the estimate is the
   value actually served. Step 9.3 stops if a flagged value is not exactly 2 × its `_unilateral_`
-  partner. A value *derived from* an estimate (the raccoon's `Hippocampus_O.p.mg`) is not flagged.
+  partner. A density or a ratio *derived from* an estimate (the raccoon's `Hippocampus_O.p.mg`) is
+  not flagged: it is the same for one hemisphere and for two. A weight or a number this merge
+  computes from a number the source published as 2 × one hemisphere **is** flagged
+  `published_bilateral_estimate` (the regional masses of the bats, below; step 7c).
 - **One cell-level case, not in the register:** Jardim-Messeder et al. 2017 Table 1 prints both-
   hemisphere hippocampus masses for seven species and a one-hemisphere mass for *Procyon lotor*
   (Corrections, 2026-09). That is one cell of a column, so it stays in step 3.4c — which now treats
@@ -90,7 +93,9 @@ convention `__merging_volumes` already uses, with the same file format, flags an
   The four neuron-number columns of its Tables 1 and 2 and the brain mass of Table 1 (`MBRAIN`)
   are registered `by_source`; step 3.4o stops the merge unless the exception list equals the
   "(2H each)" species of Table 1. No value changed: 60 values are marked
-  `published_bilateral_estimate` (12 species × four neuron numbers and the brain mass).
+  `published_bilateral_estimate` (12 species × four neuron numbers and the brain mass); since
+  step 7c the three regional masses this merge computes from those numbers are marked as well
+  (36 more values, see the end of this paragraph).
   The paper does not say in words whether `MBRAIN` is a brain weighed whole or the sum of the
   dissected structures. Its own tables decide it
   (`HerculanoHouzel_etal_2020/internal_checks/HerculanoHouzel_etal_2020_TABLE3_internal_check.csv`):
@@ -101,12 +106,21 @@ convention `__merging_volumes` already uses, with the same file format, flags an
   Limits: for 8 species the agreement is close, not exact (the table prints means over two
   animals); that the structure data are 2 × one hemisphere is the paper's statement, not
   something the tables show. The bats' `CerebralCortex_`, `Cerebellum_` and `RoB_Mass.g` are
-  computed by this merge from the doubled neuron numbers and the densities and are not flagged
-  (a value derived from an estimate is not flagged).
-- Today (2026-11-24, after step 7b): 144 registered columns (139 `none`, 5 `by_source`), 2 exception
-  rows, 206 flagged values — 146 `estimated_bilateral_from_unilateral` (54 mouse, 30 owl monkey,
-  30 galago, 16 opossum, 9 chimpanzee, 4 baboon, 1 pig-tailed macaque, 1 squirrel monkey, 1 raccoon)
-  and 60 `published_bilateral_estimate` (bats).
+  computed by this merge (step 3.4: neurons ÷ neurons per mg ÷ 1000) from the doubled neuron
+  numbers and the densities. Owner, 2026-11-24: *"the hemisphere rule applies to all bats of
+  course"*. So for the 12 one-hemisphere species these 36 masses are flagged
+  `published_bilateral_estimate`, with a detail that says they were computed by this merge from a
+  number the source published as 2 × one hemisphere. Step 3.4 records each mass it computes from
+  a `by_source` neuron number (`laterality_derived_by_source`) and step 9.3 flags what is recorded
+  there; no value changed.
+  *Chaerephon pumilus* (both hemispheres measured; the exception row) is not flagged. The
+  densities (`_N.p.mg`, `_O.p.N`) are not flagged. No other merge-computed weight or number has a
+  flagged input (searched 2026-11-24).
+- Today (2026-11-24, after step 7c): 146 registered columns (141 `none`, 5 `by_source`), 2 exception
+  rows, 245 flagged values — 149 `estimated_bilateral_from_unilateral` (54 mouse, 30 owl monkey,
+  30 galago, 16 opossum, 9 chimpanzee, 4 baboon, 3 rhesus macaque, 1 pig-tailed macaque, 1 squirrel
+  monkey, 1 raccoon) and 96 `published_bilateral_estimate` (bats: 60 printed, 36 computed by this
+  merge from a printed one).
 
 ## Per-area items and the Krubitzer team (2026-11-23)
 
@@ -297,15 +311,20 @@ no totals.
   hemisphere rule), `p.C.N`, `C.p.mg`, `N.p.mg`, `C.p.mm2`, `N.p.mm2`.
 - **Whole neocortex per case = the sum of the supplement's pieces** (`Neocortex_` × `Mass.g`,
   `C.n`, `N.n`; `N.p.mg` and `p.C.N` derived from the sums by step 3.7). The sum is made by this
-  project. It is served only where it agrees within 1 % with every whole-hemisphere figure in the
-  paper's text (`Collins_etal_2010_text_totals.csv`): galago 08-07, owl monkey 07-78, baboon 09-27.
-  For macaque 08-59 and galago 07-104 the two disagree: both figures are registered
-  (`cell_counts_isotropic_fractionator_sums_vs_text.csv`, written on every run) and no total is
-  served. The paper calls the structure "cortex" and does not say whether any allocortex was
-  removed; the label `Neocortex` follows Collins et al. 2016.
-- **One row per species.** Cases of one species that give the same measure are averaged. Today
-  galago 07-104 serves nothing, so the *Otolemur garnettii* row is case 08-07 alone. Two cases
-  measured on different sides stop the merge (no label for such a mean has been decided).
+  project. Whether a case's sum is served is **a recorded decision per case**
+  (`Collins_etal_2010_case_decisions.csv`; since step 7c, below), not an automatic rule: all five
+  cases are served. The sums are compared with every whole-hemisphere figure in the paper's text
+  (`Collins_etal_2010_text_totals.csv`) on every run and the comparison is written to
+  `cell_counts_isotropic_fractionator_sums_vs_text.csv`. Where they differ by more than 1 %
+  (macaque 08-59, galago 07-104) the text figures are registered in `not_served.csv` as
+  `disagrees_with_text`. The paper calls the structure "cortex" and does not say whether any
+  allocortex was removed; the label `Neocortex` follows Collins et al. 2016.
+- **One row per species.** Cases of one species that give the same measure are averaged: the
+  galago's whole-neocortex cells and neurons are the mean of cases 08-07 (right) and 07-104
+  (left). A mean over a right and a left hemisphere has no side: it is served as
+  `Neocortex_unilateral_C.n` / `_N.n` (one hemisphere), and the plain label is 2 × it, flagged.
+  The weight of case 07-104 is not served (step 7c), so the galago's `Neocortex_Mass.g` and
+  `Neocortex_N.p.mg` are case 08-07 alone.
 - **Side per case.** The weight and number columns are built per side by step 1.11 ("V1 total_cells
   (right hemisphere)", "… (left hemisphere)"), so one printed column is a right hemisphere for one
   case and a left for another, and `laterality_known.csv` keeps one row per column with one side.
@@ -335,7 +354,7 @@ difference. The statuses:
 | `not_a_database_structure` | a dissection block, remainder or grid piece, not a structure |
 | `other_merge` | the quantity belongs to another merge, named in `same_as` |
 | `excluded` | excluded by a decision; the reason says whose and why |
-| `disagrees_with_text` | two figures for the same quantity disagree; both are registered, none is served until the owner says which to trust |
+| `disagrees_with_text` | two figures for the same quantity disagree; both are registered; the reason says which one is served and by whose decision |
 | `descriptive` | a text or identifier column, not a measurement |
 
 Whole tables that are not in the item list keep their row in
@@ -354,7 +373,8 @@ tissue pieces of case …". The compiled table reads it into `Source_details`.
 
 Authored: `not_served.csv`, `specimen_key.csv`, `laterality_case_side.csv`,
 `Collins_etal_2010_text_totals.csv`,
-`standardized_term_by_reference/Collins_etal_2010_DatasetS1_standardized_terms.csv`. Written on
+`standardized_term_by_reference/Collins_etal_2010_DatasetS1_standardized_terms.csv` (and, since
+step 7c, `Collins_etal_2010_case_decisions.csv`). Written on
 every run: `cell_counts_isotropic_fractionator_same_data.csv`,
 `cell_counts_isotropic_fractionator_sums_vs_text.csv`.
 
@@ -370,6 +390,83 @@ garnettii* rows now also list the spelling Collins et al. 2010 prints. `_unfilte
 `_wide` +1 row, +132 columns. `_species_resolution` +4 rows. `_flags` 142 → 206.
 `__compiled/compiled_long.csv.gz`: +267 rows under `Cell counts`, each classified
 (`cellular_composition` 227, `structure_mass` 40).
+
+## Step 7c (2026-11-24): Collins et al. 2010 cases 08-59 and 07-104 by decision; the bats' computed masses flagged
+
+Owner decisions of 2026-11-24 ("I agree"; reviews `RV-2026-022` and `RV-2026-013`).
+
+### A decision per case replaces the 1 % rule (step 1.11)
+
+`Collins_etal_2010_case_decisions.csv` has one row per case: `specimen`, `serve_sum` (yes / no),
+`serve_weight` (yes / no), `reason`, `decided_by`, `decided_on`, `evidence`. Step 1.11 serves a
+case's whole-neocortex sums only if its row says so, and stops if a case has no row (the message
+gives the case's largest difference from the text), if a field is empty, or if a weight is to be
+served without the counts. The comparison with the text is still made on every run
+(`cell_counts_isotropic_fractionator_sums_vs_text.csv`: one row per case and quantity, with the
+side, the number of pieces, the sum, the text figure, the difference, whether it is served and
+whose decision that is), and a case whose sum differs from a text figure by more than 1 % must
+have its text figures registered in `not_served.csv` (`disagrees_with_text`).
+
+The evidence for the two decisions is the item's internal check,
+`Collins_etal_2010/internal_checks/Collins_etal_2010_DatasetS1_internal_check.csv` (64 rows,
+re-runnable from the item table), summarised in the item's README.
+
+- **Macaque 08-59** (*Macaca mulatta*, right hemisphere, 42 samples, not flattened). Served: the
+  sums of the samples as measured — `Neocortex_right_Mass.g` 21.984 g, `Neocortex_right_C.n`
+  3,412,640,628, `Neocortex_right_N.n` 1,361,451,374 — the plain labels as 2 × them (flagged
+  `estimated_bilateral_from_unilateral`), and `Neocortex_p.C.N` (39.89 %) and `Neocortex_N.p.mg`
+  from the sums (step 3.7). The Results text says "nearly 3.5 billion" cells and "40% (1.4
+  billion)" neurons (2.6 % and 2.8 % above the sums); the Discussion says "1.36 billion neurons",
+  which is the sum. The text figures are registered (`08-59 text figures`), not served. No
+  surface-area measure exists for this case.
+- **Galago 07-104** (*Otolemur garnettii*, left hemisphere, 36 samples). Served: its cells and
+  neurons, as the sum of the samples (239,468,760 and 94,095,164), inside the species mean with
+  case 08-07 — `Neocortex_unilateral_C.n` 240,983,209 and `Neocortex_unilateral_N.n` 100,414,184,
+  the plain labels 2 × these (flagged), `Neocortex_p.C.N` from the two means (41.67 %). The
+  galago's `Neocortex_right_C.n` / `_N.n` (case 08-07 alone until now) are no longer served, since
+  the value is no longer one right hemisphere; each case's own sums are in the unfiltered table
+  (`SampleInfo`) and in the sums-vs-text file. **Not served: its weight** (1.7644 g) and any
+  density from it. Its surface area (1,137.6 mm²) and weight are 0.61 of those of case 08-07, and
+  0.63–0.64 (area) and 0.62 and 0.74 (weight) of the two other galago hemispheres of Young et al.
+  2013; its weight per mm² equals that of 08-07 (0.00155 g/mm²) and its cells are 0.99 and its
+  neurons 0.88 of 08-07. So the hemisphere is whole in cells but smaller in area and weight: the
+  weight is not comparable with the other galagos' (registered `07-104 whole-hemisphere weight`,
+  `excluded`). That the tissue shrank more in preparation is an inference, not a statement of the
+  paper. So `Neocortex_Mass.g`, `Neocortex_right_Mass.g` and `Neocortex_N.p.mg` stay case 08-07
+  alone (step 1.11 computes that density itself, from the cases whose weight is served, so that
+  step 3.7 cannot divide the two-case mean of neurons by one case's weight). The text figures
+  (2,261 mm², "≈326 million" cells, 127 million neurons: 1.99, 1.36 and 1.35 × the sums, no
+  single factor) are registered (`07-104 text figures`), not served. The per-piece densities of
+  the supplement span the range of the labelled contours of the paper's Fig. 1 C and D (cells
+  130–344 thousand per mm² against contours 100–340; neurons 39–207 against 40–200; the figure
+  prints no unit).
+
+### The bats' computed regional masses are flagged (steps 2, 3.4, 9.3)
+
+See **Hemispheres** above: 36 values (`CerebralCortex_Mass.g`, `Cerebellum_Mass.g`, `RoB_Mass.g`
+× 12 species) now carry `published_bilateral_estimate`. `RV-2026-013` is `accepted`.
+
+### Files
+
+Authored, new: `Collins_etal_2010_case_decisions.csv`. Changed: `Collins_etal_2010_text_totals.csv`
+(+ the three printed surface areas), `not_served.csv` (64 rows), `laterality_known.csv` (146 rows),
+the Collins 2010 term file (+3), `specimen_key.csv` (one note), ten `Neocortex_…` label
+definitions. In the item's folder: `internal_checks/` (new) and the README.
+
+### Effect
+
+Against HEAD 9843c89 on the same inputs, same machine. `cell_counts_isotropic_fractionator_long`
+4,502 → 4,510 rows (90 species, 545 variables, both unchanged): +8 *Macaca mulatta*, +2 and −2
+*Otolemur garnettii* (`Neocortex_unilateral_C.n` / `_N.n` in, `Neocortex_right_C.n` / `_N.n` out).
+Three existing values changed, all *Otolemur garnettii*: `Neocortex_C.n` 484,995,316 →
+481,966,418; `Neocortex_N.n` 213,466,408 → 200,828,368; `Neocortex_p.C.N` 44.01 → 41.67. Six
+existing rows have a new source detail (the galago's `Neocortex_C.n`, `_N.n`, `_p.C.N`,
+`_Mass.g`, `_N.p.mg`, `_right_Mass.g`). No other value, source or row order changed. `_unfiltered`
+11,184 → 11,333. `_wide` unchanged in shape (90 × 546). `_species_resolution` 373 → 374. `_flags`
+206 → 245 (+3 macaque, +36 bats; two galago details now name the `_unilateral_` partner).
+`_sums_vs_text` 11 → 20 rows. `_same_data` unchanged (19). `__compiled/compiled_long.csv.gz`:
+202,054 → 202,062 rows (+8), the 36 bat masses and the three macaque estimates carry their
+`Hemispheres` mark, every new row is classified.
 
 ## Corrections
 

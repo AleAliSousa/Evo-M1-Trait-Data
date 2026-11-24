@@ -341,6 +341,36 @@ glossary <- tryCatch(
 
 have_org <- !is.null(vardef) && nrow(vardef) && all(c("label", "domain") %in% names(vardef))
 
+# Display names for source datasets. Where the app lists datasets (the Data &
+# sources filter, the Brain structures legend) a dataset is shown under its
+# display_label from _keys/dataset_labels.csv, so that the catch-all merge does
+# not read as a category. A dataset without a row, or a missing key, is shown
+# under its own name. The values of `Dataset` in tables and downloads are
+# never changed.
+dataset_labels <- tryCatch(
+  read_csv_gh("_keys/dataset_labels.csv", file.path(data_dir, "dataset_labels.csv")),
+  error = function(e) NULL)
+if (is.null(dataset_labels) || !all(c("Dataset", "display_label") %in% names(dataset_labels)))
+  dataset_labels <- data.frame(Dataset = character(0), display_label = character(0),
+                               stringsAsFactors = FALSE)
+dataset_display <- function(x) {
+  d <- dataset_labels$display_label[match(x, dataset_labels$Dataset)]
+  ifelse(is.na(d) | !nzchar(d), x, d)
+}
+# the dataset filter: shown by display name, filtered by the table's own value
+dataset_choices <- local({
+  ds <- sort(unique(compiled$Dataset))
+  ds <- setNames(ds, dataset_display(ds))
+  ds[order(names(ds))]
+})
+# help text under the filter: the key's note for each dataset that has one
+dataset_notes <- local({
+  k <- dataset_labels[dataset_labels$Dataset %in% compiled$Dataset, , drop = FALSE]
+  n <- if ("note" %in% names(k)) as.character(k$note) else rep("", nrow(k))
+  ok <- !is.na(n) & nzchar(n)
+  paste(sprintf("%s: %s", dataset_display(k$Dataset[ok]), n[ok]), collapse = " ")
+})
+
 # label -> attribute lookups
 vd_get <- function(col) {
   if (!have_org || !col %in% names(vardef)) return(setNames(character(0), character(0)))
@@ -1283,15 +1313,16 @@ ui <- page_navbar(
                       value = TRUE),
         hr(),
         helpText(class = "text-muted small",
-                 "Provenance filters \u2014 which compiled table a value came from."),
-        selectInput("c_dataset", "Compiled dataset",
-                    choices = sort(unique(compiled$Dataset)),
-                    selected = sort(unique(compiled$Dataset)),
+                 "Provenance filters \u2014 which merge a value came from. A source dataset is not a category: ",
+                 "find variables by domain and measure class above."),
+        selectInput("c_dataset", "Source dataset (merge)",
+                    choices = dataset_choices,
+                    selected = unname(dataset_choices),
                     multiple = TRUE),
         textInput("c_source", "Source or item contains", placeholder = "e.g. Stephan"),
             selectizeInput("c_columns", "Visible columns", choices = c("Species", "Domain", "Class", "Variable", "Value", "Unit", "Hemispheres", "Source", "Items", "References", "Reference_URLs", "N_sources", "Dataset", "Definition"),
               selected = c("Species", "Variable", "Value", "Unit", "Hemispheres", "Source", "References", "Items", "Dataset"), multiple = TRUE),
-            helpText("Additional published datasets are source-specific measurements not covered by the main subject merges. They include primary studies and literature compilations; see each row's sources.")),
+            if (nzchar(dataset_notes)) helpText(dataset_notes)),
           downloadButton("c_download", "Download table with definitions and sources"),
           uiOutput("c_count"), DTOutput("c_table")),
         nav_panel(
@@ -2624,7 +2655,7 @@ server <- function(input, output, session) {
       div(class = "alert alert-light",
           strong(em(input$bs_species)), ": ", strong(length(unique(foc$Structure))),
           " structures with ", strong(foc$Unit[1]), " values from ",
-          length(unique(foc$Dataset)), " compiled dataset(s).",
+          length(unique(foc$Dataset)), " source dataset(s).",
           if (nz1(input$bs_ref)) tagList(" Shown as % of ", code(input$bs_ref), ".")),
       if (n_multi) div(class = "alert alert-warning",
                        strong(n_multi), " structure(s) are reported by more than one variable or dataset. ",
@@ -2657,7 +2688,7 @@ server <- function(input, output, session) {
     # A structure carried by several variables/datasets gets one row per series.
     nser <- tapply(paste(p$Variable, p$Dataset), p$Structure, function(x) length(unique(x)))
     p$Row <- ifelse(nser[p$Structure] > 1,
-                    paste0(p$Structure, "  [", p$Variable, " | ", p$Dataset, "]"), p$Structure)
+                    paste0(p$Structure, "  [", p$Variable, " | ", dataset_display(p$Dataset), "]"), p$Structure)
     foc <- p[p$Species == input$bs_species, , drop = FALSE]
     foc <- foc[order(-foc$y), , drop = FALSE]
     rows <- utils::head(unique(foc$Row), input$bs_top)
@@ -2671,7 +2702,7 @@ server <- function(input, output, session) {
     n_sp <- length(sp_lv)
     off <- if (n_sp > 1) seq(-0.3, 0.3, length.out = n_sp) else 0
     p$ypos <- as.numeric(p$Row) + off[match(p$Species, sp_lv)]
-    p$col <- if (n_sp > 1) p$Species else p$Dataset
+    p$col <- if (n_sp > 1) p$Species else dataset_display(p$Dataset)
     p$base <- base
     lv <- levels(p$Row)
     # A value that is doubled from one hemisphere, or is one hemisphere, gets its
@@ -2687,7 +2718,7 @@ server <- function(input, output, session) {
                     aes(xmin = lo, xmax = hi), width = 0.25, orientation = "y") +
       scale_y_continuous(breaks = seq_along(lv), labels = lv, expand = expansion(add = 0.6)) +
       labs(x = if (pct) paste0("% of ", input$bs_ref) else p$Unit[1],
-           y = NULL, colour = if (n_sp > 1) "Species" else "Dataset",
+           y = NULL, colour = if (n_sp > 1) "Species" else "Source dataset",
            title = names(sr_keys_for(sr_rows, input$bs_species))[
              match(input$bs_key, sr_keys_for(sr_rows, input$bs_species))]) +
       theme_minimal(base_size = 13) +

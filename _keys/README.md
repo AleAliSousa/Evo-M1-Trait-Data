@@ -46,6 +46,15 @@ A paper does not need a new team folder merely because it has a new author. Duri
   and `te_loader` are no longer used by anything, and `evo_m1_dataset_label`, `evo_m1_loader`,
   `status` and `note` remain descriptive. Also read by `__merging_trees/build_species_universe.py`.
 
+## Display names for source datasets (added 2026-11-24)
+
+- **`dataset_labels.csv`** — `Dataset`, `display_label`, `note`. Read by both apps, by nothing else.
+  `Dataset` in the compiled table is the merge a value came from: provenance, not a category. Where an
+  app lists datasets (a filter, a legend), a dataset with a row here is shown under `display_label`,
+  and `note` is the help text beside the filter. A dataset without a row is shown under its own name,
+  so only the catch-all needs one. Nothing in the table, the builder or a merge reads or is changed by
+  this file; variables are found by `domain` and `measure_class` (`variable_definitions.csv`).
+
 ## Cross-domain structure references (added 2026-10-07, all rows `drafted`)
 
 Started for the Finder's Coverage tab (`__Finder/README.md`); usable by any merge.

@@ -8,6 +8,8 @@ Registry (`__ReadMe.xlsx`): Table 1 is split into two items —
 **`HerculanoHouzel_etal_2013_Table1-a`** (`10.3389%2Ffnana.2013.00035_Table1-a`) and
 **`HerculanoHouzel_etal_2013_Table1-b`** (`…_Table1-b`).
 
+**Status: Table 1-a wired 2026-11-24** into `__merging_cell_counts_isotropic_fractionator` (served under the dataset `Cell counts`): each of the 18 areas is a structure; neurons and other cells are one-hemisphere numbers, served as the both-hemisphere estimate (2 ×, marked) and as measured (`_unilateral_`). The Motor row is served as `Motor` (M1 + M2), not as `M1`. Held: N/mm², N/mm³, thickness, the % columns. Table 1-b and Figure2TopLeft repeat Table 1-a and are not in the merge. Details: `__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`.
+
 ## ⚠️ Single-species (mouse) reference dataset
 Isotropic-fractionator neuron counts in **one species** (*Mus musculus*, n=4 mice). Like Johansen
 2024, this is a within-species regional reference — it contributes mouse per-area values (notably

@@ -1,5 +1,7 @@
 # Wiring HH, Watson & Paxinos 2013 (mouse 18 cortical areas) into `__merging_cell_counts_isotropic_fractionator`
 
+**Superseded 2026-11-24: Table 1-a is wired.** The reshape is step 1.8 of `cell_counts_isotropic_fractionator_compiled.R`; the labels are `<Area>_<code>` (not `Cortex_<Area>_<code>` as proposed below), with the hemisphere rule applied. Current record: `__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`. The text below is the plan as written before the wiring.
+
 The data is **already built** — `HerculanoHouzel_etal_2013_Table1-a.csv` (18 functional
 areas) / `-b.csv` (7 groups), snapshots, definitions, README, and public TSVs
 (`10.3389%2Ffnana.2013.00035_Table1-a.tsv` / `-b.tsv`) all exist. It is **not consumed by

@@ -14,10 +14,11 @@ Pipeline for compiling the comparative brain cell-count dataset.
    - Inputs: `__Public/comparative-data/*.tsv`, `__ReadMe.xlsx`, `standardized_term_cell_counts_isotropic_fractionator.csv`.
    - Label definitions (hand-written, read by `_keys/build_variable_definitions.R`, not by the
      merge): `cell_counts_isotropic_fractionator_label_definitions.csv` — one row per label whose
-     meaning the label alone does not carry (today the 52 opossum labels and the raccoon's
-     one-hemisphere hippocampus mass).
+     meaning the label alone does not carry (today the 205 per-area and one-hemisphere labels).
+     A label served from several sources has ONE row, which names each source.
    - Hemisphere register (hand-written, read by the merge): `laterality_known.csv` — the columns
-     that were measured on one side. See **Hemispheres** below.
+     that were measured on one side — and `laterality_known_exceptions.csv` — species of an
+     author-doubled column that were measured on both sides. See **Hemispheres** below.
    - Outputs: `cell_counts_isotropic_fractionator_long.csv`, `cell_counts_isotropic_fractionator_wide.csv`,
      `cell_counts_isotropic_fractionator_flags.csv` (which served values are both-hemisphere estimates).
    - Checks: `cell_counts_isotropic_fractionator_unfiltered.csv`; `cell_counts_isotropic_fractionator_conflictcheck.R`.
@@ -33,9 +34,10 @@ Pipeline for compiling the comparative brain cell-count dataset.
 3. Put its DOI-coded table in `__Public/comparative-data/<Item encoded>.tsv`.
 4. Re-run `standardized_term.R`, then `cell_counts_isotropic_fractionator_compiled.R`.
 
-Most recent addition: `Seelke_etal_2014_Table3`, `_Table4`, `_Table5` (*Monodelphis domestica*, the
-short-tailed opossum; 2026-11-23) — the first per-area items, a third team, and the first source
-to go through the hemisphere rule. See the next two sections.
+Most recent additions: `HerculanoHouzel_etal_2013_Table1-a` (mouse, 18 cortical areas),
+`Young_etal_2013_a_Table1` (M1 of five primates) and `Collins_etal_2016_Table1` (one chimpanzee),
+2026-11-24 — see **Queued per-area sources wired**; before them `Seelke_etal_2014_Table3`,
+`_Table4`, `_Table5` (*Monodelphis domestica*; 2026-11-23), the first per-area items.
 
 ## Hemispheres (the merge's rule, 2026-11-23)
 
@@ -47,7 +49,7 @@ convention `__merging_volumes` already uses, with the same file format, flags an
 - **A weight, volume or number of cells measured in one hemisphere is served twice.**
   `<Structure>_<code>` is the both-hemisphere estimate, 2 × the printed value, doubled by this
   merge (step 3.5). `<Structure>_unilateral_<code>` is the printed value, one hemisphere, as
-  measured (`_left_` / `_right_` where the source states the side).
+  measured (`_left_` / `_right_` where the source states the side: Collins et al. 2016, right).
 - **Densities, percentages and ratios are never doubled**: they are the same for one hemisphere as
   for both. They have one plain label; its definition says the measurement was made in one
   hemisphere. Values the merge derives (`_O.p.N`, step 3.7; ratios and densities, step 9.1) are
@@ -78,15 +80,20 @@ convention `__merging_volumes` already uses, with the same file format, flags an
 - **Unless a note says it is a different kind of value.** A value that is not "one hemisphere of a
   bilateral structure" (a sample, a piece, one animal's side chosen for a reason) is not registered
   and not doubled; say so in the item's `source_methods.csv` row and its label definition.
-- Today: 16 registered columns (Seelke et al. 2014 Tables 3 and 4), 17 flagged values (16 opossum,
-  1 raccoon).
-- **Known and not yet registered:** Herculano-Houzel et al. 2020 (bats). Methods, section 2.1: for
-  every species except *Chaerephon pumilus* only one hemisphere was available and "data are
-  necessarily expressed as twice the numbers obtained for the available hemisphere" (Table 1
-  marks them "(1H each)", kept in `SampleInfo`). Under the rule these are `by_source` values
-  (`published_bilateral_estimate`), but the register is per column and here one species of the
-  column is a true both-hemisphere value, so it needs the same cell-level handling as the raccoon.
-  Not done on 2026-11-23: no value would change, only flags would be added.
+- **Species exceptions to an author-doubled column** are in `laterality_known_exceptions.csv`
+  (`Reference, Species, basis, note`; the only basis is `both_sides_measured`). A register row is
+  a whole column; a species listed here was measured on both sides and gets no flag. One case:
+  Herculano-Houzel et al. 2020 (bats). Methods 2.1: for every species except *Chaerephon pumilus*
+  only one hemisphere was available and "data are necessarily expressed as twice the numbers
+  obtained for the available hemisphere"; Table 1 marks each species "(1H each)" or "(2H each)".
+  The four neuron-number columns of its Tables 1 and 2 are registered `by_source`; step 3.4o stops
+  the merge unless the exception list equals the "(2H each)" species of Table 1. No value changed:
+  48 values are now marked `published_bilateral_estimate`. **Not registered:** that table's brain
+  mass (`MBRAIN`) — the paper does not say whether it is the weighed whole brain or 2 × the
+  dissected hemisphere (owner decision pending).
+- Today (2026-11-24): 81 registered columns (77 `none`, 4 `by_source`), 2 exception rows, 130
+  flagged values — 82 `estimated_bilateral_from_unilateral` (54 mouse, 16 opossum, 6 chimpanzee,
+  5 M1 masses, 1 raccoon) and 48 `published_bilateral_estimate` (bats).
 
 ## Per-area items and the Krubitzer team (2026-11-23)
 
@@ -134,6 +141,51 @@ are recorded in `WIRING_into_cell_counts_isotropic_fractionator.md`. What the sc
   +3 rows. `_flags` is new: 17 rows. No existing value, source or row order changed.
   `__compiled/compiled_long.csv.gz` (the table the apps read): +53 rows under `Cell counts`, each
   classified (`cellular_composition` 44, `structure_mass` 9).
+
+## Queued per-area sources wired (2026-11-24)
+
+The owner's per-area decision of 2026-11-23 also covers the queued Herculano-Houzel 2013 and
+Kaas-lab sources. Three are wired; what each still needs from the owner is in
+`WIRING_into_cell_counts_isotropic_fractionator.md`, **Decisions needed**.
+
+- **Herculano-Houzel, Watson & Paxinos 2013, Table 1-a** (step 1.8; Herculano-Houzel team). Mouse,
+  4 animals, 18 cortical areas, grey matter, numbers "per functional area in one cortical
+  hemisphere", corrected for sectioning losses. Each area is a structure: `V1`, `S2`, `Insula`
+  and `EntorhinalCortex` use labels the database already has; the other 14 use the paper's own
+  names (`Infralimbic`, `Cingulate`, `Retrosplenial`, `Parietal`, `Motor`, `Frontal`, `V2M`, `V2L`,
+  `S1limb`, `S1face`, `Auditory`, `Orbital`, `Ectorhinal`, `Piriform`). `Motor` is M1 + M2, not
+  `M1`; `Auditory` is not `A1`; `Frontal` and `Parietal` are groups of mouse atlas areas, not
+  lobes. The paper writes "S1-limb" and "S1-face": the hyphen is dropped because the script turns
+  a hyphen in a label into a dot. Served per area: neurons and other cells (`_N.n`, `_O.n`), their
+  sum (`_C.n`, not printed), each as the 2 × estimate and as `_unilateral_`; derived `_O.p.N` and
+  `_p.C.N` (step 3.7). The printed SEM is kept as `_SEM` (annexed, step 6). Held: neurons per mm²
+  and per mm³ (no measure code; their denominators are atlas areas and volumes), thickness, the
+  three % columns. Table 1-b (7 functional groups) and Figure2TopLeft repeat Table 1-a: not listed.
+- **Young, Collins & Kaas 2013, Table 1** (step 1.9; units step 3.4p; team Kaas). M1 of one
+  hemisphere per brain. Served for five species: `M1_Mass.g` (2 × estimate) and
+  `M1_unilateral_Mass.g`, `M1_C.p.mg`, `M1_N.p.mg`, `M1_p.C.N`; SD and n annexed. Held columns:
+  cells and neurons per mm² (no measure code), M1 area (in `__merging_cortical_areas`), the three
+  other % columns. **Held rows: the two baboons** (cases 09-27 and 11-31) — both resolve to
+  *Papio anubis* and the merge has no rule for two rows of one species in one table.
+- **Collins et al. 2016** (step 1.10; units step 3.4p; team Kaas). One chimpanzee, right
+  hemisphere. Served: the flattened neocortex as `Neocortex`, `V1`, `V2`: `_C.n`, `_N.n` (2 ×
+  estimate) and `_right_C.n`, `_right_N.n`; `_p.C.N`; `_C.p.mg`, `_N.p.mg` (V1 and V2). Values are
+  the rounded numbers of the Results text. Held: **M1** (the same chimpanzee as Young's M1 row;
+  superseded by it, as decided for `__merging_cortical_areas` on 2026-08-25, so the specimen is
+  never served twice under an M1 label), the somatosensory, premotor and prefrontal dissection
+  blocks, the left-hemisphere V1 volume, cells and neurons per cm² (no measure code).
+- **Team Kaas** (steps 7, 8.1–8.3.Y, 9.1, 9.2): Young 2013 and Collins 2016, on the Krubitzer
+  pattern. Step 9.2 stops the merge and lists the cells if this team and any other hold the same
+  species × variable. Today the two tables share no species × variable.
+- **Not wired:** `Collins_etal_2010_DatasetS1` (per-piece data; see the WIRING file).
+- **Effect** (against the previous script on the same inputs, same machine).
+  `cell_counts_isotropic_fractionator_long` 4,047 → 4,235 rows, 87 → 89 species (*Pan
+  troglodytes*, *Aotus nancymaae* are new to this merge), 261 → 413 variables: 188 new rows
+  (mouse 144, chimpanzee 24, four other primates 5 each); every other row identical.
+  `_unfiltered` +265 rows. `_wide` +2 rows, +152 columns. `_species_resolution` +7 rows.
+  `_flags` 17 → 130 rows. No existing value, source or row order changed.
+  `__compiled/compiled_long.csv.gz`: +188 rows under `Cell counts`, each classified
+  (`cellular_composition` 178, `structure_mass` 10).
 
 ## Corrections
 

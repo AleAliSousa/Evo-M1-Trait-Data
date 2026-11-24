@@ -8,6 +8,8 @@ Registry (`__ReadMe.xlsx`): Item **`Young_etal_2013_Table1`**, encoded
 PNAS) carries the **same Item name** `Young_etal_2013_Table1` under a different DOI — the build
 disambiguates by DOI when writing the TSV.
 
+**Status: wired 2026-11-24** into `__merging_cell_counts_isotropic_fractionator` under the registered item name `Young_etal_2013_a_Table1` (team Kaas; dataset `Cell counts`): M1 mass (one hemisphere; served as the 2 × estimate, marked, and as measured), cells and neurons per g (served per mg) and % neurons, for five species. Held: the two baboon rows (two animals, one species: owner decision pending), the per-mm² densities (no measure code), M1 area (in `__merging_cortical_areas`) and the other % columns. Details: `__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`.
+
 ## What the data are
 Per-species **primary motor cortex (M1)** measurements — M1 mass, M1 surface area (mm²), M1 as % of
 total cortex, and M1 cell/neuron densities (millions per g and per mm²) with SDs — for **6 primate

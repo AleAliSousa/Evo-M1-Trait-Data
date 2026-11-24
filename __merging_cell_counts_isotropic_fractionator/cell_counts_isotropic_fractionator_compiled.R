@@ -1,7 +1,7 @@
 # Set Working Directory
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cell_counts_isotropic_fractionator")
 
-## 1 Get data for cell count analyses  (1.5-1.7 reshape long-format and per-area source tables)
+## 1 Get data for cell count analyses  (1.5-1.10 reshape long-format and per-area source tables)
 ##   Hemispheres: laterality_known.csv (guard in sec 2), doubling in sec 3.5, flags file in sec 9.3
 ## 2 Change to standardized terminology for all variables in those dataframes
 ## 3 Calculate variables to match them across datasets before filtering
@@ -124,7 +124,7 @@ item_name <- c(
   "Kverkova_etal_2018_TableS5",
   "Seelke_etal_2014_Table3",            # LIVE 2026-11-23 (owner decision of that day; see
   "Seelke_etal_2014_Table4",            #   WIRING_into_cell_counts_isotropic_fractionator.md).
-  "Seelke_etal_2014_Table5"             #   Seelke, Dooley & Krubitzer 2014: Monodelphis domestica,
+  "Seelke_etal_2014_Table5",            #   Seelke, Dooley & Krubitzer 2014: Monodelphis domestica,
                                         #   isotropic fractionator (flow cytometry), group means of
                                         #   5 animals. The FIRST PER-AREA items of this merge and a
                                         #   NEW TEAM ("Krubitzer", sec 7-8). What comes in:
@@ -151,6 +151,21 @@ item_name <- c(
                                         #   - the printed +/- is not labelled SD or SEM in the
                                         #     tables; it is carried as "_pm" and annexed in sec 6.
 
+  "HerculanoHouzel_etal_2013_Table1-a", # LIVE 2026-11-24 (owner, 2026-11-23: the per-area decision
+                                        #   also covers the queued Herculano-Houzel 2013 and Kaas-lab
+                                        #   sources). Mouse, 18 cortical areas, neurons and other
+                                        #   cells of ONE hemisphere -> hemisphere rule. Reshaped in
+                                        #   sec 1.8. Herculano-Houzel team (sec 8.H). Table 1-b (the
+                                        #   7 functional groups) and Figure2TopLeft repeat Table 1-a
+                                        #   and are NOT listed.
+  "Young_etal_2013_a_Table1",           # LIVE 2026-11-24. Young, Collins & Kaas 2013: M1 of six
+                                        #   primate species, mass and cell/neuron densities per g.
+                                        #   Columns kept and the two baboon rows held in sec 1.9;
+                                        #   units in sec 3.4p. NEW TEAM "Kaas" (sec 7-8).
+  "Collins_etal_2016_Table1"            # LIVE 2026-11-24. Collins et al. 2016: one chimpanzee, right
+                                        #   hemisphere. Neocortex, V1 and V2 served; M1 and the
+                                        #   dissection blocks held (sec 1.10). Team Kaas.
+
   # ---- SCAFFOLDED, NOT YET LIVE (Herculano-Houzel coverage-gap audit, 2026-07) ----
   # Each is blocked on: its PDF/data + registration in __ReadMe.xlsx + a completed
   # standardized_term_by_reference/ file (stubs already committed). Uncomment one at a
@@ -162,7 +177,7 @@ item_name <- c(
   #   N_BR != N_CXT+N_CB+N_RoB by up to -22%). Kazu_etal_2015_TABLE1 is live above instead.
   #   __ReadMe.xlsx carries the same instruction in its Flags active (skips) column.
   # , "Gabi_etal_2016_Table1"                      # NEW REGIONS: prefrontal vs rest-of-cortex counts (needs regional-term decision)
-  # , "HerculanoHouzel_etal_2013_Table1-a"         # NEW REGIONS: mouse 18 cortical areas (data built; needs long->wide area reshape — see WIRING_into_cell_counts_isotropic_fractionator.md)
+  # HerculanoHouzel_etal_2013_Table1-a went live on 2026-11-24 (listed above; reshape in sec 1.8).
   # , "Ribeiro_etal_2013_Table1"                   # NEW REGIONS: human cortical zones (within-human; granularity + include/reference decision pending)
   # Olkowicz_etal_2016_TableS1 is intentionally NOT listed: non-mammal (28 birds), blocked on
   #   the MDD/mammal-only taxonomy resolver (PROJECT_SCOPE_AND_DATASET_ROADMAP.md Part 3, steps 1 & 4).
@@ -458,6 +473,163 @@ for (seelke_item in c("Seelke_etal_2014_Table3", "Seelke_etal_2014_Table4", "See
 }
 rm(reshape_seelke2014, seelke_item)
 
+## 1.8 Reshape Herculano-Houzel, Watson & Paxinos 2013 Table 1-a (mouse, 18 cortical areas)
+##     (2026-11-24; the per-area decision of 2026-11-23 covers this source.)
+##     The public TSV is LONG BY AREA: 18 rows, all Mus musculus. Each area becomes a structure
+##     of its own (<Area> <column>), one row for the species, as in sec 1.7.
+##     WHAT THE TABLE HOLDS (paper, Materials and Methods and the Table 1 footnote): four male
+##     C57Bl/6J mice. In each, one hemisphere was cut into 200-um coronal sections and the GREY
+##     MATTER dissected into 18 areas by matching each section to the Franklin & Paxinos (2007)
+##     atlas; the pieces of an area were pooled and counted by isotropic fractionator. "Numbers
+##     are corrected to compensate for losses due to sectioning and thus reflect total numbers
+##     per functional area in one cortical hemisphere +/- standard error of the mean" (correction
+##     factors 1.466, 1.426, 1.480, 1.320, from the unsectioned hemisphere of the same mouse).
+##     SERVED: Neurons and Other cells (absolute numbers, ONE hemisphere -> registered in
+##             laterality_known.csv, doubled in sec 3.5), with their printed SEM ("_SEM", annexed
+##             in sec 6). Total cells are not printed; "Cells (Neurons + OtherCells)" is the sum
+##             of the two printed means of the row, built here so that the both-hemisphere cell
+##             number is made and flagged by the hemisphere rule like the other two, instead of
+##             by sec 3.6 from two estimates without a flag.
+##     HELD  : N/mm2, N/mm3 (no measure code in this merge; and their denominators are atlas
+##             surface areas and volumes, not measurements of these mice), T (mm), the three %
+##             columns, the printed Total row (not in the TSV) and the atlas-area list.
+##     n = 4 is from the paper, not from the TSV.
+##     The guard stops the merge unless the table still has exactly the 18 printed areas for one
+##     species.
+hh2013_item <- "HerculanoHouzel_etal_2013_Table1-a"
+if (!is.null(cell_counts_isotropic_fractionator_data_list[[hh2013_item]])) {
+  d <- cell_counts_isotropic_fractionator_data_list[[hh2013_item]]
+  hh2013_areas <- c("Infralimbic", "Cingulate", "Retrosplenial", "Parietal", "Motor", "Frontal", "V2M",
+                    "V1", "V2L", "S1-limb", "S1-face", "S2", "Auditory", "Insula", "Orbital",
+                    "Ectorhinal", "Entorhinal", "Piriform")
+  need <- c("Species", "Area", "Neurons", "Neurons_SEM", "OtherCells", "OtherCells_SEM")
+  if (!all(need %in% colnames(d)) || nrow(d) != 18L || !setequal(d$Area, hh2013_areas) ||
+      length(unique(d$Species)) != 1L)
+    stop("1.8: expected ", hh2013_item, " to hold exactly the 18 printed areas for one species, ",
+         "with columns ", paste(need, collapse = ", "), "; found areas ", paste(d$Area, collapse = " | "),
+         ". The source table changed -- re-check this reshape before applying it.", call. = FALSE)
+  w <- data.frame(Species = unique(d$Species), n_animals = 4,
+                  SampleInfo = paste0("(1H) 4 mice; grey matter of each area dissected from 200-um ",
+                                      "coronal sections of ONE hemisphere (Franklin & Paxinos 2007 ",
+                                      "atlas), numbers corrected for sectioning losses. _unilateral_ ",
+                                      "numbers = as printed (one hemisphere); the plain number labels ",
+                                      "= 2x, the both-hemisphere estimate made by this merge. _SEM = ",
+                                      "the printed standard error of the mean of the as-printed value"),
+                  stringsAsFactors = FALSE, check.names = FALSE)
+  for (a in hh2013_areas) {
+    r <- which(d$Area == a)
+    neurons <- suppressWarnings(as.numeric(d$Neurons[r]))
+    others  <- suppressWarnings(as.numeric(d$OtherCells[r]))
+    w[[paste(a, "Neurons")]]        <- neurons
+    w[[paste(a, "Neurons_SEM")]]    <- suppressWarnings(as.numeric(d$Neurons_SEM[r]))
+    w[[paste(a, "OtherCells")]]     <- others
+    w[[paste(a, "OtherCells_SEM")]] <- suppressWarnings(as.numeric(d$OtherCells_SEM[r]))
+    w[[paste(a, "Cells (Neurons + OtherCells)")]] <- neurons + others
+  }
+  cell_counts_isotropic_fractionator_data_list[[hh2013_item]] <- w
+  rm(d, hh2013_areas, need, w, a, r, neurons, others)
+}
+rm(hh2013_item)
+
+## 1.9 Young, Collins & Kaas 2013 Table 1 (primary motor cortex, M1): columns served, rows held
+##     (2026-11-24.) The public TSV is already one row per species, but it carries columns this
+##     merge does not serve and two rows it cannot serve yet.
+##     WHAT THE TABLE HOLDS (paper, Materials and Methods and the Table 1 footnote): "All brains
+##     were bisected and one cortical hemisphere was separated from the subcortical structures
+##     ... M1 was dissected from the flattened hemispheres"; counted by flow / isotropic
+##     fractionator. "All values are reported as mean +/- standard deviation where applicable.
+##     The n value refers the number of cortical hemispheres available for study."
+##     SERVED: M1 mass (g, ONE hemisphere -> laterality_known.csv, doubled in sec 3.5), cells per
+##             g and neurons per g (printed in millions; per mg in sec 3.4p), % neurons, their
+##             SD, and n (hemispheres).
+##     HELD  : cells and neurons per mm2 of cortical surface (no measure code in this merge);
+##             M1 area (served by __merging_cortical_areas as M1_Surface_Area.mm2); % of total
+##             mass, % of total area, % neuron difference from the cortical average (no code);
+##             the specimen notes.
+##     HELD ROWS: "Papio cynocephalus anubis" (case 09-27) and "Papio hamadryas anubis" (case
+##             11-31). They are two individual baboons that both resolve to Papio anubis, and this
+##             merge serves one value per species and variable; no other item has two rows for
+##             one species, so there is no rule here for combining or choosing them. OWNER
+##             DECISION PENDING (WIRING_into_cell_counts_isotropic_fractionator.md).
+##     The guard stops the merge unless the table still has its seven printed rows.
+young_item <- "Young_etal_2013_a_Table1"
+if (!is.null(cell_counts_isotropic_fractionator_data_list[[young_item]])) {
+  d <- cell_counts_isotropic_fractionator_data_list[[young_item]]
+  young_served <- c("Species", "n_hemispheres", "M1_mass_g", "M1_mass_g_sd",
+                    "M1_cell_density_per_g_M", "M1_cell_density_per_g_M_sd",
+                    "M1_pct_neurons", "M1_pct_neurons_sd",
+                    "M1_neuron_density_per_g_M", "M1_neuron_density_per_g_M_sd")
+  young_held_rows <- c("Papio cynocephalus anubis", "Papio hamadryas anubis")
+  if (!all(c(young_served, "species_as_published") %in% colnames(d)) || nrow(d) != 7L ||
+      sum(d$species_as_published %in% young_held_rows) != 2L ||
+      anyDuplicated(d$Species[!(d$species_as_published %in% young_held_rows)]))
+    stop("1.9: expected ", young_item, " to hold its seven printed rows (five species once each, ",
+         "plus the two baboon rows that are held) and the columns ", paste(young_served, collapse = ", "),
+         ". The source table changed -- re-check this step before applying it.", call. = FALSE)
+  w <- d[!(d$species_as_published %in% young_held_rows), young_served, drop = FALSE]
+  w$SampleInfo <- paste0("(1H) M1 dissected from one flattened cortical hemisphere per brain; n = ",
+                         "number of hemispheres (one per animal). M1_unilateral_Mass.g = as printed ",
+                         "(one hemisphere); M1_Mass.g = 2x, the both-hemisphere estimate made by ",
+                         "this merge. _SD = the printed standard deviation")
+  rownames(w) <- NULL
+  cell_counts_isotropic_fractionator_data_list[[young_item]] <- w
+  rm(d, young_served, young_held_rows, w)
+}
+rm(young_item)
+
+## 1.10 Reshape Collins et al. 2016 (one chimpanzee, right hemisphere)
+##     (2026-11-24.) The public TSV is LONG BY REGION: 8 rows, all Pan troglodytes.
+##     WHAT IT HOLDS (paper, Results and Methods): one 53-year-old female. "The unfixed cortex
+##     of the right hemisphere was separated from the underlying structures and most of the white
+##     matter", flattened, cut into 742 pieces, each assigned to a cortical area when possible
+##     and counted by flow / isotropic fractionator. "The neocortex contained an estimated 9.51
+##     billion cells ... of which about 3.71 billion, or 39%, were neurons."
+##     SERVED: "cerebral cortex" (the flattened neocortex of the right hemisphere; structure
+##             Neocortex, as for Seelke et al. 2014), V1 and V2: cells and neurons (RIGHT hemisphere
+##             -> laterality_known.csv with side = right, doubled in sec 3.5), fraction of neurons,
+##             cells and neurons per g (units in sec 3.4p).
+##     HELD  : M1 -- the same chimpanzee as the Young et al. 2013 M1 row; in
+##             __merging_cortical_areas the owner decided (2026-08-25) that this M1 is superseded
+##             by Young et al. 2013, the M1-dedicated paper, and that the two are never averaged.
+##             The same is applied here, so the specimen is never served twice under an M1 label.
+##             "somatosensory block", "premotor block" and "Prefrontal Cortex": dissection
+##             blocks, not areas of the database. The left-hemisphere V1 row (a volume from serial
+##             sections). Columns: surface area (served by __merging_cortical_areas), cells and
+##             neurons per cm2 (no measure code), V1 volume, brain and body mass.
+##     The guard stops the merge unless the table still has exactly these eight rows.
+collins2016_item <- "Collins_etal_2016_Table1"
+if (!is.null(cell_counts_isotropic_fractionator_data_list[[collins2016_item]])) {
+  d <- cell_counts_isotropic_fractionator_data_list[[collins2016_item]]
+  collins_served <- c("cerebral cortex", "V1", "V2")
+  collins_held   <- c("somatosensory block", "M1", "premotor block", "Prefrontal Cortex")
+  need <- c("Species", "structure", "hemisphere", "method", "n_cells", "n_neurons", "pct_neurons",
+            "cells_per_g", "neurons_per_g")
+  flat <- d$hemisphere == "right" & d$method == "flattened"
+  if (!all(need %in% colnames(d)) || nrow(d) != 8L || length(unique(d$Species)) != 1L ||
+      !setequal(d$structure[flat], c(collins_served, collins_held)) || sum(flat) != 7L ||
+      !identical(d$structure[!flat], "V1") || !identical(d$hemisphere[!flat], "left"))
+    stop("1.10: expected ", collins2016_item, " to hold seven right-hemisphere flattened rows (",
+         paste(c(collins_served, collins_held), collapse = ", "), ") and one left-hemisphere V1 row ",
+         "for one species. The source table changed -- re-check this reshape before applying it.",
+         call. = FALSE)
+  w <- data.frame(Species = unique(d$Species), n_animals = 1,
+                  SampleInfo = paste0("(1H, right) one chimpanzee, female, 53 y; flattened neocortex ",
+                                      "of the RIGHT hemisphere. _right_ numbers = as printed (one ",
+                                      "hemisphere); the plain number labels = 2x, the both-hemisphere ",
+                                      "estimate made by this merge"),
+                  stringsAsFactors = FALSE, check.names = FALSE)
+  for (a in collins_served) {
+    r <- which(flat & d$structure == a)
+    for (vc in c("n_cells", "n_neurons", "pct_neurons", "cells_per_g", "neurons_per_g")) {
+      v <- suppressWarnings(as.numeric(d[[vc]][r]))
+      if (!is.na(v)) w[[paste(a, vc)]] <- v      # the whole-cortex row prints no per-g density
+    }
+  }
+  cell_counts_isotropic_fractionator_data_list[[collins2016_item]] <- w
+  rm(d, collins_served, collins_held, need, flat, w, a, r, vc, v)
+}
+rm(collins2016_item)
+
 ## 2 Change to standardized terminology for all variables in those dataframes
 
 # Read standardized terms
@@ -548,11 +720,34 @@ if (nrow(lat_src))
   laterality_by_source <- unique(data.frame(Reference = lat_src$Reference,
                                             Standardized_Term = lat_src$Standardized_Term,
                                             stringsAsFactors = FALSE))
+# Species-level exceptions to a doubling = by_source row (2026-11-24): laterality_known_exceptions.csv
+# (Reference, Species, basis, note). A register row is a whole column; where the paper says that
+# one species of an author-doubled column was measured on BOTH sides, that species is listed here
+# (Species = the name the item itself uses) and gets no published_bilateral_estimate flag. The
+# only basis allowed is `both_sides_measured`. No value is changed either way -- only the flag.
+laterality_exceptions <- data.frame(Reference = character(0), Species = character(0), stringsAsFactors = FALSE)
+if (file.exists("laterality_known_exceptions.csv")) {
+  lat_exc <- read.csv("laterality_known_exceptions.csv", stringsAsFactors = FALSE, check.names = FALSE)
+  if (!identical(colnames(lat_exc), c("Reference", "Species", "basis", "note")))
+    stop("laterality_known_exceptions.csv must have exactly the columns Reference, Species, basis, note",
+         call. = FALSE)
+  if (length(setdiff(unique(lat_exc$basis), "both_sides_measured")))
+    stop("laterality_known_exceptions.csv: unknown basis ",
+         paste(setdiff(unique(lat_exc$basis), "both_sides_measured"), collapse = ", "),
+         ". The only exception is `both_sides_measured`.", call. = FALSE)
+  lat_exc <- lat_exc[lat_exc$Reference %in% item_name, , drop = FALSE]
+  if (length(setdiff(lat_exc$Reference, laterality_by_source$Reference)))
+    stop("laterality_known_exceptions.csv: exception(s) for item(s) that have no doubling = by_source ",
+         "row in laterality_known.csv: ",
+         paste(setdiff(lat_exc$Reference, laterality_by_source$Reference), collapse = ", "), call. = FALSE)
+  laterality_exceptions <- unique(lat_exc[, c("Reference", "Species")])
+  rm(lat_exc)
+}
 # The other direction: a term that carries a laterality suffix must be a registered one-side
-# column (or the printed dispersion of one, "_pm" / "_SD"), so a suffix cannot be typed into a
+# column (or the printed dispersion of one, "_pm" / "_SD" / "_SEM"), so a suffix cannot be typed into a
 # term file without the register knowing.
 lat_suffixed <- live_terms[grepl(paste0(laterality_suffix_pattern, "_"), live_terms$Standardized_Term), , drop = FALSE]
-lat_fail(lat_suffixed[!(paste(lat_suffixed$Reference, sub("_(pm|SD)$", "", lat_suffixed$Standardized_Term)) %in%
+lat_fail(lat_suffixed[!(paste(lat_suffixed$Reference, sub("_(pm|SD|SEM)$", "", lat_suffixed$Standardized_Term)) %in%
                           paste(laterality_one_side$Reference, laterality_one_side$Standardized_Term)), , drop = FALSE],
          "term(s) carry a laterality suffix but are not registered in laterality_known.csv")
 message("Laterality guard OK: ", nrow(laterality_one_side), " one-side column(s) correctly suffixed, ",
@@ -1126,6 +1321,76 @@ for (seelke_item in c("Seelke_etal_2014_Table4", "Seelke_etal_2014_Table5")) {
 }
 suppressWarnings(rm(seelke_item, count_cols, density_cols, expected, printed))
 
+# 3.4p Unit conversions for the Kaas-lab tables (2026-11-24 wiring).
+#      Young_etal_2013_a_Table1 prints densities in MILLIONS per gram: per mg = x 1e6 / 1000.
+#      Collins_etal_2016_Table1's public TSV holds densities as absolute numbers per gram
+#      (per mg = / 1000) and the share of neurons as a FRACTION (percent = x 100).
+#      Mass, cell and neuron numbers are already in g and absolute numbers. Nothing here is a
+#      hemisphere operation (that is sec 3.5). The guards stop the merge if a column is no
+#      longer in the unit this step expects.
+if ("Young_etal_2013_a_Table1" %in% item_name) {
+  df <- cell_counts_isotropic_fractionator_data_list[["Young_etal_2013_a_Table1"]]
+  density_cols <- grep("_(C|N)\\.p\\.mg(_SD)?$", colnames(df), value = TRUE)
+  if (length(density_cols) != 4L)
+    stop("3.4p: expected 4 density columns (M1_C.p.mg, M1_N.p.mg and their _SD) in ",
+         "Young_etal_2013_a_Table1, found ", length(density_cols), call. = FALSE)
+  for (col in density_cols) df[[col]] <- suppressWarnings(as.numeric(df[[col]]))
+  means <- unlist(df[, grep("_SD$", density_cols, value = TRUE, invert = TRUE)], use.names = FALSE)
+  if (any(is.na(means)) || any(means < 10 | means > 500))
+    stop("3.4p: Young_etal_2013_a_Table1 densities are no longer in millions per gram ",
+         "(expected 10-500); re-check the source before converting.", call. = FALSE)
+  for (col in density_cols) df[[col]] <- round(df[[col]] * 1e6 / 1000, 6)
+  cell_counts_isotropic_fractionator_data_list[["Young_etal_2013_a_Table1"]] <- df
+  rm(df, density_cols, means, col)
+}
+if ("Collins_etal_2016_Table1" %in% item_name) {
+  df <- cell_counts_isotropic_fractionator_data_list[["Collins_etal_2016_Table1"]]
+  density_cols  <- grep("_(C|N)\\.p\\.mg$", colnames(df), value = TRUE)
+  fraction_cols <- grep("_p\\.C\\.N$", colnames(df), value = TRUE)
+  if (length(density_cols) != 4L || length(fraction_cols) != 3L)
+    stop("3.4p: expected 4 density columns and 3 neuron-share columns in Collins_etal_2016_Table1, ",
+         "found ", length(density_cols), " and ", length(fraction_cols), call. = FALSE)
+  for (col in c(density_cols, fraction_cols)) df[[col]] <- suppressWarnings(as.numeric(df[[col]]))
+  if (any(is.na(unlist(df[, c(density_cols, fraction_cols)]))) ||
+      any(unlist(df[, density_cols]) < 1e7 | unlist(df[, density_cols]) > 5e8) ||
+      any(unlist(df[, fraction_cols]) <= 0 | unlist(df[, fraction_cols]) >= 1))
+    stop("3.4p: Collins_etal_2016_Table1 densities are no longer absolute numbers per gram ",
+         "(expected 1e7-5e8) or the neuron share is no longer a fraction; re-check the source ",
+         "before converting.", call. = FALSE)
+  for (col in density_cols)  df[[col]] <- round(df[[col]] / 1000, 6)
+  for (col in fraction_cols) df[[col]] <- round(df[[col]] * 100, 6)
+  cell_counts_isotropic_fractionator_data_list[["Collins_etal_2016_Table1"]] <- df
+  rm(df, density_cols, fraction_cols, col)
+}
+
+# 3.4o Guard: Herculano-Houzel et al. 2020 (bats), hemisphere basis per species (2026-11-24).
+#      Methods 2.1: "For all specimens except Chaerophon pumilus, we had only one hemisphere
+#      available for quantitative analysis ... data are necessarily expressed as twice the numbers
+#      obtained for the available hemisphere ...; for C. pumilus, numbers provided refer to the sum
+#      of both hemispheres." Table 1 prints the same per species in its n column: "(1H each)" or
+#      "(2H each)", kept here as SampleInfo. The neuron-number columns of Tables 1 and 2 are
+#      therefore registered doubling = by_source in laterality_known.csv, with the "(2H each)"
+#      species listed in laterality_known_exceptions.csv. NO VALUE IS CHANGED: the numbers are
+#      used exactly as published; sec 9.3 only marks them published_bilateral_estimate.
+#      This guard stops the merge if the table and the two register files stop agreeing.
+if ("HerculanoHouzel_etal_2020_TABLE1" %in% item_name) {
+  df <- cell_counts_isotropic_fractionator_data_list[["HerculanoHouzel_etal_2020_TABLE1"]]
+  one_h <- grepl("1H", df$SampleInfo, fixed = TRUE)
+  two_h <- grepl("2H", df$SampleInfo, fixed = TRUE)
+  if (!all(xor(one_h, two_h)))
+    stop("3.4o: HerculanoHouzel_etal_2020_TABLE1 SampleInfo no longer says 1H or 2H for every species",
+         call. = FALSE)
+  for (hh20_item in c("HerculanoHouzel_etal_2020_TABLE1", "HerculanoHouzel_etal_2020_TABLE2")) {
+    if (!(hh20_item %in% item_name)) next
+    if (!(hh20_item %in% laterality_by_source$Reference))
+      stop("3.4o: ", hh20_item, " has no doubling = by_source row in laterality_known.csv", call. = FALSE)
+    if (!setequal(laterality_exceptions$Species[laterality_exceptions$Reference == hh20_item], df$Species[two_h]))
+      stop("3.4o: laterality_known_exceptions.csv for ", hh20_item, " must list exactly the species ",
+           "Table 1 marks (2H each): ", paste(df$Species[two_h], collapse = ", "), call. = FALSE)
+  }
+  rm(df, one_h, two_h, hh20_item)
+}
+
 # 3.5 Hemisphere rule: build the both-hemisphere estimate of every registered one-side column.
 #     (2026-11-23, owner decision: "serve both hemisphere in the comparison but make it clear it
 #     is doubled; and also offer single ... we should just always do it the same way unless there
@@ -1456,6 +1721,7 @@ for (i in seq_along(filtered_cell_counts_isotropic_fractionator_data_list)) {
                          grep("_SD$", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE),
                          grep("_n$", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE),
                          grep("_pm$", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE),
+                         grep("_SEM$", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE),   # printed SEM (HH 2013 Table 1-a; 2026-11-24)
                          # Cellular ratios kept in the merge (see the note above), NOT annexed:
                          #   "_N.p.mg", "_O.p.mg", "_I.p.mg", "_O.p.N", "_I.p.C", "_p.C.N"
                          grep("_p.C.Brain", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE))
@@ -1539,6 +1805,16 @@ HerculanoHouzel_Team_variables
 Krubitzer_Team_dataframes <- grep("^Seelke_etal_2014_", names(filtered_cell_counts_isotropic_fractionator_data_list), value = TRUE)
 Other_Team_variables <- Other_Team_variables[!(Other_Team_variables$Dataframe_Name %in% Krubitzer_Team_dataframes), , drop = FALSE]
 HerculanoHouzel_Team_dataframes <- setdiff(HerculanoHouzel_Team_dataframes, Krubitzer_Team_dataframes)
+HerculanoHouzel_Team_variables <- unique(Other_Team_variables[, !names(Other_Team_variables) %in% "Dataframe_Name"])
+
+# Kaas team (2026-11-24): Young, Collins & Kaas 2013 and Collins et al. 2016 are Kaas-lab
+# (Vanderbilt) flow / isotropic-fractionator work. Same pattern as the Krubitzer team: taken out
+# of the "not Kverkova" block, resolved as a team of their own in sec 8.1-8.3.Y, and stopped by
+# the sec 9.2 guard if they ever hold a Species x Variable that another team also holds.
+# HerculanoHouzel_etal_2013_Table1-a is Herculano-Houzel-team work and stays in that block.
+Kaas_Team_dataframes <- grep("^(Young_etal_2013_a_|Collins_etal_2016_)", names(filtered_cell_counts_isotropic_fractionator_data_list), value = TRUE)
+Other_Team_variables <- Other_Team_variables[!(Other_Team_variables$Dataframe_Name %in% Kaas_Team_dataframes), , drop = FALSE]
+HerculanoHouzel_Team_dataframes <- setdiff(HerculanoHouzel_Team_dataframes, Kaas_Team_dataframes)
 HerculanoHouzel_Team_variables <- unique(Other_Team_variables[, !names(Other_Team_variables) %in% "Dataframe_Name"])
 
 # Merge and compare
@@ -1979,6 +2255,44 @@ if (length(Krubitzer_Team_df_list)) {
   rm(best_priority)
 }
 
+###### 8.1 - 8.3 KAAS TEAM (Young, Collins & Kaas 2013; Collins et al. 2016; added 2026-11-24)
+# Same resolution as the Krubitzer team: melt, rank the team's items by date then number of
+# species, keep the best-priority non-NA value per Species x Variable. Today the two tables share
+# no Species x Variable -- Young holds M1 only, Collins holds Neocortex, V1 and V2, and the Collins
+# M1 row (the same chimpanzee as Young's) is held in sec 1.10 -- so the ranking decides nothing
+# and no specimen is served twice under one label.
+Kaas_Team_df_list <- filtered_cell_counts_isotropic_fractionator_data_list[Kaas_Team_dataframes]
+Kaas_Team_data_long <- data.frame(Species = character(0), Variable = character(0),
+                                       Source = character(0), Value = character(0),
+                                       stringsAsFactors = FALSE)
+if (length(Kaas_Team_df_list)) {
+  ## 8.1.Y Combine all data in all dataframes in Kaas_Team_df_list as a long dataframe
+  combined_data <- bind_rows(lapply(names(Kaas_Team_df_list), function(source) {
+    df <- Kaas_Team_df_list[[source]]
+    df[] <- lapply(df, as.character)
+    df %>%
+      pivot_longer(cols = -Species, names_to = "Variable", values_to = "Value") %>%
+      mutate(Source = source) %>%
+      select(Species, Variable, Source, Value)
+  }))
+  ## 8.2.Y Priority: date (highest first), then number of species
+  worth_dataframe <- data.frame(source = names(Kaas_Team_df_list),
+                                date = as.numeric(str_extract(names(Kaas_Team_df_list), "[0-9]+")),
+                                number_species = vapply(Kaas_Team_df_list, nrow, integer(1)) - 1,
+                                stringsAsFactors = FALSE)
+  worth_dataframe <- worth_dataframe[order(-worth_dataframe$date, -worth_dataframe$number_species), ]
+  rownames(worth_dataframe) <- NULL
+  worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
+  combined_data$priority <- worth_dataframe$priority[match(combined_data$Source, worth_dataframe$source)]
+  ## 8.3.Y Limit dataset to best available data
+  combined_data <- combined_data[!is.na(combined_data$Value), , drop = FALSE]
+  best_priority <- ave(combined_data$priority, combined_data$Species, combined_data$Variable, FUN = min)
+  Kaas_Team_data_long <- as.data.frame(combined_data[combined_data$priority == best_priority,
+                                                          c("Species", "Variable", "Source", "Value")],
+                                            stringsAsFactors = FALSE)
+  rm(best_priority)
+}
+
 #### 9.1 Calculate: within-team between-tables values using the filtered dataset
 #
 #     Fill any cellular ratio still empty after the 8.3 priority resolution, using primaries that
@@ -2059,6 +2373,10 @@ Kverkova_Team_data_long        <- derive_within_team(Kverkova_Team_data_long,
 # sec 3.7 has already filled _O.p.N inside Table 4 -- but the team is treated like the others.
 Krubitzer_Team_data_long       <- derive_within_team(Krubitzer_Team_data_long,
                                                      cell_counts_isotropic_fractionator_derivations)
+# Kaas team: same rule. Today it fills nothing (no M1 cell number and no Neocortex/V1/V2 mass
+# is printed, so no ratio is left to derive).
+Kaas_Team_data_long            <- derive_within_team(Kaas_Team_data_long,
+                                                     cell_counts_isotropic_fractionator_derivations)
 
 #### 9.2 Calculate: between-team averages using filtered dataset
 ## Finalize dataset
@@ -2076,9 +2394,21 @@ if (any(krubitzer_cells %in% other_team_cells))
        sub("\r", " / ", unique(krubitzer_cells)[unique(krubitzer_cells) %in% other_team_cells][1], fixed = TRUE),
        ". They would be averaged. Decide which is served before re-running.", call. = FALSE)
 rm(krubitzer_cells, other_team_cells)
+# Kaas-team guard (2026-11-24): the same rule for the Kaas team, against every other team
+# (Herculano-Houzel, Kverkova, Krubitzer). If it fires, the cells are listed and nothing is averaged.
+kaas_cells <- paste(Kaas_Team_data_long$Species, Kaas_Team_data_long$Variable, sep = "\r")
+other_team_cells <- c(paste(HerculanoHouzel_Team_data_long$Species, HerculanoHouzel_Team_data_long$Variable, sep = "\r"),
+                      paste(Kverkova_Team_data_long$Species, Kverkova_Team_data_long$Variable, sep = "\r"),
+                      paste(Krubitzer_Team_data_long$Species, Krubitzer_Team_data_long$Variable, sep = "\r"))
+if (any(kaas_cells %in% other_team_cells))
+  stop("9.2 Kaas-team guard: ", sum(unique(kaas_cells) %in% other_team_cells),
+       " Species x Variable cell(s) are held by the Kaas team AND by another team: ",
+       paste(sub("\r", " / ", unique(kaas_cells)[unique(kaas_cells) %in% other_team_cells], fixed = TRUE), collapse = "; "),
+       ". They would be averaged. Decide which is served before re-running.", call. = FALSE)
+rm(kaas_cells, other_team_cells)
 # Stack the dataframes lengthwise
 stacked_long_dataframe <- rbind(HerculanoHouzel_Team_data_long, Kverkova_Team_data_long,
-                                Krubitzer_Team_data_long)
+                                Krubitzer_Team_data_long, Kaas_Team_data_long)
 # remove any NA values in stacked_long_dataframe
 stacked_long_dataframe <- stacked_long_dataframe[!is.na(stacked_long_dataframe$Value), , drop = FALSE]
 # make Values numeric in stacked_long_dataframe
@@ -2115,7 +2445,8 @@ write_csv(cell_counts_isotropic_fractionator_wide, "cell_counts_isotropic_fracti
 ##   estimated_bilateral_from_unilateral  2x one measured hemisphere, doubled by THIS merge
 ##                                        (sec 3.5 from laterality_known.csv; sec 3.4c)
 ##   published_bilateral_estimate         2x one hemisphere, doubled by the SOURCE and used as
-##                                        published (laterality_known.csv, doubling = by_source)
+##                                        published (laterality_known.csv, doubling = by_source;
+##                                        not for a species listed in laterality_known_exceptions.csv)
 ## Provenance, never a veto: no value is removed here. A value is flagged only where the item
 ## that made the estimate is the one the merge serves for that Species x Variable (sec 8); the
 ## guard stops the merge unless every flagged value is exactly 2x the _unilateral value served
@@ -2156,6 +2487,19 @@ if (nrow(laterality_estimates)) {
 if (nrow(laterality_by_source)) {
   pub <- merge(as.data.frame(cell_counts_isotropic_fractionator_long[, c("Species", "Variable", "Source")]),
                laterality_by_source, by.x = c("Source", "Variable"), by.y = c("Reference", "Standardized_Term"))
+  if (nrow(laterality_exceptions)) {
+    # species the paper measured on both sides inside an author-doubled column: no flag
+    exc_species <- source_species_ids$Species_Name[match(
+      paste(laterality_exceptions$Reference, laterality_exceptions$Species, sep = "\r"),
+      paste(source_species_ids$Source_Species, source_species_ids$Species_Name_Source, sep = "\r"))]
+    if (anyNA(exc_species))
+      stop("9.3: laterality_known_exceptions.csv names a species its item does not hold: ",
+           paste(paste(laterality_exceptions$Reference, laterality_exceptions$Species)[is.na(exc_species)],
+                 collapse = "; "), call. = FALSE)
+    pub <- pub[!(paste(pub$Source, pub$Species, sep = "\r") %in%
+                   paste(laterality_exceptions$Reference, exc_species, sep = "\r")), , drop = FALSE]
+    rm(exc_species)
+  }
   if (nrow(pub))
     cell_counts_isotropic_fractionator_flags <- rbind(cell_counts_isotropic_fractionator_flags, data.frame(
       Species = pub$Species, Variable = pub$Variable, flag = "published_bilateral_estimate",

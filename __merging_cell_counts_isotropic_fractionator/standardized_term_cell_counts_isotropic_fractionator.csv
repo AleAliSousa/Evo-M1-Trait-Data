@@ -130,6 +130,22 @@ OSC,Burish_etal_2010_Table1,SpinalCord_O.n
 OSC_SD,Burish_etal_2010_Table1,SpinalCord_O.n_SD
 Species,Burish_etal_2010_Table1,Species
 n,Burish_etal_2010_Table1,SpinalCord_n
+Species,Collins_etal_2016_Table1,Species
+n_animals,Collins_etal_2016_Table1,Sample_n
+SampleInfo,Collins_etal_2016_Table1,SampleInfo
+cerebral cortex n_cells,Collins_etal_2016_Table1,Neocortex_right_C.n
+cerebral cortex n_neurons,Collins_etal_2016_Table1,Neocortex_right_N.n
+cerebral cortex pct_neurons,Collins_etal_2016_Table1,Neocortex_p.C.N
+V1 n_cells,Collins_etal_2016_Table1,V1_right_C.n
+V1 n_neurons,Collins_etal_2016_Table1,V1_right_N.n
+V1 pct_neurons,Collins_etal_2016_Table1,V1_p.C.N
+V1 cells_per_g,Collins_etal_2016_Table1,V1_C.p.mg
+V1 neurons_per_g,Collins_etal_2016_Table1,V1_N.p.mg
+V2 n_cells,Collins_etal_2016_Table1,V2_right_C.n
+V2 n_neurons,Collins_etal_2016_Table1,V2_right_N.n
+V2 pct_neurons,Collins_etal_2016_Table1,V2_p.C.N
+V2 cells_per_g,Collins_etal_2016_Table1,V2_C.p.mg
+V2 neurons_per_g,Collins_etal_2016_Table1,V2_N.p.mg
 DNCB,DosSantos_etal_2017_TableS1,Cerebellum_N.p.mg
 DNCX,DosSantos_etal_2017_TableS1,CerebralCortex_N.p.mg
 DND + S,DosSantos_etal_2017_TableS1,DiencephalonStriatum_N.p.mg
@@ -332,96 +348,98 @@ Whole brain Neurons SD,HerculanoHouzel_etal_2011_Table1,WholeBrain_N.n_SD
 Whole brain Other cells,HerculanoHouzel_etal_2011_Table1,WholeBrain_O.n
 Whole brain Other cells SD,HerculanoHouzel_etal_2011_Table1,WholeBrain_O.n_SD
 Species,HerculanoHouzel_etal_2013_Table1-a,Species
-Infralimbic_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_N.n
-Infralimbic_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_O.n
-Infralimbic_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_N.p.mm2
-Infralimbic_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_N.p.mm3
-Infralimbic_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Infralimbic_Thickness.mm
-Cingulate_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_N.n
-Cingulate_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_O.n
-Cingulate_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_N.p.mm2
-Cingulate_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_N.p.mm3
-Cingulate_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Cingulate_Thickness.mm
-Retrosplenial_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_N.n
-Retrosplenial_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_O.n
-Retrosplenial_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_N.p.mm2
-Retrosplenial_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_N.p.mm3
-Retrosplenial_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Retrosplenial_Thickness.mm
-Parietal_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_N.n
-Parietal_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_O.n
-Parietal_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_N.p.mm2
-Parietal_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_N.p.mm3
-Parietal_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Parietal_Thickness.mm
-Motor_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_N.n
-Motor_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_O.n
-Motor_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_N.p.mm2
-Motor_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_N.p.mm3
-Motor_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Motor_Thickness.mm
-Frontal_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_N.n
-Frontal_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_O.n
-Frontal_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_N.p.mm2
-Frontal_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_N.p.mm3
-Frontal_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Frontal_Thickness.mm
-V2M_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_N.n
-V2M_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_O.n
-V2M_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_N.p.mm2
-V2M_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_N.p.mm3
-V2M_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2M_Thickness.mm
-V1_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_N.n
-V1_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_O.n
-V1_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_N.p.mm2
-V1_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_N.p.mm3
-V1_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_V1_Thickness.mm
-V2L_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_N.n
-V2L_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_O.n
-V2L_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_N.p.mm2
-V2L_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_N.p.mm3
-V2L_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_V2L_Thickness.mm
-S1limb_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_N.n
-S1limb_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_O.n
-S1limb_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_N.p.mm2
-S1limb_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_N.p.mm3
-S1limb_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1limb_Thickness.mm
-S1face_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_N.n
-S1face_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_O.n
-S1face_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_N.p.mm2
-S1face_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_N.p.mm3
-S1face_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_S1face_Thickness.mm
-S2_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_N.n
-S2_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_O.n
-S2_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_N.p.mm2
-S2_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_N.p.mm3
-S2_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_S2_Thickness.mm
-Auditory_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_N.n
-Auditory_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_O.n
-Auditory_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_N.p.mm2
-Auditory_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_N.p.mm3
-Auditory_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Auditory_Thickness.mm
-Insula_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_N.n
-Insula_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_O.n
-Insula_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_N.p.mm2
-Insula_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_N.p.mm3
-Insula_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Insula_Thickness.mm
-Orbital_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_N.n
-Orbital_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_O.n
-Orbital_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_N.p.mm2
-Orbital_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_N.p.mm3
-Orbital_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Orbital_Thickness.mm
-Ectorhinal_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_N.n
-Ectorhinal_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_O.n
-Ectorhinal_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_N.p.mm2
-Ectorhinal_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_N.p.mm3
-Ectorhinal_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Ectorhinal_Thickness.mm
-Entorhinal_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_N.n
-Entorhinal_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_O.n
-Entorhinal_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_N.p.mm2
-Entorhinal_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_N.p.mm3
-Entorhinal_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Entorhinal_Thickness.mm
-Piriform_N.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_N.n
-Piriform_O.n,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_O.n
-Piriform_N.p.mm2,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_N.p.mm2
-Piriform_N.p.mm3,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_N.p.mm3
-Piriform_Thickness.mm,HerculanoHouzel_etal_2013_Table1-a,Cortex_Piriform_Thickness.mm
+n_animals,HerculanoHouzel_etal_2013_Table1-a,Sample_n
+SampleInfo,HerculanoHouzel_etal_2013_Table1-a,SampleInfo
+Infralimbic Neurons,HerculanoHouzel_etal_2013_Table1-a,Infralimbic_unilateral_N.n
+Infralimbic Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Infralimbic_unilateral_N.n_SEM
+Infralimbic OtherCells,HerculanoHouzel_etal_2013_Table1-a,Infralimbic_unilateral_O.n
+Infralimbic OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Infralimbic_unilateral_O.n_SEM
+Infralimbic Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Infralimbic_unilateral_C.n
+Cingulate Neurons,HerculanoHouzel_etal_2013_Table1-a,Cingulate_unilateral_N.n
+Cingulate Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Cingulate_unilateral_N.n_SEM
+Cingulate OtherCells,HerculanoHouzel_etal_2013_Table1-a,Cingulate_unilateral_O.n
+Cingulate OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Cingulate_unilateral_O.n_SEM
+Cingulate Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Cingulate_unilateral_C.n
+Retrosplenial Neurons,HerculanoHouzel_etal_2013_Table1-a,Retrosplenial_unilateral_N.n
+Retrosplenial Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Retrosplenial_unilateral_N.n_SEM
+Retrosplenial OtherCells,HerculanoHouzel_etal_2013_Table1-a,Retrosplenial_unilateral_O.n
+Retrosplenial OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Retrosplenial_unilateral_O.n_SEM
+Retrosplenial Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Retrosplenial_unilateral_C.n
+Parietal Neurons,HerculanoHouzel_etal_2013_Table1-a,Parietal_unilateral_N.n
+Parietal Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Parietal_unilateral_N.n_SEM
+Parietal OtherCells,HerculanoHouzel_etal_2013_Table1-a,Parietal_unilateral_O.n
+Parietal OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Parietal_unilateral_O.n_SEM
+Parietal Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Parietal_unilateral_C.n
+Motor Neurons,HerculanoHouzel_etal_2013_Table1-a,Motor_unilateral_N.n
+Motor Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Motor_unilateral_N.n_SEM
+Motor OtherCells,HerculanoHouzel_etal_2013_Table1-a,Motor_unilateral_O.n
+Motor OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Motor_unilateral_O.n_SEM
+Motor Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Motor_unilateral_C.n
+Frontal Neurons,HerculanoHouzel_etal_2013_Table1-a,Frontal_unilateral_N.n
+Frontal Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Frontal_unilateral_N.n_SEM
+Frontal OtherCells,HerculanoHouzel_etal_2013_Table1-a,Frontal_unilateral_O.n
+Frontal OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Frontal_unilateral_O.n_SEM
+Frontal Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Frontal_unilateral_C.n
+V2M Neurons,HerculanoHouzel_etal_2013_Table1-a,V2M_unilateral_N.n
+V2M Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,V2M_unilateral_N.n_SEM
+V2M OtherCells,HerculanoHouzel_etal_2013_Table1-a,V2M_unilateral_O.n
+V2M OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,V2M_unilateral_O.n_SEM
+V2M Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,V2M_unilateral_C.n
+V1 Neurons,HerculanoHouzel_etal_2013_Table1-a,V1_unilateral_N.n
+V1 Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,V1_unilateral_N.n_SEM
+V1 OtherCells,HerculanoHouzel_etal_2013_Table1-a,V1_unilateral_O.n
+V1 OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,V1_unilateral_O.n_SEM
+V1 Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,V1_unilateral_C.n
+V2L Neurons,HerculanoHouzel_etal_2013_Table1-a,V2L_unilateral_N.n
+V2L Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,V2L_unilateral_N.n_SEM
+V2L OtherCells,HerculanoHouzel_etal_2013_Table1-a,V2L_unilateral_O.n
+V2L OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,V2L_unilateral_O.n_SEM
+V2L Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,V2L_unilateral_C.n
+S1-limb Neurons,HerculanoHouzel_etal_2013_Table1-a,S1limb_unilateral_N.n
+S1-limb Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,S1limb_unilateral_N.n_SEM
+S1-limb OtherCells,HerculanoHouzel_etal_2013_Table1-a,S1limb_unilateral_O.n
+S1-limb OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,S1limb_unilateral_O.n_SEM
+S1-limb Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,S1limb_unilateral_C.n
+S1-face Neurons,HerculanoHouzel_etal_2013_Table1-a,S1face_unilateral_N.n
+S1-face Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,S1face_unilateral_N.n_SEM
+S1-face OtherCells,HerculanoHouzel_etal_2013_Table1-a,S1face_unilateral_O.n
+S1-face OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,S1face_unilateral_O.n_SEM
+S1-face Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,S1face_unilateral_C.n
+S2 Neurons,HerculanoHouzel_etal_2013_Table1-a,S2_unilateral_N.n
+S2 Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,S2_unilateral_N.n_SEM
+S2 OtherCells,HerculanoHouzel_etal_2013_Table1-a,S2_unilateral_O.n
+S2 OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,S2_unilateral_O.n_SEM
+S2 Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,S2_unilateral_C.n
+Auditory Neurons,HerculanoHouzel_etal_2013_Table1-a,Auditory_unilateral_N.n
+Auditory Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Auditory_unilateral_N.n_SEM
+Auditory OtherCells,HerculanoHouzel_etal_2013_Table1-a,Auditory_unilateral_O.n
+Auditory OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Auditory_unilateral_O.n_SEM
+Auditory Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Auditory_unilateral_C.n
+Insula Neurons,HerculanoHouzel_etal_2013_Table1-a,Insula_unilateral_N.n
+Insula Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Insula_unilateral_N.n_SEM
+Insula OtherCells,HerculanoHouzel_etal_2013_Table1-a,Insula_unilateral_O.n
+Insula OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Insula_unilateral_O.n_SEM
+Insula Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Insula_unilateral_C.n
+Orbital Neurons,HerculanoHouzel_etal_2013_Table1-a,Orbital_unilateral_N.n
+Orbital Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Orbital_unilateral_N.n_SEM
+Orbital OtherCells,HerculanoHouzel_etal_2013_Table1-a,Orbital_unilateral_O.n
+Orbital OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Orbital_unilateral_O.n_SEM
+Orbital Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Orbital_unilateral_C.n
+Ectorhinal Neurons,HerculanoHouzel_etal_2013_Table1-a,Ectorhinal_unilateral_N.n
+Ectorhinal Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Ectorhinal_unilateral_N.n_SEM
+Ectorhinal OtherCells,HerculanoHouzel_etal_2013_Table1-a,Ectorhinal_unilateral_O.n
+Ectorhinal OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Ectorhinal_unilateral_O.n_SEM
+Ectorhinal Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Ectorhinal_unilateral_C.n
+Entorhinal Neurons,HerculanoHouzel_etal_2013_Table1-a,EntorhinalCortex_unilateral_N.n
+Entorhinal Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,EntorhinalCortex_unilateral_N.n_SEM
+Entorhinal OtherCells,HerculanoHouzel_etal_2013_Table1-a,EntorhinalCortex_unilateral_O.n
+Entorhinal OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,EntorhinalCortex_unilateral_O.n_SEM
+Entorhinal Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,EntorhinalCortex_unilateral_C.n
+Piriform Neurons,HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_N.n
+Piriform Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_N.n_SEM
+Piriform OtherCells,HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_O.n
+Piriform OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_O.n_SEM
+Piriform Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_C.n
 Species,HerculanoHouzel_etal_2014_Table1,Species
 Order,HerculanoHouzel_etal_2014_Table1,Order
 "Whole brain Mass, g",HerculanoHouzel_etal_2014_Table1,WholeBrainOlfactoryBulb_Mass.g
@@ -1006,3 +1024,14 @@ A1 neurons_per_g_millions,Seelke_etal_2014_Table5,A1_N.p.mg
 A1 neurons_per_g_millions_pm,Seelke_etal_2014_Table5,A1_N.p.mg_pm
 A1 non_neurons_per_g_millions,Seelke_etal_2014_Table5,A1_O.p.mg
 A1 non_neurons_per_g_millions_pm,Seelke_etal_2014_Table5,A1_O.p.mg_pm
+Species,Young_etal_2013_a_Table1,Species
+n_hemispheres,Young_etal_2013_a_Table1,M1_n
+SampleInfo,Young_etal_2013_a_Table1,SampleInfo
+M1_mass_g,Young_etal_2013_a_Table1,M1_unilateral_Mass.g
+M1_mass_g_sd,Young_etal_2013_a_Table1,M1_unilateral_Mass.g_SD
+M1_cell_density_per_g_M,Young_etal_2013_a_Table1,M1_C.p.mg
+M1_cell_density_per_g_M_sd,Young_etal_2013_a_Table1,M1_C.p.mg_SD
+M1_pct_neurons,Young_etal_2013_a_Table1,M1_p.C.N
+M1_pct_neurons_sd,Young_etal_2013_a_Table1,M1_p.C.N_SD
+M1_neuron_density_per_g_M,Young_etal_2013_a_Table1,M1_N.p.mg
+M1_neuron_density_per_g_M_sd,Young_etal_2013_a_Table1,M1_N.p.mg_SD

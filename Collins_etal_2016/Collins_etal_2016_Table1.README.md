@@ -41,7 +41,10 @@ same specimen as Young 2013's chimp (boundary difference, 2,700 mm² there), You
 M1-dedicated paper, the two are never averaged. The "somatosensory/premotor block" and "Prefrontal
 Cortex" rows are dissection blocks — provenance only, not wired. The left-hemisphere V1
 serial-section row is a volume and is excluded by the merge's area filter. Cell/neuron **counts**
-in this table are NOT yet in any merge — they await the regional cell-count reshape
-(`__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`).
+were wired into `__merging_cell_counts_isotropic_fractionator` on 2026-11-24 (team Kaas): the
+right-hemisphere neocortex, V1 and V2 — numbers as the 2 × both-hemisphere estimate (marked) and as
+measured (`_right_`), % neurons, and densities per g (served per mg). M1 is held there too, as
+superseded by Young 2013 (same chimpanzee); the dissection blocks and the per-cm² densities are
+held (`__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`).
 
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅ → Merge (areas) ✅

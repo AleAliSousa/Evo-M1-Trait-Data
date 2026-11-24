@@ -31,6 +31,28 @@ mean; if any team is primary, only primary teams are pooled). Includes PHYLACINE
 taxa, as in the old merge. The single value veto (Nudo 1995 FSU specimen weights)
 lives in `body_value_flags.csv` and is enforced with an exact row-count check.
 
+## Values not served (2026-11-24)
+
+Two kinds of body-mass record are left out in section 1 of `body_compiled.R`;
+each is listed, per species, in `body_not_served.csv` with its status and code.
+
+- **PanTHERIA's missing-value code** (`missing_value_code`, 1,156 records).
+  PanTHERIA (Jones et al. 2009) writes -999 where it has no value. Until
+  24 November 2026 the merge read it as a body mass of -999 g and averaged it
+  in: 1,069 served body masses were negative and 87 more were pulled down.
+- **EltonTraits imputed body masses** (`imputed`, 1,359 records; owner
+  decisions of 24 November 2026). EltonTraits codes each body mass:
+  `BodyMass_SpecLevel` 1 = species-level data, 0 = inferred from genus or
+  family typical values (812), 2 = phylogenetically imputed (547; Ref_178,
+  Jetz & Freckleton). Codes 0 and 2 are not served. No separate trait
+  "including imputations" is kept (owner, 24 November): the values stay in the
+  register and in EltonTraits itself.
+
+Together: 323 species lose a body mass that was only a code or an imputation
+(150 of them leave the table, having nothing else served), and 1,626 pooled
+body masses lose a source (1,582 of them change value) because a code or an
+imputation no longer enters the mean.
+
 ## Body BMR (metabolic class)
 
 Whole-body basal metabolic rate, harvested from **4 sources** and reconciled to a
@@ -57,4 +79,5 @@ vs mass-specific kept apart, per the design decision):
 | `body_long.csv` | one row per Species × Measure: pooled `Value` (+ median, sources, teams, spread) |
 | `body_wide.csv` | Species × Measure matrix of `Value` |
 | `body_dedupe_report.csv` | multi-source groups with per-source values and disagreement flags |
+| `body_not_served.csv` | records not served, one row per species: status (`imputed`, `missing_value_code`), code and reason |
 | `body_value_flags.csv` | value vetoes (input; `skip` action, exact-count enforced) |

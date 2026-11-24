@@ -24,6 +24,17 @@
 #   3. team-dedupe (same collection = one value), then pool across teams, primary preferred
 #                                                                -> body_long.csv / body_wide.csv
 #   4. dedupe / disagreement report                              -> body_dedupe_report.csv
+#   (values not served, with the reason for each               -> body_not_served.csv)
+#
+# PanTHERIA's missing-value code: PanTHERIA (Jones et al. 2009) writes -999 where it has no
+# value. Until 24 November 2026 that code was read as a body mass of -999 g and averaged in
+# (1,069 served body masses were negative). It is now read as "no value" and each such record
+# is listed in body_not_served.csv with status "missing_value_code".
+#
+# Imputed values are not served (owner decisions of 24 November 2026): EltonTraits body
+# masses inferred from genus or family typical values (BodyMass_SpecLevel 0) or
+# phylogenetically imputed (BodyMass_SpecLevel 2, Jetz & Freckleton, EltonTraits Ref_178)
+# are left out in section 1 and listed in body_not_served.csv.
 #
 # HISTORY. Before the split this was __merging_body_ecology/body_ecology_compiled.R,
 # itself the 2026-08-07 consolidation of a retired Python builder
@@ -219,7 +230,7 @@ src_meta <- function(fn) {
   list(author = author, year = year, ay = paste(tolower(author), year))
 }
 
-uf <- list(); colmap <- list()
+uf <- list(); colmap <- list(); not_served <- list()
 
 # ---- 1. body mass, every table that has a body column ----------------------
 # COLUMN_OVERRIDE: tables whose body-mass column body_rx cannot see. Faurby
@@ -233,6 +244,10 @@ uf <- list(); colmap <- list()
 # cynocephalus via PanTHERIA), so its extinct species are wired too rather
 # than silently filtered out.
 COLUMN_OVERRIDE <- c("10.1002%2Fecy.2443_Traitdata.tsv" = "mass_g")
+WILMAN_BODY <- "10.1890%2F13-1917.1_MamFuncDat.tsv"     # EltonTraits (Wilman et al. 2014)
+PANTHERIA_BODY <- "10.1890%2F08-1494.1_PanTHERIA1-0WR93Aug2008.txt.tsv"   # -999 = no value
+IMPUTED_BODY <- c("0" = "inferred from genus or family typical values (EltonTraits BodyMass-SpecLevel 0)",
+                  "2" = "phylogenetically imputed (EltonTraits BodyMass-SpecLevel 2; Ref_178, Jetz & Freckleton)")
 for (path in sort(list.files(pub, pattern = "\\.tsv$", full.names = TRUE))) {
   fn <- basename(path)
   rows <- read_tsv_rows(path); if (is.null(rows)) next
@@ -256,6 +271,40 @@ for (path in sort(list.files(pub, pattern = "\\.tsv$", full.names = TRUE))) {
     ok <- ok & toupper(cell(drows, match("merge_eligible", headers))) %in% c("TRUE", "1", "YES")
   if (!any(ok)) next
   sp <- get_species(fn, headers, drows[seq_len(min(length(drows), 59))], drows)
+  if (fn == PANTHERIA_BODY) {                        # PanTHERIA's missing-value code (header note)
+    miss <- ok & val == -999
+    if (any(miss)) {
+      rs <- resolve(sp[miss], fn)
+      not_served[[length(not_served) + 1L]] <- data.frame(
+        Reference = "Jones_etal_2009_PanTHERIA1-0WR93Aug2008.txt", Species_printed = sp[miss],
+        Species = rs$accepted_name, Measure = "Body_Mass", Value_as_published = raw[miss],
+        status = "missing_value_code", code = "-999",
+        reason = "PanTHERIA writes -999 where it has no value", stringsAsFactors = FALSE)
+    }
+    ok <- ok & !miss
+    if (!any(ok)) next
+  }
+  # Imputed values are not served (owner decisions, 24 November 2026: genus and family
+  # averages, and "the 547 phylogenetically imputed body masses should not be served").
+  # EltonTraits codes each body mass: 1 = species-level data, 0 = inferred from genus or
+  # family typical values, 2 = phylogenetically imputed (Ref_178, Jetz & Freckleton).
+  # Codes 0 and 2 are left out and listed in body_not_served.csv with status "imputed".
+  if (fn == WILMAN_BODY) {
+    ki <- match("BodyMass_SpecLevel", headers)
+    if (is.na(ki)) stop("body: column BodyMass_SpecLevel not found in ", fn, call. = FALSE)
+    lev <- cell(drows, ki)
+    imp <- ok & lev %in% names(IMPUTED_BODY)
+    if (any(imp)) {
+      rs <- resolve(sp[imp], fn)
+      not_served[[length(not_served) + 1L]] <- data.frame(
+        Reference = "Wilman_etal_2014_MamFuncDat", Species_printed = sp[imp],
+        Species = rs$accepted_name, Measure = "Body_Mass", Value_as_published = raw[imp],
+        status = "imputed", code = paste0("SpecLevel ", lev[imp]),
+        reason = unname(IMPUTED_BODY[lev[imp]]), stringsAsFactors = FALSE)
+    }
+    ok <- ok & !imp
+    if (!any(ok)) next
+  }
   team <- team_ay[[m$ay]] %||% (if (nzchar(m$author)) m$author else fn)
   role <- role_ay[[m$ay]] %||% "secondary"
   if (fn == "10.1159%2F000142809_TableI.tsv" && "data_role" %in% headers) {
@@ -427,6 +476,11 @@ write.csv(vetoed, file.path(out, "body_vetoed_rows.csv"), row.names = FALSE, na 
 write.csv(uf,     file.path(out, "body_unfiltered.csv"),     row.names = FALSE, na = "")
 write.csv(long,   file.path(out, "body_long.csv"),           row.names = FALSE, na = "")
 write.csv(dedupe, file.path(out, "body_dedupe_report.csv"),  row.names = FALSE, na = "")
+ns <- if (length(not_served)) do.call(rbind, not_served) else
+  data.frame(Reference = character(), Species_printed = character(), Species = character(),
+             Measure = character(), Value_as_published = character(), status = character(),
+             code = character(), reason = character(), stringsAsFactors = FALSE)
+write.csv(ns,     file.path(out, "body_not_served.csv"),     row.names = FALSE, na = "")
 
 # wide: one column per Measure, canonical unit in the name
 WCOL <- c(Body_Mass = "Body_Mass.g", BMR_wholeanimal = "BMR_wholeanimal.mLO2h",
@@ -447,3 +501,6 @@ cat(sprintf("body-mass sources: %d\nunfiltered rows: %d  |  long rows: %d  |  sp
 tb <- table(paste0(long$measure_class, " / ", long$Measure, " (", long$Units, ")"))
 for (nm in sort(names(tb))) cat(sprintf("   %5d  %s\n", tb[[nm]], nm))
 cat(sprintf("disagreement>2x flags: %d\n", sum(dedupe$flag == "DISAGREEMENT>2x")))
+cat(sprintf("not served: %d EltonTraits imputed body masses (SpecLevel 0: %d, SpecLevel 2: %d); %d PanTHERIA -999 codes\n",
+            sum(ns$status == "imputed"), sum(ns$code == "SpecLevel 0"), sum(ns$code == "SpecLevel 2"),
+            sum(ns$status == "missing_value_code")))

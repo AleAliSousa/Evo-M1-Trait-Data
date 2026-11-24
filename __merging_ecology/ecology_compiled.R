@@ -8,7 +8,10 @@
 #                     (categorical -> pooled by MODE, not mean), plus the Galan-Acedo
 #                     et al. 2019 diel-activity gap-fill for Activity_pattern (section 4b,
 #                     carried over verbatim from the combined script, where it was added
-#                     2026-11-20): Wilman wins wherever it has the species.
+#                     2026-11-20): Wilman wins wherever it has a species-level value.
+#   Imputed values are not served (owner decision of 24 November 2026): diet and activity
+#   values that EltonTraits took from the genus or family average (certainty D1 / D2) are
+#   left out and listed in ecology_not_served.csv (section 4).
 #
 # The old merge's other classes moved in the same split: mass + metabolic (body) to
 # __merging_body/body_compiled.R, life_history to __merging_life_history (Option A).
@@ -26,6 +29,7 @@
 #   1. harvest Wilman (+ Galan gap-fill) -> resolve species   -> ecology_unfiltered.csv
 #   2. team-dedupe, then pool across teams, primary preferred -> ecology_long.csv / _wide.csv
 #   3. dedupe / disagreement report                           -> ecology_dedupe_report.csv
+#   (values not served, with the reason for each               -> ecology_not_served.csv)
 #   (the fixed source-column crosswalk is written to ecology_source_columns.csv)
 
 `%||%` <- function(a, b) if (is.null(a) || length(a) == 0) b else a
@@ -218,7 +222,7 @@ src_meta <- function(fn) {
   list(author = author, year = year, ay = paste(tolower(author), year))
 }
 
-uf <- list(); colmap <- list()
+uf <- list(); colmap <- list(); not_served <- list()
 
 # ---- 4. diet & ecology (Wilman 2014 EltonTraits, 5,403 mammals) ------------
 WILMAN <- "10.1890%2F13-1917.1_MamFuncDat.tsv"
@@ -234,10 +238,42 @@ if (file.exists(wp)) {
   rows <- read_tsv_rows(wp); headers <- gsub('"', "", rows[[1]]); drows <- rows[-1]
   sp <- get_species(fn, headers, drows[seq_len(min(length(drows), 59))], drows)
   m <- src_meta(WILMAN); team <- team_ay[[m$ay]] %||% (if (nzchar(m$author)) m$author else "Wilman")
+  # Imputed values are not served (owner decision, 24 November 2026: "we should be able to
+  # re-calculate those data from the species data, if we ever need them"). EltonTraits names,
+  # per species, the source of its diet values and of its activity values; where no species
+  # data were found it gives the genus average (Ref_2, certainty code D1) or the family
+  # average (Ref_3, D2). Those values are left out: the 10 diet percentages and what Wilman
+  # derives from them (Diet_breadth, Diet_dominant, Trophic_guild) by Diet_Certainty, and
+  # Activity_pattern by Activity_Certainty. Each value left out is written, per species and
+  # measure, to ecology_not_served.csv with status "imputed". Foraging stratum has no such
+  # code (its A / B code is the reliability of the source) and is served as before.
+  IMPUTED <- c(D1 = "genus average (EltonTraits Ref_2, certainty D1)",
+               D2 = "family average (EltonTraits Ref_3, certainty D2)")
+  cert_col <- function(nm) {
+    ci <- match(nm, headers)
+    if (is.na(ci)) stop("ecology: column ", nm, " not found in ", WILMAN, call. = FALSE)
+    cell(drows, ci)
+  }
+  cert <- list(diet = cert_col("Diet_Certainty"), activity = cert_col("Activity_Certainty"))
+  cert_group <- function(col) if (col == "Activity_pattern") "activity" else
+                              if (col == "ForStrat_stratum") NA_character_ else "diet"
   for (col in c(DIET_NUM, DIET_CAT)) {
     ci <- match(col, headers); if (is.na(ci)) next
     raw <- cell(drows, ci)
     ok <- !is.na(raw) & nzchar(raw) & !(tolower(raw) %in% c("na", "none", "nan"))
+    grp <- cert_group(col)
+    if (!is.na(grp)) {
+      imp <- ok & cert[[grp]] %in% names(IMPUTED)
+      if (any(imp)) {
+        rs <- resolve(sp[imp], WILMAN)
+        not_served[[length(not_served) + 1L]] <- data.frame(
+          Reference = "Wilman_etal_2014_MamFuncDat", Species_printed = sp[imp],
+          Species = rs$accepted_name, Measure = col, Value_as_published = raw[imp],
+          status = "imputed", code = cert[[grp]][imp], reason = unname(IMPUTED[cert[[grp]][imp]]),
+          stringsAsFactors = FALSE)
+      }
+      ok <- ok & !imp
+    }
     units <- if (col %in% DIET_PCT) "%" else if (col == "Diet_breadth") "count" else "category"
     if (col %in% DIET_NUM) {
       v <- suppressWarnings(as.numeric(raw)); ok <- ok & !is.na(v)
@@ -259,7 +295,9 @@ if (file.exists(wp)) {
 # __merging_supplementary maps, unchanged, as Activity_pattern_Galan2019. Mapped onto
 # Wilman's words (D -> Diurnal, N -> Nocturnal, CA -> Cathemeral) the two agree on
 # 95.7% of the 323 species both report, so Galán is used ONLY where Wilman lacks the
-# species: rows are filtered to those species before pooling, which keeps every
+# species. Since 24 November 2026 that includes the species whose Wilman value is a genus or
+# family average (left out in section 4): a species-level Galán value then fills the gap.
+# Rows are filtered to those species before pooling, which keeps every
 # Wilman row byte-identical and makes the precedence structural rather than a
 # pooling artefact. Species are resolved with the paper scope, exactly as the
 # supplementary merge resolves this same table, and each species' value is the
@@ -408,12 +446,17 @@ srcmap <- rbind(
              note = "Wilman 2014 EltonTraits, as published; pooled by mode", stringsAsFactors = FALSE),
   data.frame(file = "GalanAcedo_etal_2019_DielActivity.csv", source_column = "DielActivity",
              Measure = "Activity_pattern", unit = "category",
-             note = "gap-fill only (section 4b): D/N/CA mapped to Diurnal/Nocturnal/Cathemeral; species Wilman lacks only",
+             note = "gap-fill only (section 4b): D/N/CA mapped to Diurnal/Nocturnal/Cathemeral; species for which Wilman has no species-level value only",
              stringsAsFactors = FALSE))
 write.csv(srcmap, file.path(out, "ecology_source_columns.csv"), row.names = FALSE)
 write.csv(uf,     file.path(out, "ecology_unfiltered.csv"),     row.names = FALSE, na = "")
 write.csv(long,   file.path(out, "ecology_long.csv"),           row.names = FALSE, na = "")
 write.csv(dedupe, file.path(out, "ecology_dedupe_report.csv"),  row.names = FALSE, na = "")
+ns <- if (length(not_served)) do.call(rbind, not_served) else
+  data.frame(Reference = character(), Species_printed = character(), Species = character(),
+             Measure = character(), Value_as_published = character(), status = character(),
+             code = character(), reason = character(), stringsAsFactors = FALSE)
+write.csv(ns,     file.path(out, "ecology_not_served.csv"),     row.names = FALSE, na = "")
 
 # wide: one column per Measure, canonical unit in the name
 WCOL <- c()   # no measure is renamed in the wide table of this merge
@@ -433,3 +476,7 @@ cat(sprintf("unfiltered rows: %d  |  long rows: %d  |  species: %d\n",
 tb <- table(paste0(long$measure_class, " / ", long$Measure, " (", long$Units, ")"))
 for (nm in sort(names(tb))) cat(sprintf("   %5d  %s\n", tb[[nm]], nm))
 cat(sprintf("disagreement>2x flags: %d\n", sum(dedupe$flag == "DISAGREEMENT>2x")))
+cat(sprintf("not served (imputed, genus or family average): %d values of %d species (diet: %d species, activity: %d species)\n",
+            nrow(ns), length(unique(ns$Species_printed)),
+            length(unique(ns$Species_printed[ns$Measure != "Activity_pattern"])),
+            length(unique(ns$Species_printed[ns$Measure == "Activity_pattern"]))))

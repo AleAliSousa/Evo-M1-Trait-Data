@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source
+source_row,source row,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+field,field,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+phenotype_as_published,phenotype as published,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+species_as_published,species as published,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+Species,Species,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+neuron_number_mean,neuron number mean,,,,primary,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+neuron_number_SD,neuron number SD,,,,primary,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+number_CE,Coefficient of error of neuron-number estimate,,,,primary,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+proportion_pct,proportion pct,,,,primary,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+proportion_SD_pct,proportion SD pct,,,,primary,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+p_prop_CE_vs_ME_as_published,p prop CE vs ME as published,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+p_prop_species_as_published,p prop species as published,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+observation_level,observation level,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2
+data_role,data role,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 2

@@ -1,0 +1,27 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Cortex; Cerebellum; Remaining areas,source_row,,info,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,
+Species_as_published,Species as published,Cortex; Cerebellum; Remaining areas,Species_as_published,,info,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,Verbatim species label from HTML; Otolemur garnetti is a printed spelling variant; Cebus apella is the printed capuchin name.,
+Species,Species,Cortex; Cerebellum; Remaining areas,Species,,info,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,"Analysis name: Otolemur garnettii per paper Methods; Sapajus apella for printed Cebus apella, matching the earlier HH 2007 Table 1 build.",
+Order,Order,Cortex; Cerebellum; Remaining areas,Order,,info,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,Tupaia glis is Scandentia; the other six species are Primata.,
+structure_as_published,structure as published,Cortex; Cerebellum; Remaining areas,structure_as_published,,info,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,
+Number,Number,Cortex; Cerebellum; Remaining areas,Number,,info,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,Number of animals as printed for each structure and species.,
+mass_g,mass g,Cortex; Cerebellum; Remaining areas,Mass.g,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+mass_g_SD,mass g SD,Cortex; Cerebellum; Remaining areas,Mass.g,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+brain_mass_pct,brain mass pct,Cortex; Cerebellum; Remaining areas,Percent,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+brain_mass_pct_SD,brain mass pct SD,Cortex; Cerebellum; Remaining areas,Percent,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+neuronal_fraction_pct,neuronal fraction pct,Cortex; Cerebellum; Remaining areas,Percent,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+neuronal_fraction_pct_SD,neuronal fraction pct SD,Cortex; Cerebellum; Remaining areas,Percent,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+neurons,neurons,Cortex; Cerebellum; Remaining areas,N.n,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+neurons_SD,neurons SD,Cortex; Cerebellum; Remaining areas,N.n,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+neuron_density_per_mg,neuron density per mg,Cortex; Cerebellum; Remaining areas,Cells/mg,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+neuron_density_per_mg_SD,neuron density per mg SD,Cortex; Cerebellum; Remaining areas,Cells/mg,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+brain_neurons_pct,brain neurons pct,Cortex; Cerebellum; Remaining areas,Percent,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+brain_neurons_pct_SD,brain neurons pct SD,Cortex; Cerebellum; Remaining areas,Percent,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+other_cells,other cells,Cortex; Cerebellum; Remaining areas,O.n,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,"Two Macaca values print x10^9 in SI HTML (cerebellum 931.03, remaining areas 966.52); analysis interprets x10^6, flagged in source_exponent_note. Raw strings retained in snapshot.",isotropic fractionator
+other_cells_SD,other cells SD,Cortex; Cerebellum; Remaining areas,O.n,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+other_cell_density_per_mg,other cell density per mg,Cortex; Cerebellum; Remaining areas,Cells/mg,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+other_cell_density_per_mg_SD,other cell density per mg SD,Cortex; Cerebellum; Remaining areas,Cells/mg,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+brain_other_cells_pct,brain other cells pct,Cortex; Cerebellum; Remaining areas,Percent,mean,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+brain_other_cells_pct_SD,brain other cells pct SD,Cortex; Cerebellum; Remaining areas,Percent,SD,primary,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,,isotropic fractionator
+source_exponent_note,source exponent note,Cortex; Cerebellum; Remaining areas,source_exponent_note,,info,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,Explicit correction note for two Macaca non-neuronal count cells; blank otherwise.,
+data_role,data role,Cortex; Cerebellum; Remaining areas,data_role,,info,Tree shrew and six primates,HerculanoHouzel_etal_2007_SITable2,Species-level group means from primary isotropic-fractionator measurements; avoid double counting with Table 1 and later 2015 compiled rows.,

@@ -15,3 +15,7 @@ Printed names remain in `species_as_published`. Collection-scoped `_keys/General
 From repository root, run `Rscript --vanilla Feix_etal_2015/Feix_etal_2015_SupplementaryTable1_snapshot.R`, then `Rscript --vanilla Feix_etal_2015/Feix_etal_2015_SupplementaryTable1.R`. The first script captures the printed PDF text table only; the second reads its frozen snapshot and writes a 45-row analysis CSV and registry-coded public TSV. The snapshot was checked against the rendered source page by Codex on 2026-11-23, including the wrapped fossil label and bottom Lorisiformes block. Structural checks require 45 rows, seven fossil rows, four explicit model variants, and positive numerical values. No printed totals permit an independent arithmetic check. Human visual signoff remains pending. The registry row is in `__ReadMeAddON.xlsx` while the main registry is occupied.
 
 This item is a printed table, so no figure replot applies. Do not pool its model outputs with Supplementary Table 2 raw lengths or with later secondary reuses before checking provenance.
+
+## Main-table discrepancy (2026-11-24)
+
+The printed main-text Table 1 is a subset of this supplement and is now frozen separately as `Feix_etal_2015_Table1_snapshot.csv`. For *Hylobates lar*, main Table 1 prints real object size **2.20 mm**, while this supplementary Table 1 prints **22.2 mm**. Both values remain as published in their respective items. Treat them as one modeled result with an unresolved source conflict, not independent observations; clarify the correct value before merging that cell.

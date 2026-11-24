@@ -1,0 +1,204 @@
+"source_row"	"species_as_published"	"Species"	"mating_system_as_published"	"male_body_mass_g"	"female_body_mass_g"	"group_size"	"female_age_sexual_maturity_months"	"female_age_first_birth_years"	"gestation_days"	"offspring_per_litter"	"interbirth_interval_years"	"birth_rate_offspring_per_year"	"maximum_recorded_lifespan_years"	"neonate_body_mass_g"	"male_neonate_body_mass_g"	"female_neonate_body_mass_g"	"weaning_age_days"	"weaning_body_mass_g"	"foetal_growth_rate_source"	"postnatal_growth_rate_source"	"source_has_traits"	"data_role"	"taxonomic_resolution"	"primary_pool_eligible"
+1	"Lemur catta"	"Lemur catta"	"MM"	2210	2210	15.3	22.5	2.01	135	1.3	1.5	0.87	27.1	88.2	67.2	65	135		0.85		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+2	"Hapalemur aureus"	"Hapalemur aureus"		1520	1390	3		2			1						135				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+3	"Hapalemur griseus"	"Hapalemur griseus"	"Mon"	987	903	2.6		2.38	140	1.5			12	45.2			46		0.48		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+4	"Hapalemur simus"	"Hapalemur simus"		2150	1300	8															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+5	"Petterus coronatus"	"Petterus coronatus"	"MM"	1690	1620	8.4			125	1.5				70					0.84		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+6	"Petterus mongoz"	"Petterus mongoz"	"Mon"	1630	1610	3.5		2.52	128	1.1			25.33	53	55.1	59.8	166		0.46		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+7	"Petterus fulvus"	"Petterus fulvus"	"MM"	2000	2077	9.2	22	2.16	120	1.1	1.5	0.73	30.08	83.3	72.1	67.8	135		0.76		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+8	"Petterus macaco"	"Petterus macaco"	"MM"	2370	2510	8.4	24	2.18	120	1	1	1	27.08	88	62.7	50	135		0.73		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+9	"Petterus rubriventer"	"Petterus rubriventer"	"Mon"	1980	1940	3.2			123					78.4	67.8	89	135				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+10	"Varecia variegata"	"Varecia variegata"	"Mon"	3470	3510	5.3	20	1.95	102	2.5	1	2.5	13	87.2	93.7	78.4	90		2.14		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+11	"Lepilemur mustelinus"	"Lepilemur mustelinus"	"UM"			1	21	1.88	135	1				27			75		0.2		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+12	"Daubentonia madagascarensis"	"Daubentonia madagascarensis"	"UM"	2620	2490	2	29	1.9	167	1	2.5	0.4	22.3	109	122	102	170		0.65		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+13	"Avahi laniger"	"Avahi laniger"	"Mon"	1030	1320	2.5			235	1	1	1					150				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+14	"Propithecus verrauxi"	"Propithecus verrauxi"	"MM"	3250	2950	6	30	3.5	162	1	1.48	0.68	18.17	107	94.5	103.2	180		0.66		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+15	"Propithecus diadema"	"Propithecus diadema"		5940	6260	5.1	48	4	179	1	2	0.5	20	145	155	135	180				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+16	"Propithecus tattersalli"	"Propithecus tattersalli"	"MM"	3390	3590	4.1			176								165				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+17	"Indri indri"	"Indri indri"	"Mon"	5830	6840	3.1	66	8	160	1	2.5	0.4		300			365		1.88		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+18	"Microcebus murinus"	"Microcebus murinus"	"UM"	59	63	1	9.5	1	62	1.9	1	1.9	15.42	7.1	7.2	4.6	40		0.22		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+19	"Microcebus rufus"	"Microcebus rufus"	"UM"	43	42	1			61	2											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+20	"Mirza coquereli"	"Mirza coquereli"	"UM"	304	326	1	11.5	1.93	89.2	1.5	1	1.5	15.25	17.5			86		0.29		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+21	"Cheirogaleus major"	"Cheirogaleus major"		438	362				70	2.5			8.8	18.1			46		0.65		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+22	"Cheirogaleus medius"	"Cheirogaleus medius"	"UM"	283	282	5.5	12	1.19	62	2	1	2	9	19	11.8		61		0.61		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+23	"Allocebus trichotis"	"Allocebus trichotis"	"UM"	92	84	1															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+24	"Phaner furcifer"	"Phaner furcifer"	"Mon"							1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+25	"Galago alleni"	"Galago alleni"	"UM"	277	269	1	8	0.09	133	1.3	1	1.3	12	24					0.23		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+26	"Galagoides demidoff"	"Galagoides demidoff"	"UM"	63	60	1	8	0.97	111	1.2	1	1.2	13	9.9	11.6		45		0.11		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+27	"Galagoides zanzibaricus"	"Galagoides zanzibaricus"	"UM"	149	137	1		1	120	1.2	0.5	2.4		14.1	16.5				0.14		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+28	"Galago granti"	"Galago granti"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+29	"Galago moholi"	"Galago moholi"	"UM"	187	173	1		1	123	2	0.5	4	16.5	11.75	11.7	11.8	99		0.19		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+30	"Galago senegalensis"	"Galago senegalensis"	"UM"	227	199	1	6.7	2	124.2	1.55	0.51	3.04	16.5	11.5	18.4	19.5	101		0.14		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+31	"Otolemur crassicaudatus"	"Otolemur crassicaudatus"	"UM"	1190	1110	1	12	2.21	135	1.25	1	1.25	15	43.2			136		0.4		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+32	"Otolemur garnettii"	"Otolemur garnettii"	"UM"	794	734	1		1.25	131.7	1	1	1	17	52			140		0.39		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+33	"Euoticus elegantulus"	"Euoticus elegantulus"	"UM"	287	261	1			135	1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+34	"Euoticus inustus"	"Euoticus inustus"		207	212	1															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+35	"Loris tardigradus"	"Loris tardigradus"	"UM"	192	193	1	13	1.5	165	1.6	0.5	3.19	12	11			169		0.11		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+36	"Arctocebus calabarensis"	"Arctocebus calabarensis"	"UM"	312	306	1	9.5	1.1	134	1	0.38	2.66	13	25.2	27	37	105		0.19		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+37	"Nycticebus coucang"	"Nycticebus coucang"	"UM"	679	626	1	19		192.2	1	1	1	16	48.2	51.6	50.8	189		0.25		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+38	"Nycticebus pygmaeus"	"Nycticebus pygmaeus"	"UM"	462	376	1	9		188		1.23		20	23			133				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+39	"Perodictus potto"	"Perodictus potto"	"UM"	830	836	1	8	2.03	170	1	1	1	22.33	46.5	39.3	38.9	210		0.27		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+40	"Tarsius bancanus"	"Tarsius bancanus"	"Mon&UM"	128	117	1		2.52	178	1	0.74	1.35	12	23.6	28.5		80	256	0.13	0.82	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+41	"Tarsius syrichta"	"Tarsius syrichta"		134	117	1			180	1			13.5	26.2	27.9	22.2	82		0.15		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+42	"Tarsius pumilus"	"Tarsius pumilus"				1															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+43	"Tarsius spectrum"	"Tarsius spectrum"	"Mon"	125	108	2.5	14	1.42	157	1	0.42	2.4	12	23.1			68		0.15		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+44	"Callithrix argentata"	"Callithrix argentata"		330	360	9.5		1.67		2	0.62	3.22		35.1	32		120			3.4	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+45	"Callithrix humeralifer"	"Callithrix humeralifer"	"Mon&PA"	360	380	11.5							12.5	34.5							TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+46	"Callithrix jacchus"	"Callithrix jacchus"	"Mon&PA"	317	324	8.7	22	1.5	148	2.1	0.52	4.03	11.7	27	30.15	30.23	91		0.38	2.98	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+47	"Cebuella pygmaea"	"Cebuella pygmaea"	"Mon&PA"	110	122	5.7	24	1.88	131	2.1	0.5	4.19	11.67	16	17.2	14.1	91		0.26	0.9	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+48	"Leonthopithecus chrysomelas"	"Leonthopithecus chrysomelas"		620	535	6.7															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+49	"Leonthopithecus chrysopygus"	"Leonthopithecus chrysopygus"				3.6															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+50	"Leonthopithecus rosalia"	"Leonthopithecus rosalia"	"Mon&PA"	620	598	7.2	18	2.38	128.6	1.78	0.5	3.55	14.17	50	53.6	52.4	91		0.69	2.56	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+51	"Saguinus bicolor"	"Saguinus bicolor"		428	430	6.7					0.53										TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+52	"Saguinus midas"	"Saguinus midas"	"Mon&PA"	515	575	6.4	20	2	127	2	0.55	3.63	13.25	40			70		0.63		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+53	"Saguinus leucopus"	"Saguinus leucopus"		494	490											44					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+54	"Saguinus oedipus"	"Saguinus oedipus"	"Mon&PA"	418	404	7.2	18	1.89	168	1.9	0.58	3.27	13.5	44	44	42.1	66		0.5	3.5	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+55	"Saguinus imperator"	"Saguinus imperator"	"Mon&PA"	474	475	6			150	2			17	47		46.8	91		0.63		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+56	"Saguinus labiatus"	"Saguinus labiatus"	"Mon&PA"	490	529	6.3			145	2	0.82	2.44		43.5		38			0.6		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+57	"Saguinus mystax"	"Saguinus mystax"	"Mon&PA"	510	539	5.5	16		145		0.96		20			46.9					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+58	"Saguinus fuscicollis"	"Saguinus fuscicollis"	"Mon&PA"	343	358	5.1		2.33	149	2	1	2		39.9	39.1	38.8	90		0.54		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+59	"Saguinus tripartitus"	"Saguinus tripartitus"											6								TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+60	"Saguinus inustus"	"Saguinus inustus"		585	803																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+61	"Saguinus nigricollis"	"Saguinus nigricollis"	"MM"	468	484	6.3			140	2	0.69	2.9	13.9	43.5	43.2	43.9	80		0.62	3.68	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+62	"Callimico goeldii"	"Callimico goeldii"	"Mon"	499	468	7.7	8.5	1.32	151.5	1	0.5	1.99	17.9	50.6	54.7	53.3	65	67	0.33	2.95	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+63	"Cebus albifrons"	"Cebus albifrons"	"MM"	3180	2290	16.8	43.1	4.02	155	1	1.5	0.67	44	234	237.5	227.7	274		1.51	4.7	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+64	"Cebus capucinus"	"Cebus capucinus"	"UM"	3680	2540	21	54	4	162	1	2.2	0.46	46.9	230		250	548	1350	1.42		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+65	"Cebus olivaceus"	"Cebus olivaceus"	"MM&UM"	3290	2520	17.1	72	6		1	2.17	0.46					720				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+66	"Cebus apella"	"Cebus apella"	"MM"	3650	2520	11.1	56	5.5	155	1	1.84	0.54	44	239.7	220.7	197.1	365	1000	1.55		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+67	"Saimiri bolivensis"	"Saimiri bolivensis"	"MM"	911	711	60			155					102							TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+68	"Saimiri oerstedii"	"Saimiri oerstedii"	"MM"	897	680	50				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+69	"Saimiri sciureus"	"Saimiri sciureus"	"MM"	899	680	35	30	2.5	160	1	1.17	0.85	21	95.2	112.5	106.4	51	479	0.6	1.78	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+70	"Saimiri ustus"	"Saimiri ustus"		921	799																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+71	"Saimiri vanzolinii"	"Saimiri vanzolinii"		950	650	40															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+72	"Aotus trivirgatus"	"Aotus trivirgatus"	"Mon"	813	736	3.8	30	2.4	133	1	0.7	1.43	20	97	88	94	75	479	0.73	3.5	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+73	"Aotus azarae"	"Aotus azarae"	"Mon"	1180	1230	4.1															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+74	"Callicebus brunneus"	"Callicebus brunneus"	"Mon"	854	805	4				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+75	"Callicebus cinerascens"	"Callicebus cinerascens"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+76	"Callicebus moloch"	"Callicebus moloch"	"Mon"	1020	956	3.3	30	3	163.5	1	1	1	12	100		74.4	244		0.61		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+77	"Callicebus personatus"	"Callicebus personatus"	"Mon"	1270	1380	3.7				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+78	"Callicebus hoffmannsi"	"Callicebus hoffmannsi"		1090	1030																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+79	"Callicebus calligatus"	"Callicebus calligatus"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+80	"Callicebus cupreus"	"Callicebus cupreus"		1020	1120	3.1			130		0.87			74							TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+81	"Callicebus dubius"	"Callicebus dubius"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+82	"Callicebus donacophilus"	"Callicebus donacophilus"		991	909																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+83	"Callicebus oenanthe"	"Callicebus oenanthe"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+84	"Callicebus olallae"	"Callicebus olallae"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+85	"Callicebus modestus"	"Callicebus modestus"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+86	"Callicebus torqatus"	"Callicebus torqatus"	"Mon"	1280	1210	4	30	4		1	1	1					140				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+87	"Pithecia aequatorialis"	"Pithecia aequatorialis"	"Mon"																		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+88	"Pithecia albicans"	"Pithecia albicans"	"Mon"			4.6															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+89	"Pithecia irrorata"	"Pithecia irrorata"	"Mon"	2250	2070	4.4															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+90	"Pithecia monachus"	"Pithecia monachus"	"Mon"	2610	2110	4										121					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+91	"Pithecia pithecia"	"Pithecia pithecia"	"Mon"	1940	1580	2.7		2.08	165	1	1.58	0.63	13.75				122				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+92	"Cacajao calvus"	"Cacajao calvus"	"MM"	3450	2880	30	43.2	3.5		1			20.1				547.5				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+93	"Cacajao rubicundus"	"Cacajao rubicundus"	"MM"							1	3	0.33									TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+94	"Cacajao melanocephalus"	"Cacajao melanocephalus"		3160	2710	30				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+95	"Chiropotes albinasus"	"Chiropotes albinasus"	"MM"	3150	2490	22.5			160	1			15								TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+96	"Chiropotes satanas"	"Chiropotes satanas"	"MM"	3000	2770	9.7			160	1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+97	"Alouatta belzebul"	"Alouatta belzebul"		7270	5520	7.4															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+98	"Alouatta caraya"	"Alouatta caraya"	"MM&UM"	6420	4330	8.9	38.5	3.7	187	1						262					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+99	"Alouatta fusca"	"Alouatta fusca"	"MM"	6730	4350	6.8															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+100	"Alouatta palliata"	"Alouatta palliata"	"MM"	7160	5323	13.7	36	3.6	186	1.1	1.66	0.66	20	480			365	1100	2.84		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+101	"Alouatta seniculus"	"Alouatta seniculus"	"MM&UM"	6873	5300	8	48.5	4.6	191	1	1.38	0.72	25	263	231	295	372.3			3.5	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+102	"Alouatta villosa"	"Alouatta villosa"	"MM&UM"	11400	6430	5.4	48	4.5	187				20	480							TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+103	"Ateles belzebuth"	"Ateles belzebuth"	"MM"	8290	7850	22				1	3	0.33	20								TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+104	"Ateles fusciceps"	"Ateles fusciceps"	"MM"	8890	9160		51.6	4.9	226	1	2.25	0.44	24				485			6	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+105	"Ateles geoffroyi"	"Ateles geoffroyi"	"MM"	7780	7290	42	72	7	229	1	2.9	0.35	27.3	512	447		822	3790	2.24	2.45	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+106	"Ateles paniscus"	"Ateles paniscus"	"MM"	9110	8440	38.5	57.6	5	230	1	4	0.25	33	452.5		425		2000		3.41	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+107	"Lagothrix flavicauda"	"Lagothrix flavicauda"	"MM"			9.1											365				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+108	"Lagothrix lagothricha"	"Lagothrix lagothricha"	"MM"	7280	7020	16.7	96	5	225	1	1.75	0.57	25.92	450	510	432	315		2		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+109	"Brachyteles arachnoides"	"Brachyteles arachnoides"	"MM"	9610	8070	19.2		7.5	232.5	1	2.82	0.35	30				639				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+110	"Macaca arctoides"	"Macaca arctoides"	"MM"	12200	8400			3.84	178.2	1	1.48	0.68	30	487	502	497	411	2300	2.73	6.43	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+111	"Macaca assamensis"	"Macaca assamensis"	"MM"	11300	6900	21															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+112	"Macaca radiata"	"Macaca radiata"	"MM"	6670	3850	24.9	48	4	163	1	1	1	30	404	411	388	365		2.48	4.37	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+113	"Macaca sinica"	"Macaca sinica"	"MM"	5680	3200	21.6	63	5		1	1.5	0.67	30								TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+114	"Macaca thibetana"	"Macaca thibetana"		15200	9500	21		5	170				20	500				2400			TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+115	"Macaca cyclopsis"	"Macaca cyclopsis"		6000	4940	20.2	30	4.5	162		1.27			403	407	398					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+116	"Macaca fuscata"	"Macaca fuscata"	"MM"	11000	8030	45	54	5.54	173	1	1.93	0.52	33	496	558.3	526.8	365	2400	2.87	6.27	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+117	"Macaca mulatta"	"Macaca mulatta"	"MM"	9355	7085	36	42	4	164	1	1	1	29	475	490.3	466.3	316	1330	2.9	4.39	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+118	"Macaca fascicularis"	"Macaca fascicularis"	"MM"	5360	3590	27	51.6	3.86	167	1	1.07	0.93	37.08	345	353.1	326.1	420	1700	2.07	3.22	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+119	"Macaca nemestrina"	"Macaca nemestrina"	"MM"	9450	5700	18.3	35	3.92	170	1	1.11	0.9	26.29	472	483.6	443.7	365	1320	2.78	2.6	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+120	"Macaca maurus"	"Macaca maurus"		9720	6050				175.5	1				390					2.22		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+121	"Macaca tonkeana"	"Macaca tonkeana"		14900	9000				173												TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+122	"Macaca nigra"	"Macaca nigra"	"MM"	9890	5470	35	49	5.44	176	1	1.48	0.68	18	461					2.62		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+123	"Macaca ochreata"	"Macaca ochreata"		5300	2600																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+124	"Macaca silenus"	"Macaca silenus"	"MM"	8900	6100	26.5		4.9	180	1	1.38	0.72	38	407	514	438	365		2.26		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+125	"Macaca sylvanus"	"Macaca sylvanus"	"MM"	16000	11000	18.3	46	4.8	164.7	1	1	1	22	450				2420		4.28	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+126	"Cercocebus albigena"	"Cercocebus albigena"	"MM"	8250	6020	16.6	48	4.08	185	1	2.75	0.36	32.7	425			210	2200	2.3	5	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+127	"Cercocebus aterrimus"	"Cercocebus aterrimus"	"MM"	7840	5760																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+128	"Cercocebus galeritus"	"Cercocebus galeritus"	"MM"	9610	5260	18.3		6.5	171	1			19							4.04	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+129	"Cercocebus torquatus"	"Cercocebus torquatus"	"MM"	9470	5500	26.8	32	4.67	171	1	1.08	0.93	27		517						TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+130	"Mandrillus leucophaeus"	"Mandrillus leucophaeus"	"UM"			17	42	5	176	1	1.23	0.81	28.6			722					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+131	"Mandrillus sphinx"	"Mandrillus sphinx"	"UM"	31600	12900	13.9	39	4	174.6	1	1.46	0.68	43.33	613	906	890	350	3000	3.51	6.52	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+132	"Papio anubis"	"Papio anubis"	"MM"	23150	12500	40	57.5	6.92	180	1	1.71	0.58	45	1068	980	915	420	3800	5.93		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+133	"Papio papio"	"Papio papio"	"MM"						184	1	1.16	0.86	40	642.3	681	603.6			3.49		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+134	"Papio cynocephalus"	"Papio cynocephalus"	"MM"	21800	12300	55.4	66	5.5	175	1	1.75	0.57	40	854	737	803	365	3030	4.88	5.1	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+135	"Papio ursinus"	"Papio ursinus"	"MM"	29800	14800	57.1	38	3.67	187	1	1.75	0.57	45	600		850					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+136	"Papio hamadryas"	"Papio hamadryas"	"UM"	18950	10650	7.3	51.5	6.1	172	1	2	0.5	35.6	727.5	760	695	365	3100	4.23		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+137	"Theropithecus gelada"	"Theropithecus gelada"	"UM"	19000	11700	10	49.5	4	167	1	2.14	0.47	19.25	464	737		450	3900	2.78		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+138	"Cercopithecus aethiops"	"Cercopithecus aethiops"	"MM"	5023	3457	28.9	54	5	163.3	1	1.33	0.75	24	314	334.9	335.9	365	1170	1.92	3.51	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+139	"Cercopithecus ascanius"	"Cercopithecus ascanius"	"MM&UM"	3700	2920	26.3	54	5		1	1.48	0.67	22.5	371			180				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+140	"Cercopithecus cephus"	"Cercopithecus cephus"	"UM"	4290	2880	11	48	5		1	2.25	0.44	22	340			365			2.87	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+141	"Cercopithecus erythrotis"	"Cercopithecus erythrotis"	"UM"	3600	2900					1							180				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+142	"Cercopithecus erythrogaster"	"Cercopithecus erythrogaster"	"UM"	4100	2400																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+143	"Cercopithecus petaurista"	"Cercopithecus petaurista"	"UM"	4400	2900	14															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+144	"Cercopithecus mitis"	"Cercopithecus mitis"	"UM"	7697	4363	16.3	70.5	5.92	140	1	1.67	0.6	20	402	360	495	697		2.87	3.5	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+145	"Cercopithecus nictitans"	"Cercopithecus nictitans"	"UM"	6670	4260	16	48	5		1	1.97	0.51				406				2.4	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+146	"Cercopithecus campbelli"	"Cercopithecus campbelli"	"UM"	4500	2700	14	36	3.5	180	1							540				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+147	"Cercopithecus mona"	"Cercopithecus mona"	"UM"							1			22	284							TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+148	"Cercopithecus denti"	"Cercopithecus denti"	"UM"																		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+149	"Cercopithecus wolfi"	"Cercopithecus wolfi"	"UM"	3910	2870									435							TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+150	"Cercopithecus pogonias"	"Cercopithecus pogonias"	"UM"	4260	2900	15	48	5	165	1	2	0.5	20	340					2.06	2.57	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+151	"Cercopithecus neglectus"	"Cercopithecus neglectus"	"Mon&UM"	7350	4130	5	62.3	4.67	182	1	1.62	0.62	22	260	455	450	365	1640	1.43	3.2	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+152	"Cercopithecus hamlyni"	"Cercopithecus hamlyni"	"UM"	5490	3360																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+153	"Cercopithecus diana"	"Cercopithecus diana"	"UM"	5200	3900	23		5.42		1	1	1	34.8	475		460	365				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+154	"Cercopithecus dryas"	"Cercopithecus dryas"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+155	"Cercopithecus salongo"	"Cercopithecus salongo"																			FALSE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+156	"Cercopithecus lhoesti"	"Cercopithecus lhoesti"	"UM"	5970	3450	17.4				1	1.33	0.75									TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+157	"Cercopithecus preussi"	"Cercopithecus preussi"				5															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+158	"Cercopithecus solatus"	"Cercopithecus solatus"		6890	3920	10									382						TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+159	"Erythrocebus patas"	"Erythrocebus patas"	"UM"	12400	6500	28	41.2	3	167.5	1	1.22	0.82	21.58	504.5	541	468	212	2400	3.01	6.78	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+160	"Miopithecus talapoin"	"Miopithecus talapoin"	"MM"	1940	1560	115	48	4.38	165	1	1	1	27.67	177.5			180	42	1.08	1.1	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+161	"Allenopithecus nigroviridis"	"Allenopithecus nigroviridis"	"MM"	6130	3180	40		4.4		1			28			242					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+162	"Colobus angolensis"	"Colobus angolensis"	"MM"	9680	7570	10.9				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+163	"Colobus guereza"	"Colobus guereza"	"MM&UM"	13500	9200	8.3		4.75	170	1	1.75	0.57	22.25	395.5	596	549	390	1600			TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+164	"Colobus polykomos"	"Colobus polykomos"	"MM&UM"	9900	8300	10.2		8.5	170	1	1.04	0.96	30.5	597				1240	3.51	6	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+165	"Colobus satanas"	"Colobus satanas"	"MM&UM"	10400	7420	15.5			195	1							480				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+166	"Colobus badius"	"Colobus badius"	"MM"	8360	8210	34	42	4.08	198	1	2.13	0.47					788				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+167	"Colobus kirkii"	"Colobus kirkii"		5800	5460																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+168	"Procolobus verus"	"Procolobus verus"	"MM"	4700	4200	6.3			167	1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+169	"Pygathrix avunculus"	"Pygathrix avunculus"		14000	8250	25															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+170	"Pygathrix brelichi"	"Pygathrix brelichi"				6.1															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+171	"Pygathrix roxellana"	"Pygathrix roxellana"	"MM"	17900	11600																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+172	"Pygathrix nemaeus"	"Pygathrix nemaeus"	"MM&UM"	11000	8440	9.3	48	4	165	1	1.36	0.74	10.25	393.5	324	463	330		2.38		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+173	"Simias concolor"	"Simias concolor"	"Mon&UM"	9150	6800	4.5															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+174	"Nasalis larvatus"	"Nasalis larvatus"	"MM&UM"	20400	9820	10.5	48	4.5	166	1	1.48	0.68	13.5	525	600			2000	3.16		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+175	"Presbytis aurata"	"Presbytis aurata"				11															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+176	"Presbytis comata"	"Presbytis comata"	"UM"	6680	6710					1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+177	"Presbytis frontata"	"Presbytis frontata"	"MM&UM"	5560	5670																TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+178	"Presbytis melalophos"	"Presbytis melalophos"	"MM&UM"	6590	6470	11.6				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+179	"Presbytis rubicunda"	"Presbytis rubicunda"	"MM&UM"	6290	6170	6.5				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+180	"Presbytis cristata"	"Presbytis cristata"	"UM"	6610	5760	22.8				1	1.48	0.68									TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+181	"Presbytis francoisi"	"Presbytis francoisi"		7700	7350									457	457	457					TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+182	"Presbytis geei"	"Presbytis geei"		10800	9800	12.5				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+183	"Presbytis johnii"	"Presbytis johnii"	"UM"	12000	11200	14.8				1	1.84	0.54			500						TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+184	"Presbytis vetulus"	"Presbytis vetulus"	"UM"	8170	5900	8.8			209	1	1.73	0.58		447			226	1100	2.14		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+185	"Presbytis obscura"	"Presbytis obscura"	"MM&UM"	7900	6260	17			150	1				485	425	341			3.23		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+186	"Presbytis phayeri"	"Presbytis phayeri"		7870	6300	12.9			165		1.25										TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+187	"Presbytis pileatus"	"Presbytis pileatus"	"UM"	12000	9860	8.5															TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+188	"Presbytis potenziani"	"Presbytis potenziani"	"Mon"	6170	6400	3.7				1											TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+189	"Presbytis entellus"	"Presbytis entellus"	"MM&UM"	14533	10533	25	42	3.42	199	1	1.68	0.59	25	500			456	2100			TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+190	"Hylobates agilis"	"Hylobates agilis"	"Mon"	5880	5820	4.4				1	3.12	0.32					724				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+191	"Hylobates lar"	"Hylobates lar"	"Mon"	5900	5340	3.9	108	9.31	213	1	2.69	0.37	31.5	400	400	407	730	1070	1.88	3.12	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+192	"Hylobates muelleri"	"Hylobates muelleri"	"Mon"	5710	5350	3.4					2.96		47								TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+193	"Hylobates moloch"	"Hylobates moloch"	"Mon"	6580	6250	3.3				1			35				724				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+194	"Hylobates pileatus"	"Hylobates pileatus"	"Mon"	5500	5440	3.5							39								TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+195	"Hylobates klossi"	"Hylobates klossi"	"Mon"	5670	5920	3.6			210		3.29						724				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+196	"Hylobates hoolock"	"Hylobates hoolock"	"Mon"	6870	6880	3.6	84			1	2.96	0.34	42				724				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+197	"Hylobates syndactylus"	"Hylobates syndactylus"	"Mon"	11900	10700	3.6		9	228	1	3	0.33	35	517	555	552			2.27		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+198	"Hylobates concolor"	"Hylobates concolor"	"Mon"	7790	7620	4				1			36				724				TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+199	"Pongo pygmaeus"	"Pongo pygmaeus"	"(MM&) UM"	78200	35700	1	84	9.68	249.5	1	6.5	0.15	57.33	1728	1965	1653	408.8	11000	6.93		TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+200	"Pan paniscus"	"Pan paniscus"	"MM"	45000	33200	85	102	13.5	240	1	5	0.2	40	1162	1400	1494		8500	4.84	10.14	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+201	"Pan troglodytes"	"Pan troglodytes"	"MM"	49567	40367	60	126	14	228	1	6	0.17	53	1742	1877	1814	1460	8500	7.64	14.08	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+202	"Homo sapiens"	"Homo sapiens"	"Mon (&UM)"	62200	54800		198	14	269	1	3.5	0.29	100	3375	3457	3334	720	9200	12.55	16.41	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE
+203	"Gorilla gorilla"	"Gorilla gorilla"	"UM"	169367	80000	7	78	10.04	260	1	3.83	0.26	50	2122.9	2251	1996	1004	19800	8.17	15.32	TRUE	"secondary literature compilation"	"verbatim historical source label; unharmonized"	FALSE

@@ -55,11 +55,9 @@ neurons (44%) · owl monkey: >553M cells, 212M neurons (38%) · macaque: ≈3.5B
 These are compared with the sums of this table's pieces in the internal check below.
 
 ## Internal check
-`internal_checks/Collins_etal_2010_DatasetS1_internal_check.R` → `.csv` (64 rows: 36 pass, 9
-mismatch, 19 recorded without a printed figure to compare). It reads only
-`Collins_etal_2010_DatasetS1.csv`; the figures of the paper's text, the contour levels of Fig. 1
-C and D and the galago values of Young et al. 2013 are constants in the script, each with its
-source. Re-run it after any change to the item table.
+The macaque-related cross-paper check and its runnable scripts and outputs are maintained in the
+restricted repo at `restricted_checks/_cross_table/Macaque_mulatta_cortex_neuron_totals/`. The
+Collins script reads this item table; its check output is stored in that restricted folder.
 
 **What agrees.**
 - The number of samples: 36 (galago 07-104: "46 tissue pieces … processed as 36 samples") and 142

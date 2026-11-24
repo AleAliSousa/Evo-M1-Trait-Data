@@ -1,0 +1,5 @@
+# Bjugn and Gundersen 1993 — Table 3
+
+Same exact paper and DOI as Table 1. Table 3 on PDF page 4 (printed p. 409) gives the twelve sampling-bit inputs for the gray-matter neuron-number coefficient of error in **animal 2**, plus a printed Σ row. The frozen snapshot preserves bit order, source headings, numbers, dashes and printed sums. The analysis reader separates the numeric fields, retains the Σ row as a source summary, and verifies the printed Q, F, P, A, B and C sums and rounded X sum. The table is stereological method evidence; its rows are not twelve biological specimens or twelve independent neuron estimates. The printed CE result is 0.056 and is described here rather than rederived from an OCR-distorted footnote equation.
+
+Run from repository root: `Rscript --vanilla Bjugn_Gundersen_1993/Bjugn_Gundersen_1993_Table3.R`. The reader uses only its manually transcribed snapshot and writes 13 analysis rows plus the DOI-coded public TSV. Codex checked the values against the rendered PDF on 2026-11-24; human visual signoff remains pending. No figure-derived data were extracted.

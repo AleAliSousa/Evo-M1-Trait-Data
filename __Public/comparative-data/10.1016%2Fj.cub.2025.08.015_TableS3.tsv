@@ -1,0 +1,6 @@
+"source_row"	"term_as_published"	"estimate"	"estimated_error"	"lower_CI_as_published"	"upper_CI_as_published"	"model_response"	"data_role"	"source_note"
+1	"Intercept"	-0.79	0.05	-0.89	-0.69	"fractional anisotropy"	"Bayesian model coefficient; not raw trait measurement"	""
+2	"rD - summer"	-0.11	0.071	-0.024	0.02	"fractional anisotropy"	"Bayesian model coefficient; not raw trait measurement"	"Source lower CI -.024 exceeds estimate -0.11; retained as printed; verify with authors before inferential use"
+3	"rD - winter"	-8.28	0.32	-8.9	-7.67	"fractional anisotropy"	"Bayesian model coefficient; not raw trait measurement"	""
+4	"aD - summer"	5.04	0.21	4.63	5.46	"fractional anisotropy"	"Bayesian model coefficient; not raw trait measurement"	""
+5	"aD - winter"	4.71	0.22	4.26	5.13	"fractional anisotropy"	"Bayesian model coefficient; not raw trait measurement"	""

@@ -1,0 +1,7 @@
+# Naumann et al. 2016 — Table 3
+
+Same article as Table 2, PDF page 17 (printed p. 799). Printed title: “Brain Weight, Neuron Number in Somatosensory Barrels and Total Neuron Number in Entorhinal Cortex.” The frozen snapshot preserves five species rows, all three value/reference pairs, approximate marks, the mouse range, the human 7–8 million range and printed missing cells. It was extracted from `Naumann_etal_2016_fullText.xml` and checked against the PDF.
+
+The 15 analysis rows are one species–measure pair each. Only the shrew layer-4 estimate and bat brain size cite “This study” and are marked primary; the human layer-4 value is an author estimate; other values cite prior works and are secondary. Approximate numbers remain marked as approximate, ranges have separate bounds without an invented midpoint, and blank bat cells stay missing. The printed reference keys join to `reference_tables/Naumann_etal_2016_Table3_references.csv`; the table's “Irizzary” and “Blinkow” spellings are retained and compared with the bibliography's “Irizarry” and “Blinkov” there. Cited values should not enter a primary merge as new observations.
+
+Run from repository root: `Rscript --vanilla Naumann_etal_2016/Naumann_etal_2016_Table3_snapshot.R` then `Rscript --vanilla Naumann_etal_2016/Naumann_etal_2016_Table3.R`. The reader uses only its frozen snapshot, writing an analysis CSV and DOI-coded public TSV. Codex checked the XML/PDF source on 2026-11-24; human visual signoff remains pending. No figure-derived data were extracted.

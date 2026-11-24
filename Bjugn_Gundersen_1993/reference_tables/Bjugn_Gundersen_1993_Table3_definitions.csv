@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Spinal cord,source_row,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,,
+bit,bit,Spinal cord,bit,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,,
+Species,Species,Spinal cord,Species,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,,
+Order,Order,Spinal cord,Order,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,,
+animal_id,animal id,Spinal cord,animal_id,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,,
+Q_neurons_counted,Q neurons counted,Spinal cord,Q_neurons_counted,,method,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,"Neurons counted in oblique sections, per source footnote.",optical disector
+F_fields,F fields,Spinal cord,F_fields,,method,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,"Fields where neurons were counted, per source footnote.",optical disector
+P_points,P points,Spinal cord,P_points,,method,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,"Points on corresponding transverse section, per source footnote.",optical disector
+X_estimate,X estimate,Spinal cord,X_estimate,,method,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,Per-bit X_i printed in the source; estimate used in CE calculation.,optical disector
+A_product,A product,Spinal cord,A_product,,method,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,,optical disector
+B_product,B product,Spinal cord,B_product,,method,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,,optical disector
+C_product,C product,Spinal cord,C_product,,method,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,,optical disector
+data_role,data role,Spinal cord,data_role,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table3,Rows 1–12 are methodological sampling bits; Σ row is printed summary; no independent specimen counts.,

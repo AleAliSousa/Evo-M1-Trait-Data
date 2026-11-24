@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Spinal cord,source_row,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,
+stain_as_published,stain as published,Spinal cord,stain_as_published,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,
+Species,Species,Spinal cord,Species,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,
+Order,Order,Spinal cord,Order,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,
+animal_id,animal id,Spinal cord,animal_id,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,
+all_cells_million,all cells million,Spinal cord,all_cells_million,,primary,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,Printed total equals glial + endothelial + neurons for each stain.,optical disector
+glial_million,glial million,Spinal cord,glial_million,,primary,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,optical disector
+endothelial_million,endothelial million,Spinal cord,endothelial_million,,primary,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,optical disector
+neurons_million,neurons million,Spinal cord,neurons_million,,primary,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,optical disector
+observation_level,observation level,Spinal cord,observation_level,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,"Both estimates are from rat animal 2, different stains; do not treat as independent animals.",
+data_role,data role,Spinal cord,data_role,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table4,,

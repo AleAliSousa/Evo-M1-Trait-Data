@@ -1,0 +1,33 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_region_order,source region order,neocortex,source_region_order,,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+region_as_published,region as published,neocortex,region_as_published,,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+species_label_in_article,species label in article,neocortex,species_label_in_article,,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+Species,Species,neocortex,Species,,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+hemisphere,hemisphere,neocortex,hemisphere,,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+neuron_count_million_as_published,neuron count million as published (million cells),neocortex,neuron_count_million_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+neuron_number,neuron number (absolute cells),neocortex,neuron_number,,measure,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+neuron_SD,neuron SD,neocortex,neuron_SD,SD,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+neuron_CV,neuron CV,neocortex,neuron_CV,CV,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+neuron_CE,neuron CE,neocortex,neuron_CE,CE,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+glia_count_million_as_published,glia count million as published (million cells),neocortex,glia_count_million_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+glia_number,glia number (absolute cells),neocortex,glia_number,,measure,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+glia_SD,glia SD,neocortex,glia_SD,SD,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+glia_CV,glia CV,neocortex,glia_CV,CV,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+glia_CE,glia CE,neocortex,glia_CE,CE,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+total_cell_count_million_as_published,total cell count million as published (million cells),neocortex,total_cell_count_million_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+total_cell_number,total cell number (absolute cells),neocortex,total_cell_number,,measure,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+total_cell_SD,total cell SD,neocortex,total_cell_SD,SD,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+total_cell_CV,total cell CV,neocortex,total_cell_CV,CV,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+total_cell_CE,total cell CE,neocortex,total_cell_CE,CE,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+processed_volume_mm3,processed volume mm3 (mm³),neocortex,processed_volume_mm3,,measure,Macaca mulatta,Christensen_etal_2007_Table2,Processed tissue volume/density; no shrinkage correction,PDF Table 2; page 8
+processed_volume_SD_mm3,processed volume SD mm3,neocortex,processed_volume_SD_mm3,SD,measure,Macaca mulatta,Christensen_etal_2007_Table2,Processed tissue volume/density; no shrinkage correction,PDF Table 2; page 8
+processed_volume_CV,processed volume CV,neocortex,processed_volume_CV,CV,measure,Macaca mulatta,Christensen_etal_2007_Table2,Processed tissue volume/density; no shrinkage correction,PDF Table 2; page 8
+processed_volume_CE,processed volume CE,neocortex,processed_volume_CE,CE,measure,Macaca mulatta,Christensen_etal_2007_Table2,Processed tissue volume/density; no shrinkage correction,PDF Table 2; page 8
+neuron_density_as_published_million_per_mm3,neuron density as published million per mm3 (cells/mm³),neocortex,neuron_density_as_published_million_per_mm3,,measure,Macaca mulatta,Christensen_etal_2007_Table2,Processed tissue volume/density; no shrinkage correction,PDF Table 2; page 8
+neuron_density_per_mm3,neuron density per mm3 (cells/mm³),neocortex,neuron_density_per_mm3,,measure,Macaca mulatta,Christensen_etal_2007_Table2,Processed tissue volume/density; no shrinkage correction,PDF Table 2; page 8
+neuron_density_SD_per_mm3,neuron density SD per mm3 (cells/mm³),neocortex,neuron_density_SD_per_mm3,SD,measure,Macaca mulatta,Christensen_etal_2007_Table2,Processed tissue volume/density; no shrinkage correction,PDF Table 2; page 8
+neuron_density_CV_if_published,neuron density CV if published,neocortex,neuron_density_CV_if_published,CV,measure,Macaca mulatta,Christensen_etal_2007_Table2,Processed tissue volume/density; no shrinkage correction,PDF Table 2; page 8
+neuron_glia_ratio_as_published,neuron glia ratio as published,neocortex,neuron_glia_ratio_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+count_total_minus_components_million,count total minus components million,neocortex,count_total_minus_components_million,,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+observation_level,observation level,neocortex,observation_level,,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8
+data_role,data role,neocortex,data_role,,info,Macaca mulatta,Christensen_etal_2007_Table2,,PDF Table 2; page 8

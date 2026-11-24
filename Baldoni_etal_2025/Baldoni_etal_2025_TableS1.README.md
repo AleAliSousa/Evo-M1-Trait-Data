@@ -1,0 +1,5 @@
+# Baldoni et al. 2025 — Table S1
+
+“Programmed seasonal brain shrinkage in the common shrew via water loss without cell death,” *Current Biology*, DOI 10.1016/j.cub.2025.08.015. The publisher supplement `mmc2.xlsx` is frozen unchanged as the item snapshot. It has seven metric blocks × 13 regions (91 model coefficients): intracellular and extracellular water volume fractions, mean diffusivity, fractional anisotropy, axial and radial diffusivity, and CSF volume fraction. These are Bayesian season-interaction estimates with estimated errors and credible intervals; they are model results, not raw measurements or absolute volumes. The source abbreviations AON and OT remain as printed.
+
+Run from repository root: `Rscript --vanilla Baldoni_etal_2025/Baldoni_etal_2025_TableS1.R`. The reader uses only the frozen xlsx and writes an analysis CSV and DOI-coded public TSV via `__ReadMeAddON.xlsx`. Header blocks and source spreadsheet row numbers are retained for source comparison. No figure-derived data were extracted. The original table is born digital, so no PDF transcription signoff applies.

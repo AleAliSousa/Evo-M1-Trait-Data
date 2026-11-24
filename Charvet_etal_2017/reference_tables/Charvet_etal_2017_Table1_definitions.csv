@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Isocortex,source_row,,info,25 mammals across five orders,Charvet_etal_2017_Table1,,
+common_name_as_published,common name as published,Isocortex,common_name_as_published,,info,25 mammals across five orders,Charvet_etal_2017_Table1,,
+Species_as_published,Species as published,Isocortex,Species_as_published,,info,25 mammals across five orders,Charvet_etal_2017_Table1,Species exactly as printed; Table 1 uses Felis silvestris as a phylogenetic stand-in for sampled Felis catus; Table 2 prints specimen names.,
+Species,Species,Isocortex,Species,,info,25 mammals across five orders,Charvet_etal_2017_Table1,Analysis name left as printed; no species identity pooled or silently changed.,
+Order,Order,Isocortex,Order,,info,25 mammals across five orders,Charvet_etal_2017_Table1,,
+upper_layer_II_IV_neurons_unilateral,upper layer II IV neurons unilateral,Isocortex,upper_layer_II_IV_neurons_unilateral,mean,primary,25 mammals across five orders,Charvet_etal_2017_Table1,"Total unilateral upper-layer neurons, original Table 1 values in millions multiplied by 1e6. The table mixes new and previously published species values.",optical fractionator
+lower_layer_V_VI_neurons_unilateral,lower layer V VI neurons unilateral,Isocortex,lower_layer_V_VI_neurons_unilateral,mean,primary,25 mammals across five orders,Charvet_etal_2017_Table1,"Total unilateral lower-layer neurons, original Table 1 values in millions multiplied by 1e6.",optical fractionator
+source_measure_unit,source measure unit,Isocortex,source_measure_unit,,info,25 mammals across five orders,Charvet_etal_2017_Table1,,
+data_role,data role,Isocortex,data_role,,info,25 mammals across five orders,Charvet_etal_2017_Table1,Table 1 has mixed novel/prior values and requires row-level provenance before merging; Table 2 is specimen/method metadata.,

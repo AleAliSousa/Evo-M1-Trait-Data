@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Spinal cord,source_row,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,,
+animal_as_published,animal as published,Spinal cord,animal_as_published,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,,
+Species,Species,Spinal cord,Species,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,,
+Order,Order,Spinal cord,Order,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,,
+animal_weight_g,animal weight g,Spinal cord,animal_weight_g,,primary,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,,optical disector
+spinal_cord_length_mm,spinal cord length mm,Spinal cord,spinal_cord_length_mm,,primary,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,,optical disector
+white_matter_volume_mm3,white matter volume mm3,Spinal cord,white_matter_volume_mm3,,primary,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,White-matter volume from point-counted transverse sections.,optical disector
+gray_matter_volume_mm3,gray matter volume mm3,Spinal cord,gray_matter_volume_mm3,,primary,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,Gray-matter volume from point-counted transverse sections.,optical disector
+statistic,statistic,Spinal cord,statistic,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,"Individual rows versus Mean, SD and CV rows as printed; summaries are not additional animals.",
+data_role,data role,Spinal cord,data_role,,info,Rattus norvegicus,Bjugn_Gundersen_1993_Table1,,

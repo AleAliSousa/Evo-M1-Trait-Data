@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Brain/isocortex,source_row,,info,23 specimens,Charvet_etal_2017_Table2,,
+common_name_as_published,common name as published,Brain/isocortex,common_name_as_published,,info,23 specimens,Charvet_etal_2017_Table2,,
+Species_as_published,Species as published,Brain/isocortex,Species_as_published,,info,23 specimens,Charvet_etal_2017_Table2,Species exactly as printed; Table 1 uses Felis silvestris as a phylogenetic stand-in for sampled Felis catus; Table 2 prints specimen names.,
+Species,Species,Brain/isocortex,Species,,info,23 specimens,Charvet_etal_2017_Table2,Analysis name left as printed; no species identity pooled or silently changed.,
+Order,Order,Brain/isocortex,Order,,info,23 specimens,Charvet_etal_2017_Table2,,
+upper_layer_neurons_counted_in_sample,upper layer neurons counted in sample,Brain/isocortex,upper_layer_neurons_counted_in_sample,,method,23 specimens,Charvet_etal_2017_Table2,Number actually counted in the optical-fractionator sample; not an estimate of all upper-layer neurons.,
+lower_layer_neurons_counted_in_sample,lower layer neurons counted in sample,Brain/isocortex,lower_layer_neurons_counted_in_sample,,method,23 specimens,Charvet_etal_2017_Table2,Number actually counted in the optical-fractionator sample; not an estimate of all lower-layer neurons.,
+brain_weight_g,brain weight g,Brain/isocortex,brain_weight_g,,primary,23 specimens,Charvet_etal_2017_Table2,,optical fractionator
+age_as_published,age as published,Brain/isocortex,age_as_published,,info,23 specimens,Charvet_etal_2017_Table2,Approximate hippopotamus age is ~60 y in the rendered table; PDF text layer emits a control character.,
+sex_as_published,sex as published,Brain/isocortex,sex_as_published,,info,23 specimens,Charvet_etal_2017_Table2,,
+sections_sampled,sections sampled,Brain/isocortex,sections_sampled,,info,23 specimens,Charvet_etal_2017_Table2,,
+section_thickness_um,section thickness um,Brain/isocortex,section_thickness_um,,info,23 specimens,Charvet_etal_2017_Table2,Printed page unit is µm; PDF text layer incorrectly extracts mm.,
+optical_disector_um,optical disector um,Brain/isocortex,optical_disector_um,,info,23 specimens,Charvet_etal_2017_Table2,Printed page unit is µm; PDF text layer incorrectly extracts mm.,
+data_role,data role,Brain/isocortex,data_role,,info,23 specimens,Charvet_etal_2017_Table2,Table 1 has mixed novel/prior values and requires row-level provenance before merging; Table 2 is specimen/method metadata.,

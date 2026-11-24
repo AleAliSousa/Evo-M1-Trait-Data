@@ -1,0 +1,7 @@
+# Charvet et al. 2017 — Table 2
+
+Same exact paper and PDF as Table 1; printed Table 2 is on PDF page 4 (printed p. 1078). It lists 23 individual specimens in source order: upper/lower neurons **counted in the sample**, brain weight, age, sex, sections sampled, section thickness and optical disector. These counted cells are methodological sampling counts, not estimates of total neurons. The two cat rows and other repeated-species rows remain individual records.
+
+The snapshot script extracts the selectable PDF text, retaining all data rows and meaningful `?` entries. I checked the rendered table and corrected three text-layer faults in the frozen snapshot: `Callithirx` to printed *Callithrix pygmaea*, a control character to the printed approximate hippopotamus age `~60 y`, and `mm` to the printed **µm** for thickness/disector column headers. The analysis reader separates the printed upper/lower sample-count pair, retains the source age and sex labels, and writes 23 specimen rows. It does not join specimens to Table 1 species means without identity review.
+
+From the repository root run `Rscript --vanilla Charvet_etal_2017/Charvet_etal_2017_Table2_snapshot.R` then `Rscript --vanilla Charvet_etal_2017/Charvet_etal_2017_Table2.R`. The reader uses only its snapshot and writes an analysis CSV and DOI-coded public TSV via `__ReadMeAddON.xlsx`. Source-to-snapshot review was performed by Codex on 2026-11-24; human visual signoff remains pending. No figure-derived data were extracted.

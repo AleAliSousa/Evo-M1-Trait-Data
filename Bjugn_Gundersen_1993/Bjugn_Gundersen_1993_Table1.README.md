@@ -1,0 +1,5 @@
+# Bjugn and Gundersen 1993 — Table 1
+
+“Estimate of the total number of neurons and glial and endothelial cells in the rat spinal cord by means of the optical disector,” *Journal of Comparative Neurology* 328:406–414, DOI 10.1002/cne.903280307. Exact PDF in this folder; Table 1 is on PDF page 2 (printed p. 407). The frozen source-order snapshot was manually transcribed from the rendered page on 2026-11-24. It retains five numbered animals and the printed Mean, SD and CV rows, with weight (g), cord length (mm), and white/gray volumes (mm³).
+
+Run from repository root: `Rscript --vanilla Bjugn_Gundersen_1993/Bjugn_Gundersen_1993_Table1.R`. The reader uses only the frozen snapshot, distinguishes individuals from summaries, and writes its analysis CSV and DOI-coded public TSV via `__ReadMeAddON.xlsx`. It checks all four five-animal means against the printed means. Join the five individual rows by animal number to Table 2; do not treat summary rows as additional animals. Human visual signoff remains pending. No figure-derived data were extracted.

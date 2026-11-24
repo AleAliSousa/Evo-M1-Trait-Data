@@ -1,0 +1,25 @@
+## Parvalbumin-positive perikarya by cortical layer and mammalian order.
+a <- grep("^--file=", commandArgs(FALSE), value=TRUE)
+if (!length(a)) stop("Run with Rscript")
+folder <- dirname(normalizePath(sub("^--file=", "", a[1])))
+item_name <- "Glezer_etal_1993_Table1"
+root <- dirname(folder)
+s <- utils::read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,colClasses="character",fileEncoding="UTF-8")
+stopifnot(nrow(s)==55L,ncol(s)==7L,identical(unique(s$taxon_group_as_published),c("Cetaceans","Primates","Rodents","Bats","Hedgehogs")))
+parts <- strsplit(s$numerical_density_M_plus_SEM_as_published," ± ",fixed=TRUE)
+present <- s$numerical_density_M_plus_SEM_as_published!="—"
+stopifnot(all(lengths(parts[present])==2L),all(lengths(parts[!present])==1L),all((s$percent_of_total_neurons_as_published=="—")==!present))
+num <- function(x) as.numeric(gsub(",","",x,fixed=TRUE))
+M <- rep(NA_real_,nrow(s)); SEM <- M; pct <- M
+M[present] <- num(vapply(parts[present],`[`,character(1),1L))
+SEM[present] <- num(vapply(parts[present],`[`,character(1),2L))
+pct[present] <- num(s$percent_of_total_neurons_as_published[present])
+stopifnot(!anyNA(M[present]),!anyNA(SEM[present]),!anyNA(pct[present]))
+final.dataframe <- data.frame(source_group_order=as.integer(s$source_group_order),taxon_group_as_published=s$taxon_group_as_published,source_layer_order=as.integer(s$source_layer_order),cortical_layer_as_published=s$cortical_layer_as_published,immunomarker="parvalbumin",numerical_density_per_mm3=M,numerical_density_SEM_per_mm3=SEM,percent_of_total_neurons=pct,source_cell_missing=!present,source_pdf_page=as.integer(s$source_pdf_page),observation_level=ifelse(s$cortical_layer_as_published=="AVG","published order-level cortex average","published order-by-layer average"),data_role="order-level summary; not a species measurement",stringsAsFactors=FALSE)
+utils::write.csv(final.dataframe,file.path(folder,paste0(item_name,".csv")),row.names=FALSE,na="",fileEncoding="UTF-8")
+reg <- readxl::read_excel(file.path(root,"__ReadMeAddON.xlsx"),sheet="Sheet1")
+hit <- which(reg[["Item name"]]==item_name)
+if(length(hit)!=1L) stop("Expected one AddON registry row")
+encoded <- as.character(reg[["Item encoded"]][hit])
+utils::write.table(final.dataframe,file.path(root,"__Public","comparative-data",paste0(encoded,".tsv")),sep="\t",row.names=FALSE,na="",fileEncoding="UTF-8")
+cat(item_name,": ",sum(present)," populated cells in ",nrow(s)," source positions\n",sep="")

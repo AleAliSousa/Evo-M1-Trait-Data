@@ -1,0 +1,5 @@
+# Clipperton-Allen et al. 2019 — Supplementary Table S2
+
+“Pten haploinsufficiency disrupts scaling across brain areas during development in mice,” DOI 10.1038/s41398-019-0656-6. The publisher supplement `41398_2019_656_MOESM11_ESM.xlsx` is frozen unchanged as the item snapshot. Its 157 occupied rows include section headings, statistical comparisons, and footnotes. The item reader keeps every row with a published statistic and carries the nearest section heading forward. Statistical and effect-size strings remain verbatim because they mix t tests, ANOVAs, post hoc comparisons, and several effect-size conventions. These are inferential results, not raw brain volumes; the separately built Table S1 contains regional volume summaries.
+
+Run from repository root: `Rscript --vanilla ClippertonAllen_etal_2019/ClippertonAllen_etal_2019_TableS2.R`. The reader uses only the frozen xlsx and writes an analysis CSV and DOI-coded public TSV via `__ReadMeAddON.xlsx`. Source spreadsheet row numbers permit comparison. Born-digital table, so no PDF transcription signoff applies. No figure-derived data were extracted.

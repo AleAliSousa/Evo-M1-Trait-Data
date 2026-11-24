@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Medial/caudal entorhinal cortex,source_row,,info,Mammals,Naumann_etal_2016_Table2,,source XML table
+species_as_published,species as published,Medial/caudal entorhinal cortex,species_as_published,,info,Mammals,Naumann_etal_2016_Table2,,source XML table
+Species,Species,Medial/caudal entorhinal cortex,Species,,info,Mammals,Naumann_etal_2016_Table2,,source XML table
+Order,Order,Medial/caudal entorhinal cortex,Order,,info,Mammals,Naumann_etal_2016_Table2,,source XML table
+patches_counted,patches counted,Medial/caudal entorhinal cortex,patches_counted,,info,Mammals,Naumann_etal_2016_Table2,"Number of calbindin-positive patches sampled, parsed from source phrase.",source XML table
+brains_counted,brains counted,Medial/caudal entorhinal cortex,brains_counted,,info,Mammals,Naumann_etal_2016_Table2,"Number of brains sampled, parsed from source phrase.",source XML table
+calbindin_positive_neurons_per_patch,calbindin positive neurons per patch,Medial/caudal entorhinal cortex,calbindin_positive_neurons_per_patch,mean,primary,Mammals,Naumann_etal_2016_Table2,,source XML table
+neurons_per_patch_plusminus_as_published,neurons per patch plusminus as published,Medial/caudal entorhinal cortex,neurons_per_patch_plusminus_as_published,,primary,Mammals,Naumann_etal_2016_Table2,Printed ± value; Table 2 does not define whether this is SD or SEM.,source XML table
+plusminus_type,plusminus type,Medial/caudal entorhinal cortex,plusminus_type,,info,Mammals,Naumann_etal_2016_Table2,,source XML table
+observation_level,observation level,Medial/caudal entorhinal cortex,observation_level,,info,Mammals,Naumann_etal_2016_Table2,,source XML table
+data_role,data role,Medial/caudal entorhinal cortex,data_role,,info,Mammals,Naumann_etal_2016_Table2,,source XML table

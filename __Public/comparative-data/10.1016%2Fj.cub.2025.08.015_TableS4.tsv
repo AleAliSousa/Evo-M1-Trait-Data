@@ -1,0 +1,4 @@
+"source_row"	"term_as_published"	"estimate"	"estimated_error"	"lower_CI_as_published"	"upper_CI_as_published"	"model_response"	"data_role"	"source_note"
+1	"Change - Intra"	-0.12	0.32	-1.99	1.67	"brain volume"	"Bayesian model coefficient; not raw trait measurement"	""
+2	"Change - Extra"	0.21	0.81	-1.4	1.75	"brain volume"	"Bayesian model coefficient; not raw trait measurement"	""
+3	"Change - csf"	0.01	0.96	-1.9	1.9	"brain volume"	"Bayesian model coefficient; not raw trait measurement"	""

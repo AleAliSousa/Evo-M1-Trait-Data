@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Brain; somatosensory layer 4; entorhinal cortex,source_row,,info,Mammals,Naumann_etal_2016_Table3,,source XML table
+species_as_published,species as published,Brain; somatosensory layer 4; entorhinal cortex,species_as_published,,info,Mammals,Naumann_etal_2016_Table3,,source XML table
+Species,Species,Brain; somatosensory layer 4; entorhinal cortex,Species,,info,Mammals,Naumann_etal_2016_Table3,,source XML table
+Order,Order,Brain; somatosensory layer 4; entorhinal cortex,Order,,info,Mammals,Naumann_etal_2016_Table3,,source XML table
+measure,measure,Brain; somatosensory layer 4; entorhinal cortex,measure,,info,Mammals,Naumann_etal_2016_Table3,,source XML table
+value_as_published,value as published,Brain; somatosensory layer 4; entorhinal cortex,value_as_published,,info,Mammals,Naumann_etal_2016_Table3,"Unmodified source expression, including approximate and range notation.",source XML table
+value,value,Brain; somatosensory layer 4; entorhinal cortex,value,mean,both,Mammals,Naumann_etal_2016_Table3,Parsed central value where one is printed; absent for a pure range or missing cell.,source XML table
+SD,SD,Brain; somatosensory layer 4; entorhinal cortex,SD,SD,both,Mammals,Naumann_etal_2016_Table3,,source XML table
+lower_bound,lower bound,Brain; somatosensory layer 4; entorhinal cortex,lower_bound,,both,Mammals,Naumann_etal_2016_Table3,"Printed lower bound only, never inferred.",source XML table
+upper_bound,upper bound,Brain; somatosensory layer 4; entorhinal cortex,upper_bound,,both,Mammals,Naumann_etal_2016_Table3,"Printed upper bound only, never inferred.",source XML table
+qualifier,qualifier,Brain; somatosensory layer 4; entorhinal cortex,qualifier,,info,Mammals,Naumann_etal_2016_Table3,,source XML table
+unit,unit,Brain; somatosensory layer 4; entorhinal cortex,unit,,info,Mammals,Naumann_etal_2016_Table3,,source XML table
+source_reference_as_published,source reference as published,Brain; somatosensory layer 4; entorhinal cortex,source_reference_as_published,,info,Mammals,Naumann_etal_2016_Table3,Join to reference_tables/Naumann_etal_2016_Table3_references.csv using ref_key; printed spelling retained.,source XML table
+data_role,data role,Brain; somatosensory layer 4; entorhinal cortex,data_role,,info,Mammals,Naumann_etal_2016_Table3,"Primary only when source cell says This study, author estimate separately flagged; otherwise secondary or not reported.",source XML table

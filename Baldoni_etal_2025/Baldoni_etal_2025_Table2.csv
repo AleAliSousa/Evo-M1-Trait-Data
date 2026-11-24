@@ -1,0 +1,8 @@
+"source_row","metric_as_published","seasonal_change_estimate","estimated_error","lower_CI","upper_CI","comparison","data_role"
+1,"Intracellular water volume fraction",-0.184,0.037,-0.258,-0.11,"winter minus summer","Bayesian seasonal model effect; not raw diffusion value"
+2,"Extracellular water volume fraction",0.31,0.062,0.187,0.432,"winter minus summer","Bayesian seasonal model effect; not raw diffusion value"
+3,"Mean diffusivity (MD)",0.097,0.033,0.032,0.164,"winter minus summer","Bayesian seasonal model effect; not raw diffusion value"
+4,"Fractional anisotropy (FA)",-0.072,0.023,-0.119,-0.025,"winter minus summer","Bayesian seasonal model effect; not raw diffusion value"
+5,"Axial diffusivity (aD)",0.092,0.035,0.022,0.161,"winter minus summer","Bayesian seasonal model effect; not raw diffusion value"
+6,"Radial diffusivity (rD)",0.113,0.03,0.053,0.173,"winter minus summer","Bayesian seasonal model effect; not raw diffusion value"
+7,"Cerebrospinal fluid (CSF) volume fraction",-0.103,0.057,-0.218,0.007,"winter minus summer","Bayesian seasonal model effect; not raw diffusion value"

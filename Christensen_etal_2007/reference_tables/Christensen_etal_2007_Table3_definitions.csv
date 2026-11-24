@@ -1,0 +1,24 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_region_order,source region order,hippocampal subregion,source_region_order,,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+region_as_published,region as published,hippocampal subregion,region_as_published,,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+species_label_in_article,species label in article,hippocampal subregion,species_label_in_article,,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+Species,Species,hippocampal subregion,Species,,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+hemisphere,hemisphere,hippocampal subregion,hemisphere,,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+neuron_count_million_as_published,neuron count million as published (million cells),hippocampal subregion,neuron_count_million_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+neuron_number,neuron number (absolute cells),hippocampal subregion,neuron_number,,measure,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+neuron_SD,neuron SD,hippocampal subregion,neuron_SD,SD,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+neuron_CV,neuron CV,hippocampal subregion,neuron_CV,CV,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+neuron_CE,neuron CE,hippocampal subregion,neuron_CE,CE,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+glia_count_million_as_published,glia count million as published (million cells),hippocampal subregion,glia_count_million_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+glia_number,glia number (absolute cells),hippocampal subregion,glia_number,,measure,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+glia_SD,glia SD,hippocampal subregion,glia_SD,SD,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+glia_CV,glia CV,hippocampal subregion,glia_CV,CV,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+glia_CE,glia CE,hippocampal subregion,glia_CE,CE,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+processed_volume_mm3,processed volume mm3 (mm³),hippocampal subregion,processed_volume_mm3,,measure,Macaca mulatta,Christensen_etal_2007_Table3,Processed tissue volume/density; no shrinkage correction,PDF Table 3; page 9
+processed_volume_SD_mm3,processed volume SD mm3,hippocampal subregion,processed_volume_SD_mm3,SD,measure,Macaca mulatta,Christensen_etal_2007_Table3,Processed tissue volume/density; no shrinkage correction,PDF Table 3; page 9
+processed_volume_CV,processed volume CV,hippocampal subregion,processed_volume_CV,CV,measure,Macaca mulatta,Christensen_etal_2007_Table3,Processed tissue volume/density; no shrinkage correction,PDF Table 3; page 9
+processed_volume_CE,processed volume CE,hippocampal subregion,processed_volume_CE,CE,measure,Macaca mulatta,Christensen_etal_2007_Table3,Processed tissue volume/density; no shrinkage correction,PDF Table 3; page 9
+neuron_density_as_published_million_per_mm3,neuron density as published million per mm3 (cells/mm³),hippocampal subregion,neuron_density_as_published_million_per_mm3,,measure,Macaca mulatta,Christensen_etal_2007_Table3,Processed tissue volume/density; no shrinkage correction,PDF Table 3; page 9
+neuron_density_per_mm3,neuron density per mm3 (cells/mm³),hippocampal subregion,neuron_density_per_mm3,,measure,Macaca mulatta,Christensen_etal_2007_Table3,Processed tissue volume/density; no shrinkage correction,PDF Table 3; page 9
+observation_level,observation level,hippocampal subregion,observation_level,,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9
+data_role,data role,hippocampal subregion,data_role,,info,Macaca mulatta,Christensen_etal_2007_Table3,,PDF Table 3; page 9

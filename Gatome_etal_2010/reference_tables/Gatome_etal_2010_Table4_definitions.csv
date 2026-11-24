@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source
+source_row,source row,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+phenotype_as_published,phenotype as published,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+species_as_published,species as published,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+Species,Species,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+measure,measure,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+mean_value,Printed mean for the named measure and unit,,,,primary,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+SD,Printed standard deviation; blank where not supplied,,,,primary,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+unit,unit,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+observation_level,observation level,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4
+data_role,data role,,,,metadata,,Gatome_etal_2010,"See item README for source scope, rounded totals and summary rows.",Table 4

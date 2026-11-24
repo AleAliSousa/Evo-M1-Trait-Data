@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,neocortex,source_row,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+gender_as_published,gender as published,neocortex,gender_as_published,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+sex,sex,neocortex,sex,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+individual_sequence_within_sex,individual sequence within sex,neocortex,individual_sequence_within_sex,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+species_label_in_article,species label in article,neocortex,species_label_in_article,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+Species,Species,neocortex,Species,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+hemisphere,hemisphere,neocortex,hemisphere,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+neuron_count_million_as_published,neuron count million as published (million cells),neocortex,neuron_count_million_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+neuron_number,neuron number (absolute cells),neocortex,neuron_number,,measure,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+glia_count_million_as_published,glia count million as published (million cells),neocortex,glia_count_million_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+glia_number,glia number (absolute cells),neocortex,glia_number,,measure,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+total_cell_count_million_as_published,total cell count million as published (million cells),neocortex,total_cell_count_million_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+total_cell_number,total cell number (absolute cells),neocortex,total_cell_number,,measure,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+processed_volume_mm3,processed volume mm3 (mm³),neocortex,processed_volume_mm3,,measure,Macaca mulatta,Christensen_etal_2007_Table4,Processed tissue volume/density; no shrinkage correction,PDF Table 4; page 9
+neuron_glia_ratio_as_published,neuron glia ratio as published,neocortex,neuron_glia_ratio_as_published,,measure,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+count_total_minus_components_million,count total minus components million,neocortex,count_total_minus_components_million,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+observation_level,observation level,neocortex,observation_level,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9
+data_role,data role,neocortex,data_role,,info,Macaca mulatta,Christensen_etal_2007_Table4,,PDF Table 4; page 9

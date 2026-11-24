@@ -3,7 +3,7 @@
 # TraitExplorer (TraitExplorer/app.R). Keep the two copies identical.
 #
 # Two features, both pure data functions over one long table with columns
-#   Species, Variable, Dataset, Source, Value_num
+#   Species, Variable, Dataset, Source, Value_num  (and Hemispheres, if the table has it)
 # plus the variable key _keys/variable_definitions.csv (label, domain,
 # measure_class, Structure, Measure, Unit, poolable_group, poolable_family):
 #
@@ -250,13 +250,66 @@ sr_label_meta <- function(labels, datasets, vardef) {
              stringsAsFactors = FALSE)
 }
 
+# ---- Hemispheres notes -------------------------------------------------------
+# The compiled table's Hemispheres column says how a value relates to the two
+# hemispheres: "" (nothing recorded: both hemispheres or the whole structure as
+# published), "2 x one hemisphere (doubled by ...)", "mean of sources, one of
+# them 2 x one hemisphere (...)", or "one hemisphere (as measured)". A doubled
+# value is served so that it compares with both-hemisphere values; it must be
+# said to be doubled wherever it is shown. A table without the column (built
+# before 2026-11-23) reads as "" throughout.
+sr_hemi_col <- function(d) {
+  h <- if ("Hemispheres" %in% names(d)) as.character(d$Hemispheres) else rep("", nrow(d))
+  h[is.na(h)] <- ""
+  h
+}
+# The distinct non-empty notes of the rows behind ONE shown value. Where only
+# some of those rows carry a note, it says how many.
+sr_hemi_join <- function(h) {
+  h <- as.character(h); h[is.na(h)] <- ""
+  u <- unique(h[nzchar(h)])
+  if (!length(u)) return("")
+  n <- vapply(u, function(x) sum(h == x), integer(1))
+  paste(ifelse(n < length(h), sprintf("%s [%d of %d values]", u, n, length(h)), u), collapse = " | ")
+}
+# Short form for a value cell: the note without its parenthesis
+# ("2 x one hemisphere"), and the same as a suffix (" [2 x one hemisphere]").
+sr_hemi_short <- function(h) { h <- as.character(h); h[is.na(h)] <- ""; sub("[[:space:]]*\\(.*$", "", h) }
+sr_hemi_suffix <- function(h) { s <- sr_hemi_short(h); ifelse(nzchar(s), paste0(" [", s, "]"), "") }
+# A one-hemisphere value is served under the both-hemisphere label with a
+# _unilateral_, _left_ or _right_ token before the measure (Insula_left_Vol.mm3
+# beside Insula_Vol.mm3). sr_hemi_base() gives the label without the token.
+sr_hemi_base <- function(labels) sub("_(unilateral|left|right)(?=_|$)", "", labels, perl = TRUE)
+# For the row(s) `d` of one shown value: the same species' value on the other
+# footing, read from `data` (Species, Variable, Value, Hemispheres) -- the
+# one-hemisphere value(s) behind a doubled value, or the both-hemisphere value
+# beside a one-hemisphere value. One text line each; character(0) if `d` has
+# no note; a line saying so if a doubled value has no one-hemisphere value.
+sr_hemi_partners <- function(data, d) {
+  h <- sr_hemi_col(d)
+  out <- character(0)
+  for (i in which(nzchar(h))) {
+    x <- data[data$Species %in% d$Species[i], , drop = FALSE]
+    xh <- sr_hemi_col(x)
+    one <- grepl("^one hemisphere", h[i])
+    hit <- if (one) x$Variable == sr_hemi_base(d$Variable[i]) & x$Variable != d$Variable[i]
+           else grepl("^one hemisphere", xh) & sr_hemi_base(x$Variable) == d$Variable[i]
+    hit[is.na(hit)] <- FALSE
+    out <- c(out, if (any(hit)) sprintf("%s: %s = %s%s", if (one) "both hemispheres" else "one hemisphere",
+                                        x$Variable[hit], x$Value[hit], sr_hemi_suffix(xh[hit]))
+                  else if (!one) "no one-hemisphere value is recorded for this species and structure")
+  }
+  unique(out)
+}
+
 # ---- 1. Brain-structure comparison within a species -------------------------
 
 # Numeric structure-level rows, each with its value in the base unit.
 sr_structure_rows <- function(data, meta) {
   m <- meta[meta$is_brain, , drop = FALSE]
-  d <- data[data$Variable %in% m$label & is.finite(data$Value_num),
-            c("Species", "Variable", "Dataset", "Source", "Value_num"), drop = FALSE]
+  keep <- data$Variable %in% m$label & is.finite(data$Value_num)
+  d <- data[keep, c("Species", "Variable", "Dataset", "Source", "Value_num"), drop = FALSE]
+  d$Hemispheres <- sr_hemi_col(data)[keep]
   if (!nrow(d)) return(data.frame())
   i <- match(d$Variable, m$label)
   d$structure <- m$structure[i]; d$display <- m$display[i]
@@ -305,6 +358,7 @@ sr_profile <- function(srows, species, key) {
                Structure_group = x$structure_group[1], Variable = x$Variable[1],
                Dataset = x$Dataset[1], Value = mean(x$value_base), Min = min(x$value_base),
                Max = max(x$value_base), N_values = nrow(x), Unit = x$base_unit[1],
+               Hemispheres = sr_hemi_join(sr_hemi_col(x)),
                Sources = paste(unique(x$Source[!is.na(x$Source) & nzchar(x$Source)]), collapse = " | "),
                Structure_from = x$structure_basis[1], Basis = x$pool_group[1],
                stringsAsFactors = FALSE)
@@ -361,8 +415,9 @@ sr_species_matrix <- function(srows, species) {
 # weights merge and the cell-count tables) is two series, because the app's
 # species means would otherwise average them without saying so.
 sr_series_table <- function(data, meta) {
-  d <- data[is.finite(data$Value_num) & data$Variable %in% meta$label,
-            c("Species", "Variable", "Dataset", "Source", "Value_num"), drop = FALSE]
+  keep <- is.finite(data$Value_num) & data$Variable %in% meta$label
+  d <- data[keep, c("Species", "Variable", "Dataset", "Source", "Value_num"), drop = FALSE]
+  d$Hemispheres <- sr_hemi_col(data)[keep]
   if (!nrow(d)) return(d)
   n_ds <- tapply(d$Dataset, d$Variable, function(x) length(unique(x)))
   d$series <- ifelse(n_ds[d$Variable] > 1, paste0(d$Variable, " @ ", d$Dataset), d$Variable)
@@ -466,11 +521,13 @@ sr_pair_detail <- function(data, meta, series_a, series_b, tol = 0.10) {
   st <- sr_series_table(data, meta)
   one <- function(s) {
     x <- st[st$series == s, , drop = FALSE]
-    if (!nrow(x)) return(data.frame(Species = character(0), v = numeric(0), src = character(0)))
+    if (!nrow(x)) return(data.frame(Species = character(0), v = numeric(0), src = character(0),
+                                    hemi = character(0)))
     v <- tapply(x$value_base, x$Species, mean)
     src <- tapply(x$Source, x$Species, function(z) paste(unique(z[!is.na(z) & nzchar(z)]), collapse = " | "))
+    hemi <- tapply(x$Hemispheres, x$Species, sr_hemi_join)
     data.frame(Species = names(v), v = as.numeric(v), src = as.character(src[names(v)]),
-               stringsAsFactors = FALSE)
+               hemi = as.character(hemi[names(v)]), stringsAsFactors = FALSE)
   }
   A <- one(series_a); B <- one(series_b)
   sp <- sort(union(A$Species, B$Species))
@@ -484,6 +541,8 @@ sr_pair_detail <- function(data, meta, series_a, series_b, tol = 0.10) {
                 ifelse(abs(out$Ratio_B_over_A - 1) <= 0.01, "same",
                 ifelse(abs(out$Ratio_B_over_A - 1) <= tol, "within tolerance",
                        "DIFFERS")))))
+  out$Hemispheres_A <- A$hemi[match(sp, A$Species)]; out$Hemispheres_B <- B$hemi[match(sp, B$Species)]
+  for (cl in c("Hemispheres_A", "Hemispheres_B")) out[[cl]][is.na(out[[cl]])] <- ""
   out$Sources_A <- A$src[match(sp, A$Species)]; out$Sources_B <- B$src[match(sp, B$Species)]
   out[order(out$Status != "DIFFERS", -abs(log10(ifelse(is.na(out$Ratio_B_over_A) | out$Ratio_B_over_A <= 0, 1, out$Ratio_B_over_A))), out$Species), , drop = FALSE]
 }
@@ -512,6 +571,14 @@ sr_reconciled_view <- function(data, meta, series, precedence = series, tol = 0.
     pick[ok] <- v[ok]; from[ok] <- s
   }
   out$Preferred_value <- pick; out$Taken_from <- from
+  # hemisphere notes of the values in this row, named by series
+  hm <- tapply(st$Hemispheres, list(st$Species, st$series), sr_hemi_join)
+  out$Hemispheres <- vapply(sp, function(s) {
+    cols <- intersect(series, colnames(hm))
+    h <- setNames(as.character(hm[s, cols]), cols)
+    h <- h[!is.na(h) & nzchar(h)]
+    paste(sprintf("%s: %s", names(h), h), collapse = " | ")
+  }, character(1))
   out$Flag <- ifelse(!is.na(out$Spread_pct) & out$Spread_pct > 100 * tol,
                      sprintf("series differ by %.0f%%", out$Spread_pct), "")
   out[order(out$Flag == "", -out$N_series, out$Species), , drop = FALSE]

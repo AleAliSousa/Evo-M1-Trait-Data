@@ -67,10 +67,12 @@ regression_sources <- function(species, vars, data, catalogue) {
     d <- data[data$Species %in% species$Species & data$Variable == v &
                 is.finite(data$Value_num), , drop = FALSE]
     groups <- split(d, d$Species)
-    fields <- c("Sources", "Source_items", "Source_details", "References", "Reference_URLs")
+    fields <- c("Sources", "Source_items", "Source_details", "Hemispheres", "References", "Reference_URLs")
     summaries <- lapply(groups, function(g) {
       c(Sources = join_sources(c(g$Source, g$Teams)),
         Source_items = join_sources(g$Items), Source_details = join_sources(g$Source_details),
+        # hemisphere notes of the records pooled into this species value
+        Hemispheres = sr_hemi_join(sr_hemi_col(g)),
         measurement_references(g$Items, g$Source, catalogue))
     })
     for (field in fields) {
@@ -136,7 +138,8 @@ trait_value_matrix <- function(data, species, variables) {
   out <- data.frame(Variable = variables, stringsAsFactors = FALSE, check.names = FALSE)
   out$Domain <- unname(var_dom[variables])
   d <- data[data$Species %in% species & data$Variable %in% variables & has_trait_value(data$Value), ]
-  values <- split(d$Value, paste(d$Species, d$Variable, sep = "\r"))
+  # a doubled or one-hemisphere value says so in its cell: "544 [2 x one hemisphere]"
+  values <- split(paste0(d$Value, sr_hemi_suffix(sr_hemi_col(d))), paste(d$Species, d$Variable, sep = "\r"))
   values <- vapply(values, function(x) paste(unique(x), collapse = " | "), character(1))
   for (sp in species) out[[sp]] <- unname(values[paste(sp, variables, sep = "\r")])
   out

@@ -202,6 +202,11 @@ if (!is.null(cohorts)) {
 # (domain, measure_class) are for other readers: the app goes on classifying
 # labels from _keys/variable_definitions.csv below, so a key edit shows without
 # a rebuild.
+# A 15th column is kept when the file has it: Hemispheres, which says that a
+# value is 2 x one hemisphere (doubled), or one hemisphere as measured. It is
+# shown beside the value wherever values or their sources are listed (helpers
+# sr_hemi_*() in structure_reconcile.R). An older table has no such column; it
+# is then "" for every row and the app behaves as before.
 COMPILED_COLS <- c(Species = "character", Dataset = "character", Variable = "character",
                    Value = "character", Value_num = "numeric", Source = "character",
                    Items = "character", Source_details = "character", Teams = "character",
@@ -222,7 +227,10 @@ compiled <- read_gh(GH$compiled, file.path(data_dir, "compiled_long.csv.gz"), re
 if (!nrow(compiled) || !all(names(COMPILED_COLS) %in% names(compiled)))
   stop(GH$compiled, " was read but is not the compiled table: it needs rows and the columns ",
        paste(names(COMPILED_COLS), collapse = ", "), ". Rebuild it: Rscript __compiled/build_compiled.R")
-compiled <- compiled[names(COMPILED_COLS)]
+compiled <- compiled[c(names(COMPILED_COLS), intersect("Hemispheres", names(compiled)))]
+if (!"Hemispheres" %in% names(compiled)) compiled$Hemispheres <- rep("", nrow(compiled))
+compiled$Hemispheres <- as.character(compiled$Hemispheres)
+compiled$Hemispheres[is.na(compiled$Hemispheres)] <- ""
 # The file is in byte order. load_compiled() ordered rows by species, then
 # variable, in the session's own collation; keep that order (ties as in the file).
 compiled <- compiled[order(compiled$Species, compiled$Variable), ]
@@ -1281,8 +1289,8 @@ ui <- page_navbar(
                     selected = sort(unique(compiled$Dataset)),
                     multiple = TRUE),
         textInput("c_source", "Source or item contains", placeholder = "e.g. Stephan"),
-            selectizeInput("c_columns", "Visible columns", choices = c("Species", "Domain", "Class", "Variable", "Value", "Unit", "Source", "Items", "References", "Reference_URLs", "N_sources", "Dataset", "Definition"),
-              selected = c("Species", "Variable", "Value", "Unit", "Source", "References", "Items", "Dataset"), multiple = TRUE),
+            selectizeInput("c_columns", "Visible columns", choices = c("Species", "Domain", "Class", "Variable", "Value", "Unit", "Hemispheres", "Source", "Items", "References", "Reference_URLs", "N_sources", "Dataset", "Definition"),
+              selected = c("Species", "Variable", "Value", "Unit", "Hemispheres", "Source", "References", "Items", "Dataset"), multiple = TRUE),
             helpText("Additional published datasets are source-specific measurements not covered by the main subject merges. They include primary studies and literature compilations; see each row's sources.")),
           downloadButton("c_download", "Download table with definitions and sources"),
           uiOutput("c_count"), DTOutput("c_table")),
@@ -1649,7 +1657,7 @@ server <- function(input, output, session) {
   e_values <- reactive({
     d <- compiled[compiled$Species %in% e_selected() & compiled$Variable %in% e_traits()$Variable &
                     has_trait_value(compiled$Value),
-                  c("Species", "Variable", "Value", "Unit", "Source", "Items", "Source_details", "Teams", "Dataset")]
+                  c("Species", "Variable", "Value", "Unit", "Hemispheres", "Source", "Items", "Source_details", "Teams", "Dataset")]
     units <- look(lab_unit, d$Variable)
     d$Unit[!is.na(units) & nzchar(units)] <- units[!is.na(units) & nzchar(units)]
     d$Domain <- unname(var_dom[d$Variable])
@@ -1670,7 +1678,8 @@ server <- function(input, output, session) {
     t <- e_traits()
     if (length(e_selected()) == 1L) {
       d <- e_values()
-      values <- vapply(split(d$Value, d$Variable), function(v) paste(unique(v), collapse = " | "), character(1))
+      values <- vapply(split(paste0(d$Value, sr_hemi_suffix(d$Hemispheres)), d$Variable),
+                       function(v) paste(unique(v), collapse = " | "), character(1))
       t$Value <- unname(values[t$Variable])
       t <- t[c("Variable", "Value", "Domain", "Unit", "Definition")]
     } else t$Selected_species <- NULL
@@ -1729,7 +1738,13 @@ server <- function(input, output, session) {
     source_link <- function(url, label) tags$a(href = url, target = "_blank", rel = "noopener", label)
     showModal(modalDialog(
       title = paste(d$Species[1], "—", d$Variable[1]), size = "l", easyClose = TRUE,
-      p(strong("Recorded value(s): "), joined(paste(d$Variable, "=", d$Value, unit))),
+      p(strong("Recorded value(s): "), joined(paste0(d$Variable, " = ", d$Value, " ", unit, sr_hemi_suffix(sr_hemi_col(d))))),
+      if (nz1(joined(sr_hemi_col(d)))) p(strong("Hemispheres: "), joined(sr_hemi_col(d)),
+        {
+          also <- sr_hemi_partners(compiled, d)
+          if (length(also)) tagList(tags$br(), span(class = "small", "Same species, other footing: ",
+                                                    paste(also, collapse = " | ")))
+        }),
       p(tip_for(d$Variable[1])),
       p(strong("Source report: "), joined(d$Source)),
       if (nz1(joined(d$Items))) p(strong("Source items: "), joined(d$Items)),
@@ -1839,6 +1854,7 @@ server <- function(input, output, session) {
       Variable = d$Variable,
       Value    = d$Value,
       Unit     = look(lab_unit, d$Variable),
+      Hemispheres = d$Hemispheres,
       Source   = d$Source,
       Items    = d$Items,
       Teams    = d$Teams,
@@ -2008,6 +2024,18 @@ server <- function(input, output, session) {
                 paste(part, collapse = " and "), paste(brain_cov, collapse = ", ")),
         "The brain-size coefficient is partly the structure regressed on itself; ",
         "body size is the usual control for a brain part.")))
+    # Hemisphere notes: a species value pooled from doubled or one-hemisphere
+    # records is still plotted; say so here and name the column that lists them.
+    for (k in seq_along(vars)) {
+      h <- compiled$Hemispheres[compiled$Variable %in% vars[k] & is.finite(compiled$Value_num)]
+      if (any(nzchar(h)))
+        out <- c(out, list(div(class = "alert alert-info py-1 px-2 small mb-2",
+          tags$strong("Hemispheres. "),
+          sprintf("%s (%s): %d of its %d values carry a hemisphere note (%s). ", vars[k], names(vars)[k],
+                  sum(nzchar(h)), length(h), paste(unique(sr_hemi_short(h[nzchar(h)])), collapse = "; ")),
+          "They are used as served. The Species table names them in ",
+          tags$code(paste0(vars[k], "_Hemispheres")), ".")))
+    }
     if (!length(out)) NULL else tagList(out)
   })
 
@@ -2591,6 +2619,7 @@ server <- function(input, output, session) {
     foc <- p[p$Species == input$bs_species, , drop = FALSE]
     n_multi <- length(unique(foc$Structure[foc$Same_structure_rows > 1]))
     n_parsed <- sum(foc$Structure_from == "parsed from label")
+    hemi <- foc[nzchar(foc$Hemispheres), , drop = FALSE]
     tagList(
       div(class = "alert alert-light",
           strong(em(input$bs_species)), ": ", strong(length(unique(foc$Structure))),
@@ -2605,6 +2634,12 @@ server <- function(input, output, session) {
         div(class = "alert alert-warning", "The reference has no value for: ",
             paste(unique(p$Species[!is.finite(p$Reference_value)]), collapse = ", "),
             ". Those species are left out of the chart."),
+      if (nrow(hemi)) div(class = "alert alert-info",
+                          strong(nrow(hemi)), " value(s) here are doubled from one hemisphere, or are one ",
+                          "hemisphere only (", paste(unique(sr_hemi_short(hemi$Hemispheres)), collapse = "; "), "): ",
+                          paste(utils::head(unique(hemi$Structure), 8), collapse = ", "),
+                          if (length(unique(hemi$Structure)) > 8) ", ...", ". The ", strong("Hemispheres"),
+                          " column of the Table says which."),
       if (n_parsed) div(class = "text-muted small", n_parsed,
                         " row(s) come from variables the key does not list yet; their structure ",
                         "was read from the label (Structure from = parsed from label).")
@@ -2639,9 +2674,15 @@ server <- function(input, output, session) {
     p$col <- if (n_sp > 1) p$Species else p$Dataset
     p$base <- base
     lv <- levels(p$Row)
+    # A value that is doubled from one hemisphere, or is one hemisphere, gets its
+    # own point shape (legend "Hemispheres"); without such values the chart is as before.
+    hs <- sr_hemi_short(p$Hemispheres)
+    p$Hemi <- factor(ifelse(nzchar(hs), hs, "no note"), levels = c("no note", sort(unique(hs[nzchar(hs)]))))
+    pt <- if (any(nzchar(hs))) list(geom_point(aes(shape = Hemi), size = 2.6), labs(shape = "Hemispheres"))
+          else geom_point(size = 2.6)
     g <- ggplot(p, aes(y = ypos, x = y, colour = col)) +
       geom_segment(aes(x = base, xend = y, yend = ypos), linewidth = 0.6, alpha = 0.5) +
-      geom_point(size = 2.6) +
+      pt +
       geom_errorbar(data = p[p$N_values > 1, , drop = FALSE],
                     aes(xmin = lo, xmax = hi), width = 0.25, orientation = "y") +
       scale_y_continuous(breaks = seq_along(lv), labels = lv, expand = expansion(add = 0.6)) +

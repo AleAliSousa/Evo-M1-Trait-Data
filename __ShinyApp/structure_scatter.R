@@ -20,7 +20,7 @@ structure_pairs <- function(rows, species, xkey, ykey, xseries = character(), ys
   unmatched <- length(setdiff(union(kx, ky), intersect(kx, ky)))
   x <- x[!kx %in% ambiguous, , drop = FALSE]
   y <- y[!ky %in% ambiguous, , drop = FALSE]
-  cols <- c("Species", "Join", "Structure", "Variable", "Dataset", "Value", "Unit", "Sources")
+  cols <- c("Species", "Join", "Structure", "Variable", "Dataset", "Value", "Unit", "Hemispheres", "Sources")
   d <- merge(x[cols], y[cols], by = c("Species", "Join"), suffixes = c("_X", "_Y"))
   d$Structure <- d$Structure_X
   d$Join <- d$Structure_X <- d$Structure_Y <- NULL

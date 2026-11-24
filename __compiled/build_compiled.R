@@ -217,6 +217,10 @@ hemisphere_basis <- function(out) {
     if (!all(c("Species", "Variable", "flag", "detail") %in% names(fl)))
       stop(hemi_key$flags_file[i], " must have columns: Species, Variable, flag, detail.", call. = FALSE)
     fl <- fl[fl$flag %in% names(HEMI_FLAG), , drop = FALSE]
+    # The feed's species names have been through the display aliases by now
+    # (_keys/species_display_aliases.csv); the flags file has the merge's own names.
+    fl$Species <- unalias(fl$Species)
+    fl <- fl[!duplicated(fl[c("Species", "Variable", "flag")]), , drop = FALSE]
     fk <- paste(fl$Species, fl$Variable, sep = "\r")
     if (anyDuplicated(fk)) stop(hemi_key$flags_file[i], ": a value is flagged twice for its hemispheres.", call. = FALSE)
     k <- match(paste(out$Species, out$Variable_raw, sep = "\r"), fk); hit <- rows & !is.na(k)

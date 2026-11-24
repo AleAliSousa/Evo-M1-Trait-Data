@@ -130,6 +130,114 @@ OSC,Burish_etal_2010_Table1,SpinalCord_O.n
 OSC_SD,Burish_etal_2010_Table1,SpinalCord_O.n_SD
 Species,Burish_etal_2010_Table1,Species
 n,Burish_etal_2010_Table1,SpinalCord_n
+Species,Collins_etal_2010_DatasetS1,Species
+n_animals,Collins_etal_2010_DatasetS1,Sample_n
+SampleInfo,Collins_etal_2010_DatasetS1,SampleInfo
+V1 tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,V1_right_Mass.g
+V1 total_cells (right hemisphere),Collins_etal_2010_DatasetS1,V1_right_C.n
+V1 total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,V1_right_N.n
+V1 tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,V1_left_Mass.g
+V1 total_cells (left hemisphere),Collins_etal_2010_DatasetS1,V1_left_C.n
+V1 total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,V1_left_N.n
+V1 neun_ratio,Collins_etal_2010_DatasetS1,V1_p.C.N
+V1 cell_density_per_g,Collins_etal_2010_DatasetS1,V1_C.p.mg
+V1 neuron_density_per_g,Collins_etal_2010_DatasetS1,V1_N.p.mg
+V1 cell_density_per_mm2,Collins_etal_2010_DatasetS1,V1_C.p.mm2
+V1 neuron_density_per_mm2,Collins_etal_2010_DatasetS1,V1_N.p.mm2
+V2 tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,V2_right_Mass.g
+V2 total_cells (right hemisphere),Collins_etal_2010_DatasetS1,V2_right_C.n
+V2 total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,V2_right_N.n
+V2 tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,V2_left_Mass.g
+V2 total_cells (left hemisphere),Collins_etal_2010_DatasetS1,V2_left_C.n
+V2 total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,V2_left_N.n
+V2 neun_ratio,Collins_etal_2010_DatasetS1,V2_p.C.N
+V2 cell_density_per_g,Collins_etal_2010_DatasetS1,V2_C.p.mg
+V2 neuron_density_per_g,Collins_etal_2010_DatasetS1,V2_N.p.mg
+V2 cell_density_per_mm2,Collins_etal_2010_DatasetS1,V2_C.p.mm2
+V2 neuron_density_per_mm2,Collins_etal_2010_DatasetS1,V2_N.p.mm2
+dV3 tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,dV3_right_Mass.g
+dV3 total_cells (right hemisphere),Collins_etal_2010_DatasetS1,dV3_right_C.n
+dV3 total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,dV3_right_N.n
+dV3 tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,dV3_left_Mass.g
+dV3 total_cells (left hemisphere),Collins_etal_2010_DatasetS1,dV3_left_C.n
+dV3 total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,dV3_left_N.n
+dV3 neun_ratio,Collins_etal_2010_DatasetS1,dV3_p.C.N
+dV3 cell_density_per_g,Collins_etal_2010_DatasetS1,dV3_C.p.mg
+dV3 neuron_density_per_g,Collins_etal_2010_DatasetS1,dV3_N.p.mg
+dV3 cell_density_per_mm2,Collins_etal_2010_DatasetS1,dV3_C.p.mm2
+dV3 neuron_density_per_mm2,Collins_etal_2010_DatasetS1,dV3_N.p.mm2
+vV3 tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,vV3_right_Mass.g
+vV3 total_cells (right hemisphere),Collins_etal_2010_DatasetS1,vV3_right_C.n
+vV3 total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,vV3_right_N.n
+vV3 tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,vV3_left_Mass.g
+vV3 total_cells (left hemisphere),Collins_etal_2010_DatasetS1,vV3_left_C.n
+vV3 total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,vV3_left_N.n
+vV3 neun_ratio,Collins_etal_2010_DatasetS1,vV3_p.C.N
+vV3 cell_density_per_g,Collins_etal_2010_DatasetS1,vV3_C.p.mg
+vV3 neuron_density_per_g,Collins_etal_2010_DatasetS1,vV3_N.p.mg
+vV3 cell_density_per_mm2,Collins_etal_2010_DatasetS1,vV3_C.p.mm2
+vV3 neuron_density_per_mm2,Collins_etal_2010_DatasetS1,vV3_N.p.mm2
+S1 tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,S1_right_Mass.g
+S1 total_cells (right hemisphere),Collins_etal_2010_DatasetS1,S1_right_C.n
+S1 total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,S1_right_N.n
+S1 tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,S1_left_Mass.g
+S1 total_cells (left hemisphere),Collins_etal_2010_DatasetS1,S1_left_C.n
+S1 total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,S1_left_N.n
+S1 neun_ratio,Collins_etal_2010_DatasetS1,S1_p.C.N
+S1 cell_density_per_g,Collins_etal_2010_DatasetS1,S1_C.p.mg
+S1 neuron_density_per_g,Collins_etal_2010_DatasetS1,S1_N.p.mg
+S1 cell_density_per_mm2,Collins_etal_2010_DatasetS1,S1_C.p.mm2
+S1 neuron_density_per_mm2,Collins_etal_2010_DatasetS1,S1_N.p.mm2
+M1 tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,M1_right_Mass.g
+M1 total_cells (right hemisphere),Collins_etal_2010_DatasetS1,M1_right_C.n
+M1 total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,M1_right_N.n
+M1 tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,M1_left_Mass.g
+M1 total_cells (left hemisphere),Collins_etal_2010_DatasetS1,M1_left_C.n
+M1 total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,M1_left_N.n
+M1 neun_ratio,Collins_etal_2010_DatasetS1,M1_p.C.N
+M1 cell_density_per_g,Collins_etal_2010_DatasetS1,M1_C.p.mg
+M1 neuron_density_per_g,Collins_etal_2010_DatasetS1,M1_N.p.mg
+M1 cell_density_per_mm2,Collins_etal_2010_DatasetS1,M1_C.p.mm2
+M1 neuron_density_per_mm2,Collins_etal_2010_DatasetS1,M1_N.p.mm2
+A1 tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,A1_right_Mass.g
+A1 total_cells (right hemisphere),Collins_etal_2010_DatasetS1,A1_right_C.n
+A1 total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,A1_right_N.n
+A1 tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,A1_left_Mass.g
+A1 total_cells (left hemisphere),Collins_etal_2010_DatasetS1,A1_left_C.n
+A1 total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,A1_left_N.n
+A1 neun_ratio,Collins_etal_2010_DatasetS1,A1_p.C.N
+A1 cell_density_per_g,Collins_etal_2010_DatasetS1,A1_C.p.mg
+A1 neuron_density_per_g,Collins_etal_2010_DatasetS1,A1_N.p.mg
+A1 cell_density_per_mm2,Collins_etal_2010_DatasetS1,A1_C.p.mm2
+A1 neuron_density_per_mm2,Collins_etal_2010_DatasetS1,A1_N.p.mm2
+MT tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,MT_right_Mass.g
+MT total_cells (right hemisphere),Collins_etal_2010_DatasetS1,MT_right_C.n
+MT total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,MT_right_N.n
+MT tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,MT_left_Mass.g
+MT total_cells (left hemisphere),Collins_etal_2010_DatasetS1,MT_left_C.n
+MT total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,MT_left_N.n
+MT neun_ratio,Collins_etal_2010_DatasetS1,MT_p.C.N
+MT cell_density_per_g,Collins_etal_2010_DatasetS1,MT_C.p.mg
+MT neuron_density_per_g,Collins_etal_2010_DatasetS1,MT_N.p.mg
+MT cell_density_per_mm2,Collins_etal_2010_DatasetS1,MT_C.p.mm2
+MT neuron_density_per_mm2,Collins_etal_2010_DatasetS1,MT_N.p.mm2
+DL tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,DL_right_Mass.g
+DL total_cells (right hemisphere),Collins_etal_2010_DatasetS1,DL_right_C.n
+DL total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,DL_right_N.n
+DL tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,DL_left_Mass.g
+DL total_cells (left hemisphere),Collins_etal_2010_DatasetS1,DL_left_C.n
+DL total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,DL_left_N.n
+DL neun_ratio,Collins_etal_2010_DatasetS1,DL_p.C.N
+DL cell_density_per_g,Collins_etal_2010_DatasetS1,DL_C.p.mg
+DL neuron_density_per_g,Collins_etal_2010_DatasetS1,DL_N.p.mg
+DL cell_density_per_mm2,Collins_etal_2010_DatasetS1,DL_C.p.mm2
+DL neuron_density_per_mm2,Collins_etal_2010_DatasetS1,DL_N.p.mm2
+Neocortex sum of pieces tissue_weight_g (right hemisphere),Collins_etal_2010_DatasetS1,Neocortex_right_Mass.g
+Neocortex sum of pieces total_cells (right hemisphere),Collins_etal_2010_DatasetS1,Neocortex_right_C.n
+Neocortex sum of pieces total_neurons (right hemisphere),Collins_etal_2010_DatasetS1,Neocortex_right_N.n
+Neocortex sum of pieces tissue_weight_g (left hemisphere),Collins_etal_2010_DatasetS1,Neocortex_left_Mass.g
+Neocortex sum of pieces total_cells (left hemisphere),Collins_etal_2010_DatasetS1,Neocortex_left_C.n
+Neocortex sum of pieces total_neurons (left hemisphere),Collins_etal_2010_DatasetS1,Neocortex_left_N.n
 Species,Collins_etal_2016_Table1,Species
 n_animals,Collins_etal_2016_Table1,Sample_n
 SampleInfo,Collins_etal_2016_Table1,SampleInfo
@@ -146,6 +254,17 @@ V2 n_neurons,Collins_etal_2016_Table1,V2_right_N.n
 V2 pct_neurons,Collins_etal_2016_Table1,V2_p.C.N
 V2 cells_per_g,Collins_etal_2016_Table1,V2_C.p.mg
 V2 neurons_per_g,Collins_etal_2016_Table1,V2_N.p.mg
+V1 cells_per_cm2,Collins_etal_2016_Table1,V1_C.p.mm2
+V1 neurons_per_cm2,Collins_etal_2016_Table1,V1_N.p.mm2
+V2 cells_per_cm2,Collins_etal_2016_Table1,V2_C.p.mm2
+V2 neurons_per_cm2,Collins_etal_2016_Table1,V2_N.p.mm2
+M1 n_cells,Collins_etal_2016_Table1,M1_right_C.n
+M1 n_neurons,Collins_etal_2016_Table1,M1_right_N.n
+M1 pct_neurons,Collins_etal_2016_Table1,M1_p.C.N
+M1 cells_per_g,Collins_etal_2016_Table1,M1_C.p.mg
+M1 neurons_per_g,Collins_etal_2016_Table1,M1_N.p.mg
+M1 cells_per_cm2,Collins_etal_2016_Table1,M1_C.p.mm2
+M1 neurons_per_cm2,Collins_etal_2016_Table1,M1_N.p.mm2
 DNCB,DosSantos_etal_2017_TableS1,Cerebellum_N.p.mg
 DNCX,DosSantos_etal_2017_TableS1,CerebralCortex_N.p.mg
 DND + S,DosSantos_etal_2017_TableS1,DiencephalonStriatum_N.p.mg
@@ -440,6 +559,42 @@ Piriform Neurons_SEM,HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_N.n_
 Piriform OtherCells,HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_O.n
 Piriform OtherCells_SEM,HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_O.n_SEM
 Piriform Cells (Neurons + OtherCells),HerculanoHouzel_etal_2013_Table1-a,Piriform_unilateral_C.n
+Infralimbic N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Infralimbic_N.p.mm2
+Infralimbic N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Infralimbic_N.p.mm3
+Cingulate N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Cingulate_N.p.mm2
+Cingulate N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Cingulate_N.p.mm3
+Retrosplenial N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Retrosplenial_N.p.mm2
+Retrosplenial N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Retrosplenial_N.p.mm3
+Parietal N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Parietal_N.p.mm2
+Parietal N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Parietal_N.p.mm3
+Motor N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Motor_N.p.mm2
+Motor N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Motor_N.p.mm3
+Frontal N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Frontal_N.p.mm2
+Frontal N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Frontal_N.p.mm3
+V2M N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,V2M_N.p.mm2
+V2M N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,V2M_N.p.mm3
+V1 N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,V1_N.p.mm2
+V1 N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,V1_N.p.mm3
+V2L N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,V2L_N.p.mm2
+V2L N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,V2L_N.p.mm3
+S1-limb N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,S1limb_N.p.mm2
+S1-limb N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,S1limb_N.p.mm3
+S1-face N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,S1face_N.p.mm2
+S1-face N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,S1face_N.p.mm3
+S2 N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,S2_N.p.mm2
+S2 N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,S2_N.p.mm3
+Auditory N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Auditory_N.p.mm2
+Auditory N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Auditory_N.p.mm3
+Insula N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Insula_N.p.mm2
+Insula N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Insula_N.p.mm3
+Orbital N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Orbital_N.p.mm2
+Orbital N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Orbital_N.p.mm3
+Ectorhinal N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Ectorhinal_N.p.mm2
+Ectorhinal N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Ectorhinal_N.p.mm3
+Entorhinal N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,EntorhinalCortex_N.p.mm2
+Entorhinal N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,EntorhinalCortex_N.p.mm3
+Piriform N_per_mm2,HerculanoHouzel_etal_2013_Table1-a,Piriform_N.p.mm2
+Piriform N_per_mm3,HerculanoHouzel_etal_2013_Table1-a,Piriform_N.p.mm3
 Species,HerculanoHouzel_etal_2014_Table1,Species
 Order,HerculanoHouzel_etal_2014_Table1,Order
 "Whole brain Mass, g",HerculanoHouzel_etal_2014_Table1,WholeBrainOlfactoryBulb_Mass.g
@@ -1035,3 +1190,7 @@ M1_pct_neurons,Young_etal_2013_a_Table1,M1_p.C.N
 M1_pct_neurons_sd,Young_etal_2013_a_Table1,M1_p.C.N_SD
 M1_neuron_density_per_g_M,Young_etal_2013_a_Table1,M1_N.p.mg
 M1_neuron_density_per_g_M_sd,Young_etal_2013_a_Table1,M1_N.p.mg_SD
+M1_cell_density_per_mm2_M,Young_etal_2013_a_Table1,M1_C.p.mm2
+M1_cell_density_per_mm2_M_sd,Young_etal_2013_a_Table1,M1_C.p.mm2_SD
+M1_neuron_density_per_mm2_M,Young_etal_2013_a_Table1,M1_N.p.mm2
+M1_neuron_density_per_mm2_M_sd,Young_etal_2013_a_Table1,M1_N.p.mm2_SD

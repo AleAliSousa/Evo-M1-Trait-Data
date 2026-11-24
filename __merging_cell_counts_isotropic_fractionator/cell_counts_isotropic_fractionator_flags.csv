@@ -1,41 +1,79 @@
 Species,Variable,flag,detail
+Aotus nancymaae,A1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x A1_left_C.n (only one side measured)
+Aotus nancymaae,A1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x A1_left_Mass.g (only one side measured)
+Aotus nancymaae,A1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x A1_left_N.n (only one side measured)
+Aotus nancymaae,DL_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x DL_left_C.n (only one side measured)
+Aotus nancymaae,DL_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x DL_left_Mass.g (only one side measured)
+Aotus nancymaae,DL_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x DL_left_N.n (only one side measured)
+Aotus nancymaae,M1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_left_C.n (only one side measured)
 Aotus nancymaae,M1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_unilateral_Mass.g (only one side measured)
+Aotus nancymaae,M1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_left_N.n (only one side measured)
+Aotus nancymaae,MT_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x MT_left_C.n (only one side measured)
+Aotus nancymaae,MT_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x MT_left_Mass.g (only one side measured)
+Aotus nancymaae,MT_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x MT_left_N.n (only one side measured)
+Aotus nancymaae,Neocortex_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_left_C.n (only one side measured)
+Aotus nancymaae,Neocortex_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_left_Mass.g (only one side measured)
+Aotus nancymaae,Neocortex_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_left_N.n (only one side measured)
+Aotus nancymaae,S1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x S1_left_C.n (only one side measured)
+Aotus nancymaae,S1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x S1_left_Mass.g (only one side measured)
+Aotus nancymaae,S1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x S1_left_N.n (only one side measured)
+Aotus nancymaae,V1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V1_left_C.n (only one side measured)
+Aotus nancymaae,V1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V1_left_Mass.g (only one side measured)
+Aotus nancymaae,V1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V1_left_N.n (only one side measured)
+Aotus nancymaae,V2_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2_left_C.n (only one side measured)
+Aotus nancymaae,V2_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2_left_Mass.g (only one side measured)
+Aotus nancymaae,V2_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2_left_N.n (only one side measured)
+Aotus nancymaae,dV3_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x dV3_left_C.n (only one side measured)
+Aotus nancymaae,dV3_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x dV3_left_Mass.g (only one side measured)
+Aotus nancymaae,dV3_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x dV3_left_N.n (only one side measured)
+Aotus nancymaae,vV3_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x vV3_left_C.n (only one side measured)
+Aotus nancymaae,vV3_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x vV3_left_Mass.g (only one side measured)
+Aotus nancymaae,vV3_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x vV3_left_N.n (only one side measured)
 Cardioderma cor,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Cardioderma cor,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Cardioderma cor,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Cardioderma cor,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Cardioderma cor,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Casinycteris argynnis,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Casinycteris argynnis,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Casinycteris argynnis,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Casinycteris argynnis,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Casinycteris argynnis,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Coleura afra,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Coleura afra,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Coleura afra,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Coleura afra,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Coleura afra,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Epomophorus wahlbergi,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Epomophorus wahlbergi,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Epomophorus wahlbergi,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Epomophorus wahlbergi,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Epomophorus wahlbergi,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Epomops franqueti,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Epomops franqueti,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Epomops franqueti,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Epomops franqueti,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Epomops franqueti,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Hypsignathus monstrosus,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Hypsignathus monstrosus,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Hypsignathus monstrosus,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Hypsignathus monstrosus,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Hypsignathus monstrosus,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Macaca nemestrina,M1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_unilateral_Mass.g (only one side measured)
 Macronycteris commersoni,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Macronycteris commersoni,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Macronycteris commersoni,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Macronycteris commersoni,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Macronycteris commersoni,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Megaloglossus woermanni,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Megaloglossus woermanni,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Megaloglossus woermanni,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Megaloglossus woermanni,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Megaloglossus woermanni,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Miniopterus schreibersii,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Miniopterus schreibersii,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Miniopterus schreibersii,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Miniopterus schreibersii,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Miniopterus schreibersii,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Monodelphis domestica,A1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x A1_unilateral_C.n (only one side measured)
 Monodelphis domestica,A1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x A1_unilateral_Mass.g (only one side measured)
@@ -107,25 +145,63 @@ Mus musculus,V2L_O.n,estimated_bilateral_from_unilateral,both-hemisphere estimat
 Mus musculus,V2M_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2M_unilateral_C.n (only one side measured)
 Mus musculus,V2M_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2M_unilateral_N.n (only one side measured)
 Mus musculus,V2M_O.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2M_unilateral_O.n (only one side measured)
+Otolemur garnettii,A1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x A1_right_C.n (only one side measured)
+Otolemur garnettii,A1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x A1_right_Mass.g (only one side measured)
+Otolemur garnettii,A1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x A1_right_N.n (only one side measured)
+Otolemur garnettii,DL_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x DL_right_C.n (only one side measured)
+Otolemur garnettii,DL_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x DL_right_Mass.g (only one side measured)
+Otolemur garnettii,DL_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x DL_right_N.n (only one side measured)
+Otolemur garnettii,M1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_right_C.n (only one side measured)
 Otolemur garnettii,M1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_unilateral_Mass.g (only one side measured)
+Otolemur garnettii,M1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_right_N.n (only one side measured)
+Otolemur garnettii,MT_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x MT_right_C.n (only one side measured)
+Otolemur garnettii,MT_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x MT_right_Mass.g (only one side measured)
+Otolemur garnettii,MT_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x MT_right_N.n (only one side measured)
+Otolemur garnettii,Neocortex_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_right_C.n (only one side measured)
+Otolemur garnettii,Neocortex_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_right_Mass.g (only one side measured)
+Otolemur garnettii,Neocortex_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_right_N.n (only one side measured)
+Otolemur garnettii,S1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x S1_right_C.n (only one side measured)
+Otolemur garnettii,S1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x S1_right_Mass.g (only one side measured)
+Otolemur garnettii,S1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x S1_right_N.n (only one side measured)
+Otolemur garnettii,V1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V1_right_C.n (only one side measured)
+Otolemur garnettii,V1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V1_right_Mass.g (only one side measured)
+Otolemur garnettii,V1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V1_right_N.n (only one side measured)
+Otolemur garnettii,V2_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2_right_C.n (only one side measured)
+Otolemur garnettii,V2_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2_right_Mass.g (only one side measured)
+Otolemur garnettii,V2_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2_right_N.n (only one side measured)
+Otolemur garnettii,dV3_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x dV3_right_C.n (only one side measured)
+Otolemur garnettii,dV3_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x dV3_right_Mass.g (only one side measured)
+Otolemur garnettii,dV3_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x dV3_right_N.n (only one side measured)
+Otolemur garnettii,vV3_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x vV3_right_C.n (only one side measured)
+Otolemur garnettii,vV3_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x vV3_right_Mass.g (only one side measured)
+Otolemur garnettii,vV3_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x vV3_right_N.n (only one side measured)
+Pan troglodytes,M1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_right_C.n (only one side measured)
 Pan troglodytes,M1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_unilateral_Mass.g (only one side measured)
+Pan troglodytes,M1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_right_N.n (only one side measured)
 Pan troglodytes,Neocortex_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_right_C.n (only one side measured)
 Pan troglodytes,Neocortex_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_right_N.n (only one side measured)
 Pan troglodytes,V1_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V1_right_C.n (only one side measured)
 Pan troglodytes,V1_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V1_right_N.n (only one side measured)
 Pan troglodytes,V2_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2_right_C.n (only one side measured)
 Pan troglodytes,V2_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x V2_right_N.n (only one side measured)
+Papio cynocephalus anubis,M1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_unilateral_Mass.g (only one side measured)
+Papio cynocephalus anubis,Neocortex_C.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_right_C.n (only one side measured)
+Papio cynocephalus anubis,Neocortex_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_right_Mass.g (only one side measured)
+Papio cynocephalus anubis,Neocortex_N.n,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Neocortex_right_N.n (only one side measured)
 Procyon lotor,Hippocampus_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x Hippocampus_unilateral_Mass.g (only one side measured)
 Rousettus aegyptiacus,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Rousettus aegyptiacus,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Rousettus aegyptiacus,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Rousettus aegyptiacus,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Rousettus aegyptiacus,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Saimiri sciureus,M1_Mass.g,estimated_bilateral_from_unilateral,both-hemisphere estimated as 2x M1_unilateral_Mass.g (only one side measured)
 Scotonycteris zenkeri,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Scotonycteris zenkeri,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Scotonycteris zenkeri,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Scotonycteris zenkeri,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Scotonycteris zenkeri,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Triaenops persicus,Cerebellum_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Triaenops persicus,CerebralCortex_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
 Triaenops persicus,RoB_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE2 -- see laterality_known.csv"
+Triaenops persicus,WholeBrain_Mass.g,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"
 Triaenops persicus,WholeBrain_N.n,published_bilateral_estimate,"published value is 2x one hemisphere, doubled by the source (not by this merge): HerculanoHouzel_etal_2020_TABLE1 -- see laterality_known.csv"

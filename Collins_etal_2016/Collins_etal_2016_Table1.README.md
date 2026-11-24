@@ -43,8 +43,13 @@ Cortex" rows are dissection blocks — provenance only, not wired. The left-hemi
 serial-section row is a volume and is excluded by the merge's area filter. Cell/neuron **counts**
 were wired into `__merging_cell_counts_isotropic_fractionator` on 2026-11-24 (team Kaas): the
 right-hemisphere neocortex, V1 and V2 — numbers as the 2 × both-hemisphere estimate (marked) and as
-measured (`_right_`), % neurons, and densities per g (served per mg). M1 is held there too, as
-superseded by Young 2013 (same chimpanzee); the dissection blocks and the per-cm² densities are
-held (`__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`).
+measured (`_right_`), % neurons, and densities per g (served per mg). Since step 7b (2026-11-24,
+owner decision of that day) the per-cm² densities are served per mm² (`C.p.mm2`, `N.p.mm2`) and the
+**M1 row is wired**: the animal is Young 2013's chimpanzee (`KAAS-PAN-11_38`), so the M1 measures
+both tables give are counted once (served from Young; the values here are recorded as the same
+data) and the M1 cell and neuron numbers, which only this table gives, are served. The dissection
+blocks and the left V1 volume are not served; each has a status and reason in
+`__merging_cell_counts_isotropic_fractionator/not_served.csv`
+(`__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`).
 
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅ → Merge (areas) ✅

@@ -7,9 +7,10 @@ the sources stay visible.
 **Status, 2026-11-24.** The owner decided how per-area sources enter this merge and how
 one-hemisphere values are served (2026-11-23), and that those decisions cover the queued
 Herculano-Houzel 2013 and Kaas-lab sources. Wired: Seelke, Dooley & Krubitzer 2014 (2026-11-23);
-Herculano-Houzel, Watson & Paxinos 2013 Table 1-a, Young, Collins & Kaas 2013 Table 1 and Collins
-et al. 2016 (2026-11-24). Not wired: Collins et al. 2010 Dataset S1 and the excluded Young 2013b.
-Each wired source stops where it needs the owner: see **Decisions needed**.
+Herculano-Houzel, Watson & Paxinos 2013 Table 1-a, Young, Collins & Kaas 2013 Table 1, Collins
+et al. 2016 and Collins et al. 2010 Dataset S1 (2026-11-24). Not wired: the excluded Young 2013b.
+The owner's decisions of 2026-11-24 on the seven questions the wiring raised are in **Owner
+decisions, 2026-11-24**; what is still open is in **Decisions still needed**.
 
 ## Owner decisions, 2026-11-23
 
@@ -20,10 +21,11 @@ Recorded as review `RV-2026-012` in `_keys/cell_count_methods/expert_reviews.csv
   of "The problem" below. **It also applies to the queued Herculano-Houzel et al. 2013 and
   Kaas-lab sources** (owner, 2026-11-23): no separate regional product.
 - **Whole neocortex** is the structure `Neocortex` (not `CerebralCortex`), taken from the
-  intact-hemisphere row ("Whole neocortex"). The "Σ neocortex" row is the same quantity measured
-  less directly (the other hemisphere, dissected, pieces summed) and is not served.
+  intact-hemisphere row ("Whole neocortex"). The "Σ neocortex" row is a second measurement of the
+  same quantity (the other hemisphere of the same animals, dissected, pieces summed) and is not
+  served (`not_served.csv`: `second_measurement`).
 - **V1, S1 and A1** are served as their own regions. **"Rem Ctx"** (remaining cortex) is not a
-  structure of the database: held, not served.
+  structure of the database and is not served (`not_served.csv`: `not_a_database_structure`).
 - **Hemisphere — the merge's rule.** *"Serve both hemisphere in the comparison but make it clear it
   is doubled; and also offer single. There are many cases where a hemisphere is doubled, we should
   just always do it the same way unless there is a specific note that it is a different kind of
@@ -44,33 +46,65 @@ Recorded as review `RV-2026-012` in `_keys/cell_count_methods/expert_reviews.csv
   (annexed, in the unfiltered table), not as `_SD`: the tables do not label it, the figure
   captions say SEM.
 - **Team.** A new team, `Krubitzer` (name confirmed by the owner, 2026-11-23), resolved on its
-  own. The merge stops if this team ever holds a species × variable that another team also holds,
+  own. The merge stops if this team ever gives a species × variable that another team also gives,
   so it cannot change or be averaged with a value already served.
+
+## Owner decisions, 2026-11-24
+
+Recorded as reviews `RV-2026-017` to `RV-2026-021`. How each is built is in `README__merging.md`,
+**Step 7b**.
+
+- **Mouse area names** (Herculano-Houzel 2013). *"the table gives definition to what is included
+  under the umbrella terms Motor, Frontal, Parietal and Auditory"*: the names stand.
+- **Mouse S1.** *"i think the 'S1-limb' and 'S1-face' example shows they sampls those regions but
+  not the whole S1"*: no whole-S1 value is built for the mouse, now or later.
+- **Densities per surface and per volume.** *"Proposed: C.p.mm2, N.p.mm2 (cells, neurons under 1
+  mm² of cortical surface) and N.p.mm3 is good and can be converted easily"*: three new codes; the
+  density columns of Young 2013, Collins 2016, Collins 2010 and Herculano-Houzel 2013 are served.
+- **The two baboons** (Young 2013). *"if 'Papio cynocephalus anubis' (case 09-27) and 'Papio
+  hamadryas anubis' (case 11-31) are the same species we can average them for the merging"*: one
+  row, the mean of the two cases; the merge checks that both names are one NCBI taxon.
+- **No "hold".** *"i do not really understand the concept of hold. We should register, and just
+  indicate they are the same data when it is registered, so that it never double counts. Like a
+  code for different data poinst which are actually the same data."* The code is the specimen
+  identifier of `_keys/specimen_crosswalk/`; `specimen_key.csv` points at it; rows that share an
+  identifier and give the same measure are counted once. Everything else that is not served has a
+  status and a reason in `not_served.csv`.
+- **Collins 2016, M1; Collins 2010.** *"wire it as I said. we can see they are the same data and
+  just register that to avoid double counting."* Both wired.
+- **Herculano-Houzel 2020, brain mass** — answered on 2026-11-24 by the internal check the owner
+  asked for: `MBRAIN` is the sum of the dissected structures, on the same basis as the neuron
+  numbers (`HerculanoHouzel_etal_2020/internal_checks/`). Registered `by_source`; review
+  `RV-2026-013` stays `proposed` until the owner has seen it.
 
 ## Wired
 
-| Source | What is served | Held (in the public TSV, not in the merge) | Team |
+| Source | What is served | Not served (status and reason per row or column in `not_served.csv`) | Team |
 |---|---|---|---|
-| `Seelke_etal_2014_Table3` | `Neocortex_`, `V1_`, `S1_`, `A1_` × `Mass.g` (2 × estimate) and `_unilateral_Mass.g` (as measured) | Σ neocortex and Rem Ctx rows; the "% of Σ neocortex" weight share (no code fits) | Krubitzer |
+| `Seelke_etal_2014_Table3` | `Neocortex_`, `V1_`, `S1_`, `A1_` × `Mass.g` (2 × estimate) and `_unilateral_Mass.g` (as measured) | Σ neocortex row (`second_measurement`); Rem Ctx row (`not_a_database_structure`); the "% of Σ neocortex" weight share (`no_measure_code`) | Krubitzer |
 | `Seelke_etal_2014_Table4` | the same four structures × `C.n`, `N.n`, `O.n` (2 × estimate) and `_unilateral_C.n`, `_N.n`, `_O.n` (as measured); `p.C.N`; `O.p.N` is derived by step 3.7 | Σ neocortex and Rem Ctx rows | Krubitzer |
 | `Seelke_etal_2014_Table5` | the same four structures × `C.p.mg`, `N.p.mg`, `O.p.mg` (never doubled) | Σ neocortex and Rem Ctx rows | Krubitzer |
+| `HerculanoHouzel_etal_2013_Table1-a` | 18 mouse areas × `N.n`, `O.n`, `C.n` (2 × estimate) and `_unilateral_N.n`, `_O.n`, `_C.n` (as measured; `C.n` is the sum of the two printed means); `N.p.mm2`, `N.p.mm3` (as printed; atlas denominators); `O.p.N` and `p.C.N` derived by step 3.7 | thickness and two % columns (`no_measure_code`); % of cortical neurons (`derived_from_registered`); the Total row is not in the TSV | Herculano-Houzel |
+| `Young_etal_2013_a_Table1` | `M1_Mass.g` (2 × estimate), `M1_unilateral_Mass.g`, `M1_C.p.mg`, `M1_N.p.mg`, `M1_p.C.N`, `M1_C.p.mm2`, `M1_N.p.mm2`; six species, the baboon as the mean of two cases | M1 area (`other_merge`); % of total mass, % of total area, % neuron difference (`no_measure_code`) | Kaas |
+| `Collins_etal_2016_Table1` | `Neocortex_`, `V1_`, `V2_`, `M1_` × `C.n`, `N.n` (2 × estimate) and `_right_C.n`, `_right_N.n`; `p.C.N`; `C.p.mg`, `N.p.mg`, `C.p.mm2`, `N.p.mm2` (V1, V2; for M1 these five are the same data as Young's and are counted once) | somatosensory, premotor and prefrontal blocks (`not_a_database_structure`); left V1 volume (`no_measure_code`); surface area, brain and body mass (`other_merge`) | Kaas |
+| `Collins_etal_2010_DatasetS1` | galago 08-07 and owl monkey 07-78: `V1_`, `V2_`, `dV3_`, `vV3_`, `S1_`, `M1_`, `A1_`, `MT_`, `DL_` × `Mass.g`, `C.n`, `N.n` (2 × estimate) and `_right_` / `_left_` (as measured), `p.C.N`, `C.p.mg`, `N.p.mg`, `C.p.mm2`, `N.p.mm2` (for M1 the measures Young also gives are the same data and are counted once); `Neocortex_` × `Mass.g`, `C.n`, `N.n` as the sum of the pieces for 08-07, 07-78 and baboon 09-27, with `N.p.mg` and `p.C.N` derived | premotor, remaining and surrounding pieces, single grid pieces (`not_a_database_structure`); the whole-hemisphere totals of galago 07-104 and macaque 08-59 (`disagrees_with_text`); surface area (`other_merge`) | Kaas |
 
-| `HerculanoHouzel_etal_2013_Table1-a` | 18 mouse areas × `N.n`, `O.n`, `C.n` (2 × estimate) and `_unilateral_N.n`, `_O.n`, `_C.n` (as measured; `C.n` is the sum of the two printed means); `O.p.N` and `p.C.N` derived by step 3.7 | neurons per mm² and per mm³, thickness, the three % columns, the Total row | Herculano-Houzel |
-| `Young_etal_2013_a_Table1` | `M1_Mass.g` (2 × estimate), `M1_unilateral_Mass.g`, `M1_C.p.mg`, `M1_N.p.mg`, `M1_p.C.N`; five species | the two baboon rows; cells and neurons per mm²; M1 area; % of total mass, % of total area, % neuron difference | Kaas |
-| `Collins_etal_2016_Table1` | `Neocortex_`, `V1_`, `V2_` × `C.n`, `N.n` (2 × estimate) and `_right_C.n`, `_right_N.n`; `p.C.N`; `C.p.mg`, `N.p.mg` (V1, V2) | M1 (superseded by Young 2013, same chimpanzee); somatosensory, premotor and prefrontal blocks; left V1 volume; cells and neurons per cm²; surface area | Kaas |
-
-Served values: *Monodelphis domestica* 52 (Seelke); *Mus musculus* 144 (Herculano-Houzel 2013);
-five primates 25 (Young 2013); *Pan troglodytes* 19 (Collins 2016). Where each piece lives in
-`cell_counts_isotropic_fractionator_compiled.R`: item list (step 1), reshapes and held rows
-(1.7 Seelke, 1.8 Herculano-Houzel 2013, 1.9 Young, 1.10 Collins; each guarded on the printed
-rows), hemisphere register guard (2), unit conversions (3.4n, 3.4p, guarded), bat guard (3.4o),
-doubling (3.5), `_pm` / `_SD` / `_SEM` / `_n` annexed (6), teams (7, 8.1–8.3.S Krubitzer, 8.1–8.3.Y
-Kaas), no `_unilateral_` derivations (9.1), no-overlap guards (9.2), flags file (9.3). Keys: term
-files in `standardized_term_by_reference/`; `laterality_known.csv` (81 rows) and
-`laterality_known_exceptions.csv`; `cell_counts_isotropic_fractionator_label_definitions.csv` (205
-definitions; one per label, naming every source); rows in `_keys/variable_domain.csv`; `C.p.mg`
-in `_keys/glossary.csv`; `_keys/cell_count_methods/source_methods.csv` and reviews `RV-2026-012`
-to `RV-2026-016`.
+Served values: *Monodelphis domestica* 52 (Seelke); *Mus musculus* 180 (Herculano-Houzel 2013);
+six primates 40 (Young 2013); *Pan troglodytes* 27 (Collins 2016); three primates 208 (Collins
+2010). Where each piece lives in `cell_counts_isotropic_fractionator_compiled.R`: item list
+(step 1), the not-served register (1.6b), reshapes (1.7 Seelke, 1.8 Herculano-Houzel 2013, 1.9
+Young, 1.10 Collins 2016, 1.11 Collins 2010; each guarded on the printed rows and checked against
+`not_served.csv`), hemisphere register guard (2), unit conversions (3.4n, 3.4p, guarded), bat
+guard (3.4o), doubling (3.5), specimen identifiers (4.3b), `_pm` / `_SD` / `_SEM` / `_n` /
+`Specimen` annexed (6), the specimen rule (6b), teams (7, 8.1–8.3.S Krubitzer, 8.1–8.3.Y Kaas), no
+`_unilateral_` derivations (9.1), no-overlap guards (8.Y, 9.2), source details (9.2), flags file
+(9.3). Keys: term files in `standardized_term_by_reference/`; `laterality_known.csv` (144 rows),
+`laterality_known_exceptions.csv`, `laterality_case_side.csv`; `specimen_key.csv`;
+`not_served.csv`; `Collins_etal_2010_text_totals.csv`;
+`cell_counts_isotropic_fractionator_label_definitions.csv` (337 definitions; one per label, naming
+every source); rows in `_keys/variable_domain.csv`; `C.p.mg`, `C.p.mm2`, `N.p.mm2`, `N.p.mm3` in
+`_keys/glossary.csv`; `_keys/cell_count_methods/source_methods.csv` and reviews `RV-2026-012` to
+`RV-2026-021`.
 
 ## Structure names (per-area labels)
 
@@ -79,11 +113,15 @@ the paper's own area name.
 
 | Label | Existing or new | What it is in each source |
 |---|---|---|
-| `Neocortex` | existing | Seelke 2014: intact neocortical hemisphere. Collins 2016: flattened neocortex of the right hemisphere ("cerebral cortex" total) |
-| `V1` | existing | Seelke 2014: myelin-dense field. Herculano-Houzel 2013: atlas V1, V1M, V1B. Collins 2016: V1 of the flattened hemisphere |
-| `S1`, `A1` | existing | Seelke 2014 only |
-| `M1` | existing (cortical areas, cell morphology) | Young 2013: M1 dissected from the flattened hemisphere |
-| `V2` | existing (cortical areas, cell morphology) | Collins 2016: the paper's estimate of V2 |
+| `Neocortex` | existing | Seelke 2014: intact neocortical hemisphere. Collins 2016: flattened neocortex of the right hemisphere ("cerebral cortex" total). Collins 2010: the flattened cortical sheet of one hemisphere ("cortex"), as the sum of the supplement's pieces |
+| `V1` | existing | Seelke 2014: myelin-dense field. Herculano-Houzel 2013: atlas V1, V1M, V1B. Collins 2016: V1 of the flattened hemisphere. Collins 2010: one sample cut along the V1/V2 border |
+| `S1`, `A1` | existing | Seelke 2014: myelin-dense fields. Collins 2010: the myelin-dense fields of the flattened cortex (S1 = area 3b) |
+| `M1` | existing (cortical areas, cell morphology) | Young 2013: M1 dissected from the flattened hemisphere. Collins 2016: the block "designated as motor", which "likely contains most of M1". Collins 2010: location estimated from earlier descriptions; includes area 3a |
+| `V2` | existing (cortical areas, cell morphology) | Collins 2016: the paper's estimate of V2. Collins 2010: a strip of approximated width along the V1/V2 border |
+| `MT` | existing (cortical areas) | Collins 2010: the myelin-dense middle temporal area |
+| `DL` | existing (cortical areas) | Collins 2010: visual cortex between MT and V3, "largely corresponding to the dorsolateral visual area (DL or V4)" |
+| `dV3` | **new** (2026-11-24) | Collins 2010: dorsal portion of the third visual area (the paper's V3d), width approximated from the V1/V2 border |
+| `vV3` | **new** (2026-11-24) | Collins 2010: ventral portion of the third visual area (the paper's V3v) |
 | `S2` | existing (cortical areas) | Herculano-Houzel 2013: atlas S2 |
 | `Insula` | existing (volumes) | Herculano-Houzel 2013: AI, GI, DI, AIP, AID, AIV |
 | `EntorhinalCortex` | existing (this merge) | Herculano-Houzel 2013 "Entorhinal": DLEnt, DIEnt, MEnt, VIEnt |
@@ -104,31 +142,46 @@ the paper's own area name.
 
 Atlas abbreviations are as printed in the paper's Table 1 (Franklin & Paxinos 2007).
 
-## Decisions needed
+## Decisions still needed
 
-1. **Herculano-Houzel 2020, brain mass.** The bats' neuron numbers are marked as doubled by the
-   authors. Is `MBRAIN` (brain mass) also 2 × the one hemisphere? The paper does not say. Not
-   marked.
-2. **Herculano-Houzel 2013, area names.** Are the 14 new names acceptable as database structures,
-   in particular `Motor`, `Frontal`, `Parietal` and `Auditory`, which read like broader regions?
-3. **Herculano-Houzel 2013, S1.** The paper splits S1 into "S1-limb" and "S1-face" and prints no
-   S1 total. Serve `S1` as their sum (our aggregation; no SEM)? Not served.
-4. **Densities per unit of cortical surface or volume.** No measure code exists. Proposed:
-   `N.p.mm2`, `C.p.mm2` (neurons, cells under 1 mm² of cortical surface) and `N.p.mm3`. Held in
-   all three sources (and in Herculano-Houzel 2013 the denominators are atlas values).
-5. **Young 2013, the two baboons.** Cases 09-27 and 11-31 both resolve to *Papio anubis*. Serve
-   their mean (n = 2), or one case? Not served.
-6. **Collins 2016, M1.** Held as superseded by Young 2013 (same chimpanzee), following the
-   2026-08-25 decision for cortical areas. The alternative is to serve the Collins M1 cell and
-   neuron numbers, which Young does not print, beside Young's densities.
-7. **Collins 2010 Dataset S1.** See the queue below.
+1. **Collins 2010, macaque 08-59 and galago 07-104: which figure to trust.** No whole-neocortex
+   total is served for either. Macaque: the 42 pieces sum to 3.41 billion cells and 1.36 billion
+   neurons; the Results say "nearly 3.5 billion" and 1.4 billion; the Discussion says 1.36 billion
+   neurons, which is the sum. Galago 07-104: the supplement has 36 pieces (1,138 mm², 239.5 million
+   cells); the paper describes a grid of 46 pieces (2,261 mm², "≈326 million" cells), so the
+   supplement appears to lack pieces.
+2. **Which table serves a measure two tables give for the same animal.** Built: Young et al. 2013
+   for M1 (`serve_rank` in `specimen_key.csv`), following the 2026-08-25 cortical-areas decision.
+   For the owl monkey the two tables print the same numbers (Young rounds them); for the
+   chimpanzee and the galago they differ (the M1 pieces differ in extent; for the galago Young's
+   value is a three-animal mean).
+3. **M1 numbers next to M1 densities from another dissection.** `M1_C.n` and `M1_N.n` (Collins)
+   are served beside `M1_Mass.g` and the densities (Young) for the same animals, as decided. They
+   do not multiply up (chimpanzee: 625 million cells against 73.01 million per g × 7.52 g = 549
+   million). The definitions say so; say if the numbers should carry a visible mark as well.
+4. **Collins 2010 choices made in the wiring.** The label `Neocortex` for the paper's "cortex"; the
+   1 % agreement rule; the side of baboon 09-27 (right, from the Fig. 3 legend and Young et al.
+   2013b; not in the supplement); the premotor pieces not served (in the owl monkey the piece is
+   "dorsal premotor plus prefrontal cortex").
+5. **The baboon name.** The mean row is served as *Papio cynocephalus anubis* (the name printed
+   for case 09-27 and by Collins 2010). Young et al. 2013b and Turner et al. 2016 describe case
+   09-27 as an anubis × cynocephalus hybrid.
+6. **`_keys/specimen_crosswalk/kaas_young_collins_provenance_audit.csv`** says of Young's 09-27
+   row "exclude duplicate when Collins 2010 is present". Under the owner's rule of 2026-11-24 it
+   is not excluded: Collins 2010 gives no M1 value for that animal, so nothing is counted twice.
+   The audit file was not edited.
+7. **Young et al. 2013b** stays excluded as a table. Its two normal cases print V1, S1 and M1 cell
+   and neuron numbers that no wired table gives.
 
 **Three things a later per-area source must respect.** (1) The plain per-area labels × `Mass.g`,
 `C.n`, `N.n`, `O.n` are **both-hemisphere** values. A source that
 measured one hemisphere goes through `laterality_known.csv` (`doubling = none`, `_unilateral_`
 terms); one whose authors already doubled is registered `by_source`; neither is typed in by hand
-under the plain label. (2) The 9.2 guard stops a second team that would hold the same species ×
-variable as team Krubitzer or team Kaas; inside one team nothing stops it. (3) `Neocortex_Mass.g` here is not
+under the plain label. (2) The 9.2 guard stops a second team that would give the same species ×
+variable as team Krubitzer or team Kaas, and the 8.Y guard stops two Kaas-lab tables that do; if
+the cause is a shared animal, register it in `specimen_key.csv` (from `_keys/specimen_crosswalk/`)
+and the specimen rule counts it once. Every row or column a new table does not serve needs a row
+in `not_served.csv`. (3) `Neocortex_Mass.g` here is not
 joined to the `Neocortex_Mass (g)` of `__merging_weights` (no `_keys/variable_canonical.csv` row).
 Open item: it is now a both-hemisphere estimate, so the join is possible once the estimate flag
 can follow the value into the joined label; the tissue was also weighed after perfusion fixation.
@@ -148,37 +201,36 @@ cortical surface, and each table's hemisphere basis, which has to be read from t
 entered in `laterality_known.csv`.)*
 
 ## The queue (all built, registered, public TSVs on disk)
-| Source | What it holds | Team | Status |
+| Source | What it contains | Team | Status |
 |---|---|---|---|
 | `HerculanoHouzel_etal_2013_Table1-a` | mouse, 18 cortical areas | HH | **wired 2026-11-24** |
-| `Young_etal_2013_a_Table1` | 6 primate species (7 rows), M1 mass and cell/neuron densities (per g and per mm²) | Kaas | **wired 2026-11-24**, baboon rows held |
-| `Collins_etal_2016_Table1` | chimp: cortex, V1, V2, M1, S1-block, premotor-block, PFC counts + densities | Kaas | **wired 2026-11-24**: cortex, V1, V2 |
-| `Collins_etal_2010_DatasetS1` | 5 cases of 4 primates, 244 tissue PIECES | Kaas | **not wired** — below |
+| `Young_etal_2013_a_Table1` | 6 primate species (7 rows), M1 mass and cell/neuron densities (per g and per mm²) | Kaas | **wired 2026-11-24** (the two baboon cases as their mean) |
+| `Collins_etal_2016_Table1` | chimp: cortex, V1, V2, M1, S1-block, premotor-block, PFC counts + densities | Kaas | **wired 2026-11-24**: cortex, V1, V2, M1 |
+| `Collins_etal_2010_DatasetS1` | 5 cases of 4 primates, 244 tissue PIECES | Kaas | **wired 2026-11-24** — below |
 | `Young_etal_2013_b_Table1` | baboon V1/S1/M1 + cortex counts — **excluded from merges** (epileptics + Collins-duplicate; only case 11-31 usable). Respect the folder README. | Kaas | excluded |
 
-**Collins 2010 Dataset S1 — why it is not wired, and what would unblock it.** The supplement is
-one row per tissue piece and has no totals of its own.
+**Collins 2010 Dataset S1 — how it is wired (2026-11-24).** The supplement is one row per tissue
+piece and has no totals of its own.
 - *Per area.* Two of the five cases were dissected by the authors into named areas — galago 08-07
   (right hemisphere) and owl monkey 07-78 (left): V1, V2, dV3, vV3, S1, M1, A1, MT, premotor, DL,
-  "Remain Ctx", "Surr Ctx". These need no piece-to-area assignment by us. The other three cases
-  (galago 07-104, macaque 08-59, baboon 09-27) are numbered grids and would.
-- *Whole cortex.* The per-hemisphere totals are approximate figures in the running text, not a
-  table. The pieces sum to the text figure for three cases (galago 08-07: 242.5 million cells
-  against "243 million"; owl monkey: 553.2 against "more than 553 million"; baboon: 4.674 billion
-  against "4.67 billion"). They do not for the other two: macaque 3.41 billion against "nearly 3.5
-  billion", and galago 07-104, whose 36 pieces sum to 239 million cells against "≈326 million".
-- *Decisions needed first.* (a) Specimens: owl monkey 07-78 is probably Young 2013's owl monkey,
-  and galago 08-07 is one of Young's three galagos, so M1 for those species would come from two
-  tables of the same team for the same animals — which serves? This file's own rule is that
-  specimen dedupe comes from `_keys/specimen_crosswalk/`. (b) The two galago cases are two rows
-  for one species (the same question as the baboons). (c) One column would hold a right
-  hemisphere for one species and a left for another; the register is per column. (d) Whole-cortex
-  totals: sum the pieces, or register the text figures as an item of their own?
+  "Remain Ctx", "Surr Ctx". Nine are served as structures; the premotor, remaining and
+  surrounding pieces are counted only inside the whole-neocortex sum. The other three cases
+  (galago 07-104, macaque 08-59, baboon 09-27) are numbered grids: no per-area values.
+- *Whole neocortex.* The sum of a case's pieces, made by this project, where it agrees with the
+  whole-hemisphere figures of the paper's text: galago 08-07 (242.5 million cells against "243
+  million"), owl monkey (553.2 against "more than 553 million"), baboon (4.674 billion against
+  "4.67 billion"). Not for macaque 08-59 (3.41 billion against "nearly 3.5 billion") and galago
+  07-104 (239 million against "≈326 million"): both figures registered, no total served.
+- *Specimens.* Owl monkey 07-78, galago 08-07 and baboon 09-27 are animals of Young 2013:
+  `specimen_key.csv` and the specimen rule.
+- *Sides.* Right for 08-07 and 09-27, left for 07-78: side-specific columns, one register row each.
+Details: `README__merging.md`, **Step 7b**.
 
 ## Constraints to carry into the design
 - **Specimen web:** the Kaas tables share specimens (chimp KAAS-PAN-11_38 in Collins 2016 = Young
   2013; baboon 09-27 in Collins 2010 = Young 2013b = Turner). Specimen-level dedupe must come from
-  `_keys/specimen_crosswalk/`, not per-source hacks.
+  `_keys/specimen_crosswalk/`, not per-source hacks. *(Done 2026-11-24: `specimen_key.csv` and the
+  specimen rule, step 6b.)*
 - **Teams:** these are Kaas-lab flow-fractionator data — a **new team** alongside HH and Kverkova
   in the §8 resolution logic (or in the separate regional product).
 - **Doubling:** these counts are reported per one hemisphere (to be confirmed per table when it is

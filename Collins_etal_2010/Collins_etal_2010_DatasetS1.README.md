@@ -6,6 +6,8 @@ cortical areas in primates.* PNAS 107(36):15927–15932. doi:10.1073/pnas.101035
 Registry (`__ReadMe.xlsx`): Item name **`Collins_etal_2010_DatasetS1`**, encoded
 `10.1073%2Fpnas.1010356107_DatasetS1`; primary; method = isotropic fractionator.
 
+**Status: wired 2026-11-24** into `__merging_cell_counts_isotropic_fractionator` (team Kaas; dataset `Cell counts`; owner decision of that day). Served: the named areas of galago 08-07 and owl monkey 07-78 (V1, V2, dV3, vV3, S1, M1, A1, MT, DL), and the whole neocortex of galago 08-07, owl monkey 07-78 and baboon 09-27 as the sum of this table's pieces (a sum made by the project, served only where it agrees with the paper's text). One-hemisphere weights and numbers are served as the 2 × estimate (marked) and as measured (`_right_` / `_left_`, by case). Animals shared with Young et al. 2013 are counted once. Not served: galago 07-104 and macaque 08-59 (their piece sums disagree with the text; both figures registered). The merge takes the side of baboon 09-27 (right) from the paper's Fig. 3 legend and Young et al. 2013b Table S1; this table's `hemisphere` column still has none for it. Details: `__merging_cell_counts_isotropic_fractionator/README__merging.md`, **Step 7b**.
+
 ## What the data are
 Raw **per-tissue-piece** cortical cell/neuron counts from **one cortical hemisphere** of each of
 **five specimens / four primate species** (SI p.1):

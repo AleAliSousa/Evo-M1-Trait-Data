@@ -15,3 +15,14 @@ V2 n_neurons,Collins_etal_2016_Table1,V2_right_N.n
 V2 pct_neurons,Collins_etal_2016_Table1,V2_p.C.N
 V2 cells_per_g,Collins_etal_2016_Table1,V2_C.p.mg
 V2 neurons_per_g,Collins_etal_2016_Table1,V2_N.p.mg
+V1 cells_per_cm2,Collins_etal_2016_Table1,V1_C.p.mm2
+V1 neurons_per_cm2,Collins_etal_2016_Table1,V1_N.p.mm2
+V2 cells_per_cm2,Collins_etal_2016_Table1,V2_C.p.mm2
+V2 neurons_per_cm2,Collins_etal_2016_Table1,V2_N.p.mm2
+M1 n_cells,Collins_etal_2016_Table1,M1_right_C.n
+M1 n_neurons,Collins_etal_2016_Table1,M1_right_N.n
+M1 pct_neurons,Collins_etal_2016_Table1,M1_p.C.N
+M1 cells_per_g,Collins_etal_2016_Table1,M1_C.p.mg
+M1 neurons_per_g,Collins_etal_2016_Table1,M1_N.p.mg
+M1 cells_per_cm2,Collins_etal_2016_Table1,M1_C.p.mm2
+M1 neurons_per_cm2,Collins_etal_2016_Table1,M1_N.p.mm2

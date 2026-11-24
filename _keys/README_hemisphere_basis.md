@@ -42,7 +42,8 @@ Values of `Hemispheres`:
 | Dataset | Status |
 |---|---|
 | Brain-structure volumes | Under the rule (`__merging_volumes/laterality_known.csv`, `volumes_flags.csv`). |
-| Cell counts | Under the rule from 2026-11-23 (`__merging_cell_counts_isotropic_fractionator/laterality_known.csv`, `cell_counts_isotropic_fractionator_flags.csv`): Seelke et al. 2014 (*Monodelphis domestica*), Herculano-Houzel et al. 2013 (mouse cortical areas), Young et al. 2013 (M1), Collins et al. 2016 (chimpanzee), and the raccoon hippocampus mass of Jardim-Messeder et al. 2017. The bat neuron numbers of Herculano-Houzel et al. 2020 are marked as doubled by the authors; *Chaerephon pumilus* was measured on both sides and is listed in `laterality_known_exceptions.csv`. Not yet decided: the basis of the bat brain masses. |
+| Cell counts | Under the rule (`__merging_cell_counts_isotropic_fractionator/laterality_known.csv`, `cell_counts_isotropic_fractionator_flags.csv`): every one-hemisphere source of the merge is in its register (Seelke et al. 2014; Herculano-Houzel et al. 2013; Young et al. 2013; Collins et al. 2010 and 2016; the raccoon hippocampus mass of Jardim-Messeder et al. 2017). The bat neuron numbers and brain masses of Herculano-Houzel et al. 2020 are marked as doubled by the authors; *Chaerephon pumilus* was measured on both sides (`laterality_known_exceptions.csv`). |
+| Brain mass | Not yet under the rule. Known: it serves 11 bat brain masses of Herculano-Houzel et al. 2020 that the authors doubled; they are not marked there. |
 | Cortical areas & surfaces | Written exception: cortical surface areas are served per one hemisphere (`__merging_cortical_areas/README__merging.md`). |
 | Every other dataset | Not yet reviewed against the rule. |
 

@@ -8,7 +8,7 @@ PDF copied from the owner's EndNote library (record 2525). Lewitus's copy of any
 
 ## In the merge (owner decision 2026-11-23)
 - Served: the "Whole neocortex" row as structure `Neocortex`, and `V1`, `S1`, `A1`: weights (Table 3), cells, neurons, non-neurons and % neurons (Table 4), densities (Table 5). 52 values for *Monodelphis domestica*, team `Krubitzer`.
-- Held, not served: the "Σ neocortex" row (same quantity as "Whole neocortex", measured less directly), "Rem Ctx" (not a structure of the database), and Table 3's "% of Σ neocortex".
+- Not served, each with a registered status and reason in `__merging_cell_counts_isotropic_fractionator/not_served.csv`: the "Σ neocortex" row (`second_measurement`: the neocortex of the other hemisphere of the same animals, dissected and summed; the neocortex is served from the intact hemisphere), "Rem Ctx" (`not_a_database_structure`), and Table 3's "% of Σ neocortex" (`no_measure_code`).
 - One hemisphere: every weight and count in these tables is one hemisphere. Under the merge's hemisphere rule each is served twice: as the both-hemisphere estimate (2 × the printed value, doubled by this project and marked in `cell_counts_isotropic_fractionator_flags.csv`) under the plain label, e.g. `Neocortex_Mass.g` = 0.146 g, and as measured under `_unilateral_`, e.g. `Neocortex_unilateral_Mass.g` = 0.073 g. Percentages, densities and the derived non-neuron/neuron ratio are never doubled. Counts are served as counts (printed millions × 10^6) and densities per mg (printed millions per g × 1000). The printed ± is kept as `_pm` with the measured value, not as SD.
 - Table 1 (animals) is not in the merge. Details: `__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`.
 

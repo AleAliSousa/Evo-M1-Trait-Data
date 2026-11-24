@@ -76,6 +76,14 @@ renames the existing merge, the files inside it and every reference to them.
 | `queued` | method known; merge design pending |
 | `route_elsewhere` | part of a counting source that belongs in another merge |
 
+For the per-area tables of the isotropic-fractionator merge, the `reason` of a `not_merged` or
+`exclude` row starts with a status word from one short vocabulary (`same_data`,
+`derived_from_registered`, `second_measurement`, `no_measure_code`, `not_a_database_structure`,
+`other_merge`, `excluded`, `disagrees_with_text`, `descriptive`), defined in
+`__merging_cell_counts_isotropic_fractionator/README__merging.md` ("What is not served, and why").
+The same words are used row by row and column by column in that merge's `not_served.csv`, which
+the merge builder checks. Nothing is described as "held" (owner, 2026-11-24).
+
 A row with an empty `filter` covers the item's rows that no more specific row of the same item matches.
 Filters are R expressions on the item's public TSV columns, as in
 `__merging_supplementary/supplementary_sources.csv`.

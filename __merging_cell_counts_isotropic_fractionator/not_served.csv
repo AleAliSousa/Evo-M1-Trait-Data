@@ -1,0 +1,64 @@
+Reference,kind,name,status,same_as,reason
+Seelke_etal_2014_Table3,row,Sigma neocortex,second_measurement,,"the row printed with the Greek capital sigma: the neocortex of the OTHER hemisphere of the same five animals, dissected into V1, S1, A1 and the remaining cortex and summed. The neocortex is served from the hemisphere kept intact (row ""Whole neocortex""), so this is a second measurement of the same quantity and is not served under the same label"
+Seelke_etal_2014_Table3,row,Rem Ctx,not_a_database_structure,,"""remaining cortex"": what was left of the dissected hemisphere after V1, S1 and A1 were removed; a dissection remainder, not a structure"
+Seelke_etal_2014_Table3,column,pct_of_sigma_neocortex,no_measure_code,,weight of the area as a percentage of the summed (Sigma) neocortex; this merge has no code for a weight share (_p.C.Brain is a different quantity)
+Seelke_etal_2014_Table3,column,pct_of_sigma_neocortex_pm,no_measure_code,,the printed +/- of that percentage
+Seelke_etal_2014_Table3,column,source,descriptive,,name of the source table
+Seelke_etal_2014_Table4,row,Sigma neocortex,second_measurement,,"the row printed with the Greek capital sigma: the neocortex of the OTHER hemisphere of the same five animals, dissected into V1, S1, A1 and the remaining cortex and summed. The neocortex is served from the hemisphere kept intact (row ""Whole neocortex""), so this is a second measurement of the same quantity and is not served under the same label"
+Seelke_etal_2014_Table4,row,Rem Ctx,not_a_database_structure,,"""remaining cortex"": what was left of the dissected hemisphere after V1, S1 and A1 were removed; a dissection remainder, not a structure"
+Seelke_etal_2014_Table4,column,source,descriptive,,name of the source table
+Seelke_etal_2014_Table5,row,Sigma neocortex,second_measurement,,"the row printed with the Greek capital sigma: the neocortex of the OTHER hemisphere of the same five animals, dissected into V1, S1, A1 and the remaining cortex and summed. The neocortex is served from the hemisphere kept intact (row ""Whole neocortex""), so this is a second measurement of the same quantity and is not served under the same label"
+Seelke_etal_2014_Table5,row,Rem Ctx,not_a_database_structure,,"""remaining cortex"": what was left of the dissected hemisphere after V1, S1 and A1 were removed; a dissection remainder, not a structure"
+Seelke_etal_2014_Table5,column,source,descriptive,,name of the source table
+HerculanoHouzel_etal_2013_Table1-a,column,Species_HerculanoHouzel2013,descriptive,,the species name as the paper prints it
+HerculanoHouzel_etal_2013_Table1-a,column,Areas_in_atlas,descriptive,,the Franklin & Paxinos (2007) atlas areas pooled into each printed area; quoted in the label definitions
+HerculanoHouzel_etal_2013_Table1-a,column,is_M1,descriptive,,"a yes/no marker added by the item build, not a measurement"
+HerculanoHouzel_etal_2013_Table1-a,column,pct_cortical_area,no_measure_code,,the area's share of the cortical surface in the atlas (a percentage of an atlas area); no code in this merge
+HerculanoHouzel_etal_2013_Table1-a,column,pct_cortical_volume,no_measure_code,,the area's share of the cortical grey-matter volume in the atlas; no code in this merge
+HerculanoHouzel_etal_2013_Table1-a,column,pct_cortical_neurons,derived_from_registered,,the area's neurons as a percentage of the neurons of all 18 areas; computable from the served neuron numbers
+HerculanoHouzel_etal_2013_Table1-a,column,Thickness_mm,no_measure_code,,"average cortical thickness of the area, calculated from the atlas volume and surface, not measured in these mice; this merge has no thickness code"
+Young_etal_2013_a_Table1,column,species_as_published,descriptive,,the species name as printed (used by step 1.9 to find the two baboon rows)
+Young_etal_2013_a_Table1,column,species_note,descriptive,,a note on the printed name
+Young_etal_2013_a_Table1,column,specimen_source,descriptive,,where the animals came from
+Young_etal_2013_a_Table1,column,specimen_identity,descriptive,,which animal(s) the row is (used by step 1.9 to check the two baboon cases; the identifiers themselves are in specimen_key.csv)
+Young_etal_2013_a_Table1,column,specimen_match_status,descriptive,,how sure the identification of the animal is; the merge reads this from _keys/specimen_crosswalk/ instead
+Young_etal_2013_a_Table1,column,specimen_overlap_Collins2010,descriptive,,note on animals shared with Collins et al. 2010; handled by specimen_key.csv
+Young_etal_2013_a_Table1,column,specimen_overlap_other,descriptive,,note on animals shared with other tables; handled by specimen_key.csv
+Young_etal_2013_a_Table1,column,source,descriptive,,name of the source table
+Young_etal_2013_a_Table1,column,M1_area_mm2,other_merge,__merging_cortical_areas (M1_Surface_Area.mm2),"surface area of M1; a cortical surface area, which belongs to the cortical-areas merge"
+Young_etal_2013_a_Table1,column,M1_area_mm2_sd,other_merge,__merging_cortical_areas (M1_Surface_Area.mm2),the printed SD of that area
+Young_etal_2013_a_Table1,column,M1_pct_total_mass,no_measure_code,,M1 mass as a percentage of the cortical hemisphere's mass; no code for a mass share
+Young_etal_2013_a_Table1,column,M1_pct_total_mass_sd,no_measure_code,,the printed SD of that percentage
+Young_etal_2013_a_Table1,column,M1_pct_total_area,no_measure_code,,M1 area as a percentage of the cortical surface; no code for an area share
+Young_etal_2013_a_Table1,column,M1_pct_total_area_sd,no_measure_code,,the printed SD of that percentage
+Young_etal_2013_a_Table1,column,M1_pct_neuron_diff_from_avg,no_measure_code,,percentage difference between the share of neurons in M1 and the cortical average; no code
+Young_etal_2013_a_Table1,column,M1_pct_neuron_diff_from_avg_sd,no_measure_code,,the printed SD of that difference
+Collins_etal_2016_Table1,row,somatosensory block,not_a_database_structure,,"a dissection block of the flattened hemisphere, not a cortical area of the database"
+Collins_etal_2016_Table1,row,premotor block,not_a_database_structure,,"a dissection block of the flattened hemisphere, not a cortical area of the database"
+Collins_etal_2016_Table1,row,Prefrontal Cortex,not_a_database_structure,,"a dissection block of the flattened hemisphere, not a cortical area of the database"
+Collins_etal_2016_Table1,row,"V1 (left hemisphere, serial sections)",no_measure_code,,"the row gives only the volume of V1 of the left hemisphere, from serial sections; this merge serves no volumes"
+Collins_etal_2016_Table1,column,common_name,descriptive,,common name of the species
+Collins_etal_2016_Table1,column,specimen,descriptive,,description of the animal; its identifier is in specimen_key.csv
+Collins_etal_2016_Table1,column,note,descriptive,,a note on the row
+Collins_etal_2016_Table1,column,specimen_overlap,descriptive,,note on the animal shared with Young et al. 2013; handled by specimen_key.csv
+Collins_etal_2016_Table1,column,source,descriptive,,name of the source table
+Collins_etal_2016_Table1,column,brain_mass_g,other_merge,__merging_brain_size,"brain mass of the animal: a whole-brain mass, not a cortical cell count"
+Collins_etal_2016_Table1,column,body_weight_kg,other_merge,__merging_body_ecology,body weight of the animal
+Collins_etal_2016_Table1,column,volume_cm3,no_measure_code,,volume of V1 (two rows only); this merge serves no volumes
+Collins_etal_2016_Table1,column,area_cm2,other_merge,__merging_cortical_areas,"surface area of the region; a cortical surface area, which belongs to the cortical-areas merge"
+Collins_etal_2016_Table1,column,pct_neocortical_area,no_measure_code,,the region's share of the neocortical surface (V1 only); no code for an area share
+Collins_etal_2010_DatasetS1,row,08-07 premotor,not_a_database_structure,,"galago 08-07: the piece the paper calls ""Premotor Ctx"", in front of M1; a dissection block, not one cortical area of the database. Its weight, cells and neurons are counted inside the Neocortex sum of the case"
+Collins_etal_2010_DatasetS1,row,08-07 Remain Ctx,not_a_database_structure,,"""The undissected, remaining cortex was processed as a single sample"": a dissection remainder, not a structure. Counted inside the Neocortex sum of the case"
+Collins_etal_2010_DatasetS1,row,08-07 Surr Ctx,not_a_database_structure,,"a further piece of the same hemisphere outside the named areas (the supplement's ""Surr Ctx""; the paper does not describe it); not a structure. Counted inside the Neocortex sum of the case"
+Collins_etal_2010_DatasetS1,row,07-78 premotor,not_a_database_structure,,"owl monkey 07-78: the piece the paper describes as ""dorsal premotor plus prefrontal cortex""; a dissection block, not one cortical area of the database. Its weight, cells and neurons are counted inside the Neocortex sum of the case"
+Collins_etal_2010_DatasetS1,row,07-78 Remain Ctx,not_a_database_structure,,"""The undissected, remaining cortex was processed as a single sample"": a dissection remainder, not a structure. Counted inside the Neocortex sum of the case"
+Collins_etal_2010_DatasetS1,row,07-78 Surr Ctx,not_a_database_structure,,"a further piece of the same hemisphere outside the named areas (the supplement's ""Surr Ctx""; the paper does not describe it); not a structure. Counted inside the Neocortex sum of the case"
+Collins_etal_2010_DatasetS1,row,07-104 single pieces,not_a_database_structure,,galago 07-104: 36 numbered grid pieces; a grid piece is not a structure of the database
+Collins_etal_2010_DatasetS1,row,08-59 single pieces,not_a_database_structure,,macaque 08-59: 42 numbered pieces of a hemisphere that was not flattened; a numbered piece is not a structure of the database
+Collins_etal_2010_DatasetS1,row,09-27 single pieces,not_a_database_structure,,baboon 09-27: 142 numbered grid samples; a grid sample is not a structure of the database. Their sum is served as the Neocortex of the case
+Collins_etal_2010_DatasetS1,row,07-104 whole-hemisphere total,disagrees_with_text,,"galago 07-104: the 36 pieces of the supplement sum to 239.5 million cells and 94.1 million neurons; the paper's text gives ""approximately 326 million"" cells and 127 million neurons (and a grid of 46 pieces, 2,261 mm2, against 36 pieces and 1,138 mm2 in the supplement). Both figures are registered (Collins_etal_2010_text_totals.csv; cell_counts_isotropic_fractionator_sums_vs_text.csv); no total is served until the owner says which to trust"
+Collins_etal_2010_DatasetS1,row,08-59 whole-hemisphere total,disagrees_with_text,,"macaque 08-59: the 42 pieces of the supplement sum to 3.41 billion cells and 1.36 billion neurons; the Results text gives ""nearly 3.5 billion"" cells and 1.4 billion neurons (the Discussion gives 1.36 billion neurons). Both figures are registered (Collins_etal_2010_text_totals.csv; cell_counts_isotropic_fractionator_sums_vs_text.csv); no total is served until the owner says which to trust"
+Collins_etal_2010_DatasetS1,column,common_name,descriptive,,common name of the species
+Collins_etal_2010_DatasetS1,column,source,descriptive,,name of the source table
+Collins_etal_2010_DatasetS1,column,surface_area_mm2,other_merge,__merging_cortical_areas,"surface area of the piece; a cortical surface area, which belongs to the cortical-areas merge"
+Collins_etal_2010_DatasetS1,column,neun_percent_printed,same_data,Collins_etal_2010_DatasetS1 column neun_ratio,"the share of neurons as the supplement prints it (a percentage on the baboon sheet, a fraction on the others); the same number is served from the unit-safe column neun_ratio"

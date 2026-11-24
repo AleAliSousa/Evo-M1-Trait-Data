@@ -1,7 +1,8 @@
 # Set Working Directory
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cell_counts_isotropic_fractionator")
 
-## 1 Get data for cell count analyses
+## 1 Get data for cell count analyses  (1.5-1.7 reshape long-format and per-area source tables)
+##   Hemispheres: laterality_known.csv (guard in sec 2), doubling in sec 3.5, flags file in sec 9.3
 ## 2 Change to standardized terminology for all variables in those dataframes
 ## 3 Calculate variables to match them across datasets before filtering
 ## 4 Rename Species via the shared resolver (_keys/resolve_species.R)
@@ -11,6 +12,7 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 ## 8 Filter: Melt dataframe and address conflicting datapoints across datasets using priority  ## Within each team ## And across team averaging
 ## 9.1 Calculate: within-team between-tables values using filtered dataset
 ## 9.2 Calculate: between-team averages using filtered dataset
+## 9.3 Hemisphere provenance: write cell_counts_isotropic_fractionator_flags.csv
 
 ## 1 Get data for cell count analyses
 library(tidyverse)
@@ -119,7 +121,35 @@ item_name <- c(
                                   #   printing (71 of 184 shared cells changed); Kazu_etal_2014_Table1
                                   #   stays out - see below.
   "Kverkova_etal_2018_TableS1",
-  "Kverkova_etal_2018_TableS5"
+  "Kverkova_etal_2018_TableS5",
+  "Seelke_etal_2014_Table3",            # LIVE 2026-11-23 (owner decision of that day; see
+  "Seelke_etal_2014_Table4",            #   WIRING_into_cell_counts_isotropic_fractionator.md).
+  "Seelke_etal_2014_Table5"             #   Seelke, Dooley & Krubitzer 2014: Monodelphis domestica,
+                                        #   isotropic fractionator (flow cytometry), group means of
+                                        #   5 animals. The FIRST PER-AREA items of this merge and a
+                                        #   NEW TEAM ("Krubitzer", sec 7-8). What comes in:
+                                        #   - Table 3 weights -> _Mass.g; Table 4 cells, neurons,
+                                        #     non-neurons, % neurons -> _C.n, _N.n, _O.n, _p.C.N;
+                                        #     Table 5 cells, neurons, non-neurons per g -> _C.p.mg
+                                        #     (new code), _N.p.mg, _O.p.mg;
+                                        #   - four structures: Neocortex (the "Whole neocortex"
+                                        #     row), V1, S1, A1. Sec 1.7 reshapes the three
+                                        #     long-by-area TSVs and HOLDS the "Sigma neocortex" row
+                                        #     (same quantity, measured less directly) and "Rem Ctx"
+                                        #     (not a structure of the database), and Table 3's
+                                        #     % of Sigma-neocortex weight;
+                                        #   - units converted in sec 3.4n (millions -> counts;
+                                        #     millions per g -> per mg);
+                                        #   - HEMISPHERE: every weight and count was measured in
+                                        #     ONE hemisphere. Under the merge's hemisphere rule
+                                        #     (laterality_known.csv; sec 2 guard, sec 3.5) each is
+                                        #     served twice: as measured under <Structure>_unilateral_
+                                        #     and as 2x under the plain label, the both-hemisphere
+                                        #     estimate, marked in
+                                        #     cell_counts_isotropic_fractionator_flags.csv (sec 9.3).
+                                        #     Densities, % neurons and ratios are never doubled;
+                                        #   - the printed +/- is not labelled SD or SEM in the
+                                        #     tables; it is carried as "_pm" and annexed in sec 6.
 
   # ---- SCAFFOLDED, NOT YET LIVE (Herculano-Houzel coverage-gap audit, 2026-07) ----
   # Each is blocked on: its PDF/data + registration in __ReadMe.xlsx + a completed
@@ -356,10 +386,178 @@ if (!is.null(hhk_df)) {
 }
 rm(hhk_df)
 
+## 1.7 Reshape the per-area tables of Seelke, Dooley & Krubitzer 2014 (Tables 3-5)
+##     (2026-11-23 wiring; owner decision of that day, recorded in
+##     WIRING_into_cell_counts_isotropic_fractionator.md).
+##     The three public TSVs are LONG by cortical area: one row per printed area
+##     ("Whole neocortex", "Sigma neocortex" printed with the Greek capital sigma, "Rem Ctx",
+##     "V1", "S1", "A1"), all for one species, Monodelphis domestica. Every other item is
+##     one row per species, so each table becomes ONE row with one column per
+##     area x printed column, named "<area as printed> <TSV column>"; the item's
+##     standardized-term file then maps those names as usual.
+##       served : "Whole neocortex" -> Neocortex_ ; "V1" -> V1_ ; "S1" -> S1_ ; "A1" -> A1_
+##       held   : "Sigma neocortex" -- the same quantity as "Whole neocortex", measured less
+##                directly (the other hemisphere, dissected, its pieces summed);
+##                "Rem Ctx" (remaining cortex) -- not a structure of this database;
+##                Table 3's "% of Sigma neocortex" weight share -- no measure code fits
+##                (_p.C.Brain is a different quantity and is annexed anyway).
+##                Held rows stay in the public TSVs; nothing of them enters this merge.
+##     HEMISPHERE BASIS. One neocortical hemisphere was kept intact ("Whole neocortex")
+##     and the other was dissected into V1, S1, A1 and the remaining cortex (Methods;
+##     Results: "One intact neocortical hemisphere contained 3.03 +/- 0.21 million
+##     cells"). So every weight and count printed in these tables is ONE hemisphere.
+##     This step changes no value. The weight and count columns are registered in
+##     laterality_known.csv (doubling = none), their standardized terms carry the
+##     _unilateral suffix, and sec 3.5 adds the both-hemisphere estimate (2x) under the
+##     plain label. The basis is also written to the SampleInfo column, which sec 6
+##     annexes and cell_counts_isotropic_fractionator_unfiltered.csv keeps -- the same place
+##     HerculanoHouzel_etal_2020_TABLE1 records "(1H each)". Densities and percentages
+##     do not depend on the basis and are never doubled.
+##     The printed "+/-" columns ("_pm") are carried through unchanged in meaning: the
+##     tables do not say SD or SEM (the figure captions say SEM), so they are NOT named _SD.
+##     The guards stop the merge unless each table still has exactly the six printed
+##     areas, one species and n = 5.
+reshape_seelke2014 <- function(d, item) {
+  areas_served <- c("Whole neocortex" = "Whole neocortex", "V1" = "V1", "S1" = "S1", "A1" = "A1")
+  area_held    <- "Rem Ctx"            # plus the one Sigma-neocortex row, matched below
+  need <- c("area", "species", "n_animals")
+  if (!all(need %in% colnames(d)))
+    stop("1.7: ", item, " lacks column(s) ", paste(setdiff(need, colnames(d)), collapse = ", "),
+         ". The source table changed -- re-check this reshape before applying it.", call. = FALSE)
+  sigma <- grepl("neocortex", d$area, fixed = TRUE) & d$area != "Whole neocortex"
+  if (nrow(d) != 6L || sum(sigma) != 1L ||
+      !setequal(d$area[!sigma], c(names(areas_served), area_held)) ||
+      length(unique(d$species)) != 1L || !all(suppressWarnings(as.numeric(d$n_animals)) == 5))
+    stop("1.7: expected ", item, " to hold exactly the six printed areas (Whole neocortex, ",
+         "Sigma neocortex, Rem Ctx, V1, S1, A1) for one species with n = 5; found areas ",
+         paste(d$area, collapse = " | "), ". The source table changed -- re-check this ",
+         "reshape before applying it.", call. = FALSE)
+  value_cols <- setdiff(colnames(d), c(need, "source",
+                                       "pct_of_sigma_neocortex", "pct_of_sigma_neocortex_pm"))
+  w <- data.frame(Species = unique(d$species), n_animals = 5,
+                  SampleInfo = paste0("(1H) measured in one hemisphere: Neocortex = the intact ",
+                                      "neocortical hemisphere; V1, S1, A1 = dissected from the ",
+                                      "other hemisphere. _unilateral_ weights and counts = as ",
+                                      "measured; the plain weight and count labels = 2x, the ",
+                                      "both-hemisphere estimate made by this merge. Group means ",
+                                      "of 5 animals; _pm = the printed +/- of the as-measured ",
+                                      "value (not labelled SD or SEM in the table; figure ",
+                                      "captions: SEM)"),
+                  stringsAsFactors = FALSE, check.names = FALSE)
+  for (a in names(areas_served)) {
+    r <- which(d$area == a)
+    for (vc in value_cols)
+      w[[paste(areas_served[[a]], vc)]] <- suppressWarnings(as.numeric(d[[vc]][r]))
+  }
+  w
+}
+for (seelke_item in c("Seelke_etal_2014_Table3", "Seelke_etal_2014_Table4", "Seelke_etal_2014_Table5")) {
+  if (!is.null(cell_counts_isotropic_fractionator_data_list[[seelke_item]]))
+    cell_counts_isotropic_fractionator_data_list[[seelke_item]] <-
+      reshape_seelke2014(cell_counts_isotropic_fractionator_data_list[[seelke_item]], seelke_item)
+}
+rm(reshape_seelke2014, seelke_item)
+
 ## 2 Change to standardized terminology for all variables in those dataframes
 
 # Read standardized terms
 standardized_term_cell_counts_isotropic_fractionator <- read.csv("standardized_term_cell_counts_isotropic_fractionator.csv", check.names=FALSE)
+
+# Laterality guard (2026-11-23; the hemisphere rule of this merge, the same convention as
+# __merging_volumes -- see README__merging.md "Hemispheres" in both folders).
+# laterality_known.csv records, for every source column measured from ONE SIDE, which side it was
+# and WHO did any doubling:
+#
+#   doubling = none       the printed number is one side AS MEASURED. Its standardized term MUST
+#                         carry the laterality suffix (_unilateral/_left/_right) immediately before
+#                         the measure code (Neocortex_unilateral_N.n), so a one-side value can never
+#                         be merged with a both-sides value. THIS MERGE then builds the both-sides
+#                         partner in sec 3.5 -- 2x, under the plain label (Neocortex_N.n) -- and
+#                         sec 9.3 records it as `estimated_bilateral_from_unilateral`.
+#   doubling = by_source  the PUBLISHED number is already 2x one side: the paper's authors doubled
+#                         it. Its term must carry NO laterality suffix, it is used exactly as
+#                         published and never doubled again. Recorded as `published_bilateral_estimate`.
+#
+# Only EXTENSIVE measures (a weight, a volume, a number of cells) depend on the hemisphere basis
+# and may be registered. Densities, percentages and ratios are a different kind of value: the same
+# for one side as for both, never doubled, never suffixed.
+# BOTH flags are PROVENANCE, never vetoes: neither ever drops a value.
+# Unlike the volumes guard this one STOPS on every inconsistency, because here the register drives
+# the doubling: a row that does not resolve would silently leave a one-side value undoubled.
+# The next one-hemisphere source is a row in laterality_known.csv plus suffixed terms in its
+# standardized-term file -- not new code. (A single one-side CELL inside an otherwise both-sides
+# column cannot be a register row; the one such case, the raccoon hippocampus mass, is sec 3.4c.)
+laterality_suffix_pattern <- "_(unilateral|left|right)"
+laterality_extensive_codes <- c("Mass.g", "Vol.mm3", "C.n", "N.n", "O.n", "I.n")
+laterality_one_side  <- data.frame(Reference = character(0), Standardized_Term = character(0),
+                                   Plain_Term = character(0), stringsAsFactors = FALSE)
+laterality_by_source <- data.frame(Reference = character(0), Standardized_Term = character(0),
+                                   stringsAsFactors = FALSE)
+# every both-hemisphere estimate this run makes: item, the item's own species name, the plain
+# label that holds 2x, and the _unilateral label that holds the measured value (filled in sec
+# 3.4c and 3.5, written out in sec 9.3)
+laterality_estimates <- data.frame(Source = character(0), Species_Name_Source = character(0),
+                                   Variable = character(0), unilateral = character(0),
+                                   stringsAsFactors = FALSE)
+if (!file.exists("laterality_known.csv"))
+  stop("laterality guard: laterality_known.csv not found in ", getwd(), call. = FALSE)
+lat_known <- read.csv("laterality_known.csv", stringsAsFactors = FALSE, check.names = FALSE)
+lat_cols <- c("Reference", "Original_Term", "side", "doubling", "required_suffix", "note")
+if (!identical(colnames(lat_known), lat_cols))
+  stop("laterality_known.csv must have exactly the columns ", paste(lat_cols, collapse = ", "),
+       call. = FALSE)
+lat_known$doubling[is.na(lat_known$doubling) | !nzchar(lat_known$doubling)] <- "none"
+lat_known$required_suffix[is.na(lat_known$required_suffix)] <- ""
+bad_dbl <- setdiff(unique(lat_known$doubling), c("none", "by_source"))
+if (length(bad_dbl))
+  stop("laterality_known.csv: unknown doubling value(s) ", paste(bad_dbl, collapse = ", "),
+       ". Use `none` (one side as measured) or `by_source` (published as 2x one side).",
+       call. = FALSE)
+# Only the tables this merge reads (a row for an item that is not live resolves to nothing yet).
+lat_known <- lat_known[lat_known$Reference %in% item_name, , drop = FALSE]
+live_terms <- standardized_term_cell_counts_isotropic_fractionator[
+  standardized_term_cell_counts_isotropic_fractionator$Reference %in% item_name, , drop = FALSE]
+lat_chk <- merge(lat_known, live_terms, by = c("Reference", "Original_Term"), all.x = TRUE)
+lat_fail <- function(rows, what)
+  if (nrow(rows)) stop("laterality guard: ", what, " -> ",
+                       paste(sprintf("%s:%s (%s)", rows$Reference, rows$Original_Term,
+                                     ifelse(is.na(rows$Standardized_Term), "no term", rows$Standardized_Term)),
+                             collapse = "; "), call. = FALSE)
+lat_fail(lat_chk[is.na(lat_chk$Standardized_Term), , drop = FALSE],
+         "registered column(s) have no standardized term")
+lat_code <- sub("^.*_", "", lat_chk$Standardized_Term)
+lat_fail(lat_chk[!(lat_code %in% laterality_extensive_codes), , drop = FALSE],
+         paste0("registered column(s) are not extensive measures (", paste(laterality_extensive_codes, collapse = ", "),
+                "); a density, percentage or ratio is never registered or doubled"))
+lat_one <- lat_chk[lat_chk$doubling == "none", , drop = FALSE]
+lat_fail(lat_one[!grepl(paste0("^", laterality_suffix_pattern, "$"), lat_one$required_suffix), , drop = FALSE],
+         "doubling = none row(s) without a required_suffix of _unilateral, _left or _right")
+lat_fail(lat_one[!mapply(function(term, suffix) grepl(paste0(suffix, "_[^_]+$"), term),
+                         lat_one$Standardized_Term, lat_one$required_suffix), , drop = FALSE],
+         "one-side column(s) whose term lacks the required suffix immediately before the measure code")
+lat_src <- lat_chk[lat_chk$doubling == "by_source", , drop = FALSE]
+lat_fail(lat_src[grepl(paste0(laterality_suffix_pattern, "_"), lat_src$Standardized_Term), , drop = FALSE],
+         "author-doubled column(s) carry a laterality suffix they should not")
+if (nrow(lat_one))
+  laterality_one_side <- data.frame(
+    Reference = lat_one$Reference, Standardized_Term = lat_one$Standardized_Term,
+    Plain_Term = mapply(function(term, suffix) sub(paste0(suffix, "_([^_]+)$"), "_\\1", term),
+                        lat_one$Standardized_Term, lat_one$required_suffix, USE.NAMES = FALSE),
+    stringsAsFactors = FALSE)
+if (nrow(lat_src))
+  laterality_by_source <- unique(data.frame(Reference = lat_src$Reference,
+                                            Standardized_Term = lat_src$Standardized_Term,
+                                            stringsAsFactors = FALSE))
+# The other direction: a term that carries a laterality suffix must be a registered one-side
+# column (or the printed dispersion of one, "_pm" / "_SD"), so a suffix cannot be typed into a
+# term file without the register knowing.
+lat_suffixed <- live_terms[grepl(paste0(laterality_suffix_pattern, "_"), live_terms$Standardized_Term), , drop = FALSE]
+lat_fail(lat_suffixed[!(paste(lat_suffixed$Reference, sub("_(pm|SD)$", "", lat_suffixed$Standardized_Term)) %in%
+                          paste(laterality_one_side$Reference, laterality_one_side$Standardized_Term)), , drop = FALSE],
+         "term(s) carry a laterality suffix but are not registered in laterality_known.csv")
+message("Laterality guard OK: ", nrow(laterality_one_side), " one-side column(s) correctly suffixed, ",
+        nrow(laterality_by_source), " author-doubled column(s) correctly unsuffixed (of the tables this merge reads).")
+rm(lat_known, lat_cols, bad_dbl, live_terms, lat_chk, lat_fail, lat_code, lat_one, lat_src, lat_suffixed)
 
 # Loop through each data frame to apply standardized terms
 for (i in seq_along(item_name)) {
@@ -531,6 +729,23 @@ if (!is.null(jardimmesseder_df)) {
          printed_mass, ". The source table changed -- re-check this correction before applying it.",
          call. = FALSE)
   jardimmesseder_df$Hippocampus_Mass.g[raccoon] <- printed_mass * 2
+  # 2026-11-23, hemisphere rule (owner: "do like with the raccoon ... make it clear it is doubled;
+  # and also offer single"). The doubled value above is unchanged. Two things are added so this
+  # case is marked like every other one-side value of the merge:
+  #   - the printed one-hemisphere mass is offered as Hippocampus_unilateral_Mass.g, for this
+  #     species only (NA for the other species of the table, whose printed masses are both sides);
+  #   - the doubled cell is recorded, and sec 9.3 writes it to
+  #     cell_counts_isotropic_fractionator_flags.csv as estimated_bilateral_from_unilateral.
+  # It stays here, not in laterality_known.csv: the register describes whole columns, and this is
+  # one cell of a column that is otherwise both hemispheres.
+  jardimmesseder_df$Hippocampus_unilateral_Mass.g <- NA_real_
+  jardimmesseder_df$Hippocampus_unilateral_Mass.g[raccoon] <- printed_mass
+  laterality_estimates <- rbind(laterality_estimates,
+                                data.frame(Source = "JardimMesseder_etal_2017_Table1",
+                                           Species_Name_Source = "Procyon lotor",
+                                           Variable = "Hippocampus_Mass.g",
+                                           unilateral = "Hippocampus_unilateral_Mass.g",
+                                           stringsAsFactors = FALSE))
   cell_counts_isotropic_fractionator_data_list$JardimMesseder_etal_2017_Table1 <- jardimmesseder_df
 }
 rm(jardimmesseder_df)
@@ -873,6 +1088,85 @@ if (!is.null(hh2015t5_df)) {
 rm(hh2015t5_df)
 # ============================ end of D7 block ===================================
 
+# 3.4n Unit conversion for Seelke, Dooley & Krubitzer 2014 (2026-11-23 wiring).
+#      Table 4 prints cells, neurons and non-neurons in MILLIONS; Table 5 prints densities
+#      in MILLIONS PER GRAM. This merge carries absolute counts and densities per MILLIGRAM:
+#        _C.n, _N.n, _O.n        = printed x 1e6          (e.g. 3.03 million  -> 3,030,000)
+#        _C.p.mg, _N.p.mg, _O.p.mg = printed x 1e6 / 1000 (e.g. 41.70 million/g -> 41,700 /mg)
+#      The printed +/- ("_pm") of each is converted with the same factor. Weights (g) and
+#      % neurons are already in the merge's units. Both tables print two decimals, so every
+#      converted value is a whole number; round() only removes binary floating-point noise
+#      (3.03 * 1e6 is not exactly 3030000 in double precision) and changes no printed digit.
+#      _C.p.mg (cells per mg) is a code this merge did not have: no other source prints a
+#      total-cell density. It is deliberately NOT added to the sec 3.7 derivations, so it is
+#      served only where a source prints it and no value appears for any other species.
+#      The glossary codes C.p.g / N.p.g / O.p.g stay as the record of the printed unit.
+#      Guards: the merge stops unless the columns are still in the printed units (counts
+#      below 100 million, densities below 1000 million per g), so a source build that starts
+#      writing absolute numbers cannot be multiplied twice.
+for (seelke_item in c("Seelke_etal_2014_Table4", "Seelke_etal_2014_Table5")) {
+  df <- cell_counts_isotropic_fractionator_data_list[[seelke_item]]
+  if (is.null(df)) next
+  count_cols   <- grep("_(C|N|O)\\.n(_pm)?$",      colnames(df), value = TRUE)
+  density_cols <- grep("_(C|N|O)\\.p\\.mg(_pm)?$", colnames(df), value = TRUE)
+  expected <- if (seelke_item == "Seelke_etal_2014_Table4") c(24L, 0L) else c(0L, 24L)
+  if (!identical(c(length(count_cols), length(density_cols)), expected))
+    stop("3.4n: expected ", expected[1], " count and ", expected[2], " density columns in ",
+         seelke_item, "; found ", length(count_cols), " and ", length(density_cols),
+         ". The source table or its standardized terms changed -- re-check this conversion.",
+         call. = FALSE)
+  printed <- unlist(df[c(count_cols, density_cols)])
+  if (anyNA(printed) || any(printed <= 0) ||
+      any(unlist(df[count_cols]) >= 100) || any(unlist(df[density_cols]) >= 1000))
+    stop("3.4n: ", seelke_item, " is not in the printed units (millions; millions per g). ",
+         "The source table changed -- re-check this conversion before applying it.", call. = FALSE)
+  for (col in count_cols)   df[[col]] <- round(df[[col]] * 1e6)
+  for (col in density_cols) df[[col]] <- round(df[[col]] * 1e6 / 1000)
+  cell_counts_isotropic_fractionator_data_list[[seelke_item]] <- df
+}
+suppressWarnings(rm(seelke_item, count_cols, density_cols, expected, printed))
+
+# 3.5 Hemisphere rule: build the both-hemisphere estimate of every registered one-side column.
+#     (2026-11-23, owner decision: "serve both hemisphere in the comparison but make it clear it
+#     is doubled; and also offer single ... we should just always do it the same way unless there
+#     is a specific note that it is a different kind of value".)
+#     For each column that laterality_known.csv registers with doubling = none (guard: sec 2):
+#       <Structure>_unilateral_<code>   keeps the printed value, one hemisphere, as measured;
+#       <Structure>_<code>              = 2 x that value: the both-hemisphere ESTIMATE, made here.
+#     The plain label is what the other species of the merge carry (both hemispheres), so it is
+#     the one to compare across species; sec 9.3 marks every such value in
+#     cell_counts_isotropic_fractionator_flags.csv (estimated_bilateral_from_unilateral).
+#     Fill-only: where the same item already holds a both-sides value under the plain label for a
+#     species, that value stays and no estimate is made. The printed +/- ("_pm") stays with the
+#     as-measured value; no dispersion is invented for the estimate.
+#     This runs after every unit conversion and correction (3.3-3.4n) and BEFORE the derivations
+#     (3.6, 3.7), which read the plain labels only: a ratio or density derived from two doubled
+#     counts (_O.p.N = 2 x O / 2 x N) is the same number as from the measured ones, and nothing is
+#     derived under a _unilateral label (3.6/3.7 build their column names from the structure
+#     before the FIRST underscore; sec 9.1 skips suffixed labels).
+#     Columns registered doubling = by_source are not touched: used exactly as published.
+for (k in seq_len(nrow(laterality_one_side))) {
+  lat_item <- laterality_one_side$Reference[k]
+  lat_term <- laterality_one_side$Standardized_Term[k]
+  lat_plain <- laterality_one_side$Plain_Term[k]
+  df <- cell_counts_isotropic_fractionator_data_list[[lat_item]]
+  if (is.null(df) || !(lat_term %in% colnames(df)))
+    stop("3.5: registered one-side column ", lat_term, " not found in ", lat_item,
+         ". The source table or its standardized terms changed -- re-check laterality_known.csv.",
+         call. = FALSE)
+  measured <- suppressWarnings(as.numeric(df[[lat_term]]))
+  existing <- if (lat_plain %in% colnames(df)) suppressWarnings(as.numeric(df[[lat_plain]])) else rep(NA_real_, nrow(df))
+  estimate <- is.na(existing) & !is.na(measured)
+  df[[lat_plain]] <- ifelse(estimate, 2 * measured, existing)
+  if (any(estimate))
+    laterality_estimates <- rbind(laterality_estimates,
+                                  data.frame(Source = lat_item, Species_Name_Source = df$Species[estimate],
+                                             Variable = lat_plain, unilateral = lat_term,
+                                             stringsAsFactors = FALSE))
+  cell_counts_isotropic_fractionator_data_list[[lat_item]] <- df
+}
+suppressWarnings(rm(k, lat_item, lat_term, lat_plain, measured, existing, estimate))
+
 # 3.6 Calculate Cell number where not already available (it was only reported in Dos Santos et al., 2020)
 # Formula _C.n = _N.n + _O.n
 #
@@ -1133,7 +1427,8 @@ filtered_all_variables
 # Extra taxonomic variables: "Species_Source", "Family", "Order", "Clade", "CommonName", "Micro.or.mega"    
 # Data Sources variables: variables ending in "_Source"
 # Sample information: "SampleInfo"
-# Statistics around means: "_SD", _n", "_S.n"
+# Statistics around means: "_SD", _n", "_S.n"; "_pm" = a printed +/- the source does not label as
+#   SD or SEM (Seelke et al. 2014; added 2026-11-23 -- no earlier item has a column ending in "_pm")
 # Structure fractions still annexed: variables ending in "_p.C.Brain"
 #
 # The cellular ratios are NO LONGER annexed. "_N.p.mg", "_O.p.mg", "_O.p.N" (previously commented
@@ -1160,6 +1455,7 @@ for (i in seq_along(filtered_cell_counts_isotropic_fractionator_data_list)) {
                          grep("_S.n$", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE),
                          grep("_SD$", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE),
                          grep("_n$", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE),
+                         grep("_pm$", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE),
                          # Cellular ratios kept in the merge (see the note above), NOT annexed:
                          #   "_N.p.mg", "_O.p.mg", "_I.p.mg", "_O.p.N", "_I.p.C", "_p.C.N"
                          grep("_p.C.Brain", names(filtered_cell_counts_isotropic_fractionator_data_list[[i]]), value = TRUE))
@@ -1233,6 +1529,17 @@ HerculanoHouzel_Team_dataframes <- unique(Other_Team_variables$Dataframe_Name)
 # Create a reduced HerculanoHouzel Team variables list for comparison
 HerculanoHouzel_Team_variables <- unique(Other_Team_variables[, !names(Other_Team_variables) %in% "Dataframe_Name"])
 HerculanoHouzel_Team_variables
+
+# Krubitzer team (2026-11-23): Seelke, Dooley & Krubitzer 2014 is neither Kverkova-team nor
+# Herculano-Houzel-team work. Its items are taken OUT of the "not Kverkova" block built above, so
+# they never enter the Herculano-Houzel worth order of sec 8.2.H (no priority number, pin or
+# demotion there moves), and are resolved as a team of their own in sec 8.1-8.3.S. Sec 9.2 stops
+# the merge if this team ever holds a Species x Variable that another team also holds, so nothing
+# it adds can change, or be averaged with, a value that is already served.
+Krubitzer_Team_dataframes <- grep("^Seelke_etal_2014_", names(filtered_cell_counts_isotropic_fractionator_data_list), value = TRUE)
+Other_Team_variables <- Other_Team_variables[!(Other_Team_variables$Dataframe_Name %in% Krubitzer_Team_dataframes), , drop = FALSE]
+HerculanoHouzel_Team_dataframes <- setdiff(HerculanoHouzel_Team_dataframes, Krubitzer_Team_dataframes)
+HerculanoHouzel_Team_variables <- unique(Other_Team_variables[, !names(Other_Team_variables) %in% "Dataframe_Name"])
 
 # Merge and compare
 Variables_shared_across_teams <- merge(Kverkova_Team_variables, HerculanoHouzel_Team_variables, "Variable_Name")
@@ -1634,6 +1941,44 @@ HerculanoHouzel_Team_data_long <- HerculanoHouzel_Team_data_long[HerculanoHouzel
 # Delete the 'priority' and 'DECISION' columns if they will not be used again # These are not available for mixed sources 
 HerculanoHouzel_Team_data_long <- HerculanoHouzel_Team_data_long[, !(names(HerculanoHouzel_Team_data_long) %in% c("priority", "DECISION"))]
 
+###### 8.1 - 8.3 KRUBITZER TEAM (Seelke, Dooley & Krubitzer 2014; added 2026-11-23)
+# Same resolution as the Kverkova team: melt, rank the team's items by date then number of
+# species, keep the best-priority non-NA value per Species x Variable. The three tables share no
+# Species x Variable (Table 3 weights, Table 4 counts and % neurons, Table 5 densities), so today
+# the ranking decides nothing; it is here so that a later Krubitzer-lab item is resolved inside
+# its own team and not against another team's tables.
+Krubitzer_Team_df_list <- filtered_cell_counts_isotropic_fractionator_data_list[Krubitzer_Team_dataframes]
+Krubitzer_Team_data_long <- data.frame(Species = character(0), Variable = character(0),
+                                       Source = character(0), Value = character(0),
+                                       stringsAsFactors = FALSE)
+if (length(Krubitzer_Team_df_list)) {
+  ## 8.1.S Combine all data in all dataframes in Krubitzer_Team_df_list as a long dataframe
+  combined_data <- bind_rows(lapply(names(Krubitzer_Team_df_list), function(source) {
+    df <- Krubitzer_Team_df_list[[source]]
+    df[] <- lapply(df, as.character)
+    df %>%
+      pivot_longer(cols = -Species, names_to = "Variable", values_to = "Value") %>%
+      mutate(Source = source) %>%
+      select(Species, Variable, Source, Value)
+  }))
+  ## 8.2.S Priority: date (highest first), then number of species
+  worth_dataframe <- data.frame(source = names(Krubitzer_Team_df_list),
+                                date = as.numeric(str_extract(names(Krubitzer_Team_df_list), "[0-9]+")),
+                                number_species = vapply(Krubitzer_Team_df_list, nrow, integer(1)) - 1,
+                                stringsAsFactors = FALSE)
+  worth_dataframe <- worth_dataframe[order(-worth_dataframe$date, -worth_dataframe$number_species), ]
+  rownames(worth_dataframe) <- NULL
+  worth_dataframe$priority <- seq_len(nrow(worth_dataframe))
+  combined_data$priority <- worth_dataframe$priority[match(combined_data$Source, worth_dataframe$source)]
+  ## 8.3.S Limit dataset to best available data
+  combined_data <- combined_data[!is.na(combined_data$Value), , drop = FALSE]
+  best_priority <- ave(combined_data$priority, combined_data$Species, combined_data$Variable, FUN = min)
+  Krubitzer_Team_data_long <- as.data.frame(combined_data[combined_data$priority == best_priority,
+                                                          c("Species", "Variable", "Source", "Value")],
+                                            stringsAsFactors = FALSE)
+  rm(best_priority)
+}
+
 #### 9.1 Calculate: within-team between-tables values using the filtered dataset
 #
 #     Fill any cellular ratio still empty after the 8.3 priority resolution, using primaries that
@@ -1660,6 +2005,11 @@ HerculanoHouzel_Team_data_long <- HerculanoHouzel_Team_data_long[, !(names(Hercu
 derive_within_team <- function(df_long, derivations) {
   if (!nrow(df_long)) return(df_long)
   measured <- df_long[grepl("_", df_long$Variable, fixed = TRUE), , drop = FALSE]
+  # Hemisphere rule (2026-11-23): a label with a laterality suffix (<Structure>_unilateral_<code>)
+  # is a one-side value kept for the record. Ratios and densities are derived from the plain,
+  # both-hemisphere labels only, so nothing like Neocortex_unilateral_O.p.N is ever built here.
+  # No label of the merge carried such a suffix before, so this line changes no earlier value.
+  measured <- measured[!grepl(paste0(laterality_suffix_pattern, "_[^_]+$"), measured$Variable), , drop = FALSE]
   measured$Structure <- sub("_[^_]*$", "", measured$Variable)
   measured$Measure   <- sub("^.*_",    "", measured$Variable)
   measured$Numeric   <- suppressWarnings(as.numeric(measured$Value))
@@ -1705,11 +2055,30 @@ HerculanoHouzel_Team_data_long <- derive_within_team(HerculanoHouzel_Team_data_l
                                                      cell_counts_isotropic_fractionator_derivations)
 Kverkova_Team_data_long        <- derive_within_team(Kverkova_Team_data_long,
                                                      cell_counts_isotropic_fractionator_derivations)
+# Krubitzer team: same rule. Today it fills nothing -- Seelke Table 5 prints the densities and
+# sec 3.7 has already filled _O.p.N inside Table 4 -- but the team is treated like the others.
+Krubitzer_Team_data_long       <- derive_within_team(Krubitzer_Team_data_long,
+                                                     cell_counts_isotropic_fractionator_derivations)
 
 #### 9.2 Calculate: between-team averages using filtered dataset
 ## Finalize dataset
+# Krubitzer-team guard (2026-11-23): the mean below averages a Species x Variable that two teams
+# both hold. This team must never be averaged with, or displace, another team's value (owner
+# decision of 2026-11-23: nothing it adds may change which value is served for an existing
+# species), so the merge stops instead if the two ever meet. Resolve by an explicit decision in
+# this script (a precedence, or a separate label), not by the mean.
+krubitzer_cells <- paste(Krubitzer_Team_data_long$Species, Krubitzer_Team_data_long$Variable, sep = "\r")
+other_team_cells <- c(paste(HerculanoHouzel_Team_data_long$Species, HerculanoHouzel_Team_data_long$Variable, sep = "\r"),
+                      paste(Kverkova_Team_data_long$Species, Kverkova_Team_data_long$Variable, sep = "\r"))
+if (any(krubitzer_cells %in% other_team_cells))
+  stop("9.2 Krubitzer-team guard: ", sum(unique(krubitzer_cells) %in% other_team_cells),
+       " Species x Variable cell(s) are held by the Krubitzer team AND by another team, e.g. ",
+       sub("\r", " / ", unique(krubitzer_cells)[unique(krubitzer_cells) %in% other_team_cells][1], fixed = TRUE),
+       ". They would be averaged. Decide which is served before re-running.", call. = FALSE)
+rm(krubitzer_cells, other_team_cells)
 # Stack the dataframes lengthwise
-stacked_long_dataframe <- rbind(HerculanoHouzel_Team_data_long, Kverkova_Team_data_long)
+stacked_long_dataframe <- rbind(HerculanoHouzel_Team_data_long, Kverkova_Team_data_long,
+                                Krubitzer_Team_data_long)
 # remove any NA values in stacked_long_dataframe
 stacked_long_dataframe <- stacked_long_dataframe[!is.na(stacked_long_dataframe$Value), , drop = FALSE]
 # make Values numeric in stacked_long_dataframe
@@ -1738,6 +2107,68 @@ cell_counts_isotropic_fractionator_wide <- arrange(pivot_wider(cell_counts_isotr
 # # keep a record of sources for the datapoints
 # cell_counts_isotropic_fractionator_sources_wide <- arrange(pivot_wider(cell_counts_isotropic_fractionator_long, id_cols = Species, names_from = Variable, values_from = Source), Species)
 write_csv(cell_counts_isotropic_fractionator_wide, "cell_counts_isotropic_fractionator_wide.csv")
+
+#### 9.3 Hemisphere provenance: cell_counts_isotropic_fractionator_flags.csv (written on every run)
+## One row per SERVED value that is a both-hemisphere estimate, in the format of
+## __merging_volumes/volumes_flags.csv (Species, Variable, flag, detail). Species and Variable
+## are those of cell_counts_isotropic_fractionator_long.csv, so the file joins to it directly.
+##   estimated_bilateral_from_unilateral  2x one measured hemisphere, doubled by THIS merge
+##                                        (sec 3.5 from laterality_known.csv; sec 3.4c)
+##   published_bilateral_estimate         2x one hemisphere, doubled by the SOURCE and used as
+##                                        published (laterality_known.csv, doubling = by_source)
+## Provenance, never a veto: no value is removed here. A value is flagged only where the item
+## that made the estimate is the one the merge serves for that Species x Variable (sec 8); the
+## guard stops the merge unless every flagged value is exactly 2x the _unilateral value served
+## beside it. Values DERIVED from an estimate (a density over a doubled mass) are not flagged:
+## the flag marks the estimate itself.
+long_key <- paste(cell_counts_isotropic_fractionator_long$Species, cell_counts_isotropic_fractionator_long$Variable, sep = "\r")
+cell_counts_isotropic_fractionator_flags <- data.frame(Species = character(0), Variable = character(0),
+                                                       flag = character(0), detail = character(0),
+                                                       stringsAsFactors = FALSE)
+if (nrow(laterality_estimates)) {
+  est <- unique(laterality_estimates)
+  est$Species <- source_species_ids$Species_Name[match(paste(est$Source, est$Species_Name_Source, sep = "\r"),
+                                                       paste(source_species_ids$Source_Species,
+                                                             source_species_ids$Species_Name_Source, sep = "\r"))]
+  if (anyNA(est$Species))
+    stop("9.3: a both-hemisphere estimate names a species its item does not hold: ",
+         paste(unique(paste(est$Source, est$Species_Name_Source)[is.na(est$Species)]), collapse = "; "),
+         call. = FALSE)
+  served <- match(paste(est$Species, est$Variable, sep = "\r"), long_key)
+  est <- est[!is.na(served) & cell_counts_isotropic_fractionator_long$Source[served] == est$Source, , drop = FALSE]
+  if (nrow(est)) {
+    both_sides <- cell_counts_isotropic_fractionator_long$Value[match(paste(est$Species, est$Variable, sep = "\r"), long_key)]
+    one_side   <- cell_counts_isotropic_fractionator_long$Value[match(paste(est$Species, est$unilateral, sep = "\r"), long_key)]
+    not_double <- is.na(one_side) | !(abs(both_sides - 2 * one_side) <= 1e-9 * abs(both_sides))
+    if (any(not_double))
+      stop("9.3: served value(s) recorded as a both-hemisphere estimate are not 2x the one-side ",
+           "value served beside them: ",
+           paste(sprintf("%s %s", est$Species[not_double], est$Variable[not_double]), collapse = "; "),
+           call. = FALSE)
+    cell_counts_isotropic_fractionator_flags <- rbind(cell_counts_isotropic_fractionator_flags, data.frame(
+      Species = est$Species, Variable = est$Variable, flag = "estimated_bilateral_from_unilateral",
+      detail = paste0("both-hemisphere estimated as 2x ", est$unilateral, " (only one side measured)"),
+      stringsAsFactors = FALSE))
+    rm(both_sides, one_side, not_double)
+  }
+  rm(est, served)
+}
+if (nrow(laterality_by_source)) {
+  pub <- merge(as.data.frame(cell_counts_isotropic_fractionator_long[, c("Species", "Variable", "Source")]),
+               laterality_by_source, by.x = c("Source", "Variable"), by.y = c("Reference", "Standardized_Term"))
+  if (nrow(pub))
+    cell_counts_isotropic_fractionator_flags <- rbind(cell_counts_isotropic_fractionator_flags, data.frame(
+      Species = pub$Species, Variable = pub$Variable, flag = "published_bilateral_estimate",
+      detail = paste0("published value is 2x one hemisphere, doubled by the source (not by ",
+                      "this merge): ", pub$Source, " -- see laterality_known.csv"),
+      stringsAsFactors = FALSE))
+  rm(pub)
+}
+cell_counts_isotropic_fractionator_flags <- cell_counts_isotropic_fractionator_flags[
+  order(cell_counts_isotropic_fractionator_flags$Species, cell_counts_isotropic_fractionator_flags$Variable,
+        method = "radix"), , drop = FALSE]
+write_csv(cell_counts_isotropic_fractionator_flags, "cell_counts_isotropic_fractionator_flags.csv")
+rm(long_key)
 
 # Validate the draft ontology pilot against current rule tables and merge outputs.
 # This writes a QA alignment report; draft decisions do not alter selected values.

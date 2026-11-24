@@ -933,3 +933,76 @@ Olfactory bulb O/mg SD,Sarko_etal_2009_Table2,OlfactoryBulb_O.p.mg_SD
 Olfactory bulb O/N,Sarko_etal_2009_Table2,OlfactoryBulb_O.p.N
 Olfactory bulb O/N SD,Sarko_etal_2009_Table2,OlfactoryBulb_O.p.N_SD
 Olfactory bulb Source,Sarko_etal_2009_Table2,OlfactoryBulb_Source
+Species,Seelke_etal_2014_Table3,Species
+n_animals,Seelke_etal_2014_Table3,Sample_n
+SampleInfo,Seelke_etal_2014_Table3,SampleInfo
+Whole neocortex weight_g,Seelke_etal_2014_Table3,Neocortex_unilateral_Mass.g
+Whole neocortex weight_g_pm,Seelke_etal_2014_Table3,Neocortex_unilateral_Mass.g_pm
+V1 weight_g,Seelke_etal_2014_Table3,V1_unilateral_Mass.g
+V1 weight_g_pm,Seelke_etal_2014_Table3,V1_unilateral_Mass.g_pm
+S1 weight_g,Seelke_etal_2014_Table3,S1_unilateral_Mass.g
+S1 weight_g_pm,Seelke_etal_2014_Table3,S1_unilateral_Mass.g_pm
+A1 weight_g,Seelke_etal_2014_Table3,A1_unilateral_Mass.g
+A1 weight_g_pm,Seelke_etal_2014_Table3,A1_unilateral_Mass.g_pm
+Species,Seelke_etal_2014_Table4,Species
+n_animals,Seelke_etal_2014_Table4,Sample_n
+SampleInfo,Seelke_etal_2014_Table4,SampleInfo
+Whole neocortex cells_millions,Seelke_etal_2014_Table4,Neocortex_unilateral_C.n
+Whole neocortex cells_millions_pm,Seelke_etal_2014_Table4,Neocortex_unilateral_C.n_pm
+Whole neocortex pct_neurons,Seelke_etal_2014_Table4,Neocortex_p.C.N
+Whole neocortex pct_neurons_pm,Seelke_etal_2014_Table4,Neocortex_p.C.N_pm
+Whole neocortex neurons_millions,Seelke_etal_2014_Table4,Neocortex_unilateral_N.n
+Whole neocortex neurons_millions_pm,Seelke_etal_2014_Table4,Neocortex_unilateral_N.n_pm
+Whole neocortex non_neurons_millions,Seelke_etal_2014_Table4,Neocortex_unilateral_O.n
+Whole neocortex non_neurons_millions_pm,Seelke_etal_2014_Table4,Neocortex_unilateral_O.n_pm
+V1 cells_millions,Seelke_etal_2014_Table4,V1_unilateral_C.n
+V1 cells_millions_pm,Seelke_etal_2014_Table4,V1_unilateral_C.n_pm
+V1 pct_neurons,Seelke_etal_2014_Table4,V1_p.C.N
+V1 pct_neurons_pm,Seelke_etal_2014_Table4,V1_p.C.N_pm
+V1 neurons_millions,Seelke_etal_2014_Table4,V1_unilateral_N.n
+V1 neurons_millions_pm,Seelke_etal_2014_Table4,V1_unilateral_N.n_pm
+V1 non_neurons_millions,Seelke_etal_2014_Table4,V1_unilateral_O.n
+V1 non_neurons_millions_pm,Seelke_etal_2014_Table4,V1_unilateral_O.n_pm
+S1 cells_millions,Seelke_etal_2014_Table4,S1_unilateral_C.n
+S1 cells_millions_pm,Seelke_etal_2014_Table4,S1_unilateral_C.n_pm
+S1 pct_neurons,Seelke_etal_2014_Table4,S1_p.C.N
+S1 pct_neurons_pm,Seelke_etal_2014_Table4,S1_p.C.N_pm
+S1 neurons_millions,Seelke_etal_2014_Table4,S1_unilateral_N.n
+S1 neurons_millions_pm,Seelke_etal_2014_Table4,S1_unilateral_N.n_pm
+S1 non_neurons_millions,Seelke_etal_2014_Table4,S1_unilateral_O.n
+S1 non_neurons_millions_pm,Seelke_etal_2014_Table4,S1_unilateral_O.n_pm
+A1 cells_millions,Seelke_etal_2014_Table4,A1_unilateral_C.n
+A1 cells_millions_pm,Seelke_etal_2014_Table4,A1_unilateral_C.n_pm
+A1 pct_neurons,Seelke_etal_2014_Table4,A1_p.C.N
+A1 pct_neurons_pm,Seelke_etal_2014_Table4,A1_p.C.N_pm
+A1 neurons_millions,Seelke_etal_2014_Table4,A1_unilateral_N.n
+A1 neurons_millions_pm,Seelke_etal_2014_Table4,A1_unilateral_N.n_pm
+A1 non_neurons_millions,Seelke_etal_2014_Table4,A1_unilateral_O.n
+A1 non_neurons_millions_pm,Seelke_etal_2014_Table4,A1_unilateral_O.n_pm
+Species,Seelke_etal_2014_Table5,Species
+n_animals,Seelke_etal_2014_Table5,Sample_n
+SampleInfo,Seelke_etal_2014_Table5,SampleInfo
+Whole neocortex cells_per_g_millions,Seelke_etal_2014_Table5,Neocortex_C.p.mg
+Whole neocortex cells_per_g_millions_pm,Seelke_etal_2014_Table5,Neocortex_C.p.mg_pm
+Whole neocortex neurons_per_g_millions,Seelke_etal_2014_Table5,Neocortex_N.p.mg
+Whole neocortex neurons_per_g_millions_pm,Seelke_etal_2014_Table5,Neocortex_N.p.mg_pm
+Whole neocortex non_neurons_per_g_millions,Seelke_etal_2014_Table5,Neocortex_O.p.mg
+Whole neocortex non_neurons_per_g_millions_pm,Seelke_etal_2014_Table5,Neocortex_O.p.mg_pm
+V1 cells_per_g_millions,Seelke_etal_2014_Table5,V1_C.p.mg
+V1 cells_per_g_millions_pm,Seelke_etal_2014_Table5,V1_C.p.mg_pm
+V1 neurons_per_g_millions,Seelke_etal_2014_Table5,V1_N.p.mg
+V1 neurons_per_g_millions_pm,Seelke_etal_2014_Table5,V1_N.p.mg_pm
+V1 non_neurons_per_g_millions,Seelke_etal_2014_Table5,V1_O.p.mg
+V1 non_neurons_per_g_millions_pm,Seelke_etal_2014_Table5,V1_O.p.mg_pm
+S1 cells_per_g_millions,Seelke_etal_2014_Table5,S1_C.p.mg
+S1 cells_per_g_millions_pm,Seelke_etal_2014_Table5,S1_C.p.mg_pm
+S1 neurons_per_g_millions,Seelke_etal_2014_Table5,S1_N.p.mg
+S1 neurons_per_g_millions_pm,Seelke_etal_2014_Table5,S1_N.p.mg_pm
+S1 non_neurons_per_g_millions,Seelke_etal_2014_Table5,S1_O.p.mg
+S1 non_neurons_per_g_millions_pm,Seelke_etal_2014_Table5,S1_O.p.mg_pm
+A1 cells_per_g_millions,Seelke_etal_2014_Table5,A1_C.p.mg
+A1 cells_per_g_millions_pm,Seelke_etal_2014_Table5,A1_C.p.mg_pm
+A1 neurons_per_g_millions,Seelke_etal_2014_Table5,A1_N.p.mg
+A1 neurons_per_g_millions_pm,Seelke_etal_2014_Table5,A1_N.p.mg_pm
+A1 non_neurons_per_g_millions,Seelke_etal_2014_Table5,A1_O.p.mg
+A1 non_neurons_per_g_millions_pm,Seelke_etal_2014_Table5,A1_O.p.mg_pm

@@ -12,7 +12,14 @@ Pipeline for compiling the comparative brain cell-count dataset.
 2. **Compile cell counts** — `cell_counts_isotropic_fractionator_compiled.R`
    - Merges, filters, and calculates variables across datasets.
    - Inputs: `__Public/comparative-data/*.tsv`, `__ReadMe.xlsx`, `standardized_term_cell_counts_isotropic_fractionator.csv`.
-   - Outputs: `cell_counts_isotropic_fractionator_long.csv`, `cell_counts_isotropic_fractionator_wide.csv`.
+   - Label definitions (hand-written, read by `_keys/build_variable_definitions.R`, not by the
+     merge): `cell_counts_isotropic_fractionator_label_definitions.csv` — one row per label whose
+     meaning the label alone does not carry (today the 52 opossum labels and the raccoon's
+     one-hemisphere hippocampus mass).
+   - Hemisphere register (hand-written, read by the merge): `laterality_known.csv` — the columns
+     that were measured on one side. See **Hemispheres** below.
+   - Outputs: `cell_counts_isotropic_fractionator_long.csv`, `cell_counts_isotropic_fractionator_wide.csv`,
+     `cell_counts_isotropic_fractionator_flags.csv` (which served values are both-hemisphere estimates).
    - Checks: `cell_counts_isotropic_fractionator_unfiltered.csv`; `cell_counts_isotropic_fractionator_conflictcheck.R`.
    - Species names: `cell_counts_isotropic_fractionator_source_species_ids.csv`.
    - Flagged datasets: `*_metadata_flags.csv`.
@@ -26,7 +33,107 @@ Pipeline for compiling the comparative brain cell-count dataset.
 3. Put its DOI-coded table in `__Public/comparative-data/<Item encoded>.tsv`.
 4. Re-run `standardized_term.R`, then `cell_counts_isotropic_fractionator_compiled.R`.
 
-Most recent addition: `AvelinodeSouza_etal_2025_TABLE1` (*Balaenoptera acutorostrata*, the minke whale).
+Most recent addition: `Seelke_etal_2014_Table3`, `_Table4`, `_Table5` (*Monodelphis domestica*, the
+short-tailed opossum; 2026-11-23) — the first per-area items, a third team, and the first source
+to go through the hemisphere rule. See the next two sections.
+
+## Hemispheres (the merge's rule, 2026-11-23)
+
+Owner, 2026-11-23: *"serve both hemisphere in the comparison but make it clear it is doubled; and
+also offer single. There are many cases where a hemisphere is doubled, we should just always do it
+the same way unless there is a specific note that it is a different kind of value."* It is the
+convention `__merging_volumes` already uses, with the same file format, flags and wording.
+
+- **A weight, volume or number of cells measured in one hemisphere is served twice.**
+  `<Structure>_<code>` is the both-hemisphere estimate, 2 × the printed value, doubled by this
+  merge (step 3.5). `<Structure>_unilateral_<code>` is the printed value, one hemisphere, as
+  measured (`_left_` / `_right_` where the source states the side).
+- **Densities, percentages and ratios are never doubled**: they are the same for one hemisphere as
+  for both. They have one plain label; its definition says the measurement was made in one
+  hemisphere. Values the merge derives (`_O.p.N`, step 3.7; ratios and densities, step 9.1) are
+  computed on the plain labels only, so no `_unilateral_` ratio or density is created, and a
+  ratio is the same whichever basis it is computed on.
+- **The register** is `laterality_known.csv`, in the format of `__merging_volumes/laterality_known.csv`
+  (`Reference, Original_Term, side, doubling, required_suffix, note`), one row per one-side column:
+  - `doubling = none` — the table prints one side, undoubled. The column's standardized term must
+    carry the suffix immediately before the code; the merge builds the 2× partner and marks it
+    `estimated_bilateral_from_unilateral`.
+  - `doubling = by_source` — the table prints a value its authors already doubled. The term must
+    not carry a suffix; the value is used as published, **never doubled again**, and marked
+    `published_bilateral_estimate`.
+  The merge **stops** (section 2 guard) if a registered column is unmapped, is not a weight, volume
+  or count, is suffixed when it must not be or unsuffixed when it must be, or if any live term
+  carries a laterality suffix without being registered. Doubling is fill-only: it never replaces a
+  value the same table already holds under the plain label.
+- **The marks** are in `cell_counts_isotropic_fractionator_flags.csv` (`Species, Variable, flag,
+  detail`; written by step 9.3 on every run; `Species` and `Variable` exactly as in
+  `cell_counts_isotropic_fractionator_long.csv`). A row is written only where the estimate is the
+  value actually served. Step 9.3 stops if a flagged value is not exactly 2 × its `_unilateral_`
+  partner. A value *derived from* an estimate (the raccoon's `Hippocampus_O.p.mg`) is not flagged.
+- **One cell-level case, not in the register:** Jardim-Messeder et al. 2017 Table 1 prints both-
+  hemisphere hippocampus masses for seven species and a one-hemisphere mass for *Procyon lotor*
+  (Corrections, 2026-09). That is one cell of a column, so it stays in step 3.4c — which now treats
+  it the same way: `Hippocampus_Mass.g` = 0.954 (unchanged, now flagged) and
+  `Hippocampus_unilateral_Mass.g` = 0.477 as printed, for the raccoon only.
+- **Unless a note says it is a different kind of value.** A value that is not "one hemisphere of a
+  bilateral structure" (a sample, a piece, one animal's side chosen for a reason) is not registered
+  and not doubled; say so in the item's `source_methods.csv` row and its label definition.
+- Today: 16 registered columns (Seelke et al. 2014 Tables 3 and 4), 17 flagged values (16 opossum,
+  1 raccoon).
+- **Known and not yet registered:** Herculano-Houzel et al. 2020 (bats). Methods, section 2.1: for
+  every species except *Chaerephon pumilus* only one hemisphere was available and "data are
+  necessarily expressed as twice the numbers obtained for the available hemisphere" (Table 1
+  marks them "(1H each)", kept in `SampleInfo`). Under the rule these are `by_source` values
+  (`published_bilateral_estimate`), but the register is per column and here one species of the
+  column is a true both-hemisphere value, so it needs the same cell-level handling as the raccoon.
+  Not done on 2026-11-23: no value would change, only flags would be added.
+
+## Per-area items and the Krubitzer team (2026-11-23)
+
+Seelke, Dooley & Krubitzer 2014 measured one species, *Monodelphis domestica*, by isotropic
+fractionation: the neocortex of one hemisphere kept intact, and V1, S1, A1 and the remaining
+cortex dissected from the other. The owner's decisions of 2026-11-23 on how these enter the merge
+are recorded in `WIRING_into_cell_counts_isotropic_fractionator.md`. What the script does:
+
+- **Structures** (step 1.7). The three public TSVs are long by area; each becomes one row.
+  "Whole neocortex" is served as `Neocortex_`, and `V1_`, `S1_`, `A1_` as their own regions.
+  The "Σ neocortex" and "Rem Ctx" rows and Table 3's "% of Σ neocortex" are held: they stay in the
+  public TSVs and do not enter the merge. Guard: the six printed areas, one species, n = 5.
+- **Units** (step 3.4n). `_C.n`, `_N.n`, `_O.n` = printed millions × 10⁶. `_C.p.mg`, `_N.p.mg`,
+  `_O.p.mg` = printed millions per gram × 10⁶ ÷ 1000. `_Mass.g` and `_p.C.N` are as printed.
+  `_C.p.mg` (cells per mg) is a new code; it is not in the step 3.7 derivations, so no other
+  species gains a value. Guard: the columns must still be in the printed units.
+- **Hemisphere** (register + step 3.5; rule in **Hemispheres** above). Every weight and count in
+  these tables is one hemisphere. The 16 of them (4 structures × `Mass.g`, `C.n`, `N.n`, `O.n`)
+  are served twice: `Neocortex_Mass.g` = 0.146 g is 2 × the printed 0.073 g, flagged as an
+  estimate; `Neocortex_unilateral_Mass.g` = 0.073 g is the printed value. The 20 densities,
+  percentages and ratios are served once and never doubled. The paper's own both-hemisphere
+  figures (Discussion: 0.15 g, about 6 million cells) are rounded text values and are not served.
+- **Derived** (step 3.7, the merge's standing rule). `_O.p.N` = `_O.n` ÷ `_N.n` inside Table 4.
+  It is a ratio of the group means (the same from the printed or the doubled numbers) and is not
+  printed in the paper; the printed `_p.C.N` is kept as printed, and the two need not agree (whole
+  neocortex: 25.6% neurons printed; 0.80 / (0.80 + 2.22) = 26.5% from the two printed counts).
+- **Dispersion.** Group means of 5 animals. The printed ± is not labelled in the tables (figure
+  captions: SEM); it is carried as `_pm`, converted with its mean, annexed in step 6 with `_SD`
+  and `_n`, and kept in the unfiltered table. It belongs to the measured value
+  (`<Structure>_unilateral_<code>_pm`); the 2× estimate has none. It is not presented as SD.
+- **Team** (steps 7, 8.1–8.3.S, 9.2). The Seelke items are removed from the "not Kverkova" block,
+  so the Herculano-Houzel worth order, pins and demotions are untouched, and are resolved as a
+  team of their own (`Krubitzer`). Step 9.2 stops the merge if this team and another ever hold
+  the same species × variable: nothing here can change, or be averaged with, a served value.
+- **Not joined to the weights merge.** `Neocortex_Mass.g` is not joined to the `Neocortex_Mass (g)`
+  of `__merging_weights` (no `_keys/variable_canonical.csv` row). Open item: it is now a
+  both-hemisphere estimate, so the join is possible, but the estimate flag would have to follow
+  the value into the joined label first; and the tissue was weighed after perfusion fixation.
+- **Effect** (against a run of the previous script on the same inputs, same machine).
+  `cell_counts_isotropic_fractionator_long` 3,994 → 4,047 rows, 86 → 87 species, 208 → 261
+  variables: 53 new rows — 52 *Monodelphis domestica* (16 estimates, 16 as measured, 20 densities,
+  percentages and ratios) and the raccoon's `Hippocampus_unilateral_Mass.g`; every other row
+  identical. `_unfiltered` +101 rows (93 from the three items, appended; 8 for the new
+  Jardim-Messeder column, 7 of them empty). `_wide` +1 row, +53 columns. `_species_resolution`
+  +3 rows. `_flags` is new: 17 rows. No existing value, source or row order changed.
+  `__compiled/compiled_long.csv.gz` (the table the apps read): +53 rows under `Cell counts`, each
+  classified (`cellular_composition` 44, `structure_mass` 9).
 
 ## Corrections
 
@@ -122,6 +229,9 @@ Most recent addition: `AvelinodeSouza_etal_2025_TABLE1` (*Balaenoptera acutorost
   The frozen source snapshot is deliberately **not** edited — it is the record of what the paper
   printed, and 0.477 is confirmed verbatim from the PDF (Table 1, p. 6). Step 3.4c carries a guard
   that stops the run if the printed value is no longer 0.477 or the row is missing.
+  *(2026-11-23: under the merge's hemisphere rule the 0.954 is now marked as a both-hemisphere
+  estimate in `cell_counts_isotropic_fractionator_flags.csv`, and the printed 0.477 is also served,
+  as `Hippocampus_unilateral_Mass.g`. The value 0.954 itself is unchanged. See **Hemispheres**.)*
   **Cross-confirmed against Jacob et al. 2021 (same species, same method), not author-confirmed.**
   The Jardim-Messeder team has not been asked; revise if they supply the underlying mass or confirm
   the hemisphere basis. **Separately unresolved:** this raccoon's `CerebralCortex` fails the same density

@@ -190,6 +190,48 @@ subspecies_key <- local({
              stringsAsFactors = FALSE)
 })
 
+# Hemispheres (_keys/hemisphere_basis.csv; owner rule of 2026-11-23): where one
+# hemisphere was measured, the plain label serves the both-hemisphere value
+# (2 x the measured one) and says so in the Hemispheres column; the measured
+# value is served under the label with a one-side suffix. Each dataset named in
+# the key has a flags file written by its merge (Species, Variable, flag,
+# detail); the two flags below are the ones that mark a doubled value.
+hemi_key <- read_csv_gh("_keys/hemisphere_basis.csv", file.path(data_dir, "hemisphere_basis.csv"))
+if (!all(c("dataset", "flags_file", "one_side_suffixes") %in% names(hemi_key)))
+  stop("_keys/hemisphere_basis.csv must have columns: dataset, flags_file, one_side_suffixes.", call. = FALSE)
+for (cl in c("dataset", "flags_file", "one_side_suffixes")) hemi_key[[cl]] <- trimws(as.character(hemi_key[[cl]]))
+if (anyDuplicated(hemi_key$dataset)) stop("_keys/hemisphere_basis.csv names a dataset twice.", call. = FALSE)
+HEMI_ONE  <- "one hemisphere (as measured)"
+HEMI_MEAN <- "mean of sources, one of them 2 x one hemisphere (doubled by that source)"
+HEMI_FLAG <- c(estimated_bilateral_from_unilateral = "2 x one hemisphere (doubled by this project)",
+               published_bilateral_estimate        = "2 x one hemisphere (doubled by the source)")
+hemisphere_basis <- function(out) {
+  res <- rep("", nrow(out))
+  for (i in seq_len(nrow(hemi_key))) {
+    ds <- hemi_key$dataset[i]; rows <- out$Dataset == ds
+    if (!any(rows)) stop("_keys/hemisphere_basis.csv row ", i, ": no dataset is labelled '", ds, "'.", call. = FALSE)
+    suf <- trimws(strsplit(hemi_key$one_side_suffixes[i], ";", fixed = TRUE)[[1]]); suf <- suf[nzchar(suf)]
+    one <- if (length(suf)) rows & grepl(paste0("_(", paste(suf, collapse = "|"), ")_[^_]+$"), out$Variable_raw) else rep(FALSE, nrow(out))
+    res[one] <- HEMI_ONE
+    fl <- read_csv_gh(hemi_key$flags_file[i])
+    if (!all(c("Species", "Variable", "flag", "detail") %in% names(fl)))
+      stop(hemi_key$flags_file[i], " must have columns: Species, Variable, flag, detail.", call. = FALSE)
+    fl <- fl[fl$flag %in% names(HEMI_FLAG), , drop = FALSE]
+    fk <- paste(fl$Species, fl$Variable, sep = "\r")
+    if (anyDuplicated(fk)) stop(hemi_key$flags_file[i], ": a value is flagged twice for its hemispheres.", call. = FALSE)
+    k <- match(paste(out$Species, out$Variable_raw, sep = "\r"), fk); hit <- rows & !is.na(k)
+    if (any(hit & one))
+      stop(hemi_key$flags_file[i], ": a one-side label is also flagged as doubled: ",
+           paste(unique(out$Variable_raw[hit & one]), collapse = "; "), call. = FALSE)
+    txt <- unname(HEMI_FLAG[fl$flag[k[hit]]])
+    txt[fl$flag[k[hit]] == "published_bilateral_estimate" & grepl("^a contributing source", fl$detail[k[hit]])] <- HEMI_MEAN
+    res[hit] <- txt
+    message("hemispheres, ", ds, ": ", sum(hit), " doubled value(s) marked (", nrow(fl) - length(unique(k[hit])),
+            " flagged value(s) not served), ", sum(one), " one-side value(s)")
+  }
+  res
+}
+
 # ---- Load & harmonize compiled data (moved from app.R) -----------------------
 
 load_compiled <- function() {
@@ -626,6 +668,9 @@ load_compiled <- function() {
   out$Value[social_rows] <- ifelse(is.na(decoded), social_values, decoded)
   out$Value_num[social_rows] <- NA_real_
   out <- out[!is.na(out$Value) & nzchar(out$Value), ]
+  # Hemispheres: marked on the merge's own species name and label, so before
+  # the subspecies rule renames anything.
+  out$Hemispheres <- hemisphere_basis(out)
   # Subspecies: the value is served under the species; the name it was filed
   # under stays in the Subspecies column. Done before label precedence, so
   # precedence is decided at species rank.
@@ -733,8 +778,9 @@ COLS <- c(Species = "character", Dataset = "character", Variable = "character",
           Items = "character", Source_details = "character", Teams = "character",
           N_sources = "integer", Variable_raw = "character", Unit = "character",
           Unit_raw = "character", population_verdict = "character",
-          domain = "character", measure_class = "character", Subspecies = "character")
-compiled <- compiled[c(setdiff(names(compiled), "Subspecies"), "Subspecies")]
+          domain = "character", measure_class = "character", Subspecies = "character",
+          Hemispheres = "character")
+compiled <- compiled[c(setdiff(names(compiled), c("Subspecies", "Hemispheres")), "Subspecies", "Hemispheres")]
 if (!identical(names(compiled), names(COLS)))
   stop("The loader produced columns [", paste(names(compiled), collapse = ", "),
        "]; expected [", paste(names(COLS), collapse = ", "), "].", call. = FALSE)

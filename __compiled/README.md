@@ -15,7 +15,8 @@ the one exception; see its README).
 
 The 14 columns the app's `compiled` table has, in its order: `Species`, `Dataset`, `Variable`,
 `Value`, `Value_num`, `Source`, `Items`, `Source_details`, `Teams`, `N_sources`, `Variable_raw`,
-`Unit`, `Unit_raw`, `population_verdict`. Then two category columns and one name column:
+`Unit`, `Unit_raw`, `population_verdict`. Then two category columns, one name column and one
+note column:
 
 - `domain` and `measure_class`: the two tiers of the app's variable picker, from
   `_keys/variable_definitions.csv`. A label with no row there is `Unclassified`; a blank class is
@@ -23,6 +24,11 @@ The 14 columns the app's `compiled` table has, in its order: `Species`, `Dataset
 - `Subspecies`: empty, or the subspecies name the value was filed under by its merge. `Species`
   then holds the species (`_keys/species_pooling.csv`, `axis = subspecies`; rule in
   `_keys/README_species_pooling.md`).
+- `Hemispheres`: empty, or how the value relates to the hemispheres measured:
+  `2 x one hemisphere (doubled by this project)`, `2 x one hemisphere (doubled by the source)`,
+  `mean of sources, one of them 2 x one hemisphere (doubled by that source)`, or
+  `one hemisphere (as measured)` for the label with a one-side suffix. Filled from each merge's flags
+  file as listed in `_keys/hemisphere_basis.csv`; rule in `_keys/README_hemisphere_basis.md`.
 
 `Dataset` names the merge a row came from (28 values). Missing cells are `NA`; text is always
 quoted, so an empty string stays distinct from missing. Rows are ordered by `Species`, then
@@ -34,9 +40,10 @@ The feeds listed in `_keys/app_feeds.csv` (rows with `evo_m1_app = TRUE`): that 
 builder's input list. To add, move or drop a merge output, edit its row there and, for a new kind
 of table, add its loader in `build_compiled.R`. A feed the builder loads that has no row, or whose
 file is missing or unreadable, stops the build and names the feed. The builder also reads
-`__merging_brain_mass/brain_mass_unfiltered.csv` and six keys (`variable_canonical.csv`,
+`__merging_brain_mass/brain_mass_unfiltered.csv`, seven keys (`variable_canonical.csv`,
 `species_display_aliases.csv`, `species_pooling.csv`, `population_status.csv`,
-`variable_definitions.csv`, `label_precedence.csv`), and sources `__ShinyApp/explorer.R` for `brain_mass_items()`.
+`variable_definitions.csv`, `label_precedence.csv`, `hemisphere_basis.csv`) and the flags files the
+last one lists, and sources `__ShinyApp/explorer.R` for `brain_mass_items()`.
 
 ## One value per label and species
 

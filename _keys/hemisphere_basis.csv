@@ -1,0 +1,3 @@
+dataset,flags_file,one_side_suffixes,note
+Brain-structure volumes,__merging_volumes/volumes_flags.csv,unilateral;left;right,"Register: __merging_volumes/laterality_known.csv; rule: _keys/README_hemisphere_basis.md"
+Cell counts,__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fractionator_flags.csv,unilateral;left;right,"Register: __merging_cell_counts_isotropic_fractionator/laterality_known.csv; rule: _keys/README_hemisphere_basis.md"

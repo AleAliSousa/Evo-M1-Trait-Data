@@ -1,0 +1,17 @@
+Reference,Original_Term,side,doubling,required_suffix,note
+Seelke_etal_2014_Table3,Whole neocortex weight_g,unilateral,none,_unilateral,"Seelke, Dooley & Krubitzer 2014 Methods (Tissue dissection): ""one neocortical hemisphere was kept intact and the other neocortical hemisphere was dissected into primary sensory fields""; Results: ""One intact neocortical hemisphere contained 3.03 +/- 0.21 million cells"". The paper does not say which side. The table prints the measured one-hemisphere weights UNDOUBLED; the 2x under the plain label is done by this project in step 3.5 (estimated_bilateral_from_unilateral). Original_Term is the column name step 1.7 builds: ""<area as printed> <TSV column>""."
+Seelke_etal_2014_Table3,V1 weight_g,unilateral,none,_unilateral,"V1, S1 and A1 were dissected from the hemisphere that was not kept intact (one hemisphere each, side not stated); printed UNDOUBLED."
+Seelke_etal_2014_Table3,S1 weight_g,unilateral,none,_unilateral,
+Seelke_etal_2014_Table3,A1 weight_g,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,Whole neocortex cells_millions,unilateral,none,_unilateral,"Same intact hemisphere as Seelke_etal_2014_Table3 ""Whole neocortex weight_g""; printed one-hemisphere cell, neuron and non-neuron numbers, UNDOUBLED."
+Seelke_etal_2014_Table4,Whole neocortex neurons_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,Whole neocortex non_neurons_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,V1 cells_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,V1 neurons_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,V1 non_neurons_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,S1 cells_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,S1 neurons_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,S1 non_neurons_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,A1 cells_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,A1 neurons_millions,unilateral,none,_unilateral,
+Seelke_etal_2014_Table4,A1 non_neurons_millions,unilateral,none,_unilateral,

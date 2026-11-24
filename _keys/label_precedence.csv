@@ -4,3 +4,37 @@ Gestation (days),Life history,Additional published datasets,owner,2026-11-23,"Wh
 Litter_size (count),Life history,Additional published datasets,owner,2026-11-23,"Where both serve this label for a species, the life-history merge is served and the supplementary value is not. Species only the supplementary merge has keep its value."
 Maximum_longevity (yr),Life history,Additional published datasets,owner,2026-11-23,"Where both serve this label for a species, the life-history merge is served and the supplementary value is not. Species only the supplementary merge has keep its value."
 Weaning_age (days),Life history,Additional published datasets,owner,2026-11-23,"Where both serve this label for a species, the life-history merge is served and the supplementary value is not. Species only the supplementary merge has keep its value."
+Head_body_length (mm),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Interbirth_interval (days),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Litters_per_year (count/yr),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Male_sexual_maturity (days),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Neonate_body_mass (g),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Neonate_brain_mass (g),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Population_group_size (count),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Social_group_size (count),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Weaning_weight (g),Additional published datasets,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Handedness_index_mean (HI),Behaviour,Postcranial & limb function,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from this dataset."
+Handedness_strength_mean (abs(HI)),Behaviour,Postcranial & limb function,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from this dataset."
+BMR_wholeanimal (mL O2/h),Body,Additional published datasets,owner,2026-11-24,The body merge (several sources resolved) is served; the supplementary value is not. Species only the supplementary merge has keep its value.
+BMR_wholeanimal (mL O2/h),Body,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Body_Mass (g),Body,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Brain_Mass_measured (g),Brain mass,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Amygdala_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Cerebellum_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+EntorhinalCortex_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Hippocampus_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Hypothalamus_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Neocortex_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+OlfactoryCortices_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Septum_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Striatum_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Tectum_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Tegmentum_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Thalamus_Vol.mm3,Brain-structure volumes,Cell counts,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from the volumes merge."
+Female_sexual_maturity (days),Life history,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Gestation (days),Life history,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Maximum_longevity (yr),Life history,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Weaning_age (days),Life history,EvoM1 traits,owner,2026-11-24,The topical dataset is served; the trait-table value (Lewitus et al. 2014 table) is not. Species only the trait table has keep its value.
+Duty_Factor (percent),Postcranial & limb function,Behaviour,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from this dataset."
+Intermembral_index (ratio),Postcranial & limb function,Behaviour,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from this dataset."
+Phase (percent),Postcranial & limb function,Behaviour,owner,2026-11-24,"The two merges carry the same values for this label; it is served once, from this dataset."

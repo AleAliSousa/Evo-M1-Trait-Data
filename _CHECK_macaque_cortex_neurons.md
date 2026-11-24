@@ -92,8 +92,13 @@ deferred to later, should put every source on the table at once:
 
 **Anchors already in the dataset, to be read alongside:**
 
-- HH2015 Table 1 mulatta cortex rows (cite HH2007; resting on HH2007's SI
-  Table 2, still never fetched — the outstanding provenance gap).
+- HH2015 Table 1 mulatta cortex rows (cite HH2007). UPDATE 2026-11-24:
+  HH2007's SI Table 2 has since been fetched, and HH2015's mulatta structure
+  cells match it cell-for-cell (cortex 69.832 g, neurons 1.71 × 10^9, other
+  cells 5.27 × 10^9; the SI confirms n = 2, so HH2015 Table 5's n = 1 is the
+  deviant figure). The provenance question is closed — the value is HH2007's
+  own measurement; the cross-method disagreement above stands. Transcription
+  and cell-by-cell check: project working files `evom1-hh2007-si/`.
 - Gabi et al. 2010 (fascicularis 800,960,000 / 36.226 g; radiata 1.66B /
   48.274 g; printed counts are themselves 2× single-hemisphere).
 - Dos Santos et al. 2020 published Table 1 vs the unpublished workbook.

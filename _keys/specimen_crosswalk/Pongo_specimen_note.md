@@ -37,7 +37,15 @@ YN85-38 -> resolved_taxon = Pongo abelii
 The other printed individuals remain unresolved between Bornean and Sumatran
 unless independent public evidence establishes the modern species.
 
-### 2. Smaers 2011 prints the same YN85-38 identifier
+### 2. Semendeferi 1994 names the YN85-38 individual
+
+Semendeferi's 1994 dissertation, Chapter 3 specimen methods (printed p. 55;
+PDF p. 79), explicitly names **Kanting** with identifier **YN85-38**, male,
+and labels him *Pongo pygmaeus abelii*. This is an independent public source
+for the YN85-38–Kanting identity and Sumatran taxon. It does not publish or
+authorize any linkage to private catalog identifiers.
+
+### 3. Smaers 2011 prints the same YN85-38 identifier
 
 Smaers et al. 2011 Supplementary Table 1 prints the orangutan catalog label
 `yn85 38`. The shared identifier links this row to the MacLeod specimen without
@@ -49,14 +57,14 @@ This specimen supplies the total-frontal-grey value currently entering
 `volumes_compiled_select.R` under the broader output label `Pongo sp.`. The
 broad output label must not be mistaken for a genus mean.
 
-### 3. Smaers 2017 carries the public measurement forward
+### 4. Smaers 2017 carries the public measurement forward
 
 Smaers et al. 2017 carries forward the same individual-level frontal series.
 The `prefrontal_gray` value agrees with the corresponding Smaers 2011 section
 value at printed precision. The public crosswalk therefore links the 2017 row
 to YN85-38 through the published 2011 record.
 
-### 4. A genus-level or pooled value follows the opposite rule
+### 5. A genus-level or pooled value follows the opposite rule
 
 Zilles/Rehkämper 1988 prints a value as `Pongo sp.`. DeCasien later files that
 stream under modern `Pongo pygmaeus`. A genus-level or pre-split pooled value
@@ -102,6 +110,7 @@ boundary is recorded in
 ## Public sources
 
 - MacLeod (2000), dissertation, Appendix I.
+- Semendeferi (1994), dissertation, Chapter 3 specimen methods.
 - Smaers et al. (2011), Supplementary Tables 1 and 2.
 - Smaers et al. (2017), Table S1.
 - Zilles & Rehkämper (1988), Table 12-2.

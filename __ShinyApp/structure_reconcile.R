@@ -479,11 +479,19 @@ sr_candidates <- function(data, meta, canon = NULL) {
   groups <- split(ser, ser$group)
   groups <- groups[vapply(groups, nrow, integer(1)) >= 2]
   if (!length(groups)) return(data.frame())
-  # species means only for series that are in a candidate group (keeps the
-  # series x species matrix small enough for a free shinyapps.io instance)
+  # species means only for series that are in a candidate group, one named vector
+  # per series (species with data only). A series x species matrix built with
+  # tapply() over both factors needed more than the 1 GB of a shinyapps.io
+  # instance once the table held 10,000+ species (the apps were killed at start).
   in_grp <- unlist(lapply(groups, function(g) g$series), use.names = FALSE)
   st <- st[st$series %in% in_grp, , drop = FALSE]
-  means <- tapply(st$value_base, list(st$series, st$Species), mean)
+  means <- lapply(split(st[, c("Species", "value_base")], st$series),
+                  function(d) tapply(d$value_base, d$Species, mean))
+  pair_vals <- function(sa, sb) {
+    va <- means[[sa]]; vb <- means[[sb]]
+    sp <- sort(intersect(names(va), names(vb)))
+    list(na = sum(is.finite(va)), nb = sum(is.finite(vb)), a = unname(va[sp]), b = unname(vb[sp]))
+  }
   rows <- list()
   for (g in groups) {
     g <- g[order(g$series), , drop = FALSE]
@@ -493,8 +501,8 @@ sr_candidates <- function(data, meta, canon = NULL) {
       # Parallel variables of ONE merge (Brain_Mass_measured vs the selection
       # built from it) are not two sources; the same label from two datasets is.
       if (a$Dataset == b$Dataset && a$tag == b$tag && a$Variable != b$Variable) next
-      va <- means[a$series, ]; vb <- means[b$series, ]
-      na_ <- sum(is.finite(va)); nb_ <- sum(is.finite(vb))
+      pv <- pair_vals(a$series, b$series); va <- pv$a; vb <- pv$b
+      na_ <- pv$na; nb_ <- pv$nb
       ok <- is.finite(va) & is.finite(vb) & va > 0 & vb > 0
       r <- unname(vb[ok] / va[ok])
       rows[[length(rows) + 1L]] <- data.frame(

@@ -66,8 +66,18 @@ Ernest 2003 or Hayssen 1993, and agrees within 0.5 % with that source's value he
 data: it is no longer a party of its own (role `same_data`). Where it had been the only party
 that counted (the parties it copies cite Hayssen, whose own record for the species is not in this
 merge), the parties it copies count in its place (role `source_of_same_data`), so no value is lost.
-Of 24,759 Amniote records, 10,823 are the same data and 814 copy one of these
-sources but differ from it by more than 0.5 %: those stay parties and are listed for the owner.
+Of 24,759 Amniote records, 10,823 are the same data and 814 differ from every source they
+cite by more than 0.5 %. Since step 14 (owner, 24 November 2026) those are not parties either (role
+`differs_from_cited_sources`): a correction must be stated and cite a primary, and the Amniote
+database does neither; the sources they cite count.
+
+**Hayssen 1993 in the Amniote citations (step 14).** An Amniote record "cites Hayssen" only when its
+citation names the key `Hayssen, V.D. and A. Van Tienhoven, 1993` (Asdell's compendium; the owner
+confirmed the identity on 24 November 2026; key in `_keys/compilation_cited_sources.csv`). Until step
+14 any citation containing "Hayssen" counted, which took 567 records out of the median that cite
+Hayssen's later papers: 542 Hayssen 2008 (*J. Mammal.* 89: 582-606, reproductive effort in squirrels)
+and 25 *Mammalian Species* accounts (2009-2011). Those are now independent parties. 12 records cite
+the 1993 compendium.
 Every Amniote record and its status is in `life_history_same_data.csv`.
 
 ## Open items

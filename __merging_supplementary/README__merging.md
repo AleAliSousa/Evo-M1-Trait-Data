@@ -32,8 +32,10 @@ Owner's rule of 24 November 2026 (`_keys/README_same_data.md`). Before items are
 Amniote database value that comes, by the Amniote database's own per-cell derivation, only from
 items pooled here for the same species and label (PanTHERIA, AnAge), and agrees with their value
 within 0.5 %, is the same data and leaves the pool: it is counted once, from those items.
-Of 23,531 Amniote values, 5,122 are the same data and 319 differ from the source they copy
-by more than 0.5 % (they stay in the pool and are listed for the owner). Every Amniote value and
+Of 23,531 Amniote values, 5,122 are the same data and 319 differ from every source they
+cite by more than 0.5 %. Since step 14 (owner, 24 November 2026) those leave the pool too (status
+`differs_from_cited_sources`): a correction must be stated and cite a primary, and the Amniote
+database does neither. Every Amniote value and
 its status is in `supplementary_same_data.csv`.
 
 ## Decisions

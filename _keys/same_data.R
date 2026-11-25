@@ -10,10 +10,15 @@
 ##                                per-cell derivations (reference_tables/..._cell_references_part*.csv):
 ##                                the single source, the two sources of a mean, or the record(s)
 ##                                selected from a median pool. Each is mapped through the key.
+##   NOT_SERVED_STATUSES          the statuses whose copies are not served: "same_data", and (owner,
+##                                24 November 2026) "differs_from_cited_sources": a copy that differs
+##                                from every source it cites is not a correction unless the compilation
+##                                says so and cites a primary; the Amniote database does neither.
 ##   same_data_status(...)        per data point: "same_data" when every source of the value is an
 ##                                item that holds a value for the same species and measure in the
 ##                                merge and the values agree within 0.5 %; otherwise the reason.
 SAME_DATA_TOLERANCE <- 0.005
+NOT_SERVED_STATUSES <- c("same_data", "differs_from_cited_sources")
 
 same_data_key <- function(repo) {
   k <- read.csv(file.path(repo, "_keys", "compilation_cited_sources.csv"), colClasses = "character",
@@ -56,5 +61,5 @@ same_data_status <- function(all_in_database, any_in_database, value, expected) 
   ifelse(!any_in_database, "cites_sources_not_in_database",
   ifelse(!all_in_database, "partly_from_sources_not_in_database",
   ifelse(is.na(expected), "cited_source_has_no_value_here",
-  ifelse(rel <= SAME_DATA_TOLERANCE, "same_data", "same_sources_value_differs"))))
+  ifelse(rel <= SAME_DATA_TOLERANCE, "same_data", "differs_from_cited_sources"))))
 }

@@ -234,8 +234,9 @@ long1 <- do.call(rbind, out)
 # An Amniote database value that comes, by the Amniote database's own per-cell derivation, only from
 # sources whose items are pooled here for the same species and label (PanTHERIA, AnAge), and agrees
 # with their value within 0.5 %, is the same data: it is counted once, from those items, and leaves
-# the pool. Every Amniote value is listed with its status in supplementary_same_data.csv; a value
-# that differs from the source it copies stays in the pool and is listed for the owner.
+# the pool. Every Amniote value is listed with its status in supplementary_same_data.csv. A value that
+# differs from every source it cites leaves the pool too (owner, 24 November 2026: a correction must be
+# stated and cite a primary; status "differs_from_cited_sources"); the sources it cites stay.
 source(file.path(repo, "_keys", "same_data.R"))
 avs <- amniote_value_sources(repo)
 ii <- which(long1$team == "Myhrvold_etal_2015")
@@ -254,7 +255,7 @@ sd <- data.frame(Species = long1$Species[ii], species_printed = pr, Measure = lo
                  amniote_trait = long1$amniote_trait[ii], value = item_val[ii], cell_form = a$cell_form,
                  value_sources = a$value_sources, value_of_sources_here = expv,
                  status = same_data_status(a$all_in_database, a$any_in_database, item_val[ii], expv), stringsAsFactors = FALSE)
-if (length(ii) && any(sd$status == "same_data")) long1 <- long1[-ii[sd$status == "same_data"], , drop = FALSE]
+if (length(ii) && any(sd$status %in% NOT_SERVED_STATUSES)) long1 <- long1[-ii[sd$status %in% NOT_SERVED_STATUSES], , drop = FALSE]
 sd <- sd[order(sd$Measure, sd$Species), , drop = FALSE]
 sd_file <- file.path(here, "supplementary_same_data.csv")
 if (incremental && file.exists(sd_file)) {

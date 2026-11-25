@@ -33,8 +33,11 @@
 ## an Amniote database record whose value comes, by the Amniote database's own per-cell derivation, only
 ## from PanTHERIA, AnAge, Ernest 2003 or Hayssen 1993, and agrees within 0.5 % with that source's value
 ## here, is the same data: it is counted once, from the source, and is not a party of its own (role
-## "same_data"). Every Amniote record is listed with its status in life_history_same_data.csv; records
-## whose value differs from the source they copy stay parties and are listed for the owner.
+## "same_data"). Every Amniote record is listed with its status in life_history_same_data.csv. A record
+## whose value differs from every source it cites is not a party either (owner, 24 November 2026: a
+## correction must be stated and cite a primary; role "differs_from_cited_sources"); the sources count.
+## "Cites Hayssen" means the Amniote citation names Hayssen & Van Tienhoven 1993 (the key in
+## _keys/compilation_cited_sources.csv), not Hayssen's later papers (2008-2011).
 ## Conventions: input problems stop(); every count is printed; CSVs written with a UTF-8 BOM.
 ## =============================================================================
 options(stringsAsFactors = FALSE, scipen = 999, width = 200)
@@ -254,6 +257,11 @@ ern <- read_bom(file.path(pub, TSV["Ernest__2003"]), "\t")
 ern_rec <- wide_to_records(ern, "Ernest__2003", ern$Species_Ernest2003, ern$refs, has_key(ern$refs, HAYSSEN_KEY["Ernest__2003"], ";"), "unweighted mean across numbered sources (row-level reference list)", TSV["Ernest__2003"]) %>%
   mutate(cited_work_system = "Ernest 2003 reference number", population_status = NA_character_)
 ## Myhrvold 2015 Amniote database, Mammalia: already long; the reference string describes the derivation
+## Hayssen 1993 in the Amniote citations: the one key the owner confirmed (24 November 2026) as Asdell's compendium;
+## Hayssen's later papers (2008 squirrel reproductive effort; Mammalian Species accounts 2009-2011) are other works.
+HAYSSEN_1993_KEY <- local({ k <- read.csv(file.path(repo, "_keys", "compilation_cited_sources.csv"), colClasses = "character", encoding = "UTF-8")
+  k <- k$ref_key[k$compilation_paper == "Myhrvold_etal_2015" & k$cited_paper == "Hayssen_etal_1993"]
+  if (length(k) != 1L) stop("compilation_cited_sources.csv: expected one Hayssen 1993 key for Myhrvold_etal_2015", call. = FALSE); k })
 myh <- read_bom(file.path(pub, TSV["Myhrvold_etal_2015"]), "\t") %>% filter(class == "Mammalia")
 mm <- COMP_MAP %>% filter(dataset == "Myhrvold_etal_2015")
 myh <- myh %>% filter(trait %in% mm$source_column, value != "-999", value != "")
@@ -261,7 +269,7 @@ myh_rec <- myh %>% mutate(k = match(trait, mm$source_column)) %>% transmute(
   dataset = "Myhrvold_etal_2015", record_id = paste0("MYH:", row_number(), ":", trait), table_row = row_number(), species_printed = paste(genus, species), Measure = mm$Measure[k],
   Units = MEASURES$Units[match(Measure, MEASURES$Measure)], source_column = trait, value_printed = value, value_canonical = num(value) * mm$unit_scale[k],
   derivation = ifelse(mm$unit_scale[k] != 1, paste0(value, " x ", signif(mm$unit_scale[k], 6)), NA_character_), admitted = TRUE, admission_reason = "admitted",
-  cites_hayssen = str_detect(reference, fixed("Hayssen")), role = ifelse(cites_hayssen, "derived_from_root", "independent_compilation"),
+  cites_hayssen = str_detect(reference, fixed(HAYSSEN_1993_KEY)), role = ifelse(cites_hayssen, "derived_from_root", "independent_compilation"),
   cited_work = reference, cited_work_system = "Amniote database reference string (derivation)", compilation_statistic = "median/mean over sparse-table records (see reference string)",
   locator = paste0(TSV["Myhrvold_etal_2015"], " | class Mammalia | ", trait), population_status = NA_character_)
 ## ---- 2b. paper literature tables (the old Body & ecology life_history class) -------------------------
@@ -340,7 +348,8 @@ myh_sd$expected <- vapply(seq_len(nrow(myh_sd)), function(i) {
   v <- party_val$value[match(paste(myh_sd$Species[i], myh_sd$Measure[i], p, sep = "\r"), party_key)]
   if (anyNA(v)) NA_real_ else mean(v) }, numeric(1))
 myh_sd$status <- same_data_status(myh_sd$all_in_database, myh_sd$any_in_database, myh_sd$value_canonical, myh_sd$expected)
-adm$same_data <- adm$record_id %in% myh_sd$record_id[myh_sd$status == "same_data"]
+adm$same_data <- adm$record_id %in% myh_sd$record_id[myh_sd$status %in% NOT_SERVED_STATUSES]
+adm$copy_differs <- adm$record_id %in% myh_sd$record_id[myh_sd$status == "differs_from_cited_sources"]
 write_out(myh_sd %>% transmute(Species, species_printed, Measure, amniote_trait = source_column, value = value_canonical, cell_form,
                                value_sources, value_of_sources_here = expected, status, record_id) %>% arrange(Species, Measure),
           file.path(out, "life_history_same_data.csv"))
@@ -349,16 +358,16 @@ hay_sum <- adm %>% filter(dataset == "Hayssen_etal_1993") %>% group_by(Species, 
   summarise(hayssen_median = median(value_canonical), hayssen_n_lines = n(), hayssen_min = min(value_canonical), hayssen_max = max(value_canonical),
             hayssen_refs = paste(sort(unique(unlist(str_split(cited_work[!is.na(cited_work) & cited_work != ""], ";")))), collapse = ";"), .groups = "drop")
 comp_sum <- adm %>% filter(dataset != "Hayssen_etal_1993") %>% group_by(Species, Measure, dataset) %>%
-  summarise(value = median(value_canonical), cites = any(cites_hayssen), same = all(same_data), n_rec = n(), .groups = "drop")   # several printed names of one accepted species -> median within dataset
+  summarise(value = median(value_canonical), cites = any(cites_hayssen), same = all(same_data), differs = any(copy_differs), n_rec = n(), .groups = "drop")   # several printed names of one accepted species -> median within dataset
 parties <- bind_rows(hay_sum %>% transmute(Species, Measure, party = "Hayssen_etal_1993", value = hayssen_median, independent = TRUE, role = "root_compendium"),
                      comp_sum %>% transmute(Species, Measure, party = dataset, value, independent = !cites & !same,
-                                            role = ifelse(cites, "derived_from_root", ifelse(same, "same_data", "independent_compilation"))))
+                                            role = ifelse(cites, "derived_from_root", ifelse(same, ifelse(differs, "differs_from_cited_sources", "same_data"), "independent_compilation"))))
 ## The source is served in place of its copy: where a same-data Amniote party was the only party that
 ## counted (the parties it copies cite Hayssen, whose own record for the species is not in this merge),
 ## the parties it copies count in its place (role "source_of_same_data").
-sd_src <- myh_sd %>% filter(status == "same_data") %>% distinct(Species, Measure, cited_papers) %>%
+sd_src <- myh_sd %>% filter(status %in% NOT_SERVED_STATUSES) %>% distinct(Species, Measure, cited_papers) %>%
   mutate(p = strsplit(cited_papers, " + ", fixed = TRUE)) %>% select(Species, Measure, p) %>% tidyr::unnest(p) %>% distinct(Species, Measure, party = p)
-lone <- parties %>% group_by(Species, Measure) %>% summarise(none = !any(independent), sd = any(role == "same_data"), .groups = "drop") %>% filter(none, sd)
+lone <- parties %>% group_by(Species, Measure) %>% summarise(none = !any(independent), sd = any(role %in% c("same_data", "differs_from_cited_sources")), .groups = "drop") %>% filter(none, sd)
 stand_in <- paste(parties$Species, parties$Measure, parties$party, sep = "\r") %in%
   paste(sd_src$Species, sd_src$Measure, sd_src$party, sep = "\r")[paste(sd_src$Species, sd_src$Measure, sep = "\r") %in% paste(lone$Species, lone$Measure, sep = "\r")]
 parties$independent[stand_in] <- TRUE; parties$role[stand_in] <- "source_of_same_data"

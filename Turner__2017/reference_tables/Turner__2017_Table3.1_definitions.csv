@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,whole brain and cortex,source row,,info,Macaca and Papio,Turner__2017_Table3.1,,PDF p65 / printed p50
+case_as_published,case as published,whole brain and cortex,case as published,,info,Macaca and Papio,Turner__2017_Table3.1,Published case and hemisphere string; 12-58 occurs twice for two hemispheres.,PDF p65 / printed p50
+case_id,case id,whole brain and cortex,case id,,info,Macaca and Papio,Turner__2017_Table3.1,Published case code; not a species or a separate hemisphere.,PDF p65 / printed p50
+species_as_published,species as published,whole brain and cortex,species as published,,info,Macaca and Papio,Turner__2017_Table3.1,Source label preserved; no modern species reassignment.,PDF p65 / printed p50
+taxon_as_source_footnote,taxon as source footnote,whole brain and cortex,taxon as source footnote,,info,Macaca and Papio,Turner__2017_Table3.1,,PDF p65 / printed p50
+sex,sex,whole brain and cortex,sex,,info,Macaca and Papio,Turner__2017_Table3.1,,PDF p65 / printed p50
+age_years,age years,whole brain and cortex,age years,individual,primary,Macaca and Papio,Turner__2017_Table3.1,Numeric age from source; estimated or adult-only age is annotated separately or left missing.,PDF p65 / printed p50
+hemisphere,hemisphere,whole brain and cortex,hemisphere,,info,Macaca and Papio,Turner__2017_Table3.1,,PDF p65 / printed p50
+brain_weight_g_as_published,brain weight g as published,whole brain and cortex,brain weight g as published,individual,primary,Macaca and Papio,Turner__2017_Table3.1,Source header says Brain weight (g); values are hemisphere-row measurements.,PDF p65 / printed p50
+brain_surface_area_mm2,brain surface area mm2,whole brain and cortex,brain surface area mm2,individual,primary,Macaca and Papio,Turner__2017_Table3.1,Published cm2 multiplied by 100; one hemisphere per row.,PDF p65 / printed p50
+observation_level,observation level,whole brain and cortex,observation level,,info,Macaca and Papio,Turner__2017_Table3.1,,PDF p65 / printed p50
+data_role,data role,whole brain and cortex,data role,,info,Macaca and Papio,Turner__2017_Table3.1,Specimen roster is primary but the same animal may appear in other publications; deduplicate by case.,PDF p65 / printed p50

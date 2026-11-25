@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,internal cuneate nucleus,source row,,info,Primates,Miller__2017_Table9,,PDF p63 / printed p58
+genus_as_published,genus as published,internal cuneate nucleus,genus as published,,info,Primates,Miller__2017_Table9,Source prints genus only; do not infer a particular species for every case.,PDF p63 / printed p58
+case_id,case id,internal cuneate nucleus,case id,,info,Primates,Miller__2017_Table9,Published case code; not a species or a separate hemisphere.,PDF p63 / printed p58
+stain_as_published,stain as published,internal cuneate nucleus,stain as published,,info,Primates,Miller__2017_Table9,,PDF p63 / printed p58
+side_as_published,side as published,internal cuneate nucleus,side as published,,info,Primates,Miller__2017_Table9,,PDF p63 / printed p58
+degree_as_published,degree as published,internal cuneate nucleus,degree as published,,info,Primates,Miller__2017_Table9,,PDF p63 / printed p58
+lesion_percent_as_published,lesion percent as published,internal cuneate nucleus,lesion percent as published,individual,primary,Primates,Miller__2017_Table9,Numeric percent only where source prints a percentage; qualitative grades remain text.,PDF p63 / printed p58
+recovery_as_published,recovery as published,internal cuneate nucleus,recovery as published,,info,Primates,Miller__2017_Table9,,PDF p63 / printed p58
+recovery_days,recovery days,internal cuneate nucleus,recovery days,individual,primary,Primates,Miller__2017_Table9,Numeric recovery period from source; controls with N/A remain missing.,PDF p63 / printed p58
+control,control,internal cuneate nucleus,control,,info,Primates,Miller__2017_Table9,True when source prints N/A for degree of trauma (controls per Table 9 caption).,PDF p63 / printed p58
+observation_level,observation level,internal cuneate nucleus,observation level,,info,Primates,Miller__2017_Table9,,PDF p63 / printed p58
+data_role,data role,internal cuneate nucleus,data role,,info,Primates,Miller__2017_Table9,Specimen roster is primary but the same animal may appear in other publications; deduplicate by case.,PDF p63 / printed p58

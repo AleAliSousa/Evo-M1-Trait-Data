@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Source row order in printed Table 2-1,whole subject,source row,,info,Anthropoid primates,Rilling__1998_Table2-1,One-based row order; not an accession,Dissertation PDF page 95
+subject_as_published,Subject name or code exactly as printed,whole subject,subject identifier,,info,Anthropoid primates,Rilling__1998_Table2-1,Parenthetical aliases are retained,Dissertation PDF page 95
+species_as_published,Common taxon label exactly as printed,whole subject,taxon label,,info,Anthropoid primates,Rilling__1998_Table2-1,Do not infer modern Pongo species from orangutan,Dissertation PDF page 95
+Species,Scientific taxon stated in the dissertation Subjects paragraph,whole subject,taxon name,,info,Anthropoid primates,Rilling__1998_Table2-1,Pongo pygmaeus is historical broad usage,Dissertation printed page 32
+sex,Sex exactly as printed,whole subject,sex,,info,Anthropoid primates,Rilling__1998_Table2-1,The table totals 27 M and 17 F; prose says 26 M and 18 F,Dissertation PDF page 95
+scan_date_as_published,MRI scan date string exactly as printed,whole subject,scan date,,info,Anthropoid primates,Rilling__1998_Table2-1,Original month/day/two-digit-year format retained,Dissertation PDF page 95
+dob_as_published,Date of birth string exactly as printed,whole subject,date of birth,,info,Anthropoid primates,Rilling__1998_Table2-1,H2 prints unavailable; no imputation,Dissertation PDF page 95
+age_years,Age at MRI scan in years,whole subject,age,individual,primary,Anthropoid primates,Rilling__1998_Table2-1,Printed to nearest half year in many cases,Dissertation PDF page 95
+body_weight_text_as_published,Body weight and parenthetical weight-date string exactly as printed,whole body,body weight,individual,info,Anthropoid primates,Rilling__1998_Table2-1,Source date notes can be incomplete and are not repaired,Dissertation PDF page 95
+body_mass_g,Body mass in grams parsed from the printed kg value,whole body,body mass,individual,primary,Anthropoid primates,Rilling__1998_Table2-1,kg multiplied by 1000; does not use date annotation,Dissertation PDF page 95
+observation_level,Granularity of each data row,whole subject,observation level,,info,Anthropoid primates,Rilling__1998_Table2-1,One MRI subject per row,Derived from table structure
+data_role,Primary or secondary source role,whole subject,data role,,info,Anthropoid primates,Rilling__1998_Table2-1,Primary roster of this MRI study; do not count as independent cohort from the 1998/1999 articles,Curator classification

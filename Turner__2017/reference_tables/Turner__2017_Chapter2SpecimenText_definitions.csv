@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,whole brain and cortex,source row,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+subject_label_as_published,subject label as published,whole brain and cortex,subject label as published,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+Species,Species,whole brain and cortex,Species,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+sex,sex,whole brain and cortex,sex,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+age_as_published,age as published,whole brain and cortex,age as published,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+age_years,age years,whole brain and cortex,age years,individual,primary,Pan troglodytes,Turner__2017_Chapter2SpecimenText,Numeric age from source; estimated or adult-only age is annotated separately or left missing.,PDF p39 / printed p24
+age_estimated,age estimated,whole brain and cortex,age estimated,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+body_mass_g,body mass g,whole brain and cortex,body mass g,individual,primary,Pan troglodytes,Turner__2017_Chapter2SpecimenText,kg multiplied by 1000; 110 lbs converted with 453.59237 g/lb and rounded to nearest gram.,PDF p39 / printed p24
+brain_mass_g,brain mass g,whole brain and cortex,brain mass g,individual,primary,Pan troglodytes,Turner__2017_Chapter2SpecimenText,Source brain weight in grams; freshness/fixation basis is separate where known.,PDF p39 / printed p24
+source_institution,source institution,whole brain and cortex,source institution,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+right_hemisphere_use,right hemisphere use,whole brain and cortex,right hemisphere use,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+left_hemisphere_use,left hemisphere use,whole brain and cortex,left hemisphere use,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+observation_level,observation level,whole brain and cortex,observation level,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,,PDF p39 / printed p24
+data_role,data role,whole brain and cortex,data role,,info,Pan troglodytes,Turner__2017_Chapter2SpecimenText,Specimen roster is primary but the same animal may appear in other publications; deduplicate by case.,PDF p39 / printed p24

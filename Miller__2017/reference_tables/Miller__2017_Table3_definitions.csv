@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,primary visual cortex,source row,,info,Primates,Miller__2017_Table3,,PDF p36 / printed p31
+genus_as_published,genus as published,primary visual cortex,genus as published,,info,Primates,Miller__2017_Table3,Source prints genus only; do not infer a particular species for every case.,PDF p36 / printed p31
+taxon_from_methods,taxon from methods,primary visual cortex,taxon from methods,,info,Primates,Miller__2017_Table3,,PDF p36 / printed p31
+case_id,case id,primary visual cortex,case id,,info,Primates,Miller__2017_Table3,Published case code; not a species or a separate hemisphere.,PDF p36 / printed p31
+side_as_published,side as published,primary visual cortex,side as published,,info,Primates,Miller__2017_Table3,,PDF p36 / printed p31
+stain_as_published,stain as published,primary visual cortex,stain as published,,info,Primates,Miller__2017_Table3,,PDF p36 / printed p31
+observation_level,observation level,primary visual cortex,observation level,,info,Primates,Miller__2017_Table3,,PDF p36 / printed p31
+data_role,data role,primary visual cortex,data role,,info,Primates,Miller__2017_Table3,Specimen roster is primary but the same animal may appear in other publications; deduplicate by case.,PDF p36 / printed p31

@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,prefrontal areas 10 and 13,source row,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+species_as_published,species as published,prefrontal areas 10 and 13,species as published,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,Source label preserved; no modern species reassignment.,PDF pp77-80 / printed pp53-56
+specimen_id,specimen id,prefrontal areas 10 and 13,specimen id,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,Published specimen identifier; use exact string for specimen comparison.,PDF pp77-80 / printed pp53-56
+specimen_name,specimen name,prefrontal areas 10 and 13,specimen name,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,"Published animal name, if supplied.",PDF pp77-80 / printed pp53-56
+sex_as_published,sex as published,prefrontal areas 10 and 13,sex as published,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+age_as_published,age as published,prefrontal areas 10 and 13,age as published,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+age_years,age years,prefrontal areas 10 and 13,age years,individual,primary,Primates,Semendeferi__1994_Chapter3SpecimensText,Numeric age from source; estimated or adult-only age is annotated separately or left missing.,PDF pp77-80 / printed pp53-56
+body_weight_as_published,body weight as published,prefrontal areas 10 and 13,body weight as published,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+body_mass_g,body mass g,prefrontal areas 10 and 13,body mass g,individual,primary,Primates,Semendeferi__1994_Chapter3SpecimensText,kg multiplied by 1000; 110 lbs converted with 453.59237 g/lb and rounded to nearest gram.,PDF pp77-80 / printed pp53-56
+brain_weight_as_published,brain weight as published,prefrontal areas 10 and 13,brain weight as published,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+brain_mass_g,brain mass g,prefrontal areas 10 and 13,brain mass g,individual,primary,Primates,Semendeferi__1994_Chapter3SpecimensText,Source brain weight in grams; freshness/fixation basis is separate where known.,PDF pp77-80 / printed pp53-56
+brain_weight_basis,brain weight basis,prefrontal areas 10 and 13,brain weight basis,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+fixed_brain_mass_g,fixed brain mass g,prefrontal areas 10 and 13,fixed brain mass g,individual,primary,Primates,Semendeferi__1994_Chapter3SpecimensText,Source fixed whole-brain weight in grams; never combined with fresh brain weight.,PDF pp77-80 / printed pp53-56
+fixed_left_hemisphere_mass_g,fixed left hemisphere mass g,prefrontal areas 10 and 13,fixed left hemisphere mass g,individual,primary,Primates,Semendeferi__1994_Chapter3SpecimensText,Source fixed left-hemisphere weight in grams; not a whole-brain mass.,PDF pp77-80 / printed pp53-56
+method_role_as_published,method role as published,prefrontal areas 10 and 13,method role as published,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+source_printed_page,source printed page,prefrontal areas 10 and 13,source printed page,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+observation_level,observation level,prefrontal areas 10 and 13,observation level,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,,PDF pp77-80 / printed pp53-56
+data_role,data role,prefrontal areas 10 and 13,data role,,info,Primates,Semendeferi__1994_Chapter3SpecimensText,Specimen roster is primary but the same animal may appear in other publications; deduplicate by case.,PDF pp77-80 / printed pp53-56

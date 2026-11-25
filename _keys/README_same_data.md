@@ -38,10 +38,10 @@ The owner checked one case (*Marmosa murina* birth weight: Amniote 0.31 g; PanTH
 AnAge 2024 all 0.09 g) and decided: a copy that differs from every source it cites is not a correction
 unless the compilation says so and cites a primary. The Amniote database prints no corrections, so
 these copies are not served; the sources are. A between-source check of all 1,133 copies (restricted
-repository, `restricted_checks/_cross_table/Amniote_copies_vs_cited_sources/`) found that in 509 the
-Amniote median or mean holds a record of another species (the *Marmosa murina* median holds two
-*Potorous tridactylus* records), 44 match the source version Amniote cites (AnAge 2009, PanTHERIA's
-1993-taxonomy edition) and not the one served here, and 531 have no identified cause.
+repository, `restricted_checks/_cross_table/Amniote_copies_vs_cited_sources/`) found that most of the
+Amniote medians or means that differ hold a record of another species (the *Marmosa murina* median
+holds two *Potorous tridactylus* records), and that 44 copies match the source version Amniote cites
+(AnAge 2009, PanTHERIA's 1993-taxonomy edition) rather than the one served here.
 
 ## Counts (steps 13 and 14, 24 November 2026)
 

@@ -1,0 +1,7 @@
+# Qi et al. 2023 SI Table S2
+
+Source: Qi, Reed, Liao & Kaas (2023), *PNAS* 120:e2222076120, DOI [10.1073/pnas.2222076120](https://doi.org/10.1073/pnas.2222076120), SI Appendix Table S2 (local SI PDF pp. 13–15). The frozen snapshot preserves 85 owl monkey, squirrel monkey and galago case rows in published order. Species abbreviations and lesion/loss qualifiers remain as printed. AI checked the table against rendered source pages on 2026-11-25; human visual signoff is pending.
+
+The signed percentage describes the difference in mean cuneate section area: injured/intact in lesion cases and left/right in controls. It is not an absolute area or a cuneate volume. Positive means the numerator side is larger. A source value such as `-5% (L/R)` yields numeric `-5` and remains fully visible in the snapshot. P values stay as printed strings. `recovery_months` is populated only for plain numeric entries; other source entries remain in `recovery_as_published`. No species beyond the source's abbreviation is inferred.
+
+Run `Rscript Qi_etal_2023/Qi_etal_2023_TableS2.R` from the repository root. It reads only this snapshot and writes the CSV and public TSV. The source has no cross-row total to check. Seventeen cases also appear in Miller 2017 Table 9 after the printed hyphen/underscore separator is normalized for matching; they are shared animals, while Miller's Table 11 cuneate **volumes** and Qi's area differences remain different endpoints. The exact overlap is recorded in `internal_checks/` and `_keys/source_relationships.csv`.

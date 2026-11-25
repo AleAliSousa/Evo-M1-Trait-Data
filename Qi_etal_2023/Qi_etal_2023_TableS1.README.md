@@ -1,0 +1,7 @@
+# Qi et al. 2023 SI Table S1
+
+Source: Qi, Reed, Liao & Kaas (2023), *PNAS* 120:e2222076120, DOI [10.1073/pnas.2222076120](https://doi.org/10.1073/pnas.2222076120), SI Appendix Table S1 (local SI PDF pp. 11–12). The snapshot preserves 37 printed macaque case rows and original column order, including textual injury ages and p-value precision. AI checked the table against rendered source pages on 2026-11-25; human visual signoff is pending.
+
+The two signed percentages are **differences in mean section area**, not absolute areas or volume changes. For injured cases the ratio uses injured/intact; for controls it uses left/right. A positive number means the numerator side is larger. The source labels the columns `%Shrink`, but positive values occur; the analysis therefore calls them `area_difference_percent`. Printed `0.0000` p values remain text, not exact zeros. Non-numeric qualifiers in the survival field remain in `survival_as_published`, with `survival_months` blank.
+
+Run `Rscript Qi_etal_2023/Qi_etal_2023_TableS1.R` from the repository root. It reads only its frozen snapshot and writes the case-level CSV and public TSV. The source has no cross-row total to check. The Vanderbilt deposit files `CuN_Area_Measure_MM_RawData.xlsx` and `CuN_Area_Measure_SQM_RawData.xlsx` are retained verbatim in this folder and contain per-section measurements and repeated rater/revision sheets; do not pool those sheets as independent animals. One case (`14-26`) also appears in Miller 2017 Table 9's specimen roster, which gives different metadata/endpoints.

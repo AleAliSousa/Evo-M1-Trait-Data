@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,Brodmann area 44 or 45,,individual,info,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+species_as_published,species as published,Brodmann area 44 or 45,,individual,info,Pan troglodytes,Schenker_etal_2010_Table3,Source label and per-case identity retained.,"Schenker et al. 2010 Table 3, PDF p. 6"
+specimen_as_published,specimen as published,Brodmann area 44 or 45,,individual,info,Pan troglodytes,Schenker_etal_2010_Table3,Source label and per-case identity retained.,"Schenker et al. 2010 Table 3, PDF p. 6"
+hemisphere,hemisphere,Brodmann area 44 or 45,,individual,info,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+cortical_area,cortical area,Brodmann area 44 or 45,,individual,info,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+neuron_density_per_mm3,Neurons per mm³; printed thousands/mm³ multiplied by 1000.,Brodmann area 44 or 45,Density.neurons_per_mm3,individual,primary,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+n_neurons,"Total neurons; printed millions multiplied by 1,000,000.",Brodmann area 44 or 45,count,individual,primary,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+neuron_count_coefficient_of_error,Published coefficient of error for the total neuron estimate; not a biological SD.,Brodmann area 44 or 45,,individual,method,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+density_uses_shrinkage_corrected_volume,True: density denominator is the corrected area volume.,Brodmann area 44 or 45,,individual,method,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+observation_level,observation level,Brodmann area 44 or 45,,individual,info,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+data_role,data role,Brodmann area 44 or 45,,individual,info,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"
+source,source,Brodmann area 44 or 45,,individual,info,Pan troglodytes,Schenker_etal_2010_Table3,,"Schenker et al. 2010 Table 3, PDF p. 6"

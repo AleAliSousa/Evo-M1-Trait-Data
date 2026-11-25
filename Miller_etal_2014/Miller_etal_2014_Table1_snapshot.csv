@@ -1,0 +1,19 @@
+Tissue,Quantification,Parameter,Sample,Estimate
+Flat,Neubauer chamber,All cells,n = 61,"998,480,148"
+Flat,Flow cytometry,All cells,n = 61,"1,015,656,849"
+Slice,Optical fractionator,All cells,n = 324,"961,086,450"
+Flat,Neubauer chamber,Neurons,n = 61,"651,739,214"
+Flat,Flow cytometry,Neurons,n = 61,"664,726,981"
+Slice,Optical fractionator,Neurons,n = 316,"695,478,260"
+Flat,Neubauer chamber,Percent neurons,n = 13,62.0%
+Flat,Flow cytometry,Percent neurons,n = 61,65.1%
+Slice,Optical fractionator,Percent neurons,n = 10,72.4%
+Flat,Image J,Volume (mm³),n = 61,5275
+Slice,Cavalieri (Nissl),Volume (mm³),n = 10,4819
+Slice,Cavalieri (NeuN),Volume (mm³),n = 10,4778
+Flat,Neubauer chamber,Cell density,n = 61,"192,184"
+Flat,Flow cytometry,Cell density,n = 61,"195,551"
+Slice,Optical fractionator,Cell density,n = 10,"197,331"
+Flat,Neubauer chamber,Neuron density,n = 61,"125,641"
+Flat,Flow cytometry,Neuron density,n = 61,"128,005"
+Slice,Optical fractionator,Neuron density,n = 10,"146,008"

@@ -54,13 +54,15 @@ stated in the dissertation's chapter 5 text and source list:
 | area 13 | Semendeferi et al. 1998 |
 | area 10 | Semendeferi et al. 2001 |
 | lateral, basal, accessory basal (amygdala) | Barger et al. 2007 |
-| area 44, area 45 | Schenker et al. 2005 / Sherwood et al. 2003 lineage |
+| area 44, area 45 | Schenker 2007, as cited in the dissertation Chapter 5 Methods; the species means are not fully value-matched to Chapter III's named cases |
 | brain | Zilles-collection convention, as in Table 5.1 |
 
 Treat the attribution column as the dissertation's own statement of source, not as a
 verified value-match: the per-structure primaries have not been value-matched against
 this table. `__merging_volumes/crosspub_value_match.R` is the tool to do that when
 each primary is built.
+
+The 2026-11-25 comparison, filed in the restricted repo at `restricted_checks/_cross_table/Schenker_2007_vs_deSousa_2008_2010/`, applies de Sousa's 2008/2010 specimen factors to the bilateral uncorrected Schenker 2007 Chapter III BA volumes. Chimpanzee, gorilla, orangutan, and gibbon means closely reproduce this table's BA44/45 values; **bonobo does not**, and the human sample is incomplete for this comparison. These unresolved source-composition/value questions reinforce the secondary, non-merge status of Table 5.6.
 
 ## Canonical structure names
 `Vmo`, `VII`, `XII`, areas 13/10/44/45 and the amygdala subnuclei have **no entry in

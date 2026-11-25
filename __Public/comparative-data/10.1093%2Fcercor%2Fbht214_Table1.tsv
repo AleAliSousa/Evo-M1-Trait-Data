@@ -1,0 +1,7 @@
+"source_column"	"species_as_published"	"Species"	"specimen_id"	"sex_as_published"	"hemisphere_as_published"	"brain_weight_mg"	"brain_weight_footnote"	"section_thickness_um"	"guard_zone_um"	"correction_factor_min_pct"	"correction_factor_max_pct"	"correction_factor_mean_pct"	"correction_factor_sd_pct"	"selected_sample_sites"	"selected_sections"	"supragranular_neurons_sampled"	"infragranular_neurons_sampled"	"data_role"
+1	"Capuchin"	"Capuchin"	"970107A"	"F"	"Left"	62000		60	5	74.76	98.52	86.4	7.43	16	4	884	439	"primary specimen metadata; hamster brain weight secondary"
+2	"Owl monkey"	"Owl monkey"	"AT980115A"	"M"	"Left"	14000		60	5	70.22	99.95	92.82	7.73	24	6	1227	424	"primary specimen metadata; hamster brain weight secondary"
+3	"Tamarin"	"Tamarin"	"SM970108B"	"F"	"Right"	9090		60	5	74	99.94	93.05	7.4	24	6	1385	558	"primary specimen metadata; hamster brain weight secondary"
+4	"Paca"	"Paca"	"CP970106A"	"M"	"Left"	32940		60	5	58.39	99.25	89.43	9.06	28	7	422	283	"primary specimen metadata; hamster brain weight secondary"
+5	"Agouti"	"Agouti"	"DA970115"	"M"	"Left"	14870		60	5	80.34	99.46	92	5.7	28	7	473	387	"primary specimen metadata; hamster brain weight secondary"
+6	"Hamster"	"Hamster"		"M"	"Left"	930	"a"	40	5	97.1	100	94.5	6.2	40	8	544	557	"primary specimen metadata; hamster brain weight secondary"

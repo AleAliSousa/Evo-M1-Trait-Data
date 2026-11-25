@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_column,One-based source table column,whole organism,,index,info,Six primate and rodent specimens,Charvet_etal_2013_Table2,Preserves printed order,"Charvet et al. Table 2, PDF page 4"
+species_as_published,Common species label printed in Table 2,whole organism,,label,info,Six primate and rodent specimens,Charvet_etal_2013_Table2,See species_identifications.csv,"Charvet et al. Table 2, PDF page 4"
+Species,Analysis label identical to table species label,whole organism,,label,info,Six primate and rodent specimens,Charvet_etal_2013_Table2,No name harmonization applied,"Charvet et al. Table 2, PDF page 4"
+total_isocortical_neurons,"Unilateral estimated layer II–VI isocortical neurons, source millions multiplied by 10^6",isocortex,neuron count,estimate,primary,Six primate and rodent specimens,Charvet_etal_2013_Table2,Includes layers II–VI,"Charvet et al. Table 2, PDF page 4"
+supragranular_II_IV_neurons,"Unilateral estimated layers II–IV neurons, source millions multiplied by 10^6",isocortex layers II–IV,neuron count,estimate,primary,Six primate and rodent specimens,Charvet_etal_2013_Table2,Includes layer IV despite supragranular shorthand,"Charvet et al. Table 2, PDF page 4"
+infragranular_V_VI_neurons,"Unilateral estimated layers V–VI neurons, source millions multiplied by 10^6",isocortex layers V–VI,neuron count,estimate,primary,Six primate and rodent specimens,Charvet_etal_2013_Table2,As printed,"Charvet et al. Table 2, PDF page 4"
+hemisphere_scope,Counts apply to one hemisphere,whole organism,,label,info,Six primate and rodent specimens,Charvet_etal_2013_Table2,,"Charvet et al. Table 2, PDF page 4"
+data_role,Primary optical-disector neuron estimates,whole organism,,label,info,Six primate and rodent specimens,Charvet_etal_2013_Table2,,"Charvet et al. Table 2, PDF page 4"

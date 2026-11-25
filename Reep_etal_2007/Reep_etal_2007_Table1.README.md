@@ -1,5 +1,7 @@
 # Reep et al. 2007 - Table 1
 
+Charvet et al. (2013) cite Reep et al. in the Figure 8 caption to explain anatomical differences between cerebral cortex and isocortex. Reep Table 1 does not supply a plotted Figure 8 point; its volume data are a separate source item.
+
 ## Source
 
 Reep, R. L., Finlay, B. L., & Darlington, R. B. (2007). The limbic system in

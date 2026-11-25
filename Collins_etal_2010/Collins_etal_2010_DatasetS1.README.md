@@ -12,6 +12,20 @@ Registry (`__ReadMe.xlsx`): Item name **`Collins_etal_2010_DatasetS1`**, encoded
 Raw **per-tissue-piece** cortical cell/neuron counts from **one cortical hemisphere** of each of
 **five specimens / four primate species** (SI p.1):
 
+For Charvet et al. (2013) Figure 7, the seven V1 pieces of macaque 08-59 are
+**6, 7, 9, 10, 11, 12, and 13**. This mapping uses the V1 outline and density
+labels in Collins Figure 2 (printed p. 15929), aligned to the numbered macaque
+sample map in SI Figure S3 (SI p. 3). Their Dataset S1 values sum to
+**220,430,950 neurons** and **1.557 g** of tissue in the right hemisphere.
+Piece 8 (153 million neurons/g) lies outside the V1 outline despite its high
+density. The source did not measure surface area for this macaque, and tissue
+mass is not itself V1 volume: a mass-to-volume assumption is needed before
+placing this result on Charvet's volume axis. The piece mapping is a visual
+interpretation pending human signoff. Charvet's plotted black triangle also
+appears somewhat higher than this seven-piece neuron sum; the plotted point
+cannot yet be reconstructed exactly from Dataset S1 and the published caption.
+No new Figure 7 dataset was created.
+
 | specimen (case) | sheet | Species | common name | hemisphere | pieces | surface area? |
 |---|---|---|---|---|---|---|
 | galago #1 (07‑104) | 07104Galago | *Otolemur garnetti* | galago | left | 36 | yes |
@@ -55,9 +69,11 @@ neurons (44%) · owl monkey: >553M cells, 212M neurons (38%) · macaque: ≈3.5B
 These are compared with the sums of this table's pieces in the internal check below.
 
 ## Internal check
-The macaque-related cross-paper check and its runnable scripts and outputs are maintained in the
-restricted repo at `restricted_checks/_cross_table/Macaque_mulatta_cortex_neuron_totals/`. The
-Collins script reads this item table; its check output is stored in that restricted folder.
+`internal_checks/Collins_etal_2010_DatasetS1_internal_check.R` → `.csv` (64 rows: 36 pass, 9
+mismatch, 19 recorded without a printed figure to compare). It reads only
+`Collins_etal_2010_DatasetS1.csv`; the figures of the paper's text, the contour levels of Fig. 1
+C and D and the galago values of Young et al. 2013 are constants in the script, each with their
+source. Re-run it after any change to the item table.
 
 **What agrees.**
 - The number of samples: 36 (galago 07-104: "46 tissue pieces … processed as 36 samples") and 142

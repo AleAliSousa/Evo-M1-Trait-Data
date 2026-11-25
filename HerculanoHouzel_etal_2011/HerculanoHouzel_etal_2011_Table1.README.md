@@ -1,5 +1,7 @@
 # HerculanoHouzel_etal_2011_Table1
 
+For Charvet et al. Figure 8, the ten Rodentia rows supply cerebral-cortex mass and neurons; the rabbit is Lagomorpha and is excluded from the "Rodents" series. The published values are bilateral estimates (both hemispheres measured for one spiny rat and one squirrel, otherwise one side doubled). The unilateral coordinates and 1.036 g/cm³ conversion are assembled in `../Charvet_etal_2013/internal_checks/Charvet_etal_2013_Figure8_source_points.README.md`.
+
 Herculano-Houzel, S., Ribeiro, P. F. M., Campos, L., da Silva, A. V.,
 Torres, L. B., Catania, K. C., & Kaas, J. H. (2011). Updated neuronal
 scaling rules for the brains of Glires (rodents/lagomorphs). *Brain,

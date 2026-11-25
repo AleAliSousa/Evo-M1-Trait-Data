@@ -1,0 +1,18 @@
+a <- grep('^--file=',commandArgs(FALSE),value=TRUE)
+if (!length(a)) stop('Run with Rscript')
+folder <- dirname(normalizePath(sub('^--file=','',a[1])))
+item_name <- tools::file_path_sans_ext(basename(sub('^--file=','',a[1])))
+root <- dirname(folder)
+s <- utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),check.names=FALSE,colClasses='character',na.strings='',fileEncoding='UTF-8')
+num <- function(x) as.numeric(gsub(',','',x,fixed=TRUE))
+stopifnot(nrow(s)==28L,nrow(s[grepl('^AM',s$Subject),])==26L)
+s <- s[grepl('^AM',s$Subject),]
+final.dataframe <- data.frame(source_order=seq_len(nrow(s)),subject=s$Subject,sex=s$Sex,age_years=num(s[['Age (yr)']]),species_label_in_article='rhesus monkey',Species='Macaca mulatta',layer_I_volume_mm3=num(s[['Layer I']]),supragranular_volume_mm3=num(s[['Supragranular']]),granular_volume_mm3=num(s[['Granular']]),infragranular_volume_mm3=num(s[['Infragranular']]),area17_volume_mm3=num(s[['Total: area 17']]),stringsAsFactors=FALSE)
+utils::write.csv(final.dataframe,file.path(folder,paste0(item_name,'.csv')),row.names=FALSE,na='',fileEncoding='UTF-8')
+reg <- readxl::read_excel(file.path(root,'__ReadMeAddON.xlsx'),sheet='Sheet1')
+hit <- which(reg[['Item name']]==item_name)
+if(length(hit)!=1L) stop('Expected one AddON registry row')
+encoded <- as.character(reg[['Item encoded']][hit])
+utils::write.table(final.dataframe,file.path(root,'__Public','comparative-data',paste0(encoded,'.tsv')),sep='	',row.names=FALSE,na='',fileEncoding='UTF-8')
+cat(item_name,': ',nrow(final.dataframe),' rows
+',sep='')

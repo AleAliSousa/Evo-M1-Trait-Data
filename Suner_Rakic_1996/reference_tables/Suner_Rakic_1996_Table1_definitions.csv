@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_order,source order,area 17,source_order,,info,Macaca mulatta,Suner_Rakic_1996_Table1,From source Table 1,"PDF Table 1, printed p. 586"
+case,case,area 17,case,,info,Macaca mulatta,Suner_Rakic_1996_Table1,From source Table 1,"PDF Table 1, printed p. 586"
+sex,sex,area 17,sex,,info,Macaca mulatta,Suner_Rakic_1996_Table1,From source Table 1,"PDF Table 1, printed p. 586"
+age_as_published,age as published,area 17,age_as_published,,info,Macaca mulatta,Suner_Rakic_1996_Table1,From source Table 1,"PDF Table 1, printed p. 586"
+species_label_in_article,species label in article,area 17,species_label_in_article,,info,Macaca mulatta,Suner_Rakic_1996_Table1,From source Table 1,"PDF Table 1, printed p. 586"
+Species,Species,area 17,Species,,info,Macaca mulatta,Suner_Rakic_1996_Table1,From source Table 1,"PDF Table 1, printed p. 586"
+hemisphere,hemisphere,area 17,hemisphere,,info,Macaca mulatta,Suner_Rakic_1996_Table1,From source Table 1,"PDF Table 1, printed p. 586"
+lgn_neurons,lgn neurons,area 17,lgn_neurons,,measure,Macaca mulatta,Suner_Rakic_1996_Table1,CI columns are 95% confidence interval half-widths; counts converted from millions to absolute neurons,"PDF Table 1, printed p. 586"
+lgn_neurons_CI95_halfwidth,lgn neurons CI95 halfwidth,area 17,lgn_neurons_CI95_halfwidth,CI,measure,Macaca mulatta,Suner_Rakic_1996_Table1,CI columns are 95% confidence interval half-widths; counts converted from millions to absolute neurons,"PDF Table 1, printed p. 586"
+area17_neurons,area17 neurons,area 17,area17_neurons,,measure,Macaca mulatta,Suner_Rakic_1996_Table1,CI columns are 95% confidence interval half-widths; counts converted from millions to absolute neurons,"PDF Table 1, printed p. 586"
+area17_neurons_CI95_halfwidth,area17 neurons CI95 halfwidth,area 17,area17_neurons_CI95_halfwidth,CI,measure,Macaca mulatta,Suner_Rakic_1996_Table1,CI columns are 95% confidence interval half-widths; counts converted from millions to absolute neurons,"PDF Table 1, printed p. 586"

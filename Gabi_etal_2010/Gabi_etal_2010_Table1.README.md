@@ -1,5 +1,7 @@
 # Gabi_etal_2010_Table1
 
+Charvet et al. Figure 8 uses this table's five cerebral-cortex mass/neuron pairs. The table-based unilateral coordinates (published values ÷ 2, then mass ÷ 1.036 g/cm³) are assembled in `../Charvet_etal_2013/internal_checks/Charvet_etal_2013_Figure8_source_points.README.md`.
+
 Table 1 | Cellular composition of the brain of a new set of primate species. Source: `Gabi-2010-Cellular scaling rul.pdf`, PDF page 4, DOI in `__ReadMe.xlsx`.
 
 ## Build

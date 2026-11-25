@@ -36,26 +36,41 @@ values were not usable in the merge. This build adds the full house pipeline.
 ## Multiple GI values per species
 Vulpes vulpes (2), Felis domestica (3), Panthera leo (2), Equus caballus (2), Sus scrofa
 domestica (3), Bos taurus (2), Ovis aries (2) each carry more than one GI value from different
-sources. These are kept as separate rows, **not averaged here** — averaging/selection is the
-merge's job (`__merging_gyrification`).
+sources. These are kept as separate rows, **not averaged here**. Since step 17 (25 November 2026)
+each row is a data point of the one route (`__compiled/item_columns.csv`, `__compiled/datapoints.R`),
+with its cited work taken from `Ref`.
 
 ## Species names
 Table 1 is almost entirely non-primate mammals, which are outside the primate/insectivore-focused
 `_keys/species_reference.csv`; those names therefore pass through as the cleaned printed binomial
 in `species_sci` (documented, not an error). Several are historical spellings (e.g. *Felis
 domestica* = *Felis catus*, *Phocaena phocaena* = *Phocoena phocoena*, *Hydrochaeris hydrochaeris*
-= *Hydrochoerus hydrochaeris*, *Equus burchelii* = *Equus quagga*); spelling alignment to any
-overlapping source (Lewitus 2014) is handled by the alias map in the merge script.
+= *Hydrochoerus hydrochaeris*, *Equus burchelii* = *Equus quagga*); they are resolved by the
+species key (`_keys/Stephan/species_key.csv`, rows for `Zilles_etal_2013`).
 
 ## Data role
-`GI` is **primary** here. `Brain_size` is **secondary/context** (a mixed, unstandardised figure;
-the harmonised brain volumes live in the volume merge). Registry: already in `__ReadMe.xlsx` as
-`Zilles_etal_2013_Table1`.
+`GI` is **secondary**: every value is taken from another work, named per row in `Ref` (corrected
+25 November 2026; this README earlier called it primary). `Brain_size` is **secondary/context** (a
+mixed, unstandardised figure; the harmonised brain volumes are served elsewhere). Registry: in
+`__ReadMe.xlsx` as `Zilles_etal_2013_Table1` (its data role there is blank).
 
 ## Provenance / independence
-The GI values are compiled from four source references, one of which ([7]) is **Lewitus et al.
-2014** — i.e. this table is **not fully independent** of `Lewitus_etal_2014_TableS1`. The merge
-treats Zilles-2013 and Lewitus-2014 as a citation-dependent pair (see `__merging_gyrification`).
+The GI values come from four works, per the paper's reference list (corrected 25 November 2026;
+this README earlier said [7] was Lewitus et al. 2014, which is wrong: Lewitus 2014 is neither a
+primary source nor the source of these values):
+
+| `Ref` | Work | Values |
+|---|---|---|
+| [4] | Pillay P & Manger PR (2007) Eur J Neurosci 25:2705–2712 | 16 |
+| [5] | Elias H & Schwartz D (1969) Science 166:111–113 | 14 |
+| [7] | Brodmann K (1913) Verhandlungen der Gesellschaft Deutscher Naturforscher und Ärzte, 200–240 | 16 |
+| [87] | Schlenska G (1974) | 8 |
+
+The [7] values are total ÷ (total − sulcal) cortical surface from Brodmann's Table 1
+(`Brodmann__1913/Brodmann__1913_Table1.csv`): 10 of the 11 species in that table match within 0.02.
+The horse does not (Zilles 1.99; Brodmann's surfaces give 2.91); that value is not served (owner,
+25 November 2026). Values that also appear in Manger et al. 2012 (from Pillay & Manger 2007) or in
+Lewitus et al. 2014 are counted once (`__compiled/datapoints.csv.gz`, status `same_data`).
 
 ## Checks
 Snapshot↔CSV diff = only the forward-fill of printed repeats + `species_sci` addition + `GI_method`

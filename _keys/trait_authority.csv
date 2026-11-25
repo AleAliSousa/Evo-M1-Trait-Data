@@ -443,7 +443,7 @@ FST_Surface_Area.pct_Neocortex,__merging_cortical_areas,auto_single_producer,act
 Gait (category),__merging_behaviour,auto_single_producer,active,1,__merging_behaviour,,
 Gestation (days),__merging_body_ecology,adopted_from_variable_canonical,active,3,____EvoM1_TraitTable (melted); __merging_body_ecology; __merging_supplementary,____EvoM1_TraitTable (melted); __merging_supplementary,authority already declared by superseded_by; adopted unchanged
 Gestation_Kamilar2013 (days),__merging_supplementary,auto_single_producer,active,1,__merging_supplementary,,
-GI,__merging_gyrification,auto_single_producer,active,1,__merging_gyrification,,
+GI,__compiled/item_columns.csv,auto_single_producer,active,1,__compiled/item_columns.csv,,
 GLI_area10_all_layers (%),__compiled/item_columns.csv,auto_single_producer,active,1,__compiled/item_columns.csv,,
 GLI_area10_granular (%),__compiled/item_columns.csv,auto_single_producer,active,1,__compiled/item_columns.csv,,
 GLI_area10_infragranular (%),__compiled/item_columns.csv,auto_single_producer,active,1,__compiled/item_columns.csv,,
@@ -1386,3 +1386,7 @@ WholeBrainOlfactoryBulb_Mass.g,__merging_cell_counts_isotropic_fractionator,auto
 WholeBrainOlfactoryBulb_N.n,__merging_cell_counts_isotropic_fractionator,auto_single_producer,active,1,__merging_cell_counts_isotropic_fractionator,,
 WholeBrainOlfactoryBulb_N.p.mg,__merging_cell_counts_isotropic_fractionator,auto_single_producer,active,1,__merging_cell_counts_isotropic_fractionator,,
 Zoological_record_article_count (articles),__merging_behaviour,auto_single_producer,active,1,__merging_behaviour,,
+GLI_area4_M1_layerII (%),__compiled/item_columns.csv,auto_single_producer,active,1,__compiled/item_columns.csv,,
+GLI_area4_M1_layerIII (%),__compiled/item_columns.csv,auto_single_producer,active,1,__compiled/item_columns.csv,,
+GLI_area4_M1_layerV (%),__compiled/item_columns.csv,auto_single_producer,active,1,__compiled/item_columns.csv,,
+GLI_area4_M1_layerVI (%),__compiled/item_columns.csv,auto_single_producer,active,1,__compiled/item_columns.csv,,

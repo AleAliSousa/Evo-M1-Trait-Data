@@ -10,6 +10,7 @@ the one exception; see its README).
 | `build_compiled.R` | Builds the table. It holds the loader that used to run inside `app.R` at every start-up, moved here line for line, so the values are the ones the app has always shown. |
 | `item_columns.csv` | The map of the one route: one row per source column that is served from data points (see below). Written by hand. |
 | `datapoints.R` | The one route: reads the map, makes the data points, applies the rules, returns one row per species and trait. Sourced by `build_compiled.R`. |
+| `point_decisions.csv` | Written by hand: decisions about single data points (role, cited work, not served), each with its reason, evidence, who decided and when. |
 | `trait_definitions.csv` | Definitions of traits the one route serves whose definitions lived in a merge folder (picked up by `_keys/build_variable_definitions.R` like any `*_definitions.csv`). |
 | `datapoints.csv.gz` | Written by every build: every data point of the one route, as printed, with its species, trait, source row and status. The provenance table. |
 | `subspecies_register.csv` | Written by every build: each subspecies filed under a species, with counts, and the three-word labels that are not filed. |
@@ -57,7 +58,9 @@ in a merge folder:
 
 1. **Map** (`item_columns.csv`): one row per source column: the registered item (or a `path` for a
    table that is not registered), the species column, the value column, the trait label and unit,
-   the role, and optionally specimen and n columns. Where the species column is the item builder's
+   the role (a literal, or an expression over the row), the cited work (`cites`: a literal, a column
+   or an expression; blank when the point names none), the hemisphere (`R`, `L`), and optionally
+   specimen and n columns. Where the species column is the item builder's
    identification (a table that prints common names), `printed_col` names the column as printed; the
    data point keeps both (`species_printed`, `species_named`) and the resolver reads the second. `species_col`, `value_col` and `n_col` take a
    column name or an R expression over the table's columns; a value computed by an expression says
@@ -65,18 +68,32 @@ in a merge folder:
    for now, because both apps still offer it as a filter.
 2. **Data points** (`datapoints.csv.gz`): one row per mapped source cell that holds a value, as
    printed. Nothing is averaged at this stage.
-3. **Rules**, the same for every data point: species from the house resolver
-   (`_keys/resolve_species.R`, which applies the species key's per-source decisions); a subspecies
-   keeps its printed name so the subspecies rule below files it. Within one report (item) the points
-   of a species and trait are averaged; the served value is the **plain mean of the independent
-   reports** (owner, 25 November 2026). `N_sources` is the number of reports. The same-data,
-   same-specimen and not-served rules join here as traits with copies move onto this route.
+3. **Rules**, the same for every data point, in this order:
+   - *Species* from the house resolver (`_keys/resolve_species.R`, which applies the species key's
+     per-source decisions); a subspecies keeps its printed name so the subspecies rule below files it.
+   - *Point decisions* (`point_decisions.csv`): a role or cited work set for one point, or a point
+     not served.
+   - *Same data* (owner, 24-25 November 2026: a copy counts once). Values agree when they are within
+     0.5 % of each other. A secondary point that cites a work with a report here is `same_data` if it
+     agrees with that report or one of its specimens, else `differs_from_cited_source` (not served).
+     Secondary points that cite a work with no report here form one report on its behalf (they must
+     agree, or the build stops). A secondary point that cites nothing is `same_data` if it agrees
+     with another report or one of its specimens; if it differs from every other report it is
+     `differs_from_other_reports` and not served (owner, 25 November 2026); with no other report it
+     is served as its own report.
+   - *Species value*: a report's value is the mean over its source rows of the row means (the
+     hemispheres of one brain are averaged first); the served value is the **plain mean of the
+     independent reports** (owner, 25 November 2026). `N_sources` is the number of reports.
+   Every data point keeps its `status`, the `report` it belongs to and, for a copy, `same_as`.
 4. The rows join the merge rows and get the same treatment as every other row (display aliases,
    Hemispheres, subspecies rule, population verdict, keys).
 
 Moved so far: cerebral surface and folding (Heuer et al. 2019), cerebellar folding (Heuer et al. 2023,
 Ashwell 2020), grey-level index (Palomero-Gallagher & Zilles 2018, Semendeferi et al. 1998 and 2001,
-Sherwood et al. 2004, Zilles et al. 1986).
+Sherwood et al. 2004, Zilles et al. 1986) in step 16; gyrification index (Zilles et al. 1989 and
+2013, Manger et al. 2012, Lewitus et al. 2014 Tables S1 and S8) in step 17. A value the project
+computes from printed values (Sherwood's supragranular and infragranular means) is marked `derived`
+in the data points and in `Source_details`; the printed values it comes from are served too.
 
 ## What is not served
 

@@ -87,7 +87,7 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "Cerebral metabolic rate"="__merging_cerebral_metabolic_rate","Grey-level index"="__compiled/item_columns.csv",
         "Cortical areas & surfaces"="__merging_cortical_areas",
         "Cortical layer thickness"="__merging_cortical_layers",
-        "Fossil brain glucose"="__merging_fossil_brain_glucose","Gyrification (GI)"="__merging_gyrification",
+        "Fossil brain glucose"="__merging_fossil_brain_glucose","Gyrification (GI)"="__compiled/item_columns.csv",
         "Sensory performance"="__merging_sensory",
         "Cell type, size & morphology"="__merging_cell_morphology",  # added 2026-09-27
         "Supplementary sources"="__merging_supplementary",

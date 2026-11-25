@@ -137,7 +137,6 @@ GH <- list(
   # __merging_cell_counts_histology/README__merging.md.
   cell_counts_histology = feed_path("cell_counts_histology"),
   fossil_bgu = feed_path("fossil_bgu"),
-  gyrification = feed_path("gyrification"),
   sensory    = feed_path("sensory"),
   weights    = feed_path("weights"),
   # 2026-10-15: mapping-driven merge of built public tables no other merge
@@ -464,21 +463,6 @@ load_compiled <- function() {
     )
   }
 
-  # Zilles-method gyrification index (GI). Supersedes the raw Lewitus et al.
-  # 2014 "GI" column in EvoM1 traits via variable_canonical.csv (broader
-  # source coverage; see __merging_gyrification/README__merging.md).
-  std_gyrification <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = "GI",
-      Value = as.character(d$GI), Value_num = suppressWarnings(as.numeric(d$GI)),
-      Source = d$source,
-      Teams = as.character(d$source),
-      N_sources = NA_integer_,
-      Variable_raw = "GI", Unit = "ratio", Unit_raw = "ratio",
-      stringsAsFactors = FALSE)
-  }
-
   # Sleep & torpor merge. Its terms are the labels the trait table has always
   # used (REM_sleep_pct, Torpor_type ...), so the labels, their definitions and
   # their domain rows carry over unchanged; _keys/variable_canonical.csv
@@ -573,8 +557,6 @@ load_compiled <- function() {
             file.path(data_dir, "cell_counts_histology_long.csv"), "Cell counts (histology)"),
     std_fossil_bgu(GH$fossil_bgu, file.path(data_dir, "fossil_brain_glucose_long.csv"),
             "Fossil brain glucose"),
-    std_gyrification(GH$gyrification, file.path(data_dir, "gyrification_long.csv"),
-            "Gyrification (GI)"),
     std_sensory(GH$sensory, file.path(data_dir, "sensory_long.csv"),
             "Sensory performance"),
     std_weights(GH$weights, file.path(data_dir, "weights_long.csv"),

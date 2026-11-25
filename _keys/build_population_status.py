@@ -49,7 +49,7 @@ PROV_COL = {
     "cortical_areas_long.csv": "source", "cortical_layers_all_regions_long.csv": "source",
     "cortical_layers_m1_long.csv": "source", "cortical_layers_m1_species_long.csv": "source",
     "cell_morphology_long.csv": "source", "fossil_brain_glucose_long.csv": "Source",
-    "gyrification_long.csv": "source", "sensory_long.csv": "Sources", "sleep_long.csv": "source",
+    "sensory_long.csv": "Sources", "sleep_long.csv": "source",
     "supplementary_long.csv": "Teams", "weights_long.csv": "source",
 }
 PRINTED_COL = ["species_printed", "Species_printed", "species_as_published", "Species_as_printed"]

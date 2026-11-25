@@ -88,7 +88,7 @@ DS <- c(
   "Cortical areas & surfaces"= "__merging_cortical_areas",
   "Cortical layer thickness" = "__merging_cortical_layers",
   "Fossil brain glucose"     = "__merging_fossil_brain_glucose",
-  "Gyrification (GI)"        = "__merging_gyrification",
+  "Gyrification (GI)"        = "__compiled/item_columns.csv",  # data points since step 17
   "Sensory performance"      = "__merging_sensory",
   ## added 2026-09-27: the app now serves __merging_cell_morphology (app.R std_cell_morphology)
   "Cell type, size & morphology" = "__merging_cell_morphology",

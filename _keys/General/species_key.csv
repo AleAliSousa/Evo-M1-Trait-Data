@@ -4452,3 +4452,7 @@ Galago moholi,Galago moholi,Feix_etal_2015,General,,source name,Source label ret
 Galago demidoff,Galagoides demidoff,Feix_etal_2015,General,,source label resolved,Source label retained; check identity before pooling.
 Euoticus elegantulus,Euoticus elegantulus,Feix_etal_2015,General,,source name,Source label retained; check identity before pooling.
 Macaca mulatta,Macaca mulatta,Christensen_etal_2007,General,9544,paper text,Rhesus monkey (Macaca mulatta) printed in article text; Tables 1–4 omit species column; right hemisphere control cohort.
+Odocoileus virginiatus,Odocoileus virginianus,Lewitus_etal_2014,General,9874,spelling,"misspelling in Lewitus et al. 2014 Table S1; expansion carried over unchanged from __merging_gyrification/gyrification_compiled.R (sp_alias), retired in step 17"
+Sus scrofa,Sus scrofa domesticus,Manger_etal_2012,General,9825,our_judgment,"domestic pig; expansion carried over unchanged from __merging_gyrification/gyrification_compiled.R (sp_alias), retired in step 17"
+Lama glama,Lama glama domesticus,Manger_etal_2012,General,,our_judgment,"llama, a domestic form; expansion carried over unchanged from __merging_gyrification/gyrification_compiled.R (sp_alias), retired in step 17"
+Galago demidoff,Galagoides demidoff,Lewitus_etal_2014,General,89672,our_judgment,"same species as Zilles et al. 1989 ""Galago demidovii"", which the key resolves to Galagoides demidoff: one name for one species (step 17)"

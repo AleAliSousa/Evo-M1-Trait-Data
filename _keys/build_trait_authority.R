@@ -80,11 +80,11 @@ DS <- c(
   "Behaviour"                = "__merging_behaviour",
   "Brain-part weights"       = "__merging_weights",
   "Endocranial volume"       = "__merging_endocranial_volume",
-  "Cerebellar folding"       = "__merging_cerebellar_folding",
+  "Cerebellar folding"       = "__compiled/item_columns.csv",  # data points since step 16
   ## added 2026-11-19: app.R std_merge(GH$postcranial)
   "Postcranial & limb function" = "__merging_postcranial",
   "Cerebral metabolic rate"  = "__merging_cerebral_metabolic_rate",
-  "Grey-level index"         = "__merging_GLI",
+  "Grey-level index"         = "__compiled/item_columns.csv",  # data points since step 16
   "Cortical areas & surfaces"= "__merging_cortical_areas",
   "Cortical layer thickness" = "__merging_cortical_layers",
   "Fossil brain glucose"     = "__merging_fossil_brain_glucose",
@@ -101,7 +101,7 @@ DS <- c(
   "Claustrum & cerebellar anatomy" = "__merging_volumes",
   ## added 2026-11-23: two merges now served as their own datasets
   "Sleep & torpor"           = "__merging_sleep",
-  "Cerebral surface & folding (MRI)" = "__merging_heuer2019"
+  "Cerebral surface & folding (MRI)" = "__compiled/item_columns.csv"  # data points since step 16
 )
 seen <- unique(compiled$Dataset)
 unmapped <- setdiff(seen, names(DS))

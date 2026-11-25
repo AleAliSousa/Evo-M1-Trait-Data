@@ -180,7 +180,13 @@ read_cmr <- function(term, pat) {
                  build_script = "__merging_cerebral_metabolic_rate/build_cerebral_metabolic_rate_merge.py")
 }
 
-gli <- with_accepted_name(rd("__merging_GLI", "GLI_long.csv"))
+## Grey-level index: the data points of the one route (step 16: __compiled/datapoints.csv.gz, written
+## by __compiled/build_compiled.R from __compiled/item_columns.csv). The area is the label's middle part.
+gli <- rd("__compiled", "datapoints.csv.gz") |>
+  filter(status == "served", str_starts(trait, "GLI_")) |>
+  mutate(Species = species, accepted_name = species, source = item,
+         area_as_published = sub("_(all_layers|supragranular|granular|infragranular) \\(%\\)$", "",
+                                 sub("^GLI_", "", trait)))
 read_gli <- function(term, pat) {
   d <- gli |> filter(area_as_published == term)
   if (nzchar(pat)) d <- d |> filter(str_detect(source, fixed(pat)))
@@ -188,8 +194,8 @@ read_gli <- function(term, pat) {
                  measurement_class = "Cytoarchitecture", dimension = "index", units = "%",
                  source, merge_status = "active",
                  flag_note = "sampled cytoarchitectural index; not a cell count or stereological density",
-                 dataset_source = "__merging_GLI/GLI_long.csv",
-                 build_script = "__merging_GLI/GLI_compiled.py")
+                 dataset_source = "__compiled/datapoints.csv.gz",
+                 build_script = "__compiled/datapoints.R")
 }
 
 cl <- with_accepted_name(rd("__merging_cortical_layers", "cortical_layers_m1_long.csv"))

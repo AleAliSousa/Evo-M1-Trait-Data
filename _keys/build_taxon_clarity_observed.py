@@ -80,6 +80,21 @@ def main():
                     e["tables"].add(t)
                     e["resolved"][r["Species"]] += 1
 
+    # the one route: data points (__compiled/datapoints.csv.gz, written by build_compiled.R); the
+    # paper is the item's source publication, the table is the item
+    dpf = os.path.join(REPO, "__compiled", "datapoints.csv.gz")
+    if os.path.exists(dpf):
+        import gzip
+        with gzip.open(dpf, "rt", newline="", encoding="utf-8") as fh:
+            used += 1
+            for r in csv.DictReader(fh):
+                printed = (r.get("species_printed") or "").strip()
+                if not printed:
+                    continue
+                e = obs[(r["source_publication"], printed)]
+                e["tables"].add(r["item"])
+                e["resolved"][r["species"]] += 1
+
     rows = []
     for (paper, printed), e in obs.items():
         resolved = sorted(e["resolved"], key=lambda k: -e["resolved"][k])

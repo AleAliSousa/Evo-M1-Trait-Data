@@ -12,10 +12,8 @@ brain_mass,__merging_brain_mass/brain_mass_long.csv,TRUE,Brain mass,std_merge,TR
 brain_size,__merging_brain_size/brain_size_long.csv,TRUE,Combined brain size,std_merge,TRUE,Combined brain size,merge,active,Added to TraitExplorer 2026-11-23: its existing `merge` loader gave the same species x label x value rows as the Evo-M1 app (checked that day).
 ecv,__merging_endocranial_volume/endocranial_volume_long.csv,TRUE,Endocranial volume,std_merge,TRUE,Endocranial volume,merge,active,
 behaviour,__merging_behaviour/behaviour_long.csv,TRUE,Behaviour,std_merge,TRUE,Behaviour,merge,active,
-cerebellar,__merging_cerebellar_folding/cerebellar_folding_long.csv,TRUE,Cerebellar folding,std_merge,TRUE,Cerebellar folding,merge,active,
 postcranial,__merging_postcranial/postcranial_species_long.csv,TRUE,Postcranial & limb function,std_merge,TRUE,Postcranial & limb function,merge,active,Added to TraitExplorer 2026-11-23: its existing `merge` loader gave the same species x label x value rows as the Evo-M1 app (checked that day).
 cmr,__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv,TRUE,Cerebral metabolic rate,std_cmr,TRUE,Cerebral metabolic rate,cmr,active,
-gli,__merging_GLI/GLI_long.csv,TRUE,Grey-level index,std_gli,TRUE,Grey-level index,gli,active,
 cortical_areas,__merging_cortical_areas/cortical_areas_long.csv,TRUE,Cortical areas & surfaces,std_cortical_areas,TRUE,Cortical areas & surfaces,cortical_areas,active,
 cortical_layers,__merging_cortical_layers/cortical_layers_m1_long.csv,TRUE,Cortical layer thickness,std_cortical_layers,TRUE,Cortical layer thickness,cortical_layers,active,
 cell_morphology,__merging_cell_morphology/cell_morphology_long.csv,TRUE,"Cell type, size & morphology",std_cell_morphology,TRUE,"Cell type, size & morphology",cell_morphology,active,
@@ -26,4 +24,3 @@ sensory,__merging_sensory/sensory_long.csv,TRUE,Sensory performance,std_sensory,
 weights,__merging_weights/weights_long.csv,TRUE,Brain-part weights,std_weights,TRUE,Brain-part weights,weights,active,
 supplementary,__merging_supplementary/supplementary_long.csv,TRUE,Additional published datasets,std_merge,TRUE,Supplementary sources,merge,active,The two apps name this dataset differently (TraitExplorer still uses the label the Evo-M1 app replaced).
 sleep,__merging_sleep/sleep_long.csv,TRUE,Sleep & torpor,std_sleep,FALSE,,,active,"Added 2026-11-23. The same values were served from the trait table (EvoM1 traits) until then; _keys/variable_canonical.csv now supersedes those columns."
-cerebral_surface_folding,__merging_heuer2019/heuer2019_long.csv,TRUE,Cerebral surface & folding (MRI),std_single_source,FALSE,,,active,"Added 2026-11-23. Heuer et al. 2019: 3-D MRI surface reconstructions of 34 primate species. Its absolute gyrification index is not the Zilles GI of the gyrification feed."

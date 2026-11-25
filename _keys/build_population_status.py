@@ -182,6 +182,23 @@ def main():
                     o = obs[(t, lab)]
                     o["printed"].update(printed or [sp]); o["merges"].add(merge); o["n"] += 1
 
+    # 2b. the one route: data points (__compiled/datapoints.csv.gz, written by build_compiled.R);
+    #     the provenance token is the team the map names, as in the table's Teams column
+    dpf = os.path.join(REPO, "__compiled", "datapoints.csv.gz")
+    if os.path.exists(dpf):
+        import gzip
+        with gzip.open(dpf, "rt", encoding="utf-8", newline="") as fh:
+            for r in csv.DictReader(fh):
+                if (r.get("status") or "") != "served":
+                    continue
+                sp = (r.get("species") or "").strip()
+                if sp not in labels:
+                    continue
+                for t in tokens(r.get("team")):
+                    o = obs[(t, sp)]
+                    o["printed"].update([(r.get("species_printed") or "").strip() or sp])
+                    o["merges"].add("compiled/datapoints"); o["n"] += 1
+
     # 3. existing hand edits survive
     existing = {}
     if os.path.exists(OUT):

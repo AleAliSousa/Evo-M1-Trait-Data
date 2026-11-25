@@ -82,9 +82,9 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "EvoM1 traits"="____EvoM1_TraitTable (melted)","Body & ecology"="__merging_body_ecology",
         "Brain mass"="__merging_brain_mass","Behaviour"="__merging_behaviour",
         "Brain-part weights"="__merging_weights","Endocranial volume"="__merging_endocranial_volume",
-        "Cerebellar folding"="__merging_cerebellar_folding",
+        "Cerebellar folding"="__compiled/item_columns.csv",  # data points since step 16
         "Postcranial & limb function"="__merging_postcranial",  # added 2026-11-19
-        "Cerebral metabolic rate"="__merging_cerebral_metabolic_rate","Grey-level index"="__merging_GLI",
+        "Cerebral metabolic rate"="__merging_cerebral_metabolic_rate","Grey-level index"="__compiled/item_columns.csv",
         "Cortical areas & surfaces"="__merging_cortical_areas",
         "Cortical layer thickness"="__merging_cortical_layers",
         "Fossil brain glucose"="__merging_fossil_brain_glucose","Gyrification (GI)"="__merging_gyrification",
@@ -92,7 +92,7 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "Cell type, size & morphology"="__merging_cell_morphology",  # added 2026-09-27
         "Supplementary sources"="__merging_supplementary",
         "Additional published datasets"="__merging_supplementary",
-        "Sleep & torpor"="__merging_sleep","Cerebral surface & folding (MRI)"="__merging_heuer2019",  # added 2026-11-23
+        "Sleep & torpor"="__merging_sleep","Cerebral surface & folding (MRI)"="__compiled/item_columns.csv",  # added 2026-11-23
         "Taste performance"="__merging_sensory",
         "Social composition, mirror tests & play"="__merging_behaviour",
         "Claustrum & cerebellar anatomy"="__merging_volumes")

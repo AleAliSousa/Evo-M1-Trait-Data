@@ -55,6 +55,15 @@ if (is.null(old) || !length(old)) fail("__compiled/compiled_long.csv.gz is not a
 if (identical(old, new)) {
   cat(sprintf("OK: __compiled/compiled_long.csv.gz is current (%d rows; rebuilt content identical).\n",
               length(new) - 1L))
+  ## the data points of the one route, written beside the table by the same build
+  dp_old <- file.path(repo, "__compiled", "datapoints.csv.gz"); dp_new <- file.path(tmp, "datapoints.csv.gz")
+  if (file.exists(dp_new)) {
+    if (!file.exists(dp_old)) fail("__compiled/datapoints.csv.gz does not exist. Run: Rscript __compiled/build_compiled.R")
+    a <- content(dp_old); b <- content(dp_new)
+    if (!identical(a, b)) fail("__compiled/datapoints.csv.gz is STALE (committed ", length(a) - 1L, " rows, rebuilt ",
+                               length(b) - 1L, "). Run: Rscript __compiled/build_compiled.R  and commit it.")
+    cat(sprintf("OK: __compiled/datapoints.csv.gz is current (%d data points).\n", length(b) - 1L))
+  }
   quit(status = 0, save = "no")
 }
 n <- min(length(old), length(new))

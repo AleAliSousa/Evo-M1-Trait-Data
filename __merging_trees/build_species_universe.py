@@ -136,6 +136,23 @@ def main():
                 if acc != raw:
                     variants.setdefault(acc, set()).add(raw)
 
+    # the one route: species of the data points (__compiled/datapoints.csv.gz, written by
+    # build_compiled.R) -- traits served from data points have no *_long.csv feed
+    dpf = os.path.join(REPO, "__compiled", "datapoints.csv.gz")
+    if os.path.exists(dpf):
+        import gzip
+        with gzip.open(dpf, "rt", newline="", encoding="utf-8") as f:
+            seen = set()
+            for r in csv.DictReader(f):
+                raw = clean(r.get("species"))
+                if (r.get("status") or "") != "served" or not raw or raw in NA or raw in seen:
+                    continue
+                seen.add(raw)
+                acc = alias.get(raw, raw)
+                tables.setdefault(acc, set()).add("datapoints")
+                if acc != raw:
+                    variants.setdefault(acc, set()).add(raw)
+
     ref = {}
     with open(os.path.join(REPO, "_keys", "species_reference.csv"),
               newline="", encoding="utf-8-sig") as f:

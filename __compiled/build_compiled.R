@@ -14,7 +14,10 @@
 #         and the keys the loader uses: _keys/variable_canonical.csv,
 #         species_display_aliases.csv, species_pooling.csv,
 #         population_status.csv, variable_definitions.csv.
+#         Sources mapped in __compiled/item_columns.csv are read as data points by
+#         __compiled/datapoints.R (the one route; no merge folder) and served from them.
 # OUTPUT  __compiled/compiled_long.csv.gz  (gzip: the plain CSV is over 45 MB)
+#         __compiled/datapoints.csv.gz  (every data point of the one route, as printed)
 #         14 columns as the app has them, in the app's order:
 #           Species, Dataset, Variable, Value, Value_num, Source, Items,
 #           Source_details, Teams, N_sources, Variable_raw, Unit, Unit_raw,
@@ -75,6 +78,14 @@ read_csv_gh <- function(gh_rel, local = NULL) {
 # (a check calls it there); it is sourced, not copied.
 source(file.path(repo, "__ShinyApp", "explorer.R"), local = TRUE)
 
+# ---- the one route (__compiled/datapoints.R) --------------------------------
+# Traits whose sources are mapped in __compiled/item_columns.csv are built from data points under
+# the owner's rules, not from a merge folder. Their rows join the merge rows below and get the same
+# treatment (species display aliases, Hemispheres, subspecies rule, population verdict, keys).
+source(file.path(repo, "_keys", "resolve_species.R"), local = TRUE)
+source(file.path(repo, "__compiled", "datapoints.R"), local = TRUE)
+dp_all <- dp_points(repo)
+
 # ---- the feed list (moved from app.R) ---------------------------------------
 # One row per feed in _keys/app_feeds.csv; feed_path("x") is the path of feed x.
 # If x has no row there with evo_m1_app = TRUE, the build stops and names it.
@@ -108,14 +119,12 @@ GH <- list(
   brain_mass = feed_path("brain_mass"),
   brain_size = feed_path("brain_size"),
   behaviour  = feed_path("behaviour"),
-  cerebellar = feed_path("cerebellar"),
   # 2026-11-19: postcranial anatomy, hand use and limb function. Only the numeric, extant,
   # species-level table is served; specimen, fossil, record-level and categorical tables stay in the
   # merge folder. Same long schema as std_merge(); methods are separate Measure names, never pooled.
   postcranial = feed_path("postcranial"),
   cmr        = feed_path("cmr"),
   ecv        = feed_path("ecv"),
-  gli        = feed_path("gli"),
   cortical_areas  = feed_path("cortical_areas"),
   cortical_layers = feed_path("cortical_layers"),
   cell_morphology = feed_path("cell_morphology"),
@@ -138,7 +147,6 @@ GH <- list(
   supplementary = feed_path("supplementary"),
   # 2026-11-23: two merges the apps did not load as datasets before.
   sleep = feed_path("sleep"),
-  cerebral_surface_folding = feed_path("cerebral_surface_folding"),
   # read-time wild/domestic pooling keys (no merge reads them; see _keys/README_species_pooling.md)
   pooling    = "_keys/species_pooling.csv",
   population = "_keys/population_status.csv"
@@ -365,20 +373,6 @@ load_compiled <- function() {
   # (its Teams / Sources / source column, ";"-separated), kept verbatim so the
   # read-time pooling layer below can look each token up in population_status.csv.
 
-  # Cytoarchitectonic grey-level index (GLI): Species x area x cortical stratum.
-  std_gli <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    lab <- paste0("GLI_", d$area_as_published, "_", d$stratum, " (%)")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$GLI_pct), Value_num = suppressWarnings(as.numeric(d$GLI_pct)),
-      Source = d$source,
-      Teams = as.character(d$source),
-      N_sources = suppressWarnings(as.integer(d$n_specimens)),
-      Variable_raw = lab, Unit = "%", Unit_raw = "%",
-      stringsAsFactors = FALSE)
-  }
-
   # Cortical-area count / surface / thickness / folding-index merge. `status`
   # marks rows superseded by a later source or held pending an unresolved
   # check (e.g. Finlay 2006 vs Project Kaskan) -- only "active" rows are shown.
@@ -504,26 +498,6 @@ load_compiled <- function() {
       stringsAsFactors = FALSE)
   }
 
-  # A merge with one source per value: Measure/Units/Value plus the number of
-  # specimens and their range (no n_sources/Teams columns). Used for the
-  # Heuer et al. 2019 MRI surface measures; its Absolute_gyrification_index is
-  # a surface-to-sphere ratio and is never relabelled to, or pooled with, GI.
-  std_single_source <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    lab <- paste0(d$Measure, " (", d$Units, ")")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-      Source = d$source,
-      Items = field(d, "source"),
-      Source_details = paste0("species mean of ", d$n_specimens, " specimen(s); range ",
-                              d$value_min, " to ", d$value_max),
-      Teams = as.character(d$source),
-      N_sources = 1L,
-      Variable_raw = lab, Unit = d$Units, Unit_raw = d$Units,
-      stringsAsFactors = FALSE)
-  }
-
   # Sensory psychophysics (percepts only -- see README__merging.md for what is
   # deliberately excluded). Shape matches std_merge() except for its
   # provenance columns (n_studies / Sources instead of n_sources / Teams).
@@ -585,14 +559,10 @@ load_compiled <- function() {
     std_merge(GH$ecv, file.path(data_dir, "endocranial_volume_long.csv"),
               "Endocranial volume"),
     std_merge(GH$behaviour,  file.path(data_dir, "behaviour_long.csv"),    "Behaviour"),
-    std_merge(GH$cerebellar, file.path(data_dir, "cerebellar_folding_long.csv"),
-              "Cerebellar folding"),
     std_merge(GH$postcranial, file.path(data_dir, "postcranial_species_long.csv"),
               "Postcranial & limb function"),
     std_cmr(GH$cmr, file.path(data_dir, "cerebral_metabolic_rate_long.csv"),
             "Cerebral metabolic rate"),
-    std_gli(GH$gli, file.path(data_dir, "GLI_long.csv"),
-            "Grey-level index"),
     std_cortical_areas(GH$cortical_areas, file.path(data_dir, "cortical_areas_long.csv"),
             "Cortical areas & surfaces"),
     std_cortical_layers(GH$cortical_layers, file.path(data_dir, "cortical_layers_m1_long.csv"),
@@ -610,14 +580,14 @@ load_compiled <- function() {
     std_weights(GH$weights, file.path(data_dir, "weights_long.csv"),
             "Brain-part weights"),
     std_sleep(GH$sleep, file.path(data_dir, "sleep_long.csv"), "Sleep & torpor"),
-    std_single_source(GH$cerebral_surface_folding, file.path(data_dir, "heuer2019_long.csv"),
-            "Cerebral surface & folding (MRI)"),
     # Five PanTHERIA measures reuse the shared labels on purpose (Gestation,
     # Weaning_age, Litter_size, Maximum_longevity, BMR_wholeanimal: identical
     # quantities, label_policy = shared in supplementary_sources.csv); the app
     # pools them like any second source. Everything else is a new label.
     std_merge(GH$supplementary, file.path(data_dir, "supplementary_long.csv"),
-              "Additional published datasets")
+              "Additional published datasets"),
+    # the one route: species values from the data points (__compiled/datapoints.R)
+    dp_species_values(dp_all)
   )
 
   # unify species labels everywhere so synonyms line up
@@ -845,6 +815,11 @@ if (!identical(back, compiled)) {
   stop("The written file does not read back as the table that was built; nothing was replaced.", call. = FALSE)
 }
 if (!file.rename(tmp_file, out_file)) stop("Could not move the new file into place: ", out_file, call. = FALSE)
+
+# ---- data points of the one route --------------------------------------------
+dp_write_points(dp_all, out_dir)
+cat(sprintf("data points: %d (%d items, %d traits) -> %s\n", nrow(dp_all), length(unique(dp_all$item)),
+            length(unique(dp_all$trait)), file.path(out_dir, "datapoints.csv.gz")))
 
 # ---- subspecies register ----------------------------------------------------
 # What the table holds below species rank: every filed subspecies, and every

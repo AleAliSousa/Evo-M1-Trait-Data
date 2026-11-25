@@ -8,6 +8,10 @@ the one exception; see its README).
 | File | What it is |
 |---|---|
 | `build_compiled.R` | Builds the table. It holds the loader that used to run inside `app.R` at every start-up, moved here line for line, so the values are the ones the app has always shown. |
+| `item_columns.csv` | The map of the one route: one row per source column that is served from data points (see below). Written by hand. |
+| `datapoints.R` | The one route: reads the map, makes the data points, applies the rules, returns one row per species and trait. Sourced by `build_compiled.R`. |
+| `trait_definitions.csv` | Definitions of traits the one route serves whose definitions lived in a merge folder (picked up by `_keys/build_variable_definitions.R` like any `*_definitions.csv`). |
+| `datapoints.csv.gz` | Written by every build: every data point of the one route, as printed, with its species, trait, source row and status. The provenance table. |
 | `subspecies_register.csv` | Written by every build: each subspecies filed under a species, with counts, and the three-word labels that are not filed. |
 | `compiled_long.csv.gz` | The output: one row per species × variable × dataset value. Gzip, because the plain CSV is 55.7 MB (3.9 MB zipped on 2026-11-23). UTF-8, LF line ends. |
 
@@ -45,6 +49,35 @@ file is missing or unreadable, stops the build and names the feed. The builder a
 `variable_definitions.csv`, `label_precedence.csv`, `hemisphere_basis.csv`) and the flags files the
 last one lists, and sources `__ShinyApp/explorer.R` for `brain_mass_items()`.
 
+## The one route: data points (since step 16, 25 November 2026)
+
+The merge folders are being retired, trait by trait, in favour of one organization of data points
+(owner, 25 November 2026). A trait whose sources are listed in `item_columns.csv` is built here, not
+in a merge folder:
+
+1. **Map** (`item_columns.csv`): one row per source column: the registered item (or a `path` for a
+   table that is not registered), the species column, the value column, the trait label and unit,
+   the role, and optionally specimen and n columns. Where the species column is the item builder's
+   identification (a table that prints common names), `printed_col` names the column as printed; the
+   data point keeps both (`species_printed`, `species_named`) and the resolver reads the second. `species_col`, `value_col` and `n_col` take a
+   column name or an R expression over the table's columns; a value computed by an expression says
+   so in `derived`. `label` may contain `{column}` placeholders. `dataset` keeps the old dataset name
+   for now, because both apps still offer it as a filter.
+2. **Data points** (`datapoints.csv.gz`): one row per mapped source cell that holds a value, as
+   printed. Nothing is averaged at this stage.
+3. **Rules**, the same for every data point: species from the house resolver
+   (`_keys/resolve_species.R`, which applies the species key's per-source decisions); a subspecies
+   keeps its printed name so the subspecies rule below files it. Within one report (item) the points
+   of a species and trait are averaged; the served value is the **plain mean of the independent
+   reports** (owner, 25 November 2026). `N_sources` is the number of reports. The same-data,
+   same-specimen and not-served rules join here as traits with copies move onto this route.
+4. The rows join the merge rows and get the same treatment as every other row (display aliases,
+   Hemispheres, subspecies rule, population verdict, keys).
+
+Moved so far: cerebral surface and folding (Heuer et al. 2019), cerebellar folding (Heuer et al. 2023,
+Ashwell 2020), grey-level index (Palomero-Gallagher & Zilles 2018, Semendeferi et al. 1998 and 2001,
+Sherwood et al. 2004, Zilles et al. 1986).
+
 ## What is not served
 
 A label that `_keys/variable_definitions.csv` marks `is_measurement = False` is a note about the data
@@ -68,7 +101,7 @@ Rscript __compiled/build_compiled.R . /tmp/x   # same table into /tmp/x, repo un
   regenerates the file before every push; with `--no-build` the updater runs the builder alone.
 - The sweep (`_run_all_scripts_v2.R`) runs it after the merges.
 - `_checks/check_compiled_current.R` rebuilds into a temporary folder and fails if the committed
-  file differs. Run it before a push made by hand.
+  table or data points differ. Run it before a push made by hand.
 
 The apps read the file from GitHub, so a change to a merge or a key reaches them only when the
 rebuilt file is pushed. The output does not depend on the session locale; two runs on the same

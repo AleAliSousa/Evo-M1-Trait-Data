@@ -1,0 +1,9 @@
+# Barger 2012 dissertation Table 4.2: complete continuation
+
+Source: Nicole L. Barger, *Social Behavior from a Comparative Neuroanatomical Perspective: The Amygdala in Human Evolution* (UC San Diego dissertation, 2012), printed Table 4.2 p. 177 / local PDF p. 195. The caption calls this a continuation of the subcortical limbic table. The frozen snapshot contains **all 23 printed rows** in order, extracted from the PDF grid and checked against the rendered page on 2026-11-26; human visual signoff remains pending. No figure data are involved.
+
+Run `Rscript Barger__2012/Barger__2012_Table4.2.R` from the repository root. The script reads only its frozen snapshot and writes the analysis CSV and `__Public/comparative-data/UCSD2012Barger_Table4.2.tsv`. The previous page is built separately as [Table 4.1](Barger__2012_Table4.1.README.md). Both items have the same output columns and can be concatenated if their `source_row` and `source` fields are retained.
+
+Every Table 4.2 specimen cell is `--`. These are **unnamed taxon rows**, not new identified animals. The printed reference codes `S87. S81` point to Stephan et al. 1987 for amygdala volumes and Stephan et al. 1981 for the remaining structures. This is a secondary compilation: original Stephan sources are preferred, and this item is **reference only** for checking coverage and transcription. All values are cubic centimeters. Blank central-nucleus cells and printed dashes are retained separately in the snapshot and become missing numeric values in the analysis CSV.
+
+Source spellings such as `Pygathrix nemeaus`, `Cercopithecus ascanious`, `Cercopitehcus talapoin`, `Cebulla pygmaeus`, and `Allouata sp.` are preserved as printed. They are not silently corrected or used to assign a modern taxon. The *Macaca mulatta* source row prints hippocampus 0.677, schizocortex 0.320, and total 0.996 cc; the two components sum to 0.997 cc, so the source total is retained rather than recalculated.

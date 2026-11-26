@@ -1,5 +1,7 @@
 # Merging reproductive life history: Asdell's root compendium + the compilations that cite it
 
+The electronic appendix associated with Kappeler and Pereira (eds., 2003), *Primate Life Histories and Socioecology*, was supplied privately to the project owner. Its original workbook and cell-level extraction are in `Evo-M1-Trait-Data-restricted/unpublished_data/____Unpublished__Kappeler_Pereira_2003/`; a restricted comparison against this merge is in `restricted_checks/Kappeler_Pereira_2003/comparison/`. The source is available for provenance review but is not a party in this public merge pending a row-level source and redistribution review. The workbook's font colors distinguish cited sources; preserve them when assessing individual values.
+
 `life_history_compiled.R` merges **Hayssen, van Tienhoven & van Tienhoven (1993), Asdell's Patterns of Mammalian
 Reproduction** (transcribed per value in `Hayssen_etal_1993/`, 20 per-order items) with the four life-history
 compilations in this repo that cite it: **PanTHERIA WR05** (Jones et al. 2009; Hayssen = reference 1297),

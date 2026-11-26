@@ -14,3 +14,5 @@ MacLeod_etal_2003 Table 1,MacLeod_etal_2003_Table1.csv,Hylobates lar,Sunny / Che
 Baron_etal_1996,-,-,-,-,"grep hit is ""discolor"" (Callicebus/Pithecia)",n/a,rejected - false positive
 Burger_etal_2019,-,-,-,-,"grep hit is ""discolor""",n/a,rejected - false positive
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1.csv,Hylobates lar,YN81-146b (footnote b; = YN81-146),histology,"insula subdivisions; F, brain 92000 mg, vol 88803 mm3; Collection printed as Stephan (conflicts with Zilles/Semendeferi elsewhere)",NOT registered,"confirmed - YN81-146, not Disco"
+Barger__2012,Barger__2012_Table4.1.csv,Hylobates concolor,Disco,histology,Full Table 4.1 (22 rows) explicitly pairs Disco and Hylobates concolor; amygdala 0.270 cc; hippocampus 0.998 cc (reference only),registered,confirmed identity pair; dissertation volumes not independent
+Barger_etal_2012,Barger_etal_2012_Table1.csv,Hylobates concolor,no name in journal; F 22 right hemisphere,histology,Peer-reviewed Table 1 unique H. concolor case for amygdala neuron stereology; dissertation Tables 3.1/4.1 supply name bridge,registered probable,strong inferred Disco case; journal does not print ID

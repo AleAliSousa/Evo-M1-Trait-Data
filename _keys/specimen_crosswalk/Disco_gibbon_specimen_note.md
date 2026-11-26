@@ -16,11 +16,18 @@ The most important points are:
 - **Sex:** Female
 - **Age in MacLeod records:** 22 years
 - **Published Hirnforschung/Zilles taxon:** *Hylobates lar*
+- **Published Barger 2012 dissertation taxon:** *Hylobates concolor*, directly paired with `Disco` in Table 4.1
 - **Published Barger 2014 taxon:** *Nomascus concolor*
 - **Studbook lead:** *Nomascus leucogenys*, white-cheeked gibbon, Studbook ID 0050, BROWNSVIL local ID 5542
 - **Database handling:** keep `specimen_name`, `identifier`, `published_taxon`, and `current/resolved_taxon` separate.
 
 Do **not** let generic `GIBBON` rows be automatically converted to *Hylobates lar* without a specimen-level check. For Disco specifically, that rule hides a real taxonomic conflict.
+
+## 2026-11-25 update: direct Barger dissertation identification
+
+Barger (2012) dissertation Table 4.1, printed p. 176 / PDF p. 194, places **`Disco` and `Hylobates concolor` in the same row**. Its amygdala values 0.270, 0.060, 0.086, 0.022, and 0.012 cc agree with the left-side Barger 2007 / 2014 value chain. This makes the Barger-side taxon assignment direct source evidence rather than only an inference from the 2014 journal table. The dissertation's Table 3.1, printed p. 112 / PDF p. 130, has exactly one *Hylobates concolor* sample (F, 22 years, right hemisphere, K.S. collection); the peer-reviewed Barger et al. 2012 Table 1 repeats those fields but omits the name. The right-side Table 3.1 neuron sample and left-matching Table 4.1 amygdala volumes must not be treated as the same hemisphere measurement.
+
+Table 4.1 gives Disco's hippocampus as **0.998 cc**, while Barger et al. 2014 Table 1 case 19 gives **0.950 cc**. The cause of the difference remains unresolved. The complete dissertation table is built as `Barger__2012_Table4.1` for identity/reference only; the peer-reviewed 2014 hippocampus value is preferred for analysis. The direct pairing does not resolve Disco's biological species against the separate *H. lar* and studbook evidence. The later historical sections of this note describe the evidence available before this dissertation was checked.
 
 ## Evidence chain
 

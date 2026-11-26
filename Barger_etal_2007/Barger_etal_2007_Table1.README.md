@@ -42,6 +42,8 @@ sensu-lato concept except YN85-38, which public MacLeod evidence resolves as
 *Pongo abelii*. Disco remains taxonomically flagged rather than silently
 rewritten.
 
+**Taxon caution added 2026-11-25:** The printed Table 1 groups `Disco` and `YN81-146` under `GIBBON` without a binomial for either row. The legacy build script forward-maps that entire group to `Hylobates lar`, so `Species = Hylobates lar` in this item's CSV is **not a source-printed species identification for Disco**. Barger’s 2012 dissertation Table 4.1 directly pairs `Disco` with `Hylobates concolor` (built in full as `Barger__2012_Table4.1`), while MacLeod/de Sousa print *H. lar* for the same animal. Use the specimen crosswalk and retain the taxon conflict; do not use this CSV's Disco species field to settle the biological species or count it as a separate *H. lar* animal. The volume cells remain the peer-reviewed 2007 measurements.
+
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species/specimen note ✅ → Online database ☐
 
 _Note: Table 2 (literature comparison of AC volume ranges across studies) is secondary and not

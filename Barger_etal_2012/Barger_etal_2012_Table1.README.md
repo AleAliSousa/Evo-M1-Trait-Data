@@ -42,6 +42,8 @@ The snapshot was transcribed from the PDF table by Microsoft Copilot on 2026-09-
 
 Names are retained as printed in this item. `Hylobates concolor` is the paper's printed name for the white-cheeked gibbon specimen, and the three gibbon rows represent separate species. Any accepted-name harmonisation should use the appropriate collection-scoped species key rather than silently changing the frozen snapshot.
 
+**Specimen bridge added 2026-11-25:** Barger’s 2012 dissertation Table 4.1 explicitly prints `Disco` beside `Hylobates concolor`; its Table 3.1 repeats this paper's single female, age-22, right-hemisphere *H. concolor* sample. Table 1 here omits the name, so the journal row 31 → Disco/GPZ-5542 link is strongly supported but marked `probable` in the specimen crosswalk. The full dissertation item `Barger__2012_Table4.1` is reference-only for volumes. The right-side neuron sample should not be assigned to the dissertation's left-matching amygdala volumes.
+
 ### Definitions
 
 No `Table1_definitions.csv` exists for this item, and none is needed: Table 1 is a specimen

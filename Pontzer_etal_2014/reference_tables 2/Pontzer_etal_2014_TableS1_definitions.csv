@@ -1,0 +1,19 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_order,One-based order of the printed population rows,,,,info,Primates,Pontzer_etal_2014_TableS1,,Supporting PDF p. 7 Table S1
+species_as_published,Species label exactly as printed after joining wrapped lines,,,,info,Primates,Pontzer_etal_2014_TableS1,"Retains Aloutta palliata and M. mulata spellings",Supporting PDF p. 7 Table S1
+Species,Resolved scientific name from this paper's General species key,,,,info,Primates,Pontzer_etal_2014_TableS1,"Eulemur sp. remains genus-only; Pongo pygmaeus is retained as the paper's concept",Supporting PDF p. 7 Table S1 and SI Text
+population_as_published,Population or setting exactly as printed after joining wrapped lines,,,,info,Primates,Pontzer_etal_2014_TableS1,"Separate populations of Homo sapiens and Lemur catta remain separate rows",Supporting PDF p. 7 Table S1
+n_individuals,Number of individuals in the printed N column,,,n,info,Primates,Pontzer_etal_2014_TableS1,,Supporting PDF p. 7 Table S1
+mean_age_as_published,Printed Mean age y cell including Adult or em dash,,Age.y,,info,Primates,Pontzer_etal_2014_TableS1,"Adult denotes a nonnumeric age category",Supporting PDF p. 7 Table S1
+mean_age_y,Numeric mean age when a number is printed,,Age.y,mean,secondary,Primates,Pontzer_etal_2014_TableS1,"Blank for Adult and em dash",Supporting PDF p. 7 Table S1
+body_mass_mean_g,Mean body mass converted from printed kg to g,,Mass.g,mean,secondary,Primates,Pontzer_etal_2014_TableS1,kg multiplied by 1000,Supporting PDF p. 7 Table S1
+body_mass_sd_g,Body mass standard deviation converted from printed kg to g,,Mass.g,SD,secondary,Primates,Pontzer_etal_2014_TableS1,"Printed SD; blank where em dash",Supporting PDF p. 7 Table S1
+body_mass_range_as_published,Printed body mass range or em dash,,Mass.kg,range,info,Primates,Pontzer_etal_2014_TableS1,,Supporting PDF p. 7 Table S1
+body_mass_min_g,Lower end of printed body mass range converted to g,,Mass.g,min,secondary,Primates,Pontzer_etal_2014_TableS1,kg multiplied by 1000,Supporting PDF p. 7 Table S1
+body_mass_max_g,Upper end of printed body mass range converted to g,,Mass.g,max,secondary,Primates,Pontzer_etal_2014_TableS1,kg multiplied by 1000,Supporting PDF p. 7 Table S1
+tee_mean_kcal_d,Mean total energy expenditure as printed,,TEE.kcal_per_day,mean,secondary,Primates,Pontzer_etal_2014_TableS1,"Population means; provenance mixed across original and cited samples",Supporting PDF p. 7 Table S1
+tee_sd_kcal_d,Total energy expenditure standard deviation as printed,,TEE.kcal_per_day,SD,secondary,Primates,Pontzer_etal_2014_TableS1,"Printed SD; blank where em dash",Supporting PDF p. 7 Table S1
+tee_range_as_published,Printed TEE range or em dash,,TEE.kcal_per_day,range,info,Primates,Pontzer_etal_2014_TableS1,,Supporting PDF p. 7 Table S1
+tee_min_kcal_d,Lower end of printed TEE range,,TEE.kcal_per_day,min,secondary,Primates,Pontzer_etal_2014_TableS1,,Supporting PDF p. 7 Table S1
+tee_max_kcal_d,Upper end of printed TEE range,,TEE.kcal_per_day,max,secondary,Primates,Pontzer_etal_2014_TableS1,,Supporting PDF p. 7 Table S1
+notes_as_published,Notes from the printed table after joining wrapped lines,,,,note,Primates,Pontzer_etal_2014_TableS1,,Supporting PDF p. 7 Table S1

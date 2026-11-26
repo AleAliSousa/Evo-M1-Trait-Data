@@ -60,3 +60,5 @@ pre-existing formatted sheet, and this one was built from the raw PDF + export. 
 done at build time by cross-checking the snapshot (from the Adobe export) against an independent
 extraction from the **PDF text**, matched by specimen order (`case_index`): **20 specimens, all
 seven volume columns agree, 0 value mismatches**, including the dash/`NA` pattern.
+
+**Disco identity update, 2026-11-25:** Barger’s 2012 dissertation Table 4.1 directly prints `Disco` with `Hylobates concolor`, and its five amygdala values match this paper's *Nomascus concolor* case 19. The journal still prints no specimen handle, so the crosswalk retains a `probable` value-level match to Disco/GPZ-5542. The dissertation gives this case's hippocampus as 0.998 cc; this peer-reviewed table gives 0.950 cc. The reason for that discrepancy is unresolved. Prefer the journal value in analysis and keep the dissertation row as reference/identity evidence only; see the full `Barger__2012_Table4.1` item.

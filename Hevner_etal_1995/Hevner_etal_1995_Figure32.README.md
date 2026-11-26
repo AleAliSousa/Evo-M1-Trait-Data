@@ -105,5 +105,11 @@ Pending human RA. The AI-assistant reading and checks are described above. A per
 item: compare each digitised mean with the bar against the axis, and the four/two text-printed anchors), and record `DDMMYYYY_initials` in the
 `Human visual check of snapshot` column.
 
+## Public completion and replot (2026-11-26)
+
+The item is now present in the live registry. Running `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Hevner_etal_1995/Hevner_etal_1995_Figure32.R` wrote its 11-row public TSV under the registered encoded name. The marginal 76.67% versus 78% text comparison noted above remains a mismatch; no data were adjusted.
+
+Run `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Hevner_etal_1995/Hevner_etal_1995_Figure32_replot.R` to regenerate `Hevner_etal_1995_Figure32_replot.png` directly from the analysis CSV. The base-R plot keeps the published horizontal-bar order, optical-density axis scale and units, and the digitised S.E.M. bars. No plotted data are omitted. The replot was inspected against PDF page 26 and matches the descending shape and the longer S.E.M. bar on CA3. This automated visual comparison is not human signoff.
+
 <!-- errata:begin -->
 <!-- errata:end -->

@@ -3,12 +3,10 @@
 Home paper: Zilles K, Palomero-Gallagher N (2017). *Multiple Transmitter Receptors in Regions and Layers of
 the Human Cerebral Cortex.* Front. Neuroanat. 11:78. doi:10.3389/fnana.2017.00078.
 
-Registry (`__ReadMe.xlsx`): **not yet registered.** Proposed Item name **`Zilles_PalomeroGallagher_2017_EBRAINSFingerprints`**
+Registry (`__ReadMe.xlsx`): **registered.** Item name **`Zilles_PalomeroGallagher_2017_EBRAINSFingerprints`**
 (Item number "EBRAINS Fingerprints"; the registry formula strips spaces and underscores from the Item
 number, so the name `..._EBRAINS_fingerprints` used in the build brief cannot be produced by the workbook
-and `EBRAINSFingerprints` is used instead). The build script stopped, as expected, with
-`No 'Item encoded' in __ReadMe.xlsx for: Zilles_PalomeroGallagher_2017_EBRAINSFingerprints`; the public TSV is written once the
-owner registers the item and re-runs `Zilles_PalomeroGallagher_2017_EBRAINSFingerprints.R`.
+and `EBRAINSFingerprints` is used instead). The registered encoded name is `10.3389%2Ffnana.2017.00078_EBRAINSFingerprints`.
 
 ## ⚠️ Owner decision — constructed EBRAINS source placed in a paper folder
 The values in this item are **not printed in the 2017 paper**. They are the per-area receptor-density
@@ -84,4 +82,4 @@ raised `NoMapAvailableError` in this environment (BigBrain map not fetchable). N
   this item too.
 
 Pipeline: Source → Snapshot ✅ (generated 2026-11-15) → Data readable ✅ → definitions ✅ → references ✅ →
-README ✅ → registry row ⏳ (owner) → public TSV ⏳ (after registration).
+README ✅ → registry row ✅ → public TSV ✅. Running `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Zilles_PalomeroGallagher_2017/Zilles_PalomeroGallagher_2017_EBRAINSFingerprints.R` on 2026-11-26 wrote 531 rows to `__Public/comparative-data/10.3389%2Ffnana.2017.00078_EBRAINSFingerprints.tsv`. The registry and item file continue to flag that the 2017 paper is a home citation rather than the source of the measurements; each row carries its actual EBRAINS dataset DOI.

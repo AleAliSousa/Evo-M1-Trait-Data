@@ -1,5 +1,8 @@
 # Hevner_etal_1995_Text
 
+**2026-11-26 public completion.** The item now has an exact row in the main `__ReadMe.xlsx` registry. Running `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Hevner_etal_1995/Hevner_etal_1995_Text.R` wrote `__Public/comparative-data/10.1016%2F0306-4522(94)00514-6_Text.tsv`. Earlier “not registered” or “public TSV pending” statements below describe the initial build date. Human source review remains as separately recorded.
+
+
 **Item name** `Hevner_etal_1995_Text` · **Item number** `data from text` · **Item encoded** `10.1016%2F0306-4522(94)00514-6_Text` (derived; the registry is the authority) — NOT yet registered in `__ReadMe.xlsx`; registry row to paste: `Hevner_etal_1995_Text_registry_row.xlsx`.
 
 Hevner, R. F., Liu, S., & Wong-Riley, M. T. T. (1995). A metabolic map of cytochrome oxidase in the rat brain: histochemical, densitometric and biochemical studies. *Neuroscience*, 65(2), 313-342. <https://doi.org/10.1016/0306-4522(94)00514-6>

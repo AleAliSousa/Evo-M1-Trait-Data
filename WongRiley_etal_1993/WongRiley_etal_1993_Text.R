@@ -223,5 +223,6 @@ stopifnot(!grepl("_$", item_encoded))
 tsv_dir <- file.path(root, "__Public", "comparative-data")
 if (!dir.exists(tsv_dir)) stop("Public TSV directory not found")
 write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
-            sep = "\t", row.names = FALSE, quote = TRUE, na = "", fileEncoding = "UTF-8")
+            sep = "\t", row.names = FALSE, quote = TRUE, na = "", qmethod = "double",
+            fileEncoding = "UTF-8")
 message(item_name, ": public TSV ", item_encoded, ".tsv")

@@ -148,5 +148,5 @@ item_encoded <- filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)
 if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", item_name)
 dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
 utils::write.table(out, file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
-            sep = "\t", row.names = FALSE, na = "")
+            sep = "\t", row.names = FALSE, na = "", qmethod = "double")
 message("Wrote ", nrow(out), " rows -> ", basename(final_csv), " and ", item_encoded, ".tsv")

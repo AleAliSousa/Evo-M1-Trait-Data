@@ -1,5 +1,8 @@
 # Hevner_WongRiley_1990_OrdinalLaminar
 
+**2026-11-26 public completion.** The item now has an exact row in the main `__ReadMe.xlsx` registry. Running `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Hevner_WongRiley_1990/Hevner_WongRiley_1990_OrdinalLaminar.R` wrote `__Public/comparative-data/10.1523%2FJNEUROSCI.10-04-01331.1990_OrdinalLaminar.tsv`. Earlier “not registered” or “public TSV pending” statements below describe the initial build date. Human source review remains as separately recorded.
+
+
 **Item name** `Hevner_WongRiley_1990_OrdinalLaminar` · **Item number** `Ordinal Laminar` · **Item encoded** `10.1523%2FJNEUROSCI.10-04-01331.1990_OrdinalLaminar` (derived; the registry is the authority) — NOT yet registered in `__ReadMe.xlsx`; registry row to paste: `Hevner_WongRiley_1990_OrdinalLaminar_registry_row.xlsx`.
 
 Hevner, R. F., & Wong-Riley, M. T. T. (1990). Regulation of cytochrome oxidase protein levels by functional activity in the macaque monkey visual system. *Journal of Neuroscience*, 10(4), 1331–1340. <https://doi.org/10.1523/JNEUROSCI.10-04-01331.1990>

@@ -1,5 +1,8 @@
 # Sokoloff_etal_1977_Table4
 
+**2026-11-26 public completion.** The item now has an exact row in the main `__ReadMe.xlsx` registry. Running `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Sokoloff_etal_1977/Sokoloff_etal_1977_Table4.R` wrote `__Public/comparative-data/10.1111%2Fj.1471-4159.1977.tb10649.x_Table4.tsv`. Earlier “not registered” or “public TSV pending” statements below describe the initial build date. Human source review remains as separately recorded.
+
+
 **Item name** `Sokoloff_etal_1977_Table4` · **Item number** `Table 4` · **Item encoded** `10.1111%2Fj.1471-4159.1977.tb10649.x_Table4` (derived; the registry is the authority) — NOT yet registered in `__ReadMe.xlsx`; registry row to paste: `Sokoloff_etal_1977_Table4_registry_row.xlsx`.
 
 Sokoloff, L., Reivich, M., Kennedy, C., Des Rosiers, M. H., Patlak, C. S., Pettigrew, K. D., Sakurada, O., & Shinohara, M. (1977). The [14C]deoxyglucose method for the measurement of local cerebral glucose utilization: theory, procedure, and normal values in the conscious and anesthetized albino rat. *Journal of Neurochemistry*, 28(5), 897-916. <https://doi.org/10.1111/j.1471-4159.1977.tb10649.x>

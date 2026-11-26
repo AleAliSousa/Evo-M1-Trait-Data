@@ -15,6 +15,8 @@ The separate snapshot script reads the PDF text layer with `pdftotext -layout`, 
 
 The source page was rendered and visually compared with the snapshot on 2026-11-26 by an AI assistant: all 19 population rows, column order, wrapped species/population/notes cells, units, missing cells, and first/last rows matched. This is **not human visual signoff**. Human review remains pending in the registry.
 
+The item name and citation already exist in the main registry. `Pontzer_etal_2014_TableS1_registry_row.xlsx` supplies the missing descriptive fields for that existing row and includes a paste guide; it leaves generated name/formula cells blank. The live registry workbook was not changed during this build.
+
 ## Identity and use
 
 `species_as_published` preserves `Aloutta palliata` and `M. mulata` as printed. The paper-scoped rows in `_keys/General/species_key.csv` resolve those spellings and the abbreviations without changing the snapshot. `Eulemur sp.` remains genus-only. `P. pygmaeus` is retained as the source's *Pongo pygmaeus* concept; the three zoo individuals are not assigned to a modern Bornean/Sumatran split. The Hadza and Westerner human rows, and the wild and research-station *Lemur catta* rows, remain separate populations.

@@ -1,5 +1,8 @@
 # Hevner_WongRiley_1992_Text
 
+**2026-11-26 public completion.** The item now has an exact row in the main `__ReadMe.xlsx` registry. Running `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Hevner_WongRiley_1992/Hevner_WongRiley_1992_Text.R` wrote `__Public/comparative-data/10.1002%2Fcne.903260310_Text.tsv`. Earlier “not registered” or “public TSV pending” statements below describe the initial build date. Human source review remains as separately recorded.
+
+
 **Item name** `Hevner_WongRiley_1992_Text` · **Item number** `Text` (mirroring WongRiley_etal_1993_Text / Kennedy_etal_1978_Text) · **Item encoded** `10.1002%2Fcne.903260310_Text` (derived; the registry is the authority) — the owner's existing registry row for this paper has a blank Item number; a NEW row for this item is in `Hevner_WongRiley_1992_Text_registry_row.xlsx` (and one for the sibling `_OrdinalLaminar`).
 
 Hevner, R. F., & Wong-Riley, M. T. T. (1992). Entorhinal cortex of the human, monkey, and rat: Metabolic map as revealed by cytochrome oxidase. *Journal of Comparative Neurology*, 326(3), 451–469. <https://doi.org/10.1002/cne.903260310>

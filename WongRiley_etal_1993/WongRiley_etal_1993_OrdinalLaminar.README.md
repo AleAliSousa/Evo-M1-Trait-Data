@@ -1,5 +1,8 @@
 # WongRiley_etal_1993_OrdinalLaminar
 
+**2026-11-26 public completion.** The item now has an exact row in the main `__ReadMe.xlsx` registry. Running `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla WongRiley_etal_1993/WongRiley_etal_1993_OrdinalLaminar.R` wrote `__Public/comparative-data/10.1017%2Fs0952523800003217_OrdinalLaminar.tsv`. Earlier “not registered” or “public TSV pending” statements below describe the initial build date. Human source review remains as separately recorded.
+
+
 **Item name** `WongRiley_etal_1993_OrdinalLaminar` · **Item number** `Ordinal Laminar` · **Item encoded** `10.1017%2Fs0952523800003217_OrdinalLaminar` (derived; the registry is the authority) — NOT yet registered in `__ReadMe.xlsx`; registry row to paste: `WongRiley_etal_1993_OrdinalLaminar_registry_row.xlsx`.
 
 Wong-Riley, M. T. T., Hevner, R. F., Cutlan, R., Earnest, M., Egan, R., Frost, J., & Nguyen, T. (1993). Cytochrome oxidase in the human visual cortex: Distribution in the developing and the adult brain. *Visual Neuroscience*, 10(1), 41–58. <https://doi.org/10.1017/S0952523800003217>

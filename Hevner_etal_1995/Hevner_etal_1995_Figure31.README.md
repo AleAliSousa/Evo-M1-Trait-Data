@@ -117,5 +117,11 @@ Pending human RA. The AI-assistant reading and checks are described above. A per
 item: compare each digitised mean with the bar against the axis, and the four/two text-printed anchors), and record `DDMMYYYY_initials` in the
 `Human visual check of snapshot` column.
 
+## Public completion and replot (2026-11-26)
+
+The item is now present in the live registry. Running `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Hevner_etal_1995/Hevner_etal_1995_Figure31.R` wrote its 35-row public TSV under the registered encoded name. The same two source-versus-extraction checks described above remain mismatches; no values were changed to force agreement.
+
+Run `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Hevner_etal_1995/Hevner_etal_1995_Figure31_replot.R` to regenerate `Hevner_etal_1995_Figure31_replot.png` directly from the analysis CSV. The base-R plot keeps the published A/B/C order, 12 regional positions, axis units and scales, and the digitised S.E.M. bars. Panel C retains whole brain as N.D. Panels D/E are omitted because they repeat the regional measurements as scatterplots and were not separately extracted. The replot was inspected against PDF page 24: the three bar profiles, gray/white separation, and source order agree. This automated visual comparison is not human signoff.
+
 <!-- errata:begin -->
 <!-- errata:end -->

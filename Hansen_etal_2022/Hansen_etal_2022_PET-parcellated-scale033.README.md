@@ -9,7 +9,7 @@ structural and functional organization of the human neocortex.* Nat Neurosci 25:
 doi:10.1038/s41593-022-01186-3.
 
 Registry (`__ReadMe.xlsx`): Item name **`Hansen_etal_2022_PET-parcellated-scale033`**; expected Item encoded
-`10.1038%2Fs41593-022-01186-3_PET-parcellated-scale033` (**not yet registered** — see "Build status").
+`10.1038%2Fs41593-022-01186-3_PET-parcellated-scale033` (now present in the main registry).
 Naming note: the registry formula strips spaces and underscores from `Item number`, so the item is
 hyphenated (`PET-parcellated-scale033`) rather than `PET_parcellated_scale033`; hyphens survive the formula.
 
@@ -165,5 +165,4 @@ None — the source tables print no totals or percentages (no `table_checks` rep
 ## Build status
 Snapshot ✅ · Data readable ✅ (CSV written by `Rscript Hansen_etal_2022_PET-parcellated-scale033.R` 2026-11-15) ·
 definitions ✅ · README ✅ · registry row `Hansen_etal_2022_PET-parcellated-scale033_registry_row.xlsx` ✅ (to be pasted by the owner) ·
-**public TSV pending**: the build stops with `No 'Item encoded' in __ReadMe.xlsx for: Hansen_etal_2022_PET-parcellated-scale033` until the owner
-registers the item; re-run the build script afterwards. Data role: primary (single-species human reference).
+**public TSV complete 2026-11-26**: `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript --vanilla Hansen_etal_2022/Hansen_etal_2022_PET-parcellated-scale033.R` wrote 3,403 rows to `__Public/comparative-data/10.1038%2Fs41593-022-01186-3_PET-parcellated-scale033.tsv`. This derived file follows the source repository's CC BY-NC-SA 4.0 terms, with Hansen et al. and the original PET-study citations in the item references file. The unresolved tracer-unit annotations noted above remain flagged; no units were inferred in this completion. Data role: primary (single-species human reference).

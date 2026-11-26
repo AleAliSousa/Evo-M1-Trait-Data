@@ -19,7 +19,9 @@
 #                     the cleaned printed name, species_basis "unresolved"); a subspecies keeps its
 #                     printed name for the subspecies rule of build_compiled.R (filed under its
 #                     species by default; owner, 26 November 2026). species_accepted (in
-#                     datapoints.csv.gz) is the name the table files the point under.
+#                     datapoints.csv.gz) is the name the table files the point under. Then the
+#                     served name (build_compiled.R: aliases, one name per NCBI taxon) replaces
+#                     the resolver's, kept as species_resolved.
 #        species value  within a report (one item), its points for a species and trait are
 #                     pooled first (numbers: the mean over source rows of the row means; text: its
 #                     distinct values); across reports a number is the plain mean of the independent
@@ -208,7 +210,7 @@ dp_eval <- function(spec, d, typed, what, item) {
          conditionMessage(e), call. = FALSE))
 }
 
-dp_points <- function(repo) {
+dp_points <- function(repo, rename = identity) {
   map <- dp_read_map(repo)
   reg <- suppressWarnings(readxl::read_excel(file.path(repo, "__ReadMe.xlsx"), sheet = 1))
   enc_of <- setNames(as.character(reg[["Item encoded"]]), as.character(reg[["Item name"]]))
@@ -260,13 +262,18 @@ dp_points <- function(repo) {
   sub <- rs$species_basis == "subspecies_assign"
   p$species <- ifelse(sub, species_normalise(p$species_named), rs$accepted_name); p$species_basis <- rs$species_basis
   p$species_accepted <- rs$accepted_name   # the species a subspecies is filed under (build_compiled.R)
+  ## The name each species is served under (build_compiled.R: the aliases, then one name per NCBI
+  ## taxon), applied before the rules, so reports of one species under two names are compared as one
+  ## species. species_resolved keeps the resolver's name.
+  p$species_resolved <- p$species
+  p$species <- rename(p$species); p$species_accepted <- rename(p$species_accepted)
   p$point_id <- paste(p$item, p$source_row, p$trait, sep = " # ")
   p$point_id <- ifelse(nzchar(p$hemisphere), paste(p$point_id, p$hemisphere, sep = " # "), p$point_id)
   if (anyDuplicated(p$point_id)) stop("duplicate data point id: ", p$point_id[anyDuplicated(p$point_id)], call. = FALSE)
   p$status <- "served"; p$report <- ""; p$same_as <- ""
   p <- dp_rules(p, dp_read_decisions(repo))
   p[, c("point_id", "item", "source_publication", "team", "dataset", "source_row", "value_col", "trait", "unit",
-        "species_printed", "species_named", "species", "species_basis", "species_accepted", "value_printed", "value",
+        "species_printed", "species_named", "species_resolved", "species", "species_basis", "species_accepted", "value_printed", "value",
         "value_type", "n", "specimen", "hemisphere", "role", "cites", "derived", "status", "report", "same_as")]
 }
 

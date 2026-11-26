@@ -8,6 +8,15 @@ architecture; it must not be used to stop missing-Order lookup after NCBI.
 Fallback classifications retain their actual authority and do not change the
 identity anchor or invent an NCBI taxid.
 
+**Served names (owner, 26 November 2026; step 20):** the table and both apps serve one name per
+NCBI taxon. After this resolver, `__compiled/build_compiled.R` serves a name that NCBI lists as a
+homotypic synonym or the basionym of a species under NCBI's current name, when NCBI's record agrees
+on author and year (or keeps the epithet where NCBI gives no author). NCBI's answers:
+`_keys/ncbi_name_reports.csv` (`python3 _keys/fetch_ncbi_names.py`). Heterotypic synonyms, subspecies
+rank, *sensu lato* concepts and names `species_pooling.csv` files as subspecies are not joined. The
+map is `__compiled/species_names.csv`; what was and was not joined, `__compiled/species_name_register.csv`.
+The resolver's own accepted names (the hub) are unchanged.
+
 **Status:** v1 implemented 2026-09-28 — `_keys/resolve_species.R` (identity resolver, §3c), all
 spokes on the unified schema (§3b) incl. the new `_keys/General/species_key.csv` for papers with no
 registered collection, and every `__merging_*` build script (13 R + 4 Python, via

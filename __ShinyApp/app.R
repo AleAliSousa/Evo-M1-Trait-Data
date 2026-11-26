@@ -139,17 +139,28 @@ canon <- tryCatch(
               file.path(data_dir, "variable_canonical.csv")),
   error = function(e) NULL)
 
-# Species display aliases: unify synonym labels (e.g. Callithrix pygmaea ->
-# Cebuella pygmaea) across ALL datasets so a species lines up regardless of the
-# taxonomy a source used. See _keys/species_display_aliases.csv.
+# Species names: the name each species is served under. __compiled/species_names.csv,
+# written by __compiled/build_compiled.R, maps every other name to it: the hand-kept
+# _keys/species_display_aliases.csv (e.g. Callithrix pygmaea -> Cebuella pygmaea) and NCBI's
+# homotypic synonyms (one name per NCBI taxon, e.g. Saguinus fuscicollis -> Leontocebus
+# fuscicollis). unalias() applies it to everything the app matches by name (taxonomy, cohorts,
+# tree tips, pooling key), so they line up with the table. An older table without the file
+# falls back to the aliases alone.
 aliases <- tryCatch(
   read_csv_gh("_keys/species_display_aliases.csv",
               file.path(data_dir, "species_display_aliases.csv")),
   error = function(e) NULL)
+served_names <- tryCatch(
+  read_csv_gh("__compiled/species_names.csv", file.path(data_dir, "species_names.csv")),
+  error = function(e) NULL)
+name_map <- if (!is.null(served_names) && nrow(served_names) && all(c("name", "served_as") %in% names(served_names))) {
+  setNames(as.character(served_names$served_as), as.character(served_names$name))
+} else if (!is.null(aliases) && nrow(aliases)) {
+  setNames(as.character(aliases$canonical), as.character(aliases$variant))
+} else NULL
 unalias <- function(sp) {
-  if (is.null(aliases) || !nrow(aliases)) return(sp)
-  m <- setNames(aliases$canonical, aliases$variant)
-  hit <- m[sp]; ifelse(is.na(hit), sp, unname(hit))
+  if (is.null(name_map)) return(sp)
+  hit <- name_map[sp]; ifelse(is.na(hit), sp, unname(hit))
 }
 
 # ---- Species cohorts --------------------------------------------------------
@@ -998,7 +1009,7 @@ reg_fit <- function(w, y, x, covs, logscale, method) {
       return(list(err = "Phylogenetic packages (ape, nlme) are not installed on the server."))
     if (!tree_ready)
       return(list(err = "No mammal tree found. Add _keys/mammal_tree.nwk (see PHYLO_SETUP.md)."))
-    d$tip <- tree$tip.label[match(tolower(d$Species), tolower(tip_binom(tree$tip.label)))]
+    d$tip <- tree$tip.label[match(tolower(d$Species), tolower(unalias(tip_binom(tree$tip.label))))]
     d <- d[!is.na(d$tip) & !duplicated(d$tip), , drop = FALSE]
     if (nrow(d) >= 3) {
       phy <- ape::keep.tip(tree, d$tip)

@@ -111,3 +111,8 @@ snapshot includes source URLs and the checked date. `species_grade_key.csv`
 contains paper-specific grade annotations, with specimen evidence taking
 precedence. `test_taxon_attributes.py` checks grade preservation, redirects,
 rank corrections, R/Python agreement, and fossil merge annotations.
+
+`ncbi_name_reports.csv` holds NCBI's name report for every species name the table and the tree use
+(taxid, rank, current name and authority, the class and authority NCBI gives the name);
+`python3 _keys/fetch_ncbi_names.py` refreshes it. The table builder uses it to serve one name per NCBI
+taxon (see `__compiled/README.md`, *Species names*).

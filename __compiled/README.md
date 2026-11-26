@@ -14,6 +14,8 @@ the one exception; see its README).
 | `trait_definitions.csv` | Definitions of traits the one route serves whose definitions lived in a merge folder (picked up by `_keys/build_variable_definitions.R` like any `*_definitions.csv`). |
 | `datapoints.csv.gz` | Written by every build: every data point of the one route, as printed, with its species, trait, source row and status. The provenance table. |
 | `subspecies_register.csv` | Written by every build: each subspecies filed under a species, with counts, and the three-word labels that are not filed. |
+| `species_names.csv` | Written by every build: every name that is served under another name (the hand-kept aliases and NCBI's homotypic synonyms), with the name it is served as. Both apps read it to match their own keys, the tree and the cohorts to the table. |
+| `species_name_register.csv` | Written by every build: every name the table received that NCBI does not list as current, with what was done and why (joined; not joined, and why; not in NCBI). |
 | `compiled_long.csv.gz` | The output: one row per species × variable × dataset value. Gzip, because the plain CSV is 55.7 MB (3.9 MB zipped on 2026-11-23). UTF-8, LF line ends. |
 
 ## Columns
@@ -38,6 +40,7 @@ note column:
   `one hemisphere (as measured)` for the label with a one-side suffix. Filled from each merge's flags
   file as listed in `_keys/hemisphere_basis.csv`; rule in `_keys/README_hemisphere_basis.md`.
 
+`Species` is one name per NCBI taxon (owner, 26 November 2026; see *Species names* below).
 `Dataset` names the merge a row came from (28 values). Missing cells are `NA`; text is always
 quoted, so an empty string stays distinct from missing. Rows are ordered by `Species`, then
 `Variable`, in byte order; ties stay in feed order.
@@ -111,6 +114,33 @@ Herculano-Houzel 2015, Lyamin et al. 2008, Ruf & Geiser 2015) in step 19. A valu
 computes from printed values (Sherwood's supragranular and infragranular means; Kverkova's part masses,
 brain mass times the printed volume fraction; milligrams printed, grams served) is marked `derived`
 in the data points and in `Source_details`; the printed values it comes from are served too.
+
+## Species names: one name per NCBI taxon (since step 20, 26 November 2026)
+
+The house resolver (`_keys/resolve_species.R`) turns each printed name into the project's name. The
+builder then serves every species under one name per NCBI taxon: a name that NCBI Taxonomy lists as a
+**homotypic synonym** or as the **basionym** of a species (same type, a genus moved or a spelling) is
+served under NCBI's current scientific name, e.g. *Saguinus fuscicollis* → *Leontocebus fuscicollis*
+(NCBI 9487). The hand-kept `_keys/species_display_aliases.csv` applies first.
+
+- NCBI's answers are in `_keys/ncbi_name_reports.csv` (one row per name the project uses: taxid, rank,
+  current name and authority, how NCBI classes the name and the authority it gives it), written by
+  `_keys/fetch_ncbi_names.py`. Nothing is looked up at build time; refresh with
+  `python3 _keys/fetch_ncbi_names.py` (needs access to api.ncbi.nlm.nih.gov).
+- Evidence is required, because NCBI's synonym lists contain errors (it lists *Neacomys musseri* Patton
+  et al. 2000 under *Pseudohydromys musseri* (Flannery, 1989)): both authors given, the same year, and the
+  same first author or the same epithet (one year apart only if both agree); where NCBI gives no
+  author, the same epithet.
+- Not joined, and listed in `species_name_register.csv`: heterotypic synonyms (lumps, awaiting the
+  owner's decision), names NCBI holds at subspecies rank (the subspecies rule files them), names with
+  more than one NCBI record, common names, the *sensu lato* concepts of
+  `_keys/specimen_crosswalk/taxon_concept_registry.csv`, names `_keys/species_pooling.csv` files as a
+  subspecies (the owner's key wins), and names NCBI does not have (NCBI lists only taxa with sequence
+  records).
+- Data points are renamed before the rules, so two reports of one species under two names are compared
+  as one species (`species_resolved` in `datapoints.csv.gz` keeps the resolver's name). Rows of a merge
+  are renamed as they are; where a merge served both names, both rows stay until that merge moves to
+  data points. Hemisphere flags stay on the row of the name the merge flagged.
 
 ## What is not served
 

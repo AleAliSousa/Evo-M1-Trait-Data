@@ -16,8 +16,11 @@
 #         population_status.csv, variable_definitions.csv.
 #         Sources mapped in __compiled/item_columns.csv are read as data points by
 #         __compiled/datapoints.R (the one route; no merge folder) and served from them.
+#         Species names: _keys/ncbi_name_reports.csv (one name per NCBI taxon),
+#         _keys/specimen_crosswalk/taxon_concept_registry.csv.
 # OUTPUT  __compiled/compiled_long.csv.gz  (gzip: the plain CSV is over 45 MB)
 #         __compiled/datapoints.csv.gz  (every data point of the one route, as printed)
+#         __compiled/species_names.csv, species_name_register.csv, subspecies_register.csv
 #         14 columns as the app has them, in the app's order:
 #           Species, Dataset, Variable, Value, Value_num, Source, Items,
 #           Source_details, Teams, N_sources, Variable_raw, Unit, Unit_raw,
@@ -84,7 +87,6 @@ source(file.path(repo, "__ShinyApp", "explorer.R"), local = TRUE)
 # treatment (species display aliases, Hemispheres, subspecies rule, population verdict, keys).
 source(file.path(repo, "_keys", "resolve_species.R"), local = TRUE)
 source(file.path(repo, "__compiled", "datapoints.R"), local = TRUE)
-dp_all <- dp_points(repo)
 
 # ---- the feed list (moved from app.R) ---------------------------------------
 # One row per feed in _keys/app_feeds.csv; feed_path("x") is the path of feed x.
@@ -150,13 +152,80 @@ aliases <- tryCatch(
   read_csv_gh("_keys/species_display_aliases.csv",
               file.path(data_dir, "species_display_aliases.csv")),
   error = function(e) NULL)
-unalias <- function(sp) {
-  if (is.null(aliases) || !nrow(aliases)) return(sp)
-  m <- setNames(aliases$canonical, aliases$variant)
-  hit <- m[sp]; ifelse(is.na(hit), sp, unname(hit))
-}
 if (is.null(canon) || is.null(aliases))
   stop("_keys/variable_canonical.csv and _keys/species_display_aliases.csv are both needed.", call. = FALSE)
+
+# ---- Species names: one name per NCBI taxon (owner, 26 November 2026) --------
+# A name that NCBI Taxonomy lists as a homotypic synonym, or as the basionym, of a species is
+# served under NCBI's current scientific name (e.g. Saguinus fuscicollis -> Leontocebus
+# fuscicollis, NCBI 9487). NCBI's answers are in _keys/ncbi_name_reports.csv, written by
+# _keys/fetch_ncbi_names.py; nothing is looked up at build time. Not joined: heterotypic synonyms
+# (lumps; listed for the owner), names NCBI holds at subspecies rank (the subspecies rule files
+# them), names with more than one NCBI record, common names, the sensu lato concepts of
+# _keys/specimen_crosswalk/taxon_concept_registry.csv, and names _keys/species_pooling.csv files as
+# a subspecies (the owner's key wins). The hand-kept aliases apply first. The whole map is written
+# beside the table as species_names.csv; both apps read that file (no copy of this code in app.R).
+read_key_chr <- function(rel) {
+  f <- file.path(repo, rel)
+  if (!file.exists(f)) stop(rel, " does not exist in ", repo, ".", call. = FALSE)
+  read.csv(f, colClasses = "character", check.names = FALSE, na.strings = character(0), encoding = "UTF-8")
+}
+ncbi_rep <- read_key_chr("_keys/ncbi_name_reports.csv")
+if (!all(c("query", "tax_id", "rank", "current_name", "current_authority", "name_class", "name_authority") %in% names(ncbi_rep)))
+  stop("_keys/ncbi_name_reports.csv needs columns query, tax_id, rank, current_name, current_authority, name_class, name_authority.", call. = FALSE)
+SL_NAMES <- local({
+  k <- read_key_chr("_keys/specimen_crosswalk/taxon_concept_registry.csv")
+  unique(trimws(sub("[[:space:]]*\\(s\\.l\\.\\)$", "", k$taxon_concept[trimws(k$sensu) == "s.l."])))
+})
+POOLED_SUBSPECIES <- local({
+  k <- read_key_chr("_keys/species_pooling.csv")
+  unique(trimws(k$member[trimws(k$axis) == "subspecies" & trimws(k$relation) != "species_rank"]))
+})
+ncbi_one <- ncbi_rep[!ncbi_rep$query %in% ncbi_rep$query[duplicated(ncbi_rep$query)], , drop = FALSE]
+# A homotypic synonym shares the type: NCBI should give it the same author and year as the current
+# name, and it keeps the species epithet (gender endings aside). NCBI's synonym lists contain errors
+# (e.g. Neacomys musseri Patton et al. 2000 listed under Pseudohydromys musseri (Flannery, 1989);
+# Oxymycterus roberti Thomas, 1901 as the basionym of Chionomys roberti (Thomas, 1906)), so a name is
+# joined only with that evidence: both authors given, same year, and the same first author or the same
+# epithet (one year apart only if both agree); or, where NCBI gives no author, the same epithet.
+auth_parts <- function(a) {
+  a <- tolower(iconv(ifelse(is.na(a), "", a), "UTF-8", "ASCII//TRANSLIT", sub = ""))
+  a <- gsub("\\b[a-z]\\.", " ", a)                                   # initials
+  a <- gsub("\\b(van|von|de|da|du|der|den|la|le|di|del|des)\\b", " ", a)   # particles
+  yr <- ifelse(grepl("[0-9]{4}", a), sub("^.*?([0-9]{4}).*$", "\\1", a, perl = TRUE), "")
+  au <- ifelse(grepl("[a-z]", a), sub("^[^a-z]*([a-z]+).*$", "\\1", a), "")
+  list(year = suppressWarnings(as.integer(yr)), author = au)
+}
+epithet_stem <- function(x) sub("(us|um|a|is|e|er|ra|i|ii|ae|ensis|ense)$", "", tolower(sub("^.* ", "", x)))
+same_type <- function(name, name_auth, current, current_auth) {
+  pa <- auth_parts(name_auth); pc <- auth_parts(current_auth)
+  both <- !is.na(pa$year) & !is.na(pc$year) & nzchar(pa$author) & nzchar(pc$author)
+  E <- epithet_stem(name) == epithet_stem(current); W <- pa$author == pc$author
+  dy <- abs(pa$year - pc$year)
+  ifelse(both, (dy == 0 & (W | E)) | (dy == 1 & W & E), E)
+}
+ncbi_one$same_type <- same_type(ncbi_one$query, ncbi_one$name_authority, ncbi_one$current_name, ncbi_one$current_authority)
+ncbi_one$same_type[is.na(ncbi_one$same_type)] <- FALSE
+ncbi_ok <- ncbi_one$rank == "species" & ncbi_one$name_class %in% c("homotypic_synonym", "basionym") &
+  ncbi_one$same_type & nzchar(ncbi_one$current_name) & ncbi_one$current_name != ncbi_one$query &
+  !ncbi_one$query %in% SL_NAMES & !ncbi_one$query %in% POOLED_SUBSPECIES
+ncbi_map  <- setNames(ncbi_one$current_name[ncbi_ok], ncbi_one$query[ncbi_ok])
+alias_map <- setNames(trimws(as.character(aliases$canonical)), trimws(as.character(aliases$variant)))
+unalias <- function(sp) {
+  out <- unname(sp)
+  for (i in 1:5) {                     # aliases, then NCBI, until nothing changes
+    a <- alias_map[out]; nxt <- ifelse(is.na(a), out, unname(a))
+    b <- ncbi_map[nxt];  nxt <- ifelse(is.na(b), nxt, unname(b))
+    nxt <- unname(nxt)
+    if (identical(nxt, out)) return(out)
+    out <- nxt
+  }
+  stop("species names: the aliases and the NCBI names form a loop.", call. = FALSE)
+}
+alias_only <- function(sp) { a <- unname(alias_map[sp]); ifelse(is.na(a), sp, a) }   # the aliases alone
+# the one route: data points under the served names (the rules then see one species per taxon)
+dp_all <- dp_points(repo, rename = unalias)
+dp_species_in <- dp_all$species_resolved             # as the resolver named them (for the name register)
 
 # Which dataset is served where two datasets carry the same label for the same
 # species: one row per label and pair of datasets, decided by the owner.
@@ -179,7 +248,7 @@ subspecies_key <- local({
   if (anyDuplicated(low$member))
     stop("_keys/species_pooling.csv: a subspecies name is filed twice: ",
          paste(unique(low$member[duplicated(low$member)]), collapse = "; "), call. = FALSE)
-  data.frame(member = low$member, species = top$member[match(low$pool_id, top$pool_id)],
+  data.frame(member = low$member, species = unalias(top$member[match(low$pool_id, top$pool_id)]),
              stringsAsFactors = FALSE)
 })
 
@@ -231,13 +300,13 @@ hemisphere_basis <- function(out) {
     if (!all(c("Species", "Variable", "flag", "detail") %in% names(fl)))
       stop(hemi_key$flags_file[i], " must have columns: Species, Variable, flag, detail.", call. = FALSE)
     fl <- fl[fl$flag %in% names(HEMI_FLAG), , drop = FALSE]
-    # The feed's species names have been through the display aliases by now
-    # (_keys/species_display_aliases.csv); the flags file has the merge's own names.
-    fl$Species <- unalias(fl$Species)
+    # The flags file has the merge's own names; rows are matched on theirs (Species_feed: the
+    # aliases applied, not the NCBI join), so a flag stays on the row it was written for.
+    fl$Species <- alias_only(fl$Species)
     fl <- fl[!duplicated(fl[c("Species", "Variable", "flag")]), , drop = FALSE]
     fk <- paste(fl$Species, fl$Variable, sep = "\r")
     if (anyDuplicated(fk)) stop(hemi_key$flags_file[i], ": a value is flagged twice for its hemispheres.", call. = FALSE)
-    k <- match(paste(out$Species, out$Variable_raw, sep = "\r"), fk); hit <- rows & !is.na(k)
+    k <- match(paste(out$Species_feed, out$Variable_raw, sep = "\r"), fk); hit <- rows & !is.na(k)
     if (any(hit & one))
       stop(hemi_key$flags_file[i], ": a one-side label is also flagged as doubled: ",
            paste(unique(out$Variable_raw[hit & one]), collapse = "; "), call. = FALSE)
@@ -516,7 +585,13 @@ load_compiled <- function() {
     dp_species_values(dp_all)
   )
 
-  # unify species labels everywhere so synonyms line up
+  # unify species labels everywhere so synonyms line up (aliases, then NCBI; see above)
+  # names as the feeds give them, for the name register (data-point rows: their points' names instead)
+  names_in <<- rbind(base[, c("Species", "Dataset")], merges[!merges$Dataset %in% unique(dp_all$dataset), c("Species", "Dataset")])
+  # the merge's own name (aliases only), kept until the hemisphere flags are matched: a flag belongs
+  # to the row of the name the merge flagged, not to every row of a species two names now share
+  base$Species_feed   <- alias_only(base$Species)
+  merges$Species_feed <- alias_only(merges$Species)
   base$Species   <- unalias(base$Species)
   merges$Species <- unalias(merges$Species)
 
@@ -689,6 +764,7 @@ COLS <- c(Species = "character", Dataset = "character", Variable = "character",
           Unit_raw = "character", population_verdict = "character",
           domain = "character", measure_class = "character", Subspecies = "character",
           Hemispheres = "character")
+compiled$Species_feed <- NULL
 compiled <- compiled[c(setdiff(names(compiled), c("Subspecies", "Hemispheres")), "Subspecies", "Hemispheres")]
 if (!identical(names(compiled), names(COLS)))
   stop("The loader produced columns [", paste(names(compiled), collapse = ", "),
@@ -766,7 +842,7 @@ reg_rows <- function(d, name, species, status) {
 filed <- split(compiled[nzchar(compiled$Subspecies), , drop = FALSE], compiled$Subspecies[nzchar(compiled$Subspecies)])
 reg <- lapply(names(filed), function(nm) reg_rows(filed[[nm]], nm, filed[[nm]]$Species[1], "filed"))
 three <- unique(compiled$Species[grepl("^[A-Z][a-z]+ [a-z][a-z-]+ [a-z][a-z-]+$", compiled$Species)])
-three <- three[sub(" [^ ]+$", "", three) %in% compiled$Species]
+three <- three[unalias(sub(" [^ ]+$", "", three)) %in% compiled$Species]      # the parent under its served name
 dom_forms <- if (is.null(pk)) character(0) else pk$label[pk$relation == "domestic_form"]
 for (nm in sort(three, method = "radix")) {
   ep <- sub("^.* ", "", nm)
@@ -775,7 +851,7 @@ for (nm in sort(three, method = "radix")) {
         else if (ep %in% DOMESTIC_EPITHETS)
           "not filed: domestic or feral form, awaiting a decision"
         else "not filed: awaiting a decision"
-  reg[[length(reg) + 1L]] <- reg_rows(compiled[compiled$Species == nm, , drop = FALSE], nm, sub(" [^ ]+$", "", nm), st)
+  reg[[length(reg) + 1L]] <- reg_rows(compiled[compiled$Species == nm, , drop = FALSE], nm, unalias(sub(" [^ ]+$", "", nm)), st)
 }
 reg <- if (length(reg)) do.call(rbind, reg) else reg_rows(compiled[0, ], character(0), character(0), character(0))[0, ]
 reg <- reg[order(reg$status != "filed", reg$species, reg$name, method = "radix"), ]
@@ -785,6 +861,66 @@ reg_con <- file(file.path(out_dir, "subspecies_register.csv"), open = "wb")
 writeLines(reg_lines, reg_con, sep = "\n", useBytes = TRUE)
 close(reg_con)
 cat(sprintf("subspecies register: %d filed, %d not filed\n", sum(reg$status == "filed"), sum(reg$status != "filed")))
+
+# ---- species names: the map the apps read, and the register for the owner ----------
+# species_names.csv: every name that is served under another name (the aliases and the NCBI joins),
+# with the name it is served as. species_name_register.csv: every name the table received that NCBI
+# does not list as current, with what was done and why (joined; not joined, and why; not in NCBI).
+write_small <- function(d, file) {
+  cells <- lapply(names(d), function(nm) if (is.character(d[[nm]])) fmt_chr(d[[nm]]) else fmt_int(as.integer(d[[nm]])))
+  con <- file(file.path(out_dir, file), open = "wb")
+  writeLines(c(paste0("\"", names(d), "\"", collapse = ","), if (nrow(d)) do.call(paste, c(cells, sep = ","))),
+             con, sep = "\n", useBytes = TRUE)
+  close(con)
+}
+nm_all <- sort(unique(c(names(alias_map), names(ncbi_map))), method = "radix")
+nr <- ncbi_one[match(nm_all, ncbi_one$query), , drop = FALSE]
+species_names <- data.frame(
+  name = nm_all, served_as = unalias(nm_all),
+  basis = ifelse(nm_all %in% names(alias_map), "alias (_keys/species_display_aliases.csv)",
+                 ifelse(nr$name_class == "basionym", "NCBI: basionym", "NCBI: homotypic synonym")),
+  ncbi_taxid = ifelse(is.na(nr$tax_id), "", nr$tax_id), stringsAsFactors = FALSE)
+species_names <- species_names[species_names$served_as != species_names$name, , drop = FALSE]
+write_small(species_names, "species_names.csv")
+left <- intersect(unique(compiled$Species), names(ncbi_map))
+if (length(left)) stop("species names: still served under an NCBI homotypic synonym: ", paste(head(left, 5), collapse = "; "), call. = FALSE)
+rin <- table(names_in$Species); pin <- table(dp_species_in)
+cand <- sort(unique(c(names(rin), names(pin))), method = "radix")
+q <- ncbi_rep[ncbi_rep$query %in% cand, , drop = FALSE]
+multi <- unique(q$query[duplicated(q$query)])
+r1 <- ncbi_one[match(cand, ncbi_one$query), , drop = FALSE]
+cls <- ifelse(cand %in% multi, "more than one NCBI record", ifelse(is.na(r1$name_class), "not queried", r1$name_class))
+latin <- grepl("^[A-Z][a-z-]+( [a-z][a-z-]+){1,2}$", cand)
+hom <- cls %in% c("homotypic_synonym", "basionym")
+action <- rep("", length(cand))                               # NCBI's current name: nothing to say
+action[!latin & cls == "not queried"] <- "not queried: not a Latin name"
+action[latin & cls == "not queried"]  <- "not yet queried (run _keys/fetch_ncbi_names.py)"
+action[cls == "not_found"] <- "not in NCBI Taxonomy"
+action[cls == "more than one NCBI record"] <- "not joined: more than one NCBI record"
+action[cls == "other"] <- "not joined: a common name; NCBI matches it to the species named"
+action[cls == "heterotypic_synonym"] <- "not joined: heterotypic synonym (a lump), awaiting a decision"
+action[hom | (cls == "current" & !is.na(r1$rank) & r1$rank != "species")] <- "not joined: NCBI holds it at subspecies rank (subspecies rule)"
+action[hom & !is.na(r1$same_type) & !r1$same_type & r1$rank == "species"] <- "not joined: NCBI's record gives another author or year, or another epithet (check the record)"
+action[hom & cand %in% POOLED_SUBSPECIES] <- "not joined: filed as a subspecies in species_pooling.csv"
+action[hom & cand %in% SL_NAMES] <- "not joined: sensu lato concept (taxon_concept_registry.csv)"
+ali <- cand %in% names(alias_map); ncb <- cand %in% names(ncbi_map)
+action[ali] <- paste0("served as ", unalias(cand[ali]), " (alias)")
+action[ncb] <- paste0("served as ", unalias(cand[ncb]), " (NCBI current name)")
+ds_of <- tapply(c(names_in$Dataset, dp_all$dataset), c(names_in$Species, dp_species_in),
+                function(v) paste(sort(unique(v), method = "radix"), collapse = "; "))
+nreg <- data.frame(name = cand, ncbi_class = cls, ncbi_taxid = ifelse(is.na(r1$tax_id), "", r1$tax_id),
+                   ncbi_rank = ifelse(is.na(r1$rank), "", r1$rank), ncbi_current_name = ifelse(is.na(r1$current_name), "", r1$current_name),
+                   ncbi_name_authority = ifelse(is.na(r1$name_authority), "", r1$name_authority),
+                   ncbi_current_authority = ifelse(is.na(r1$current_authority), "", r1$current_authority),
+                   action = action, n_rows = as.integer(ifelse(is.na(rin[cand]), 0L, rin[cand])),
+                   n_data_points = as.integer(ifelse(is.na(pin[cand]), 0L, pin[cand])),
+                   datasets = unname(ds_of[cand]), stringsAsFactors = FALSE)
+nreg <- nreg[nzchar(nreg$action), , drop = FALSE]
+write_small(nreg, "species_name_register.csv")
+cat(sprintf("species names: %d served under another name (%d by NCBI, %d by alias); register: %d heterotypic, %d not in NCBI, %d other\n",
+            sum(cand %in% c(names(ncbi_map), names(alias_map))), sum(cand %in% names(ncbi_map)),
+            sum(cand %in% names(alias_map) & !cand %in% names(ncbi_map)), sum(cls == "heterotypic_synonym"),
+            sum(cls == "not_found"), sum(nzchar(nreg$action) & !grepl("^served as|^not in NCBI|heterotypic", nreg$action))))
 
 csv_bytes <- sum(nchar(lines, type = "bytes")) + length(lines)
 cat(sprintf("compiled: %d rows, %d species, %d variables, %d datasets, %d columns\n", nrow(compiled),

@@ -106,7 +106,6 @@ feed_path <- function(feed) {
 GH <- list(
   taste = feed_path("taste"),
   social_mirror_play = feed_path("social_mirror_play"),
-  claustrum_cerebellar = feed_path("claustrum_cerebellar"),
   volumes    = feed_path("volumes"),
   cellcounts = feed_path("cellcounts"),
   traits     = feed_path("traits"),
@@ -126,19 +125,9 @@ GH <- list(
   cmr        = feed_path("cmr"),
   ecv        = feed_path("ecv"),
   cortical_areas  = feed_path("cortical_areas"),
-  cortical_layers = feed_path("cortical_layers"),
   cell_morphology = feed_path("cell_morphology"),
-  # 2026-11-04: cells counted in tissue sections (design-based stereology first;
-  # model-based profile counts kept but off by default). Same long schema as
-  # cell_morphology, read by std_cell_morphology(). Every label carries its
-  # counting method, e.g. "[stereology]", so it never averages with the
-  # isotropic-fractionator values under "Cell counts". Which sources come in is
-  # set by _keys/cell_count_methods/source_methods.csv; see
-  # __merging_cell_counts_histology/README__merging.md.
-  cell_counts_histology = feed_path("cell_counts_histology"),
   fossil_bgu = feed_path("fossil_bgu"),
   sensory    = feed_path("sensory"),
-  weights    = feed_path("weights"),
   # 2026-10-15: mapping-driven merge of built public tables no other merge
   # consumed (PanTHERIA life history/ecology, deSousa 2022 acuity compilation,
   # Boyer & Harrington 2019 blood flow, Navarrete 2016 innovation, ...). Same
@@ -389,25 +378,6 @@ load_compiled <- function() {
       stringsAsFactors = FALSE)
   }
 
-  # M1 cortical-layer thickness. `merge_default` marks the one row per
-  # species/layer/measure meant for cross-species use when a source offers
-  # more than one observation level (individual vs species summary, etc.).
-  std_cortical_layers <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    d <- d[!is.na(d$merge_default) & d$merge_default & !is.na(d$value), ]
-    meas <- ifelse(d$measure == "absolute thickness", "Thickness_abs", "Thickness_prop")
-    layer <- gsub("[^A-Za-z0-9]+", "_", d$layer)
-    lab <- paste0("M1_Layer", layer, "_", meas, " (", d$unit, ")")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$value), Value_num = suppressWarnings(as.numeric(d$value)),
-      Source = d$source,
-      Teams = as.character(d$source),
-      N_sources = NA_integer_,
-      Variable_raw = lab, Unit = d$unit, Unit_raw = d$unit,
-      stringsAsFactors = FALSE)
-  }
-
   # Cell type x soma size x dendritic / spine morphology (soma volume, dendritic
   # length, spine density, VEN counts, interlaminar astrocytes, ...). The merge is
   # long over species x region x layer x cell_type x measure x statistic and is
@@ -502,22 +472,6 @@ load_compiled <- function() {
       stringsAsFactors = FALSE)
   }
 
-  # Brain-part (sub-regional) wet mass. Rows with no canonical_structure yet
-  # assigned (see mapping_gap) are dropped rather than shown as blank labels.
-  std_weights <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    d <- d[!is.na(d$canonical_structure) & nzchar(trimws(d$canonical_structure)), ]
-    lab <- paste0(d$canonical_structure, "_Mass (g)")
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = lab,
-      Value = as.character(d$mass_g), Value_num = suppressWarnings(as.numeric(d$mass_g)),
-      Source = ifelse(!is.na(d$citation) & nzchar(d$citation), d$citation, d$source),
-      Teams = as.character(d$source),
-      N_sources = NA_integer_,
-      Variable_raw = lab, Unit = "g", Unit_raw = d$unit_original,
-      stringsAsFactors = FALSE)
-  }
-
   base <- bind_compiled(
     std(GH$volumes,    file.path(data_dir, "volumes_long.csv"),
         "Brain-structure volumes", "Teams", "n_teams"),
@@ -529,7 +483,6 @@ load_compiled <- function() {
   merges <- bind_compiled(
     std_merge(GH$taste, file.path(data_dir, "taste_long.csv"), "Taste performance"),
     std_merge(GH$social_mirror_play, file.path(data_dir, "social_mirror_play_long.csv"), "Social composition, mirror tests & play"),
-    std_merge(GH$claustrum_cerebellar, file.path(data_dir, "claustrum_cerebellar_long.csv"), "Claustrum & cerebellar anatomy"),
     std_merge(GH$body,       file.path(data_dir, "body_long.csv"), "Body"),
     std_merge(GH$ecology,    file.path(data_dir, "ecology_long.csv"), "Ecology"),
     std_life_history(GH$life_history, file.path(data_dir, "life_history_long.csv"), "Life history"),
@@ -549,18 +502,12 @@ load_compiled <- function() {
             "Cerebral metabolic rate"),
     std_cortical_areas(GH$cortical_areas, file.path(data_dir, "cortical_areas_long.csv"),
             "Cortical areas & surfaces"),
-    std_cortical_layers(GH$cortical_layers, file.path(data_dir, "cortical_layers_m1_long.csv"),
-            "Cortical layer thickness"),
     std_cell_morphology(GH$cell_morphology, file.path(data_dir, "cell_morphology_long.csv"),
             "Cell type, size & morphology"),
-    std_cell_morphology(GH$cell_counts_histology,
-            file.path(data_dir, "cell_counts_histology_long.csv"), "Cell counts (histology)"),
     std_fossil_bgu(GH$fossil_bgu, file.path(data_dir, "fossil_brain_glucose_long.csv"),
             "Fossil brain glucose"),
     std_sensory(GH$sensory, file.path(data_dir, "sensory_long.csv"),
             "Sensory performance"),
-    std_weights(GH$weights, file.path(data_dir, "weights_long.csv"),
-            "Brain-part weights"),
     std_sleep(GH$sleep, file.path(data_dir, "sleep_long.csv"), "Sleep & torpor"),
     # Five PanTHERIA measures reuse the shared labels on purpose (Gestation,
     # Weaning_age, Litter_size, Maximum_longevity, BMR_wholeanimal: identical

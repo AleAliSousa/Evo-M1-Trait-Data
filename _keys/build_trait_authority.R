@@ -71,14 +71,14 @@ if (!nrow(compiled)) stop("app.R produced an empty compiled table.")
 DS <- c(
   "Brain-structure volumes"  = "__merging_volumes",
   "Cell counts"              = "__merging_cell_counts_isotropic_fractionator",
-  "Cell counts (histology)"  = "__merging_cell_counts_histology",
+  "Cell counts (histology)"  = "__compiled/item_columns.csv",
   "EvoM1 traits"             = "____EvoM1_TraitTable (melted)",
   "Body"                     = "__merging_body",
   "Ecology"                  = "__merging_ecology",
   "Life history"             = "__merging_life_history",
   "Brain mass"               = "__merging_brain_mass",
   "Behaviour"                = "__merging_behaviour",
-  "Brain-part weights"       = "__merging_weights",
+  "Brain-part weights"       = "__compiled/item_columns.csv",
   "Endocranial volume"       = "__merging_endocranial_volume",
   "Cerebellar folding"       = "__compiled/item_columns.csv",  # data points since step 16
   ## added 2026-11-19: app.R std_merge(GH$postcranial)
@@ -86,7 +86,7 @@ DS <- c(
   "Cerebral metabolic rate"  = "__merging_cerebral_metabolic_rate",
   "Grey-level index"         = "__compiled/item_columns.csv",  # data points since step 16
   "Cortical areas & surfaces"= "__merging_cortical_areas",
-  "Cortical layer thickness" = "__merging_cortical_layers",
+  "Cortical layer thickness" = "__compiled/item_columns.csv",
   "Fossil brain glucose"     = "__merging_fossil_brain_glucose",
   "Gyrification (GI)"        = "__compiled/item_columns.csv",  # data points since step 17
   "Sensory performance"      = "__merging_sensory",
@@ -98,7 +98,7 @@ DS <- c(
   ## added 2026-10-31: three app.R std_merge() tables whose long files live in existing merge folders
   "Taste performance"        = "__merging_sensory",
   "Social composition, mirror tests & play" = "__merging_behaviour",
-  "Claustrum & cerebellar anatomy" = "__merging_volumes",
+  "Claustrum & cerebellar anatomy" = "__compiled/item_columns.csv",
   ## added 2026-11-23: two merges now served as their own datasets
   "Sleep & torpor"           = "__merging_sleep",
   "Cerebral surface & folding (MRI)" = "__compiled/item_columns.csv"  # data points since step 16

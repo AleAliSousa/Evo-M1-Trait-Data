@@ -75,18 +75,9 @@ compile_source_additions <- function(base, domain) {
       if(f=='Reiss_Marino_2001') add(x,d,1,'first_behaviour_mark_oriented.N','Mirror_mark_orientation_session_fraction_Reiss2001_subject1_phase2','proportion','primary',100,'6 oriented, 2 ambiguous; eight sessions on one dolphin, not eight animals',value=6/8,n=8)
       if(f=='Plotnik_etal_2006') for(c in x$columns[-(1:3)]) add(x,d,1,c$code,paste0('Mirror_',c$code,'_Happy_first_mark_day_Plotnik2006'),'count','primary',100,'one elephant, first mark day; mark/sham and repeated tests separate')
     }
-    if(domain=='claustrum_cerebellar') {
-      if(f=='Kowianski_etal_1999') for(i in seq_len(nrow(d))) for(c in x$columns) if(grepl('^Claustrum',c$code)) add(x,d,i,c$code,paste0(c$code,'_Kowianski1999_fixed_tissue'),c$unit,'primary',100,'fixed tissue; published mean ± SEM; density-derived neuron number; hemisphere basis retained')
-      if(f=='Smaers_etal_2011_b') for(i in seq_len(nrow(d))) for(code in c('CC','SC','FL')) add(x,d,i,code,paste0(c(CC='Cerebrocerebellum',SC='Spinocerebellum',FL='Flocculonodular_lobe')[[code]],'_volume_Smaers2011'),'mm3','primary',100,'current-study structures only; source specimen retained')
-      if(f=='Smaers_etal_2013') for(i in seq_len(nrow(d))) for(code in c('Left_PCH','Right_PCH')) add(x,d,i,code,paste0(code,'_volume_Smaers2013'),'mm3','primary',100,paste('specimen',d$individual[i],'; left/right kept separate'))
-    }
   }
   obs<-bind_rows(rows);stopifnot(nrow(obs)>0,all(nzchar(obs$Species)))
-  # Only within-source specimen replicates are averaged (PCH). Everything else selects a report.
-  if(domain=='claustrum_cerebellar') {
-    agg<-obs |> group_by(Species,Measure,Units,Source_item,role,priority) |>
-      summarise(Value=as.character(mean(as.numeric(Value))),species_printed=paste(unique(species_printed),collapse='; '),accepted_name=accepted_name[1],species_basis=species_basis[1],reidentified=any(reidentified),source_row=paste(source_row,collapse='; '),Code=Code[1],Context=paste(Context,collapse='; '),n_observations=n(),reference_keys=paste(unique(reference_keys),collapse='; '),selection_note='Within-source mean only; hemisphere and anatomical boundary retained',.groups='drop')
-  } else agg<-obs
+  agg<-obs
   groups<-split(agg,interaction(agg$Species,agg$Measure,drop=TRUE))
   out<-bind_rows(lapply(groups,function(g) {
     g<-g[order(-g$priority,g$Source_item),];chosen<-g[1,];conflict<-length(unique(g$Value))>1
@@ -99,7 +90,7 @@ compile_source_additions <- function(base, domain) {
       alternative_values=paste(unique(paste(g$Source_item,g$Value,sep=': ')),collapse='; '),selection_note=chosen$selection_note,Context=chosen$Context,
       species_printed=chosen$species_printed,accepted_name=chosen$accepted_name,species_basis=chosen$species_basis,reidentified=chosen$reidentified)
   })) |> arrange(Species,Measure)
-  folder<-switch(domain,taste='__merging_sensory',social_mirror_play='__merging_behaviour',claustrum_cerebellar='__merging_volumes')
+  folder<-switch(domain,taste='__merging_sensory',social_mirror_play='__merging_behaviour')
   write_csv(obs,file.path(base,folder,paste0(domain,'_observations_long.csv')))
   write_csv(out,file.path(base,folder,paste0(domain,'_long.csv')))
   write_csv(out |> select(Species,Measure,Value) |> pivot_wider(names_from=Measure,values_from=Value),file.path(base,folder,paste0(domain,'_wide.csv')))

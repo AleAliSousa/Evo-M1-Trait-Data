@@ -78,15 +78,15 @@ setwd(owd)
 compiled <- get("compiled", envir = app_env)
 
 DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_cell_counts_isotropic_fractionator",
-        "Cell counts (histology)"="__merging_cell_counts_histology",
+        "Cell counts (histology)"="__compiled/item_columns.csv",
         "EvoM1 traits"="____EvoM1_TraitTable (melted)","Body & ecology"="__merging_body_ecology",
         "Brain mass"="__merging_brain_mass","Behaviour"="__merging_behaviour",
-        "Brain-part weights"="__merging_weights","Endocranial volume"="__merging_endocranial_volume",
+        "Brain-part weights"="__compiled/item_columns.csv","Endocranial volume"="__merging_endocranial_volume",
         "Cerebellar folding"="__compiled/item_columns.csv",  # data points since step 16
         "Postcranial & limb function"="__merging_postcranial",  # added 2026-11-19
         "Cerebral metabolic rate"="__merging_cerebral_metabolic_rate","Grey-level index"="__compiled/item_columns.csv",
         "Cortical areas & surfaces"="__merging_cortical_areas",
-        "Cortical layer thickness"="__merging_cortical_layers",
+        "Cortical layer thickness"="__compiled/item_columns.csv",
         "Fossil brain glucose"="__merging_fossil_brain_glucose","Gyrification (GI)"="__compiled/item_columns.csv",
         "Sensory performance"="__merging_sensory",
         "Cell type, size & morphology"="__merging_cell_morphology",  # added 2026-09-27
@@ -95,7 +95,7 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "Sleep & torpor"="__merging_sleep","Cerebral surface & folding (MRI)"="__compiled/item_columns.csv",  # added 2026-11-23
         "Taste performance"="__merging_sensory",
         "Social composition, mirror tests & play"="__merging_behaviour",
-        "Claustrum & cerebellar anatomy"="__merging_volumes")
+        "Claustrum & cerebellar anatomy"="__compiled/item_columns.csv")
 pairs <- unique(compiled[, c("Variable", "Dataset")])
 pairs$folder <- unname(DS[pairs$Dataset])
 producers <- split(pairs$folder, pairs$Variable)

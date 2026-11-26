@@ -91,8 +91,13 @@ in a merge folder:
 Moved so far: cerebral surface and folding (Heuer et al. 2019), cerebellar folding (Heuer et al. 2023,
 Ashwell 2020), grey-level index (Palomero-Gallagher & Zilles 2018, Semendeferi et al. 1998 and 2001,
 Sherwood et al. 2004, Zilles et al. 1986) in step 16; gyrification index (Zilles et al. 1989 and
-2013, Manger et al. 2012, Lewitus et al. 2014 Tables S1 and S8) in step 17. A value the project
-computes from printed values (Sherwood's supragranular and infragranular means) is marked `derived`
+2013, Manger et al. 2012, Lewitus et al. 2014 Tables S1 and S8) in step 17; cell counts in tissue
+sections (Munger et al. 2022), M1 cortical layer thickness (Jacobs et al. 2015 and 2016, Johnson et al.
+2016, Peruffo et al. 2019; newborn animals under their own `_newborn` labels, owner, 26 November 2026),
+brain-part weights (Latimer 1942 and 1956, Herculano-Houzel et al. 2015, Kverkova et al. 2018) and
+claustrum & cerebellar anatomy (Smaers et al. 2011 and 2013) in step 18. A value the project
+computes from printed values (Sherwood's supragranular and infragranular means; Kverkova's part masses,
+brain mass times the printed volume fraction; milligrams printed, grams served) is marked `derived`
 in the data points and in `Source_details`; the printed values it comes from are served too.
 
 ## What is not served

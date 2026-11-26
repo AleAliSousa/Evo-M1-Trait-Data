@@ -349,14 +349,13 @@ if (!is.null(supp_map) && nrow(supp_map)) for (i in seq_len(nrow(supp_map))) {
   outd$definition_source[j] <- rel; outd$matched_code[j] <- m$value_col
 }
 
-# Observation-backed merges (social composition / mirror tests / play, taste, claustrum &
-# cerebellar anatomy). Their *_observations_long.csv records, for every app label, the
+# Observation-backed merges (social composition / mirror tests / play, taste; claustrum &
+# cerebellar anatomy moved to the one route in step 18). Their *_observations_long.csv records, for every app label, the
 # source item and the printed Code it was drawn from, so the definition comes from that
 # item's own *_definitions.csv rather than being composed from the label. Only labels no
 # earlier pass resolved are touched, so a quoted definition is never overwritten.
 obs_files <- c("__merging_behaviour/social_mirror_play_observations_long.csv",
-               "__merging_sensory/taste_observations_long.csv",
-               "__merging_volumes/claustrum_cerebellar_observations_long.csv")
+               "__merging_sensory/taste_observations_long.csv")
 n_obs <- 0L
 for (of in obs_files) {
   ob <- rd(file.path(repo, of)); if (is.null(ob) || !nrow(ob)) next

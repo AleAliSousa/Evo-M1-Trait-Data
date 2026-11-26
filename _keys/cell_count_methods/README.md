@@ -23,7 +23,7 @@ sources RV-2026-006 to RV-2026-010, same day). Checked by
 | Merge | Holds |
 |---|---|
 | `__merging_cell_counts_isotropic_fractionator` | nuclei counted in suspension (isotropic fractionator; flow fractionator): whole dissected structures, and later per-area tables |
-| `__merging_cell_counts_histology` | counts made in tissue sections: design-based stereology by default; older model-based counts kept but off by default |
+| `__compiled/item_columns.csv` (dataset "Cell counts (histology)"; the merge folder retired in step 18, 26 November 2026) | counts made in tissue sections: design-based stereology by default; the sources this file routes to `cell_counts_histology` are served once they have map rows (Munger et al. 2022 Table 4 so far) |
 | `__merging_cell_morphology` | named cell types described by size or shape (von Economo neurons, interlaminar astrocytes, soma volumes) |
 
 Folder names follow the 4 Nov 2026 decisions (RV-2026-004; RV-2026-011: inside the fractionator merge the term

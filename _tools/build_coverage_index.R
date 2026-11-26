@@ -185,7 +185,7 @@ read_cmr <- function(term, pat) {
 gli <- rd("__compiled", "datapoints.csv.gz") |>
   filter(status == "served", str_starts(trait, "GLI_")) |>
   mutate(Species = species, accepted_name = species, source = item,
-         area_as_published = sub("_(all_layers|supragranular|granular|infragranular) \\(%\\)$", "",
+         area_as_published = sub("_(all_layers|supragranular|granular|infragranular|layerII|layerIII|layerV|layerVI) \\(%\\)$", "",
                                  sub("^GLI_", "", trait)))
 read_gli <- function(term, pat) {
   d <- gli |> filter(area_as_published == term)
@@ -198,17 +198,25 @@ read_gli <- function(term, pat) {
                  build_script = "__compiled/datapoints.R")
 }
 
-cl <- with_accepted_name(rd("__merging_cortical_layers", "cortical_layers_m1_long.csv"))
+## M1 cortical-layer thickness: the data points of the one route (step 18: __compiled/datapoints.csv.gz,
+## written by __compiled/build_compiled.R from __compiled/item_columns.csv). Layer, measure and the
+## newborn marker are parts of the label (M1_Layer<layer>_Thickness_<abs|prop>[_newborn] (<unit>)).
+cl <- rd("__compiled", "datapoints.csv.gz") |>
+  filter(status == "served", str_starts(trait, "M1_Layer")) |>
+  mutate(Species = species, accepted_name = species, source = item,
+         layer = sub("^M1_Layer(.+)_Thickness_.*$", "\\1", trait),
+         measure = if_else(grepl("_Thickness_prop", trait), "proportional thickness", "absolute thickness"),
+         newborn = grepl("_newborn", trait, fixed = TRUE))
 read_layers <- function(term, pat) {
-  d <- cl |> filter(m1_compatible %in% TRUE, taxon_level == "species", str_starts(status, "active"))
+  d <- cl
   if (nzchar(pat)) d <- d |> filter(str_detect(source, fixed(pat)))
   d |> transmute(species = coalesce(accepted_name, Species), measurement = "Thickness",
                  measurement_class = "Regional size", dimension = "1D",
                  units = if_else(measure == "proportional thickness", "proportion", coalesce(unit, "")),
-                 source, merge_status = status,
-                 flag_note = paste0("layer ", layer, "; ", measure),
-                 dataset_source = "__merging_cortical_layers/cortical_layers_m1_long.csv",
-                 build_script = "__merging_cortical_layers/cortical_layers_compiled.R")
+                 source, merge_status = "active",
+                 flag_note = paste0("layer ", layer, "; ", measure, if_else(newborn, "; newborn", "")),
+                 dataset_source = "__compiled/datapoints.csv.gz",
+                 build_script = "__compiled/datapoints.R")
 }
 
 READERS <- list(cortical_areas = read_cortical_areas, volumes = read_volumes,

@@ -4,7 +4,6 @@ cellcounts,__merging_cell_counts_isotropic_fractionator/cell_counts_isotropic_fr
 traits,__ShinyApp/data/evom1_traits_long.csv,TRUE,EvoM1 traits,std,TRUE,EvoM1 traits,std:Source,active,Derived file written by __ShinyApp/build_data.R (melted from ____EvoM1_TraitTable); not a merge output.
 taste,__merging_sensory/taste_long.csv,TRUE,Taste performance,std_merge,TRUE,Taste performance,merge,active,
 social_mirror_play,__merging_behaviour/social_mirror_play_long.csv,TRUE,"Social composition, mirror tests & play",std_merge,TRUE,"Social composition, mirror tests & play",merge,active,
-claustrum_cerebellar,__merging_volumes/claustrum_cerebellar_long.csv,TRUE,Claustrum & cerebellar anatomy,std_merge,TRUE,Claustrum & cerebellar anatomy,merge,active,
 body,__merging_body/body_long.csv,TRUE,Body,std_merge,TRUE,Body,merge,active,
 ecology,__merging_ecology/ecology_long.csv,TRUE,Ecology,std_merge,TRUE,Ecology,merge,active,
 life_history,__merging_life_history/life_history_long.csv,TRUE,Life history,std_life_history,TRUE,Life history,life_history,active,
@@ -15,11 +14,8 @@ behaviour,__merging_behaviour/behaviour_long.csv,TRUE,Behaviour,std_merge,TRUE,B
 postcranial,__merging_postcranial/postcranial_species_long.csv,TRUE,Postcranial & limb function,std_merge,TRUE,Postcranial & limb function,merge,active,Added to TraitExplorer 2026-11-23: its existing `merge` loader gave the same species x label x value rows as the Evo-M1 app (checked that day).
 cmr,__merging_cerebral_metabolic_rate/cerebral_metabolic_rate_long.csv,TRUE,Cerebral metabolic rate,std_cmr,TRUE,Cerebral metabolic rate,cmr,active,
 cortical_areas,__merging_cortical_areas/cortical_areas_long.csv,TRUE,Cortical areas & surfaces,std_cortical_areas,TRUE,Cortical areas & surfaces,cortical_areas,active,
-cortical_layers,__merging_cortical_layers/cortical_layers_m1_long.csv,TRUE,Cortical layer thickness,std_cortical_layers,TRUE,Cortical layer thickness,cortical_layers,active,
 cell_morphology,__merging_cell_morphology/cell_morphology_long.csv,TRUE,"Cell type, size & morphology",std_cell_morphology,TRUE,"Cell type, size & morphology",cell_morphology,active,
-cell_counts_histology,__merging_cell_counts_histology/cell_counts_histology_long.csv,TRUE,Cell counts (histology),std_cell_morphology,TRUE,Cell counts (histology),cell_morphology,active,Added to TraitExplorer 2026-11-23: its existing `cell_morphology` loader gave the same species x label x value rows as the Evo-M1 app (checked that day).
 fossil_bgu,__merging_fossil_brain_glucose/fossil_brain_glucose_long.csv,TRUE,Fossil brain glucose,std_fossil_bgu,FALSE,,,active,"Not in TraitExplorer: none of its loader types reads this table correctly (the Evo-M1 loader std_fossil_bgu makes two variables per row and puts the team in the label; `merge` and `cmr` give half the rows under one wrong label, the other types fail). It needs a new harmonize_one() case."
 sensory,__merging_sensory/sensory_long.csv,TRUE,Sensory performance,std_sensory,TRUE,Sensory performance,sensory,active,
-weights,__merging_weights/weights_long.csv,TRUE,Brain-part weights,std_weights,TRUE,Brain-part weights,weights,active,
 supplementary,__merging_supplementary/supplementary_long.csv,TRUE,Additional published datasets,std_merge,TRUE,Supplementary sources,merge,active,The two apps name this dataset differently (TraitExplorer still uses the label the Evo-M1 app replaced).
 sleep,__merging_sleep/sleep_long.csv,TRUE,Sleep & torpor,std_sleep,FALSE,,,active,"Added 2026-11-23. The same values were served from the trait table (EvoM1 traits) until then; _keys/variable_canonical.csv now supersedes those columns."

@@ -2,47 +2,30 @@
   "summary": {
     "registry_item_rows": 1241,
     "unique_item_names": 1238,
-    "file_complete_rows": 838,
-    "file_partial_rows": 403,
-    "registered_without_public_tsv": 40,
+    "file_complete_rows": 855,
+    "file_partial_rows": 386,
+    "registered_without_public_tsv": 23,
     "registered_without_folder": 6,
-    "public_tsv_files": 1247,
-    "file_complete_review_pending": 776,
-    "registry_match_stale": 201,
+    "public_tsv_files": 1264,
+    "file_complete_review_pending": 792,
+    "registry_match_stale": 218,
     "source_folders_without_registry": 52,
     "source_folders_without_either_registry": 41,
-    "addon_item_rows": 22,
+    "addon_item_rows": 23,
     "addon_in_main_registry": 0,
-    "addon_complete_files": 21,
+    "addon_complete_files": 22,
     "addon_without_public_tsv": 1,
-    "unlisted_public_tsv": 28,
+    "unlisted_public_tsv": 27,
     "missing_counts": {
-      "readme": 295,
-      "definitions": 314,
-      "analysis_csv": 45,
-      "build_script": 116,
-      "snapshot": 90,
-      "public_tsv": 40,
+      "readme": 294,
+      "definitions": 313,
+      "analysis_csv": 44,
+      "build_script": 115,
+      "snapshot": 89,
+      "public_tsv": 23,
       "folder_exists": 6
     },
-    "missing_public_with_other_files": [
-      "Hansen_etal_2022_PET-parcellated-scale033",
-      "Hevner_WongRiley_1990_OrdinalLaminar",
-      "Hevner_WongRiley_1990_Table1",
-      "Hevner_WongRiley_1990_Text",
-      "Hevner_WongRiley_1992_OrdinalLaminar",
-      "Hevner_WongRiley_1992_Text",
-      "Hevner_etal_1995_Figure31",
-      "Hevner_etal_1995_Figure32",
-      "Hevner_etal_1995_OrdinalLaminar",
-      "Hevner_etal_1995_Text",
-      "Sokoloff_etal_1977_Table3",
-      "Sokoloff_etal_1977_Table4",
-      "Suner_Rakic_1996_Table1",
-      "WongRiley_etal_1993_Text",
-      "WongRiley_etal_1993_OrdinalLaminar",
-      "Zilles_PalomeroGallagher_2017_EBRAINSFingerprints"
-    ]
+    "missing_public_with_other_files": []
   },
   "items": [
     {
@@ -8362,11 +8345,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -10988,11 +10969,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -11011,11 +10990,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -11034,11 +11011,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -11083,11 +11058,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -11106,11 +11079,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -11155,11 +11126,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -11178,11 +11147,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -11201,11 +11168,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -11224,11 +11189,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -20959,21 +20922,14 @@
       "human_visual": "",
       "registry_public_match": "notfound",
       "folder_exists": true,
-      "analysis_csv": false,
-      "build_script": false,
-      "snapshot": false,
-      "readme": false,
-      "definitions": false,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "analysis_csv",
-        "build_script",
-        "snapshot",
-        "readme",
-        "definitions",
-        "public_tsv"
-      ],
+      "analysis_csv": true,
+      "build_script": true,
+      "snapshot": true,
+      "readme": true,
+      "definitions": true,
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -24022,11 +23978,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -24045,11 +23999,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -25660,11 +25612,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -26740,11 +26690,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -26763,11 +26711,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": true
     },
     {
@@ -27110,11 +27056,9 @@
       "snapshot": true,
       "readme": true,
       "definitions": true,
-      "public_tsv": false,
-      "complete_files": false,
-      "missing": [
-        "public_tsv"
-      ],
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": [],
       "review_pending": false
     },
     {
@@ -27781,12 +27725,29 @@
     },
     {
       "row": 23,
-      "item": "Barger__2012_Table4.1_Disco",
-      "encoded": "UCSD2012Barger_Table4.1_Disco",
+      "item": "Barger__2012_Table4.1",
+      "encoded": "UCSD2012Barger_Table4.1",
       "folder": "Barger__2012",
-      "progress": "Built: one-row snapshot, R, CSV, public TSV, definitions, crosswalk and publication audit; reference only; 2026-11-25",
-      "active_flags": "REFERENCE ONLY: do not merge dissertation volumes as an independent series; prefer peer-reviewed Barger 2007/2014 values.",
-      "human_visual": "AI checked against rendered dissertation Table 4.1, PDF p. 194, on 2026-11-25; human signoff pending",
+      "progress": "Built complete: snapshot, R, CSV, public TSV, definitions; reference only; 2026-11-26",
+      "active_flags": "REFERENCE ONLY: do not merge dissertation volumes as independent measurements; use original peer-reviewed journal/Stephan sources.",
+      "human_visual": "AI checked 22 rows against rendered PDF p. 194 on 2026-11-26; human signoff pending",
+      "analysis_csv": true,
+      "build_script": true,
+      "snapshot": true,
+      "readme": true,
+      "definitions": true,
+      "public_tsv": true,
+      "complete_files": true,
+      "missing": []
+    },
+    {
+      "row": 24,
+      "item": "Barger__2012_Table4.2",
+      "encoded": "UCSD2012Barger_Table4.2",
+      "folder": "Barger__2012",
+      "progress": "Built complete: snapshot, R, CSV, public TSV, definitions; reference only; 2026-11-26",
+      "active_flags": "REFERENCE ONLY: do not merge dissertation volumes as independent measurements; use original peer-reviewed journal/Stephan sources.",
+      "human_visual": "AI checked 23 rows against rendered PDF p. 195 on 2026-11-26; human signoff pending",
       "analysis_csv": true,
       "build_script": true,
       "snapshot": true,
@@ -28470,7 +28431,6 @@
     "10.1016%2Fj.biopsych.2022.04.022_ENIGMA_WeightRestoredControls_CortSurf_wGlo.tsv",
     "10.1016%2Fj.biopsych.2022.04.022_ENIGMA_WeightRestoredControls_CortThick.tsv",
     "10.1016%2Fj.biopsych.2022.04.022_ENIGMA_WeightRestoredControls_CortThick_wGlo.tsv",
-    "10.1017%2FS0952523800008269_Table1.tsv",
     "10.1038%2Fs41380-018-0078-5_ENIGMA_CaseControls_CortSurf.tsv",
     "10.1038%2Fs41380-018-0078-5_ENIGMA_CaseControls_CortThick.tsv",
     "10.1038%2Fs41380-018-0078-5_ENIGMA_Psychosis_CortSurf.tsv",

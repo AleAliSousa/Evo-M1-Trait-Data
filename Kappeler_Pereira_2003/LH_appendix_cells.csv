@@ -1,0 +1,1182 @@
+workbook_row,workbook_column,family_printed,genus_printed,species_printed,trait_printed,value_printed,font_colour_index,font_rgb,source_key
+3,4,Cheirogaleidae,Allocebus,trichotis,Body mass,83,11,"0,255,0",Lee_Kappeler_chapter_3
+4,4,Cheirogaleidae,Cheirogaleus,major,Body mass,"356, 362, 403,",11,"0,255,0",Lee_Kappeler_chapter_3
+4,5,Cheirogaleidae,Cheirogaleus,major,Brain weight,7,48,"51,102,255",Ross_chapter_11
+4,8,Cheirogaleidae,Cheirogaleus,major,Gestation length,71,48,"51,102,255",Ross_chapter_11
+4,11,Cheirogaleidae,Cheirogaleus,major,Birth weight,"~18,1",11,"0,255,0",Lee_Kappeler_chapter_3
+4,14,Cheirogaleidae,Cheirogaleus,major,Weaning age,70,48,"51,102,255",Ross_chapter_11
+10,4,Cheirogaleidae,Cheirogaleus,medius,Body mass,"139, 172, 173",11,"0,255,0",Lee_Kappeler_chapter_3
+10,7,Cheirogaleidae,Cheirogaleus,medius,Age at first reproduction,"1.19, 1,4",48,"51,102,255",Ross_chapter_11
+10,8,Cheirogaleidae,Cheirogaleus,medius,Gestation length,62,48,"51,102,255",Ross_chapter_11
+10,9,Cheirogaleidae,Cheirogaleus,medius,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+10,10,Cheirogaleidae,Cheirogaleus,medius,Litter size,2,11,"0,255,0",Lee_Kappeler_chapter_3
+10,11,Cheirogaleidae,Cheirogaleus,medius,Birth weight,12,11,"0,255,0",Lee_Kappeler_chapter_3
+10,12,Cheirogaleidae,Cheirogaleus,medius,Litter weight,38,48,"51,102,255",Ross_chapter_11
+10,13,Cheirogaleidae,Cheirogaleus,medius,Litter growth rate,2.64,48,"51,102,255",Ross_chapter_11
+10,14,Cheirogaleidae,Cheirogaleus,medius,Weaning age,61,48,"51,102,255",Ross_chapter_11
+10,16,Cheirogaleidae,Cheirogaleus,medius,Juvenility,0.86,48,"51,102,255",Ross_chapter_11
+11,4,Cheirogaleidae,Microcebus,berthae,Body mass,30,32767,,Smith_Jungers_1997
+12,4,Cheirogaleidae,Microcebus,griseorufus,Body mass,63,11,"0,255,0",Lee_Kappeler_chapter_3
+13,4,Cheirogaleidae,Microcebus,murinus,Body mass,"63, 72",32767,,Smith_Jungers_1997
+13,5,Cheirogaleidae,Microcebus,murinus,Brain weight,1.8,48,"51,102,255",Ross_chapter_11
+13,7,Cheirogaleidae,Microcebus,murinus,Age at first reproduction,"1, 1",12,"0,0,255",Ross_chapter_11
+13,8,Cheirogaleidae,Microcebus,murinus,Gestation length,60,12,"0,0,255",Ross_chapter_11
+13,9,Cheirogaleidae,Microcebus,murinus,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+13,10,Cheirogaleidae,Microcebus,murinus,Litter size,2,11,"0,255,0",Lee_Kappeler_chapter_3
+13,11,Cheirogaleidae,Microcebus,murinus,Birth weight,"7, 4.6",11,"0,255,0",Lee_Kappeler_chapter_3
+13,12,Cheirogaleidae,Microcebus,murinus,Litter weight,12.3,12,"0,0,255",Ross_chapter_11
+13,13,Cheirogaleidae,Microcebus,murinus,Litter growth rate,1.35,12,"0,0,255",Ross_chapter_11
+13,14,Cheirogaleidae,Microcebus,murinus,Weaning age,40,12,"0,0,255",Ross_chapter_11
+13,16,Cheirogaleidae,Microcebus,murinus,Juvenility,0.73,12,"0,0,255",Ross_chapter_11
+14,4,Cheirogaleidae,Microcebus,myoxinus,Body mass,49,11,"0,255,0",Lee_Kappeler_chapter_3
+15,4,Cheirogaleidae,Microcebus,ravelobensis,Body mass,56,11,"0,255,0",Lee_Kappeler_chapter_3
+16,4,Cheirogaleidae,Microcebus,rufus,Body mass,42,32767,,Smith_Jungers_1997
+17,4,Cheirogaleidae,Microcebus,sambiranensis,Body mass,44,11,"0,255,0",Lee_Kappeler_chapter_3
+18,4,Cheirogaleidae,Microcebus,tavaratra,Body mass,61,11,"0,255,0",Lee_Kappeler_chapter_3
+19,4,Cheirogaleidae,Mirza,coquereli,Body mass,"297, 302, 326",32767,,Smith_Jungers_1997
+19,7,Cheirogaleidae,Mirza,coquereli,Age at first reproduction,"1, 1.92",12,"0,0,255",Ross_chapter_11
+19,8,Cheirogaleidae,Mirza,coquereli,Gestation length,87,12,"0,0,255",Ross_chapter_11
+19,9,Cheirogaleidae,Mirza,coquereli,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+19,10,Cheirogaleidae,Mirza,coquereli,Litter size,2,11,"0,255,0",Lee_Kappeler_chapter_3
+19,11,Cheirogaleidae,Mirza,coquereli,Birth weight,"14, ~17.5",11,"0,255,0",Lee_Kappeler_chapter_3
+19,12,Cheirogaleidae,Mirza,coquereli,Litter weight,22.5,12,"0,0,255",Ross_chapter_11
+20,4,Cheirogaleidae,Phaner,furcifer,Body mass,328,11,"0,255,0",Lee_Kappeler_chapter_3
+21,4,Daubentoniidae,Daubentonia,madagascariensis,Body mass,"2490, 2800, 2572",32767,,Smith_Jungers_1997
+21,5,Daubentoniidae,Daubentonia,madagascariensis,Brain weight,44,48,"51,102,255",Ross_chapter_11
+21,7,Daubentoniidae,Daubentonia,madagascariensis,Age at first reproduction,37014,48,"51,102,255",Ross_chapter_11
+21,8,Daubentoniidae,Daubentonia,madagascariensis,Gestation length,"169, 164",48,"51,102,255",Ross_chapter_11
+21,9,Daubentoniidae,Daubentonia,madagascariensis,Interbirth interval,20,11,"0,255,0",Lee_Kappeler_chapter_3
+21,10,Daubentoniidae,Daubentonia,madagascariensis,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+21,11,Daubentoniidae,Daubentonia,madagascariensis,Birth weight,"147, 102",11,"0,255,0",Lee_Kappeler_chapter_3
+21,12,Daubentoniidae,Daubentonia,madagascariensis,Litter weight,109,48,"51,102,255",Ross_chapter_11
+21,13,Daubentoniidae,Daubentonia,madagascariensis,Litter growth rate,3.81,48,"51,102,255",Ross_chapter_11
+21,14,Daubentoniidae,Daubentonia,madagascariensis,Weaning age,"365, 170",48,"51,102,255",Ross_chapter_11
+21,15,Daubentoniidae,Daubentonia,madagascariensis,Weaning weight,1535,48,"51,102,255",Ross_chapter_11
+21,16,Daubentoniidae,Daubentonia,madagascariensis,Juvenility,2.04,48,"51,102,255",Ross_chapter_11
+22,4,Lepilemuridae,Lepilemur,dorsalis,Body mass,~ 500,32767,,Smith_Jungers_1997
+23,4,Lepilemuridae,Lepilemur,edwardsi,Body mass,934,32767,,Smith_Jungers_1997
+24,4,Lepilemuridae,Lepilemur,leucopus,Body mass,594,32767,,Smith_Jungers_1997
+26,4,Lepilemuridae,Lepilemur,mustelinus,Body mass,"~777, 602",32767,,Smith_Jungers_1997
+26,7,Lepilemuridae,Lepilemur,mustelinus,Age at first reproduction,"1.88, 1.83",48,"51,102,255",Ross_chapter_11
+26,8,Lepilemuridae,Lepilemur,mustelinus,Gestation length,135,48,"51,102,255",Ross_chapter_11
+26,11,Lepilemuridae,Lepilemur,mustelinus,Birth weight,~27,10,"255,0,0",Smith_Leigh_1998
+26,12,Lepilemuridae,Lepilemur,mustelinus,Litter weight,34.7,48,"51,102,255",Ross_chapter_11
+26,13,Lepilemuridae,Lepilemur,mustelinus,Litter growth rate,2.65,48,"51,102,255",Ross_chapter_11
+26,14,Lepilemuridae,Lepilemur,mustelinus,Weaning age,"75, 76",48,"51,102,255",Ross_chapter_11
+26,16,Lepilemuridae,Lepilemur,mustelinus,Juvenility,1.3,48,"51,102,255",Ross_chapter_11
+27,4,Lepilemuridae,Lepilemur,ruficaudatus,Body mass,779,32767,,Smith_Jungers_1997
+27,6,Lepilemuridae,Lepilemur,ruficaudatus,Cranial capacity,7.4,14,"255,0,255",Godfrey_etal_2001
+27,7,Lepilemuridae,Lepilemur,ruficaudatus,Age at first reproduction,1.63,14,"255,0,255",Godfrey_etal_2001
+27,14,Lepilemuridae,Lepilemur,ruficaudatus,Weaning age,120,14,"255,0,255",Godfrey_etal_2001
+28,4,Lepilemuridae,Lepilemur,septentrionalis,Body mass,~750,32767,,Smith_Jungers_1997
+29,4,Lemuridae,Eulemur,albocollaris,Body mass,2150,32767,,Smith_Jungers_1997
+31,4,Lemuridae,Eulemur,coronatus,Body mass,"1080, 1177",32767,,Smith_Jungers_1997
+31,8,Lemuridae,Eulemur,coronatus,Gestation length,125,11,"0,255,0",Lee_Kappeler_chapter_3
+31,10,Lemuridae,Eulemur,coronatus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+31,11,Lemuridae,Eulemur,coronatus,Birth weight,"48, ~70",11,"0,255,0",Lee_Kappeler_chapter_3
+32,4,Lemuridae,Eulemur,fulvus,Body mass,"2250, 2206, 2428",32767,,Smith_Jungers_1997
+32,6,Lemuridae,Eulemur,fulvus,Cranial capacity,25.6,14,"255,0,255",Godfrey_etal_2001
+32,7,Lemuridae,Eulemur,fulvus,Age at first reproduction,"2.83, 2.66, 2.16",11,"0,255,0",Lee_Kappeler_chapter_3
+32,8,Lemuridae,Eulemur,fulvus,Gestation length,120,11,"0,255,0",Lee_Kappeler_chapter_3
+32,9,Lemuridae,Eulemur,fulvus,Interbirth interval,24,11,"0,255,0",Lee_Kappeler_chapter_3
+32,10,Lemuridae,Eulemur,fulvus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+32,11,Lemuridae,Eulemur,fulvus,Birth weight,"76, 67.8, ~83.3",11,"0,255,0",Lee_Kappeler_chapter_3
+32,12,Lemuridae,Eulemur,fulvus,Litter weight,74.7,12,"0,0,255",Ross_chapter_11
+32,13,Lemuridae,Eulemur,fulvus,Litter growth rate,9.75,12,"0,0,255",Ross_chapter_11
+32,14,Lemuridae,Eulemur,fulvus,Weaning age,"135, 183, 135",11,"0,255,0",Lee_Kappeler_chapter_3
+32,16,Lemuridae,Eulemur,fulvus,Juvenility,1.46,12,"0,0,255",Ross_chapter_11
+33,4,Lemuridae,Eulemur,macaco,Body mass,"1760, 1793, 2510, 2428",32767,,Smith_Jungers_1997
+33,6,Lemuridae,Eulemur,macaco,Cranial capacity,24.6,14,"255,0,255",Godfrey_etal_2001
+33,7,Lemuridae,Eulemur,macaco,Age at first reproduction,"2.58, 1.66, 2.18",11,"0,255,0",Lee_Kappeler_chapter_3
+33,8,Lemuridae,Eulemur,macaco,Gestation length,129,11,"0,255,0",Lee_Kappeler_chapter_3
+33,9,Lemuridae,Eulemur,macaco,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+33,10,Lemuridae,Eulemur,macaco,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+33,11,Lemuridae,Eulemur,macaco,Birth weight,"74, 50",11,"0,255,0",Lee_Kappeler_chapter_3
+33,12,Lemuridae,Eulemur,macaco,Litter weight,100,12,"0,0,255",Ross_chapter_11
+33,14,Lemuridae,Eulemur,macaco,Weaning age,135,14,"255,0,255",Godfrey_etal_2001
+34,4,Lemuridae,Eulemur,mongoz,Body mass,"1560, 1481, 1890",32767,,Smith_Jungers_1997
+34,5,Lemuridae,Eulemur,mongoz,Brain weight,23.8,12,"0,0,255",Ross_chapter_11
+34,7,Lemuridae,Eulemur,mongoz,Age at first reproduction,"2.5, 2.52",11,"0,255,0",Lee_Kappeler_chapter_3
+34,8,Lemuridae,Eulemur,mongoz,Gestation length,129,11,"0,255,0",Lee_Kappeler_chapter_3
+34,10,Lemuridae,Eulemur,mongoz,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+34,11,Lemuridae,Eulemur,mongoz,Birth weight,"57, 59.8",11,"0,255,0",Lee_Kappeler_chapter_3
+34,12,Lemuridae,Eulemur,mongoz,Litter weight,55,12,"0,0,255",Ross_chapter_11
+34,14,Lemuridae,Eulemur,mongoz,Weaning age,152,12,"0,0,255",Ross_chapter_11
+34,16,Lemuridae,Eulemur,mongoz,Juvenility,1.75,12,"0,0,255",Ross_chapter_11
+35,4,Lemuridae,Eulemur,rubriventer,Body mass,"1940, 1956",32767,,Smith_Jungers_1997
+35,8,Lemuridae,Eulemur,rubriventer,Gestation length,123,11,"0,255,0",Lee_Kappeler_chapter_3
+35,11,Lemuridae,Eulemur,rubriventer,Birth weight,"82, 89",11,"0,255,0",Lee_Kappeler_chapter_3
+36,4,Lemuridae,Hapalemur,aureus,Body mass,1390,32767,,Smith_Jungers_1997
+36,9,Lemuridae,Hapalemur,aureus,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+37,4,Lemuridae,Hapalemur,griseus,Body mass,"670, 790, 709",32767,,Smith_Jungers_1997
+37,6,Lemuridae,Hapalemur,griseus,Cranial capacity,14.6,14,"255,0,255",Godfrey_etal_2001
+37,7,Lemuridae,Hapalemur,griseus,Age at first reproduction,"2.38, 2.92, 2.73",48,"51,102,255",Ross_chapter_11
+37,8,Lemuridae,Hapalemur,griseus,Gestation length,"140, 145",48,"51,102,255",Ross_chapter_11
+37,9,Lemuridae,Hapalemur,griseus,Interbirth interval,11,11,"0,255,0",Lee_Kappeler_chapter_3
+37,10,Lemuridae,Hapalemur,griseus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+37,11,Lemuridae,Hapalemur,griseus,Birth weight,"54, ~45.2",11,"0,255,0",Lee_Kappeler_chapter_3
+37,12,Lemuridae,Hapalemur,griseus,Litter weight,56.7,48,"51,102,255",Ross_chapter_11
+37,14,Lemuridae,Hapalemur,griseus,Weaning age,"122, 154, 120",48,"51,102,255",Ross_chapter_11
+37,16,Lemuridae,Hapalemur,griseus,Juvenility,1.67,48,"51,102,255",Ross_chapter_11
+38,4,Lemuridae,Hapalemur,griseus alaotrensis,Body mass,~ 1450,32767,,Smith_Jungers_1997
+39,4,Lemuridae,Hapalemur,simus,Body mass,"1300, 1300",32767,,Smith_Jungers_1997
+40,4,Lemuridae,Lemur,catta,Body mass,"2210, 2290",32767,,Smith_Jungers_1997
+40,5,Lemuridae,Lemur,catta,Brain weight,22.6,48,"51,102,255",Ross_chapter_11
+40,6,Lemuridae,Lemur,catta,Cranial capacity,23.4,14,"255,0,255",Godfrey_etal_2001
+40,7,Lemuridae,Lemur,catta,Age at first reproduction,"2.01, 2.25, 2.63",48,"51,102,255",Ross_chapter_11
+40,8,Lemuridae,Lemur,catta,Gestation length,135,48,"51,102,255",Ross_chapter_11
+40,9,Lemuridae,Lemur,catta,Interbirth interval,14,11,"0,255,0",Lee_Kappeler_chapter_3
+40,10,Lemuridae,Lemur,catta,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+40,11,Lemuridae,Lemur,catta,Birth weight,"85, 65, ~88.2",11,"0,255,0",Lee_Kappeler_chapter_3
+40,12,Lemuridae,Lemur,catta,Litter weight,103,48,"51,102,255",Ross_chapter_11
+40,13,Lemuridae,Lemur,catta,Litter growth rate,9.15,48,"51,102,255",Ross_chapter_11
+40,14,Lemuridae,Lemur,catta,Weaning age,"105, 105, 179",48,"51,102,255",Ross_chapter_11
+40,16,Lemuridae,Lemur,catta,Juvenility,1.35,48,"51,102,255",Ross_chapter_11
+41,4,Lemuridae,Varecia,variegata,Body mass,"3520, 3100, 3600",32767,,Smith_Jungers_1997
+41,5,Lemuridae,Varecia,variegata,Brain weight,102.1,48,"51,102,255",Ross_chapter_11
+41,6,Lemuridae,Varecia,variegata,Cranial capacity,31.2,14,"255,0,255",Godfrey_etal_2001
+41,7,Lemuridae,Varecia,variegata,Age at first reproduction,"1.42, 1.92, 2.72",12,"0,0,255",Ross_chapter_11
+41,8,Lemuridae,Varecia,variegata,Gestation length,"175, 102",12,"0,0,255",Ross_chapter_11
+41,9,Lemuridae,Varecia,variegata,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+41,10,Lemuridae,Varecia,variegata,Litter size,2,11,"0,255,0",Lee_Kappeler_chapter_3
+41,11,Lemuridae,Varecia,variegata,Birth weight,"100, 78.4, ~87.2",11,"0,255,0",Lee_Kappeler_chapter_3
+41,12,Lemuridae,Varecia,variegata,Litter weight,90,12,"0,0,255",Ross_chapter_11
+41,13,Lemuridae,Varecia,variegata,Litter growth rate,1.95,12,"0,0,255",Ross_chapter_11
+41,14,Lemuridae,Varecia,variegata,Weaning age,"90, 89, 146",12,"0,0,255",Ross_chapter_11
+41,15,Lemuridae,Varecia,variegata,Weaning weight,2893,12,"0,0,255",Ross_chapter_11
+42,4,Indriidae,Avahi,laniger,Body mass,"1320, 875, 1316, 1050",32767,,Smith_Jungers_1997
+42,5,Indriidae,Avahi,laniger,Brain weight,10.6,48,"51,102,255",Ross_chapter_11
+42,6,Indriidae,Avahi,laniger,Cranial capacity,9.8,14,"255,0,255",Godfrey_etal_2001
+42,7,Indriidae,Avahi,laniger,Age at first reproduction,2.58,14,"255,0,255",Godfrey_etal_2001
+42,9,Indriidae,Avahi,laniger,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+42,14,Indriidae,Avahi,laniger,Weaning age,150,14,"255,0,255",Godfrey_etal_2001
+43,4,Indriidae,Avahi,occidentalis,Body mass,777,32767,,Smith_Jungers_1997
+45,4,Indriidae,Propithecus,tattersalli,Body mass,"3590, 3500",32767,,Smith_Jungers_1997
+45,6,Indriidae,Propithecus,tattersalli,Cranial capacity,30.5,14,"255,0,255",Godfrey_etal_2001
+45,7,Indriidae,Propithecus,tattersalli,Age at first reproduction,4.5,14,"255,0,255",Godfrey_etal_2001
+45,11,Indriidae,Propithecus,tattersalli,Birth weight,98,11,"0,255,0",Lee_Kappeler_chapter_3
+45,14,Indriidae,Propithecus,tattersalli,Weaning age,153,14,"255,0,255",Godfrey_etal_2001
+46,4,Indriidae,Propithecus,verreauxi,Body mass,"2950, 3183, 3620",32767,,Smith_Jungers_1997
+46,5,Indriidae,Propithecus,verreauxi,Brain weight,26.7,48,"51,102,255",Ross_chapter_11
+46,6,Indriidae,Propithecus,verreauxi,Cranial capacity,29.7,14,"255,0,255",Godfrey_etal_2001
+46,7,Indriidae,Propithecus,verreauxi,Age at first reproduction,"3.5, 4.57",12,"0,0,255",Ross_chapter_11
+46,8,Indriidae,Propithecus,verreauxi,Gestation length,140,12,"0,0,255",Ross_chapter_11
+46,11,Indriidae,Propithecus,verreauxi,Birth weight,103.2,10,"255,0,0",Smith_Leigh_1998
+46,12,Indriidae,Propithecus,verreauxi,Litter weight,107,12,"0,0,255",Ross_chapter_11
+46,14,Indriidae,Propithecus,verreauxi,Weaning age,"180, 183",12,"0,0,255",Ross_chapter_11
+46,16,Indriidae,Propithecus,verreauxi,Juvenility,2.62,12,"0,0,255",Ross_chapter_11
+47,4,Indriidae,Propithecus,coquereli,Body mass,"4280, 3244",32767,,Smith_Jungers_1997
+47,7,Indriidae,Propithecus,coquereli,Age at first reproduction,4.2,11,"0,255,0",Lee_Kappeler_chapter_3
+47,8,Indriidae,Propithecus,coquereli,Gestation length,141,11,"0,255,0",Lee_Kappeler_chapter_3
+47,9,Indriidae,Propithecus,coquereli,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+47,10,Indriidae,Propithecus,coquereli,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+47,11,Indriidae,Propithecus,coquereli,Birth weight,103,11,"0,255,0",Lee_Kappeler_chapter_3
+47,14,Indriidae,Propithecus,coquereli,Weaning age,182,11,"0,255,0",Lee_Kappeler_chapter_3
+48,4,Indriidae,Propithecus,diadema,Body mass,6260,32767,,Smith_Jungers_1997
+48,6,Indriidae,Propithecus,diadema,Cranial capacity,40.0,14,"255,0,255",Godfrey_etal_2001
+48,7,Indriidae,Propithecus,diadema,Age at first reproduction,"4, 4.51",11,"0,255,0",Lee_Kappeler_chapter_3
+48,8,Indriidae,Propithecus,diadema,Gestation length,178,11,"0,255,0",Lee_Kappeler_chapter_3
+48,9,Indriidae,Propithecus,diadema,Interbirth interval,25,11,"0,255,0",Lee_Kappeler_chapter_3
+48,11,Indriidae,Propithecus,diadema,Birth weight,~135,10,"255,0,0",Smith_Leigh_1998
+48,14,Indriidae,Propithecus,diadema,Weaning age,"363, 183",11,"0,255,0",Lee_Kappeler_chapter_3
+49,4,Indriidae,Indri,indri,Body mass,"6840, 6250",32767,,Smith_Jungers_1997
+49,5,Indriidae,Indri,indri,Brain weight,38.3,48,"51,102,255",Ross_chapter_11
+49,8,Indriidae,Indri,indri,Gestation length,159,48,"51,102,255",Ross_chapter_11
+49,9,Indriidae,Indri,indri,Interbirth interval,30,11,"0,255,0",Lee_Kappeler_chapter_3
+49,12,Indriidae,Indri,indri,Litter weight,300,48,"51,102,255",Ross_chapter_11
+49,14,Indriidae,Indri,indri,Weaning age,"365, 363",48,"51,102,255",Ross_chapter_11
+50,4,Lorisidae,Arctocebus,aureus,Body mass,~210,32767,,Smith_Jungers_1997
+51,4,Lorisidae,Arctocebus,calabarensis,Body mass,"306, 254, 298",32767,,Smith_Jungers_1997
+51,7,Lorisidae,Arctocebus,calabarensis,Age at first reproduction,"1.12, 1.17",48,"51,102,255",Ross_chapter_11
+51,8,Lorisidae,Arctocebus,calabarensis,Gestation length,135,48,"51,102,255",Ross_chapter_11
+51,9,Lorisidae,Arctocebus,calabarensis,Interbirth interval,6,11,"0,255,0",Lee_Kappeler_chapter_3
+51,11,Lorisidae,Arctocebus,calabarensis,Birth weight,"32, 37",11,"0,255,0",Lee_Kappeler_chapter_3
+51,12,Lorisidae,Arctocebus,calabarensis,Litter weight,25.2,48,"51,102,255",Ross_chapter_11
+51,13,Lorisidae,Arctocebus,calabarensis,Litter growth rate,2.14,48,"51,102,255",Ross_chapter_11
+51,14,Lorisidae,Arctocebus,calabarensis,Weaning age,"105, 115",48,"51,102,255",Ross_chapter_11
+51,15,Lorisidae,Arctocebus,calabarensis,Weaning weight,160,48,"51,102,255",Ross_chapter_11
+51,16,Lorisidae,Arctocebus,calabarensis,Juvenility,0.47,48,"51,102,255",Ross_chapter_11
+53,4,Lorisidae,Loris,lydekkerianus,Body mass,269,32767,,Smith_Jungers_1997
+54,4,Lorisidae,Loris,malabaricus,Body mass,193,32767,,Smith_Jungers_1997
+54,10,Lorisidae,Loris,malabaricus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+57,4,Lorisidae,Loris,tardigradus,Body mass,255.5,48,"51,102,255",Ross_chapter_11
+57,7,Lorisidae,Loris,tardigradus,Age at first reproduction,"1.5, 1.5",48,"51,102,255",Ross_chapter_11
+57,8,Lorisidae,Loris,tardigradus,Gestation length,166,48,"51,102,255",Ross_chapter_11
+57,9,Lorisidae,Loris,tardigradus,Interbirth interval,6,11,"0,255,0",Lee_Kappeler_chapter_3
+57,11,Lorisidae,Loris,tardigradus,Birth weight,"10, ~11",11,"0,255,0",Lee_Kappeler_chapter_3
+57,12,Lorisidae,Loris,tardigradus,Litter weight,11.4,48,"51,102,255",Ross_chapter_11
+57,13,Lorisidae,Loris,tardigradus,Litter growth rate,0.76,48,"51,102,255",Ross_chapter_11
+57,14,Lorisidae,Loris,tardigradus,Weaning age,170,11,"0,255,0",Lee_Kappeler_chapter_3
+57,15,Lorisidae,Loris,tardigradus,Weaning weight,139,48,"51,102,255",Ross_chapter_11
+57,16,Lorisidae,Loris,tardigradus,Juvenility,0.58,48,"51,102,255",Ross_chapter_11
+58,4,Lorisidae,Nycticebus,bengalensis,Body mass,1020,32767,,Smith_Jungers_1997
+59,4,Lorisidae,Nycticebus,coucang,Body mass,"626, 630",32767,,Smith_Jungers_1997
+59,5,Lorisidae,Nycticebus,coucang,Brain weight,12.8,48,"51,102,255",Ross_chapter_11
+59,7,Lorisidae,Nycticebus,coucang,Age at first reproduction,2.11,12,"0,0,255",Ross_chapter_11
+59,8,Lorisidae,Nycticebus,coucang,Gestation length,"193, 195",12,"0,0,255",Ross_chapter_11
+59,9,Lorisidae,Nycticebus,coucang,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+59,10,Lorisidae,Nycticebus,coucang,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+59,11,Lorisidae,Nycticebus,coucang,Birth weight,"52, 50.8",11,"0,255,0",Lee_Kappeler_chapter_3
+59,12,Lorisidae,Nycticebus,coucang,Litter weight,49.3,12,"0,0,255",Ross_chapter_11
+59,13,Lorisidae,Nycticebus,coucang,Litter growth rate,5.41,12,"0,0,255",Ross_chapter_11
+59,14,Lorisidae,Nycticebus,coucang,Weaning age,"180, 182",12,"0,0,255",Ross_chapter_11
+59,15,Lorisidae,Nycticebus,coucang,Weaning weight,520,12,"0,0,255",Ross_chapter_11
+59,16,Lorisidae,Nycticebus,coucang,Juvenility,1.09,12,"0,0,255",Ross_chapter_11
+61,4,Lorisidae,Nycticebus,javanicus,Body mass,798,11,"0,255,0",Lee_Kappeler_chapter_3
+62,4,Lorisidae,Nycticebus,menagensis,Body mass,511,11,"0,255,0",Lee_Kappeler_chapter_3
+63,4,Lorisidae,Nycticebus,pygmaeus,Body mass,~307,32767,,Smith_Jungers_1997
+63,8,Lorisidae,Nycticebus,pygmaeus,Gestation length,185,11,"0,255,0",Lee_Kappeler_chapter_3
+63,10,Lorisidae,Nycticebus,pygmaeus,Litter size,2,11,"0,255,0",Lee_Kappeler_chapter_3
+63,11,Lorisidae,Nycticebus,pygmaeus,Birth weight,"20, ~23",11,"0,255,0",Lee_Kappeler_chapter_3
+64,11,Lorisidae,Nycticebus,intermedius,Birth weight,~ 17.8,10,"255,0,0",Smith_Leigh_1998
+65,4,Lorisidae,Perodicticus,edwardsi,Body mass,"~1100, 1210",32767,,Smith_Jungers_1997
+67,4,Lorisidae,Perodicticus,potto,Body mass,"836, 935",32767,,Smith_Jungers_1997
+67,5,Lorisidae,Perodicticus,potto,Brain weight,13.5,48,"51,102,255",Ross_chapter_11
+67,7,Lorisidae,Perodicticus,potto,Age at first reproduction,"2.03, 2.08",12,"0,0,255",Ross_chapter_11
+67,8,Lorisidae,Perodicticus,potto,Gestation length,195,12,"0,0,255",Ross_chapter_11
+67,9,Lorisidae,Perodicticus,potto,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+67,10,Lorisidae,Perodicticus,potto,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+67,11,Lorisidae,Perodicticus,potto,Birth weight,"33, 38.9",11,"0,255,0",Lee_Kappeler_chapter_3
+67,12,Lorisidae,Perodicticus,potto,Litter weight,51.2,12,"0,0,255",Ross_chapter_11
+67,13,Lorisidae,Perodicticus,potto,Litter growth rate,4.73,12,"0,0,255",Ross_chapter_11
+67,14,Lorisidae,Perodicticus,potto,Weaning age,"150, 151",12,"0,0,255",Ross_chapter_11
+67,16,Lorisidae,Perodicticus,potto,Juvenility,1.09,12,"0,0,255",Ross_chapter_11
+69,4,Galagidae,Euoticus,elegantulus,Body mass,"261, 283, 293",32767,,Smith_Jungers_1997
+70,4,Galagidae,Euoticus,pallidus,Body mass,~300,32767,,Smith_Jungers_1997
+71,4,Galagidae,Galago,alleni,Body mass,"269, 262",32767,,Smith_Jungers_1997
+71,7,Galagidae,Galago,alleni,Age at first reproduction,"1.04, 0.83",48,"51,102,255",Ross_chapter_11
+71,8,Galagidae,Galago,alleni,Gestation length,135,48,"51,102,255",Ross_chapter_11
+71,11,Galagidae,Galago,alleni,Birth weight,"24, ~24",11,"0,255,0",Lee_Kappeler_chapter_3
+71,12,Galagidae,Galago,alleni,Litter weight,31.2,48,"51,102,255",Ross_chapter_11
+71,13,Galagidae,Galago,alleni,Litter growth rate,1.82,48,"51,102,255",Ross_chapter_11
+74,4,Galagidae,Galago,matschiei,Body mass,212,32767,,Smith_Jungers_1997
+75,4,Galagidae,Galago,moholi,Body mass,"173, 179, 188",32767,,Smith_Jungers_1997
+75,5,Galagidae,Galago,moholi,Brain weight,5,48,"51,102,255",Ross_chapter_11
+75,6,Galagidae,Galago,moholi,Cranial capacity,3.6,14,"255,0,255",Godfrey_etal_2001
+75,7,Galagidae,Galago,moholi,Age at first reproduction,"1, 1, 0.71",48,"51,102,255",Ross_chapter_11
+75,8,Galagidae,Galago,moholi,Gestation length,123,48,"51,102,255",Ross_chapter_11
+75,9,Galagidae,Galago,moholi,Interbirth interval,6,11,"0,255,0",Lee_Kappeler_chapter_3
+75,10,Galagidae,Galago,moholi,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+75,11,Galagidae,Galago,moholi,Birth weight,"15, 11.8",11,"0,255,0",Lee_Kappeler_chapter_3
+75,12,Galagidae,Galago,moholi,Litter weight,18.4,48,"51,102,255",Ross_chapter_11
+75,13,Galagidae,Galago,moholi,Litter growth rate,1.66,48,"51,102,255",Ross_chapter_11
+75,14,Galagidae,Galago,moholi,Weaning age,"100, 100, 84",48,"51,102,255",Ross_chapter_11
+75,15,Galagidae,Galago,moholi,Weaning weight,95,48,"51,102,255",Ross_chapter_11
+75,16,Galagidae,Galago,moholi,Juvenility,0.39,48,"51,102,255",Ross_chapter_11
+76,4,Galagidae,Galago,senegalensis,Body mass,"199, 195",32767,,Smith_Jungers_1997
+76,7,Galagidae,Galago,senegalensis,Age at first reproduction,1.4,48,"51,102,255",Ross_chapter_11
+76,8,Galagidae,Galago,senegalensis,Gestation length,142,48,"51,102,255",Ross_chapter_11
+76,9,Galagidae,Galago,senegalensis,Interbirth interval,6,11,"0,255,0",Lee_Kappeler_chapter_3
+76,11,Galagidae,Galago,senegalensis,Birth weight,"19, 19.5",11,"0,255,0",Lee_Kappeler_chapter_3
+76,12,Galagidae,Galago,senegalensis,Litter weight,20.3,48,"51,102,255",Ross_chapter_11
+76,13,Galagidae,Galago,senegalensis,Litter growth rate,1.75,48,"51,102,255",Ross_chapter_11
+76,14,Galagidae,Galago,senegalensis,Weaning age,98,48,"51,102,255",Ross_chapter_11
+76,15,Galagidae,Galago,senegalensis,Weaning weight,150,48,"51,102,255",Ross_chapter_11
+76,16,Galagidae,Galago,senegalensis,Juvenility,0.74,48,"51,102,255",Ross_chapter_11
+77,4,Galagidae,Galagoides,demidoff,Body mass,"60, 63",32767,,Smith_Jungers_1997
+77,5,Galagidae,Galagoides,demidoff,Brain weight,3.3,48,"51,102,255",Ross_chapter_11
+77,7,Galagidae,Galagoides,demidoff,Age at first reproduction,"0.97, 1",48,"51,102,255",Ross_chapter_11
+77,8,Galagidae,Galagoides,demidoff,Gestation length,110,48,"51,102,255",Ross_chapter_11
+77,9,Galagidae,Galagoides,demidoff,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+77,10,Galagidae,Galagoides,demidoff,Litter size,2,11,"0,255,0",Lee_Kappeler_chapter_3
+77,11,Galagidae,Galagoides,demidoff,Birth weight,"8, ~9.9",11,"0,255,0",Lee_Kappeler_chapter_3
+77,12,Galagidae,Galagoides,demidoff,Litter weight,9,48,"51,102,255",Ross_chapter_11
+77,13,Galagidae,Galagoides,demidoff,Litter growth rate,1.07,48,"51,102,255",Ross_chapter_11
+81,4,Galagidae,Galagoides,thomasi,Body mass,130,32767,,Smith_Jungers_1997
+83,4,Galagidae,Galagoides,zanzibaricus,Body mass,"137, 132",32767,,Smith_Jungers_1997
+83,7,Galagidae,Galagoides,zanzibaricus,Age at first reproduction,"1, 1",48,"51,102,255",Ross_chapter_11
+83,8,Galagidae,Galagoides,zanzibaricus,Gestation length,126,48,"51,102,255",Ross_chapter_11
+83,9,Galagidae,Galagoides,zanzibaricus,Interbirth interval,6,11,"0,255,0",Lee_Kappeler_chapter_3
+83,11,Galagidae,Galagoides,zanzibaricus,Birth weight,"15, ~14.1",11,"0,255,0",Lee_Kappeler_chapter_3
+83,12,Galagidae,Galagoides,zanzibaricus,Litter weight,16.8,48,"51,102,255",Ross_chapter_11
+83,13,Galagidae,Galagoides,zanzibaricus,Litter growth rate,1.73,48,"51,102,255",Ross_chapter_11
+84,4,Galagidae,Otolemur,crassicaudatus,Body mass,"1110, 1120",32767,,Smith_Jungers_1997
+84,7,Galagidae,Otolemur,crassicaudatus,Age at first reproduction,"2.21, 2.17",12,"0,0,255",Ross_chapter_11
+84,8,Galagidae,Otolemur,crassicaudatus,Gestation length,135,12,"0,0,255",Ross_chapter_11
+84,9,Galagidae,Otolemur,crassicaudatus,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+84,10,Galagidae,Otolemur,crassicaudatus,Litter size,2,11,"0,255,0",Lee_Kappeler_chapter_3
+84,11,Galagidae,Otolemur,crassicaudatus,Birth weight,"46, ~43.2",11,"0,255,0",Lee_Kappeler_chapter_3
+84,12,Galagidae,Otolemur,crassicaudatus,Litter weight,70.7,12,"0,0,255",Ross_chapter_11
+84,13,Galagidae,Otolemur,crassicaudatus,Litter growth rate,10.16,12,"0,0,255",Ross_chapter_11
+84,14,Galagidae,Otolemur,crassicaudatus,Weaning age,135,11,"0,255,0",Lee_Kappeler_chapter_3
+84,15,Galagidae,Otolemur,crassicaudatus,Weaning weight,500,12,"0,0,255",Ross_chapter_11
+84,16,Galagidae,Otolemur,crassicaudatus,Juvenility,1.47,12,"0,0,255",Ross_chapter_11
+85,4,Galagidae,Otolemur,garnettii,Body mass,"734, 739, 721",32767,,Smith_Jungers_1997
+85,5,Galagidae,Otolemur,garnettii,Brain weight,9.8,48,"51,102,255",Ross_chapter_11
+85,7,Galagidae,Otolemur,garnettii,Age at first reproduction,"1.58, 1.58",12,"0,0,255",Ross_chapter_11
+85,8,Galagidae,Otolemur,garnettii,Gestation length,132,12,"0,0,255",Ross_chapter_11
+85,9,Galagidae,Otolemur,garnettii,Interbirth interval,7,11,"0,255,0",Lee_Kappeler_chapter_3
+85,10,Galagidae,Otolemur,garnettii,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+85,11,Galagidae,Otolemur,garnettii,Birth weight,49,11,"0,255,0",Lee_Kappeler_chapter_3
+85,12,Galagidae,Otolemur,garnettii,Litter weight,49.7,12,"0,0,255",Ross_chapter_11
+86,4,Tarsiidae,Tarsius,bancanus,Body mass,"117, 109",32767,,Smith_Jungers_1997
+86,7,Tarsiidae,Tarsius,bancanus,Age at first reproduction,"2.52, 2.5",12,"0,0,255",Ross_chapter_11
+86,8,Tarsiidae,Tarsius,bancanus,Gestation length,178,12,"0,0,255",Ross_chapter_11
+86,9,Tarsiidae,Tarsius,bancanus,Interbirth interval,8,11,"0,255,0",Lee_Kappeler_chapter_3
+86,10,Tarsiidae,Tarsius,bancanus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+86,11,Tarsiidae,Tarsius,bancanus,Birth weight,"24, ~23.6",11,"0,255,0",Lee_Kappeler_chapter_3
+86,12,Tarsiidae,Tarsius,bancanus,Litter weight,24.4,12,"0,0,255",Ross_chapter_11
+86,13,Tarsiidae,Tarsius,bancanus,Litter growth rate,0.82,12,"0,0,255",Ross_chapter_11
+86,14,Tarsiidae,Tarsius,bancanus,Weaning age,79,11,"0,255,0",Lee_Kappeler_chapter_3
+86,16,Tarsiidae,Tarsius,bancanus,Juvenility,1.82,12,"0,0,255",Ross_chapter_11
+87,4,Tarsiidae,Tarsius,dianae,Body mass,107,32767,,Smith_Jungers_1997
+87,10,Tarsiidae,Tarsius,dianae,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+88,10,Tarsiidae,Tarsius,pumilis,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+89,4,Tarsiidae,Tarsius,spectrum,Body mass,"108, 220",32767,,Smith_Jungers_1997
+89,7,Tarsiidae,Tarsius,spectrum,Age at first reproduction,"1.42, 1.42",12,"0,0,255",Ross_chapter_11
+89,9,Tarsiidae,Tarsius,spectrum,Interbirth interval,5,11,"0,255,0",Lee_Kappeler_chapter_3
+89,10,Tarsiidae,Tarsius,spectrum,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+89,11,Tarsiidae,Tarsius,spectrum,Birth weight,~23.1,10,"255,0,0",Smith_Leigh_1998
+89,12,Tarsiidae,Tarsius,spectrum,Litter weight,28.5,12,"0,0,255",Ross_chapter_11
+89,14,Tarsiidae,Tarsius,spectrum,Weaning age,"68, 68",12,"0,0,255",Ross_chapter_11
+90,4,Tarsiidae,Tarsius,syrichta,Body mass,120,12,"0,0,255",Ross_chapter_11
+90,5,Tarsiidae,Tarsius,syrichta,Brain weight,3.3,12,"0,0,255",Ross_chapter_11
+90,8,Tarsiidae,Tarsius,syrichta,Gestation length,180,12,"0,0,255",Ross_chapter_11
+90,10,Tarsiidae,Tarsius,syrichta,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+90,11,Tarsiidae,Tarsius,syrichta,Birth weight,36944.0,10,"255,0,0",Smith_Leigh_1998
+90,12,Tarsiidae,Tarsius,syrichta,Litter weight,26.2,12,"0,0,255",Ross_chapter_11
+90,14,Tarsiidae,Tarsius,syrichta,Weaning age,82,12,"0,0,255",Ross_chapter_11
+91,4,Cebidae,Aotus,azarai,Body mass,1230,32767,,Smith_Jungers_1997
+91,9,Cebidae,Aotus,azarai,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+91,10,Cebidae,Aotus,azarai,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+91,14,Cebidae,Aotus,azarai,Weaning age,231,11,"0,255,0",Lee_Kappeler_chapter_3
+93,4,Cebidae,Aotus,lemurinus,Body mass,874,32767,,Smith_Jungers_1997
+93,8,Cebidae,Aotus,lemurinus,Gestation length,133,11,"0,255,0",Lee_Kappeler_chapter_3
+93,9,Cebidae,Aotus,lemurinus,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+93,10,Cebidae,Aotus,lemurinus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+93,11,Cebidae,Aotus,lemurinus,Birth weight,98,11,"0,255,0",Lee_Kappeler_chapter_3
+93,14,Cebidae,Aotus,lemurinus,Weaning age,75,11,"0,255,0",Lee_Kappeler_chapter_3
+95,4,Cebidae,Aotus,nancymaae,Body mass,780,32767,,Smith_Jungers_1997
+96,4,Cebidae,Aotus,nigriceps,Body mass,1040,32767,,Smith_Jungers_1997
+97,4,Cebidae,Aotus,trivirgatus,Body mass,"736, 724",32767,,Smith_Jungers_1997
+97,5,Cebidae,Aotus,trivirgatus,Brain weight,17.2,48,"51,102,255",Ross_chapter_11
+97,6,Cebidae,Aotus,trivirgatus,Cranial capacity,16.1,14,"255,0,255",Godfrey_etal_2001
+97,7,Cebidae,Aotus,trivirgatus,Age at first reproduction,"2.38, 2,42",48,"51,102,255",Ross_chapter_11
+97,8,Cebidae,Aotus,trivirgatus,Gestation length,133,48,"51,102,255",Ross_chapter_11
+97,11,Cebidae,Aotus,trivirgatus,Birth weight,94,10,"255,0,0",Smith_Leigh_1998
+97,12,Cebidae,Aotus,trivirgatus,Litter weight,97,48,"51,102,255",Ross_chapter_11
+97,13,Cebidae,Aotus,trivirgatus,Litter growth rate,3.5,48,"51,102,255",Ross_chapter_11
+97,14,Cebidae,Aotus,trivirgatus,Weaning age,"75, 179",48,"51,102,255",Ross_chapter_11
+97,15,Cebidae,Aotus,trivirgatus,Weaning weight,360,48,"51,102,255",Ross_chapter_11
+97,16,Cebidae,Aotus,trivirgatus,Juvenility,1.81,48,"51,102,255",Ross_chapter_11
+98,4,Cebidae,Aotus,vociferans,Body mass,698,32767,,Smith_Jungers_1997
+99,4,Cebidae,Cebus,albifrons,Body mass,"2290, 2067",32767,,Smith_Jungers_1997
+99,5,Cebidae,Cebus,albifrons,Brain weight,60.7,48,"51,102,255",Ross_chapter_11
+99,6,Cebidae,Cebus,albifrons,Cranial capacity,56.8,14,"255,0,255",Godfrey_etal_2001
+99,7,Cebidae,Cebus,albifrons,Age at first reproduction,"4.02, 4, 4",48,"51,102,255",Ross_chapter_11
+99,8,Cebidae,Cebus,albifrons,Gestation length,155,48,"51,102,255",Ross_chapter_11
+99,9,Cebidae,Cebus,albifrons,Interbirth interval,18,11,"0,255,0",Lee_Kappeler_chapter_3
+99,11,Cebidae,Cebus,albifrons,Birth weight,"234, 227.7",11,"0,255,0",Lee_Kappeler_chapter_3
+99,12,Cebidae,Cebus,albifrons,Litter weight,234,48,"51,102,255",Ross_chapter_11
+99,13,Cebidae,Cebus,albifrons,Litter growth rate,4.7,48,"51,102,255",Ross_chapter_11
+99,14,Cebidae,Cebus,albifrons,Weaning age,"270, 269, 274",48,"51,102,255",Ross_chapter_11
+99,16,Cebidae,Cebus,albifrons,Juvenility,2.85,48,"51,102,255",Ross_chapter_11
+100,4,Cebidae,Cebus,apella,Body mass,"2520, 2201",32767,,Smith_Jungers_1997
+100,5,Cebidae,Cebus,apella,Brain weight,63.5,48,"51,102,255",Ross_chapter_11
+100,6,Cebidae,Cebus,apella,Cranial capacity,63.1,14,"255,0,255",Godfrey_etal_2001
+100,7,Cebidae,Cebus,apella,Age at first reproduction,"5.5, 5.78",48,"51,102,255",Ross_chapter_11
+100,8,Cebidae,Cebus,apella,Gestation length,154,48,"51,102,255",Ross_chapter_11
+100,9,Cebidae,Cebus,apella,Interbirth interval,22,11,"0,255,0",Lee_Kappeler_chapter_3
+100,10,Cebidae,Cebus,apella,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+100,11,Cebidae,Cebus,apella,Birth weight,"232, 197.1",11,"0,255,0",Lee_Kappeler_chapter_3
+100,12,Cebidae,Cebus,apella,Litter weight,239.7,48,"51,102,255",Ross_chapter_11
+100,13,Cebidae,Cebus,apella,Litter growth rate,2.87,48,"51,102,255",Ross_chapter_11
+100,14,Cebidae,Cebus,apella,Weaning age,"264, 261, 416",48,"51,102,255",Ross_chapter_11
+100,15,Cebidae,Cebus,apella,Weaning weight,1000,48,"51,102,255",Ross_chapter_11
+101,4,Cebidae,Cebus,capucinus,Body mass,"2540, 2578",32767,,Smith_Jungers_1997
+101,5,Cebidae,Cebus,capucinus,Brain weight,71.9,48,"51,102,255",Ross_chapter_11
+101,7,Cebidae,Cebus,capucinus,Age at first reproduction,4,48,"51,102,255",Ross_chapter_11
+101,8,Cebidae,Cebus,capucinus,Gestation length,162,48,"51,102,255",Ross_chapter_11
+101,9,Cebidae,Cebus,capucinus,Interbirth interval,26,11,"0,255,0",Lee_Kappeler_chapter_3
+101,10,Cebidae,Cebus,capucinus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+101,11,Cebidae,Cebus,capucinus,Birth weight,"239, 250, ~230",11,"0,255,0",Lee_Kappeler_chapter_3
+101,12,Cebidae,Cebus,capucinus,Litter weight,230,48,"51,102,255",Ross_chapter_11
+101,13,Cebidae,Cebus,capucinus,Litter growth rate,2.17,48,"51,102,255",Ross_chapter_11
+101,14,Cebidae,Cebus,capucinus,Weaning age,"517, 510",48,"51,102,255",Ross_chapter_11
+101,15,Cebidae,Cebus,capucinus,Weaning weight,1350,48,"51,102,255",Ross_chapter_11
+105,4,Cebidae,Cebus,olivaceus,Body mass,2520,32767,,Smith_Jungers_1997
+105,7,Cebidae,Cebus,olivaceus,Age at first reproduction,6,48,"51,102,255",Ross_chapter_11
+105,14,Cebidae,Cebus,olivaceus,Weaning age,730,48,"51,102,255",Ross_chapter_11
+107,4,Cebidae,Saimiri,boliviensis,Body mass,711,32767,,Smith_Jungers_1997
+108,4,Cebidae,Saimiri,oerstedii,Body mass,680,32767,,Smith_Jungers_1997
+109,4,Cebidae,Saimiri,sciureus,Body mass,"662, 699",32767,,Smith_Jungers_1997
+109,5,Cebidae,Saimiri,sciureus,Brain weight,23,48,"51,102,255",Ross_chapter_11
+109,6,Cebidae,Saimiri,sciureus,Cranial capacity,23.2,14,"255,0,255",Godfrey_etal_2001
+109,7,Cebidae,Saimiri,sciureus,Age at first reproduction,"2.5, 2.5",12,"0,0,255",Ross_chapter_11
+109,8,Cebidae,Saimiri,sciureus,Gestation length,170,12,"0,0,255",Ross_chapter_11
+109,9,Cebidae,Saimiri,sciureus,Interbirth interval,9,11,"0,255,0",Lee_Kappeler_chapter_3
+109,10,Cebidae,Saimiri,sciureus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+109,11,Cebidae,Saimiri,sciureus,Birth weight,"146, 106.4",11,"0,255,0",Lee_Kappeler_chapter_3
+109,12,Cebidae,Saimiri,sciureus,Litter weight,95.2,12,"0,0,255",Ross_chapter_11
+109,13,Cebidae,Saimiri,sciureus,Litter growth rate,1.78,12,"0,0,255",Ross_chapter_11
+109,14,Cebidae,Saimiri,sciureus,Weaning age,"168, 240, 183",12,"0,0,255",Ross_chapter_11
+109,15,Cebidae,Saimiri,sciureus,Weaning weight,418,12,"0,0,255",Ross_chapter_11
+110,4,Cebidae,Saimiri,ustus,Body mass,799,32767,,Smith_Jungers_1997
+111,4,Cebidae,Saimiri,vanzolinii,Body mass,650,32767,,Smith_Jungers_1997
+112,4,Callitrichidae,Callimico,goeldii,Body mass,"~582, 355",32767,,Smith_Jungers_1997
+112,5,Callitrichidae,Callimico,goeldii,Brain weight,11,48,"51,102,255",Ross_chapter_11
+112,7,Callitrichidae,Callimico,goeldii,Age at first reproduction,1.32,48,"51,102,255",Ross_chapter_11
+112,8,Callitrichidae,Callimico,goeldii,Gestation length,"155, 151",48,"51,102,255",Ross_chapter_11
+112,9,Callitrichidae,Callimico,goeldii,Interbirth interval,9,11,"0,255,0",Lee_Kappeler_chapter_3
+112,10,Callitrichidae,Callimico,goeldii,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+112,11,Callitrichidae,Callimico,goeldii,Birth weight,"48, 53.3",11,"0,255,0",Lee_Kappeler_chapter_3
+112,12,Callitrichidae,Callimico,goeldii,Litter weight,50.6,48,"51,102,255",Ross_chapter_11
+112,13,Callitrichidae,Callimico,goeldii,Litter growth rate,2.75,48,"51,102,255",Ross_chapter_11
+112,14,Callitrichidae,Callimico,goeldii,Weaning age,"70, 65",48,"51,102,255",Ross_chapter_11
+112,15,Callitrichidae,Callimico,goeldii,Weaning weight,215,48,"51,102,255",Ross_chapter_11
+112,16,Callitrichidae,Callimico,goeldii,Juvenility,0.7,48,"51,102,255",Ross_chapter_11
+113,4,Callitrichidae,Cebuella,pygmaea,Body mass,"122, 79",32767,,Smith_Jungers_1997
+113,7,Callitrichidae,Cebuella,pygmaea,Age at first reproduction,1.88,48,"51,102,255",Ross_chapter_11
+113,8,Callitrichidae,Cebuella,pygmaea,Gestation length,137,48,"51,102,255",Ross_chapter_11
+113,10,Callitrichidae,Cebuella,pygmaea,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+113,11,Callitrichidae,Cebuella,pygmaea,Birth weight,"12, 14.1",11,"0,255,0",Lee_Kappeler_chapter_3
+113,12,Callitrichidae,Cebuella,pygmaea,Litter weight,31.5,48,"51,102,255",Ross_chapter_11
+113,13,Callitrichidae,Cebuella,pygmaea,Litter growth rate,0.9,48,"51,102,255",Ross_chapter_11
+113,14,Callitrichidae,Cebuella,pygmaea,Weaning age,90,48,"51,102,255",Ross_chapter_11
+113,15,Callitrichidae,Cebuella,pygmaea,Weaning weight,70,48,"51,102,255",Ross_chapter_11
+113,16,Callitrichidae,Cebuella,pygmaea,Juvenility,1.25,48,"51,102,255",Ross_chapter_11
+114,4,Callitrichidae,Callithrix,aurita,Body mass,429,32767,,Smith_Jungers_1997
+115,4,Callitrichidae,Callithrix,flaviceps,Body mass,~406,32767,,Smith_Jungers_1997
+116,4,Callitrichidae,Callithrix,geoffroyi,Body mass,~359,32767,,Smith_Jungers_1997
+117,4,Callitrichidae,Callithrix,jacchus,Body mass,"381, 287",32767,,Smith_Jungers_1997
+117,5,Callitrichidae,Callithrix,jacchus,Brain weight,8,48,"51,102,255",Ross_chapter_11
+117,6,Callitrichidae,Callithrix,jacchus,Cranial capacity,7.7,14,"255,0,255",Godfrey_etal_2001
+117,7,Callitrichidae,Callithrix,jacchus,Age at first reproduction,"1.5, 1.37",48,"51,102,255",Ross_chapter_11
+117,8,Callitrichidae,Callithrix,jacchus,Gestation length,148,48,"51,102,255",Ross_chapter_11
+117,10,Callitrichidae,Callithrix,jacchus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+117,11,Callitrichidae,Callithrix,jacchus,Birth weight,"27, 30.23",11,"0,255,0",Lee_Kappeler_chapter_3
+117,12,Callitrichidae,Callithrix,jacchus,Litter weight,56.7,48,"51,102,255",Ross_chapter_11
+117,13,Callitrichidae,Callithrix,jacchus,Litter growth rate,2.98,48,"51,102,255",Ross_chapter_11
+117,14,Callitrichidae,Callithrix,jacchus,Weaning age,"90, 60, 77",48,"51,102,255",Ross_chapter_11
+117,15,Callitrichidae,Callithrix,jacchus,Weaning weight,128,48,"51,102,255",Ross_chapter_11
+117,16,Callitrichidae,Callithrix,jacchus,Juvenility,0.85,48,"51,102,255",Ross_chapter_11
+118,4,Callitrichidae,Callithrix,kuhlii,Body mass,~375,32767,,Smith_Jungers_1997
+119,4,Callitrichidae,Callithrix,penicillata,Body mass,307,32767,,Smith_Jungers_1997
+120,4,Callitrichidae,Leontopithecus,caissara,Body mass,572,32767,,Smith_Jungers_1997
+121,4,Callitrichidae,Leontopithecus,chrysomelas,Body mass,535,32767,,Smith_Jungers_1997
+123,4,Callitrichidae,Leontopithecus,rosalia,Body mass,"598, 559",32767,,Smith_Jungers_1997
+123,5,Callitrichidae,Leontopithecus,rosalia,Brain weight,12.3,48,"51,102,255",Ross_chapter_11
+123,7,Callitrichidae,Leontopithecus,rosalia,Age at first reproduction,"2.38, 2.42",48,"51,102,255",Ross_chapter_11
+123,8,Callitrichidae,Leontopithecus,rosalia,Gestation length,129,48,"51,102,255",Ross_chapter_11
+123,9,Callitrichidae,Leontopithecus,rosalia,Interbirth interval,6,11,"0,255,0",Lee_Kappeler_chapter_3
+123,10,Callitrichidae,Leontopithecus,rosalia,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+123,11,Callitrichidae,Leontopithecus,rosalia,Birth weight,"50, 62.4",11,"0,255,0",Lee_Kappeler_chapter_3
+123,12,Callitrichidae,Leontopithecus,rosalia,Litter weight,100,48,"51,102,255",Ross_chapter_11
+123,13,Callitrichidae,Leontopithecus,rosalia,Litter growth rate,2.56,48,"51,102,255",Ross_chapter_11
+123,14,Callitrichidae,Leontopithecus,rosalia,Weaning age,"90, 90",48,"51,102,255",Ross_chapter_11
+123,15,Callitrichidae,Leontopithecus,rosalia,Weaning weight,165,48,"51,102,255",Ross_chapter_11
+123,16,Callitrichidae,Leontopithecus,rosalia,Juvenility,1.78,48,"51,102,255",Ross_chapter_11
+124,4,Callitrichidae,Saguinus,bicolor,Body mass,430,32767,,Smith_Jungers_1997
+125,4,Callitrichidae,Saguinus,fuscicollis,Body mass,"358, 350",32767,,Smith_Jungers_1997
+125,6,Callitrichidae,Saguinus,fuscicollis,Cranial capacity,8.2,14,"255,0,255",Godfrey_etal_2001
+125,7,Callitrichidae,Saguinus,fuscicollis,Age at first reproduction,"2.33, 2.5, 2.33",12,"0,0,255",Ross_chapter_11
+125,8,Callitrichidae,Saguinus,fuscicollis,Gestation length,148,12,"0,0,255",Ross_chapter_11
+125,9,Callitrichidae,Saguinus,fuscicollis,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+125,10,Callitrichidae,Saguinus,fuscicollis,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+125,11,Callitrichidae,Saguinus,fuscicollis,Birth weight,"40, 38.8",11,"0,255,0",Lee_Kappeler_chapter_3
+125,12,Callitrichidae,Saguinus,fuscicollis,Litter weight,79.8,12,"0,0,255",Ross_chapter_11
+125,14,Callitrichidae,Saguinus,fuscicollis,Weaning age,"90, 89, 91",12,"0,0,255",Ross_chapter_11
+125,16,Callitrichidae,Saguinus,fuscicollis,Juvenility,1.68,12,"0,0,255",Ross_chapter_11
+126,4,Callitrichidae,Saguinus,geoffroyi,Body mass,502,32767,,Smith_Jungers_1997
+126,11,Callitrichidae,Saguinus,geoffroyi,Birth weight,48.1,10,"255,0,0",Smith_Leigh_1998
+128,4,Callitrichidae,Saguinus,imperator,Body mass,475,32767,,Smith_Jungers_1997
+128,11,Callitrichidae,Saguinus,imperator,Birth weight,46.8,10,"255,0,0",Smith_Leigh_1998
+129,4,Callitrichidae,Saguinus,inustus,Body mass,803?,32767,,Smith_Jungers_1997
+130,4,Callitrichidae,Saguinus,labiatus,Body mass,"529, 520",32767,,Smith_Jungers_1997
+130,8,Callitrichidae,Saguinus,labiatus,Gestation length,145,12,"0,0,255",Ross_chapter_11
+130,9,Callitrichidae,Saguinus,labiatus,Interbirth interval,10,11,"0,255,0",Lee_Kappeler_chapter_3
+130,10,Callitrichidae,Saguinus,labiatus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+130,11,Callitrichidae,Saguinus,labiatus,Birth weight,"44, 38",11,"0,255,0",Lee_Kappeler_chapter_3
+130,12,Callitrichidae,Saguinus,labiatus,Litter weight,87,12,"0,0,255",Ross_chapter_11
+131,4,Callitrichidae,Saguinus,leucopus,Body mass,490,32767,,Smith_Jungers_1997
+131,11,Callitrichidae,Saguinus,leucopus,Birth weight,44,10,"255,0,0",Smith_Leigh_1998
+133,4,Callitrichidae,Saguinus,midas,Body mass,"575, 558",32767,,Smith_Jungers_1997
+133,7,Callitrichidae,Saguinus,midas,Age at first reproduction,"2, 2",12,"0,0,255",Ross_chapter_11
+133,9,Callitrichidae,Saguinus,midas,Interbirth interval,7,11,"0,255,0",Lee_Kappeler_chapter_3
+133,10,Callitrichidae,Saguinus,midas,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+133,11,Callitrichidae,Saguinus,midas,Birth weight,40,11,"0,255,0",Lee_Kappeler_chapter_3
+133,12,Callitrichidae,Saguinus,midas,Litter weight,80,12,"0,0,255",Ross_chapter_11
+133,14,Callitrichidae,Saguinus,midas,Weaning age,"70, 71",12,"0,0,255",Ross_chapter_11
+134,4,Callitrichidae,Saguinus,mystax,Body mass,539,32767,,Smith_Jungers_1997
+134,11,Callitrichidae,Saguinus,mystax,Birth weight,46.9,10,"255,0,0",Smith_Leigh_1998
+136,4,Callitrichidae,Saguinus,nigricollis,Body mass,"484, 350",32767,,Smith_Jungers_1997
+136,6,Callitrichidae,Saguinus,nigricollis,Cranial capacity,8.9,14,"255,0,255",Godfrey_etal_2001
+136,7,Callitrichidae,Saguinus,nigricollis,Age at first reproduction,2.33,14,"255,0,255",Godfrey_etal_2001
+136,10,Callitrichidae,Saguinus,nigricollis,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+136,11,Callitrichidae,Saguinus,nigricollis,Birth weight,"44, 43.9",11,"0,255,0",Lee_Kappeler_chapter_3
+136,12,Callitrichidae,Saguinus,nigricollis,Litter weight,87,12,"0,0,255",Ross_chapter_11
+136,13,Callitrichidae,Saguinus,nigricollis,Litter growth rate,3.68,12,"0,0,255",Ross_chapter_11
+136,14,Callitrichidae,Saguinus,nigricollis,Weaning age,"84, 83, 77",12,"0,0,255",Ross_chapter_11
+136,15,Callitrichidae,Saguinus,nigricollis,Weaning weight,175,12,"0,0,255",Ross_chapter_11
+137,4,Callitrichidae,Saguinus,oedipus,Body mass,"404, 425",32767,,Smith_Jungers_1997
+137,5,Callitrichidae,Saguinus,oedipus,Brain weight,9.6,48,"51,102,255",Ross_chapter_11
+137,7,Callitrichidae,Saguinus,oedipus,Age at first reproduction,1.89,12,"0,0,255",Ross_chapter_11
+137,8,Callitrichidae,Saguinus,oedipus,Gestation length,168,12,"0,0,255",Ross_chapter_11
+137,10,Callitrichidae,Saguinus,oedipus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+137,11,Callitrichidae,Saguinus,oedipus,Birth weight,"44, 42.1",11,"0,255,0",Lee_Kappeler_chapter_3
+137,12,Callitrichidae,Saguinus,oedipus,Litter weight,83.6,12,"0,0,255",Ross_chapter_11
+137,13,Callitrichidae,Saguinus,oedipus,Litter growth rate,3.5,12,"0,0,255",Ross_chapter_11
+137,14,Callitrichidae,Saguinus,oedipus,Weaning age,50,12,"0,0,255",Ross_chapter_11
+137,15,Callitrichidae,Saguinus,oedipus,Weaning weight,130,12,"0,0,255",Ross_chapter_11
+137,16,Callitrichidae,Saguinus,oedipus,Juvenility,1.29,12,"0,0,255",Ross_chapter_11
+139,4,Callitrichidae,Mico,argentatus,Body mass,"360, 353",32767,,Smith_Jungers_1997
+139,7,Callitrichidae,Mico,argentatus,Age at first reproduction,"1.67, 1.67",48,"51,102,255",Ross_chapter_11
+139,9,Callitrichidae,Mico,argentatus,Interbirth interval,7,11,"0,255,0",Lee_Kappeler_chapter_3
+139,10,Callitrichidae,Mico,argentatus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+139,11,Callitrichidae,Mico,argentatus,Birth weight,36,11,"0,255,0",Lee_Kappeler_chapter_3
+139,12,Callitrichidae,Mico,argentatus,Litter weight,70.2,48,"51,102,255",Ross_chapter_11
+139,13,Callitrichidae,Mico,argentatus,Litter growth rate,3.4,48,"51,102,255",Ross_chapter_11
+144,4,Callitrichidae,Mico,emiliae,Body mass,330,32767,,Smith_Jungers_1997
+145,4,Callitrichidae,Mico,humeralifer,Body mass,380,32767,,Smith_Jungers_1997
+145,11,Callitrichidae,Mico,humeralifer,Birth weight,~34.5,10,"255,0,0",Smith_Leigh_1998
+147,4,Callitrichidae,Mico,mauesi,Body mass,398,32767,,Smith_Jungers_1997
+149,4,Callitrichidae,Mico,nigriceps,Body mass,390,32767,,Smith_Jungers_1997
+153,4,Pitheciidae,Cacajao,calvus,Body mass,"2880, 3600",32767,,Smith_Jungers_1997
+153,8,Pitheciidae,Cacajao,calvus,Gestation length,180,48,"51,102,255",Ross_chapter_11
+153,14,Pitheciidae,Cacajao,calvus,Weaning age,638,48,"51,102,255",Ross_chapter_11
+154,4,Pitheciidae,Cacajao,melanocephalus,Body mass,2710,32767,,Smith_Jungers_1997
+157,4,Pitheciidae,Callicebus,brunneus,Body mass,805,32767,,Smith_Jungers_1997
+160,4,Pitheciidae,Callicebus,cupreus,Body mass,1120,32767,,Smith_Jungers_1997
+160,8,Pitheciidae,Callicebus,cupreus,Gestation length,130,11,"0,255,0",Lee_Kappeler_chapter_3
+160,9,Pitheciidae,Callicebus,cupreus,Interbirth interval,13,11,"0,255,0",Lee_Kappeler_chapter_3
+160,10,Pitheciidae,Callicebus,cupreus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+160,11,Pitheciidae,Callicebus,cupreus,Birth weight,"74, ~74",11,"0,255,0",Lee_Kappeler_chapter_3
+160,14,Pitheciidae,Callicebus,cupreus,Weaning age,203,11,"0,255,0",Lee_Kappeler_chapter_3
+161,4,Pitheciidae,Callicebus,donacophilus,Body mass,909,32767,,Smith_Jungers_1997
+162,4,Pitheciidae,Callicebus,hoffmannsi,Body mass,1030,32767,,Smith_Jungers_1997
+166,4,Pitheciidae,Callicebus,moloch,Body mass,"956, 1004",32767,,Smith_Jungers_1997
+166,7,Pitheciidae,Callicebus,moloch,Age at first reproduction,3,48,"51,102,255",Ross_chapter_11
+166,8,Pitheciidae,Callicebus,moloch,Gestation length,164,48,"51,102,255",Ross_chapter_11
+166,11,Pitheciidae,Callicebus,moloch,Birth weight,74.4,10,"255,0,0",Smith_Leigh_1998
+166,12,Pitheciidae,Callicebus,moloch,Litter weight,100,48,"51,102,255",Ross_chapter_11
+166,14,Pitheciidae,Callicebus,moloch,Weaning age,60,48,"51,102,255",Ross_chapter_11
+166,16,Pitheciidae,Callicebus,moloch,Juvenility,2.39,48,"51,102,255",Ross_chapter_11
+172,4,Pitheciidae,Callicebus,personatus,Body mass,1380,32767,,Smith_Jungers_1997
+173,4,Pitheciidae,Callicebus,torquatus,Body mass,1210,32767,,Smith_Jungers_1997
+174,4,Pitheciidae,Chiropotes,albinasus,Body mass,2490,32767,,Smith_Jungers_1997
+175,4,Pitheciidae,Chiropotes,satanas,Body mass,"2580, 3100",32767,,Smith_Jungers_1997
+176,4,Pitheciidae,Pithecia,aequatorialis,Body mass,~2250,32767,,Smith_Jungers_1997
+178,4,Pitheciidae,Pithecia,irrorata,Body mass,2070,32767,,Smith_Jungers_1997
+179,4,Pitheciidae,Pithecia,monachus,Body mass,"2110, 2170",32767,,Smith_Jungers_1997
+179,5,Pitheciidae,Pithecia,monachus,Brain weight,32.2,48,"51,102,255",Ross_chapter_11
+179,11,Pitheciidae,Pithecia,monachus,Birth weight,"120, 121",11,"0,255,0",Lee_Kappeler_chapter_3
+179,12,Pitheciidae,Pithecia,monachus,Litter weight,121,12,"0,0,255",Ross_chapter_11
+179,13,Pitheciidae,Pithecia,monachus,Litter growth rate,2.66,12,"0,0,255",Ross_chapter_11
+180,4,Pitheciidae,Pithecia,pithecia,Body mass,"1580, 1604",32767,,Smith_Jungers_1997
+180,7,Pitheciidae,Pithecia,pithecia,Age at first reproduction,2.08,12,"0,0,255",Ross_chapter_11
+180,8,Pitheciidae,Pithecia,pithecia,Gestation length,164,12,"0,0,255",Ross_chapter_11
+181,4,Atelidae,Alouatta,belzebul,Body mass,5520,32767,,Smith_Jungers_1997
+182,4,Atelidae,Alouatta,caraya,Body mass,"4330, 4882",32767,,Smith_Jungers_1997
+182,6,Atelidae,Alouatta,caraya,Cranial capacity,47.9,14,"255,0,255",Godfrey_etal_2001
+182,7,Atelidae,Alouatta,caraya,Age at first reproduction,3.71,48,"51,102,255",Ross_chapter_11
+182,8,Atelidae,Alouatta,caraya,Gestation length,187,48,"51,102,255",Ross_chapter_11
+182,11,Atelidae,Alouatta,caraya,Birth weight,262,10,"255,0,0",Smith_Leigh_1998
+182,14,Atelidae,Alouatta,caraya,Weaning age,325,14,"255,0,255",Godfrey_etal_2001
+186,4,Atelidae,Alouatta,palliata,Body mass,"5350, 4020, 6600, 5824",32767,,Smith_Jungers_1997
+186,5,Atelidae,Alouatta,palliata,Brain weight,51.5,48,"51,102,255",Ross_chapter_11
+186,6,Atelidae,Alouatta,palliata,Cranial capacity,55.4,14,"255,0,255",Godfrey_etal_2001
+186,7,Atelidae,Alouatta,palliata,Age at first reproduction,"3.58, 3.99",48,"51,102,255",Ross_chapter_11
+186,8,Atelidae,Alouatta,palliata,Gestation length,"186, 186",48,"51,102,255",Ross_chapter_11
+186,9,Atelidae,Alouatta,palliata,Interbirth interval,20,11,"0,255,0",Lee_Kappeler_chapter_3
+186,10,Atelidae,Alouatta,palliata,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+186,11,Atelidae,Alouatta,palliata,Birth weight,320,11,"0,255,0",Lee_Kappeler_chapter_3
+186,12,Atelidae,Alouatta,palliata,Litter weight,528,48,"51,102,255",Ross_chapter_11
+186,13,Atelidae,Alouatta,palliata,Litter growth rate,1.36,48,"51,102,255",Ross_chapter_11
+186,14,Atelidae,Alouatta,palliata,Weaning age,"630, 495, 325",48,"51,102,255",Ross_chapter_11
+186,15,Atelidae,Alouatta,palliata,Weaning weight,1100,48,"51,102,255",Ross_chapter_11
+186,16,Atelidae,Alouatta,palliata,Juvenility,1.35,48,"51,102,255",Ross_chapter_11
+187,4,Atelidae,Alouatta,pigra,Body mass,6430,32767,,Smith_Jungers_1997
+187,11,Atelidae,Alouatta,pigra,Birth weight,~480,10,"255,0,0",Smith_Leigh_1998
+189,4,Atelidae,Alouatta,seniculus,Body mass,"5210, 4670, 6020, 5807",32767,,Smith_Jungers_1997
+189,7,Atelidae,Alouatta,seniculus,Age at first reproduction,4.58,48,"51,102,255",Ross_chapter_11
+189,8,Atelidae,Alouatta,seniculus,Gestation length,191,48,"51,102,255",Ross_chapter_11
+189,11,Atelidae,Alouatta,seniculus,Birth weight,295,10,"255,0,0",Smith_Leigh_1998
+189,13,Atelidae,Alouatta,seniculus,Litter growth rate,3.5,48,"51,102,255",Ross_chapter_11
+189,14,Atelidae,Alouatta,seniculus,Weaning age,372,48,"51,102,255",Ross_chapter_11
+189,16,Atelidae,Alouatta,seniculus,Juvenility,3.04,48,"51,102,255",Ross_chapter_11
+190,4,Atelidae,Ateles,belzebuth,Body mass,7850,32767,,Smith_Jungers_1997
+191,4,Atelidae,Ateles,chamek,Body mass,9330,32767,,Smith_Jungers_1997
+192,4,Atelidae,Ateles,fusciceps,Body mass,"9160, 9163",32767,,Smith_Jungers_1997
+192,5,Atelidae,Ateles,fusciceps,Brain weight,108.8,48,"51,102,255",Ross_chapter_11
+192,7,Atelidae,Ateles,fusciceps,Age at first reproduction,4.86,48,"51,102,255",Ross_chapter_11
+192,8,Atelidae,Ateles,fusciceps,Gestation length,226,48,"51,102,255",Ross_chapter_11
+192,13,Atelidae,Ateles,fusciceps,Litter growth rate,6,48,"51,102,255",Ross_chapter_11
+192,14,Atelidae,Ateles,fusciceps,Weaning age,486,48,"51,102,255",Ross_chapter_11
+192,16,Atelidae,Ateles,fusciceps,Juvenility,2.91,48,"51,102,255",Ross_chapter_11
+193,4,Atelidae,Ateles,geoffroyi,Body mass,"7290, 7669",32767,,Smith_Jungers_1997
+193,5,Atelidae,Ateles,geoffroyi,Brain weight,104.9,48,"51,102,255",Ross_chapter_11
+193,6,Atelidae,Ateles,geoffroyi,Cranial capacity,106.4,14,"255,0,255",Godfrey_etal_2001
+193,7,Atelidae,Ateles,geoffroyi,Age at first reproduction,"5.62, 6.39",48,"51,102,255",Ross_chapter_11
+193,8,Atelidae,Ateles,geoffroyi,Gestation length,"225, 229",48,"51,102,255",Ross_chapter_11
+193,9,Atelidae,Ateles,geoffroyi,Interbirth interval,37,11,"0,255,0",Lee_Kappeler_chapter_3
+193,10,Atelidae,Ateles,geoffroyi,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+193,11,Atelidae,Ateles,geoffroyi,Birth weight,"426, ~512",11,"0,255,0",Lee_Kappeler_chapter_3
+193,12,Atelidae,Ateles,geoffroyi,Litter weight,426,48,"51,102,255",Ross_chapter_11
+193,13,Atelidae,Ateles,geoffroyi,Litter growth rate,1.92,48,"51,102,255",Ross_chapter_11
+193,14,Atelidae,Ateles,geoffroyi,Weaning age,"821, 750, 821",48,"51,102,255",Ross_chapter_11
+193,15,Atelidae,Ateles,geoffroyi,Weaning weight,2000,48,"51,102,255",Ross_chapter_11
+193,16,Atelidae,Ateles,geoffroyi,Juvenility,2.76,48,"51,102,255",Ross_chapter_11
+196,4,Atelidae,Ateles,paniscus,Body mass,"8440, 8554",32767,,Smith_Jungers_1997
+196,5,Atelidae,Ateles,paniscus,Brain weight,101.2,48,"51,102,255",Ross_chapter_11
+196,7,Atelidae,Ateles,paniscus,Age at first reproduction,5,48,"51,102,255",Ross_chapter_11
+196,8,Atelidae,Ateles,paniscus,Gestation length,230,11,"0,255,0",Lee_Kappeler_chapter_3
+196,9,Atelidae,Ateles,paniscus,Interbirth interval,24,11,"0,255,0",Lee_Kappeler_chapter_3
+196,10,Atelidae,Ateles,paniscus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+196,11,Atelidae,Ateles,paniscus,Birth weight,"480, 425",11,"0,255,0",Lee_Kappeler_chapter_3
+196,12,Atelidae,Ateles,paniscus,Litter weight,452.5,48,"51,102,255",Ross_chapter_11
+196,13,Atelidae,Ateles,paniscus,Litter growth rate,4.39,48,"51,102,255",Ross_chapter_11
+196,14,Atelidae,Ateles,paniscus,Weaning age,"760, 810",48,"51,102,255",Ross_chapter_11
+196,15,Atelidae,Ateles,paniscus,Weaning weight,3790,48,"51,102,255",Ross_chapter_11
+197,4,Atelidae,Brachyteles,arachnoides,Body mass,8070,32767,,Smith_Jungers_1997
+197,7,Atelidae,Brachyteles,arachnoides,Age at first reproduction,7.5,48,"51,102,255",Ross_chapter_11
+197,8,Atelidae,Brachyteles,arachnoides,Gestation length,233,11,"0,255,0",Lee_Kappeler_chapter_3
+197,9,Atelidae,Brachyteles,arachnoides,Interbirth interval,34,11,"0,255,0",Lee_Kappeler_chapter_3
+197,10,Atelidae,Brachyteles,arachnoides,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+197,14,Atelidae,Brachyteles,arachnoides,Weaning age,"638, 855",48,"51,102,255",Ross_chapter_11
+200,4,Atelidae,Lagothrix,lagothricha,Body mass,"7020, 5585",32767,,Smith_Jungers_1997
+200,5,Atelidae,Lagothrix,lagothricha,Brain weight,82.6,48,"51,102,255",Ross_chapter_11
+200,7,Atelidae,Lagothrix,lagothricha,Age at first reproduction,"5, 7.58",48,"51,102,255",Ross_chapter_11
+200,8,Atelidae,Lagothrix,lagothricha,Gestation length,"223, 225",48,"51,102,255",Ross_chapter_11
+200,9,Atelidae,Lagothrix,lagothricha,Interbirth interval,24,11,"0,255,0",Lee_Kappeler_chapter_3
+200,10,Atelidae,Lagothrix,lagothricha,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+200,11,Atelidae,Lagothrix,lagothricha,Birth weight,"447, 432",11,"0,255,0",Lee_Kappeler_chapter_3
+200,12,Atelidae,Lagothrix,lagothricha,Litter weight,450,48,"51,102,255",Ross_chapter_11
+200,14,Atelidae,Lagothrix,lagothricha,Weaning age,"315, 507",48,"51,102,255",Ross_chapter_11
+200,16,Atelidae,Lagothrix,lagothricha,Juvenility,3.53,48,"51,102,255",Ross_chapter_11
+203,4,Atelidae,Oreonax,flavicauda,Body mass,~10000,32767,,Smith_Jungers_1997
+204,4,Cercopithecidae,Allenopithecus,nigroviridis,Body mass,"3180, 3225",32767,,Smith_Jungers_1997
+204,5,Cercopithecidae,Allenopithecus,nigroviridis,Brain weight,57,48,"51,102,255",Ross_chapter_11
+204,11,Cercopithecidae,Allenopithecus,nigroviridis,Birth weight,242,10,"255,0,0",Smith_Leigh_1998
+205,4,Cercopithecidae,Miopithecus,talapoin,Body mass,"1120, 2000",32767,,Smith_Jungers_1997
+205,5,Cercopithecidae,Miopithecus,talapoin,Brain weight,37.3,48,"51,102,255",Ross_chapter_11
+205,7,Cercopithecidae,Miopithecus,talapoin,Age at first reproduction,4.38,12,"0,0,255",Ross_chapter_11
+205,8,Cercopithecidae,Miopithecus,talapoin,Gestation length,"162, 165",12,"0,0,255",Ross_chapter_11
+205,9,Cercopithecidae,Miopithecus,talapoin,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+205,10,Cercopithecidae,Miopithecus,talapoin,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+205,11,Cercopithecidae,Miopithecus,talapoin,Birth weight,"180, ~177.5",11,"0,255,0",Lee_Kappeler_chapter_3
+205,12,Cercopithecidae,Miopithecus,talapoin,Litter weight,175,12,"0,0,255",Ross_chapter_11
+205,13,Cercopithecidae,Miopithecus,talapoin,Litter growth rate,1.1,12,"0,0,255",Ross_chapter_11
+205,14,Cercopithecidae,Miopithecus,talapoin,Weaning age,"180, 195",12,"0,0,255",Ross_chapter_11
+205,15,Cercopithecidae,Miopithecus,talapoin,Weaning weight,450,12,"0,0,255",Ross_chapter_11
+205,16,Cercopithecidae,Miopithecus,talapoin,Juvenility,3.44,12,"0,0,255",Ross_chapter_11
+206,4,Cercopithecidae,Erythrocebus,patas,Body mass,"6500, 6317",32767,,Smith_Jungers_1997
+206,5,Cercopithecidae,Erythrocebus,patas,Brain weight,100,48,"51,102,255",Ross_chapter_11
+206,7,Cercopithecidae,Erythrocebus,patas,Age at first reproduction,"3, 3",48,"51,102,255",Ross_chapter_11
+206,8,Cercopithecidae,Erythrocebus,patas,Gestation length,167,48,"51,102,255",Ross_chapter_11
+206,9,Cercopithecidae,Erythrocebus,patas,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+206,10,Cercopithecidae,Erythrocebus,patas,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+206,11,Cercopithecidae,Erythrocebus,patas,Birth weight,"625, 468",11,"0,255,0",Lee_Kappeler_chapter_3
+206,12,Cercopithecidae,Erythrocebus,patas,Litter weight,504.5,48,"51,102,255",Ross_chapter_11
+206,13,Cercopithecidae,Erythrocebus,patas,Litter growth rate,6.78,48,"51,102,255",Ross_chapter_11
+206,14,Cercopithecidae,Erythrocebus,patas,Weaning age,"213, 255",48,"51,102,255",Ross_chapter_11
+206,15,Cercopithecidae,Erythrocebus,patas,Weaning weight,1950,48,"51,102,255",Ross_chapter_11
+206,16,Cercopithecidae,Erythrocebus,patas,Juvenility,1.96,48,"51,102,255",Ross_chapter_11
+207,4,Cercopithecidae,Chlorocebus,aethiops,Body mass,2980,14,"255,0,255",Godfrey_etal_2001
+207,6,Cercopithecidae,Chlorocebus,aethiops,Cranial capacity,59.2,14,"255,0,255",Godfrey_etal_2001
+207,7,Cercopithecidae,Chlorocebus,aethiops,Age at first reproduction,4.75,14,"255,0,255",Godfrey_etal_2001
+207,14,Cercopithecidae,Chlorocebus,aethiops,Weaning age,219,14,"255,0,255",Godfrey_etal_2001
+208,4,Cercopithecidae,Cercopithecus,aethiops,Body mass,"2980, 3469, 3100",32767,,Smith_Jungers_1997
+208,5,Cercopithecidae,Cercopithecus,aethiops,Brain weight,60.1,48,"51,102,255",Ross_chapter_11
+208,7,Cercopithecidae,Cercopithecus,aethiops,Age at first reproduction,"5, 3.5",48,"51,102,255",Ross_chapter_11
+208,8,Cercopithecidae,Cercopithecus,aethiops,Gestation length,163,48,"51,102,255",Ross_chapter_11
+208,9,Cercopithecidae,Cercopithecus,aethiops,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+208,10,Cercopithecidae,Cercopithecus,aethiops,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+208,11,Cercopithecidae,Cercopithecus,aethiops,Birth weight,"430, 335.9",11,"0,255,0",Lee_Kappeler_chapter_3
+208,12,Cercopithecidae,Cercopithecus,aethiops,Litter weight,314,48,"51,102,255",Ross_chapter_11
+208,13,Cercopithecidae,Cercopithecus,aethiops,Litter growth rate,4.2,48,"51,102,255",Ross_chapter_11
+208,14,Cercopithecidae,Cercopithecus,aethiops,Weaning age,"365, 201",48,"51,102,255",Ross_chapter_11
+208,15,Cercopithecidae,Cercopithecus,aethiops,Weaning weight,1170,48,"51,102,255",Ross_chapter_11
+208,16,Cercopithecidae,Cercopithecus,aethiops,Juvenility,3.55,48,"51,102,255",Ross_chapter_11
+209,4,Cercopithecidae,Cercopithecus,ascanius,Body mass,"2920, 2943",32767,,Smith_Jungers_1997
+209,5,Cercopithecidae,Cercopithecus,ascanius,Brain weight,61.3,48,"51,102,255",Ross_chapter_11
+209,7,Cercopithecidae,Cercopithecus,ascanius,Age at first reproduction,5,48,"51,102,255",Ross_chapter_11
+209,8,Cercopithecidae,Cercopithecus,ascanius,Gestation length,172,48,"51,102,255",Ross_chapter_11
+209,11,Cercopithecidae,Cercopithecus,ascanius,Birth weight,~371,10,"255,0,0",Smith_Leigh_1998
+209,12,Cercopithecidae,Cercopithecus,ascanius,Litter weight,371,48,"51,102,255",Ross_chapter_11
+210,4,Cercopithecidae,Cercopithecus,campbelli,Body mass,"2700, 2200",32767,,Smith_Jungers_1997
+210,14,Cercopithecidae,Cercopithecus,campbelli,Weaning age,365,48,"51,102,255",Ross_chapter_11
+211,4,Cercopithecidae,Cercopithecus,cephus,Body mass,"2880, 2805",32767,,Smith_Jungers_1997
+211,7,Cercopithecidae,Cercopithecus,cephus,Age at first reproduction,"5, 5",48,"51,102,255",Ross_chapter_11
+211,8,Cercopithecidae,Cercopithecus,cephus,Gestation length,170,48,"51,102,255",Ross_chapter_11
+211,11,Cercopithecidae,Cercopithecus,cephus,Birth weight,339,11,"0,255,0",Lee_Kappeler_chapter_3
+211,12,Cercopithecidae,Cercopithecus,cephus,Litter weight,340,48,"51,102,255",Ross_chapter_11
+211,13,Cercopithecidae,Cercopithecus,cephus,Litter growth rate,2.87,48,"51,102,255",Ross_chapter_11
+212,4,Cercopithecidae,Cercopithecus,diana,Body mass,"3900, 4533",32767,,Smith_Jungers_1997
+212,7,Cercopithecidae,Cercopithecus,diana,Age at first reproduction,"5.42, 5.33",48,"51,102,255",Ross_chapter_11
+212,9,Cercopithecidae,Cercopithecus,diana,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+212,10,Cercopithecidae,Cercopithecus,diana,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+212,11,Cercopithecidae,Cercopithecus,diana,Birth weight,"479, 460",11,"0,255,0",Lee_Kappeler_chapter_3
+212,12,Cercopithecidae,Cercopithecus,diana,Litter weight,475,48,"51,102,255",Ross_chapter_11
+212,14,Cercopithecidae,Cercopithecus,diana,Weaning age,"365, 365",48,"51,102,255",Ross_chapter_11
+214,4,Cercopithecidae,Cercopithecus,erythrogaster,Body mass,2400,32767,,Smith_Jungers_1997
+215,4,Cercopithecidae,Cercopithecus,erythrotis,Body mass,~2900,32767,,Smith_Jungers_1997
+216,4,Cercopithecidae,Cercopithecus,hamlyni,Body mass,3360,32767,,Smith_Jungers_1997
+217,4,Cercopithecidae,Cercopithecus,lhoesti,Body mass,"3450, 4700",32767,,Smith_Jungers_1997
+217,5,Cercopithecidae,Cercopithecus,lhoesti,Brain weight,84.5,48,"51,102,255",Ross_chapter_11
+218,4,Cercopithecidae,Cercopithecus,mitis,Body mass,"3930, 4250, 4280, 4910",32767,,Smith_Jungers_1997
+218,5,Cercopithecidae,Cercopithecus,mitis,Brain weight,56.5,48,"51,102,255",Ross_chapter_11
+218,7,Cercopithecidae,Cercopithecus,mitis,Age at first reproduction,"5.72, 5.83",48,"51,102,255",Ross_chapter_11
+218,9,Cercopithecidae,Cercopithecus,mitis,Interbirth interval,24,11,"0,255,0",Lee_Kappeler_chapter_3
+218,10,Cercopithecidae,Cercopithecus,mitis,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+218,11,Cercopithecidae,Cercopithecus,mitis,Birth weight,"398, 495, ~402, ~337",11,"0,255,0",Lee_Kappeler_chapter_3
+218,12,Cercopithecidae,Cercopithecus,mitis,Litter weight,402,48,"51,102,255",Ross_chapter_11
+218,13,Cercopithecidae,Cercopithecus,mitis,Litter growth rate,3.5,48,"51,102,255",Ross_chapter_11
+218,14,Cercopithecidae,Cercopithecus,mitis,Weaning age,"699, 692",48,"51,102,255",Ross_chapter_11
+219,4,Cercopithecidae,Cercopithecus,mona,Body mass,2500,48,"51,102,255",Ross_chapter_11
+219,5,Cercopithecidae,Cercopithecus,mona,Brain weight,62,48,"51,102,255",Ross_chapter_11
+219,11,Cercopithecidae,Cercopithecus,mona,Birth weight,282,11,"0,255,0",Lee_Kappeler_chapter_3
+219,12,Cercopithecidae,Cercopithecus,mona,Litter weight,284,48,"51,102,255",Ross_chapter_11
+220,4,Cercopithecidae,Cercopithecus,neglectus,Body mass,"4130, 3550, 4081",32767,,Smith_Jungers_1997
+220,7,Cercopithecidae,Cercopithecus,neglectus,Age at first reproduction,4.67,48,"51,102,255",Ross_chapter_11
+220,8,Cercopithecidae,Cercopithecus,neglectus,Gestation length,"165, 168",48,"51,102,255",Ross_chapter_11
+220,9,Cercopithecidae,Cercopithecus,neglectus,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+220,10,Cercopithecidae,Cercopithecus,neglectus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+220,11,Cercopithecidae,Cercopithecus,neglectus,Birth weight,"260, 450",11,"0,255,0",Lee_Kappeler_chapter_3
+220,12,Cercopithecidae,Cercopithecus,neglectus,Litter weight,260,48,"51,102,255",Ross_chapter_11
+220,13,Cercopithecidae,Cercopithecus,neglectus,Litter growth rate,3.2,48,"51,102,255",Ross_chapter_11
+220,14,Cercopithecidae,Cercopithecus,neglectus,Weaning age,"365, 420",48,"51,102,255",Ross_chapter_11
+220,15,Cercopithecidae,Cercopithecus,neglectus,Weaning weight,1640,48,"51,102,255",Ross_chapter_11
+220,16,Cercopithecidae,Cercopithecus,neglectus,Juvenility,3.22,48,"51,102,255",Ross_chapter_11
+221,4,Cercopithecidae,Cercopithecus,nictitans,Body mass,"4260, 4216",32767,,Smith_Jungers_1997
+221,8,Cercopithecidae,Cercopithecus,nictitans,Gestation length,170,48,"51,102,255",Ross_chapter_11
+221,11,Cercopithecidae,Cercopithecus,nictitans,Birth weight,406,10,"255,0,0",Smith_Leigh_1998
+221,13,Cercopithecidae,Cercopithecus,nictitans,Litter growth rate,2.4,48,"51,102,255",Ross_chapter_11
+222,4,Cercopithecidae,Cercopithecus,petaurista,Body mass,2900,32767,,Smith_Jungers_1997
+223,4,Cercopithecidae,Cercopithecus,pogonias,Body mass,"2900, 3021",32767,,Smith_Jungers_1997
+223,7,Cercopithecidae,Cercopithecus,pogonias,Age at first reproduction,"5, 5",48,"51,102,255",Ross_chapter_11
+223,8,Cercopithecidae,Cercopithecus,pogonias,Gestation length,170,48,"51,102,255",Ross_chapter_11
+223,10,Cercopithecidae,Cercopithecus,pogonias,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+223,11,Cercopithecidae,Cercopithecus,pogonias,Birth weight,339,11,"0,255,0",Lee_Kappeler_chapter_3
+223,12,Cercopithecidae,Cercopithecus,pogonias,Litter weight,340,48,"51,102,255",Ross_chapter_11
+223,13,Cercopithecidae,Cercopithecus,pogonias,Litter growth rate,2.57,48,"51,102,255",Ross_chapter_11
+224,4,Cercopithecidae,Cercopithecus,preussi,Body mass,~4500,32767,,Smith_Jungers_1997
+226,4,Cercopithecidae,Cercopithecus,sclateri,Body mass,~2500,32767,,Smith_Jungers_1997
+227,4,Cercopithecidae,Cercopithecus,solatus,Body mass,3920,32767,,Smith_Jungers_1997
+227,7,Cercopithecidae,Cercopithecus,solatus,Age at first reproduction,4.75,11,"0,255,0",Lee_Kappeler_chapter_3
+227,9,Cercopithecidae,Cercopithecus,solatus,Interbirth interval,18,11,"0,255,0",Lee_Kappeler_chapter_3
+227,10,Cercopithecidae,Cercopithecus,solatus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+228,4,Cercopithecidae,Cercopithecus,wolfi,Body mass,2870,32767,,Smith_Jungers_1997
+228,11,Cercopithecidae,Cercopithecus,wolfi,Birth weight,~435,10,"255,0,0",Smith_Leigh_1998
+229,4,Cercopithecidae,Macaca,arctoides,Body mass,"8400, 8523",32767,,Smith_Jungers_1997
+229,5,Cercopithecidae,Macaca,arctoides,Brain weight,99.8,48,"51,102,255",Ross_chapter_11
+229,7,Cercopithecidae,Macaca,arctoides,Age at first reproduction,"3.84, 4.25",48,"51,102,255",Ross_chapter_11
+229,8,Cercopithecidae,Macaca,arctoides,Gestation length,178,48,"51,102,255",Ross_chapter_11
+229,9,Cercopithecidae,Macaca,arctoides,Interbirth interval,19,11,"0,255,0",Lee_Kappeler_chapter_3
+229,10,Cercopithecidae,Macaca,arctoides,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+229,11,Cercopithecidae,Macaca,arctoides,Birth weight,"489, 497",11,"0,255,0",Lee_Kappeler_chapter_3
+229,12,Cercopithecidae,Macaca,arctoides,Litter weight,487,48,"51,102,255",Ross_chapter_11
+229,13,Cercopithecidae,Macaca,arctoides,Litter growth rate,4.55,48,"51,102,255",Ross_chapter_11
+229,14,Cercopithecidae,Macaca,arctoides,Weaning age,"398, 393",48,"51,102,255",Ross_chapter_11
+229,15,Cercopithecidae,Macaca,arctoides,Weaning weight,2300,48,"51,102,255",Ross_chapter_11
+230,4,Cercopithecidae,Macaca,assamensis,Body mass,6900,32767,,Smith_Jungers_1997
+232,4,Cercopithecidae,Macaca,cyclops,Body mass,"4940, 6200",32767,,Smith_Jungers_1997
+232,8,Cercopithecidae,Macaca,cyclops,Gestation length,162,48,"51,102,255",Ross_chapter_11
+232,9,Cercopithecidae,Macaca,cyclops,Interbirth interval,15,11,"0,255,0",Lee_Kappeler_chapter_3
+232,10,Cercopithecidae,Macaca,cyclops,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+232,11,Cercopithecidae,Macaca,cyclops,Birth weight,"402, 398",11,"0,255,0",Lee_Kappeler_chapter_3
+232,14,Cercopithecidae,Macaca,cyclops,Weaning age,206,48,"51,102,255",Ross_chapter_11
+233,4,Cercopithecidae,Macaca,fascicularis,Body mass,"3590, 3574",32767,,Smith_Jungers_1997
+233,5,Cercopithecidae,Macaca,fascicularis,Brain weight,62.1,48,"51,102,255",Ross_chapter_11
+233,6,Cercopithecidae,Macaca,fascicularis,Cranial capacity,62.5,14,"255,0,255",Godfrey_etal_2001
+233,7,Cercopithecidae,Macaca,fascicularis,Age at first reproduction,"3.86, 3.9",48,"51,102,255",Ross_chapter_11
+233,8,Cercopithecidae,Macaca,fascicularis,Gestation length,"160, 167",48,"51,102,255",Ross_chapter_11
+233,9,Cercopithecidae,Macaca,fascicularis,Interbirth interval,13,11,"0,255,0",Lee_Kappeler_chapter_3
+233,10,Cercopithecidae,Macaca,fascicularis,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+233,11,Cercopithecidae,Macaca,fascicularis,Birth weight,"375, 326.1",11,"0,255,0",Lee_Kappeler_chapter_3
+233,12,Cercopithecidae,Macaca,fascicularis,Litter weight,345,48,"51,102,255",Ross_chapter_11
+233,13,Cercopithecidae,Macaca,fascicularis,Litter growth rate,5.86,48,"51,102,255",Ross_chapter_11
+233,14,Cercopithecidae,Macaca,fascicularis,Weaning age,"420, 330, 427",48,"51,102,255",Ross_chapter_11
+233,15,Cercopithecidae,Macaca,fascicularis,Weaning weight,1700,48,"51,102,255",Ross_chapter_11
+233,16,Cercopithecidae,Macaca,fascicularis,Juvenility,2.27,48,"51,102,255",Ross_chapter_11
+234,4,Cercopithecidae,Macaca,fuscata,Body mass,"8030, 9100",32767,,Smith_Jungers_1997
+234,7,Cercopithecidae,Macaca,fuscata,Age at first reproduction,5.54,48,"51,102,255",Ross_chapter_11
+234,8,Cercopithecidae,Macaca,fuscata,Gestation length,173,48,"51,102,255",Ross_chapter_11
+234,9,Cercopithecidae,Macaca,fuscata,Interbirth interval,24,11,"0,255,0",Lee_Kappeler_chapter_3
+234,10,Cercopithecidae,Macaca,fuscata,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+234,11,Cercopithecidae,Macaca,fuscata,Birth weight,"503, 526.8",11,"0,255,0",Lee_Kappeler_chapter_3
+234,12,Cercopithecidae,Macaca,fuscata,Litter weight,496,48,"51,102,255",Ross_chapter_11
+234,13,Cercopithecidae,Macaca,fuscata,Litter growth rate,6.27,48,"51,102,255",Ross_chapter_11
+234,14,Cercopithecidae,Macaca,fuscata,Weaning age,"365, 540",48,"51,102,255",Ross_chapter_11
+234,15,Cercopithecidae,Macaca,fuscata,Weaning weight,2730,48,"51,102,255",Ross_chapter_11
+234,16,Cercopithecidae,Macaca,fuscata,Juvenility,4.07,48,"51,102,255",Ross_chapter_11
+236,4,Cercopithecidae,Macaca,maura,Body mass,6050,32767,,Smith_Jungers_1997
+236,7,Cercopithecidae,Macaca,maura,Age at first reproduction,5,11,"0,255,0",Lee_Kappeler_chapter_3
+236,9,Cercopithecidae,Macaca,maura,Interbirth interval,22,11,"0,255,0",Lee_Kappeler_chapter_3
+236,10,Cercopithecidae,Macaca,maura,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+236,11,Cercopithecidae,Macaca,maura,Birth weight,"389, ~390",11,"0,255,0",Lee_Kappeler_chapter_3
+236,14,Cercopithecidae,Macaca,maura,Weaning age,500,11,"0,255,0",Lee_Kappeler_chapter_3
+237,4,Cercopithecidae,Macaca,mulatta,Body mass,"8800, 5370, 5445, 6500, 7970",32767,,Smith_Jungers_1997
+237,5,Cercopithecidae,Macaca,mulatta,Brain weight,84.7,48,"51,102,255",Ross_chapter_11
+237,6,Cercopithecidae,Macaca,mulatta,Cranial capacity,81.3,14,"255,0,255",Godfrey_etal_2001
+237,7,Cercopithecidae,Macaca,mulatta,Age at first reproduction,"4.5, 3, 4.19",48,"51,102,255",Ross_chapter_11
+237,8,Cercopithecidae,Macaca,mulatta,Gestation length,"165, 164",48,"51,102,255",Ross_chapter_11
+237,9,Cercopithecidae,Macaca,mulatta,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+237,10,Cercopithecidae,Macaca,mulatta,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+237,11,Cercopithecidae,Macaca,mulatta,Birth weight,"473, 466.3",11,"0,255,0",Lee_Kappeler_chapter_3
+237,12,Cercopithecidae,Macaca,mulatta,Litter weight,475,48,"51,102,255",Ross_chapter_11
+237,13,Cercopithecidae,Macaca,mulatta,Litter growth rate,4.39,48,"51,102,255",Ross_chapter_11
+237,14,Cercopithecidae,Macaca,mulatta,Weaning age,"365, 192, 321",48,"51,102,255",Ross_chapter_11
+237,15,Cercopithecidae,Macaca,mulatta,Weaning weight,1454,48,"51,102,255",Ross_chapter_11
+237,16,Cercopithecidae,Macaca,mulatta,Juvenility,3.05,48,"51,102,255",Ross_chapter_11
+238,4,Cercopithecidae,Macaca,nemestrina,Body mass,"4900, 6500, 5571",32767,,Smith_Jungers_1997
+238,5,Cercopithecidae,Macaca,nemestrina,Brain weight,110,48,"51,102,255",Ross_chapter_11
+238,6,Cercopithecidae,Macaca,nemestrina,Cranial capacity,96.2,14,"255,0,255",Godfrey_etal_2001
+238,7,Cercopithecidae,Macaca,nemestrina,Age at first reproduction,"3.92, 3.9",48,"51,102,255",Ross_chapter_11
+238,8,Cercopithecidae,Macaca,nemestrina,Gestation length,"167, 171",48,"51,102,255",Ross_chapter_11
+238,9,Cercopithecidae,Macaca,nemestrina,Interbirth interval,14,11,"0,255,0",Lee_Kappeler_chapter_3
+238,10,Cercopithecidae,Macaca,nemestrina,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+238,11,Cercopithecidae,Macaca,nemestrina,Birth weight,"473, 443.7",11,"0,255,0",Lee_Kappeler_chapter_3
+238,12,Cercopithecidae,Macaca,nemestrina,Litter weight,472,48,"51,102,255",Ross_chapter_11
+238,13,Cercopithecidae,Macaca,nemestrina,Litter growth rate,2.6,48,"51,102,255",Ross_chapter_11
+238,14,Cercopithecidae,Macaca,nemestrina,Weaning age,"365, 234, 365",48,"51,102,255",Ross_chapter_11
+238,15,Cercopithecidae,Macaca,nemestrina,Weaning weight,1416.5,48,"51,102,255",Ross_chapter_11
+238,16,Cercopithecidae,Macaca,nemestrina,Juvenility,2.46,48,"51,102,255",Ross_chapter_11
+239,4,Cercopithecidae,Macaca,nigra,Body mass,"5470, 4600",32767,,Smith_Jungers_1997
+239,5,Cercopithecidae,Macaca,nigra,Brain weight,97.5,48,"51,102,255",Ross_chapter_11
+239,7,Cercopithecidae,Macaca,nigra,Age at first reproduction,"5.44, 5.5",48,"51,102,255",Ross_chapter_11
+239,8,Cercopithecidae,Macaca,nigra,Gestation length,170,48,"51,102,255",Ross_chapter_11
+239,9,Cercopithecidae,Macaca,nigra,Interbirth interval,18,11,"0,255,0",Lee_Kappeler_chapter_3
+239,10,Cercopithecidae,Macaca,nigra,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+239,11,Cercopithecidae,Macaca,nigra,Birth weight,"457, ~461",11,"0,255,0",Lee_Kappeler_chapter_3
+239,12,Cercopithecidae,Macaca,nigra,Litter weight,455,48,"51,102,255",Ross_chapter_11
+239,13,Cercopithecidae,Macaca,nigra,Litter growth rate,3.53,48,"51,102,255",Ross_chapter_11
+241,4,Cercopithecidae,Macaca,ochreata,Body mass,2600,32767,,Smith_Jungers_1997
+242,4,Cercopithecidae,Macaca,radiata,Body mass,"3850, 3700",32767,,Smith_Jungers_1997
+242,7,Cercopithecidae,Macaca,radiata,Age at first reproduction,"4, 4",48,"51,102,255",Ross_chapter_11
+242,8,Cercopithecidae,Macaca,radiata,Gestation length,162,48,"51,102,255",Ross_chapter_11
+242,9,Cercopithecidae,Macaca,radiata,Interbirth interval,12,11,"0,255,0",Lee_Kappeler_chapter_3
+242,10,Cercopithecidae,Macaca,radiata,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+242,11,Cercopithecidae,Macaca,radiata,Birth weight,"407, 388",11,"0,255,0",Lee_Kappeler_chapter_3
+242,12,Cercopithecidae,Macaca,radiata,Litter weight,404,48,"51,102,255",Ross_chapter_11
+242,13,Cercopithecidae,Macaca,radiata,Litter growth rate,4.37,48,"51,102,255",Ross_chapter_11
+242,14,Cercopithecidae,Macaca,radiata,Weaning age,"365, 365",48,"51,102,255",Ross_chapter_11
+242,15,Cercopithecidae,Macaca,radiata,Weaning weight,2000,48,"51,102,255",Ross_chapter_11
+242,16,Cercopithecidae,Macaca,radiata,Juvenility,2.56,48,"51,102,255",Ross_chapter_11
+243,4,Cercopithecidae,Macaca,sinica,Body mass,"3200, 3590",32767,,Smith_Jungers_1997
+243,13,Cercopithecidae,Macaca,sinica,Litter growth rate,5,48,"51,102,255",Ross_chapter_11
+244,4,Cercopithecidae,Macaca,silenus,Body mass,5000,48,"51,102,255",Ross_chapter_11
+244,7,Cercopithecidae,Macaca,silenus,Age at first reproduction,"4.9, 4.92",48,"51,102,255",Ross_chapter_11
+244,8,Cercopithecidae,Macaca,silenus,Gestation length,"180, 182",48,"51,102,255",Ross_chapter_11
+244,9,Cercopithecidae,Macaca,silenus,Interbirth interval,17,11,"0,255,0",Lee_Kappeler_chapter_3
+244,10,Cercopithecidae,Macaca,silenus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+244,11,Cercopithecidae,Macaca,silenus,Birth weight,"407, 438",11,"0,255,0",Lee_Kappeler_chapter_3
+244,12,Cercopithecidae,Macaca,silenus,Litter weight,407,48,"51,102,255",Ross_chapter_11
+244,14,Cercopithecidae,Macaca,silenus,Weaning age,"365, 365",48,"51,102,255",Ross_chapter_11
+244,16,Cercopithecidae,Macaca,silenus,Juvenility,3.41,48,"51,102,255",Ross_chapter_11
+245,4,Cercopithecidae,Macaca,sylvanus,Body mass,"~11000, 8283, 8280",32767,,Smith_Jungers_1997
+245,7,Cercopithecidae,Macaca,sylvanus,Age at first reproduction,"4.8, 4.75",48,"51,102,255",Ross_chapter_11
+245,8,Cercopithecidae,Macaca,sylvanus,Gestation length,165,48,"51,102,255",Ross_chapter_11
+245,9,Cercopithecidae,Macaca,sylvanus,Interbirth interval,22,11,"0,255,0",Lee_Kappeler_chapter_3
+245,10,Cercopithecidae,Macaca,sylvanus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+245,11,Cercopithecidae,Macaca,sylvanus,Birth weight,450,11,"0,255,0",Lee_Kappeler_chapter_3
+245,13,Cercopithecidae,Macaca,sylvanus,Litter growth rate,4.28,48,"51,102,255",Ross_chapter_11
+245,14,Cercopithecidae,Macaca,sylvanus,Weaning age,210,11,"0,255,0",Lee_Kappeler_chapter_3
+245,15,Cercopithecidae,Macaca,sylvanus,Weaning weight,2420,48,"51,102,255",Ross_chapter_11
+246,4,Cercopithecidae,Macaca,thibetana,Body mass,"12800, 9500",32767,,Smith_Jungers_1997
+246,8,Cercopithecidae,Macaca,thibetana,Gestation length,170,48,"51,102,255",Ross_chapter_11
+246,9,Cercopithecidae,Macaca,thibetana,Interbirth interval,24,11,"0,255,0",Lee_Kappeler_chapter_3
+246,10,Cercopithecidae,Macaca,thibetana,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+246,11,Cercopithecidae,Macaca,thibetana,Birth weight,"500, ~550",11,"0,255,0",Lee_Kappeler_chapter_3
+246,13,Cercopithecidae,Macaca,thibetana,Litter growth rate,3.34,48,"51,102,255",Ross_chapter_11
+246,14,Cercopithecidae,Macaca,thibetana,Weaning age,"568, 561",48,"51,102,255",Ross_chapter_11
+246,15,Cercopithecidae,Macaca,thibetana,Weaning weight,2400,48,"51,102,255",Ross_chapter_11
+247,4,Cercopithecidae,Macaca,tonkeana,Body mass,9000,32767,,Smith_Jungers_1997
+248,4,Cercopithecidae,Mandrillus,leucophaeus,Body mass,"~12500, 8450",32767,,Smith_Jungers_1997
+248,5,Cercopithecidae,Mandrillus,leucophaeus,Brain weight,124,48,"51,102,255",Ross_chapter_11
+248,7,Cercopithecidae,Mandrillus,leucophaeus,Age at first reproduction,5,12,"0,0,255",Ross_chapter_11
+248,8,Cercopithecidae,Mandrillus,leucophaeus,Gestation length,173,12,"0,0,255",Ross_chapter_11
+248,11,Cercopithecidae,Mandrillus,leucophaeus,Birth weight,722,10,"255,0,0",Smith_Leigh_1998
+249,4,Cercopithecidae,Mandrillus,sphinx,Body mass,"12900, 11350",32767,,Smith_Jungers_1997
+249,7,Cercopithecidae,Mandrillus,sphinx,Age at first reproduction,4,12,"0,0,255",Ross_chapter_11
+249,8,Cercopithecidae,Mandrillus,sphinx,Gestation length,"175, 220",12,"0,0,255",Ross_chapter_11
+249,9,Cercopithecidae,Mandrillus,sphinx,Interbirth interval,17,11,"0,255,0",Lee_Kappeler_chapter_3
+249,10,Cercopithecidae,Mandrillus,sphinx,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+249,11,Cercopithecidae,Mandrillus,sphinx,Birth weight,"613, 890",11,"0,255,0",Lee_Kappeler_chapter_3
+249,12,Cercopithecidae,Mandrillus,sphinx,Litter weight,613,12,"0,0,255",Ross_chapter_11
+249,13,Cercopithecidae,Mandrillus,sphinx,Litter growth rate,6.53,12,"0,0,255",Ross_chapter_11
+249,14,Cercopithecidae,Mandrillus,sphinx,Weaning age,"350, 348",12,"0,0,255",Ross_chapter_11
+249,15,Cercopithecidae,Mandrillus,sphinx,Weaning weight,3000,12,"0,0,255",Ross_chapter_11
+249,16,Cercopithecidae,Mandrillus,sphinx,Juvenility,2.56,12,"0,0,255",Ross_chapter_11
+250,4,Cercopithecidae,Cercocebus,albigena,Body mass,6209,48,"51,102,255",Ross_chapter_11
+250,5,Cercopithecidae,Cercocebus,albigena,Brain weight,94.4,48,"51,102,255",Ross_chapter_11
+250,7,Cercopithecidae,Cercocebus,albigena,Age at first reproduction,4.08,48,"51,102,255",Ross_chapter_11
+250,8,Cercopithecidae,Cercocebus,albigena,Gestation length,175,48,"51,102,255",Ross_chapter_11
+250,12,Cercopithecidae,Cercocebus,albigena,Litter weight,425,48,"51,102,255",Ross_chapter_11
+250,13,Cercopithecidae,Cercocebus,albigena,Litter growth rate,5,48,"51,102,255",Ross_chapter_11
+250,14,Cercopithecidae,Cercocebus,albigena,Weaning age,365,48,"51,102,255",Ross_chapter_11
+250,15,Cercopithecidae,Cercocebus,albigena,Weaning weight,2170,48,"51,102,255",Ross_chapter_11
+250,16,Cercopithecidae,Cercocebus,albigena,Juvenility,2.61,48,"51,102,255",Ross_chapter_11
+251,4,Cercopithecidae,Cercocebus,agilis,Body mass,5660,32767,,Smith_Jungers_1997
+252,4,Cercopithecidae,Cercocebus,atys,Body mass,6200,32767,,Smith_Jungers_1997
+252,11,Cercopithecidae,Cercocebus,atys,Birth weight,530,10,"255,0,0",Smith_Leigh_1998
+253,4,Cercopithecidae,Cercocebus,galeritus,Body mass,"5260, 5473",32767,,Smith_Jungers_1997
+253,5,Cercopithecidae,Cercocebus,galeritus,Brain weight,88.8,48,"51,102,255",Ross_chapter_11
+253,7,Cercopithecidae,Cercocebus,galeritus,Age at first reproduction,6.5,48,"51,102,255",Ross_chapter_11
+253,8,Cercopithecidae,Cercocebus,galeritus,Gestation length,171,48,"51,102,255",Ross_chapter_11
+253,13,Cercopithecidae,Cercocebus,galeritus,Litter growth rate,4.04,48,"51,102,255",Ross_chapter_11
+254,4,Cercopithecidae,Cercocebus,torquatus,Body mass,"5500, 7420",32767,,Smith_Jungers_1997
+254,5,Cercopithecidae,Cercocebus,torquatus,Brain weight,110.5,48,"51,102,255",Ross_chapter_11
+254,7,Cercopithecidae,Cercocebus,torquatus,Age at first reproduction,4.67,48,"51,102,255",Ross_chapter_11
+254,8,Cercopithecidae,Cercocebus,torquatus,Gestation length,171,48,"51,102,255",Ross_chapter_11
+255,4,Cercopithecidae,Lophocebus,albigena,Body mass,6020,32767,,Smith_Jungers_1997
+255,8,Cercopithecidae,Lophocebus,albigena,Gestation length,186,11,"0,255,0",Lee_Kappeler_chapter_3
+255,9,Cercopithecidae,Lophocebus,albigena,Interbirth interval,33,11,"0,255,0",Lee_Kappeler_chapter_3
+255,10,Cercopithecidae,Lophocebus,albigena,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+255,11,Cercopithecidae,Lophocebus,albigena,Birth weight,500,11,"0,255,0",Lee_Kappeler_chapter_3
+255,14,Cercopithecidae,Lophocebus,albigena,Weaning age,210,11,"0,255,0",Lee_Kappeler_chapter_3
+256,4,Cercopithecidae,Lophocebus,aterrimus,Body mass,5760,32767,,Smith_Jungers_1997
+257,4,Cercopithecidae,Papio,anubis,Body mass,"13300, 11700, 14700",32767,,Smith_Jungers_1997
+257,6,Cercopithecidae,Papio,anubis,Cranial capacity,158.9,14,"255,0,255",Godfrey_etal_2001
+257,7,Cercopithecidae,Papio,anubis,Age at first reproduction,4.5,14,"255,0,255",Godfrey_etal_2001
+257,8,Cercopithecidae,Papio,anubis,Gestation length,180,11,"0,255,0",Lee_Kappeler_chapter_3
+257,9,Cercopithecidae,Papio,anubis,Interbirth interval,25,11,"0,255,0",Lee_Kappeler_chapter_3
+257,10,Cercopithecidae,Papio,anubis,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+257,11,Cercopithecidae,Papio,anubis,Birth weight,"950, 915",11,"0,255,0",Lee_Kappeler_chapter_3
+257,14,Cercopithecidae,Papio,anubis,Weaning age,"600, 584",11,"0,255,0",Lee_Kappeler_chapter_3
+258,4,Cercopithecidae,Papio,cynocephalus,Body mass,"9750, 12300, 11532, 11000, 13600",32767,,Smith_Jungers_1997
+258,5,Cercopithecidae,Papio,cynocephalus,Brain weight,164,48,"51,102,255",Ross_chapter_11
+258,6,Cercopithecidae,Papio,cynocephalus,Cranial capacity,145.5,14,"255,0,255",Godfrey_etal_2001
+258,7,Cercopithecidae,Papio,cynocephalus,Age at first reproduction,"5.5, 5.5",12,"0,0,255",Ross_chapter_11
+258,8,Cercopithecidae,Papio,cynocephalus,Gestation length,"173, 175",12,"0,0,255",Ross_chapter_11
+258,9,Cercopithecidae,Papio,cynocephalus,Interbirth interval,23,11,"0,255,0",Lee_Kappeler_chapter_3
+258,10,Cercopithecidae,Papio,cynocephalus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+258,11,Cercopithecidae,Papio,cynocephalus,Birth weight,"710, 803",11,"0,255,0",Lee_Kappeler_chapter_3
+258,12,Cercopithecidae,Papio,cynocephalus,Litter weight,854,12,"0,0,255",Ross_chapter_11
+258,13,Cercopithecidae,Papio,cynocephalus,Litter growth rate,5.1,12,"0,0,255",Ross_chapter_11
+258,14,Cercopithecidae,Papio,cynocephalus,Weaning age,"365, 450, 456",12,"0,0,255",Ross_chapter_11
+258,15,Cercopithecidae,Papio,cynocephalus,Weaning weight,2500,12,"0,0,255",Ross_chapter_11
+258,16,Cercopithecidae,Papio,cynocephalus,Juvenility,4.03,12,"0,0,255",Ross_chapter_11
+259,4,Cercopithecidae,Papio,hamadryas,Body mass,"9900, 11400, 10404",32767,,Smith_Jungers_1997
+259,5,Cercopithecidae,Papio,hamadryas,Brain weight,142.6,48,"51,102,255",Ross_chapter_11
+259,7,Cercopithecidae,Papio,hamadryas,Age at first reproduction,6.1,12,"0,0,255",Ross_chapter_11
+259,8,Cercopithecidae,Papio,hamadryas,Gestation length,170,12,"0,0,255",Ross_chapter_11
+259,9,Cercopithecidae,Papio,hamadryas,Interbirth interval,24,11,"0,255,0",Lee_Kappeler_chapter_3
+259,10,Cercopithecidae,Papio,hamadryas,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+259,11,Cercopithecidae,Papio,hamadryas,Birth weight,"1000, 695",11,"0,255,0",Lee_Kappeler_chapter_3
+259,14,Cercopithecidae,Papio,hamadryas,Weaning age,561,11,"0,255,0",Lee_Kappeler_chapter_3
+259,15,Cercopithecidae,Papio,hamadryas,Weaning weight,3100,12,"0,0,255",Ross_chapter_11
+260,4,Cercopithecidae,Papio,papio,Body mass,"12100, 16166",32767,,Smith_Jungers_1997
+260,5,Cercopithecidae,Papio,papio,Brain weight,192,48,"51,102,255",Ross_chapter_11
+260,8,Cercopithecidae,Papio,papio,Gestation length,187,12,"0,0,255",Ross_chapter_11
+260,11,Cercopithecidae,Papio,papio,Birth weight,603.6,10,"255,0,0",Smith_Leigh_1998
+261,4,Cercopithecidae,Papio,ursinus,Body mass,"14800, 14773",32767,,Smith_Jungers_1997
+261,5,Cercopithecidae,Papio,ursinus,Brain weight,164.5,48,"51,102,255",Ross_chapter_11
+261,7,Cercopithecidae,Papio,ursinus,Age at first reproduction,3.67,12,"0,0,255",Ross_chapter_11
+261,8,Cercopithecidae,Papio,ursinus,Gestation length,187,12,"0,0,255",Ross_chapter_11
+261,9,Cercopithecidae,Papio,ursinus,Interbirth interval,29,11,"0,255,0",Lee_Kappeler_chapter_3
+261,10,Cercopithecidae,Papio,ursinus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+261,11,Cercopithecidae,Papio,ursinus,Birth weight,"600, 850",11,"0,255,0",Lee_Kappeler_chapter_3
+262,4,Cercopithecidae,Theropithecus,gelada,Body mass,"11700, 11427",32767,,Smith_Jungers_1997
+262,5,Cercopithecidae,Theropithecus,gelada,Brain weight,119.7,48,"51,102,255",Ross_chapter_11
+262,7,Cercopithecidae,Theropithecus,gelada,Age at first reproduction,4,12,"0,0,255",Ross_chapter_11
+262,8,Cercopithecidae,Theropithecus,gelada,Gestation length,"170, 180",12,"0,0,255",Ross_chapter_11
+262,9,Cercopithecidae,Theropithecus,gelada,Interbirth interval,24,11,"0,255,0",Lee_Kappeler_chapter_3
+262,10,Cercopithecidae,Theropithecus,gelada,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+262,11,Cercopithecidae,Theropithecus,gelada,Birth weight,"465, ~464",11,"0,255,0",Lee_Kappeler_chapter_3
+262,12,Cercopithecidae,Theropithecus,gelada,Litter weight,553,12,"0,0,255",Ross_chapter_11
+262,13,Cercopithecidae,Theropithecus,gelada,Litter growth rate,6.12,12,"0,0,255",Ross_chapter_11
+262,14,Cercopithecidae,Theropithecus,gelada,Weaning age,"547, 540",12,"0,0,255",Ross_chapter_11
+262,15,Cercopithecidae,Theropithecus,gelada,Weaning weight,3900,12,"0,0,255",Ross_chapter_11
+262,16,Cercopithecidae,Theropithecus,gelada,Juvenility,2.3,12,"0,0,255",Ross_chapter_11
+263,4,Cercopithecidae,Procolobus,verus,Body mass,4200,32767,,Smith_Jungers_1997
+264,4,Cercopithecidae,Procolobus,badius,Body mass,"8210, 8250, 7421",32767,,Smith_Jungers_1997
+264,5,Cercopithecidae,Procolobus,badius,Brain weight,80.2,48,"51,102,255",Ross_chapter_11
+264,6,Cercopithecidae,Procolobus,badius,Cranial capacity,64.8,14,"255,0,255",Godfrey_etal_2001
+264,7,Cercopithecidae,Procolobus,badius,Age at first reproduction,4.08,14,"255,0,255",Godfrey_etal_2001
+264,14,Cercopithecidae,Procolobus,badius,Weaning age,"522, 790.4",14,"255,0,255",Godfrey_etal_2001
+265,4,Cercopithecidae,Colobus,angolensis,Body mass,7570,32767,,Smith_Jungers_1997
+266,4,Cercopithecidae,Colobus,guereza,Body mass,"7900, 9200, 8102",32767,,Smith_Jungers_1997
+266,5,Cercopithecidae,Colobus,guereza,Brain weight,72,48,"51,102,255",Ross_chapter_11
+266,6,Cercopithecidae,Colobus,guereza,Cranial capacity,69.0,14,"255,0,255",Godfrey_etal_2001
+266,7,Cercopithecidae,Colobus,guereza,Age at first reproduction,4.75,48,"51,102,255",Ross_chapter_11
+266,8,Cercopithecidae,Colobus,guereza,Gestation length,170,11,"0,255,0",Lee_Kappeler_chapter_3
+266,9,Cercopithecidae,Colobus,guereza,Interbirth interval,20,11,"0,255,0",Lee_Kappeler_chapter_3
+266,10,Cercopithecidae,Colobus,guereza,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+266,11,Cercopithecidae,Colobus,guereza,Birth weight,"445, 549",11,"0,255,0",Lee_Kappeler_chapter_3
+266,12,Cercopithecidae,Colobus,guereza,Litter weight,395.5,48,"51,102,255",Ross_chapter_11
+266,13,Cercopithecidae,Colobus,guereza,Litter growth rate,3.6,48,"51,102,255",Ross_chapter_11
+266,14,Cercopithecidae,Colobus,guereza,Weaning age,"390, 330, 394",48,"51,102,255",Ross_chapter_11
+266,15,Cercopithecidae,Colobus,guereza,Weaning weight,1600,48,"51,102,255",Ross_chapter_11
+267,4,Cercopithecidae,Colobus,polykomos,Body mass,"8300, 7662",32767,,Smith_Jungers_1997
+267,5,Cercopithecidae,Colobus,polykomos,Brain weight,81.4,48,"51,102,255",Ross_chapter_11
+267,7,Cercopithecidae,Colobus,polykomos,Age at first reproduction,8.5,48,"51,102,255",Ross_chapter_11
+267,8,Cercopithecidae,Colobus,polykomos,Gestation length,170,11,"0,255,0",Lee_Kappeler_chapter_3
+267,9,Cercopithecidae,Colobus,polykomos,Interbirth interval,22,11,"0,255,0",Lee_Kappeler_chapter_3
+267,10,Cercopithecidae,Colobus,polykomos,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+267,11,Cercopithecidae,Colobus,polykomos,Birth weight,"400, ~600",11,"0,255,0",Lee_Kappeler_chapter_3
+267,12,Cercopithecidae,Colobus,polykomos,Litter weight,597,48,"51,102,255",Ross_chapter_11
+267,13,Cercopithecidae,Colobus,polykomos,Litter growth rate,6,48,"51,102,255",Ross_chapter_11
+267,14,Cercopithecidae,Colobus,polykomos,Weaning age,"219, 215",48,"51,102,255",Ross_chapter_11
+267,15,Cercopithecidae,Colobus,polykomos,Weaning weight,1240,48,"51,102,255",Ross_chapter_11
+268,4,Cercopithecidae,Colobus,satanas,Body mass,7420,32767,,Smith_Jungers_1997
+269,4,Cercopithecidae,Colobus,vellerosus,Body mass,6900,32767,,Smith_Jungers_1997
+270,4,Cercopithecidae,Semnopithecus,entellus,Body mass,"6910, 9890, 10900, 10280, 14800",32767,,Smith_Jungers_1997
+270,6,Cercopithecidae,Semnopithecus,entellus,Cranial capacity,98.2,14,"255,0,255",Godfrey_etal_2001
+270,7,Cercopithecidae,Semnopithecus,entellus,Age at first reproduction,"3.42, 3.9",48,"51,102,255",Ross_chapter_11
+270,8,Cercopithecidae,Semnopithecus,entellus,Gestation length,"184, 200",11,"0,255,0",Lee_Kappeler_chapter_3
+270,9,Cercopithecidae,Semnopithecus,entellus,Interbirth interval,17,11,"0,255,0",Lee_Kappeler_chapter_3
+270,10,Cercopithecidae,Semnopithecus,entellus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+270,11,Cercopithecidae,Semnopithecus,entellus,Birth weight,500,11,"0,255,0",Lee_Kappeler_chapter_3
+270,12,Cercopithecidae,Semnopithecus,entellus,Litter weight,500,12,"0,0,255",Ross_chapter_11
+270,13,Cercopithecidae,Semnopithecus,entellus,Litter growth rate,6.34,12,"0,0,255",Ross_chapter_11
+270,14,Cercopithecidae,Semnopithecus,entellus,Weaning age,"249, 396, 416",11,"0,255,0",Lee_Kappeler_chapter_3
+270,15,Cercopithecidae,Semnopithecus,entellus,Weaning weight,2100,12,"0,0,255",Ross_chapter_11
+272,4,Cercopithecidae,Semnopithecus,vetulus,Body mass,"5797, 5900",48,"51,102,255",Ross_chapter_11
+272,6,Cercopithecidae,Semnopithecus,vetulus,Cranial capacity,56.6,14,"255,0,255",Godfrey_etal_2001
+272,7,Cercopithecidae,Semnopithecus,vetulus,Age at first reproduction,4,14,"255,0,255",Godfrey_etal_2001
+272,8,Cercopithecidae,Semnopithecus,vetulus,Gestation length,200,11,"0,255,0",Lee_Kappeler_chapter_3
+272,9,Cercopithecidae,Semnopithecus,vetulus,Interbirth interval,32,11,"0,255,0",Lee_Kappeler_chapter_3
+272,10,Cercopithecidae,Semnopithecus,vetulus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+272,11,Cercopithecidae,Semnopithecus,vetulus,Birth weight,"360, ~447",11,"0,255,0",Lee_Kappeler_chapter_3
+272,12,Cercopithecidae,Semnopithecus,vetulus,Litter weight,360,12,"0,0,255",Ross_chapter_11
+272,13,Cercopithecidae,Semnopithecus,vetulus,Litter growth rate,2.7,12,"0,0,255",Ross_chapter_11
+272,14,Cercopithecidae,Semnopithecus,vetulus,Weaning age,"219, 270, 274",14,"255,0,255",Godfrey_etal_2001
+272,15,Cercopithecidae,Semnopithecus,vetulus,Weaning weight,1100,12,"0,0,255",Ross_chapter_11
+274,4,Cercopithecidae,Trachypithecus,cristata,Body mass,"5760, 5856",32767,,Smith_Jungers_1997
+274,5,Cercopithecidae,Trachypithecus,cristata,Brain weight,66,12,"0,0,255",Ross_chapter_11
+274,6,Cercopithecidae,Trachypithecus,cristata,Cranial capacity,54.5,14,"255,0,255",Godfrey_etal_2001
+274,7,Cercopithecidae,Trachypithecus,cristata,Age at first reproduction,4,14,"255,0,255",Godfrey_etal_2001
+274,14,Cercopithecidae,Trachypithecus,cristata,Weaning age,365,14,"255,0,255",Godfrey_etal_2001
+275,4,Cercopithecidae,Trachypithecus,francoisi,Body mass,"7350, 7300",32767,,Smith_Jungers_1997
+275,6,Cercopithecidae,Trachypithecus,francoisi,Cranial capacity,66.9,14,"255,0,255",Godfrey_etal_2001
+275,7,Cercopithecidae,Trachypithecus,francoisi,Age at first reproduction,4,14,"255,0,255",Godfrey_etal_2001
+275,11,Cercopithecidae,Trachypithecus,francoisi,Birth weight,457,10,"255,0,0",Smith_Leigh_1998
+275,14,Cercopithecidae,Trachypithecus,francoisi,Weaning age,394,14,"255,0,255",Godfrey_etal_2001
+276,4,Cercopithecidae,Trachypithecus,geei,Body mass,9500,32767,,Smith_Jungers_1997
+277,4,Cercopithecidae,Trachypithecus,johnii,Body mass,11200,32767,,Smith_Jungers_1997
+278,4,Cercopithecidae,Trachypithecus,obscura,Body mass,"6260, 6530",32767,,Smith_Jungers_1997
+278,5,Cercopithecidae,Trachypithecus,obscura,Brain weight,60.8,12,"0,0,255",Ross_chapter_11
+278,6,Cercopithecidae,Trachypithecus,obscura,Cranial capacity,60.8,14,"255,0,255",Godfrey_etal_2001
+278,7,Cercopithecidae,Trachypithecus,obscura,Age at first reproduction,4,14,"255,0,255",Godfrey_etal_2001
+278,11,Cercopithecidae,Trachypithecus,obscura,Birth weight,"380, 341",11,"0,255,0",Lee_Kappeler_chapter_3
+278,12,Cercopithecidae,Trachypithecus,obscura,Litter weight,380,12,"0,0,255",Ross_chapter_11
+278,14,Cercopithecidae,Trachypithecus,obscura,Weaning age,365,14,"255,0,255",Godfrey_etal_2001
+279,4,Cercopithecidae,Trachypithecus,phayrei,Body mass,"6300, 10500",32767,,Smith_Jungers_1997
+279,8,Cercopithecidae,Trachypithecus,phayrei,Gestation length,165,11,"0,255,0",Lee_Kappeler_chapter_3
+279,9,Cercopithecidae,Trachypithecus,phayrei,Interbirth interval,15,11,"0,255,0",Lee_Kappeler_chapter_3
+279,10,Cercopithecidae,Trachypithecus,phayrei,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+279,14,Cercopithecidae,Trachypithecus,phayrei,Weaning age,305,11,"0,255,0",Lee_Kappeler_chapter_3
+280,4,Cercopithecidae,Trachypithecus,pileatus,Body mass,9860,32767,,Smith_Jungers_1997
+281,4,Cercopithecidae,Presbytis,comata,Body mass,6710,32767,,Smith_Jungers_1997
+282,4,Cercopithecidae,Presbytis,frontata,Body mass,5670,32767,,Smith_Jungers_1997
+283,4,Cercopithecidae,Presbytis,hosei,Body mass,5630,32767,,Smith_Jungers_1997
+284,4,Cercopithecidae,Presbytis,melalophos,Body mass,6470,32767,,Smith_Jungers_1997
+285,4,Cercopithecidae,Presbytis,potenziani,Body mass,6400,32767,,Smith_Jungers_1997
+286,4,Cercopithecidae,Presbytis,rubicunda,Body mass,6170,32767,,Smith_Jungers_1997
+287,4,Cercopithecidae,Presbytis,thomasi,Body mass,6690,32767,,Smith_Jungers_1997
+288,4,Cercopithecidae,Nasalis,larvatus,Body mass,"9820, 9593",32767,,Smith_Jungers_1997
+288,5,Cercopithecidae,Nasalis,larvatus,Brain weight,87,48,"51,102,255",Ross_chapter_11
+288,6,Cercopithecidae,Nasalis,larvatus,Cranial capacity,82.8,14,"255,0,255",Godfrey_etal_2001
+288,7,Cercopithecidae,Nasalis,larvatus,Age at first reproduction,4.5,12,"0,0,255",Ross_chapter_11
+288,8,Cercopithecidae,Nasalis,larvatus,Gestation length,166,12,"0,0,255",Ross_chapter_11
+288,9,Cercopithecidae,Nasalis,larvatus,Interbirth interval,18,11,"0,255,0",Lee_Kappeler_chapter_3
+288,10,Cercopithecidae,Nasalis,larvatus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+288,11,Cercopithecidae,Nasalis,larvatus,Birth weight,450,11,"0,255,0",Lee_Kappeler_chapter_3
+288,12,Cercopithecidae,Nasalis,larvatus,Litter weight,525,12,"0,0,255",Ross_chapter_11
+288,13,Cercopithecidae,Nasalis,larvatus,Litter growth rate,6.93,12,"0,0,255",Ross_chapter_11
+288,14,Cercopithecidae,Nasalis,larvatus,Weaning age,"213, 210, 281",12,"0,0,255",Ross_chapter_11
+288,15,Cercopithecidae,Nasalis,larvatus,Weaning weight,2000,12,"0,0,255",Ross_chapter_11
+289,4,Cercopithecidae,Simias,concolor,Body mass,6800,32767,,Smith_Jungers_1997
+290,4,Cercopithecidae,Pygathrix,nemaeus,Body mass,"8440, 8180",32767,,Smith_Jungers_1997
+290,8,Cercopithecidae,Pygathrix,nemaeus,Gestation length,210,12,"0,0,255",Ross_chapter_11
+290,11,Cercopithecidae,Pygathrix,nemaeus,Birth weight,463,10,"255,0,0",Smith_Leigh_1998
+291,4,Cercopithecidae,Rhinopithecus,avunculus,Body mass,"8000, 8500",32767,,Smith_Jungers_1997
+292,4,Cercopithecidae,Rhinopithecus,bieti,Body mass,9960,32767,,Smith_Jungers_1997
+292,11,Cercopithecidae,Rhinopithecus,bieti,Birth weight,427,10,"255,0,0",Smith_Leigh_1998
+294,4,Cercopithecidae,Rhinopithecus,roxellana,Body mass,11600,32767,,Smith_Jungers_1997
+295,4,Hylobatidae,Hylobates,agilis,Body mass,"5820, 5530",32767,,Smith_Jungers_1997
+295,5,Hylobatidae,Hylobates,agilis,Brain weight,87.6,48,"51,102,255",Ross_chapter_11
+296,4,Hylobatidae,Hylobates,concolor,Body mass,"7620, 5749",32767,,Smith_Jungers_1997
+296,8,Hylobatidae,Hylobates,concolor,Gestation length,202,48,"51,102,255",Ross_chapter_11
+298,4,Hylobatidae,Hylobates,hoolock,Body mass,"6880, 6500",32767,,Smith_Jungers_1997
+299,4,Hylobatidae,Hylobates,klossii,Body mass,5920,32767,,Smith_Jungers_1997
+300,4,Hylobatidae,Hylobates,lar,Body mass,"5340, 5465",32767,,Smith_Jungers_1997
+300,5,Hylobatidae,Hylobates,lar,Brain weight,93.9,48,"51,102,255",Ross_chapter_11
+300,6,Hylobatidae,Hylobates,lar,Cranial capacity,102.2,14,"255,0,255",Godfrey_etal_2001
+300,7,Hylobatidae,Hylobates,lar,Age at first reproduction,"9.31, 6.69",48,"51,102,255",Ross_chapter_11
+300,8,Hylobatidae,Hylobates,lar,Gestation length,"213, 205",48,"51,102,255",Ross_chapter_11
+300,9,Hylobatidae,Hylobates,lar,Interbirth interval,30,11,"0,255,0",Lee_Kappeler_chapter_3
+300,10,Hylobatidae,Hylobates,lar,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+300,11,Hylobatidae,Hylobates,lar,Birth weight,"400, 407",11,"0,255,0",Lee_Kappeler_chapter_3
+300,12,Hylobatidae,Hylobates,lar,Litter weight,400,48,"51,102,255",Ross_chapter_11
+300,13,Hylobatidae,Hylobates,lar,Litter growth rate,0.9,48,"51,102,255",Ross_chapter_11
+300,14,Hylobatidae,Hylobates,lar,Weaning age,"730, 735, 548",48,"51,102,255",Ross_chapter_11
+300,15,Hylobatidae,Hylobates,lar,Weaning weight,1070,48,"51,102,255",Ross_chapter_11
+300,16,Hylobatidae,Hylobates,lar,Juvenility,6.73,48,"51,102,255",Ross_chapter_11
+301,4,Hylobatidae,Hylobates,leucogenys,Body mass,7320,32767,,Smith_Jungers_1997
+301,11,Hylobatidae,Hylobates,leucogenys,Birth weight,500,10,"255,0,0",Smith_Leigh_1998
+302,4,Hylobatidae,Hylobates,moloch,Body mass,"6250, 5292",32767,,Smith_Jungers_1997
+302,5,Hylobatidae,Hylobates,moloch,Brain weight,93.1,48,"51,102,255",Ross_chapter_11
+302,8,Hylobatidae,Hylobates,moloch,Gestation length,195,48,"51,102,255",Ross_chapter_11
+303,4,Hylobatidae,Hylobates,muelleri,Body mass,5350,32767,,Smith_Jungers_1997
+304,4,Hylobatidae,Hylobates,pileatus,Body mass,5440,32767,,Smith_Jungers_1997
+305,4,Hylobatidae,Hylobates,syndactylus,Body mass,"10700, 10568,",32767,,Smith_Jungers_1997
+305,5,Hylobatidae,Hylobates,syndactylus,Brain weight,130,48,"51,102,255",Ross_chapter_11
+305,6,Hylobatidae,Hylobates,syndactylus,Cranial capacity,113.5,14,"255,0,255",Godfrey_etal_2001
+305,7,Hylobatidae,Hylobates,syndactylus,Age at first reproduction,"9, 8.92, 5.18",48,"51,102,255",Ross_chapter_11
+305,8,Hylobatidae,Hylobates,syndactylus,Gestation length,"232, 234",48,"51,102,255",Ross_chapter_11
+305,9,Hylobatidae,Hylobates,syndactylus,Interbirth interval,50,11,"0,255,0",Lee_Kappeler_chapter_3
+305,10,Hylobatidae,Hylobates,syndactylus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+305,11,Hylobatidae,Hylobates,syndactylus,Birth weight,"513, 552",11,"0,255,0",Lee_Kappeler_chapter_3
+305,12,Hylobatidae,Hylobates,syndactylus,Litter weight,517,48,"51,102,255",Ross_chapter_11
+305,14,Hylobatidae,Hylobates,syndactylus,Weaning age,639,14,"255,0,255",Godfrey_etal_2001
+306,4,Pongidae,Pongo,pygmaeus,Body mass,"35800, 37078, 35700",32767,,Smith_Jungers_1997
+306,5,Pongidae,Pongo,pygmaeus,Brain weight,301.7,48,"51,102,255",Ross_chapter_11
+306,6,Pongidae,Pongo,pygmaeus,Cranial capacity,374.5,14,"255,0,255",Godfrey_etal_2001
+306,7,Pongidae,Pongo,pygmaeus,Age at first reproduction,"9.68, 7, 14.32",12,"0,0,255",Ross_chapter_11
+306,8,Pongidae,Pongo,pygmaeus,Gestation length,"250, 244",12,"0,0,255",Ross_chapter_11
+306,9,Pongidae,Pongo,pygmaeus,Interbirth interval,72,11,"0,255,0",Lee_Kappeler_chapter_3
+306,10,Pongidae,Pongo,pygmaeus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+306,11,Pongidae,Pongo,pygmaeus,Birth weight,"1728, 1653",11,"0,255,0",Lee_Kappeler_chapter_3
+306,12,Pongidae,Pongo,pygmaeus,Litter weight,1735,12,"0,0,255",Ross_chapter_11
+306,13,Pongidae,Pongo,pygmaeus,Litter growth rate,7.26,12,"0,0,255",Ross_chapter_11
+306,14,Pongidae,Pongo,pygmaeus,Weaning age,"1277, 720, 1825",12,"0,0,255",Ross_chapter_11
+306,15,Pongidae,Pongo,pygmaeus,Weaning weight,11000,12,"0,0,255",Ross_chapter_11
+306,16,Pongidae,Pongo,pygmaeus,Juvenility,7.88,12,"0,0,255",Ross_chapter_11
+307,4,Pongidae,Pongo,abeli,Body mass,35600,32767,,Smith_Jungers_1997
+308,4,Pongidae,Gorilla,gorilla,Body mass,"71000, 71500, 82475, 80000, 97500",32767,,Smith_Jungers_1997
+308,5,Pongidae,Gorilla,gorilla,Brain weight,457.3,48,"51,102,255",Ross_chapter_11
+308,6,Pongidae,Gorilla,gorilla,Cranial capacity,455.6,14,"255,0,255",Godfrey_etal_2001
+308,7,Pongidae,Gorilla,gorilla,Age at first reproduction,"10.04, 10.3",48,"51,102,255",Ross_chapter_11
+308,8,Pongidae,Gorilla,gorilla,Gestation length,"260, 285",48,"51,102,255",Ross_chapter_11
+308,9,Pongidae,Gorilla,gorilla,Interbirth interval,47,11,"0,255,0",Lee_Kappeler_chapter_3
+308,10,Pongidae,Gorilla,gorilla,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+308,11,Pongidae,Gorilla,gorilla,Birth weight,"2110, 1996",11,"0,255,0",Lee_Kappeler_chapter_3
+308,12,Pongidae,Gorilla,gorilla,Litter weight,2122.9,48,"51,102,255",Ross_chapter_11
+308,13,Pongidae,Gorilla,gorilla,Litter growth rate,15.32,48,"51,102,255",Ross_chapter_11
+308,14,Pongidae,Gorilla,gorilla,Weaning age,"1004, 900, 1278",48,"51,102,255",Ross_chapter_11
+308,16,Pongidae,Gorilla,gorilla,Juvenility,6.58,48,"51,102,255",Ross_chapter_11
+309,4,Pongidae,Pan,paniscus,Body mass,33200,32767,,Smith_Jungers_1997
+309,8,Pongidae,Pan,paniscus,Gestation length,240,11,"0,255,0",Lee_Kappeler_chapter_3
+309,9,Pongidae,Pan,paniscus,Interbirth interval,48,11,"0,255,0",Lee_Kappeler_chapter_3
+309,10,Pongidae,Pan,paniscus,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+309,11,Pongidae,Pan,paniscus,Birth weight,"1400, 1494",11,"0,255,0",Lee_Kappeler_chapter_3
+309,12,Pongidae,Pan,paniscus,Litter weight,1162,12,"0,0,255",Ross_chapter_11
+309,13,Pongidae,Pan,paniscus,Litter growth rate,6.71,12,"0,0,255",Ross_chapter_11
+309,14,Pongidae,Pan,paniscus,Weaning age,"1094, 1080",12,"0,0,255",Ross_chapter_11
+309,15,Pongidae,Pan,paniscus,Weaning weight,8500,12,"0,0,255",Ross_chapter_11
+310,4,Pongidae,Pan,troglodytes,Body mass,"33700, 41600, 45800, 40300, 30000, 40400",32767,,Smith_Jungers_1997
+310,5,Pongidae,Pan,troglodytes,Brain weight,380,48,"51,102,255",Ross_chapter_11
+310,6,Pongidae,Pan,troglodytes,Cranial capacity,371.1,14,"255,0,255",Godfrey_etal_2001
+310,7,Pongidae,Pan,troglodytes,Age at first reproduction,"13, 13.9",12,"0,0,255",Ross_chapter_11
+310,8,Pongidae,Pan,troglodytes,Gestation length,"235, 240",12,"0,0,255",Ross_chapter_11
+310,9,Pongidae,Pan,troglodytes,Interbirth interval,60,11,"0,255,0",Lee_Kappeler_chapter_3
+310,10,Pongidae,Pan,troglodytes,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+310,11,Pongidae,Pan,troglodytes,Birth weight,"1750, 1814",11,"0,255,0",Lee_Kappeler_chapter_3
+310,12,Pongidae,Pan,troglodytes,Litter weight,1742,12,"0,0,255",Ross_chapter_11
+310,13,Pongidae,Pan,troglodytes,Litter growth rate,3.97,12,"0,0,255",Ross_chapter_11
+310,14,Pongidae,Pan,troglodytes,Weaning age,"1702, 1680, 1825",12,"0,0,255",Ross_chapter_11
+310,15,Pongidae,Pan,troglodytes,Weaning weight,8500,12,"0,0,255",Ross_chapter_11
+310,16,Pongidae,Pan,troglodytes,Juvenility,8.36,12,"0,0,255",Ross_chapter_11
+311,4,Hominidae,Homo,sapiens,Body mass,"42200, 45800, 49700, 53600, 56300, 52500, 62100, 73200, 55000",32767,,Smith_Jungers_1997
+311,5,Hominidae,Homo,sapiens,Brain weight,1228,48,"51,102,255",Ross_chapter_11
+311,7,Hominidae,Homo,sapiens,Age at first reproduction,"14, 15",48,"51,102,255",Ross_chapter_11
+311,8,Hominidae,Homo,sapiens,Gestation length,"267, 270",48,"51,102,255",Ross_chapter_11
+311,9,Hominidae,Homo,sapiens,Interbirth interval,36,11,"0,255,0",Lee_Kappeler_chapter_3
+311,10,Hominidae,Homo,sapiens,Litter size,1,11,"0,255,0",Lee_Kappeler_chapter_3
+311,11,Hominidae,Homo,sapiens,Birth weight,"2900, 3334",11,"0,255,0",Lee_Kappeler_chapter_3
+311,12,Hominidae,Homo,sapiens,Litter weight,3375,48,"51,102,255",Ross_chapter_11
+311,13,Hominidae,Homo,sapiens,Litter growth rate,10.7,48,"51,102,255",Ross_chapter_11
+311,14,Hominidae,Homo,sapiens,Weaning age,"730, 930",48,"51,102,255",Ross_chapter_11
+311,15,Hominidae,Homo,sapiens,Weaning weight,10980,48,"51,102,255",Ross_chapter_11
+311,16,Hominidae,Homo,sapiens,Juvenility,11.27,48,"51,102,255",Ross_chapter_11

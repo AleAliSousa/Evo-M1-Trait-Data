@@ -132,6 +132,25 @@ ratio of other large mammals.
 
 ## Per-row source citations
 
+### Reference 82 and the small-frog spinal rate (checked 2026-11-25)
+
+The *Rana pipiens* row's column G, `2.60 cm³ O₂/100 g/min`, cites Rosenberg
+(1935) as reference 82. Rosenberg's paper studies *Rana esculenta L.*, not
+*R. pipiens*, and measures isolated frog brain and spinal cord oxygen use at a
+20 °C reference temperature. Its Table I monthly means give a spinal/brain
+ratio of **0.92044** across the seven months with both measurements. Applying
+that ratio to Mink's modeled *R. pipiens* brain rate 2.83 gives **2.60485**,
+consistent with its printed 2.60. Rosenberg Table II independently supports
+Mink's prose description of an approximately 90% spinal/brain ratio.
+
+Thus reference 82 supports an approximate **relative tissue rate in a different
+frog species**. Column G is an extrapolation to *R. pipiens*, not a direct
+Rosenberg measurement of that species. See
+`Rosenberg__1935/Rosenberg__1935_TableI.README.md` and
+`Rosenberg__1935/Rosenberg__1935_Mink1981_audit.csv`. The printed Mink value
+and reference are retained as printed; downstream users should classify this
+cell as modeled cross-species evidence.
+
 Every value in columns A–G carries either a printed reference number or a footnote letter.
 The analysis CSV keeps those keys verbatim in seven `ref_keys_*` columns (multi-citations would
 be separated by `"; "`); `printed_footnote_marks` carries the superscript letters as

@@ -16,10 +16,13 @@ Toro, R. (2019). *Evolution of neocortical folding: a phylogenetic comparative a
   **absolute gyrification index**, **total folding length**, **average fold wavelength** (~stable
   12 mm ± 20 % despite ~20× cerebral-volume range), and **average fold depth**, plus cerebral surface
   area and convex-hull surface.
-- **Frozen source:** the authors' archived dataset on **Zenodo doi:10.5281/zenodo.2538751**
-  (digital-native → the download IS the frozen copy; also on the Toro-lab GitHub). Could not be pulled
-  in the scaffolding session (network policy; no R). Download locally; keep verbatim; write
-  `__Public/comparative-data/10.1016%2Fj.cortex.2019.04.011_<Table>.tsv` (invariant 2).
+- **Author data:** the authors' archived dataset is on **Zenodo doi:10.5281/zenodo.2538751**
+  and at `github.com/neuroanatomy/34primates`. The 65 measured cases in
+  `Heuer_etal_2019_Data.csv` were checked against author GitHub
+  `data/derived/stats/stats.csv` at commit
+  `55ae95e5dbf1c3e114c1b6949e036c9aa2798e78` on 2026-11-25.
+  Source SHA-256: `b9453ac9555209d514ef0df5ffdd392247b70430b85ce7b9b44ab7e0f685a597`.
+  All case IDs and seven numeric fields agree to within 1e-6.
 
 ## DECISION: house separately — do NOT pool into `__merging_gyrification` (method differs, confirmed)
 
@@ -38,28 +41,29 @@ metrics the Zilles coronal method does not produce. The paper itself presents th
   (`__merging_cortical_areas`) if ever merged — same rule the GI README applies to Mota — **not** the
   GI merge.
 
-## ⚠️ What is built (2026-08-05) — and what is still missing
+## Built items and specimen registration (updated 2026-11-25)
 
-**The folding measurements are NOT in this folder and could not be fetched.** They live only in the
-authors' Zenodo archive (**doi:10.5281/zenodo.2538751**, mirrored at
-`github.com/neuroanatomy/34primates`), and the network is blocked from the authoring environment
-(same egress policy that blocked the original scaffolding session). What *was* obtainable — and is
-now fully built — is the paper's **sample documentation**, which is what makes the folding data
-usable when it does arrive:
+The folding measurements and sample documentation are built:
 
 | Registry item | Source | Frozen copy | Rows |
 |---|---|---|---|
 | `Heuer_etal_2019_Table1` | printed Table 1, article p. 3 | `Heuer_etal_2019_Table1_snapshot.xlsx` (hand-verified) | **34 species / 65 individuals** |
 | `Heuer_etal_2019_S1` | journal supplement `1-s2.0-S0010945219301704-mmc1.zip` | `S1_QCtable_mmc1.tsv` (digital-native, unpacked verbatim) | **66 scanned specimens** |
+| `Heuer_etal_2019_Data` | authors' `data/derived/stats/stats.csv` | author GitHub commit and SHA-256 above | **65 measured cases** |
 
 Public TSVs: `10.1016%2Fj.cortex.2019.04.011_Table1.tsv` and `..._S1.tsv`.
 
-Neither table carries a folding value. Both are `Data role = secondary`, `Measure type = metadata`.
-
-**Still to do (needs network):** download the Zenodo archive, keep it verbatim as a third frozen
-source, and build `Heuer_etal_2019_<Table>` with the absolute gyrification index, total folding
-length, average fold wavelength, average fold depth, and cerebral / convex-hull surface areas
-(surface mm², length mm).
+Table 1 and S1 are sample metadata; `Data` contains the measured MRI folding values.
+The 65 measured cases are registered individually in
+`_keys/specimen_crosswalk/specimen_crosswalk.csv`; the one S1-only case is registered
+as an excluded scan, without inventing a measurement. See
+`Heuer_etal_2019_specimen_registration_audit.csv` for each S1 ID, author-stats ID,
+source, taxon, provenance, inclusion flag, canonical key, and match status.
+Three same-name links to existing Yerkes registrations (Brian the bonobo, Buddy
+the gibbon, Kinyani the gorilla) are **probable**, not confirmed by a shared accession.
+The ten ABIDE human S1 IDs use `Human_` prefixes, whereas the author stats use
+numeric IDs; both forms are retained in the crosswalk. Table 1 provenance resolves
+the two S1 rows labelled only "Gorilla" to different species.
 
 ### Table 1 — why it was hand-transcribed
 
@@ -71,10 +75,10 @@ therefore holds a hand transcription, guarded by two assertions that fail loudly
 ### Finding: S1 has one specimen the paper did not analyse
 
 S1 lists **66** scanned specimens; the paper analysed **65** from 34 species. The extra row is a
-**red howler monkey** (*Alouatta seniculus*, `HurleurRouxAloua_47da`, MNHN) — present in the QC
+**red howler monkey** (`HurleurRouxAloua_47da`, MNHN; species-level ID not confirmed by S1) — present in the QC
 table, absent from Table 1. It was scanned and quality-checked but left out of the analysed sample.
-Recorded in `species_note`, not dropped. If the Zenodo folding table is ever ingested, check
-whether it carries 65 or 66 rows before joining.
+Recorded in `species_note` and the specimen crosswalk, not dropped. It has no
+row in `Heuer_etal_2019_Data.csv`.
 
 ### Finding: "Gorilla" is two species
 
@@ -101,5 +105,18 @@ carried on every row so a future analysis can filter on them rather than pooling
 3. 33 `Heuer2019` rows added to `_keys/Stephan/species_key.csv` (common name → binomial, read off
    Table 1; `Gorilla` deliberately excluded as ambiguous).
 4. Registered in `__ReadMe.xlsx` Sheet1.
-5. **No merge script edited** — the housing decision below still stands, and there is no folding
-   value to merge yet.
+5. `Heuer_etal_2019_Data.csv` is built and listed in the compiled item columns;
+   the 3-D folding measure remains distinct from the Zilles 2-D GI merge.
+6. On 2026-11-25, registered all 66 S1 cases and the 65 measured-case links
+   in the specimen crosswalk, with three probable cross-paper name matches.
+
+## Dissertation lead
+
+The German National Library [catalogs](https://d-nb.info/1282312243) Katja
+Heuer's *Mechanical morphogenesis and the development and evolution of primate
+cortical folding* as a Leipzig University dissertation (2022), published as a
+bound 231-page volume in 2023. The title is English, but the text language has
+not been checked. No dissertation PDF was located in this repository, the
+EndNote PDF store, or the online repositories searched on 2026-11-25. If obtained,
+check for unpublished specimen identifiers and methods; prefer the journal
+article for measurements already published there.

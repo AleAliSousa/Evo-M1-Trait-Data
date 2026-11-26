@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,One-based printed table row including mean row,table,source order,index,info,Rana esculenta,Rosenberg__1935_TableII,,Table II printed p. 438
+source_printed_page,Journal page bearing the table,table,source page,index,info,Rana esculenta,Rosenberg__1935_TableII,,Table II printed p. 438
+source_pdf_page,Page within held PDF,table,source page,index,info,Rana esculenta,Rosenberg__1935_TableII,,Held PDF includes a library cover page
+species_as_published,Species named in article title,whole organism,taxon,label,info,Rana esculenta,Rosenberg__1935_TableII,No different species indicated for Table II,Article title and Table II context
+experiment_or_mean,Printed experiment number or Moyenne,nerve tissue,experiment,identifier,info,Rana esculenta,Rosenberg__1935_TableII,Experiment numbers are not specimen identifiers,Table II first column
+statistic,Experiment value or printed group mean,nerve tissue,oxygen consumption,statistic,info,Rana esculenta,Rosenberg__1935_TableII,Keep means separate from six experiments,Table II layout
+season_as_published,Winter or spring frog cohort as printed in French,whole organism,cohort,label,info,Rana esculenta,Rosenberg__1935_TableII,Winter frogs versus spring frogs,Table II subheaders
+tissue,Isolated tissue column group,nerve tissue,tissue,label,info,Rana esculenta,Rosenberg__1935_TableII,Brain; spinal cord; cerebrospinal axis; sciatic nerve,Table II header
+oxygen_mm3_per_g_h,Printed oxygen absorbed in cubic millimetres per gram per hour,nerve tissue,oxygen consumption,experiment or mean,primary,Rana esculenta,Rosenberg__1935_TableII,Normalized to 20 C by source,Table II caption and printed p. 437 methods
+oxygen_cm3_per_100g_min,Unit conversion of printed oxygen value divided by 600,nerve tissue,oxygen consumption,experiment or mean,derived,Rana esculenta,Rosenberg__1935_TableII,Still isolated tissue at 20 C; not an in vivo estimate,Derived from Table II
+temperature_reference_C,Temperature to which source normalized respiratory values,nerve tissue,temperature,reference,info,Rana esculenta,Rosenberg__1935_TableII,20 C; source used coefficient 2.2 per 10 C,Printed p. 437 methods
+preparation,Experimental preparation,nerve tissue,preparation,label,info,Rana esculenta,Rosenberg__1935_TableII,Isolated tissue at rest,Printed pp. 435 and 437 methods

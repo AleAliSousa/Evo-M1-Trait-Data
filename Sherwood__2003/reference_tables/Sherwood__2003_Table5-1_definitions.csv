@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Source table row in printed order,M1 orofacial specimen,source row,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,,Table 5-1 printed p. 210; PDF p. 235
+taxon_as_published,Species label exactly as published,M1 orofacial specimen,taxon,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,Pongo pygmaeus is historical sensu lato label.,Table 5-1 printed p. 210; PDF p. 235
+specimen_id_as_published,Specimen ID or house name exactly as printed,M1 orofacial specimen,identifier,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,Not necessarily an accession.,Table 5-1 printed p. 210; PDF p. 235
+sex_as_published,Sex as printed,M1 orofacial specimen,sex,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,,Table 5-1 printed p. 210; PDF p. 235
+age_at_death_as_published,Age at death string as printed in years,M1 orofacial specimen,age at death,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,<10 remains an inequality.,Table 5-1 printed p. 210; PDF p. 235
+age_at_death_years,Exact age at death in years where printed,M1 orofacial specimen,age at death,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,Blank for <10.,Table 5-1 printed p. 210; PDF p. 235
+age_less_than_years,Strict age upper bound in years where printed,M1 orofacial specimen,age at death upper bound,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,10 for Papio; blank otherwise.,Table 5-1 printed p. 210; PDF p. 235
+fixation_as_published,Fixation category as printed,M1 orofacial specimen,fixation,individual,method,Catarrhine primates,Sherwood__2003_Table5-1,,Table 5-1 printed p. 210; PDF p. 235
+postmortem_interval_as_published,Postmortem interval string as printed,M1 orofacial specimen,postmortem interval,individual,method,Catarrhine primates,Sherwood__2003_Table5-1,Source dash means unreported; intervals are hours.,Table 5-1 printed p. 210; PDF p. 235
+observation_level,One row per identified specimen,M1 orofacial specimen,observation level,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,,Table 5-1 printed p. 210; PDF p. 235
+data_role,Primary specimen metadata,M1 orofacial specimen,data role,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,No trait measurements included.,Table 5-1 printed p. 210; PDF p. 235
+source,Dataset item identifier,M1 orofacial specimen,source,individual,info,Catarrhine primates,Sherwood__2003_Table5-1,,Table 5-1 printed p. 210; PDF p. 235

@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_month_row,One-based month row in the printed table,table,source order,index,info,Rana esculenta,Rosenberg__1935_TableI,,Table I printed p. 436; held PDF p. 4
+source_printed_page,Journal page bearing the table,table,source page,index,info,Rana esculenta,Rosenberg__1935_TableI,,Table I printed p. 436
+source_pdf_page,Page within held PDF,table,source page,index,info,Rana esculenta,Rosenberg__1935_TableI,,Held PDF includes a library cover page
+species_as_published,Species printed in the table title,whole organism,taxon,label,info,Rana esculenta,Rosenberg__1935_TableI,Do not replace with Mink's Rana pipiens,Table I title
+month_as_published,Month label in French,whole organism,month,label,info,Rana esculenta,Rosenberg__1935_TableI,Year not reported,Table I first column
+tissue,Isolated tissue column group,nerve tissue,tissue,label,info,Rana esculenta,Rosenberg__1935_TableI,Brain; spinal cord; cerebrospinal axis; sciatic nerve,Table I header
+n_experiments,Printed number of experiments,nerve tissue,experiment count,count,info,Rana esculenta,Rosenberg__1935_TableI,Not necessarily distinct individual animals,Table I column Nombre d'expériences
+oxygen_mm3_per_g_h,Printed mean oxygen absorbed in cubic millimetres per gram of tissue per hour,nerve tissue,oxygen consumption,mean,primary,Rana esculenta,Rosenberg__1935_TableI,Normalized to 20 C by source,Table I caption and printed p. 437 methods
+oxygen_cm3_per_100g_min,Unit conversion of printed oxygen mean divided by 600,nerve tissue,oxygen consumption,mean,derived,Rana esculenta,Rosenberg__1935_TableI,Still isolated tissue at 20 C; not an in vivo estimate,Derived from Table I
+extremes_as_published,Printed range of experiment values,nerve tissue,oxygen consumption,range,primary,Rana esculenta,Rosenberg__1935_TableI,Blank where not printed,Table I column Extrêmes
+extremes_low_mm3_per_g_h,Lower end of printed range,nerve tissue,oxygen consumption,minimum,derived,Rana esculenta,Rosenberg__1935_TableI,Blank where no range printed,Parsed from Table I range
+extremes_high_mm3_per_g_h,Upper end of printed range,nerve tissue,oxygen consumption,maximum,derived,Rana esculenta,Rosenberg__1935_TableI,Blank where no range printed,Parsed from Table I range
+probable_error_of_mean_pct,Printed probable error of mean in percent,nerve tissue,oxygen consumption,probable error of mean,primary,Rana esculenta,Rosenberg__1935_TableI,Do not treat as standard error,Table I column Erreur probable de la moyenne en p. c.
+temperature_reference_C,Temperature to which source normalized all respiratory values,nerve tissue,temperature,reference,info,Rana esculenta,Rosenberg__1935_TableI,20 C; source used coefficient 2.2 per 10 C,Printed p. 437 methods
+preparation,Experimental preparation,nerve tissue,preparation,label,info,Rana esculenta,Rosenberg__1935_TableI,Isolated tissue at rest,Printed pp. 435 and 437 methods

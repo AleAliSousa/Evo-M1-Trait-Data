@@ -74,7 +74,7 @@ DS <- c(
   "Cell counts (histology)"  = "__compiled/item_columns.csv",
   "EvoM1 traits"             = "____EvoM1_TraitTable (melted)",
   "Body"                     = "__merging_body",
-  "Ecology"                  = "__merging_ecology",
+  "Ecology"                  = "__compiled/item_columns.csv",
   "Life history"             = "__merging_life_history",
   "Brain mass"               = "__merging_brain_mass",
   "Behaviour"                = "__merging_behaviour",
@@ -100,7 +100,7 @@ DS <- c(
   "Social composition, mirror tests & play" = "__merging_behaviour",
   "Claustrum & cerebellar anatomy" = "__compiled/item_columns.csv",
   ## added 2026-11-23: two merges now served as their own datasets
-  "Sleep & torpor"           = "__merging_sleep",
+  "Sleep & torpor"           = "__compiled/item_columns.csv",
   "Cerebral surface & folding (MRI)" = "__compiled/item_columns.csv"  # data points since step 16
 )
 seen <- unique(compiled$Dataset)

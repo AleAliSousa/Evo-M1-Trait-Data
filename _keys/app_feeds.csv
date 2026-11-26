@@ -5,7 +5,6 @@ traits,__ShinyApp/data/evom1_traits_long.csv,TRUE,EvoM1 traits,std,TRUE,EvoM1 tr
 taste,__merging_sensory/taste_long.csv,TRUE,Taste performance,std_merge,TRUE,Taste performance,merge,active,
 social_mirror_play,__merging_behaviour/social_mirror_play_long.csv,TRUE,"Social composition, mirror tests & play",std_merge,TRUE,"Social composition, mirror tests & play",merge,active,
 body,__merging_body/body_long.csv,TRUE,Body,std_merge,TRUE,Body,merge,active,
-ecology,__merging_ecology/ecology_long.csv,TRUE,Ecology,std_merge,TRUE,Ecology,merge,active,
 life_history,__merging_life_history/life_history_long.csv,TRUE,Life history,std_life_history,TRUE,Life history,life_history,active,
 brain_mass,__merging_brain_mass/brain_mass_long.csv,TRUE,Brain mass,std_merge,TRUE,Brain mass,merge,active,"TraitExplorer's `merge` loader special-cases te_label == ""Brain mass""; the Evo-M1 loader also reads __merging_brain_mass/brain_mass_unfiltered.csv (literal in app.R, not a feed)."
 brain_size,__merging_brain_size/brain_size_long.csv,TRUE,Combined brain size,std_merge,TRUE,Combined brain size,merge,active,Added to TraitExplorer 2026-11-23: its existing `merge` loader gave the same species x label x value rows as the Evo-M1 app (checked that day).
@@ -18,4 +17,3 @@ cell_morphology,__merging_cell_morphology/cell_morphology_long.csv,TRUE,"Cell ty
 fossil_bgu,__merging_fossil_brain_glucose/fossil_brain_glucose_long.csv,TRUE,Fossil brain glucose,std_fossil_bgu,FALSE,,,active,"Not in TraitExplorer: none of its loader types reads this table correctly (the Evo-M1 loader std_fossil_bgu makes two variables per row and puts the team in the label; `merge` and `cmr` give half the rows under one wrong label, the other types fail). It needs a new harmonize_one() case."
 sensory,__merging_sensory/sensory_long.csv,TRUE,Sensory performance,std_sensory,TRUE,Sensory performance,sensory,active,
 supplementary,__merging_supplementary/supplementary_long.csv,TRUE,Additional published datasets,std_merge,TRUE,Supplementary sources,merge,active,The two apps name this dataset differently (TraitExplorer still uses the label the Evo-M1 app replaced).
-sleep,__merging_sleep/sleep_long.csv,TRUE,Sleep & torpor,std_sleep,FALSE,,,active,"Added 2026-11-23. The same values were served from the trait table (EvoM1 traits) until then; _keys/variable_canonical.csv now supersedes those columns."

@@ -110,7 +110,6 @@ GH <- list(
   cellcounts = feed_path("cellcounts"),
   traits     = feed_path("traits"),
   body       = feed_path("body"),
-  ecology    = feed_path("ecology"),
   # 2026-11-22: the five life-history measures that used to ride in
   # body_ecology were folded into the life-history merge (PR #97, Option A);
   # std_life_history() below surfaces them under their existing labels.
@@ -133,8 +132,6 @@ GH <- list(
   # Boyer & Harrington 2019 blood flow, Navarrete 2016 innovation, ...). Same
   # schema as the std_merge() merges; see __merging_supplementary/README__merging.md.
   supplementary = feed_path("supplementary"),
-  # 2026-11-23: two merges the apps did not load as datasets before.
-  sleep = feed_path("sleep"),
   # read-time wild/domestic pooling keys (no merge reads them; see _keys/README_species_pooling.md)
   pooling    = "_keys/species_pooling.csv",
   population = "_keys/population_status.csv"
@@ -185,6 +182,27 @@ subspecies_key <- local({
   data.frame(member = low$member, species = top$member[match(low$pool_id, top$pool_id)],
              stringsAsFactors = FALSE)
 })
+
+# Subspecies default (owner, 26 November 2026): a data point the house resolver files as a subspecies
+# (species_basis subspecies_assign) goes under its species even where species_pooling.csv does not
+# list it; domestic or feral forms and species groups are not filed this way (they await a decision,
+# as in the subspecies register below).
+DOMESTIC_EPITHETS <- c("familiaris", "domesticus", "domestica", "furo", "hircus", "caballus", "indicus",
+                       "taurus", "catus", "aries", "asinus", "dingo", "hallstromi")
+subspecies_default <- local({
+  pk0 <- read_csv_gh("_keys/species_pooling.csv", file.path(data_dir, "species_pooling.csv"))
+  dom <- trimws(as.character(pk0$member[trimws(as.character(pk0$relation)) == "domestic_form"]))
+  d <- unique(dp_all[dp_all$species_basis == "subspecies_assign" & dp_all$species != dp_all$species_accepted &
+                     nzchar(dp_all$species_accepted), c("species", "species_accepted")])
+  ep <- sub("^.* ", "", d$species)
+  d <- d[!d$species %in% subspecies_key$member & !d$species %in% dom & !ep %in% DOMESTIC_EPITHETS & ep != "group", , drop = FALSE]
+  if (anyDuplicated(d$species)) stop("subspecies default: a name resolves to two species: ",
+                                     paste(unique(d$species[duplicated(d$species)]), collapse = "; "), call. = FALSE)
+  data.frame(member = d$species, species = d$species_accepted, stringsAsFactors = FALSE)
+})
+message("subspecies default: ", nrow(subspecies_default), " name(s) of the data points filed under their species",
+        if (nrow(subspecies_default)) paste0(": ", paste(head(paste0(subspecies_default$member, " -> ", subspecies_default$species), 8), collapse = "; ")) else "")
+subspecies_key <- rbind(subspecies_key, subspecies_default)
 
 # Hemispheres (_keys/hemisphere_basis.csv; owner rule of 2026-11-23): where one
 # hemisphere was measured, the plain label serves the both-hemisphere value
@@ -433,25 +451,6 @@ load_compiled <- function() {
     )
   }
 
-  # Sleep & torpor merge. Its terms are the labels the trait table has always
-  # used (REM_sleep_pct, Torpor_type ...), so the labels, their definitions and
-  # their domain rows carry over unchanged; _keys/variable_canonical.csv
-  # supersedes the trait-table columns that held the same values.
-  std_sleep <- function(gh_rel, local, dataset) {
-    d <- read_csv_gh(gh_rel, local)
-    data.frame(
-      Species = d$Species, Dataset = dataset, Variable = d$Standardized_Term,
-      Value = as.character(d$Value), Value_num = suppressWarnings(as.numeric(d$Value)),
-      Source = d$source,
-      Items = field(d, "source"),
-      Source_details = field(d, "ref"),
-      Teams = as.character(d$team),
-      N_sources = 1L,
-      Variable_raw = d$Standardized_Term,
-      Unit = ifelse(grepl("|", d$Units, fixed = TRUE), "category", d$Units), Unit_raw = d$Units,
-      stringsAsFactors = FALSE)
-  }
-
   # Sensory psychophysics (percepts only -- see README__merging.md for what is
   # deliberately excluded). Shape matches std_merge() except for its
   # provenance columns (n_studies / Sources instead of n_sources / Teams).
@@ -484,7 +483,6 @@ load_compiled <- function() {
     std_merge(GH$taste, file.path(data_dir, "taste_long.csv"), "Taste performance"),
     std_merge(GH$social_mirror_play, file.path(data_dir, "social_mirror_play_long.csv"), "Social composition, mirror tests & play"),
     std_merge(GH$body,       file.path(data_dir, "body_long.csv"), "Body"),
-    std_merge(GH$ecology,    file.path(data_dir, "ecology_long.csv"), "Ecology"),
     std_life_history(GH$life_history, file.path(data_dir, "life_history_long.csv"), "Life history"),
     # Brain mass is emitted as PARALLEL variables, one per measurement basis
     # (measured, excluding olfactory bulbs, or explicitly derived estimates);
@@ -508,7 +506,6 @@ load_compiled <- function() {
             "Fossil brain glucose"),
     std_sensory(GH$sensory, file.path(data_dir, "sensory_long.csv"),
             "Sensory performance"),
-    std_sleep(GH$sleep, file.path(data_dir, "sleep_long.csv"), "Sleep & torpor"),
     # Five PanTHERIA measures reuse the shared labels on purpose (Gestation,
     # Weaning_age, Litter_size, Maximum_longevity, BMR_wholeanimal: identical
     # quantities, label_policy = shared in supplementary_sources.csv); the app
@@ -775,7 +772,7 @@ for (nm in sort(three, method = "radix")) {
   ep <- sub("^.* ", "", nm)
   st <- if (nm %in% dom_forms) "not filed: domestic form (domestication axis)"
         else if (ep == "group") "not filed: species group, not a subspecies"
-        else if (ep %in% c("familiaris", "domesticus", "domestica", "furo", "hircus", "caballus", "indicus", "taurus", "catus", "aries", "asinus", "dingo", "hallstromi"))
+        else if (ep %in% DOMESTIC_EPITHETS)
           "not filed: domestic or feral form, awaiting a decision"
         else "not filed: awaiting a decision"
   reg[[length(reg) + 1L]] <- reg_rows(compiled[compiled$Species == nm, , drop = FALSE], nm, sub(" [^ ]+$", "", nm), st)

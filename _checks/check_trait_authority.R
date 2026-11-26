@@ -80,6 +80,7 @@ compiled <- get("compiled", envir = app_env)
 DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_cell_counts_isotropic_fractionator",
         "Cell counts (histology)"="__compiled/item_columns.csv",
         "EvoM1 traits"="____EvoM1_TraitTable (melted)","Body & ecology"="__merging_body_ecology",
+        "Ecology"="__compiled/item_columns.csv",  # data points since step 19
         "Brain mass"="__merging_brain_mass","Behaviour"="__merging_behaviour",
         "Brain-part weights"="__compiled/item_columns.csv","Endocranial volume"="__merging_endocranial_volume",
         "Cerebellar folding"="__compiled/item_columns.csv",  # data points since step 16
@@ -92,7 +93,7 @@ DS <- c("Brain-structure volumes"="__merging_volumes","Cell counts"="__merging_c
         "Cell type, size & morphology"="__merging_cell_morphology",  # added 2026-09-27
         "Supplementary sources"="__merging_supplementary",
         "Additional published datasets"="__merging_supplementary",
-        "Sleep & torpor"="__merging_sleep","Cerebral surface & folding (MRI)"="__compiled/item_columns.csv",  # added 2026-11-23
+        "Sleep & torpor"="__compiled/item_columns.csv","Cerebral surface & folding (MRI)"="__compiled/item_columns.csv",  # added 2026-11-23
         "Taste performance"="__merging_sensory",
         "Social composition, mirror tests & play"="__merging_behaviour",
         "Claustrum & cerebellar anatomy"="__compiled/item_columns.csv")

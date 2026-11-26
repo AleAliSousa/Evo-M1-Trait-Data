@@ -26,9 +26,12 @@ note column:
 - `domain` and `measure_class`: the two tiers of the app's variable picker, from
   `_keys/variable_definitions.csv`. A label with no row there is `Unclassified`; a blank class is
   `other`.
-- `Subspecies`: empty, or the subspecies name the value was filed under by its merge. `Species`
-  then holds the species (`_keys/species_pooling.csv`, `axis = subspecies`; rule in
-  `_keys/README_species_pooling.md`).
+- `Subspecies`: empty, or the subspecies name the value was filed under. `Species` then holds the
+  species (`_keys/species_pooling.csv`, `axis = subspecies`; rule in
+  `_keys/README_species_pooling.md`). By default (owner, 26 November 2026) a name that the house
+  resolver files as a subspecies of another species (`species_basis` `subspecies_assign`) is filed
+  under that species even where the pooling key does not list it; domestic or feral forms and
+  species groups are not (they await a decision; see `subspecies_register.csv`).
 - `Hemispheres`: empty, or how the value relates to the hemispheres measured:
   `2 x one hemisphere (doubled by this project)`, `2 x one hemisphere (doubled by the source)`,
   `mean of sources, one of them 2 x one hemisphere (doubled by that source)`, or
@@ -65,7 +68,8 @@ in a merge folder:
    data point keeps both (`species_printed`, `species_named`) and the resolver reads the second. `species_col`, `value_col` and `n_col` take a
    column name or an R expression over the table's columns; a value computed by an expression says
    so in `derived`. `label` may contain `{column}` placeholders. `dataset` keeps the old dataset name
-   for now, because both apps still offer it as a filter.
+   for now, because both apps still offer it as a filter. `value_type` is `number` (the default) or
+   `text`: a category such as a diet or activity class, served as words.
 2. **Data points** (`datapoints.csv.gz`): one row per mapped source cell that holds a value, as
    printed. Nothing is averaged at this stage.
 3. **Rules**, the same for every data point, in this order:
@@ -76,14 +80,20 @@ in a merge folder:
    - *Same data* (owner, 24-25 November 2026: a copy counts once). Values agree when they are within
      0.5 % of each other. A secondary point that cites a work with a report here is `same_data` if it
      agrees with that report or one of its specimens, else `differs_from_cited_source` (not served).
-     Secondary points that cite a work with no report here form one report on its behalf (they must
-     agree, or the build stops). A secondary point that cites nothing is `same_data` if it agrees
-     with another report or one of its specimens; if it differs from every other report it is
-     `differs_from_other_reports` and not served (owner, 25 November 2026); with no other report it
-     is served as its own report.
+     Secondary points that cite a work with no report here form one report on its behalf when they
+     agree; when they differ, each relaying item is its own report, named
+     `<work> via <item> (relays differ)`. A secondary point that cites nothing is `same_data` if it
+     agrees with another report or one of its specimens; if it differs from every other report it is
+     `differs_from_other_reports` and not served (owner, 25 November 2026). With no report here,
+     compilations that agree form one report, and compilations that differ each count, named
+     `<item> (source not given; compilations differ)` (owner, 26 November 2026: their mean, marked).
+     Text values are the same when their words are (case and spacing aside).
    - *Species value*: a report's value is the mean over its source rows of the row means (the
      hemispheres of one brain are averaged first); the served value is the **plain mean of the
-     independent reports** (owner, 25 November 2026). `N_sources` is the number of reports.
+     independent reports** (owner, 25 November 2026; arithmetic mean everywhere, 26 November 2026).
+     A text trait is served as words: reports that agree give one value; reports that differ give
+     all their values, sorted and joined by `; `, and `Source_details` says `the reports differ`
+     (`the values differ` when the values come from one report) (owner, 26 November 2026). `N_sources` is the number of reports.
    Every data point keeps its `status`, the `report` it belongs to and, for a copy, `same_as`.
 4. The rows join the merge rows and get the same treatment as every other row (display aliases,
    Hemispheres, subspecies rule, population verdict, keys).
@@ -95,7 +105,9 @@ Sherwood et al. 2004, Zilles et al. 1986) in step 16; gyrification index (Zilles
 sections (Munger et al. 2022), M1 cortical layer thickness (Jacobs et al. 2015 and 2016, Johnson et al.
 2016, Peruffo et al. 2019; newborn animals under their own `_newborn` labels, owner, 26 November 2026),
 brain-part weights (Latimer 1942 and 1956, Herculano-Houzel et al. 2015, Kverkova et al. 2018) and
-claustrum & cerebellar anatomy (Smaers et al. 2011 and 2013) in step 18. A value the project
+claustrum & cerebellar anatomy (Smaers et al. 2011 and 2013) in step 18; ecology (Wilman et al. 2014,
+EltonTraits; Galán-Acedo et al. 2019, diel activity) and sleep & torpor (Eagleman & Vaughn 2021,
+Herculano-Houzel 2015, Lyamin et al. 2008, Ruf & Geiser 2015) in step 19. A value the project
 computes from printed values (Sherwood's supragranular and infragranular means; Kverkova's part masses,
 brain mass times the printed volume fraction; milligrams printed, grams served) is marked `derived`
 in the data points and in `Source_details`; the printed values it comes from are served too.

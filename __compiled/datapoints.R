@@ -11,16 +11,25 @@
 #      column or an R expression over the table's columns may be given for species_col,
 #      value_col and n_col; a value computed by an expression is marked in `derived`.
 #      `label` may contain {column} placeholders, filled from the row (e.g. the area name).
+#      `value_type` is "number" (default) or "text" (a category, served as words).
 #   2. Data points: one row per mapped source cell that holds a value -- as printed, never
 #      averaged here. Written beside the table as datapoints.csv.gz (the provenance table).
 #   3. Rules, applied to every data point in the same order (owner's rules):
 #        taxon        resolve_species() (the house resolver; unresolved names are kept under
 #                     the cleaned printed name, species_basis "unresolved"); a subspecies keeps its
-#                     printed name for the subspecies rule of build_compiled.R
+#                     printed name for the subspecies rule of build_compiled.R (filed under its
+#                     species by default; owner, 26 November 2026). species_accepted (in
+#                     datapoints.csv.gz) is the name the table files the point under.
 #        species value  within a report (one item), its points for a species and trait are
-#                     averaged (specimens, rows); across reports the value is the plain mean of
-#                     the independent reports (owner, 25 November 2026: "mean of independent
-#                     reports"). N_sources = number of reports.
+#                     pooled first (numbers: the mean over source rows of the row means; text: its
+#                     distinct values); across reports a number is the plain mean of the independent
+#                     reports (owner, 25 November 2026: "mean of independent reports"; arithmetic
+#                     mean everywhere, 26 November 2026). A text trait (value_type "text" in the map,
+#                     e.g. diet or activity categories) is served as words: reports that agree give
+#                     one value; reports that differ give all their values, sorted, "a; b", and
+#                     Source_details says "the reports differ" ("the values differ" when the
+#                     values come from one report) (owner, 26 November 2026).
+#                     N_sources = number of reports.
 #        roles        primary / secondary / both, per data point: from the map (a literal, or an
 #                     expression over the row) or from __compiled/point_decisions.csv
 #        same data    (owner, 24-25 November 2026) a copy counts once:
@@ -29,11 +38,15 @@
 #                       of its specimens) is "same_data"; a different value is
 #                       "differs_from_cited_source" and is not served (as step 14);
 #                     - relays of a work that has no report here form one report on its behalf
-#                       (they must agree; the build stops if they do not);
+#                       when they agree; when they differ, each relaying item is its own report,
+#                       named "<work> via <item> (relays differ)" (owner, 26 November 2026);
 #                     - a secondary point with no cited work equal to another report (or one of its
 #                       specimens) is "same_data"; one that differs from every other report is
 #                       "differs_from_other_reports" and is not served (owner, 25 November 2026);
-#                       with no other report it is served as its own report.
+#                       with no report here, compilations that agree form one report, and
+#                       compilations that differ each count, named "<item> (source not given;
+#                       compilations differ)" (owner, 26 November 2026: their mean, marked).
+#                     Text values are the same when their words are (case and spacing aside).
 #        not served   point decisions with serve = no (reason and evidence in the file)
 #      A report's value is the mean over its source rows of the row means (the hemispheres of one
 #      specimen row are averaged first).
@@ -64,6 +77,17 @@ dp_read_decisions <- function(repo) {
 }
 
 ## Per-point decisions, then the same-data rule for every species and trait.
+## Owner's rules (24-26 November 2026). Within one report (one item) the points of a species are pooled
+## first: numbers by the mean over source rows of the row means, text by its distinct values. Then:
+##   - a relay whose cited work has a report here: same value (within 0.5 %, or equal to one of its rows) is
+##     "same_data"; a different value is "differs_from_cited_source", not served;
+##   - relays of a work with no report here: if the relaying items agree, one report on the work's behalf;
+##     if they differ, each relaying item is its own report, named "<work> via <item> (relays differ)";
+##   - a point with no stated source equal to a report here is "same_data"; one that differs from every
+##     report is "differs_from_other_reports", not served; with no report here, the items that give such
+##     values form one report if they agree, else each item is its own report, named
+##     "<item> (source not given; compilations differ)" (owner, 26 November 2026: their mean, marked).
+## Text values agree when they are the same words (case and spacing aside).
 dp_rules <- function(p, dec) {
   for (i in seq_len(nrow(dec))) {
     x <- dec[i, ]
@@ -75,44 +99,70 @@ dp_rules <- function(p, dec) {
     if (nzchar(x$cites)) p$cites[sel] <- x$cites
     if (tolower(x$serve) %in% c("no", "false")) p$status[sel] <- paste0("not_served: ", x$reason)
   }
-  close_any <- function(v, w) any(dp_close(v, w))
+  norm <- function(v) tolower(gsub("[[:space:]]+", " ", trimws(v)))
   key <- paste(p$species, p$trait, sep = "\r")
-  for (k in unique(key[p$status == "served"])) {
-    ix <- which(key == k & p$status == "served"); q <- p[ix, ]
+  ## A species and trait served by one item, with no relay and one kind of role, needs no comparison:
+  ## its points are one report (the item; "(source not given)" for a compilation). Done for all such
+  ## keys at once; the loop below handles the rest.
+  sv <- p$status == "served"; prim0 <- p$role %in% c("primary", "both"); rel0 <- !prim0 & nzchar(p$cites)
+  ks <- key[sv]
+  one_item <- tapply(p$item[sv], ks, function(v) length(unique(v)) == 1L)
+  no_rel   <- tapply(rel0[sv], ks, function(v) !any(v))
+  one_kind <- tapply(prim0[sv], ks, function(v) all(v) || !any(v))
+  easy <- names(one_item)[one_item & no_rel & one_kind]
+  e <- sv & key %in% easy
+  p$report[e] <- ifelse(prim0[e], p$item[e], paste(p$item[e], "(source not given)"))
+  groups <- split(seq_len(nrow(p)), key)
+  groups <- groups[!names(groups) %in% easy]
+  for (k in names(groups)) {
+    ix <- groups[[k]]; ix <- ix[p$status[ix] == "served"]; if (!length(ix)) next
+    q <- p[ix, ]; text <- identical(q$value_type[1], "text")
+    same <- function(v, w) if (text) any(norm(v) == norm(w)) else any(dp_close(v, w))
+    ## the value(s) a set of points of one item gives: text -> distinct values; numbers -> the report
+    ## mean followed by its row means (a copy may equal the mean or one of the rows)
+    ival <- function(j) if (text) sort(unique(norm(q$value_printed[j]))) else {
+      rv <- tapply(q$value[j], q$source_row[j], mean); c(mean(rv), unname(rv)) }
+    agree <- function(vals) if (text) length(unique(vapply(vals, paste, "", collapse = "\r"))) == 1L else
+      all(dp_close(vapply(vals, `[`, 0, 1), vals[[1]][1]))
     prim <- q$role %in% c("primary", "both"); rel <- !prim & nzchar(q$cites); unc <- !prim & !nzchar(q$cites)
     reps <- list()
     for (it in unique(q$item[prim])) {
-      j <- which(prim & q$item == it); rv <- tapply(q$value[j], q$source_row[j], mean)
-      reps[[it]] <- list(vals = c(mean(rv), unname(rv)), origin = c(it, q$source_publication[j[1]]))
+      j <- which(prim & q$item == it)
+      reps[[it]] <- list(vals = ival(j), origin = c(it, q$source_publication[j[1]]))
       p$report[ix[j]] <- it
     }
     for (cw in unique(q$cites[rel])) {
       j <- which(rel & q$cites == cw)
       hit <- Filter(function(nm) cw %in% reps[[nm]]$origin, names(reps))
       if (length(hit)) {
-        for (jj in j) if (close_any(q$value[jj], reps[[hit[1]]]$vals)) { p$status[ix[jj]] <- "same_data"; p$same_as[ix[jj]] <- hit[1] }
+        for (jj in j) if (same(if (text) q$value_printed[jj] else q$value[jj], reps[[hit[1]]]$vals)) {
+                        p$status[ix[jj]] <- "same_data"; p$same_as[ix[jj]] <- hit[1] }
                       else p$status[ix[jj]] <- "differs_from_cited_source"
       } else {
-        v <- q$value[j]
-        if (!all(dp_close(v, v[1]))) stop("relays of ", cw, " disagree for ", sub("\r", " / ", k), ": ",
-                                         paste(q$item[j], q$value_printed[j], collapse = "; "), call. = FALSE)
-        reps[[cw]] <- list(vals = c(mean(v), v), origin = cw); p$report[ix[j]] <- cw
+        its <- unique(q$item[j]); iv <- lapply(its, function(it) ival(j[q$item[j] == it]))
+        if (agree(iv)) {
+          reps[[cw]] <- list(vals = unique(unlist(iv)), origin = cw); p$report[ix[j]] <- cw
+        } else for (n in seq_along(its)) {
+          nm <- paste0(cw, " via ", its[n], " (relays differ)"); jn <- j[q$item[j] == its[n]]
+          reps[[nm]] <- list(vals = iv[[n]], origin = c(nm, cw)); p$report[ix[jn]] <- nm
+        }
       }
     }
     left <- integer(0)
     for (jj in which(unc)) {
-      hit <- Filter(function(nm) close_any(q$value[jj], reps[[nm]]$vals), names(reps))
+      hit <- Filter(function(nm) same(if (text) q$value_printed[jj] else q$value[jj], reps[[nm]]$vals), names(reps))
       if (length(hit)) { p$status[ix[jj]] <- "same_data"; p$same_as[ix[jj]] <- paste(hit, collapse = "; ") }
       else left <- c(left, jj)
     }
     if (length(left)) {
       if (length(reps) && !DP_SERVE_UNCITED_DIFFERING) { p$status[ix[left]] <- "differs_from_other_reports"; next }
-      v <- q$value[left]
-      if (!length(reps) && !all(dp_close(v, v[1]))) stop("values with no stated source disagree for ", sub("\r", " / ", k), ": ",
-                                         paste(q$item[left], q$value_printed[left], collapse = "; "), call. = FALSE)
-      nm <- if (length(reps)) paste(q$item[left], "(source not given)") else
-              paste(paste(sort(unique(q$item[left])), collapse = " + "), "(source not given)")
-      p$report[ix[left]] <- nm
+      if (length(reps)) { p$report[ix[left]] <- paste(q$item[left], "(source not given)"); next }
+      its <- sort(unique(q$item[left])); iv <- lapply(its, function(it) ival(left[q$item[left] == it]))
+      if (agree(iv)) p$report[ix[left]] <- paste(paste(its, collapse = " + "), "(source not given)")
+      else for (n in seq_along(its)) {
+        jn <- left[q$item[left] == its[n]]
+        p$report[ix[jn]] <- paste(its[n], "(source not given; compilations differ)")
+      }
     }
   }
   p
@@ -125,6 +175,11 @@ dp_read_map <- function(repo) {
             "value_col", "label", "unit", "role", "cites", "hemisphere", "specimen_col", "n_col", "derived", "note")
   miss <- setdiff(need, names(m))
   if (length(miss)) stop("__compiled/item_columns.csv lacks column(s): ", paste(miss, collapse = ", "), call. = FALSE)
+  ## value_type: "number" (default) or "text" (categories, served as words; owner, 26 November 2026)
+  if (!"value_type" %in% names(m)) m$value_type <- ""
+  m$value_type[!nzchar(m$value_type)] <- "number"
+  if (any(!m$value_type %in% c("number", "text")))
+    stop("__compiled/item_columns.csv: value_type must be number or text: ", paste(unique(m$value_type[!m$value_type %in% c("number", "text")]), collapse = ", "), call. = FALSE)
   m
 }
 
@@ -193,8 +248,8 @@ dp_points <- function(repo) {
       item = m$item, team = m$team, dataset = m$dataset, source_publication = m$source_publication,
       source_row = row[ok], value_col = m$value_col, trait = labs[ok], unit = m$unit,
       species_printed = pr[ok], species_named = sp[ok], value_printed = vtxt[ok],
-      value = suppressWarnings(as.numeric(vtxt[ok])), n = n[ok], specimen = spec[ok], hemisphere = m$hemisphere,
-      role = role[ok], cites = cites[ok], derived = m$derived, stringsAsFactors = FALSE)
+      value = if (m$value_type == "text") NA_real_ else suppressWarnings(as.numeric(vtxt[ok])), n = n[ok], specimen = spec[ok], hemisphere = m$hemisphere,
+      role = role[ok], cites = cites[ok], derived = m$derived, value_type = m$value_type, stringsAsFactors = FALSE)
   }
   p <- do.call(rbind, out)
   if (is.null(p) || !nrow(p)) stop("item_columns.csv produced no data points", call. = FALSE)
@@ -204,42 +259,64 @@ dp_points <- function(repo) {
   ## column, as for every other row of the table. The resolver alone would drop the subspecies.
   sub <- rs$species_basis == "subspecies_assign"
   p$species <- ifelse(sub, species_normalise(p$species_named), rs$accepted_name); p$species_basis <- rs$species_basis
+  p$species_accepted <- rs$accepted_name   # the species a subspecies is filed under (build_compiled.R)
   p$point_id <- paste(p$item, p$source_row, p$trait, sep = " # ")
   p$point_id <- ifelse(nzchar(p$hemisphere), paste(p$point_id, p$hemisphere, sep = " # "), p$point_id)
   if (anyDuplicated(p$point_id)) stop("duplicate data point id: ", p$point_id[anyDuplicated(p$point_id)], call. = FALSE)
   p$status <- "served"; p$report <- ""; p$same_as <- ""
   p <- dp_rules(p, dp_read_decisions(repo))
   p[, c("point_id", "item", "source_publication", "team", "dataset", "source_row", "value_col", "trait", "unit",
-        "species_printed", "species_named", "species", "species_basis", "value_printed", "value", "n", "specimen",
-        "hemisphere", "role", "cites", "derived", "status", "report", "same_as")]
+        "species_printed", "species_named", "species", "species_basis", "species_accepted", "value_printed", "value",
+        "value_type", "n", "specimen", "hemisphere", "role", "cites", "derived", "status", "report", "same_as")]
 }
 
-## One row per species and trait, in the table's columns: the mean of the reports.
+## One row per species and trait, in the table's columns: the mean of the reports (numbers); for text,
+## the one value the reports agree on, or every distinct value, listed (owner, 26 November 2026).
 dp_species_values <- function(p) {
   s <- p[p$status == "served", , drop = FALSE]
-  if (anyNA(s$value)) stop("a served data point has a value that is not a number: ",
-                           s$point_id[is.na(s$value)][1], call. = FALSE)
+  num <- s$value_type != "text"
+  if (anyNA(s$value[num])) stop("a served data point has a value that is not a number: ",
+                                s$point_id[num & is.na(s$value)][1], call. = FALSE)
   key <- paste(s$species, s$trait, sep = "\r")
+  ## a species and trait with one data point is served as that point (most rows; done at once)
+  one <- !(duplicated(key) | duplicated(key, fromLast = TRUE)); a <- s[one, , drop = FALSE]; at <- a$value_type == "text"
+  fast <- data.frame(Species = a$species, Dataset = a$dataset, Variable = a$trait,
+                     Value = ifelse(at, trimws(a$value_printed), dp_fmt(a$value)),
+                     Value_num = ifelse(at, NA_real_, suppressWarnings(as.numeric(dp_fmt(a$value)))),
+                     Source = a$item, Items = a$item,
+                     Source_details = paste0("1 data point (", a$role, ")", ifelse(nzchar(a$derived), paste0("; derived: ", a$derived), "")),
+                     Teams = a$team, N_sources = rep(1L, nrow(a)),
+                     Variable_raw = a$trait, Unit = a$unit, Unit_raw = a$unit, stringsAsFactors = FALSE)
+  s <- s[!one, , drop = FALSE]; key <- key[!one]
   rows <- lapply(split(s, key), function(x) {
-    if (length(unique(x$dataset)) != 1L || length(unique(x$unit)) != 1L)
-      stop("trait ", x$trait[1], " has more than one dataset or unit in item_columns.csv", call. = FALSE)
-    rv <- vapply(split(x, x$report), function(r) mean(tapply(r$value, paste(r$item, r$source_row), mean)), numeric(1))
-    np <- nrow(x); k <- length(rv); v <- mean(rv)
-    roles <- paste(sort(unique(x$role)), collapse = "; ")
-    det <- if (np == 1L) sprintf("1 data point (%s)", roles)
-           else sprintf("%d data points in %d report%s%s; range %s to %s (%s)", np, k, if (k > 1) "s" else "",
-                        if (k > 1) paste0(" (", paste(sort(names(rv)), collapse = "; "), ")") else "",
-                        dp_fmt(min(x$value)), dp_fmt(max(x$value)), roles)
+    if (length(unique(x$dataset)) != 1L || length(unique(x$unit)) != 1L || length(unique(x$value_type)) != 1L)
+      stop("trait ", x$trait[1], " has more than one dataset, unit or value type in item_columns.csv", call. = FALSE)
+    np <- nrow(x); roles <- paste(sort(unique(x$role)), collapse = "; ")
+    if (x$value_type[1] == "text") {
+      tv <- trimws(x$value_printed); lv <- tolower(gsub("[[:space:]]+", " ", tv))
+      words <- tv[!duplicated(lv)]; words <- words[order(tolower(words), method = "radix")]
+      k <- length(unique(x$report)); v_chr <- paste(words, collapse = "; "); v_num <- NA_real_
+      det <- if (np == 1L) sprintf("1 data point (%s)", roles)
+             else sprintf("%d data points in %d report%s%s (%s)%s", np, k, if (k > 1) "s" else "",
+                          if (k > 1) paste0(" (", paste(sort(unique(x$report)), collapse = "; "), ")") else "",
+                          roles, if (length(words) < 2) "" else if (k > 1) "; the reports differ" else "; the values differ")
+    } else {
+      rv <- vapply(split(x, x$report), function(r) mean(tapply(r$value, paste(r$item, r$source_row), mean)), numeric(1))
+      k <- length(rv); v <- mean(rv); v_chr <- dp_fmt(v); v_num <- suppressWarnings(as.numeric(dp_fmt(v)))
+      det <- if (np == 1L) sprintf("1 data point (%s)", roles)
+             else sprintf("%d data points in %d report%s%s; range %s to %s (%s)", np, k, if (k > 1) "s" else "",
+                          if (k > 1) paste0(" (", paste(sort(names(rv)), collapse = "; "), ")") else "",
+                          dp_fmt(min(x$value)), dp_fmt(max(x$value)), roles)
+    }
     der <- unique(x$derived[nzchar(x$derived)])
     if (length(der)) det <- paste0(det, "; derived: ", paste(der, collapse = "; "))
     items <- paste(sort(unique(x$item)), collapse = "; ")
     data.frame(Species = x$species[1], Dataset = x$dataset[1], Variable = x$trait[1],
-               Value = dp_fmt(v), Value_num = suppressWarnings(as.numeric(dp_fmt(v))),
-               Source = items, Items = items, Source_details = det,
+               Value = v_chr, Value_num = v_num, Source = items, Items = items, Source_details = det,
                Teams = paste(sort(unique(x$team)), collapse = "; "), N_sources = k,
                Variable_raw = x$trait[1], Unit = x$unit[1], Unit_raw = x$unit[1], stringsAsFactors = FALSE)
   })
-  out <- do.call(rbind, rows); rownames(out) <- NULL
+  out <- do.call(rbind, c(list(fast), rows)); rownames(out) <- NULL
   out$N_sources <- as.integer(out$N_sources)
   out[order(out$Species, out$Variable, method = "radix"), ]
 }

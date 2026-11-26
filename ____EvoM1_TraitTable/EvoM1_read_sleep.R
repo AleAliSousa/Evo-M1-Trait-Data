@@ -1,5 +1,6 @@
 # EvoM1: sleep & torpor -> sleep.xlsx for the trait table.
-# Reads the compiled merge (__merging_sleep/sleep_wide.csv), not single source TSVs, because the
+# Reads the one table (__compiled/compiled_long.csv.gz, dataset "Sleep & torpor", served from data
+# points since step 19; before that __merging_sleep/sleep_wide.csv), not single source TSVs, because the
 # traits come from four papers (Eagleman & Vaughn 2021 REM%, Herculano-Houzel 2015 daily sleep,
 # Lyamin et al. 2008 cetacean SWS, Ruf & Geiser 2015 torpor). Emits a per-cell *_Source column for
 # each trait (trait->source is 1:1 in this build). Correlatable side-by-side with the other trait
@@ -8,7 +9,10 @@ library(readxl); library(writexl)
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 folder_path <- "./____EvoM1_TraitTable/"
 
-d <- read.csv("./__merging_sleep/sleep_wide.csv", stringsAsFactors = FALSE, check.names = FALSE)
+tb <- read.csv(gzfile("./__compiled/compiled_long.csv.gz"), stringsAsFactors = FALSE, check.names = FALSE)
+tb <- tb[tb$Dataset == "Sleep & torpor" & !nzchar(ifelse(is.na(tb$Subspecies), "", tb$Subspecies)), c("Species", "Variable", "Value")]
+d <- reshape(tb, idvar = "Species", timevar = "Variable", direction = "wide")
+names(d) <- sub("^Value[.]", "", names(d))
 
 # trait -> primary-source label (shown as the app's per-cell Source)
 src <- c(

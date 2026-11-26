@@ -26,7 +26,11 @@ def main():
     contributions = read('__merging_volumes/volumes_source_contributions.csv')
     volume_counts = Counter((r['Source'], r['Variable']) for r in contributions)
     behavior_counts = Counter(r['Measure'] for r in read('__merging_behaviour/behaviour_long.csv'))
-    sleep_counts = Counter(r['Standardized_Term'] for r in read('__merging_sleep/sleep_long.csv'))
+    # sleep & torpor: data points of the one route since step 19 (__compiled/datapoints.csv.gz)
+    import gzip
+    with gzip.open(ROOT / '__compiled' / 'datapoints.csv.gz', 'rt', newline='', encoding='utf-8') as f:
+        sleep_counts = Counter(t for t, _ in {(r['trait'], r['species']) for r in csv.DictReader(f)
+                                              if r['dataset'] == 'Sleep & torpor' and r['status'] == 'served'})
     ids = [r['mapping_id'] for r in rows]
     assert len(ids) == len(set(ids)), 'duplicate mapping_id'
     report = []

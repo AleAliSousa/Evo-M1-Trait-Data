@@ -1,0 +1,14 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Row number in frozen printed table,,,,info,human,Sheridan_etal_2012_Table2,,Table 2
+structure_as_printed,Corpus callosum subdivision,,,,info,human,Sheridan_etal_2012_Table2,,Table 2
+group_as_printed,Study group compared with NIG,,,,info,human,Sheridan_etal_2012_Table2,EIG institutionalized; CAU care as usual; FCG foster care,Table 2
+reference_group,Regression reference group,,,,info,human,Sheridan_etal_2012_Table2,Never institutionalized,Table 2
+model,Printed regression model number,,,,info,human,Sheridan_etal_2012_Table2,,Table 2
+model_covariates,Covariates printed for model,,,,info,human,Sheridan_etal_2012_Table2,,Table 2 note
+beta_as_printed,Complete printed coefficient cell,,,,info,human,Sheridan_etal_2012_Table2,Includes dagger and parenthetical SE,Table 2
+beta,Regression coefficient,,source_reported,regression coefficient,primary,human,Sheridan_etal_2012_Table2,Unit not explicitly stated in table,Table 2
+SE,Printed standard error,,source_reported,standard error,primary,human,Sheridan_etal_2012_Table2,Not a cohort SEM,Table 2
+significant_at_0_05,Dagger significance marker,,,,info,human,Sheridan_etal_2012_Table2,,Table 2 note
+beta_unit,Unit declaration for coefficient,,,,note,human,Sheridan_etal_2012_Table2,Unstated,Table 2
+species_as_published,Source species label,,,,info,human,Sheridan_etal_2012_Table2,,Paper title and methods
+Species,Accepted species name,,,,info,human,Sheridan_etal_2012_Table2,,Paper title and methods

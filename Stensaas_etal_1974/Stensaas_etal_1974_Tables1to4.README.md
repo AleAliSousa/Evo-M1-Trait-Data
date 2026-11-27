@@ -1,0 +1,7 @@
+# Stensaas, Eddington & Dobelle 1974 — Tables 1–4
+
+Source: [The topography and variability of the primary visual cortex in man](https://doi.org/10.3171/jns.1974.40.6.0747), local scanned PDF `Stensaas-1974-The topography and variability o.pdf`, added by the owner. Printed pp. 750–753 (PDF pp. 4–7) were inspected in image form on 2026-11-26. The source reports 52 human hemispheres, but its tables give grouped summaries, not 52 individual case rows.
+
+The frozen `Stensaas_etal_1974_Tables1to4_snapshot.csv` has 21 printed table rows: eight in Table 1, three in Table 2, five in Table 3, and five in Table 4. Table 1 includes seven historical comparison studies, flagged `cited_comparison`; they must not be merged as independent Stensaas observations. Other rows are primary aggregate summaries. Source area units are retained; the item adds mm² equivalents where conversion is unambiguous. The printed Table 1 minimum is 15.23 cm², while Tables 2/4 print 1284 mm²; this conflict is intentionally preserved. Percentages differ by table and are likewise retained separately. Low and high area and percent values need not come from the same hemisphere.
+
+Run `Rscript --vanilla Stensaas_etal_1974/Stensaas_etal_1974_Tables1to4.R` from the repository root to regenerate the item CSV and public TSV. No figure was extracted, so no replot is applicable. Individual hemisphere values and human visual signoff remain unavailable.

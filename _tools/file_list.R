@@ -116,6 +116,9 @@ derive_formula_values <- function(data_row) {
     if (nzchar(sequence)) paste0("_", sequence) else ""
   )
   publication_name <- gsub("[\u0027\u2019]", "", publication_name)
+  if (grepl("10.3389/feart.2020.00273", citation, fixed = TRUE)) {
+    publication_name <- paste0(publication_name, "_brain_shape")
+  }
   doi <- if (nzchar(doi_alt)) doi_alt else text_after(citation, "https://doi.org/")
   doi <- gsub("/", "%2F", doi, fixed = TRUE)
   doi <- gsub(":", "%3A", doi, fixed = TRUE)
@@ -123,7 +126,13 @@ derive_formula_values <- function(data_row) {
   doi <- gsub(">", "%3E", doi, fixed = TRUE)
   item_clean <- gsub("\u00a0", "", item_number, fixed = TRUE)
   item_clean <- gsub(" ", "", item_clean, fixed = TRUE)
-  item_clean <- gsub("_", "", item_clean, fixed = TRUE)
+  # The separators in these named table/contrast IDs are meaningful and match
+  # the existing item readers and public files. Other historical item numbers
+  # retain the established underscore-stripping convention.
+  keep_item_underscores <- publication_name %in%
+    c("Schenker__2007", "Sun_etal_2020", "Walton_etal_2022") &&
+    grepl("_", item_number, fixed = TRUE)
+  if (!keep_item_underscores) item_clean <- gsub("_", "", item_clean, fixed = TRUE)
   # Order matches the real E:K column layout (verified 2026-09 by diffing actual
   # deployed formulas against their own header row): E=1st Author, F=other
   # author(s), G=year, H=Publication name, I=DOI (or Alt), J=Item name,
@@ -159,7 +168,31 @@ wb <- loadWorkbook(openxlsx_input)
 # Sheet1 naming formulas are a protected convention. Audit every explicit
 # (non-shared-continuation) formula against the canonical family, and fill only
 # genuinely missing formula cells on rows whose citation in column A is present.
-formula_family <- function(r) c(
+formula_family <- function(r) {
+  publication <- as_text(sheet1[r - 1L, 8])
+  item_number <- as_text(sheet1[r - 1L, 4])
+  is_melchionna_brain_shape <- grepl(
+    "10.3389/feart.2020.00273", as_text(sheet1[r - 1L, 1]), fixed = TRUE
+  )
+  keep_item_underscores <- publication %in%
+    c("Schenker__2007", "Sun_etal_2020", "Walton_etal_2022") &&
+    grepl("_", item_number, fixed = TRUE)
+  item_for_j <- if (keep_item_underscores) {
+    sprintf('SUBSTITUTE(D%d," ","")', r)
+  } else {
+    sprintf('SUBSTITUTE(SUBSTITUTE(D%d," ",""), "_", "")', r)
+  }
+  item_for_k <- if (keep_item_underscores) {
+    sprintf('SUBSTITUTE(SUBSTITUTE(D%d,CHAR(160),""), " ", "")', r)
+  } else {
+    sprintf('SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(D%d,CHAR(160),""), " ", ""), "_", "")', r)
+  }
+  publication_formula <- sprintf('SUBSTITUTE(SUBSTITUTE(E%d & IF(F%d<>"", "_" & SUBSTITUTE(F%d," ",""), "_") & IF(G%d<>"", "_" & G%d, "_") & IF(B%d<>"", "_" & B%d, ""),"\'",""),"\u2019","")',
+                                 r, r, r, r, r, r, r)
+  if (is_melchionna_brain_shape) {
+    publication_formula <- paste0('(', publication_formula, ') & "_brain_shape"')
+  }
+  c(
   sprintf('SUBSTITUTE(SUBSTITUTE(_xlfn.TEXTBEFORE(A%d,","), "-", ""), " ", "")', r),   # E: 1st Author
   # paste0(                                                                              # F: other author(s)
   #   "_xlfn.LET(\n",
@@ -194,8 +227,7 @@ formula_family <- function(r) c(
   ## as "non-canonical" and refused to run. Only the masters carry formula text --
   ## the continuation cells are <f t="shared" si="n"/> and audit as empty -- which is
   ## why the error named exactly those 21 rows.
-  sprintf('SUBSTITUTE(SUBSTITUTE(E%d & IF(F%d<>"", "_" & SUBSTITUTE(F%d," ",""), "_") & IF(G%d<>"", "_" & G%d, "_") & IF(B%d<>"", "_" & B%d, ""),"\'",""),"\u2019","")',
-          r, r, r, r, r, r, r),                                                        # H: Publication name
+  publication_formula,                                                                  # H: Publication name
   paste0(                                                                              # I: DOI (or Alt)
     "_xlfn.LET(\n",
     sprintf('_xlpm.doi,IF(C%d<>"",C%d,_xlfn.TEXTAFTER(A%d,"https://doi.org/")),\n', r, r, r),
@@ -203,11 +235,12 @@ formula_family <- function(r) c(
     '_xlpm.doi,\n"/","%2F"),\n":","%3A"),\n"<","%3C"),\n">","%3E")\n',
     ")"
   ),
-  sprintf('TRIM(_xlfn.TEXTJOIN("_",FALSE(),H%d,(SUBSTITUTE(SUBSTITUTE(D%d," ",""), "_", ""))))', r, r),  # J: Item name
-  sprintf('I%d & "_" & SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(D%d,CHAR(160),""), " ", ""), "_", "")', r, r),   # K: Item encoded
+  sprintf('TRIM(_xlfn.TEXTJOIN("_",FALSE(),H%d,(%s)))', r, item_for_j),  # J: Item name
+  sprintf('I%d & "_" & %s', r, item_for_k),   # K: Item encoded
   sprintf("IFERROR(INDEX('%s'!$A$1:$A$1000,MATCH(TRUE(),EXACT(K%d,IFERROR(_xlfn.TEXTBEFORE('%s'!$A$1:$A$1000,\".tsv\"),\"\")),0)),\"notfound\")",
           filelist_sheet, r, filelist_sheet)                                           # L: Public TSV match
-)
+  )
+}
 normalize_formula <- function(x) {
   x <- gsub("'AUTO_Public_TSV_FileList'!", "AUTO_Public_TSV_FileList!", x, fixed = TRUE)
   gsub("[[:space:]]+", "", x)
@@ -315,6 +348,53 @@ if (length(migrated_f)) {
     " historical column-F formula(s) to the current (ellipsis-aware, hyphen-stripping) family."
   )
 }
+
+# Preserve meaningful separators in the named Schenker tables and Sun/Walton
+# ENIGMA contrasts. Their item readers already use the names written in D.
+# Migrate only the known underscore-stripping J/K formulas; unrelated formula
+# differences still fail the audit below.
+migrated_item_names <- character()
+for (r in populated_rows) {
+  publication <- as_text(sheet1[r - 1L, 8])
+  item_number <- as_text(sheet1[r - 1L, 4])
+  if (!(publication %in% c("Schenker__2007", "Sun_etal_2020", "Walton_etal_2022")) ||
+      !grepl("_", item_number, fixed = TRUE)) next
+  old <- c(
+    sprintf('TRIM(_xlfn.TEXTJOIN("_",FALSE(),H%d,(SUBSTITUTE(SUBSTITUTE(D%d," ",""), "_", ""))))', r, r),
+    sprintf('I%d & "_" & SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(D%d,CHAR(160),""), " ", ""), "_", "")', r, r)
+  )
+  expected <- formula_family(r)[6:7]
+  for (j in seq_along(expected)) {
+    c <- j + 9L
+    hit <- which(sheet_data$rows == r & sheet_data$cols == c)
+    if (!length(hit) || is.na(sheet_data$f[hit[1]])) next
+    actual <- formula_text(sheet_data$f[hit[1]])
+    if (identical(normalize_formula(actual), normalize_formula(old[j]))) {
+      writeFormula(wb, sheet = "Sheet1", x = expected[j], startRow = r, startCol = c)
+      migrated_item_names <- c(migrated_item_names, sprintf("%s%d", int2col(c), r))
+    }
+  }
+  sheet_data <- wb$worksheets[[sheet1_index]]$sheet_data
+}
+if (length(migrated_item_names)) {
+  message("Preserved item separators in ", length(migrated_item_names), " J/K formula cells.")
+}
+# The second Melchionna 2020 paper has a distinct local `brain_shape` source
+# folder; retain that identity in H rather than colliding with the first paper.
+for (r in populated_rows) {
+  if (!grepl("10.3389/feart.2020.00273", as_text(sheet1[r - 1L, 1]), fixed = TRUE)) next
+  hit <- which(sheet_data$rows == r & sheet_data$cols == 8L)
+  if (!length(hit) || is.na(sheet_data$f[hit[1]])) next
+  expected <- formula_family(r)[4]
+  previous <- sub('^\\(', '', expected)
+  previous <- sub('\\) & "_brain_shape"$', '', previous)
+  actual <- formula_text(sheet_data$f[hit[1]])
+  if (identical(normalize_formula(actual), normalize_formula(previous))) {
+    writeFormula(wb, sheet = "Sheet1", x = expected, startRow = r, startCol = 8L)
+    sheet_data <- wb$worksheets[[sheet1_index]]$sheet_data
+    message("Distinguished Melchionna brain-shape publication in H", r, ".")
+  }
+}
 # Formula audit
 missing_formulas <- list()
 formula_mismatches <- character()
@@ -421,6 +501,17 @@ for (sheet_index in seq_along(wb$worksheets_rels)) {
     relationships <- relationships[!grepl("/vmlDrawing\"", relationships)]
   }
   wb$worksheets_rels[[sheet_index]] <- relationships
+}
+
+# openxlsx otherwise writes every worksheet dimension as A1, which makes
+# read-only spreadsheet readers see only the first row despite populated XML.
+for (sheet_index in seq_along(wb$worksheets)) {
+  cells <- wb$worksheets[[sheet_index]]$sheet_data
+  last_row <- if (length(cells$rows)) max(cells$rows, na.rm = TRUE) else 1L
+  last_col <- if (length(cells$cols)) max(cells$cols, na.rm = TRUE) else 1L
+  wb$worksheets[[sheet_index]]$dimension <- sprintf(
+    '<dimension ref="A1:%s%d"/>', int2col(last_col), last_row
+  )
 }
 
 saveWorkbook(wb, readme_xlsx, overwrite = TRUE)

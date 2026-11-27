@@ -148,6 +148,6 @@ Pre-run backup in `_prerun_backup_smaers2011_2026-08-12/`. Checks run against it
 ---
 
 Sources: `Smaers_etal_2010/Smaers_etal_2010_Table1.csv`;
-`Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable{1,2}.csv`;
+`Smaers_etal_2011_a/Smaers_etal_2011_SupplementaryTable{1,2}.csv`;
 `Smaers_etal_2017/Smaers_etal_2017_TableS1part1.csv`;
 `__merging_volumes/crosspub_Smaers2017_FINDINGS.md`; MacLeod (2000) Appendix I.

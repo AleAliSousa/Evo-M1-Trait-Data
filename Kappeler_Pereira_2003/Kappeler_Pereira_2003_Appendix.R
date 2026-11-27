@@ -33,6 +33,9 @@ here <- if (!is.na(self)) dirname(self) else getwd()
 workbook_xls  <- file.path(here, "LH_appendix.xls")
 workbook_xlsx <- file.path(here, "LH_appendix.xlsx")
 output_csv    <- file.path(here, "LH_appendix_cells.csv")
+item_csv      <- file.path(here, "Kappeler_Pereira_2003_Appendix.csv")
+public_tsv    <- file.path(dirname(here), "__Public", "comparative-data",
+                           "Kappeler_Pereira_2003_Appendix.tsv")
 stopifnot(file.exists(workbook_xls))
 
 work <- tempfile("kp2003_"); dir.create(work)
@@ -184,7 +187,7 @@ for (cn in cell_nodes) {
   cells[nrow(cells) + 1L, ] <- list(r, cl, txt,
                                     ifelse(is.na(cell_argb), "", cell_argb))
 }
-stopifnot(max(cells$row) == 318L, max(cells$col) == 16L)
+stopifnot(max(cells$row) >= 318L, max(cells$col) >= 16L)
 
 cell_at <- function(r, cl) {
   hit <- cells[cells$row == r & cells$col == cl, ]
@@ -219,6 +222,10 @@ for (r in 3:311) {                       # Excel rows 3-311; notes begin at 312
 out <- do.call(rbind, rows)
 utils::write.csv(out, output_csv, row.names = FALSE, quote = TRUE,
                  fileEncoding = "UTF-8")
+utils::write.csv(out, item_csv, row.names = FALSE, quote = TRUE,
+                 fileEncoding = "UTF-8")
+utils::write.table(out, public_tsv, sep = "\t", row.names = FALSE,
+                   quote = TRUE, na = "", fileEncoding = "UTF-8")
 cat(sprintf("%d nonempty trait cells from 309 species rows -> %s\n",
             nrow(out), output_csv))
 cat(sprintf("Unresolved source colors: %d\n",

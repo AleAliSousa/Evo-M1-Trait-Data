@@ -1,6 +1,15 @@
-Species,Source Ref,Age/sex,Fixation method,Fixation method note,Region sampled,Mean Soma depth (um),Mean Soma depth SD (um),Mean Brain mass (g),Mean Soma size (um2),Mean Soma size SD (um2),n Pyramidal neurons
-Elephant,a,20-30 year-old adult males (n = 2),Perfusion,,RH visual and frontal cortices,794,289,4990,516,123,40
-Humpback Whale,b,Juvenile male (n = 1),Immersion,AT<8h,"LH visual, frontal, anterior, and posterior temporal cortices",1173,327,3603,524,98,20
-Minke Whale,b,Young female (n = 1),Immersion,AT<48h,LH visual and motor cortices,1222,575,1810,370,84,24
-Bottlenose Dolphin,b,"Adult, unknown age/gender (n = 1)",Immersion,AT<2h,LH visual and anterior temporal cortices,792,289,1250,357,140,33
-Giraffe,,Sub-adult male (n = 3),Perfusion,,RH motor and visual cortices,988,419,539,324,96,143
+Table 4. Demographics of species in pyramidal neuron comparisons arranged by brain mass (high to low),,,,,
+,Elephant^a,Humpback Whale^b,Minke Whale^b,Bottlenose Dolphin^b,Giraffe
+Age/sex,20–30 year-old adult males (n = 2),Juvenile male (n = 1),Young female (n = 1),"Adult, unknown age/gender (n = 1)",Sub-adult male (n = 3)
+Fixation method^c,Perfusion,Immersion (AT < 8 h),Immersion (AT < 48 h),Immersion (AT < 2 h),Perfusion
+Region sampled^d,RH visual and frontal cortices,"LH visual, frontal, anterior, and posterior temporal cortices",LH visual and motor cortices,LH visual and anterior temporal cortices,RH motor and visual cortices
+Mean Soma depth (µm)^e,794 ± 289,"1,173 ± 327","1,222 ± 575",792 ± 289,988 ± 419
+Mean Brain mass (g),"4,990","3,603","1,810","1,250",539
+Mean Soma size (µm²)^f,516 ± 123,524 ± 98,370 ± 84,357 ± 140,324 ± 96
+n Pyramidal neurons,40,20,24,33,143
+a,From Jacobs et al. (2011),,,,
+b,From Butti et al. (2014b),,,,
+c,AT autolysis time,,,,
+d,"RH right hemisphere, LH left hemisphere",,,,
+e,The soma depth (mean ± SD) in the elephant is less because only superficial (as opposed to deeper) pyramidal neurons were included,,,,
+f,Soma size is represented by mean ± SD,,,,

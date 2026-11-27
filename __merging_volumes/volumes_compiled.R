@@ -104,8 +104,8 @@ papers <- tribble(
   "Bush_Allman_2004_b_TABLE1",            "Bush",               2004,
   "Bush_Allman_2004_a_Table2",            "Bush",               2004,  # ref 55 (frontal/neocortex GM+WM; 55 spp incl. Cheirogaleus/Mandrillus). Derives Neocortex_Vol.mm3 (GM+WM) in the reshape below. Same team 'Bush' as 2003/2004b (Tier-2, averaged).
   "Smaers_etal_2010_Table1",              "Zilles",             2010,  # per-specimen neopallium (= neocortex) and frontal volumes, Stephan/Zilles-collection specimens (catalogue numbers); mm3 as printed.
-  "Smaers_etal_2011_SupplementaryTable1", "Zilles",             2011,
-  "Smaers_etal_2011_SupplementaryTable2", "Zilles",             2011,  # raw anterior-frontal/prefrontal block; replaces the 2017 secondary republication
+  "Smaers_etal_2011_a_SupplementaryTable1", "Zilles",             2011,
+  "Smaers_etal_2011_a_SupplementaryTable2", "Zilles",             2011,  # raw anterior-frontal/prefrontal block; replaces the 2017 secondary republication
   "Ashwell__2020_SupplementaryTable",     "Ashwell",            2020,
   "Semendeferi_etal_1998_Table2",         "Zilles",             1998,
   "Semendeferi_etal_2001_Table2",         "Zilles",             2001,
@@ -242,8 +242,8 @@ filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
 enc_override <- c("Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Table2",
                   "Reep_etal_2007_Table1"       = "10.1159%2F000101491_Table1",
-                  "Smaers_etal_2011_SupplementaryTable1" = "10.1159%2F000323671_SupplementaryTable1",
-                  "Smaers_etal_2011_SupplementaryTable2" = "10.1159%2F000323671_SupplementaryTable2",
+                  "Smaers_etal_2011_a_SupplementaryTable1" = "10.1159%2F000323671_SupplementaryTable1",
+                  "Smaers_etal_2011_a_SupplementaryTable2" = "10.1159%2F000323671_SupplementaryTable2",
                   # Stephan 1970 split into 6 per-table items (ISBN-coded; The Primate Brain has no DOI).
                   "Stephan_etal_1970_TABLE1" = "ISBN%3A0390672505_TABLE1",
                   "Stephan_etal_1970_TABLE2" = "ISBN%3A0390672505_TABLE2",
@@ -440,7 +440,7 @@ paper_long <- function(row) {
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "deSousa_etal_2010_SupTable2")                       # species means of the same paper: cm3 -> mm3. V1/LGN are the authors' doubled 2x-left totals (laterality_known.csv, doubling = by_source) and are term-mapped to the both-sides terms; never double them again.
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
-  if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
+  if (it == "Smaers_etal_2011_a_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
     fix <- c("Cercopithecus ascianus"="Cercopithecus ascanius","Cercocebus albigena"="Lophocebus albigena",
              "Procolobus badius"="Piliocolobus badius","Lagothrix lagotricha"="Lagothrix lagothricha")
     df <- df %>% mutate(Species = ifelse(Species %in% names(fix), fix[Species], Species)) %>%
@@ -448,7 +448,7 @@ paper_long <- function(row) {
       summarise(frontal_white_total_cm3 = mean(num(frontal_white_total_cm3)*1000, na.rm = TRUE),
                 frontal_grey_total_cm3  = mean(num(frontal_grey_total_cm3) *1000, na.rm = TRUE), .groups = "drop")
   }
-  if (it == "Smaers_etal_2011_SupplementaryTable2") {            # per-individual anterior-frontal section-5 block: preserve L/R and printed totals; cm3->mm3
+  if (it == "Smaers_etal_2011_a_SupplementaryTable2") {            # per-individual anterior-frontal section-5 block: preserve L/R and printed totals; cm3->mm3
     meas <- c("sec5_white_left_cm3", "sec5_grey_left_cm3",
               "sec5_white_right_cm3", "sec5_grey_right_cm3",
               "sec5_white_total_cm3", "sec5_grey_total_cm3")

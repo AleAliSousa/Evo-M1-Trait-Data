@@ -19,7 +19,7 @@ tsvdir <- file.path(base, "__Public", "comparative-data")
 item_name <- c("Changizi__2001_Figure3",
                "Finlay_etal_2006_Table6.1",
                "Collins_etal_2010_DatasetS1",       # surface via collins_2010_surface_from_paper.csv
-               "Young_etal_2013_Table1",            # REGIONAL M1 surface area (M1_Surface_Area.mm2)
+               "Young_etal_2013_a_Table1",            # REGIONAL M1 surface area (M1_Surface_Area.mm2)
                "Turner_etal_2016_Table1",           # whole-cortex surface via turner_2016_surface.csv (case dedupe)
                "Collins_etal_2016_Table1",          # ADDED 2026-08-25: chimp cortex/V1/V2/M1 areas (bespoke block; M1 superseded by Young 2013 — same specimen KAAS-PAN-11_38)
                "Mota_HerculanoHouzel_2015_TableS1",# ADDED 2026-08-25: OWN columns only (AG total surface, MHH folding index, thickness; per ONE hemisphere). "_other" columns are secondary compilations — never merged.
@@ -95,14 +95,14 @@ source("relative_absolute_helpers.R")
 ## but its Reference column carries the new key.
 terms  <- readr::read_csv("standardized_term_cortical_areas.csv", show_col_types = FALSE)
 codes  <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-enc_override <- c("Young_etal_2013_Table1" = "10.3389%2Ffncir.2013.00030_Table1")
+enc_override <- c("Young_etal_2013_a_Table1" = "10.3389%2Ffncir.2013.00030_Table1")
 enc    <- function(nm) {
   # Fail loudly on an unresolved item name. This used to return NA, and
   # file.path(tsvdir, paste0(NA, ".tsv")) is "NA.tsv" -- a path that really existed
   # in __Public/comparative-data/ as a stale artefact of an earlier unresolved
   # build. So a lost registry row did not stop the merge; it fed it the WRONG
   # table. (2026-08-20: exactly this happened to the gyrification merge.)
-  registry_nm <- if (nm == "Young_etal_2013_Table1") "Young_etal_2013_a_Table1" else nm
+  registry_nm <- if (nm == "Young_etal_2013_a_Table1") "Young_etal_2013_a_Table1" else nm
   e <- codes$`Item encoded`[match(registry_nm, codes$`Item name`)]
   if ((length(e) != 1L || is.na(e) || !nzchar(e)) && nm %in% names(enc_override))
     e <- enc_override[[nm]]
@@ -122,7 +122,7 @@ long <- list()
 # generic count/surface sources read straight from their TSV (Changizi 2001, Finlay, Young M1,
 # Changizi & Shimojo 2005). The Species join column is resolved from each source's term map (the
 # Original_Term mapped to Standardized_Term == "Species"), since e.g. C&S 2005 prints it as species_sci.
-for (nm in c("Changizi__2001_Figure3", "Finlay_etal_2006_Table6.1", "Young_etal_2013_Table1",
+for (nm in c("Changizi__2001_Figure3", "Finlay_etal_2006_Table6.1", "Young_etal_2013_a_Table1",
              "Changizi_Shimojo_2005_Table1",
              "Mota_HerculanoHouzel_2015_TableS1",     # own columns only (term map maps nothing else)
              "Mota_etal_2019_SupplementaryTableS1")) { # AT/AE/T only (term map maps nothing else)
@@ -469,7 +469,7 @@ long$status[long$source == "Changizi__2001_Figure3" &
 ## (2497 vs 2700 mm2) differ only by dissection boundary — NOT independent, never average. Young 2013
 ## is the M1-dedicated methods paper, so Young keeps M1; the Collins 2016 M1 row is retained in
 ## _long as superseded. Collins 2016's whole-cortex/V1/V2 areas have no Young counterpart -> active.
-y_m1 <- long$Species[long$source == "Young_etal_2013_Table1" &
+y_m1 <- long$Species[long$source == "Young_etal_2013_a_Table1" &
                      long$Standardized_Term == "M1_Surface_Area.mm2"]
 long$status[long$source == "Collins_etal_2016_Table1" &
             long$Standardized_Term == "M1_Surface_Area.mm2" &

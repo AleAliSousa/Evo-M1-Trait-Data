@@ -52,16 +52,16 @@ HHF = os.path.join("Heffner_Heffner_1992_a", "reference_tables",
                    "Heffner_Heffner_1992_a_Table1_footnotes.csv")
 VK = os.path.join("Veilleux_Kirk_2014", "reference_tables",
                   "Veilleux_Kirk_2014_SupplementalTable1_definitions.csv")
-KO = os.path.join("Koay_etal_1998", "reference_tables",
-                  "Koay_etal_1998_Figure6_definitions.csv")
+KO = os.path.join("Koay_etal_1998_a", "reference_tables",
+                  "Koay_etal_1998_a_Figure6_definitions.csv")
 def _defs(folder, table):
     return os.path.join(folder, "reference_tables", f"{folder}_{table}_definitions.csv")
 
 HH92C   = _defs("Heffner_Heffner_1992_c", "TableI")
 HH82    = _defs("Heffner_Heffner_1982", "ResultsText")
 HH85    = _defs("Heffner_Heffner_1985", "ResultsText")
-HH10    = _defs("Heffner_Heffner_2010", "ResultsText")
-H01     = _defs("Heffner_etal_2001", "ResultsText")
+HH10    = _defs("Heffner_Heffner_2010_a", "ResultsText")
+H01     = _defs("Heffner_etal_2001_b", "ResultsText")
 H03     = _defs("Heffner_etal_2003", "ResultsText")
 H06     = _defs("Heffner_etal_2006", "ResultsText")
 H13     = _defs("Heffner_etal_2013", "ResultsText")
@@ -126,7 +126,7 @@ ASSIGN = {
         "visual acuity", "anatomical_ganglion_cell", A_GANGLION,
         "TRUE where the printed superscript 2 marks acuity calculated from peak cone density "
         "(haplorhines, no retinal summation) rather than ganglion cell density", VK, False),
-    ("Koay_etal_1998_Figure6", "high_freq_hearing_limit_60dB_kHz"): (
+    ("Koay_etal_1998_a_Figure6", "high_freq_hearing_limit_60dB_kHz"): (
         "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
         "High-frequency hearing limit: highest frequency audible at 60 dB SPL, kHz", KO, True),
     ("Haarlem_etal_2026_CFFdataset", "cff_hz"): (
@@ -236,7 +236,7 @@ ASSIGN.update({
         "functional interaural distance", "anatomical_head_geometry", IAD,
         "Functional interaural distance: maximum time for sound to travel around the head "
         "between auditory meatus", HH, False),
-    ("Koay_etal_1998_Figure6", "functional_interaural_distance_us"): (
+    ("Koay_etal_1998_a_Figure6", "functional_interaural_distance_us"): (
         "functional interaural distance", "anatomical_head_geometry", IAD,
         "Functional interaural distance: time for sound to travel from one auditory meatus "
         "to the other", KO, False),
@@ -277,16 +277,16 @@ ASSIGN.update({
         "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
         "Low-frequency hearing limit at 60 dB SPL as interpolated from Fig. 3 and stated in "
         "the Results text", HH85, True),
-    ("Heffner_Heffner_2010_ResultsText", "high_freq_limit_60dB_kHz"): (
+    ("Heffner_Heffner_2010_a_ResultsText", "high_freq_limit_60dB_kHz"): (
         "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
         "High-frequency edge of the hearing range at the standard 60-dB-SPL criterion", HH10, True),
-    ("Heffner_Heffner_2010_ResultsText", "low_freq_limit_60dB_Hz"): (
+    ("Heffner_Heffner_2010_a_ResultsText", "low_freq_limit_60dB_Hz"): (
         "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
         "Low-frequency edge of the hearing range at the standard 60-dB-SPL criterion", HH10, True),
-    ("Heffner_etal_2001_ResultsText", "hearing_range_high_khz"): (
+    ("Heffner_etal_2001_b_ResultsText", "hearing_range_high_khz"): (
         "high-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
         "Highest frequency at which the species' average threshold was <=60 dB SPL", H01, True),
-    ("Heffner_etal_2001_ResultsText", "hearing_range_low_khz"): (
+    ("Heffner_etal_2001_b_ResultsText", "hearing_range_low_khz"): (
         "low-frequency hearing limit", "behavioural_audiogram", "audiogram_behavioural",
         "Lowest frequency at which the species' average threshold was <=60 dB SPL", H01, True),
     ("Heffner_etal_2003_ResultsText", "hearing_range_high_60dBSPL_kHz"): (

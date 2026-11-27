@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_vector_index,1-based position in the deposited volumes vector,,,,info,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,This is not a specimen identity,DATA.rda volumes
+source_code,Taxon code on each deposited volume,,,,info,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,Code mapping comes from the authors' script,DATA.rda and source_script.R
+within_source_code_index,Order within the source-code block,,,,info,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,This is not a specimen identity,DATA.rda volumes
+species_as_published,Species label used by the authors' analysis script,,,,info,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,Preserved without taxonomic revision,source_script.R lines 118-128
+Species,Source-script species label used provisionally as the row species,,,,info,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,Not an accepted-name or specimen crosswalk,source_script.R lines 118-128
+ECV_value_as_deposited,Endocranial volume numeric value in the untouched RData vector,Endocranial cavity,ECV.source_unit,individual,primary,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,Unit not stated; do not convert to mm3 or merge until resolved,DATA.rda volumes
+ECV_unit,Unit declaration for the deposited vector,,,,note,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,Explicitly unresolved,Article and DATA.rda
+specimen_id,Specimen identifier,,,,info,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,Blank because the deposited vector has repeated species codes but no individual labels,DATA.rda volumes
+species_basis,Basis of species label,,,,info,19 source-code taxa,Melchionna_etal_2020_brain_shape_DATA,,Author script and DATA.rda

@@ -5,7 +5,7 @@ Jacobs, B., Harland, T., Kennedy, D., Schall, M., Wicinski, B., Butti, C., Hof, 
 giraffe (*Giraffa camelopardalis*). *Brain Structure and Function*, 220(5), 2851-2872.
 doi:10.1007/s00429-014-0830-9
 
-Source snapshot: `Jacobs_etal_2015_Table4_snapshot.csv` (hand-transcribed, verbatim copy of the printed
+Source snapshot: `Jacobs_etal_2015_Table4_snapshot.csv` (transcribed from printed
 Table 4, "Demographics of species in pyramidal neuron comparisons," p. 2868 of the article PDF).
 
 ## What we built
@@ -27,9 +27,10 @@ African elephant (from Jacobs et al. 2011), humpback whale, minke whale, and bot
 Butti et al. 2014b), arranged by mean brain mass (high to low, as printed).
 
 ## Layout note
-This item transposes the paper's printed layout (species as columns, demographic fields as rows) into
-one row per species, each carrying all reported demographic fields as columns — no values were
-otherwise re-derived or changed.
+The snapshot now keeps the paper's species-as-columns, demographic-fields-as-rows layout,
+including the lettered column and row footnote keys, printed thousands separators, and
+mean ± SD cells. `Jacobs_etal_2015_Table4.R` transposes and splits those cells into one
+analysis row per species. The new reader reproduces the previous analysis CSV cell for cell.
 
 ## Checks
 - 5 rows (one per species), 12 columns, matching the printed table's content and species order (by
@@ -37,6 +38,7 @@ otherwise re-derived or changed.
   autolysis time, region sampled) reproduced verbatim.
 
 ## Extraction / build record
-Transcribed directly from the article PDF's Table 4 (page 2868) and its own lettered footnotes by
-Microsoft Copilot (AI assistant) on 2026-09-25. The CSV, R script, public TSV, README, and definitions
-file were all built in this pass. No prior build existed for this item.
+Originally transcribed by Microsoft Copilot (AI assistant) on 2026-09-25. The snapshot
+was reoriented to match the printed table by Codex on 2026-11-27, checked against the
+PDF text layer and page render on p. 2868. Run `Rscript --vanilla Jacobs_etal_2015/Jacobs_etal_2015_Table4.R`
+from the repository root. Human visual signoff remains pending.

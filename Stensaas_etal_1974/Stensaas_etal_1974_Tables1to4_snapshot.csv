@@ -1,0 +1,22 @@
+table_number,source_pdf_page,source_print_page,source_order,entry_as_printed,source_study,source_role,area_unit_as_printed,average_area_as_printed,average_percent_as_printed,low_area_as_printed,low_percent_as_printed,high_area_as_printed,high_percent_as_printed,n_hemispheres_as_printed,source_note
+1,4,750,1,"Brodmann, 1918",Brodmann 1918,cited_comparison,cm2/hemisphere,34.5,,29.5,,44.0,,7,
+1,4,750,2,"Economo, 1925*",Economo 1925,cited_comparison,cm2/hemisphere,24.25,,,,,,1,"* shrinkage coefficient 1.2 recommended"
+1,4,750,3,"Filimonoff, 1932*",Filimonoff 1932,cited_comparison,cm2/hemisphere,26.1,,22.0,,28.7,,13,"* shrinkage coefficient 1.2 recommended"
+1,4,750,4,"Polyak, 1957 (based on G. E. Smith and LeGros Clark)",Polyak 1957,cited_comparison,cm2/hemisphere,30.0,,27.0,,40.0,,?,"† average may represent one or two hemispheres, probably one"
+1,4,750,5,"Popoff, 1927",Popoff 1927,cited_comparison,cm2/hemisphere,32.42,,20.43,,45.03,,4,
+1,4,750,6,"Popoff‡",Popoff cited by Filimonoff,cited_comparison,cm2/hemisphere,,,16.01,,20.42,,2,"‡ cited by Filimonoff; year not known"
+1,4,750,7,"Putnam, 1926*",Putnam 1926,cited_comparison,cm2/hemisphere,20.7,,18.38,,24.57,,4,"* shrinkage coefficient 1.2 recommended"
+1,4,750,8,"Stensaas, et al., 1974",Stensaas et al. 1974,primary_study_summary,cm2/hemisphere,21.34,,15.23,,37.02,,52,"Table 1 minimum differs from Tables 2 and 4 minimum 1284 mm2"
+2,4,750,9,striate cortex exposed on all four surfaces,Stensaas et al. 1974,primary_study_summary,mm2,689,33,359,20,1308,44,52,"Low/high area and percent need not come from the same hemisphere"
+2,4,750,10,striate cortex buried in fissures,Stensaas et al. 1974,primary_study_summary,mm2,1445,67,903,49,2394,77,52,"Low/high area and percent need not come from the same hemisphere"
+2,4,750,11,total striate cortex,Stensaas et al. 1974,primary_study_summary,mm2,2134,100,1284,,3702,,52,"Table 2 minimum differs from Table 1 minimum 15.23 cm2"
+3,5,751,12,mesial surface one hemisphere,Stensaas et al. 1974,primary_study_summary,mm2,460,21,176,9,867,36,52,"Low/high area and percent need not come from the same hemisphere"
+3,5,751,13,tentorial surface one hemisphere,Stensaas et al. 1974,primary_study_summary,mm2,104,4,0,0,508,20,52,"Low/high area and percent need not come from the same hemisphere"
+3,5,751,14,tip of occipital pole one hemisphere slice 1,Stensaas et al. 1974,primary_study_summary,mm2,68,3,0,0,260,12,52,"Low/high area and percent need not come from the same hemisphere"
+3,5,751,15,lateral surface of one hemisphere,Stensaas et al. 1974,primary_study_summary,mm2,55,3,0,0,283,10,52,"Low/high area and percent need not come from the same hemisphere"
+3,5,751,16,total exposed cortex,Stensaas et al. 1974,primary_study_summary,mm2,689,31,359,20,1308,44,52,"Table 3 total average percent 31 versus Table 2 33 and Table 4 32; preserve source"
+4,7,753,17,in primary calcarine fissure,Stensaas et al. 1974,primary_study_summary,mm2,837,39,339,13,1476,57,52,"Low/high area and percent need not come from the same hemisphere"
+4,7,753,18,in secondary branches of calcarine fissure,Stensaas et al. 1974,primary_study_summary,mm2,344,16,0,0,780,34,52,"Low/high area and percent need not come from the same hemisphere"
+4,7,753,19,hidden in other sulci,Stensaas et al. 1974,primary_study_summary,mm2,260,11,13,0,834,41,52,"Low/high area and percent need not come from the same hemisphere"
+4,7,753,20,exposed striate cortex Table 3,Stensaas et al. 1974,primary_study_summary,mm2,689,32,359,20,1308,44,52,"Table 4 total average percent 32 versus Table 2 33 and Table 3 31; preserve source"
+4,7,753,21,total striate cortex,Stensaas et al. 1974,primary_study_summary,mm2,2134,100,1284,,3702,,52,"Table 4 minimum differs from Table 1 minimum 15.23 cm2"

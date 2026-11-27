@@ -21,13 +21,13 @@
 ## filename" field. Nothing was re-saved or converted. This script
 ## reads ONLY that file.
 ##
-## Why this item is in Evo-M1: it is the openly released, expanded
-## descendant of the 493-species brain/body database of Gonzalez-Lagos,
-## Sol & Reader (2010) -- the dataset behind the encephalization index
-## Ei used by Castillo-Morales et al. (2016). The 2010 file itself was
+## Why this item is in Evo-M1: it is an openly released 596-species
+## brain/body compilation. Its authors differ from Gonzalez-Lagos,
+## Sol & Reader (2010), and no cell-level lineage to that unavailable
+## 493-species database has been verified. The 2010 file itself was
 ## never deposited in any repository (checked 2026-11-18: no Dryad,
 ## figshare or DataCite record; the journal page carries no
-## supporting-information file); see the GonzalezLagos_etal_2010 folder.
+## supporting-information file); see the GonzálezLagos_etal_2010 folder.
 ##
 ## Data role: SECONDARY compilation (values are cross-source means
 ## compiled from the references named per row).

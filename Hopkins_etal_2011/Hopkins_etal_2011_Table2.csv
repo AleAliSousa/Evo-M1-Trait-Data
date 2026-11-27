@@ -1,0 +1,5 @@
+"source_row","species_as_printed","species_in_methods","Species","adult_n_left","adult_n_ambiguous","adult_n_right","subadult_n_left","subadult_n_ambiguous","subadult_n_right","adult_right_left_ratio_as_printed","n_adults_classified","n_subadults_classified","adult_right_left_ratio_from_counts","ratio_agrees_with_counts"
+1,"Orangutan","Pongo pygmaeus","Pongo pygmaeus",16,6,7,11,5,2,0.38,29,18,0.4375,FALSE
+2,"Gorilla","Gorilla gorilla","Gorilla gorilla",7,10,23,10,8,18,3.28,40,36,3.28571428571429,TRUE
+3,"Chimpanzees","Pan troglodytes","Pan troglodytes",95,66,163,60,49,103,1.72,324,212,1.71578947368421,TRUE
+4,"Bonobo","Pan paniscus","Pan paniscus",20,4,28,30,13,23,1.4,52,66,1.4,TRUE

@@ -1,14 +1,17 @@
-# Current build status — 2026-10-25
+# Current build status — 2026-11-26
 
-3 executable item(s) registered in `__ReadMe.xlsx`.
+4 executable item(s) registered in `__ReadMe.xlsx`.
 
 - [Norlén_etal_2019_Table1](Norlén_etal_2019_Table1.README.md): `Norlén_etal_2019_Table1_snapshot.csv` → reader → CSV → public TSV.
 - [Norlén_etal_2019_Figure3](Norlén_etal_2019_Figure3.README.md): `Norlén_etal_2019_Figure3_snapshot.csv` → reader → CSV → public TSV.
 - [Norlén_etal_2019_Figure2](Norlén_etal_2019_Figure2.README.md): `Norlén_etal_2019_Figure2_snapshot.csv` → reader → CSV → public TSV.
+- [Norlén_etal_2019_Figure1](Norlén_etal_2019_Figure1.README.md): 92 plotted points across five sugar panels and three symbol series → reader → CSV → public TSV; separate replot script/PNG inspected against the source. Approximate plotted values; human visual signoff pending.
 
 - The five exact threshold endpoints repeat this study’s Table1. No duplicate dataset of the same endpoints.
 
 See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+
+The earlier source-selection notes below predate these four builds and are retained as history.
 
 ---
 

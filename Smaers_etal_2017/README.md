@@ -26,7 +26,7 @@ Brodmann 1909 [S3]. Two flags:
 1. **Volumes labelled mm³ are actually cm³** (they reproduce Smaers 2011 exactly).
 2. **Prefrontal + frontal motor is NOT the whole frontal lobe** — they are the anterior-5 and
    posterior-5 of 20 frontal sections (the two ends); their sum ≈ 37 % of total frontal-lobe
-   volume. For whole frontal lobe use `../Smaers_etal_2011/` Suppl. Table 1.
+   volume. For whole frontal lobe use `../Smaers_etal_2011_a/` Suppl. Table 1.
    Full analysis: `primary_source_checks/frontal_lobe_source_and_partition.md`.
 
 ## Registry note (`../__ReadMe.xlsx`)

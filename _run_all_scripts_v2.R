@@ -93,7 +93,7 @@ SKIP_PATTERNS <- c(
     "on-demand GitHub download; source snapshots are already present locally",
   "^ManyPrimates__2022/build_manyprimates_items\\.R$" =
     "bulk rebuild includes items awaiting owner registry paste; run selected items deliberately",
-  "^Hardus_etal_2009/Hardus_etal_2009_Table4\\.[1-4]\\.R$" =
+  "^Hardus_etal_2008/Hardus_etal_2008_Table4\\.[1-4]\\.R$" =
     "2009 chapter items are not registered; 2008 chapter rows must not be reused without provenance review",
   "^__merging_volumes/volumes_compiled_select_DeCasien\\.R$" =
     "curation gate requires review of source and species-region cells before publishing",

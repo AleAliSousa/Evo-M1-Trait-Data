@@ -24,11 +24,12 @@ and caveats. Registry row in `__ReadMe.xlsx` added 2026-11-18.
 
 Quality Notes:
 
-1. This database is the expanded open descendant of the González-Lagos
-   et al. (2010) 493-species brain/body database — the one behind the
-   Ei values in Castillo-Morales et al. (2016). The 2010 file itself
-   was never deposited anywhere (see the GonzalezLagos_etal_2010
-   folder); this 2016 release is the closest citable form of it.
+1. This is a separately authored 596-species compilation, **not a verified
+   descendant** of González-Lagos et al. (2010)'s unavailable 493-species
+   brain/body table. The similar surnames do not identify the same authors.
+   The 2016 article cites the 2010 work as background, while its methods
+   describe compilation from PanTHERIA and further literature. See the
+   BrainData item README for the source-lineage caveat.
 
 2. Folder added 2026-11-18 by Muse (Buddy), Michael Proulx's AI
    assistant, at Michael Proulx's request; rebuilt to the snapshot-first

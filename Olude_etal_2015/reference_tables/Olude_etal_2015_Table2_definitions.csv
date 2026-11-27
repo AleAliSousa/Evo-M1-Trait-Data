@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,,,,info,Cricetomys gambianus,Olude_etal_2015_Table2,,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+species_as_published,species as published,,,,info,Cricetomys gambianus,Olude_etal_2015_Table2,,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+Species,Species,,,,info,Cricetomys gambianus,Olude_etal_2015_Table2,,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+brain_region_as_printed,brain region as printed,,,,info,Cricetomys gambianus,Olude_etal_2015_Table2,,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+significant_juvenile_adult_at_p_0_01,Asterisk printed on region row; juvenile/adult difference p <= 0.01,,,,info,Cricetomys gambianus,Olude_etal_2015_Table2,Seven printed asterisks,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+juvenile_mean_astrocyte_count,Published mean astrocyte count for juvenile,,astrocyte.count.source_basis,group mean,primary,Cricetomys gambianus,Olude_etal_2015_Table2,Right-hemisphere sagittal sections; not a volume density,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+juvenile_SEM,Standard error of the mean for juvenile count,,astrocyte.count.source_basis,SEM,primary,Cricetomys gambianus,Olude_etal_2015_Table2,,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+adult_mean_astrocyte_count,Published mean astrocyte count for adult,,astrocyte.count.source_basis,group mean,primary,Cricetomys gambianus,Olude_etal_2015_Table2,Right-hemisphere sagittal sections; not a volume density,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+adult_SEM,Standard error of the mean for adult count,,astrocyte.count.source_basis,SEM,primary,Cricetomys gambianus,Olude_etal_2015_Table2,,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+n_juvenile_animals,Animal count in age group from abstract,,,,info,Cricetomys gambianus,Olude_etal_2015_Table2,Five male animals in each group,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+n_adult_animals,Animal count in age group from abstract,,,,info,Cricetomys gambianus,Olude_etal_2015_Table2,Five male animals in each group,"Table 2, PDF p. 7; Methods and abstract for n/SEM"
+count_basis,Source measurement basis,,,,info,Cricetomys gambianus,Olude_etal_2015_Table2,Total right-hemisphere astrocyte count stated in Methods; not cells/mm3,"Table 2, PDF p. 7; Methods and abstract for n/SEM"

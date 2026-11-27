@@ -31,7 +31,7 @@
 ## (ref_key = the printed bracketed number). Ei derives from the
 ## 493-species brain/body dataset of Gonzalez-Lagos et al. 2010 (ref. [83]),
 ## provided by its authors and never deposited; see the
-## GonzalezLagos_etal_2010 folder.
+## GonzálezLagos_etal_2010 folder.
 ##
 ## Table check (build HOWTO section 7a): the printed Nr is recomputed from
 ## the printed volumes for all 28 species and left in `table_checks`.

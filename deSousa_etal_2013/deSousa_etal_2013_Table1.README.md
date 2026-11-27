@@ -6,12 +6,22 @@ de Sousa, A. A., et al. (2013). Lamination of the lateral geniculate nucleus of 
 **lateral geniculate nucleus (LGN) lamination volumes.** Volumes in mm³ (body weight g, brain weight mg). Part of the **Stephan/Düsseldorf histological-volume collection**.
 
 ## Pipeline
-raw → snapshot → R → usable csv/tsv. Files: `deSousa_etal_2013_Table1_snapshot.xlsx` (sheet `Table1`), `deSousa_etal_2013_Table1.R` → `deSousa_etal_2013_Table1.csv` (+ TSV), `reference_tables/deSousa_etal_2013_Table1_definitions.csv`, `comparison/deSousa_2013.csv` (curated source, audited).
+source PDF → `deSousa_etal_2013_Table1_snapshot.xlsx` (sheet `Table1`) →
+`deSousa_etal_2013_Table1.R` → `deSousa_etal_2013_Table1.csv` (+ TSV).
+The item also reads `reference_tables/deSousa_etal_2013_Table1_precision_lookup.csv`
+for established values carried at finer precision than this table prints.
 
 Structures: Corpus geniculatum laterale.
 
 ## Preparation → `deSousa_etal_2013_Table1.csv`
-One row per species. Values are taken from the curated comparison CSV `deSousa_2013.csv` (the audited journal data) and laid out journal-style in the snapshot; the reformat cleans names and types values (already mm³). Verified against the comparison CSV: **0 value mismatches**.
+The snapshot now follows the eight printed columns and 20 species rows in their
+source order, with the caption, `NA` cells, residuals, and footnote. The R reader
+filters the species without an LGN value, converts cm³ to mm³ and g to mg, joins
+the separate precision lookup by exact species label, checks that each lookup
+value agrees within the table's rounding, then sorts the analysis rows. This
+rebuild reproduces the previous analysis CSV cell for cell. The lookup preserves
+legacy curated values; its finer precision has not been independently verified
+against another publication in this pass.
 
 ## Laterality — the published LGN volumes are 2 × the LEFT side
 
@@ -44,4 +54,9 @@ vestibular), which is flagged `estimated_bilateral_from_unilateral`. Same arithm
 author. See README__merging.md "Hemispheres".
 
 ## Note
-Snapshot built from the curated `deSousa_2013.csv`; detailed visual fidelity to the printed PDF table layout is a light follow-up (values are the audited source). Used in `__merging_volumes` (Tier 2 (averaged)) — this is the one author-doubled column that is live in the merge, Tier-2 averaged with the Stephan-collection LGN.
+Snapshot corrected against the printed Table 1 text and page render on PDF p. 5
+by Codex on 2026-11-27.
+The redundant normalized CSV snapshot was removed. Run
+`Rscript --vanilla deSousa_etal_2013/deSousa_etal_2013_Table1.R` from the
+repository root. Human visual signoff remains pending. This item is used in
+`__merging_volumes` (Tier 2, averaged with the Stephan-collection LGN).

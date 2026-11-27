@@ -76,6 +76,8 @@ Re-check disk state before working: other sessions may be adding papers.
 | Bartlett__2003_Figure5 | Pilot replot complete | `Bartlett__2003/Bartlett__2003_Figure5_replot.R`; 12 monthly stacks, Groom below Play, February–January. No new shape discrepancy. |
 | Barks_etal_2014_Fig4A | Pilot replot complete; source review open | `Barks_etal_2014/Barks_etal_2014_Fig4A_replot.R`; 52 bars, all subjects, raw cm³ only. Source +1 SD bars not extracted. Small frontal-GM species contrasts appear reversed; independently re-digitise the four frontal-GM bars and verify species/hemisphere assignments (see paper README). |
 | Chang_etal_2015_Figure2 | Excluded from numeric shape pilot | README and CSV contain seven categorical pass/fail outcomes constructed from prose; bar heights were not extracted. Do not invent numeric heights to mimic the source. Any future numeric figure extraction is separate work. |
+| Koay_etal_1998_a_Figure6 | Complete replot | `Koay_etal_1998_a/Koay_etal_1998_a_Figure6_replot.R`; 67 numeric points on log axes, source shape checked; two nonnumeric rows omitted, published fit omitted. Human signoff pending. |
+| Koay_etal_1998_a_Figure7 | Complete replot | `Koay_etal_1998_a/Koay_etal_1998_a_Figure7_replot.R`; 58 points on log axes, source shape checked; published fits and shading omitted. Human signoff pending. |
 | Other past figures | Open | Complete inventory against registry and READMEs, then add and inspect replots item by item. |
 
 ## Pilot outcome (2026-11-20)

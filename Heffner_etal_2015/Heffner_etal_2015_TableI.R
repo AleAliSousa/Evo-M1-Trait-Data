@@ -57,10 +57,12 @@ final.dataframe <- tibble(
 )
 
 ## 4. WRITE CSV + PUBLIC TSV ------------------------------------------
+stopifnot(!is.na(tsv_dir), dir.exists(tsv_dir))
+filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+hits <- which(!is.na(filecodes$`Item name`) & filecodes$`Item name` == item_name)
+stopifnot(length(hits) == 1L)
+item_encoded <- filecodes$`Item encoded`[hits]
+stopifnot(!is.na(item_encoded), nzchar(item_encoded), !grepl("_$", item_encoded))
 write.csv(final.dataframe, final_csv, row.names = FALSE, na = "")
-if (!is.na(tsv_dir) && dir.exists(tsv_dir)) {
-  filecodes    <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  item_encoded <- filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)]
-  write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
-              sep = "\t", row.names = FALSE, na = "")
-} else warning("__Public not mounted; TSV not written -- copy later")
+write.table(final.dataframe, file.path(tsv_dir, paste0(item_encoded, ".tsv")),
+            sep = "\t", row.names = FALSE, na = "")

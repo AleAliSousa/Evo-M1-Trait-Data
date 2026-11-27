@@ -18,7 +18,7 @@ motor}. (A second block, Brodmann 1909 cortical **surface area**, is a separate/
 ## IMPORTANT provenance + caveats
 - **Not new data.** The supplement states the prefrontal/frontal-motor data were "taken from Smaers et
   al. [S1, S2] and Brodmann [S3]" -> the RAW source is **Smaers 2010 (PLoS One) [S1]** and
-  **Smaers 2011 (BBE) [S2]** (see Smaers_etal_2011/). Treat 2017 as a derived compilation.
+  **Smaers 2011 (BBE) [S2]** (see Smaers_etal_2011_a/). Treat 2017 as a derived compilation.
 - **Units:** the supplement labels volumes mm3, but the values scale like cm3 (consistent with the
   2011 raw data). Verify units before merging.
 - Smaers note that this proxy underestimates prefrontal and overestimates frontal-motor in great

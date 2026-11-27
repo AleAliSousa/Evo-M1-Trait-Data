@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,,,,info,hylobatids,Morino_etal_2017_Table3,,"Table 3, printed p. 406; PDF p. 4"
+data_subset_as_printed,Printed posture/species/finger subset,,,,info,hylobatids,Morino_etal_2017_Table3,Subsets overlap; do not pool row counts,"Table 3, printed p. 406; PDF p. 4"
+species_as_published,Source cohort taxon description,,,,info,hylobatids,Morino_etal_2017_Table3,Mixed rows cannot be assigned to one species,"Table 3, printed p. 406; PDF p. 4"
+Species,Species when subset is only siamangs,,,,info,hylobatids,Morino_etal_2017_Table3,Blank for mixed hylobatid rows,"Table 3, printed p. 406; PDF p. 4"
+n_left_handed,Number of subjects in handedness classification,,individual.count,count,primary,hylobatids,Morino_etal_2017_Table3,Overlapping subsets; wild siamangs row is secondary,"Table 3, printed p. 406; PDF p. 4"
+n_right_handed,Number of subjects in handedness classification,,individual.count,count,primary,hylobatids,Morino_etal_2017_Table3,Overlapping subsets; wild siamangs row is secondary,"Table 3, printed p. 406; PDF p. 4"
+n_ambiguous,Number of subjects in handedness classification,,individual.count,count,primary,hylobatids,Morino_etal_2017_Table3,Overlapping subsets; wild siamangs row is secondary,"Table 3, printed p. 406; PDF p. 4"
+n_classified,Sum of printed L/R/A classifications,,individual.count,count,derived,hylobatids,Morino_etal_2017_Table3,Row total only; not pooled across subsets,"Table 3, printed p. 406; PDF p. 4"
+mean_frequency_handedness_index,Published mean frequency handedness index,,frequency.handedness.index,group mean,primary,hylobatids,Morino_etal_2017_Table3,−1 left; +1 right; wild siamangs row secondary,"Table 3, printed p. 406; PDF p. 4"
+SE,Published standard error of the mean HI-Freq,,frequency.handedness.index,SE,primary,hylobatids,Morino_etal_2017_Table3,Wild siamangs row secondary,"Table 3, printed p. 406; PDF p. 4"
+source_role,Primary or secondary row provenance,,,,info,hylobatids,Morino_etal_2017_Table3,Wild siamang row cited to Morino 2011 in footnote a,"Table 3, printed p. 406; PDF p. 4"

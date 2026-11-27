@@ -40,11 +40,15 @@ with the literature sources for each row named in `References`.
   compiled from the per-row literature sources (averaging multiple
   estimates where available). The file does not flag which brain masses
   derive from endocranial volumes.
-- **Relation to González-Lagos et al. (2010):** same research group,
-  expanded coverage (596 vs 493 species). The 2010 dataset — the direct
-  source of Castillo-Morales et al. 2016's Ei — was never deposited in
-  a repository; this release is its closest openly citable descendant.
-  Ei on the 2010 definition (ln[brain / body^0.64]) can be recomputed
-  from this file's two mass columns, but the result is an Evo-M1-side
-  derivation, not a value published in either paper.
+- **Relation to González-Lagos et al. (2010):** this is a separately authored
+  596-species compilation by Alejandro Gonzalez-Voyer, Manuela
+  González-Suárez, Carles Vilà and Eloy Revilla. None of the three 2010
+  authors (César González-Lagos, Daniel Sol, Simon Reader) authored this
+  release. The 2016 article cites the 2010 paper as background, but its
+  methods say the trait values were compiled from PanTHERIA and further
+  literature; its deposited reference key does not establish that the
+  2010 unpublished 493-species table was reused. It is useful for a
+  species/value overlap screen, **not a verified descendant or replacement**.
+  An Ei-like quantity can be calculated from its two mass columns, but
+  that would be a new derivation, not a recovered 2010 value.
 - Domestic forms are largely absent (e.g. no *Vicugna pacos* row).

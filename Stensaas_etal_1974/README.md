@@ -4,4 +4,4 @@ Stensaas, S. S., Eddington, D. K., & Dobelle, W. H. (1974). The topography and v
 
 Van Essen & Drury (1997), Results section “Estimating the extent of area V1,” cite this paper for a 15–37 cm² range for V1 in one human hemisphere. No workbook-derived midpoint is retained as a primary observation.
 
-No PDF was found in the local EndNote PDF directory or the existing repository. Obtain the source and audit its reported cases before creating a primary dataset. The cited range is recorded as secondary provenance in `VanEssen_Drury_1997_CitedV1Ranges`.
+The owner added the scanned source PDF `Stensaas-1974-The topography and variability o.pdf` on 2026-11-26. Printed Tables 1–4 are built as [`Stensaas_etal_1974_Tables1to4.csv`](Stensaas_etal_1974_Tables1to4.csv). See the [item README](Stensaas_etal_1974_Tables1to4.README.md) for source rows and the conflicting printed minima. The 52 individual hemisphere records are not published in those tables. The earlier Van Essen & Drury cited range remains secondary provenance, not a substitute for these source tables.

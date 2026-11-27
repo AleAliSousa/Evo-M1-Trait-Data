@@ -15,7 +15,7 @@ This folder traces every value to its **primary** source and verifies it.
 
 ## Primary-source attribution (from the Smaers 2017 supplement)
 - Prefrontal & frontal-motor (gray+white) <- Smaers 2010 PLoS One [S1] + Smaers 2011 BBE [S2]
-  (raw individual data: `../../Smaers_etal_2011/`).
+  (raw individual data: `../../Smaers_etal_2011_a/`).
 - Primary visual (gray+white) <- **de Sousa et al. 2010 [S6]** (your striate/extrastriate paper).
 - Other cortical association <- de Sousa 2010 extrastriate / derived — **VERIFY** in Table S1 footnote.
 - Brodmann surface-area block <- Brodmann 1909 [S3] (separate sub-table).

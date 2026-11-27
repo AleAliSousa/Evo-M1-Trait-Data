@@ -1,10 +1,8 @@
 # Brodmann 1913 (Verhandlungen) — Table 1 (total cortical surface & brain weight, mammals)
 
-Brodmann K (1913). *Neue Ergebnisse über die vergleichende histologische Lokalisation der
-Grosshirnrinde…* Verhandlungen der Anatomischen Gesellschaft (Ergänzungsheft zum Anatomischen
-Anzeiger 41), 157–216. (No DOI; catalogued under alt id `OCLC:8777719`.)
+Brodmann K (1913). *Neue Forschungsergebnisse der Großhirnrindenanatomie mit besonderer Berücksichtigung anthropologischer Fragen.* Verhandlungen der Gesellschaft Deutscher Naturforscher und Ärzte, 85(1), 200–240. The held `Brodmann_1913_Verhandlungen.pdf` title page and Table 1 on p.206 identify this publication. The earlier registry citation named Brodmann's distinct *Neue Ergebnisse über die vergleichende histologische Lokalisation…* paper; that citation was wrong for this local source and was corrected on 2026-11-26. No DOI is assigned; the public file now uses the source-specific alternate ID `Verhandlungen:85:200-240`.
 
-Registry (`__ReadMe.xlsx`): Item name **`Brodmann__1913_Table1`**, encoded `OCLC%3A8777719_Table1`.
+Registry (`__ReadMe.xlsx`): Item name **`Brodmann__1913_Table1`**, encoded `Verhandlungen%3A85%3A200-240_Table1`.
 
 ## Why this was built (relation to Smaers 2017)
 Smaers et al. 2017 used Brodmann only for a **4-region cortical *surface-area* subset across 10
@@ -39,7 +37,7 @@ determinable (e.g. *Cercopithecus* sp., *Phoca* sp., *Elephas* sp.). A `_keys` h
 ## Source → Snapshot → Data readable  (scanned PDF → snapshot required)
 `Brodmann_1913_Verhandlungen.pdf` p.206 → **`Brodmann__1913_Table1_snapshot.xlsx`** (faithful, German
 names, qmm values) → `Brodmann__1913_Table1.R` (to be run in R) → **`Brodmann__1913_Table1.csv`** (use
-this) + the public TSV `__Public/comparative-data/OCLC%3A8777719_Table1.tsv`. Columns:
+this) + the public TSV `__Public/comparative-data/Verhandlungen%3A85%3A200-240_Table1.tsv`. Columns:
 `reference_tables/…_definitions.csv`.
 
 ## Remaining Brodmann tables (not yet built)

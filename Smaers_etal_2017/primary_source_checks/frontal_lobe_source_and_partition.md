@@ -20,7 +20,7 @@ So Smaers 2017 did **not** newly measure these; it compiled them from:
 - **[S1] Smaers et al. 2010**, *PLoS ONE* — "Frontal white matter volume is associated with brain
   enlargement…" (frontal delineation / 20-section method).
 - **[S2] Smaers et al. 2011**, *Brain Behav. Evol.* 77:67–78 — "Primate Prefrontal Cortex
-  Evolution…" (the volumetric data; raw tables held locally in `../../Smaers_etal_2011/`).
+  Evolution…" (the volumetric data; raw tables held locally in `../../Smaers_etal_2011_a/`).
 - **[S3] Brodmann 1909** — used only for the separate **surface-area** sub-table of Table S1, not
   for the volumes.
 
@@ -83,5 +83,5 @@ prefrontal + motor proxy.
 ## Files
 - `frontal_lobe_partition_check.csv` — per-species: prefrontal & frontal-motor (2017), their sum,
   the matched Smaers-2011 anterior section-5 and total frontal lobe, and sum-as-%-of-total.
-- Source tables: `../../Smaers_etal_2011/Smaers_etal_2011_SupplementaryTable1_snapshot.csv` (total
+- Source tables: `../../Smaers_etal_2011_a/Smaers_etal_2011_SupplementaryTable1_snapshot.csv` (total
   frontal), `..._SupplementaryTable2_snapshot.csv` (anterior section-5 = prefrontal).

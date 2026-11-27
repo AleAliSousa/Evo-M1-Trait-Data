@@ -37,7 +37,7 @@ SRC = {
                                    "Veilleux_Kirk_2014_SupplementalTable1_data_sources.csv"),
     "VK2014_xwalk": os.path.join(BASE, "Veilleux_Kirk_2014", "reference_tables",
                                  "Veilleux_Kirk_2014_SupplementalTable1_species_crosswalk.csv"),
-    "Koay1998": os.path.join(BASE, "Koay_etal_1998", "Koay_etal_1998_Figure6.csv"),
+    "Koay1998": os.path.join(BASE, "Koay_etal_1998_a", "Koay_etal_1998_a_Figure6.csv"),
     "H2020_text": os.path.join(BASE, "Heffner_etal_2020", "reference_tables",
                                "Heffner_etal_2020_cottontail_values_from_text.csv"),
     "Haarlem2026": os.path.join(BASE, "Haarlem_etal_2026", "Haarlem_etal_2026_CFFdataset.csv"),
@@ -45,7 +45,7 @@ SRC = {
 }
 ITEM = {"HH1992a": "Heffner_Heffner_1992_a_TABLE1",
         "VK2014": "Veilleux_Kirk_2014_SupplementalTable1",
-        "Koay1998": "Koay_etal_1998_Figure6",
+        "Koay1998": "Koay_etal_1998_a_Figure6",
         "H2020": "Heffner_etal_2020_Figure3",
         "Haarlem2026": "Haarlem_etal_2026_CFFdataset"}
 
@@ -226,10 +226,10 @@ HEFFNER_EXTRA = [
     ("Heffner_Heffner_1985", "ResultsText", "binomial", [
         ("audible_freq_high_60dBSPL_khz", "Audible_freq_high_60dB.kHz", 1.0),
         ("audible_freq_low_60dBSPL_khz",  "Audible_freq_low_60dB.kHz",  1.0)]),
-    ("Heffner_Heffner_2010", "ResultsText", "binomial", [
+    ("Heffner_Heffner_2010_a", "ResultsText", "binomial", [
         ("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", 1.0),
         ("low_freq_limit_60dB_Hz",   "Audible_freq_low_60dB.kHz",  0.001)]),
-    ("Heffner_etal_2001", "ResultsText", "species_sci", [
+    ("Heffner_etal_2001_b", "ResultsText", "species_sci", [
         ("hearing_range_high_khz", "Audible_freq_high_60dB.kHz", 1.0),
         ("hearing_range_low_khz",  "Audible_freq_low_60dB.kHz",  1.0)]),
     ("Heffner_etal_2003", "ResultsText", "binomial", [

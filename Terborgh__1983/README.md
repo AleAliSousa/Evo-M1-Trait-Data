@@ -2,9 +2,4 @@
 
 Terborgh J. 1983. Five New World Primates, Princeton University Press. Princeton, New Jersey
 
-Source candidate from the ManyPrimates predictor-reference review (2026-10-21).
-Exact data tables and supplements have not yet been inspected or registered.
-
-PDF not yet located. Retrieve the paper/book chapter and its supplements.
-
-Status confirmed 2026-10-23: PDF still awaited from owner. No data inferred or built.
+The owner supplied access to the [complete institutional VLeBooks reader](https://r3.vlebooks.com/Reader?ean=9781400857166). Chapter 7 Tables 7.1–7.5 were inspected and built on 2026-11-26 as [`Terborgh__1983_Chapter7Tables.csv`](Terborgh__1983_Chapter7Tables.csv). See the [item README](Terborgh__1983_Chapter7Tables.README.md) for source pages, exclusions, ambiguities, and rebuild commands. The institutional reader remains the source view; there is no complete local book file.

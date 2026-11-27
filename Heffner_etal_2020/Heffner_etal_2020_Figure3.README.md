@@ -2,7 +2,7 @@
 
 **Source paper.** Heffner, R. S., Koay, G., & Heffner, H. E. (2020). Hearing and sound localization in Cottontail rabbits, *Sylvilagus floridanus*. *Journal of Comparative Physiology A*, 206(4), 543–552. https://doi.org/10.1007/s00359-020-01424-8
 
-**The item is a figure.** Figure 3 (journal p. 548) plots **high-frequency hearing limit at 60 dB SPL** (kHz) against **functional interaural distance** (µs), both log axes, for *n* = 74 species in the regression plus 3 subterranean species excluded from it. The paper prints no comparative table. Fourth Route-A sensory source folder; same variable pair as `Koay_etal_1998/` Figure 6, twenty-two years later.
+**The item is a figure.** Figure 3 (journal p. 548) plots **high-frequency hearing limit at 60 dB SPL** (kHz) against **functional interaural distance** (µs), both log axes, for *n* = 74 species in the regression plus 3 subterranean species excluded from it. The paper prints no comparative table. Fourth Route-A sensory source folder; same variable pair as `Koay_etal_1998_a/` Figure 6, twenty-two years later.
 
 ## Two very different kinds of value in this paper
 

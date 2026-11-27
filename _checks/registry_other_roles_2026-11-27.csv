@@ -1,0 +1,62 @@
+Sheet1 row,Item name,AP role added,Item full original title,Main Trait(s)
+48,Barger__2012_Table4.1,"data, metadata",Table 4.1. Subcortical limbic structures available in both datasets,Amygdala and nuclei; hippocampus; schizocortex; hippocampal formation volumes
+49,Barger__2012_Table4.2,"data, metadata",Table 4.2. Subcortical limbic structures available in both datasets (continued),Amygdala; corticobasolateral and centromedial divisions; hippocampus; schizocortex; hippocampal formation volumes
+52,Barger_etal_2012_Table1,metadata,Table 1. Specimens in Sample,"specimen sample: species, sex, age, hemisphere, collection provenance"
+90,Bianchi_etal_2012_Table1,metadata,Demographic information for chimpanzee (N=7) and human samples (N=8),dendritic morphology; spine measures; sample metadata
+144,Carlo_Stevens_2013_TableS1,metadata,Table S1. Species characteristics,"specimen sex, age, section thickness, regions sampled"
+168,Charvet_etal_2013_Table1,"data, metadata","Information about specimens used in our analyses, correction values derived from 3D reconstructions of the isocortex, number of sampled sites as well as number of sampled",Specimen brain weight; sampled supra- and infragranular neuron counts
+172,Charvet_etal_2017_Table2,"data, metadata","Stereological Information, Age, and Sex of the Specimens Selected in the Present Study",Per-specimen stereological sampling and brain weight
+184,Chugani_etal_1987_Table1,metadata,Table 1. Patient summary,age at PET study
+214,deSousa_etal_2009_Table1,"data, metadata","Table 1 Samples used in analyses of V1, V2, and VP","specimen sex + age; body mass; brain mass; neocortex, left V1 (area striata) and left LGN volumes; optic nerve cross-sectional area; eye half surface area"
+225,DeCasien_Higham_2019_referencesbraindata,references,references brain data,
+227,DeCasien_Higham_2019_SourceRefsfrom38,references,Source Refs from 38,
+229,DeCasien_etal_2017_referencesbraindata,references,,
+292,Ferrell_etal_2026_Table1,metadata,Table 1: Attributes of the specimens used in this study,specimen age (years); sex; rearing history
+298,Fobbs_etal_2011_TableS2,metadata,"Table S2: List of specimens in the Welker Wisconsin Collection, arranged alphabetically by common names of species. The specimen numbers designate the year of acquisition by the first two digits, followed by a hyphen and 1 to 3 digits denoting the order in which the specimens were acquired. Thus 63–361 designates the 361st specimen acquired in the Wisconsin laboratories in the year 1963. The stain listed as Heidenhain is the Sanides-Heidenhain-Woelcke modification of the Weigert method, introduced to the Wisconsin laboratories by Friedrich Sanides in the mid-1960s.",
+299,Fobbs_etal_2011_TableS3,metadata,"Table S3: List of specimens in the Johnson Michigan State Collection, arranged in approximate phylogenetic order, according to the Universal Species Identification System.5 The specimen numbers for the Michigan State Collection carry the following information. The first two digits represent the year of acquisition. The third digit gives some information about the purpose of acquiring the specimen – 0 is a normal marsupial or monotreme specimen, 1 is an experimental specimen, 2 is a normal specimen, 3 is a cat, 4 is an opossum, and 5 is a raccoon. The last two digits represent the sequence during that year in which the specimen was acquired. Thus 65063 indicates a normal monotreme or marsupial specimen, the 63rd specimen acquired in 1965.",
+343,Garwicz_etal_2009_TableS1,metadata,Table S1. Taxonomy of species included in the sample,
+378,Grabowski_etal_2023_DataFileS1BrainBody,"data, metadata","Primate Species Average Endocranial Volume (cc^3) and Body Mass (g), with sample sizes and measurement error",endocranial volume; body mass
+380,Grabowski_etal_2023_DataFileS1DietMultipleSources,"data, metadata",Percentage Average Diet Data when Multiple Sources with Sample Sizes (individuals per study group) are Available. Spaces in rows separate species groups.,diet: percentage of feeding time per food category (per source and averaged)
+395,Hansen_etal_2022_PET-parcellated-scale033,"data, metadata","data/PET_parcellated/scale033/*.csv — group-average PET receptor/transporter maps parcellated to the Lausanne scale033 atlas (68 Desikan-Killiany cortical + 15 subcortical regions), netneurolab/hansen_receptors repository (no printed table; constructed from 41 parcellated CSVs + region_info_scale033.xlsx)","regional PET tracer binding (BPND / VT / Bmax / SUVR) for 19 receptors and transporters (5HT1a, 5HT1b, 5HT2a, 5HT4, 5HT6, 5HTT, A4B2, CB1, D1, D2, DAT, GABAa, H3, M1, mGluR5, MOR, NET, NMDA, VAChT), 41 maps"
+402,Harlow_etal_1932_TABLE1,metadata,TABLE 1 Classification of the animals,
+410,Hawrylycz__2012_,source provenance,,
+420,Hayssen_etal_1993_LiteratureCited,references,"Asdell's Patterns of Mammalian Reproduction -- Literature Cited (printed pp. 705-990), one row per reference number","none (reference list: number, authors, year, title, journal/publisher, volume, pages)"
+510,Heuer_etal_2019_S1,"metadata, internal check",,MRI scan quality and provenance (66 specimens) - no folding value
+511,Heuer_etal_2019_Table1,metadata,Table 1 - List of species included.,metadata
+540,Hopkins_etal_2011_Table1,metadata,Demographic information of great ape sample,Cohort demographics
+548,Hutsler_etal_2005_Table1,metadata,Species and specimen sources,species and specimen counts
+555,Isler_vanSchaik_2012_SupplementaryInformation1.3,references,"Supplementary Information 1.3. Sources of social behaviour, breeding system, ecology and life history",Reference / source metadata
+556,Isler_vanSchaik_2012_SupplementaryInformation4.References,references,Supplementary Information 4. References,Reference / source metadata
+568,Iwaniuk_etal_1999_References,references,References,forelimb use / dexterity
+584,Jacobs_etal_2001_Table1,metadata,,dendritic morphology; spine measures; sample metadata
+603,Johnson_etal_2002_Table1,"data, metadata",Table 1. Studies Included in the Meta-Analysis of Primate Intelligence,Comparative cognitive performance; task rank
+605,Jones_MacLarnon_2004_datafile2,references,,Reference / source metadata
+647,Karlsen_etal_2014_Table1,metadata,Table 1. Clinical details of the individual subjects,age; height; fixed hemisphere weight; post-mortem delay; cause of death; Braak score
+651,Kaskan_etal_2005_References,references,,
+652,Kaskan_etal_2005_TableS1,"metadata, references, internal check","Electronic Appendix A: Table 1. Species and cortical areas included in this analysis, with references.",
+692,Kochiyama_etal_2018_ExtendedDataTable1,metadata,Extended Data Table 1 Correspondence between the AAL atlas and the parcellated brain regions,
+711,Kverkova_etal_2018_Table1,metadata,Table 1. Origin and use of the experimental animals.,metadata
+736,Lewitus_etal_2014_ExternalDatabaseS1references,references,External Database S1,
+740,Lewitus_etal_2012_a_Table1,metadata,Table 1 List of species by taxonomic classification,Species list; sample size
+747,Llorente_etal_2009_TableI,"data, metadata","Table I Individual information, characteristics, and background of chimpanzee sample (p. 187).","Hand preference (individual handedness index, tube task)"
+749,Lukas_CluttonBrock_2013_ReferencesforSupplementaryTable,references,References for Supplementary Table,
+775,Martin_etal_2017_SupportingInformationS1,references,Supporting Information S1. List of references for frequency data.,
+776,Maslow_Harlow_1932_TABLE1,metadata,TABLE 1 Classification of the animals,
+790,McLaughlin_etal_2014_Table1,"data, metadata",Table 1. Sociodemographic and Developmental Characteristics Among Children Reared in Institutions and Community Control Subjects in the Bucharest Early Intervention Project (n = 80),"intracranial volume; cerebral and cortical grey matter volume (group M, SD)"
+803,Mink_etal_1981_REFERENCES,references,REFERENCES,none (reference list)
+820,Munger_etal_2022_TABLE1,metadata,"TABLE 1 Individuals included in the present study with age (years), sex, and brain weight (grams) listed.","specimen sample: species, age, sex, brain weight"
+967,Powell_etal_2024_SOMTableS1,"data, metadata",SOM Table S1. Complete anthropoid sample included in the current study.,"long-bone maximum lengths (humerus, radius, femur, tibia); limb indices (IMI, HFI, BRI, CRI)"
+1039,Schenker__2007_Chapter3SpecimensText,metadata,Chapter III Materials: specimen-specific tissue processing and provenance,section plane and thickness; stain; section interval
+1046,Schleifenbaum__1973_Tables1-2,"data, metadata","Tables 1-2. Individual metadata, brain weight, and absolute regional volumes",
+1059,Seelke_etal_2014_Table1,"data, metadata",Table 1. Characteristics of the Study Subjects,age; body weight
+1064,Semendeferi__1994_Chapter3SpecimensText,metadata,Chapter 3 Materials and Methods: quantified specimen descriptions,"specimen code, name, age, sex, body and brain mass"
+1084,Sherwood__2003_Table5-1,metadata,Table 5-1. Sample used in analyses of primary motor cortex,Specimen ID; sex; age at death; fixation; postmortem interval
+1092,Sherwood_etal_2003_Table1,"data, metadata",Table 1. Sample data used in analyses,
+1093,Sherwood_etal_2020_SupplementaryTable1,metadata,,specimen sex; age (years); sampled hemisphere
+1102,Shultz_Dunbar_2010_TableS1,"metadata, references",Table 1. Studies and individual numbers included in the analyses.,executive function; task performance
+1133,Stacho_etal_2024_Table2,metadata,Table 2. Overview of postmortem non-human primate brains,Specimen inventory (archive labels)
+1195,Strier_etal_2014_TableS3,references,References to Table S1 and Table S2,References to Table S1 and Table S2
+1217,Turner__2017_Chapter2SpecimenText,metadata,Chapter 2 Materials and Methods: single chimpanzee specimen,"age, sex, body and brain mass"
+1218,Turner__2017_Chapter4SpecimensText,metadata,Chapter 4 Materials and Methods: identified pinniped cases,case and tissue use
+1250,Wegiel_etal_2014_Table1,metadata,Table 1 Parameters and procedures applied to estimate the volume of brain subdivisions and number of neurons,stereological sampling parameters per structure (methods metadata for Tables 2-3)
+1285,Zhu_etal_2023_SupplementaryReferences,references,Supplementary References,

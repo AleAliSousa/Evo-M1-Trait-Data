@@ -44,12 +44,16 @@ lists; the `note` column of the item references file states that crosswalk row b
 two entries in `secondary_references.csv` — Kaschube et al. (2010) = ref 9 and Schottdorf et al.
 (2015) = ref 52 — are **not** cited anywhere in table S1; they are cited by table S2.
 
-## Snapshot caveat
-`Jung_etal_2022_TableS1_snapshot.xlsx` is **transposed** relative to the publication: table S1
-prints species across the columns and traits down the rows, while the snapshot carries one row per
-species. A reviewer laying the snapshot beside the PDF must transpose mentally. The snapshot was
-not re-saved or re-cut in this pass (owner instruction); recorded here as a known departure from
-the "same spatial format as printed" snapshot rule.
+## Snapshot layout
+`Jung_etal_2022_TableS1_snapshot.xlsx` now keeps the printed species columns and
+trait rows. Citation numbers remain below the values in their own rows, and printed
+`-` cells and the two footnotes remain visible. The table does not print scientific
+names; the existing names were moved to
+`reference_tables/Jung_etal_2022_TableS1_species_lookup.csv` and joined by the R
+reader. Codex checked the orientation and cells against the text and page render of `sciadv.abn0954_sm.pdf`
+on 2026-11-27. The rebuilt analysis CSV matches its previous cells exactly.
+Run `Rscript --vanilla Jung_etal_2022/Jung_etal_2022_TableS1.R` from the
+repository root. Human visual signoff remains pending.
 
 ## Missing values
 `-` is printed for Agouti and Mouse lemur in the 2D V1 neuron, V1/RGC ratio and (Mouse lemur only)

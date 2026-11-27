@@ -13,8 +13,7 @@ The paper reports the first behavioral audiograms for two small Didelphid
 opossums, *Monodelphis domestica* and *Marmosa elegans*, extending
 audiological data for the family beyond the much larger North American
 opossum. In addition to plotting individual and averaged audiogram curves
-(Figs. 1-3, registered separately as a lower-priority Figure 3 candidate
-row), the Results section states the two headline summary statistics in
+(Figs. 1–3; Figure 3 is now built separately), the Results section states the two headline summary statistics in
 plain text for each species: the 60-dB-SPL hearing range and the average
 lowest (best) threshold. These printed sentences are preferred here over
 digitising the figures because they are the paper's own stated numbers,

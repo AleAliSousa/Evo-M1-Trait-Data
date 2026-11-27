@@ -70,7 +70,7 @@ freshly listed via `GetDriveChildren` immediately before any PDF was
 opened:
 - `Heffner_etal_2010/` -> `Heffner-2010-Use of binaural cues for sound
   lo....pdf` (this item; 3-author paper, JASA 127:3837-3845).
-- `Heffner_Heffner_2010/` -> `Heffner-2010-The behavioral audiogram of
+- `Heffner_Heffner_2010_a/` -> `Heffner-2010-The behavioral audiogram of
   white....pdf` (a different item; 2-author paper on whitetail deer, JASA
   Express Letters 127:EL111-EL114; built separately as
   `Heffner_Heffner_2010_ResultsText`).

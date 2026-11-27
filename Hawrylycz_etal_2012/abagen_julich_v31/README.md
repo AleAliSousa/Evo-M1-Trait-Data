@@ -38,7 +38,11 @@ i.e. abagen defaults plus: bidirectional L/R mirroring of samples, tolerance 2 m
 | `abagen_julich_v31_sample_counts.csv` | samples assigned per region × donor (after mirroring); total 4604 |
 | `regions_without_own_samples.csv` | 31 hemisphere-regions (19 cortical: 8v2, IFJ2, IFS3, Ia1, Ia3, Id9, MFG1, Op1, Op10, Op7, PirT, hIP7, hOc5, hOc6 on one or both sides; 12 subcortical) whose values come from the nearest centroid sample — **treat as imputed; drop for strict analyses** |
 | `julich_v31_hemisplit_atlas_info.csv`, `JulichBrain_v31_MNI152_hemisplit.nii.gz` | atlas used |
-| `run_abagen_julich.py`, `parameters.json`, `abagen_methods_report.txt` | provenance |
+| `abagen_methods_report.txt` | generated processing-method narrative; the parameter choices are recorded above |
+
+**File audit, 2026-11-26:** The earlier notes named `run_abagen_julich.py` and `parameters.json`, but neither file is present in this folder or the adjacent `Analysis_region_celltype_human/abagen_julich_v31/` directory. The processed matrix and the atlas/count/exception files are present, and the matrix checksum matches. The method report and parameters listed here document the run, but the exact runnable processing script must be recovered or reconstructed before claiming full rebuildability.
+
+The adjacent `Analysis_region_celltype_human/abagen_julich_v31/README.md` names `analyses_metabol_rate_cortical/scripts/c6_ahba_celltype_receptor_scores.R` as a consumer of the matrix. That analysis script was not found in the available OneDrive project tree during the 2026-11-26 audit. Treat it as a documented intended dependency, not a verified executed analysis.
 
 ## Checks
 Left/right profiles of the same region: median Pearson r 0.86 across 142 cortical pairs (low values coincide with centroid-filled sides). hOc1 (V1) shows the expected granular-layer/PV signature: RORB 0.93 vs cortical median 0.71, PVALB 0.82 vs 0.66.

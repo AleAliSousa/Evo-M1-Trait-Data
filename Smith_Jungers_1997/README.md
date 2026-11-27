@@ -1,64 +1,13 @@
-# Current build status — 2026-10-25
+# Smith & Jungers 1997 — Table 5 body masses
 
-Reference/source disposition only.
+Smith, R. J., & Jungers, W. L. (1997). Body mass in comparative primatology. *Journal of Human Evolution*, 32(6), 523–559. https://doi.org/10.1006/jhev.1996.0122
 
-- Body-mass compilation is already an upstream source of repository studies, e.g. Bauernfeind2013. No cell-level novel gap has been established; not added as an independent body-mass sample. This does not claim every row is already covered.
+## Source item built — 2026-11-26
 
-See `____TODO/Nick_Fran_sources_2026-10-24/build_status.csv` and `_tools/build_nick_fran_sources.R`. Human visual sign-off is not claimed.
+Table 5, PDF pp. 16–26 / printed pp. 538–548, is a literature compilation with some previously unpublished measurements. The local full-text PDF is `Smith-1997-Body mass in compara.pdf`. `Smith_Jungers_1997_Table5_snapshot.py` reads the held PDF text layer page by page, records page and source line, original family/species labels, the four male/female sample-size and kg cells as printed, and the full raw line. It includes no-data taxa and multiple population/source lines under a species. The item R reader produces a CSV and a public DOI-coded TSV. Exact decimal values are converted from printed middle-dot decimals; uncertain/approximate cells (`?`, `~`, `<`, `>`) remain as printed strings with numeric value blank.
 
----
+Run `python3 Smith_Jungers_1997/Smith_Jungers_1997_Table5_snapshot.py`, then `Rscript --vanilla Smith_Jungers_1997/Smith_Jungers_1997_Table5.R`. Both ran on 2026-11-26. The snapshot contains 317 source-layout rows, all 249 species labels in the printed table, and 18 species-label rows without mass cells. Its 299 numeric rows fall under 231 labels. The article abstract says adult masses for 230 species; this one-species count difference, and text-layer parsing of wrapped comments/references, warrant page-image review before treating any row as merge eligible. Each raw line is retained, but linewrapped reference text is **not** reconstructed as a complete citation. Human visual signoff is pending.
 
-# Body mass in comparative primatology
+## Overlap and merge status
 
-## Ingestion decision — compilation-first review
-
-**HOLD — existing compilation coverage first**
-
-Relation to dissertations: Nick: explicit body-mass source.
-
-Smith & Jungers 1997 is explicitly cited by Mass_ref in the built Kamilar_Cooper_2013 S2. Reuse covered values; return to the original only for a missing sex/species/population or ambiguity. This establishes some coverage, not complete equivalence.
-
-Evidence checked: Nicholas Saddler dissertation: Methods, Table 2 note and References (local final dissertation). Kamilar_Cooper_2013/reference_tables/Kamilar_Cooper_2013_S2_references.csv (Mass_ref).
-
-Use existing dataset values first, then a suitable compilation with original-source links. Extract a primary paper only for a documented missing observation/condition or ambiguity. A new folder or DOI is not evidence of new data. Shared observations count once; unresolved overlap stays on hold.
-
-This decision supersedes generic extraction instructions below. This folder is a reference record; no unique new observations have yet been certified.
-
-
-Smith, R. J., & Jungers, W. L. (1997). Body mass in comparative primatology. Journal of Human Evolution, 32(6), 523–559. https://doi.org/10.1006/jhev.1996.0122
-
-Prepared 2026-10-24. **Candidate source: extraction not started.**
-
-## Potential contribution
-
-Adult body mass; sex-specific estimates and sample sizes.
-
-Method: Literature compilation plus previously unpublished measurements.
-
-## Provenance and overlap
-
-Overlap review before extraction. Values already occur indirectly in Powell 2017 and Kamilar–Cooper 2013. Resolve sample, sex, population and primary source before claiming new coverage.
-
-## Source availability and item verification — 2026-10-25
-
-Existing full-text PDF verified in EndNote. The earlier statement that full text had not been obtained was incomplete: the EndNote attachment library had not been searched.
-
-[Smith-1997-Body mass in compara.pdf](</Users/crossmodal/Documents/References.Data/PDF/1038828825/Smith-1997-Body mass in compara.pdf>)
-
-The original remains in EndNote; no duplicate PDF was created.
-
-## Source items
-
-**Table 5 — Body mass of extant primates**
-
-PDF pp. 16–26 / printed pp. 538–548, including continuations. Preserve male/female values, sample sizes, wild/captive status and references; consult explanatory notes and appendix. Reuse values already covered by existing compilations.
-
-Item identification does not clear the ingestion hold. No values have been extracted.
-
-## Next step
-
-Use the verified EndNote PDF to resolve compilation coverage before extraction. Preserve printed units, species names, sample sizes and source citations in a faithful snapshot. For digital supplements retain the downloaded bytes unchanged. Build and validate only after item selection and provenance review.
-
-Smith_Jungers_1997_registry_rows.xlsx contains candidate rows aligned to the live registry and HOW_TO_PASTE instructions. The owner registers the selected items; the main registry has not been edited. Source availability is documented above. No frozen snapshot, analysis CSV, public TSV or R reader has been created.
-
-Verified item numbers do not clear the ingestion hold. Figures and compilation tables may represent the same measurements; shared observations must count once.
+This is a **built source table**, not 317 new independent biological observations. The existing body-mass merge includes values derived from Smith & Jungers through later compilations (including Kamilar & Cooper 2013 and Kappeler & Pereira 2003). Among 231 labels with a printed numeric mass, 33 lack an exact spelling match in `__merging_body/body_long.csv`; that is a naming screen, not proof of 33 uncovered taxa or measurements. Resolve synonyms, sex, population and original study citations before any merge wiring. Keep the paper's compilation role distinct from primary specimen samples.

@@ -1,4 +1,5 @@
-## Brodmann K (1913) Verhandlungen der Anatomischen Gesellschaft 41:157-216
+## Brodmann K (1913) Verhandlungen der Gesellschaft Deutscher Naturforscher
+## und Ärzte 85(1):200-240; held source Table 1 on p.206.
 ## Table 1 — total cortical surface, sulcal cortex, brain weight across mammals (Gesamtrindenfläche)
 ## Build: frozen snapshot -> analysis CSV (+ public TSV).  See __HOWTO_build_a_dataset_file.md
 ##
@@ -64,7 +65,7 @@ out <- data.frame(
 options(scipen=999); write.csv(out, final_csv, row.names=FALSE, na="")
 fc <- read_excel(readme_xlsx, sheet="Sheet1")
 ie <- fc$`Item encoded`[match(item_name, fc$`Item name`)]
-if (is.na(ie)) stop("No Item encoded for ", item_name, " (add a Brodmann 1913 row, Item number 'Table 1', DOI-alt OCLC:8777719)")
+if (is.na(ie)) stop("No Item encoded for ", item_name, " (register the held Brodmann 1913 Verhandlungen Table 1)")
 dir.create(public_tsv_dir, recursive=TRUE, showWarnings=FALSE)
 write.table(out, file.path(public_tsv_dir, paste0(ie, ".tsv")), sep="\t", row.names=FALSE, na="")
 message("Wrote ", nrow(out), " taxa -> ", ie, ".tsv")

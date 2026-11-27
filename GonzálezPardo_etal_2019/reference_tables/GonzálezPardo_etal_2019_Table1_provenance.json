@@ -1,0 +1,28 @@
+{
+  "paper": "GonzálezPardo_etal_2019",
+  "doi": "10.7334/psicothema2018.290",
+  "pdf": "rat2019.pdf",
+  "species": "Rattus norvegicus",
+  "species_print": "Wistar rats",
+  "citation": "González-Pardo, H., Arias, J. L., Vallejo, G., & Conejo, N. M. (2019). Influence of environmental enrichment on the volume of brain regions sensitive to early life stress by maternal separation in rats. Psicothema, 31(1), 46–52. https://doi.org/10.7334/psicothema2018.290",
+  "source_url": "https://www.psicothema.com/pdf/4513.pdf",
+  "page": "PDF p.4, printed p.49",
+  "n": 5,
+  "age": "P90",
+  "note": "Daily maternal separation 4 h on P2–21. Enrichment P21–60; all groups then standard same-treatment housing until P90. MRI n=5 male rats per group, not cohort n=10. Table labels PFC; methods say medial PFC. Methods mention VOIs corrected for total brain volume; retain reported mm3 without assuming raw unadjusted bilateral volume. Tables 1 and 2 disagree in several means; preserve both and analyze separately.",
+  "arms": [
+    "SA",
+    "MS",
+    "SA-EE",
+    "MS-EE"
+  ],
+  "locus": "Table1",
+  "orientation": "group_rows",
+  "caption": "Table 1. Mean estimated volume (mm³) of the selected ROI by MRI volumetry of the experimental groups",
+  "footnote": "Note: Mean ± S.E.M. *significantly higher vs. SA group (FDR-p < 0.05), +significantly lower vs. MS and SA groups (FDR-p<0.01), #significantly higher vs. MS and SA groups (FDR-p < 0.001)",
+  "item_name": "GonzálezPardo_etal_2019_Table1",
+  "source_pdf_sha256": "fb0235f53daac03c51791d083e72bad3fed87d23cedeb5d33febd8abf013e7f9",
+  "retrieved": "2026-11-20",
+  "snapshot_method": "Printed-layout transcription read across each source row, crosschecked with PDF text and page render; Sarabdjitsingh values also independently compared with journal JATS XML.",
+  "human_visual_signoff": "Pending; AI checks do not constitute human RA signoff"
+}

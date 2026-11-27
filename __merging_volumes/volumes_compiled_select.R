@@ -217,7 +217,7 @@ select_datasets <- tribble(
   # Superseded by nothing; supersedes nothing. Smaers et al. 2010 Table 1 carries an earlier
   # vintage of the same column for 18 of these 19 species (no Homo) and is therefore not needed
   # for coverage — see crosspub_Smaers2017_FINDINGS.md for the 2010 vs 2011 value drift.
-  "Smaers_etal_2011_SupplementaryTable1", "Selected_collection",  2011,
+  "Smaers_etal_2011_a_SupplementaryTable1", "Selected_collection",  2011,
   # -- Smaers et al. 2017 Table S1 part 1 (cortical volumes) -----------------------------------
   # NEWEST table in the selection, so on recency alone it would supersede everything it covers.
   # It is a COMPILATION: primary_visual = de Sousa 2010 = Frahm 1984 area striata (value-matched
@@ -253,7 +253,7 @@ select_datasets <- select_datasets %>% mutate(pick = row_number())
 EXCLUDE_ITEMS <- c(
   "MacLeod_etal_2003_Table1",              # cerebellum, Yerkes sample -- overrides Stephan cerebellum
   "MacLeod_etal_2003_Table2",              # cerebellum, Hirnforschung sample; sole source of 'Cebus sp.'
-  "Smaers_etal_2011_SupplementaryTable1",  # total frontal grey -- 'reference' role only, no compared cell
+  "Smaers_etal_2011_a_SupplementaryTable1",  # total frontal grey -- 'reference' role only, no compared cell
   "Smaers_etal_2017_TableS1part1"          # frontal_motor -- 'reference' role only, no compared cell
 )
 if (length(EXCLUDE_ITEMS)) {
@@ -295,7 +295,7 @@ enc_override <- c(
   "Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.003_Table2",
   "MacLeod_etal_2003_Table1"     = "10.1016%2Fs0047-2484(03)00028-9_Table1",
   "MacLeod_etal_2003_Table2"     = "10.1016%2Fs0047-2484(03)00028-9_Table2",
-  "Smaers_etal_2011_SupplementaryTable1" = "10.1159%2F000323671_SupplementaryTable1",
+  "Smaers_etal_2011_a_SupplementaryTable1" = "10.1159%2F000323671_SupplementaryTable1",
   "Smaers_etal_2017_TableS1part1"        = "10.1016%2Fj.cub.2017.01.020_TableS1part1",
   "Smaers_etal_2017_TableS1part2"        = "10.1016%2Fj.cub.2017.01.020_TableS1part2",
   # Matano 1986: __ReadMe.xlsx row 185 lost its "Item number" (col D), so the K/L formulas render
@@ -463,7 +463,7 @@ paper_long <- function(row) {
   }
   if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (specimens collapse to a species mean in step 5a). V1/LGN are LEFT-only and printed UNDOUBLED (laterality_known.csv, doubling = none); neocortex + whole brain are both-hemisphere. The doubled 2x-left figures are the same paper's Supp. Table 2 (doubling = by_source), not in this selection.
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
-  if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual TOTAL frontal -> species means of COMBINED L+R (cm3->mm3)
+  if (it == "Smaers_etal_2011_a_SupplementaryTable1") {            # per-individual TOTAL frontal -> species means of COMBINED L+R (cm3->mm3)
     # GREY ONLY, WHOLE LOBE ONLY (see the selection comment above). `frontal_grey_total_cm3` is
     # already left+right in the printed table, so the *1000 is a pure cm3->mm3 unit change and no
     # bilateral doubling is involved (nothing to record in laterality_known.csv).

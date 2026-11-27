@@ -27,6 +27,13 @@ final.dataframe <- data.frame(
   first_exposure_age_years=parse_age(x[["Age of first exposure to sign/symbols"]]),
   language_type=x[["Type of language (ASL/Lexigram)"]],
   age_status_printed=x[["Age at death/current age"]], source="Erbaba_etal_2025", stringsAsFactors=FALSE)
+repo_root <- dirname(folder)
+reg <- readxl::read_excel(file.path(repo_root, "__ReadMe.xlsx"), sheet = "Sheet1")
+hits <- which(!is.na(reg$`Item name`) & reg$`Item name` == item_name)
+stopifnot(length(hits) == 1L)
+code <- reg$`Item encoded`[hits]
+stopifnot(!is.na(code), nzchar(code), !grepl("_$", code))
 write_csv(final.dataframe, file.path(folder, paste0(item_name, ".csv")), na="")
-# Registry-derived public name must replace this provisional stem after registration.
-write_tsv(final.dataframe, file.path(folder, "10_1002_evan_70018_Table1.tsv"), na="")
+write_tsv(final.dataframe,
+          file.path(repo_root, "__Public", "comparative-data", paste0(code, ".tsv")),
+          na="")

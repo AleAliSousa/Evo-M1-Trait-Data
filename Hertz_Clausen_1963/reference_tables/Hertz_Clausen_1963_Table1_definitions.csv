@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Printed tissue-row order,,,,info,calf,Hertz_Clausen_1963_Table1,,Table 1 p. 530
+species_as_published,Source animal label,,,,info,calf,Hertz_Clausen_1963_Table1,The paper says calf; species-level identity is not asserted,Methods
+Species,Accepted species name,,,,info,calf,Hertz_Clausen_1963_Table1,Blank pending taxonomic resolution,
+tissue_as_printed,Central nervous system tissue label,,,,info,calf,Hertz_Clausen_1963_Table1,Preserved verbatim,Table 1 p. 530
+oxygen_uptake_no_KCl_umol_O2_per_g_fresh_wt_hr,No-added-KCl oxygen uptake,,O2.umol.g_fresh_wt.hr,mean,primary,calf,Hertz_Clausen_1963_Table1,Ex-vivo tissue slice; baseline arm,Table 1 p. 530
+n_tissue_samples_no_KCl,Parenthetical tissue-sample count in no-added-KCl arm,,,,info,calf,Hertz_Clausen_1963_Table1,Not number of calves,Table 1 p. 530
+oxygen_uptake_with_KCl_umol_O2_per_g_fresh_wt_hr,With-added-KCl oxygen uptake,,O2.umol.g_fresh_wt.hr,mean,primary,calf,Hertz_Clausen_1963_Table1,Ex-vivo tissue slice; KCl added,Table 1 p. 530
+n_tissue_samples_with_KCl,Parenthetical tissue-sample count in with-KCl arm,,,,info,calf,Hertz_Clausen_1963_Table1,Not number of calves,Table 1 p. 530
+stimulation_pct,Printed stimulation percentage,,pct.stimulation,reported,primary,calf,Hertz_Clausen_1963_Table1,Authors use extrapolated/corrected log-rate comparison; do not recompute from displayed rates,Table 1 caption p. 530
+oxygen_uptake_no_KCl_as_printed,Printed no-added-KCl rate with sample count,,,,info,calf,Hertz_Clausen_1963_Table1,,Table 1 p. 530
+oxygen_uptake_with_KCl_as_printed,Printed with-KCl rate with sample count,,,,info,calf,Hertz_Clausen_1963_Table1,,Table 1 p. 530
+stimulation_pct_as_printed,Printed stimulation entry,,,,info,calf,Hertz_Clausen_1963_Table1,,Table 1 p. 530

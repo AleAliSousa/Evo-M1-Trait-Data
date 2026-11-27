@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,Source CSV row order,,,,info,human/chimpanzee comparison,Wei_etal_2019_DK114,,"chimp2humanDK114.csv, deposited with Wei et al. 2019"
+region_as_deposited,DK114 parcel identifier,,,,info,human/chimpanzee comparison,Wei_etal_2019_DK114,,"chimp2humanDK114.csv, deposited with Wei et al. 2019"
+network_as_deposited,Resting-state network assignment,,,,info,human/chimpanzee comparison,Wei_etal_2019_DK114,Preserved exactly as deposited,"chimp2humanDK114.csv, deposited with Wei et al. 2019"
+expansion_as_deposited,Exact decimal string from deposit,cortical surface area,human/chimp expansion,,info,human/chimpanzee comparison,Wei_etal_2019_DK114,Source representation retained,"chimp2humanDK114.csv, deposited with Wei et al. 2019"
+expansion_ratio,Human-to-chimpanzee cortical expansion value,cortical surface area,human/chimp expansion,region value,primary,human/chimpanzee comparison,Wei_etal_2019_DK114,Positive dimensionless ratio; not a single-species trait,"chimp2humanDK114.csv, deposited with Wei et al. 2019"
+numerator_species,Numerator species,,,,info,human/chimpanzee comparison,Wei_etal_2019_DK114,Human,"chimp2humanDK114.csv, deposited with Wei et al. 2019"
+denominator_species,Denominator species,,,,info,human/chimpanzee comparison,Wei_etal_2019_DK114,Chimpanzee,"chimp2humanDK114.csv, deposited with Wei et al. 2019"
+Species,Single species field,,,,info,human/chimpanzee comparison,Wei_etal_2019_DK114,Blank because this is a between-species ratio,"chimp2humanDK114.csv, deposited with Wei et al. 2019"

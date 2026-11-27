@@ -20,6 +20,13 @@ which the binaural phase-difference (time) cue was demonstrated.
 ## Pipeline
 Printed table → snapshot → analysis csv → public TSV.
 
+On 2026-11-26 the duplicate `TABLE I` registry row was cleared, leaving the
+existing `Table I` row and its `TableI` file names. Run
+`Rscript Heffner_etal_2015/Heffner_etal_2015_TableI.R` from the repo root to
+write both outputs. The reader now checks for one matching registry row and a
+valid public code before writing either file. The rebuilt CSV and public TSV
+were byte-identical to the existing files.
+
 | file | role |
 |---|---|
 | `Heffner_etal_2015_TableI_snapshot.csv` | frozen source, printed layout |

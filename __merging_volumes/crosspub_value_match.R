@@ -54,14 +54,14 @@ ref <- read_csv("volumes_unfiltered.csv", show_col_types = FALSE) %>%
   transmute(sp = norm(Species), Variable, Value = as.numeric(Value), Source) %>% filter(!is.na(Value))
 # reference (b) Smaers 2011 raw ST1 (total frontal) + ST2 (anterior sec-5 = prefrontal), species means, cm3->mm3
 add_smaers <- function(fn, cols, src) {
-  read_csv(file.path(base, "Smaers_etal_2011", fn), show_col_types = FALSE) %>%
+  read_csv(file.path(base, "Smaers_etal_2011_a", fn), show_col_types = FALSE) %>%
     group_by(sp = norm(species)) %>%
     summarise(across(all_of(cols), ~ mean(as.numeric(.x), na.rm = TRUE) * 1000), .groups = "drop") %>%
     pivot_longer(-sp, names_to = "Variable", values_to = "Value") %>% mutate(Source = src)
 }
 ref <- bind_rows(ref,
-  add_smaers("Smaers_etal_2011_SupplementaryTable2.csv", c("sec5_grey_total_cm3","sec5_white_total_cm3"), "Smaers_etal_2011_SupplementaryTable2"),
-  add_smaers("Smaers_etal_2011_SupplementaryTable1.csv", c("frontal_grey_total_cm3","frontal_white_total_cm3"), "Smaers_etal_2011_SupplementaryTable1"))
+  add_smaers("Smaers_etal_2011_a_SupplementaryTable2.csv", c("sec5_grey_total_cm3","sec5_white_total_cm3"), "Smaers_etal_2011_a_SupplementaryTable2"),
+  add_smaers("Smaers_etal_2011_a_SupplementaryTable1.csv", c("frontal_grey_total_cm3","frontal_white_total_cm3"), "Smaers_etal_2011_a_SupplementaryTable1"))
 
 inp <- read_csv(input, show_col_types = FALSE); meas <- setdiff(names(inp), c("species","source"))
 res <- list()

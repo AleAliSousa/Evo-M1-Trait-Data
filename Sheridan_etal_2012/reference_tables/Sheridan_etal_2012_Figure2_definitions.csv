@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_order,Left-to-right plot order,,,,info,human,Sheridan_etal_2012_Figure2,,Figure 2
+group_as_printed,Study group,,,,info,human,Sheridan_etal_2012_Figure2,CAU care as usual; FCG foster care; NIG never institutionalized,Figure 2
+reference_group,Reference study group,,,,info,human,Sheridan_etal_2012_Figure2,,Figure 2
+structure_as_printed,Measured cortical tissue,,,,info,human,Sheridan_etal_2012_Figure2,,Figure 2
+volume_cc,Approximate digitized bar height,Cortical white matter,cc,group mean,primary,human,Sheridan_etal_2012_Figure2,Pixel-calibrated figure reading,Figure 2
+lower_SEM_cap_cc,Approximate lower error-cap position,Cortical white matter,cc,minus 1 SEM,primary,human,Sheridan_etal_2012_Figure2,Pixel-calibrated,Figure 2
+upper_SEM_cap_cc,Approximate upper error-cap position,Cortical white matter,cc,plus 1 SEM,primary,human,Sheridan_etal_2012_Figure2,Pixel-calibrated,Figure 2
+error_bar_type,Caption-defined error bar type,,,,info,human,Sheridan_etal_2012_Figure2,,Figure 2 caption
+reading_method,Extraction method,,,,info,human,Sheridan_etal_2012_Figure2,See pixel snapshot,Figure 2
+source_pdf_page,PDF page number,,,,info,human,Sheridan_etal_2012_Figure2,,Figure 2
+species_as_published,Source species label,,,,info,human,Sheridan_etal_2012_Figure2,,Paper methods
+Species,Accepted species name,,,,info,human,Sheridan_etal_2012_Figure2,,Paper methods

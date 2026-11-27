@@ -1120,7 +1120,7 @@ own folder, so this is a copy-only follow-up, not a re-build.
 >    Norlén, Ballesteros-Yáñez, Kowiański, Gómez, Galán-Acedo, de Magalhães, Zilles-Rehkämper,
 >    Braitenberg-Schüz, Lethmate-Dücker and Medina-González false-positive as unregistered. Use
 >    `unicodedata.normalize('NFKD', …).encode('ascii','ignore')`. Then rename either
->    `Hardus_etal_2009/` or the `HardusME__2009_*` Item names so the two sides match.
+>    `Hardus_etal_2008/` or the `HardusME__2009_*` Item names so the two sides match.
 > 4. **Social-variables snapshots: DONE 2026-10-31 — register those 7 folders.** All seven now
 >    freeze the source rather than the product: printed-grid snapshots for Ziege Table 1 and Wiafe
 >    Table 3, constructed snapshots carrying verbatim passages and locators for Devillard,

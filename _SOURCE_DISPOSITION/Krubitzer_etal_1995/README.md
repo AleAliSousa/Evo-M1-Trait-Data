@@ -1,0 +1,17 @@
+# Krubitzer, Manger, Pettigrew & Calford 1995 — monotreme maps
+
+**Evo-M1 source disposition:** `DOCUMENTED SKIP` for a separate text-derived surface-area item. The paper is an active primary source in the distinct Flatmap_SurfaceArea_Project, and its approximate text dimensions remain useful as checks there.
+
+**Canonical home for the text checks:** `Flatmap_SurfaceArea_Project/flatmap_measurements/Krubitzer_etal_1995/documentation/text_scale_checks.md`, linked from that dataset's README. The details below explain the Evo-M1 disposition; maintain the working scale-check note with the tracing, not as a second Evo-M1 dataset.
+
+The primary source PDF `Krubitzer_etal_1995.pdf` is the same publication as the existing **provisional** `Flatmap_SurfaceArea_Project/flatmap_measurements/Krubitzer_etal_1995/` dataset (matching SHA-256 `4afb3d76bff206fcc908852408d42150eb477f8eb55ad0b4405b7644c0069e70`). That project already has editable traces and a `measurements.csv`: 131 assessment rows, 21 provisional area measurements, and 110 `not_measurable` rows. It separately records platypus and echidna maps. The earlier statement that tracing had not yet begun was wrong. These are figure-derived measurements, not additional independent text values to register in Evo-M1.
+
+## Numbers in the article text that can check those traces
+
+Printed p. 281 (PDF p. 21) describes a large auditory field **A** as approximately **2 × 3 mm in platypus** and **3 × 3 mm in echidna**. It also describes a smaller auditory patch embedded in SI or R as approximately **1 mm²** and another echidna patch near PV of about **1 mm²**. Printed p. 284 (PDF p. 24) describes heavily stained visual region **V** as an approximate **3.5 × 2 mm oval in platypus** and **10 × 7 mm rectangle in echidna**. These are rough linear extents or small-patch areas, not measured SI/R/PV surface areas and not specimen-matched field-area observations. Multiplying length by width would impose a rectangle/ellipse model that the paper does not report as an area measurement.
+
+The existing provisional traces are consistent in scale with selected text descriptions: platypus P4 Figure 3 A ≈ 5.97 mm² (approximate boundary) and V ≈ 7.05 mm²; echidna E3 Figure 18 V ≈ 71.29 mm² (approximate boundary). The source's approximate A/V extents are useful **sanity checks** on calibration and gross scale, not exact expected areas or visual signoff. Other A traces vary by specimen and view; do not force them to the text's representative dimensions. The paper prints **no numerical total neocortex, SI, R, PV, or M surface area** to compare directly with those field traces. Table 1 gives pooled recording-site stimulus percentages, not field-area percentages.
+
+## Why the paper is in this project
+
+Changizi 2001 uses the monotreme map for the echidna's cortical-area identity/count; Kaskan et al. 2005 lists this paper in its cortical-area nomenclature source key. Kaskan's rows tagged with the monotreme paper include non-monotreme species, so those keys should not be interpreted as a per-species numerical surface-area source. Finlay et al. 2006 describes tracing area from the Kaas/Krubitzer mapping literature generally, without a per-row attribution to this paper. Keep this primary source as provenance and as the text-scale check for the ongoing Flatmap project. A separate Evo-M1 CSV/TSV should be registered only if the project's reviewed figure measurements are intentionally imported as a distinct derived item with case identity and provisional status preserved.

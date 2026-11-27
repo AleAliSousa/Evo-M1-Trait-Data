@@ -12,10 +12,10 @@ Hippocampus in Alcoholics and Controls* (p. 166, PDF page 3).
 
 Scanned journal PDF (Wiley download; text layer is OCR and interleaves the two columns with the
 tables). Values were read from the page images and checked against the text layer where legible.
-The supplied file is named `Korbo-2006-Glial Cell Loss in the Hippocampus.pdf`, but the article is
+The PDF is now named `Korbo-1999-Glial Cell Loss in the Hippocampus.pdf` to match
 the **1999** paper (masthead: *Alcohol Clin Exp Res* Vol. 23, No. 1, January 1999, pp. 164–168;
 download watermark DOI 10.1111/j.1530-0277.1999.tb04039.x). **Single author (Lise Korbo)**, hence
-the folder `Korbo__1999`. Copied into this folder with its original filename.
+the folder `Korbo__1999`. The supplied filename had incorrectly said 2006; corrected 2026-11-26.
 
 **Groups.** `Controls` / `control group` = **healthy control group**: 5 males, 34–56 y (mean 44), no
 history of mental or neurological disease or alcohol abuse; causes of death acute myocardial

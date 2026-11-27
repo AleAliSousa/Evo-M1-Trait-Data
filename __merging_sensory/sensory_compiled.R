@@ -12,7 +12,7 @@
 ##   Veilleux_Kirk_2014_SupplementalTable1 - BOTH. "this study" acuities (primary);
 ##                                          bracket-sourced acuities compiled from its
 ##                                          122-entry data-source list.
-##   Koay_etal_1998_Figure6               - BOTH. Rousettus audiogram (primary); the other
+##   Koay_etal_1998_a_Figure6               - BOTH. Rousettus audiogram (primary); the other
 ##                                          66 points compiled, each with a caption source.
 ##   Heffner_etal_2020_Figure3            - PRIMARY, text values only (Cottontail rabbit).
 ##
@@ -39,7 +39,7 @@ base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Dat
 
 item <- c(HH1992a  = "Heffner_Heffner_1992_a_TABLE1",
           VK2014   = "Veilleux_Kirk_2014_SupplementalTable1",
-          Koay1998 = "Koay_etal_1998_Figure6",
+          Koay1998 = "Koay_etal_1998_a_Figure6",
           H2020    = "Heffner_etal_2020_Figure3",
           Haarlem2026 = "Haarlem_etal_2026_CFFdataset")
 item_year <- c(1992, 2014, 1998, 2020, 2026); names(item_year) <- item
@@ -155,7 +155,7 @@ ref_key <- function(text){
 }
 
 ## ---- 1. load sources, emit STUDY-LEVEL rows ---------------------------------------------
-enc_override <- c("Koay_etal_1998_Figure6" = "10.1037%2F0735-7036.112.4.371_Figure6")
+enc_override <- c("Koay_etal_1998_a_Figure6" = "10.1037%2F0735-7036.112.4.371_Figure6")
 rows <- tibble(Species=character(), Measure=character(), Value=double(), Medium=character(),
                method_basis=character(), poolable_group=character(),
                population=character(), Source_item=character(), Study_keys=list(),
@@ -192,10 +192,10 @@ heffner_extra <- list(
   list("Heffner_Heffner_1985", "ResultsText", "binomial", list(
     c("audible_freq_high_60dBSPL_khz", "Audible_freq_high_60dB.kHz", "1"),
     c("audible_freq_low_60dBSPL_khz",  "Audible_freq_low_60dB.kHz",  "1"))),
-  list("Heffner_Heffner_2010", "ResultsText", "binomial", list(
+  list("Heffner_Heffner_2010_a", "ResultsText", "binomial", list(
     c("high_freq_limit_60dB_kHz", "Audible_freq_high_60dB.kHz", "1"),
     c("low_freq_limit_60dB_Hz",   "Audible_freq_low_60dB.kHz",  "0.001"))),
-  list("Heffner_etal_2001", "ResultsText", "species_sci", list(
+  list("Heffner_etal_2001_b", "ResultsText", "species_sci", list(
     c("hearing_range_high_khz", "Audible_freq_high_60dB.kHz", "1"),
     c("hearing_range_low_khz",  "Audible_freq_low_60dB.kHz",  "1"))),
   list("Heffner_etal_2003", "ResultsText", "binomial", list(
@@ -294,7 +294,7 @@ for (i in seq_len(nrow(vk))) {
 }
 
 ## Koay et al 1998 Figure 6 -- caption gives an audiogram source per point; medium matters
-koay <- read.csv(file.path(base, "Koay_etal_1998", "Koay_etal_1998_Figure6.csv"), colClasses = "character")
+koay <- read.csv(file.path(base, "Koay_etal_1998_a", "Koay_etal_1998_a_Figure6.csv"), colClasses = "character")
 for (i in seq_len(nrow(koay))) {
   r <- koay[i, ]
   keys <- split_refs(r$audiogram_source)

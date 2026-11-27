@@ -27,7 +27,7 @@ options(scipen = 999)
 })
 folder        <- dirname(.sp)
 item_name     <- tools::file_path_sans_ext(basename(.sp))       # Young_etal_2013_b_Table1 (local name)
-registry_item <- "Young_etal_2013_Table1"                       # __ReadMe Item name (shared w/ the M1 paper)
+registry_item <- item_name                                      # distinct 2013b registry item
 paper_doi     <- "10.1073%2Fpnas.1318894110"                    # disambiguates from the M1 paper
 base <- local({ d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
@@ -85,7 +85,8 @@ message(item_name, ": ", nrow(clean), " rows (", length(unique(clean$case)), " c
 if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
   fc  <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
   hit <- which(fc$`Item name` == registry_item & grepl(paper_doi, fc$`Item encoded`, fixed = TRUE))
-  enc <- if (length(hit)) fc$`Item encoded`[hit[1]] else NA_character_
+  if (length(hit) != 1L) stop("Expected one Young 2013b registry row")
+  enc <- fc$`Item encoded`[hit]
   tsv_dir <- file.path(base, "__Public", "comparative-data")
   if (is.na(enc)) warning("No 'Item encoded' for the epileptic-baboon table; TSV skipped.")
   else if (!dir.exists(path.expand(tsv_dir))) warning("Shared folder not found; TSV skipped.")

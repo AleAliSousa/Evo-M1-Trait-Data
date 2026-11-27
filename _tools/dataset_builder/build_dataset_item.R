@@ -51,7 +51,8 @@ build_dataset_item <- function(
   ## ---- load registry and look up item by name (never by row number) --------
   registry <- readxl::read_excel(registry_file, sheet = "Sheet1")
 
-  row <- registry[registry[["Item name"]] == item_name, , drop = FALSE]
+  row <- registry[which(!is.na(registry[["Item name"]]) &
+                        registry[["Item name"]] == item_name), , drop = FALSE]
 
   if (nrow(row) == 0L)
     stop(

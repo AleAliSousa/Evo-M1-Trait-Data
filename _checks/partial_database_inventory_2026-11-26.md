@@ -1,6 +1,6 @@
 # Partial database inventory — updated 2026-11-26
 
-Live `__ReadMe.xlsx` and staging `__ReadMeAddON.xlsx` were read without changing either workbook. Counts are main-registry rows (three item names repeat). Exact filename checks can flag legacy aliases rather than missing measurements.
+Live `__ReadMe.xlsx` and staging `__ReadMeAddON.xlsx` were read without changing either workbook. Counts below record the scan before the later same-day Plavcan build; the companion files remain that frozen scan. Counts are main-registry rows (three item names repeat). Exact filename checks can flag legacy aliases rather than missing measurements.
 
 ## Current status
 
@@ -37,7 +37,7 @@ Live `__ReadMe.xlsx` and staging `__ReadMeAddON.xlsx` were read without changing
 | `Frost_Masterton_1994_Figure3` | Source PDF present; figure extraction and replot remain. ResultsText already captures headline values. |
 | `Heffner_etal_2015_TABLEI` | Completed local item/public TSV use `..._TableI`; reconcile casing and downstream references. |
 | `Isler_etal_2008_Tree.nex` | Local deliverable is a NEXUS tree, not a TSV. |
-| `Plavcan_vanSchaik_1997_b_Table1` | Source PDF present; Table 1 body-mass/dimorphism data unbuilt. |
+| `Plavcan_vanSchaik_1997_b_Table1` | Built later on 2026-11-26: 87-row analysis CSV and public TSV; this row was a gap in the frozen scan. |
 | `Upham_etal_2019_Completed100` | Source is multi-tree NEXUS; reconcile expected file type. |
 | `Wong_etal_2013_Table1` | No matching folder or source found; locate source. |
 

@@ -4,7 +4,7 @@ Table 1 | Unadjusted midsagittal area measures of the CC and its subdivisions, t
 
 ## Build
 
-Table 1 gives per-individual unadjusted midsagittal areas (mm²) of the corpus callosum (CC) and its 7 subdivisions (rostrum, genu, rostral body, anterior midbody, posterior midbody, isthmus, splenium), total CC area, brain volume (cc) and body weight (kg) for 18 Hiram College capuchins: the 13 named animals of Phillips_Sherwood_2007_Table1 plus Sabro (M), Shiro (M) and the coded M21-02 (M), M57-04 (F) and M58-04 (F). This is the three-author PLoS ONE paper — distinct from the two-author Neuropsychologia petalias paper of the same year (Phillips_Sherwood_2007_Table1), and not the manuscript duplicated in the repo's `Phillips_Sherwood_2007_b` folder.
+Table 1 gives per-individual unadjusted midsagittal areas (mm²) of the corpus callosum (CC) and its 7 subdivisions (rostrum, genu, rostral body, anterior midbody, posterior midbody, isthmus, splenium), total CC area, brain volume (cc) and body weight (kg) for 18 Hiram College capuchins: the 13 named animals of Phillips_Sherwood_2007_Table1 plus Sabro (M), Shiro (M) and the coded M21-02 (M), M57-04 (F) and M58-04 (F). This is the three-author PLoS ONE paper — distinct from the two-author Neuropsychologia petalias paper of the same year (Phillips_Sherwood_2007_Table1). A byte-identical copy of that manuscript formerly in `Phillips_Sherwood_2007_b` was removed on 2026-11-26.
 
 From the paper folder, run:
 

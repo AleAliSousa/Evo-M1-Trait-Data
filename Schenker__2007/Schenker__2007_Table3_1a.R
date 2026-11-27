@@ -30,11 +30,10 @@ out <- out[!is.na(out$cortical_area_volume_uncorrected_mm3),,drop=FALSE]
 stopifnot(nrow(out)==54L,length(unique(out$specimen_as_published))==14L)
 options(scipen=999)
 write.csv(out,file.path(folder,paste0(item,'.csv')),row.names=FALSE,na='',fileEncoding='UTF-8')
-hits <- lapply(file.path(root,c('__ReadMe.xlsx','__ReadMeAddON.xlsx')),function(p){
- z<-readxl::read_excel(p,sheet='Sheet1');z[z[['Item name']]==item,,drop=FALSE]})
-hits <- hits[vapply(hits,nrow,integer(1))==1L]
-if(length(hits)!=1L)stop('Expected exactly one registry row')
-code <- as.character(hits[[1]][['Item encoded']][1])
+reg <- readxl::read_excel(file.path(root,'__ReadMe.xlsx'),sheet='Sheet1')
+hit <- which(reg[['Item name']]==item)
+if(length(hit)!=1L)stop('Expected exactly one main registry row')
+code <- as.character(reg[['Item encoded']][hit])
 if(is.na(code)||!nzchar(code)||endsWith(code,'_'))stop('Invalid Item encoded')
 write.table(out,file.path(root,'__Public','comparative-data',paste0(code,'.tsv')),
  sep='\t',row.names=FALSE,na='',fileEncoding='UTF-8')

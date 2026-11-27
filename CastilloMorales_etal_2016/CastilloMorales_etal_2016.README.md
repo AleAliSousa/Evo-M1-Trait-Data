@@ -35,7 +35,7 @@ Quality Notes:
    sources were added to the repo on 2026-11-18: Beatty_Laughlin_2006
    (mouse), Roehrs__1986 (ferret), Kruska__1980 (alpaca); the Ei values
    rest on Gonzalez-Lagos et al. 2010 (ref 83) — see the
-   GonzalezLagos_etal_2010 folder.
+   GonzálezLagos_etal_2010 folder.
 
 2. Suspected misprint in the source table: the dog row (Schleifenbaum
    1973) prints brain volume 458.273 cm3 and neocortex 177.753 cm3 for a

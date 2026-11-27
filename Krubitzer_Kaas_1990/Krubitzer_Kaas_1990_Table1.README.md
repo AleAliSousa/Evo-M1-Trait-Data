@@ -22,6 +22,8 @@ for four primate groups:
 20 cases. **These are proportions, not absolute areas** — absolute field areas appear only as text
 ranges (e.g. area 17 = 378–653 mm² across six squirrel monkeys), not in the table.
 
+**Project roles (2026-11-26):** This printed case-level Table 1 is a valid Evo-M1 database item. The same publication also has separate figure-derived tracings in `Flatmap_SurfaceArea_Project/flatmap_measurements/Krubitzer_Kaas_1990/`. Compare the two only in that flatmap dataset's optional reference-comparison workflow, after checking case, hemisphere, field definition, and denominator correspondence. Retain this table's percentages and the flatmap measurements as distinct products; neither should overwrite the other.
+
 ## Source → Snapshot → Data readable
 PDF p.174–175 Table 1 → transcribed to `Krubitzer_Kaas_1990_Table1_snapshot.csv` (per-case rows +
 the printed `Mean %` / `Std Dev` rows, verbatim). `Krubitzer_Kaas_1990_Table1.R` →

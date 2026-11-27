@@ -13,14 +13,15 @@ with zipfile.ZipFile(path) as archive:
     if bad:
         raise SystemExit(f'Corrupt workbook ZIP member: {bad}')
     sheet_xml = archive.read('xl/worksheets/sheet1.xml')
-    chain_xml = archive.read('xl/calcChain.xml')
     ns = {'m': 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
     sheet_root = etree.fromstring(sheet_xml)
-    chain_root = etree.fromstring(chain_xml)
     array_cells = {cell.get('r') for cell in sheet_root.xpath('.//m:c[m:f[@t="array"]]', namespaces=ns)}
-    chain_arrays = {cell.get('r') for cell in chain_root if cell.get('a') == '1' and cell.get('i', '1') == '1'}
-    if array_cells != chain_arrays:
-        raise SystemExit(f'Formula-array metadata differs from calcChain: {sorted(array_cells ^ chain_arrays)[:20]}')
+    # calcChain is optional in valid XLSX files; the workbook may rebuild it.
+    if 'xl/calcChain.xml' in archive.namelist():
+        chain_root = etree.fromstring(archive.read('xl/calcChain.xml'))
+        chain_arrays = {cell.get('r') for cell in chain_root if cell.get('a') == '1' and cell.get('i', '1') == '1'}
+        if array_cells != chain_arrays:
+            raise SystemExit(f'Formula-array metadata differs from calcChain: {sorted(array_cells ^ chain_arrays)[:20]}')
 book = openpyxl.load_workbook(path, read_only=True, data_only=True)
 expected = ['Sheet1', 'SOURCE_DISPOSITION', 'AUTO_Public_TSV_FileList']
 if book.sheetnames != expected:

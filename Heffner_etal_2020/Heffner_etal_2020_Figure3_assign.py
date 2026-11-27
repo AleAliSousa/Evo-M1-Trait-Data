@@ -7,7 +7,7 @@ reference_tables/Heffner_etal_2020_Figure3_label_assignment.csv.
 
 Method: a label is joined to a marker by following its printed leader line when
 one starts at the label box, otherwise by nearest marker to the label box.
-Every assignment is then VALIDATED against Koay_etal_1998_Figure6.csv, which
+Every assignment is then VALIDATED against Koay_etal_1998_a_Figure6.csv, which
 plots the same two variables for many of the same species from an independent
 digitisation: agreement within a few percent confirms the assignment, a large
 disagreement flags it for visual checking (reported, never silently accepted).
@@ -19,7 +19,7 @@ ROOT = os.path.dirname(HERE)
 PDF = os.path.join(HERE, "Heffner-2020-Hearing and sound localization in.pdf")
 SNAP = os.path.join(HERE, "Heffner_etal_2020_Figure3_snapshot.csv")
 OUT = os.path.join(HERE, "reference_tables", "Heffner_etal_2020_Figure3_label_assignment.csv")
-KOAY = os.path.join(ROOT, "Koay_etal_1998", "Koay_etal_1998_Figure6.csv")
+KOAY = os.path.join(ROOT, "Koay_etal_1998_a", "Koay_etal_1998_a_Figure6.csv")
 PAGE = 5
 
 # label text as printed (interleaved two-line labels repaired) -> printed form

@@ -1,5 +1,7 @@
 # Westergaard_Hyatt_1994 — reconciliation note (2026-10-30)
 
+**2026-11-26 update:** A gap for the paper's six published mirror-on/off behavior contrasts was verified against the current `social_mirror_play` compilation. Figures 1 and 2 were digitized as separate approximate items, each with a source-pixel snapshot, local CSV, public TSV, and replot. The archived one-row Results-text product remains separate and unpromoted; the earlier HOLD description below records the prior state. See the two new Figure READMEs.
+
 Westergaard GC, Hyatt CW (1994). The responses of bonobos (*Pan paniscus*) to their mirror images: Evidence of self-recognition. *Human Evolution* 9(4):273–279. doi:10.1007/BF02435514. PDF in folder (7 pp.).
 
 ## What exists

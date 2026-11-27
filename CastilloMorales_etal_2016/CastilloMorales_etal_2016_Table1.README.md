@@ -59,7 +59,7 @@ inside the envelope). Nothing was adjusted to make a check pass.
   from earlier literature; nothing here is a primary measurement. The
   volume source is named per row in `Source`; the Ei column rests on
   González-Lagos et al. (2010), whose brain/body dataset is not an
-  Evo-M1 item (see the `GonzalezLagos_etal_2010` folder).
+  Evo-M1 item (see the `GonzálezLagos_etal_2010` folder).
 - **Neocortex definition:** grey + white matter of the cerebral cortex,
   excluding palaeocortical grey matter (entorhinal cortex, schizocortex,
   hippocampus, amygdala) — paper Methods 2.2.

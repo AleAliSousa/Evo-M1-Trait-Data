@@ -10,7 +10,7 @@ Note: this folder uses Table 2 (the quantitative sleep parameters table), not Ta
 
 | file | what it is |
 | --- | --- |
-| `Lyamin_etal_2008_Table2_snapshot.csv` | frozen, faithful copy of Table 2 as printed (see reorientation note below) |
+| `Lyamin_etal_2008_Table2_snapshot.csv` | frozen, source-layout copy of Table 2 |
 | `Lyamin_etal_2008_Table2.csv` | cleaned, analysis-ready data |
 | `Lyamin_etal_2008_Table2.R` | script that turns the snapshot into the clean CSV |
 | `Lyamin_etal_2008_Table2.README.md` | this file |
@@ -19,9 +19,12 @@ Note: this folder uses Table 2 (the quantitative sleep parameters table), not Ta
 
 **Method.** Manual entry from the printed Table 2 on p. 1455 of the paper.
 
-**Reorientation.** In the printed paper, Table 2 places species as **columns** and parameters as **rows** — sensible for a four-species comparison in a review article, but not machine-friendly. For the database, the snapshot has been reoriented to species-as-rows with parameters-as-columns. All values, units and species assignments are preserved exactly; only the axis of the table has been transposed.
+**Orientation.** The printed paper and the snapshot both place species as columns
+and parameters as rows. The R reader transposes these to one analysis row per
+species. This correction was made on 2026-09-17; the older description below
+was not updated at that time.
 
-**Columns kept, one per printed row of Table 2.**
+**Analysis columns, made from the printed rows by the R reader.**
 
 - Species (Latin binomial)
 - Common name

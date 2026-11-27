@@ -104,9 +104,8 @@ carried on every row so a future analysis can filter on them rather than pooling
    the unseen Zenodo file, has been **removed** — it described data this repo does not hold).
 3. 33 `Heuer2019` rows added to `_keys/Stephan/species_key.csv` (common name → binomial, read off
    Table 1; `Gorilla` deliberately excluded as ambiguous).
-4. Registered in `__ReadMe.xlsx` Sheet1.
-5. `Heuer_etal_2019_Data.csv` is built and listed in the compiled item columns;
-   the 3-D folding measure remains distinct from the Zilles 2-D GI merge.
+4. `Table1` and `S1` are registered in `__ReadMe.xlsx` Sheet1. The 65-case `Data` measurement CSV is **not** a registered item as of 2026-11-26.
+5. `Heuer_etal_2019_Data.csv` is present and listed in the compiled item columns, but needs a frozen local author-stats source, reproducible item reader, definitions, registry row, and public TSV before its build is complete. The 3-D folding measure remains distinct from the Zilles 2-D GI merge.
 6. On 2026-11-25, registered all 66 S1 cases and the 65 measured-case links
    in the specimen crosswalk, with three probable cross-paper name matches.
 

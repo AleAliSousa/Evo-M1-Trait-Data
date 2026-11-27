@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+source_row,source row,,,,info,wild plant foods,Cordain_etal_2000_Table3,,"Table 3, printed p. 686; PDF p. 5"
+rank_as_printed,rank as printed,,,,info,wild plant foods,Cordain_etal_2000_Table3,,"Table 3, printed p. 686; PDF p. 5"
+plant_food_type_as_printed,plant food type as printed,,,,info,wild plant foods,Cordain_etal_2000_Table3,,"Table 3, printed p. 686; PDF p. 5"
+n_food_items_as_printed,n food items as printed,,food_item.count,category count,secondary,wild plant foods,Cordain_etal_2000_Table3,Roots n=51 conflicts with percentage and footnote total,"Table 3, printed p. 686; PDF p. 5"
+pct_total_as_printed,pct total as printed,,food_item.pct,reported percentage,secondary,wild plant foods,Cordain_etal_2000_Table3,,"Table 3, printed p. 686; PDF p. 5"
+energy_density_kJ_per_g,energy density kJ per g,,energy_density.kJ.g,category mean,secondary,wild plant foods,Cordain_etal_2000_Table3,,"Table 3, printed p. 686; PDF p. 5"
+Species,Species,,,,info,wild plant foods,Cordain_etal_2000_Table3,,"Table 3, printed p. 686; PDF p. 5"
+pct_implied_by_n_and_footnote,pct implied by n and footnote,,food_item.pct,derived check,derived,wild plant foods,Cordain_etal_2000_Table3,Uses printed footnote n=768; not a corrected source value,"Table 3, printed p. 686; PDF p. 5"
+pct_count_agrees_with_printed,Count-derived percent within 0.11 point of printed percent,,,,info,wild plant foods,Cordain_etal_2000_Table3,FALSE for Roots only,"Table 3, printed p. 686; PDF p. 5"

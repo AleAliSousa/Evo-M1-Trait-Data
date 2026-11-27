@@ -10,15 +10,15 @@ neurons in primate and human evolution.* **PNAS 113(34):9617–9622.**
 DOI **10.1073/pnas.1610178113**. Table S1 of the SI Appendix (`pnas.201610178si.pdf`, p. 2).
 
 **Printed source → snapshot required.** `Gabi_etal_2016_TableS1_snapshot.xlsx` (sheet `TableS1`),
-built by `Gabi_etal_2016_TableS1_extract_snapshot.py`. Word-coordinate extraction: the PNAS text
-layer has dropped the space glyphs (`Homosapiens`, `Percentvolumeandnumber…`) and the header is
-two-tier (`%V` on one baseline, `GM`/`WM` on the next).
+built by `Gabi_etal_2016_TableS1_extract_snapshot.py`. The layout-preserving PDF text
+layer yields the eight measure rows. The snapshot restores spaces in printed species
+labels and keeps the single printed header row with its subscripts.
 
 | File | |
 |---|---|
 | `pnas.201610178si.pdf` | the printed source (2 pp.; Table S1 on p. 2) |
 | `Gabi_etal_2016_TableS1_extract_snapshot.py` | capture script |
-| `Gabi_etal_2016_TableS1_snapshot.xlsx` | **frozen source** — caption, two-tier header, 8 rows, footnote |
+| `Gabi_etal_2016_TableS1_snapshot.xlsx` | **frozen source** — caption, one-row header, 8 rows, footnote |
 | `Gabi_etal_2016_TableS1.R` | reformat: snapshot → CSV + TSV |
 | `Gabi_etal_2016_TableS1.csv` | analysis table, **8 species** |
 | `__Public/comparative-data/10.1073%2Fpnas.1610178113_TableS1.tsv` | public TSV |
@@ -68,7 +68,8 @@ sub-trait, kept apart from `CerebralCortex_N.n`.
 
 ## Species names
 
-Printed as abbreviated genus with no space (`C.apella`). Eight `Gabi2016` rows added to
+Printed as abbreviated genus with a space (`C. apella`). The R reader converts that
+to the pre-existing compact analysis label (`C.apella`) for compatibility. Eight `Gabi2016` rows added to
 `_keys/Stephan/species_key.csv`; all 8 resolve. `C.apella → Sapajus apella`, the house name already
 used by HH 2015 and DosSantos 2020.
 
@@ -76,11 +77,12 @@ used by HH 2015 and DosSantos 2020.
 
 - **8 species rows**, no blank cells (the extract script asserts both).
 - Every share lies in (0, 100] — asserted in the `.R`.
-- **Mean `% neurons` = 8.17%**, matching the paper's "~8% of cortical neurons".
-- **Human = 7.8%, rank 3 of 8** — squarely mid-range, which is exactly the paper's finding of *no
+- **Mean `% neurons` = 8.18%**, matching the paper's "~8% of cortical neurons".
+- **Human = 7.8%, rank 4 of 8** — squarely mid-range, which is exactly the paper's finding of *no
   relative prefrontal expansion* in humans. The largest value is *P. cynocephalus* at 16.2%.
-- **Re-run `Gabi_etal_2016_TableS1.R` in RStudio** to confirm it reproduces the committed CSV/TSV;
-  they were written by an offline mirror of the script (no R in the authoring environment).
+- `python Gabi_etal_2016/Gabi_etal_2016_TableS1_extract_snapshot.py` and
+  `Rscript --vanilla Gabi_etal_2016/Gabi_etal_2016_TableS1.R` both ran; the
+  regenerated 8-row analysis CSV matched the pre-change version cell for cell.
 
 ## Table S2 — not built
 

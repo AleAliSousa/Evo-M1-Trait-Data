@@ -2,7 +2,7 @@
 ## amygdaloid complex. J Hirnforsch. Table 1.
 ##
 ## Build step only: frozen snapshot -> clean analysis CSV -> DOI/PMID-coded public TSV.
-## Input : <script stem>_snapshot.xlsx
+## Input : separate printed Table 1 and Table 2 snapshots
 ## Output: <script stem>.csv
 ##         <Item encoded>.tsv in __Public/comparative-data/ (named from __ReadMe.xlsx)
 
@@ -28,7 +28,6 @@ suppressPackageStartupMessages({
 folder        <- dirname(.sp)                              # this paper's folder
 item_name     <- tools::file_path_sans_ext(basename(.sp))  # = file name, matches __ReadMe.xlsx
 source_name   <- sub("_(Table|TABLE).*", "", item_name)   # e.g., Frahm_etal_1998_Table1 -> Frahm_etal_1998
-snapshot_xlsx <- paste0(item_name, "_snapshot.xlsx")
 output_csv    <- paste0(item_name, ".csv")                 # project convention: output derives from script name
 base          <- local({                                   # repo root; NA if run as a lone folder
   d <- folder
@@ -38,37 +37,35 @@ base          <- local({                                   # repo root; NA if ru
 setwd(folder)
 
 ## ---- read the frozen snapshot ----
-snapshot_sheet <- "Table1"
-header_rows <- 2L   # row 1 caption + row 2 header
-
-pos <- c(
-  "species_disp",
-  "Amygdala_mm3",
-  "Complexus_centromedialis_mm3",
-  "Complexus_corticobasolateralis_mm3",
-  "Nucleus_amygdalae_basalis_pars_magnocellularis_mm3",
-  "Nucleus_tractus_olfactorius_mm3"
-)
-
 num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
-
-raw <- read_excel(snapshot_xlsx, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")
-
-dat <- raw %>%
-  slice(-(seq_len(header_rows)))
-
-names(dat)[seq_along(pos)] <- pos
+read_source_table <- function(n) {
+  path <- paste0("Stephan_etal_1987_Table", n, "_snapshot.xlsx")
+  raw <- read_excel(path, sheet = paste0("Table", n), col_names = FALSE,
+                    col_types = "text", .name_repair = "minimal")
+  stopifnot(ncol(raw) == 11L)
+  raw <- raw[-seq_len(3L), ]
+  tibble(table_number = n, source_label = raw[[1]],
+         AMY = num(raw[[2]]), LAM = num(raw[[3]]),
+         MCB = num(raw[[4]]), MAM = num(raw[[5]]), NTO = num(raw[[6]])) %>%
+    filter(!is.na(AMY))
+}
+dat <- bind_rows(read_source_table(1L), read_source_table(2L))
+stopifnot(nrow(dat) == 89L)
+lookup <- read.csv("reference_tables/Stephan_etal_1987_species_lookup.csv",
+                   stringsAsFactors = FALSE)
 
 ## ---- clean ----
 clean <- dat %>%
-  filter(!is.na(num(Amygdala_mm3))) %>%
+  left_join(lookup, by = c("table_number", "source_label")) %>%
+  { if (anyNA(.$analysis_species)) stop("Unmapped source species label", call. = FALSE); . } %>%
+  arrange(analysis_order) %>%
   transmute(
-    species = str_squish(species_disp),
-    amygdala_mm3 = num(Amygdala_mm3),
-    complexus_centromedialis_mm3 = num(Complexus_centromedialis_mm3),
-    complexus_corticobasolateralis_mm3 = num(Complexus_corticobasolateralis_mm3),
-    nucleus_amygdalae_basalis_pars_magnocellularis_mm3 = num(Nucleus_amygdalae_basalis_pars_magnocellularis_mm3),
-    nucleus_tractus_olfactorius_mm3 = num(Nucleus_tractus_olfactorius_mm3),
+    species = analysis_species,
+    amygdala_mm3 = AMY,
+    complexus_centromedialis_mm3 = MAM,
+    complexus_corticobasolateralis_mm3 = LAM,
+    nucleus_amygdalae_basalis_pars_magnocellularis_mm3 = MCB,
+    nucleus_tractus_olfactorius_mm3 = NTO,
     source = source_name
   )
 

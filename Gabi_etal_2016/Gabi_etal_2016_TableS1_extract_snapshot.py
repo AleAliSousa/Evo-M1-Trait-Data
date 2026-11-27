@@ -4,19 +4,17 @@
 Printed source -> a snapshot is required (__HOWTO_build_a_dataset_file.md sec 0a invariant 1).
 Table S1 is on p. 2 of pnas.201610178si.pdf.
 
-Extraction is by word coordinates, not line text: the Frontiers/PNAS text layer has dropped the
-space glyphs ("Homosapiens", "Percentvolumeandnumber..."), and the header is two-tier - "%V" sits
-on one baseline with "GM"/"WM" on the next. Both are handled by reading fixed x-windows taken from
-the printed header positions.
+Extraction uses the layout-preserving text layer on p. 2. The printed header is one row;
+subscripts are part of the same header cells.
 
-The snapshot keeps the printed caption, the two-tier header as printed, the printed row order and
+The snapshot keeps the printed caption, one-row header, printed row order and
 the full footnote, with the species names exactly as printed (abbreviated genus, no spaces).
 """
 
-import collections
 import os
+import re
+import subprocess
 
-import pdfplumber
 from openpyxl import Workbook
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -29,31 +27,29 @@ FOOTNOTE = ("% V_GM, percentage of gray matter volume contained in prefrontal re
             "% O_WM, percentage of all other (nonneuronal) cells in the white matter contained "
             "in prefrontal region; and % neurons, percentage of all cortical neurons contained "
             "in prefrontal region.")
-# x-window start for each column, read off the printed header
-XCUT = [(160, 240), (240, 285), (285, 330), (330, 375), (375, 430)]
-HEADER_TOP = ["Species", "%V", "%V", "%O", "%neurons"]   # printed row 1 of the header
-HEADER_BOT = ["", "GM", "WM", "WM", ""]                  # printed row 2 of the header
+HEADER = ["Species", "% V_GM", "% V_WM", "% O_WM", "% neurons"]
+
+
+def restore_printed_species_spacing(name):
+    name = re.sub(r"^([A-Z])\.(\S)", r"\1. \2", name)
+    return "Homo sapiens" if name == "Homosapiens" else name
 
 
 def main():
-    with pdfplumber.open(PDF) as pdf:
-        page = pdf.pages[1]
-        by_line = collections.defaultdict(list)
-        for w in page.extract_words():
-            if w["top"] < 230:                      # Table S1 occupies the top of p. 2
-                by_line[round(w["top"], 1)].append(w)
-
-        rows = []
-        for top in sorted(by_line):
-            if not (85 < top < 170):                # data band, between header and footnote
-                continue
-            cells = []
-            for lo, hi in XCUT:
-                txt = " ".join(w["text"] for w in sorted(by_line[top], key=lambda w: w["x0"])
-                               if lo <= w["x0"] < hi)
-                cells.append(txt)
-            if cells[0] and any(cells[1:]):
-                rows.append(cells)
+    page = subprocess.check_output(
+        ["pdftotext", "-f", "2", "-l", "2", "-layout", PDF, "-"], text=True
+    )
+    band = page.split("Table S1.", 1)[1].split("Table S2.", 1)[0]
+    pat = re.compile(r"^\s*((?:[A-Z]\.\s*\w+|Homo\s*sapiens))\s+"
+                     r"(\d+(?:\.\d+)?)\s+(\d+(?:\.\d+)?)\s+"
+                     r"(\d+(?:\.\d+)?)\s+(\d+(?:\.\d+)?)\s*$")
+    rows = []
+    for line in band.splitlines():
+        match = pat.match(line)
+        if match:
+            row = list(match.groups())
+            row[0] = restore_printed_species_spacing(row[0])
+            rows.append(row)
 
     assert len(rows) == 8, "expected 8 species rows, got %d" % len(rows)
     for r in rows:
@@ -63,8 +59,7 @@ def main():
     ws = wb.active
     ws.title = "TableS1"
     ws.append([CAPTION] + [None] * 4)
-    ws.append(HEADER_TOP)
-    ws.append(HEADER_BOT)
+    ws.append(HEADER)
     for r in rows:
         ws.append(r)
     ws.append([FOOTNOTE] + [None] * 4)

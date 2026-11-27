@@ -31,12 +31,13 @@ library(readxl)
 
 ## 2. READ FROZEN SNAPSHOT ---------------------------------------------------
 snap <- as.data.frame(
-  read_excel(snapshot_xlsx, sheet = "Table3", .name_repair = "minimal"),
+  read_excel(snapshot_xlsx, sheet = "Table3", skip = 1, n_max = 5,
+             .name_repair = "minimal"),
   check.names = FALSE
 )
 
 ## 3. REFORMAT -> species rows, absolute counts ------------------------------
-species <- sub("_millions_mean_SD$", "", names(snap)[-1])
+species <- sub("\\s*\\([^)]*\\)$", "", names(snap)[2:8])
 
 acc <- c(
   Human = "Homo sapiens",
@@ -72,10 +73,15 @@ out <- data.frame(
   check.names = FALSE
 )
 
-## Each snapshot row is one nucleus; columns 2:n are the seven species.
+## Each printed row is one nucleus; columns 2:8 are species, 9 is post hoc text.
+nucleus_name <- c(Amygdala = "Amygdala", `Lateral nucleus` = "Lateral",
+                  `Basal nucleus` = "Basal",
+                  `Accessory basal nucleus` = "AccessoryBasal",
+                  `Central nucleus` = "Central")
 for (i in seq_len(nrow(snap))) {
-  nuc  <- snap$ROI_nucleus[i]
-  vals <- as.character(unlist(snap[i, -1], use.names = FALSE))
+  nuc  <- unname(nucleus_name[snap$ROI[i]])
+  stopifnot(!is.na(nuc))
+  vals <- as.character(unlist(snap[i, 2:8], use.names = FALSE))
   ms   <- t(vapply(vals, parse_ms, numeric(2)))
 
   stopifnot(nrow(ms) == nrow(out))

@@ -40,16 +40,16 @@ BarbeitoAndrés_etal_2019/BarbeitoAndrés_etal_2019_volumes_snapshot.tsv,tsv,Tru
 Barger__2012/Barger__2012_Table4.1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Barger__2012/Barger__2012_Table4.2_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Barger_etal_2007/Barger_etal_2007_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
-Barger_etal_2012/Barger_etal_2012_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Barger_etal_2012/Barger_etal_2012_Table3_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Barger_etal_2014/Barger_etal_2014_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Barks_etal_2014/Barks_etal_2014_TABLE1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Barks_etal_2014/Barks_etal_2014_TABLE2_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
+Barger_etal_2012/Barger_etal_2012_Table1_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p4; five printed columns, 35 specimen rows and source footnote preserved"
+Barger_etal_2012/Barger_etal_2012_Table3_snapshot.xlsx,xlsx,True,corrected_source_layout,"PDF p9; restored printed ninth post hoc column, caption and species headers; 7-row analysis CSV unchanged"
+Barger_etal_2014/Barger_etal_2014_Table1_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p3; eight printed columns, 20 specimens and footnote preserved"
+Barks_etal_2014/Barks_etal_2014_TABLE1_snapshot.xlsx,xlsx,True,corrected_source_layout,PDF p2; restored caption and four-character subject codes; 36-row analysis CSV unchanged
+Barks_etal_2014/Barks_etal_2014_TABLE2_snapshot.xlsx,xlsx,True,corrected_source_layout,PDF p2; removed wholly empty fifth column; 26-row analysis CSV unchanged
 Barks_etal_2014/Barks_etal_2014_unpublishedviaDeCasien_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Baron_etal_1983/Baron_etal_1983_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Baron_etal_1987/Baron_etal_1987_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Baron_etal_1988/Baron_etal_1988_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Baron_etal_1990/Baron_etal_1990_Table1_snapshot.xlsx,xlsx,True,confirmed_departure_pending,Built from curated comparison CSV; reconstruct from printed table
+Baron_etal_1983/Baron_etal_1983_Table1_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF pp3-5; eight printed columns, source order, means, footnotes confirmed"
+Baron_etal_1987/Baron_etal_1987_Table1_snapshot.xlsx,xlsx,True,corrected_source_layout_context_omitted,"PDF pp2-3; printed Table 1 and Table 2 separate, volume/index geometry and groups restored; index values untranscribed"
+Baron_etal_1988/Baron_etal_1988_Table1_snapshot.xlsx,xlsx,True,corrected_source_layout_context_omitted,"PDF pp4-5; two source-order sheets, printed VM-before-VI order, index geometry, locomotory codes; index values untranscribed"
+Baron_etal_1990/Baron_etal_1990_Table1_snapshot.xlsx,xlsx,True,corrected_source_checked,Rebuilt printed two-panel Table 1 on PDF p. 4; CSV unchanged
 Baron_etal_1996/Baron_etal_1996_Table10_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Baron_etal_1996/Baron_etal_1996_Table13_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Baron_etal_1996/Baron_etal_1996_Table16_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
@@ -70,9 +70,9 @@ Baron_etal_1996/Baron_etal_1996_Table51_snapshot.csv,csv,True,pending_source_com
 Baron_etal_1996/Baron_etal_1996_Table5_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Baron_etal_1996/Baron_etal_1996_Table8_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Barrickman_Lin_2010/Barrickman_Lin_2010_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
-Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table2_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table3_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
+Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table1_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p4; 15 printed columns, individual order and footnotes preserved"
+Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table2_snapshot.xlsx,xlsx,True,corrected_source_layout,PDF p9; restored caption and right-insula block heading; 15-row analysis CSV unchanged
+Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table3_snapshot.xlsx,xlsx,True,corrected_source_layout,PDF p10; restored caption and side-by-side left/right heading tiers; 60-row analysis CSV unchanged
 Beatty_Laughlin_2006/Beatty_Laughlin_2006_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 BensonAmram_etal_2016/BensonAmram_etal_2016_DatasetS1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Bianchi_etal_2012/Bianchi_etal_2012_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
@@ -124,11 +124,11 @@ Catania_Remple_2002/Catania_Remple_2002_Table1_snapshot.csv,csv,True,pending_sou
 Catania_etal_1999/Catania_etal_1999_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Caves_etal_2018/Caves_etal_2018_TableS1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Chang_etal_2017/Chang_etal_2017_Table1_snapshot.csv,csv,False,pending_source_comparison,Name/metadata inventory only
-Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table2_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table3_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table4_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table5_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
+Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table1_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p2; eight printed columns, brain-size order and note preserved"
+Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table2_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p2; five area columns, source order and meaningful blanks preserved"
+Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table3_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p3; four printed columns, ten subnetworks and note preserved"
+Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table4_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p4; five printed columns, grouped animal rows and note preserved"
+Changizi_Shimojo_2005/Changizi_Shimojo_2005_Table5_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p5; five printed columns, brain-mass order and note preserved"
 Changizi__2003/Changizi__2003_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Chapelain_Hogervorst_2009/Chapelain_Hogervorst_2009_Table4_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Chapelain_Hogervorst_2009/Chapelain_Hogervorst_2009_Table5_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
@@ -228,20 +228,20 @@ Fobbs_etal_2011/Fobbs_etal_2011_TableS4_snapshot.xlsx,xlsx,True,pending_source_c
 Fobbs_etal_2011/Fobbs_etal_2011_TableS5a_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Fobbs_etal_2011/Fobbs_etal_2011_TableS5b_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Fox_Wilczynski_1986/Fox_Wilczynski_1986_TableI_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
-Frahm_Zilles_1994/Frahm_Zilles_1994_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Frahm_Zilles_1994/Frahm_Zilles_1994_Table2_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Frahm_etal_1982/Frahm_etal_1982_Table2_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Frahm_etal_1984/Frahm_etal_1984_Table1_snapshot.xlsx,xlsx,True,confirmed_departure_pending,Built from curated comparison CSV; reconstruct from printed table
-Frahm_etal_1984/Frahm_etal_1984_Table2_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Frahm_etal_1997/Frahm_etal_1997_Table1_snapshot.xlsx,xlsx,True,confirmed_departure_pending,Built from curated comparison CSV; reconstruct from printed table
-Frahm_etal_1998/Frahm_etal_1998_Table1_snapshot.xlsx,xlsx,True,confirmed_departure_pending,Built from curated comparison CSV; reconstruct from printed table
+Frahm_Zilles_1994/Frahm_Zilles_1994_Table1_snapshot.xlsx,xlsx,True,source_layout_existing,PDF p6; five-column Table 1 sheet and seven-column Table 2 sheet each preserve printed order and group gaps
+Frahm_Zilles_1994/Frahm_Zilles_1994_Table2_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p7; seven printed columns, source order and group gaps preserved"
+Frahm_etal_1982/Frahm_etal_1982_Table2_snapshot.xlsx,xlsx,True,source_layout_existing,"PDF p6; seven printed measure columns, source order, group breaks and footnote confirmed"
+Frahm_etal_1984/Frahm_etal_1984_Table1_snapshot.xlsx,xlsx,True,corrected_source_checked,Rebuilt printed Table 1 on PDF p. 3; CSV unchanged
+Frahm_etal_1984/Frahm_etal_1984_Table2_snapshot.xlsx,xlsx,True,corrected_source_layout,"PDF p4; 44 source-order species, mean rows, tiered headers, and footnote restored; Tupaia glis ASG:CGL corrected to 18.1"
+Frahm_etal_1997/Frahm_etal_1997_Table1_snapshot.xlsx,xlsx,True,corrected_source_checked,Rebuilt both printed tables on PDF p. 3; see item README
+Frahm_etal_1998/Frahm_etal_1998_Table1_snapshot.xlsx,xlsx,True,corrected_source_checked,Rebuilt printed Table 1 on PDF p. 2; CSV unchanged
 Franco_etal_2000/Franco_etal_2000_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Frost_etal_2000/Frost_etal_2000_TABLE1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 FroudistWalsh_etal_2023/FroudistWalsh_etal_2023_SupplementaryTable1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 FroudistWalsh_etal_2023/FroudistWalsh_etal_2023_SupplementaryTable2_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Fu_etal_2013/Fu_etal_2013_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Gabi_etal_2010/Gabi_etal_2010_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
-Gabi_etal_2016/Gabi_etal_2016_TableS1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
+Gabi_etal_2016/Gabi_etal_2016_TableS1_snapshot.xlsx,xlsx,True,corrected_source_layout,SI PDF p2; restored one-row subscripted header and printed species spacing; 8-row analysis CSV unchanged
 GalánAcedo_etal_2019/GalánAcedo_etal_2019_BodyMass_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 GalánAcedo_etal_2019/GalánAcedo_etal_2019_DielActivity_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 GalánAcedo_etal_2019/GalánAcedo_etal_2019_Habitat_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
@@ -349,8 +349,7 @@ HerculanoHouzel_etal_2006/HerculanoHouzel_etal_2006_Table1_snapshot.csv,csv,True
 HerculanoHouzel_etal_2007/HerculanoHouzel_etal_2007_SITable2_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 HerculanoHouzel_etal_2007/HerculanoHouzel_etal_2007_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 HerculanoHouzel_etal_2011/HerculanoHouzel_etal_2011_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
-HerculanoHouzel_etal_2013/HerculanoHouzel_etal_2013_Table1-a_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-HerculanoHouzel_etal_2013/HerculanoHouzel_etal_2013_Table1-b_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
+HerculanoHouzel_etal_2013/HerculanoHouzel_etal_2013_Table1-a_snapshot.xlsx,xlsx,True,corrected_source_layout,"PDF p3; restored full printed ten-column Table 1 with area, total and seven group rows; both analysis CSVs unchanged"
 HerculanoHouzel_etal_2014/HerculanoHouzel_etal_2014_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 HerculanoHouzel_etal_2014/HerculanoHouzel_etal_2014_Table2_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
@@ -898,10 +897,9 @@ Stephan_etal_1981/Stephan_etal_1981_TableXVI_snapshot.xlsx,xlsx,True,pending_sou
 Stephan_etal_1981/Stephan_etal_1981_TableXV_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Stephan_etal_1981/Stephan_etal_1981_TableX_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Stephan_etal_1982/Stephan_etal_1982_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-Stephan_etal_1984/Stephan_etal_1984_Table1_snapshot.xlsx,xlsx,True,confirmed_departure_pending,Built from curated comparison CSV; reconstruct from printed table
-Stephan_etal_1987/Stephan_etal_1987_Table1_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
-Stephan_etal_1987/Stephan_etal_1987_Table1_snapshot.xlsx,xlsx,True,confirmed_departure_pending,Built from curated comparison CSV; reconstruct from printed table
-Stephan_etal_1987/Stephan_etal_1987_Table2_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
+Stephan_etal_1984/Stephan_etal_1984_Table1_snapshot.xlsx,xlsx,True,corrected_source_checked,Two-page printed matrix restored; 53 used CGL cells checked; OCR context needs human review
+Stephan_etal_1987/Stephan_etal_1987_Table1_snapshot.xlsx,xlsx,True,corrected_source_checked,Printed Table 1 on PDF p. 3; 44 non-primates; output unchanged
+Stephan_etal_1987/Stephan_etal_1987_Table2_snapshot.xlsx,xlsx,True,corrected_source_checked,Printed Table 2 on PDF p. 4; 45 primates; output unchanged
 Stephan_etal_1988/Stephan_etal_1988_TABLE1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 Stephan_etal_1991/Stephan_etal_1991_Table10_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 Stephan_etal_1991/Stephan_etal_1991_Table13_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
@@ -1035,5 +1033,5 @@ deSousa__2008/deSousa__2008_Table5.6_snapshot.xlsx,xlsx,True,pending_source_comp
 deSousa_etal_2009/deSousa_etal_2009_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
 deSousa_etal_2009/deSousa_etal_2009_Table2_snapshot.csv,csv,True,pending_source_comparison,Name/metadata inventory only
 deSousa_etal_2010/deSousa_etal_2010_SupTable2_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
-deSousa_etal_2010/deSousa_etal_2010_Table1_snapshot.xlsx,xlsx,True,pending_source_comparison,Name/metadata inventory only
+deSousa_etal_2010/deSousa_etal_2010_Table1_snapshot.xlsx,xlsx,True,source_layout_existing_repaired,"PDF p3; nine printed columns and 29 specimen rows; dangling drawing relationships repaired, sheet values identical"
 deSousa_etal_2013/deSousa_etal_2013_Table1_snapshot.xlsx,xlsx,True,corrected_source_checked,See item README

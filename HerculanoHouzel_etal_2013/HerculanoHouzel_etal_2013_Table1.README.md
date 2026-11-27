@@ -16,21 +16,29 @@ Isotropic-fractionator neuron counts in **one species** (*Mus musculus*, n=4 mic
 **Motor/M1+M2**, `is_M1=1`) rather than a cross-species row set. Counts are per **one cortical
 hemisphere**, corrected for sectioning losses.
 
-## Two parts
+## One printed table, two analysis items
 - **Table 1-a** — the 18 functional cortical **areas** (Infralimbic … Piriform): `%cortical_area`,
   `%cortical_volume`, `Neurons` (±SEM), `%cortical_neurons`, `N_per_mm2`, `N_per_mm3`, `OtherCells`
   (±SEM), `Thickness_mm`, `Areas_in_atlas` (Franklin & Paxinos 2007). The printed **Total** row
   (83.864 mm² area; 55,591 mm³ volume; 5,048,837 ± 412,123 neurons; 6,640,234 ± 244,643 other cells)
-  is kept in the snapshot only, not as a data row.
+  is kept in the snapshot only, not as an analysis row.
 - **Table 1-b** — the 7 functional **groups** (Motor, Sensory, Visual, Somatosensory, Auditory,
   Insular, Piriform): `%cortical_area`, `%cortical_volume`, `Neurons`, `%cortical_neurons`. These are
   aggregates of the 1-a areas; don't double-count 1-a and 1-b together.
 
 ## Source → Snapshot → Data readable  (printed PDF → snapshot required)
-Table 1 (PDF) → `…_Table1-a_snapshot.xlsx` / `…_Table1-b_snapshot.xlsx` (values as printed, "mean ±
-SEM", commas kept) → `Herculano-Houzel_etal_2013_Table1-a.R` / `-b.R` → the two analysis CSVs +
+Table 1 (PDF p. 3) → the single source-layout `…_Table1-a_snapshot.xlsx` (caption, ten printed columns,
+18 area rows, Total row, seven summary rows, and note in their source positions) →
+`Herculano-Houzel_etal_2013_Table1-a.R` / `-b.R` → the two analysis CSVs +
 public TSVs `10.3389%2Ffnana.2013.00035_Table1-a.tsv` / `-b.tsv`. Column meanings:
 `reference_tables/…_definitions.csv`.
+
+The old `…_Table1-b_snapshot.xlsx` isolated the seven lower rows and compressed them to five
+columns. It was removed because the printed summary is part of the same Table 1 grid. The
+readers now select their rows from the full table; transposition and row selection remain in R.
+Run `Rscript --vanilla HerculanoHouzel_etal_2013/Herculano-Houzel_etal_2013_Table1-a.R`
+and the corresponding `-b.R` from the repository root. Both regenerated CSVs matched their
+pre-change versions cell for cell (18 areas, seven groups).
 
 Units: neuron / other-cell numbers are **absolute counts** (per hemisphere); densities N/mm² and
 N/mm³ as printed; thickness in mm; the `%` and density columns are the source's derived values.

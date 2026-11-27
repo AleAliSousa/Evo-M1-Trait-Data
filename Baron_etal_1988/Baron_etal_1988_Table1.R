@@ -6,7 +6,8 @@
 # codes/units are documented in reference_tables/Baron_etal_1988_definitions.csv.
 #
 # Input
-#   Baron_etal_1988_Table1_snapshot.xlsx        sheet: Table1_snapshot
+#   Baron_etal_1988_Table1_snapshot.xlsx        sheets: Table1, Table2
+#   reference_tables/Baron_etal_1988_Table1_species_lookup.csv
 # Outputs
 #   Baron_etal_1988_Table1.csv                  one row per species
 #   <DOI>.tsv in __Public/comparative-data/     DOI-named copy (from __ReadMe.xlsx)
@@ -34,22 +35,27 @@ base      <- local({                                     # repo root; NA if run 
 })
 setwd(folder)
 snapshot_file  <- "Baron_etal_1988_Table1_snapshot.xlsx"
-snapshot_sheet <- "Table1_snapshot"
 output_file    <- "Baron_etal_1988_Table1.csv"
 structures     <- c("VC", "VI", "VL", "VM", "VS")
 
-read_snapshot <- function(path, sheet) {
-  raw <- read_excel(path, sheet = sheet, col_names = FALSE, col_types = "text", na = c(""))
-  header <- as.character(unlist(raw[2, ], use.names = FALSE))
-  blank <- is.na(header) | header == ""; header[blank] <- paste0("blank_", which(blank))
-  dat <- raw[-c(1, 2), , drop = FALSE]; names(dat) <- header; dat
-}
 parse_value <- function(x) parse_number(x, na = c("", "-", "NA", "n.a.", "__"))
 
-final.dataframe <- read_snapshot(snapshot_file, snapshot_sheet) %>%
-  rename(Species = `species name`) %>%
-  filter(!is.na(Species)) %>%
-  transmute(Species, across(all_of(structures), parse_value))
+lookup <- read_csv("reference_tables/Baron_etal_1988_Table1_species_lookup.csv",
+                   show_col_types = FALSE)
+read_table <- function(sheet) {
+  raw <- read_excel(snapshot_file, sheet = sheet, col_names = FALSE,
+                    col_types = "text", na = c(""), .name_repair = "minimal")
+  dat <- tibble(table = sheet, snapshot_row = seq_len(nrow(raw)),
+                source_species = raw[[1]])
+  for (i in seq_along(c("VC", "VM", "VI", "VL", "VS")))
+    dat[[c("VC", "VM", "VI", "VL", "VS")[i]]] <- raw[[i + 1]]
+  dat
+}
+final.dataframe <- bind_rows(lapply(c("Table1", "Table2"), read_table)) %>%
+  inner_join(lookup, by = c("table", "snapshot_row", "source_species")) %>%
+  arrange(analysis_order) %>%
+  transmute(Species = analysis_species, across(all_of(structures), parse_value))
+stopifnot(nrow(final.dataframe) == 76)
 
 options(scipen = 999)
 

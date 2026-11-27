@@ -14,20 +14,33 @@ Full table titles (for `__ReadMe.xlsx`):
 - *(Table 3 — group-mean indices/percentages/ratios — is a derived summary and is **not** snapshotted.)*
 
 ## Source → Snapshot
-Source is a **scanned PDF with no text layer** (`stephan_etal_1987_VII_scan.PDF`). Values were
+Source is a **scanned PDF with a noisy OCR text layer** (`stephan_etal_1987_VII_scan.PDF`). Values were
 triangulated three ways and agree: (1) independent OCR of the table pages, (2) visual read of the
 rendered primate page, (3) the pre-existing extraction in `comparison/Stephan_1987.csv`. Internal
 check **AMY = LAM + MAM** holds for all rows except one (see below).
 
-- `Stephan_etal_1987_Table1_snapshot.csv` — 44 non-primates (2 Macroscelidea, 39 Insectivora,
-  3 Scandentia), species as printed, volumes in **mm³**, paper order preserved.
-- `Stephan_etal_1987_Table2_snapshot.csv` — 45 primates (18 prosimians, 26 simians + man).
+- `Stephan_etal_1987_Table1_snapshot.xlsx` — printed Table 1 on PDF page 3 (44 non-primates:
+  2 Macroscelidea, 39 Insectivora, 3 Scandentia).
+- `Stephan_etal_1987_Table2_snapshot.xlsx` — printed Table 2 on PDF page 4 (45 primates:
+  18 prosimians, 26 simians plus human).
 
-89 species total — matches the paper's Methods exactly. Indices columns (Stephan size-indices vs the
-Insectivora reference line) are **omitted** as derived; they are recomputable from the volumes.
+The two XLSX sheets preserve printed group heading rows, source species order, and the five volume
+columns followed by their five index columns. The earlier flat CSV snapshots omitted the indices
+and encoded group headings as a data column; they were retired. The earlier Table 1 XLSX combined
+both printed tables and sorted the species; that was also replaced. A separate species lookup holds
+expanded labels and the prior analysis order.
+
+89 species total — matches the paper's Methods exactly. The 89 indices rows were transcribed from
+the rendered PDF pages; they remain in the snapshots, while the readers select volumes for the
+existing analysis outputs. Human visual signoff is still open.
 
 ## Data readable
-`Stephan_etal_1987_Table1.R` / `_Table2.R` → `Stephan_etal_1987_Table1.csv` / `_Table2.csv`
+Run `Rscript --vanilla Stephan_etal_1987/Stephan_etal_1987_Table1.R` and
+`Rscript --vanilla Stephan_etal_1987/Stephan_etal_1987_Table2.R` from the repository root.
+Both generated analysis CSVs were checked cell for cell against their previous versions (89 and
+45 rows respectively) and are unchanged. `Stephan_etal_1987_Table1.R` reads both printed-table
+snapshots to retain its established 89-species output; `_Table2.R` reads the Table 2 snapshot.
+These produce `Stephan_etal_1987_Table1.csv` / `_Table2.csv`
 (**use these**). Species harmonized to `_keys/Stephan/species_key.csv` (all 89 matched via
 `source_publication == "Stephan1987"`); `species_printed` retained for traceability.
 

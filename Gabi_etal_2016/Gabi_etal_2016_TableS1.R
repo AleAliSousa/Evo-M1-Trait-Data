@@ -61,8 +61,8 @@ readme_xlsx    <- if (!is.na(base)) file.path(base, "__ReadMe.xlsx") else NA
 library(readxl)
 
 ## 2. SPECIES RESOLVER (paper-scoped; _keys/SPECIES_NAMING.md sec 3) -
-# Table S1 prints abbreviated genus names with no space ("C.apella"). Those printed strings are
-# the key's variant_name, so nothing is mapped inside this script (sec 5).
+# The frozen table preserves printed spaces ("C. apella"). The species key and existing
+# analysis output use compact legacy labels; that transformation occurs here.
 TOKEN <- "Gabi_etal_2016"
 ref <- if (!is.na(base))
   read.csv(file.path(base, "_keys", "species_reference.csv"),
@@ -88,15 +88,17 @@ resolve <- function(x) {
 }
 
 ## 3. READ SNAPSHOT ------------------------------------------------
-# Positional read: row 1 = caption, rows 2-3 = the two-tier header, rows 4-11 = data,
-# row 12 = the footnote.
+# Positional read: row 1 = caption, row 2 = printed header, rows 3-10 = data,
+# row 11 = the footnote.
 snap <- as.data.frame(read_excel(snapshot_xlsx, sheet = "TableS1", col_names = FALSE,
                                  .name_repair = "minimal"), stringsAsFactors = FALSE)
-snap <- snap[-(1:3), , drop = FALSE]
+snap <- snap[-(1:2), , drop = FALSE]
 names(snap) <- c("Species", "pct_V_GM", "pct_V_WM", "pct_O_WM", "pct_neurons")
 chr <- function(x) { x <- trimws(as.character(x)); x[is.na(x) | x == "NA"] <- ""; x }
 for (j in names(snap)) snap[[j]] <- chr(snap[[j]])
 snap <- snap[nzchar(snap$Species) & nzchar(snap$pct_V_GM), , drop = FALSE]   # drop the footnote row
+legacy_species <- sub("^([A-Z])\\.\\s+", "\\1.", snap$Species)
+legacy_species[legacy_species == "Homo sapiens"] <- "Homosapiens"
 
 to_num <- function(x) {
   x <- trimws(as.character(x))
@@ -106,8 +108,8 @@ to_num <- function(x) {
 
 ## 4. CLEAN --> ANALYSIS TABLE -------------------------------------
 out <- data.frame(
-  Species_Gabi2016 = snap$Species,     # printed abbreviated name, verbatim (invariant 3)
-  species_sci      = vapply(snap$Species, resolve, character(1), USE.NAMES = FALSE),
+  Species_Gabi2016 = legacy_species,  # compact legacy analysis label; snapshot is verbatim
+  species_sci      = vapply(legacy_species, resolve, character(1), USE.NAMES = FALSE),
   n                = 1L,               # one hemisphere per species
   region           = "prefrontal",     # cortex anterior to the corpus callosum (paper's definition)
   # All four are percentages of a WHOLE-CORTEX total - shares, not counts.

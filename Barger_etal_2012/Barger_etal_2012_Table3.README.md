@@ -29,8 +29,9 @@ lowland), Macaca fascicularis (long-tailed macaque). Printed labels preserved in
 `Species_Barger2012`; harmonised via `_keys/Stephan/species_key.csv` (token `Barger2012`).
 
 ## Source → Snapshot → Data readable  (printed PDF → snapshot required)
-Table 3 (PDF) → **`Barger_etal_2012_Table3_snapshot.xlsx`** (sheet "Table3"; "mean (SD)" ×10⁶ as
-printed) → `Barger_etal_2012_Table3.R` → **`Barger_etal_2012_Table3.csv`** (use this) + the public
+Table 3 (PDF p. 9) → **`Barger_etal_2012_Table3_snapshot.xlsx`** (sheet "Table3";
+caption, printed species columns, five nucleus rows, and the rightmost post hoc
+comparison column; "mean (SD)" ×10⁶) → `Barger_etal_2012_Table3.R` → **`Barger_etal_2012_Table3.csv`** (use this) + the public
 TSV `__Public/comparative-data/10.1002%2Fcne.23118_Table3.tsv`. Columns:
 **`reference_tables/Barger_etal_2012_definitions.csv`** — one data dictionary for the whole paper
 (bare, no table number), since Table 3 is the only extracted table that introduces anatomical/measure
@@ -39,6 +40,13 @@ is methods only and not extracted. Each row's `Reference` still names the specif
 (`Barger_etal_2012_Table3`) that the variable came from.
 
 Units: neuron numbers stored as **absolute counts** (Table 3 ×10⁶ × 1,000,000).
+The post hoc comparison column is source context and is not copied into the
+species-level analysis CSV. The R script reads columns 2–8, maps printed nucleus
+labels to output terms, and splits mean and SD. Run
+`Rscript --vanilla Barger_etal_2012/Barger_etal_2012_Table3.R` from the
+repository root. The regenerated CSV matched its pre-change version cell for cell.
+The paper distinguishes significant and near-significant comparisons with bold
+and italic type; those styles are not encoded in the snapshot text.
 
 ## Build note
 Generated in an environment without R; outputs produced by the equivalent step and

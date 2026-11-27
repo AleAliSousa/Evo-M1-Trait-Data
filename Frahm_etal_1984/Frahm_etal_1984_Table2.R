@@ -35,7 +35,7 @@ base <- local({
 setwd(folder)
 
 ## ---- read the frozen snapshot ----
-header_rows <- 2L
+header_rows <- 5L
 cols <- c(
   "species_disp", "ASV_percent_BrW", "ASV_percent_TV", "ASV_percent_NV",
   "ASW_percent_NW", "ASG_percent_NG", "ASG1_percent_NG1",
@@ -43,9 +43,13 @@ cols <- c(
   "ASG_to_CGL_ratio"
 )
 num <- function(x) parse_number(as.character(x), na = c("", "-", "–", "—", "NA", "n.a.", "__"))
-raw <- read_excel(snapshot_xlsx, sheet = "Table2", col_names = FALSE, col_types = "text")
-dat <- raw %>% slice(-(seq_len(header_rows)))
-names(dat)[seq_along(cols)] <- cols
+raw <- read_excel(snapshot_xlsx, sheet = "Table2", col_names = FALSE,
+                  col_types = "text", .name_repair = "minimal")
+stopifnot(ncol(raw) == 13L)
+dat <- raw[-seq_len(header_rows), c(1L, 4L:13L)]
+names(dat) <- cols
+lookup <- read.csv("reference_tables/Frahm_etal_1984_Table2_species_lookup.csv",
+                   stringsAsFactors = FALSE)
 
 ## Table 2 shares the Tables 1-3 species-name footnote.
 footnote_file <- file.path("reference_tables", "Frahm_etal_1984_Table1_footnotes.csv")
@@ -55,7 +59,8 @@ if (!file.exists(footnote_file)) {
 footnotes <- read_csv(footnote_file, show_col_types = FALSE)
 
 clean <- dat %>%
-  filter(!is.na(num(ASV_percent_BrW))) %>%
+  inner_join(lookup, by = c("species_disp" = "source_label")) %>%
+  arrange(analysis_order) %>%
   transmute(
     Species = str_squish(species_disp),
     across(all_of(cols[-1]), num),

@@ -7,9 +7,9 @@
 # Table 1 (left); together they give whole-insula (both-hemisphere) volumes downstream
 # (see __merging_volumes/volumes_compiled.R, Phase-4 hemisphere reconciliation).
 #
-# Snapshot layout (Bauernfeind_etal_2013_Table2_snapshot.xlsx, sheet Table2): a single
-# header row (Species, Individual, Granular, Dysgranular, Agranular, FI, Total insula)
-# then 15 individual rows.  Full binomial on the first individual of each species,
+# Snapshot layout (Bauernfeind_etal_2013_Table2_snapshot.xlsx, sheet Table2):
+# caption, volume-block heading, printed column header, then 15 individual rows.
+# Full binomial on the first individual of each species,
 # abbreviated ("H. sapiens") thereafter.  Volumes are cm3, exactly as printed.
 #
 # THIS script expands the abbreviated species names (carry the genus down) and converts
@@ -49,7 +49,8 @@ snapshot_sheet <- "Table2"
 
 num <- function(x) parse_number(as.character(x), na = c("", "-", "\u2013", "\u2014", "NA", "n.a."))
 
-raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_types = "text")
+raw <- read_excel(snapshot_file, sheet = snapshot_sheet, skip = 3,
+                  col_types = "text")
 names(raw) <- c("species_disp", "individual", "granular_cm3", "dysgranular_cm3",
                 "agranular_cm3", "FI_cm3", "total_insula_cm3")
 

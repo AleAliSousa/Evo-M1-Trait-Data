@@ -37,16 +37,15 @@ setwd(folder)
 
 ## ---- read the frozen snapshot ----
 snapshot_sheet <- "Table1"
-header_rows <- 2L   # row 1 caption + row 2 header
+header_rows <- 3L   # caption, headings, and units as in the printed table
 
 pos <- c(
   "species_disp",
-  "n_raw",
-  "Middle_temporal_visual_area_mm3",
-  "Area_striata_grey_matter_mm3",
-  "Corpus_geniculatum_laterale_mm3",
   "body_weight_g",
-  "brain_weight_mg"
+  "brain_weight_mg",
+  "Area_striata_grey_matter_mm3",
+  "Middle_temporal_visual_area_mm3",
+  "Corpus_geniculatum_laterale_mm3"
 )
 
 num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
@@ -58,12 +57,19 @@ dat <- raw %>%
 
 names(dat)[seq_along(pos)] <- pos
 
+lookup <- read.csv(file.path("reference_tables", paste0(item_name, "_species_lookup.csv")),
+                   stringsAsFactors = FALSE)
+stopifnot(!anyDuplicated(lookup$source_label), !anyDuplicated(lookup$species))
+
 ## ---- clean ----
 clean <- dat %>%
   filter(!is.na(num(Middle_temporal_visual_area_mm3))) %>%
+  left_join(lookup, by = c("species_disp" = "source_label")) %>%
+  { if (anyNA(.$species)) stop("Unmapped source species label in snapshot", call. = FALSE); . } %>%
+  arrange(analysis_order) %>%
   transmute(
-    species = str_squish(species_disp),
-    n = as.integer(num(n_raw)),
+    species = species,
+    n = as.integer(num(str_extract(species_disp, "(?<=\\(n=)\\d+(?=\\))"))),
     middle_temporal_visual_area_mm3 = num(Middle_temporal_visual_area_mm3),
     area_striata_grey_matter_mm3 = num(Area_striata_grey_matter_mm3),
     corpus_geniculatum_laterale_mm3 = num(Corpus_geniculatum_laterale_mm3),

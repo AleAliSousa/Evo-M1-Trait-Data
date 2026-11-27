@@ -26,8 +26,29 @@ setwd(folder)
 setwd(folder)
 options(scipen = 999)
 
-raw <- read.csv("Stephan_etal_1987_Table2_snapshot.csv", check.names = FALSE,
-                stringsAsFactors = FALSE, na.strings = c("", "NA", "-"))
+snapshot <- readxl::read_excel("Stephan_etal_1987_Table2_snapshot.xlsx",
+                               sheet = "Table2", col_names = FALSE,
+                               col_types = "text", .name_repair = "minimal")
+stopifnot(ncol(snapshot) == 11L)
+snapshot <- snapshot[-seq_len(3L), ]
+keep <- !is.na(suppressWarnings(as.numeric(snapshot[[2]])))
+snapshot <- snapshot[keep, ]
+stopifnot(nrow(snapshot) == 45L)
+lookup <- read.csv("reference_tables/Stephan_etal_1987_species_lookup.csv",
+                   stringsAsFactors = FALSE)
+lookup <- lookup[lookup$table_number == 2L, ]
+lk <- match(snapshot[[1]], lookup$source_label)
+if (anyNA(lk)) stop("Unmapped source species label in Table 2", call. = FALSE)
+raw <- data.frame(
+  group = lookup$source_group[lk],
+  species = lookup$prior_snapshot_species[lk],
+  AMY_mm3 = as.numeric(snapshot[[2]]),
+  LAM_mm3 = as.numeric(snapshot[[3]]),
+  MCB_mm3 = as.numeric(snapshot[[4]]),
+  MAM_mm3 = as.numeric(snapshot[[5]]),
+  NTO_mm3 = as.numeric(snapshot[[6]]),
+  stringsAsFactors = FALSE
+)
 
 ## --- harmonize species to the canonical key (variants registered under Stephan1987) ---
 key <- read.csv("../_keys/Stephan/species_key.csv", stringsAsFactors = FALSE)

@@ -9,8 +9,9 @@
 # (right). It is kept as its own faithful snapshot/CSV for traceability; the merge
 # (__merging_volumes) recomputes species means from the per-individual tables.
 #
-# Snapshot layout (Bauernfeind_etal_2013_Table3_snapshot.xlsx, sheet Table3): one header
-# row, then 6 species rows. Two side-by-side blocks (left | right), each: n + the five
+# Snapshot layout (Bauernfeind_etal_2013_Table3_snapshot.xlsx, sheet Table3):
+# caption, left/right block headings, printed header, then 6 species rows.
+# Two side-by-side blocks (left | right), each: n + the five
 # subdivisions (Granular, Dysgranular, Agranular, FI, Total) printed as "mean +/- SD"
 # (single value where n = 1). Volumes are cm3, exactly as printed.
 #
@@ -46,7 +47,12 @@ suppressPackageStartupMessages({
 options(scipen = 999)
 
 snapshot_file  <- paste0(item_name, "_snapshot.xlsx")
-raw <- read_excel(snapshot_file)
+raw <- read_excel(snapshot_file, sheet = "Table3", skip = 3,
+                  .name_repair = "minimal")
+names(raw) <- c("Species", "n_left", "Granular_left", "Dysgranular_left",
+                "Agranular_left", "FI_left", "Total_left", "n_right",
+                "Granular_right", "Dysgranular_right", "Agranular_right",
+                "FI_right", "Total_right")
 
 split_mean <- function(x) suppressWarnings(as.numeric(str_trim(str_extract(x, "^[^\u00b1]+"))))
 split_sd   <- function(x) suppressWarnings(as.numeric(str_trim(str_extract(x, "(?<=\u00b1).+"))))

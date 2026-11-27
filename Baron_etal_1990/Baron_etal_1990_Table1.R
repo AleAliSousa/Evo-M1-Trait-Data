@@ -35,11 +35,7 @@ base         <- local({
 setwd(folder)
 
 ## ---- read the frozen snapshot ----
-header_rows <- 2L
-cols <- c(
-  "species_disp",
-  "Complexus_sensorius_trigeminalis_mm3"
-)
+header_rows <- 3L
 
 num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
 
@@ -50,16 +46,29 @@ raw <- read_excel(
   col_types = "text"
 )
 
-dat <- raw %>%
-  slice(-(seq_len(header_rows)))
+dat <- raw %>% slice(-(seq_len(header_rows)))
+stopifnot(ncol(dat) == 9L)
+lookup <- read.csv(file.path("reference_tables", paste0(item_name, "_species_lookup.csv")),
+                   stringsAsFactors = FALSE)
 
-names(dat)[seq_along(cols)] <- cols
+side_data <- function(side, species_col, volume_col) {
+  tibble(
+    source_side = side,
+    source_label = dat[[species_col]],
+    volume = num(dat[[volume_col]])
+  ) %>% filter(!is.na(volume))
+}
 
-clean <- dat %>%
-  filter(!is.na(num(Complexus_sensorius_trigeminalis_mm3))) %>%
+measurements <- bind_rows(side_data("L", 1L, 2L), side_data("R", 6L, 7L))
+stopifnot(nrow(measurements) == 78L)
+
+clean <- measurements %>%
+  left_join(lookup, by = c("source_side", "source_label")) %>%
+  { if (anyNA(.$species)) stop("Unmapped source species label", call. = FALSE); . } %>%
+  arrange(analysis_order) %>%
   transmute(
-    Species = str_squish(species_disp),
-    Complexus_sensorius_trigeminalis_mm3 = num(Complexus_sensorius_trigeminalis_mm3)
+    Species = species,
+    Complexus_sensorius_trigeminalis_mm3 = volume
   )
 
 write.csv(clean, output_csv, row.names = FALSE)

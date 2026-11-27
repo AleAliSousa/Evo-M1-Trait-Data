@@ -8,7 +8,7 @@ and great apes — the species-level summary of the per-individual Tables 1 (lef
 ## Pipeline
 - **Source.** The article PDF and its Adobe PDF→Excel export (`bauernfeind_etal_2013.xlsx`).
 - **Snapshot.** `Bauernfeind_etal_2013_Table3_snapshot.xlsx` (sheet `Table3`): faithful copy of
-  the printed table — two side-by-side blocks (left | right), each with `n` and the five
+  the printed table on PDF p. 10 — caption and two side-by-side blocks (left | right), each with `n` and the five
   subdivisions (Granular, Dysgranular, Agranular, FI, Total) printed as `mean ± SD`
   (single value where n = 1); 6 species; volumes in cm³ as printed.
 - **Data readable.** `Bauernfeind_etal_2013_Table3.R` reshapes to tidy long form
@@ -20,3 +20,7 @@ and great apes — the species-level summary of the per-individual Tables 1 (lef
 Table 3 is kept for traceability only; it is **not** re-merged. The volume merge recomputes
 species means from the per-individual Tables 1 and 2, so Table 3 serves as an independent
 cross-check (its right-side means equal the means of the Table 2 individuals).
+The source caption and left/right heading row were restored to the snapshot.
+Run `Rscript --vanilla Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table3.R`
+from the repository root; the 60-row analysis CSV matched its pre-change version
+cell for cell.

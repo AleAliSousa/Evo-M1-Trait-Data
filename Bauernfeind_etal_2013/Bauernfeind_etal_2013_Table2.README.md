@@ -11,8 +11,8 @@ dysgranular, agranular, frontoinsular/FI, total) in humans and great apes.
 - **Source.** The article PDF (`bauernfeind_etal_2013.pdf`, printed Table 2, p. 271) and
   its Adobe PDF→Excel export (`bauernfeind_etal_2013.xlsx`).
 - **Snapshot.** `Bauernfeind_etal_2013_Table2_snapshot.xlsx` (sheet `Table2`): a faithful
-  copy of the printed table — Species, Individual, Granular, Dysgranular, Agranular, FI,
-  Total insula; 15 individuals; volumes in cm³ as printed.
+  copy of the printed table — caption, volume-block heading, Species, Individual,
+  Granular, Dysgranular, Agranular, FI, Total insula; 15 individuals; volumes in cm³ as printed.
   *Provenance:* values taken from the Adobe export and cross-checked against the paper's own
   Table 3 (right-side species means reproduce to ±rounding). This replaces an earlier
   auto-extraction attempt that did not yield a faithful table.
@@ -26,7 +26,7 @@ dysgranular, agranular, frontoinsular/FI, total) in humans and great apes.
 whole-insula both-hemisphere volumes (Phase-4 hemisphere reconciliation: both-sides =
 left + right where both hemispheres were measured).
 
-## To do (maintainer, manual)
-Add an `__ReadMe.xlsx` row for `Item name = Bauernfeind_etal_2013_Table2` with
-`Item encoded = 10.1016%2Fj.jhevol.2012.12.003_Table2` (edit by hand to preserve the
-sheet's formula columns). Until then the reformat falls back to that encoded name.
+The caption and heading were restored from printed p. 271. Run
+`Rscript --vanilla Bauernfeind_etal_2013/Bauernfeind_etal_2013_Table2.R` from
+the repository root; the 15-row analysis CSV matched its pre-change version
+cell for cell. The item already has an encoded registry row.

@@ -28,7 +28,12 @@ readme_xlsx    <- file.path(dataset_root, "__ReadMe.xlsx")
 public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 
 library(readxl)
-snap <- as.data.frame(read_excel(snapshot_xlsx, sheet="Table1a", .name_repair="minimal"), check.names=FALSE)
+snap <- as.data.frame(read_excel(snapshot_xlsx, sheet="Table1", skip=1,
+                                 n_max=19, .name_repair="minimal"), check.names=FALSE)
+names(snap) <- c("Area", "Areas_in_atlas", "pct_cortical_area",
+                 "pct_cortical_volume", "Neurons_mean_SEM",
+                 "pct_cortical_neurons", "N_per_mm2", "N_per_mm3",
+                 "OtherCells_mean_SEM", "Thickness_mm")
 snap <- snap[snap$Area != "Total", ]                       # keep the 18 area rows
 num  <- function(x) as.numeric(gsub(",", "", x))
 sem_mean <- function(x) num(sub("\\s*±.*", "", x))

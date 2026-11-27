@@ -3,15 +3,22 @@
 ## Source
 de Sousa, A. A., et al. (2010). Hominoid visual brain structure volumes... J Hum Evol 58(4),281-292. Registry Item **Table 1**; DOI/PMID-coded TSV `10.1016%2Fj.jhevol.2009.11.011_Table1.tsv`.
 
-**hominoid visual brain structure volumes.** Volumes in mm³ (body weight g, brain weight mg). Part of the **Stephan/Düsseldorf histological-volume collection**.
+**Hominoid visual brain structure volumes.** The printed table reports mass in grams and volumes in cm³. Part of the **Stephan/Düsseldorf histological-volume collection**.
 
 ## Pipeline
-raw → snapshot → R → usable csv/tsv. Files: `deSousa_etal_2010_Table1_snapshot.xlsx` (sheet `Table1`), `deSousa_etal_2010_Table1.R` → `deSousa_etal_2010_Table1.csv` (+ TSV), `reference_tables/deSousa_etal_2010_Table1_definitions.csv`, `comparison/deSousa_2010.csv` (curated source, audited).
+raw → snapshot → R → usable csv/tsv. Files: `deSousa_etal_2010_Table1_snapshot.xlsx` (sheet `Table 1`), `deSousa_etal_2010_Table1.R` → `deSousa_etal_2010_Table1.csv` (+ TSV), `reference_tables/deSousa_etal_2010_Table1_definitions.csv`, `comparison/deSousa_2010.csv` (curated comparison).
 
 Structures: Neocortex, Area striata grey matter, Corpus geniculatum laterale, Total brain net volume.
 
 ## Preparation → `deSousa_etal_2010_Table1.csv`
-One row per specimen. Values are taken from the curated comparison CSV `deSousa_2010.csv` (the audited journal data) and laid out journal-style in the snapshot; the reformat cleans names and types values (already mm³). Verified against the comparison CSV: **0 value mismatches**.
+The existing snapshot follows printed Table 1 on PDF page 3: the `species`, `code`,
+`collection`, mass, correction factor, brain volume, left V1, left LGN, and neocortex
+columns appear in source order, with 29 specimen rows and the printed notes below.
+The R reader cleans the specimen labels and numeric values. This source table uses
+grams and cm³ as printed; the normalized analysis fields are produced in R.
+
+Run `Rscript --vanilla deSousa_etal_2010/deSousa_etal_2010_Table1.R` from the
+repository root. The analysis CSV and public TSV were rebuilt and have no diff.
 
 The 29 paper rows and their 29 dissertation-code aliases are registered in
 `_keys/specimen_crosswalk/specimen_crosswalk.csv`. Measure provenance is split:
@@ -57,4 +64,9 @@ measurement if it is ever ingested. `bilateral_stems_exclude` likewise stops the
 Table 1's left values into a second, redundant estimate of the same measurement.
 
 ## Note
-Snapshot built from the curated `deSousa_2010.csv`; detailed visual fidelity to the printed PDF table layout is a light follow-up (values are the audited source). Used in `__merging_volumes` (Tier 2 (averaged)).
+The earlier note claiming curated-CSV origin was stale. The rendered PDF and workbook
+table have matching row and column order. Two relationships pointing to nonexistent
+drawing files were removed from the XLSX package. Both workbook sheets were compared
+cell for cell with the pre-repair version using `readxl` (`Table 1`: 38×9;
+`_pdf_extraction_QA`: 50×3) and are identical; `openpyxl` now loads them too.
+Human visual signoff remains open. Used in `__merging_volumes` (Tier 2).

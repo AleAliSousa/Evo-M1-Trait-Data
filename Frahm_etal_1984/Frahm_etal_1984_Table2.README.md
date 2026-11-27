@@ -14,13 +14,21 @@ Table 1. Part of the **Stephan/Düsseldorf histological-volume collection**.
 ## Pipeline
 Frozen snapshot → R → analysis CSV/TSV. Files: `Frahm_etal_1984_Table2_snapshot.xlsx` (sheet
 `Table2`), `Frahm_etal_1984_Table2.R` → `Frahm_etal_1984_Table2.csv` (+ public TSV),
-`reference_tables/Frahm_etal_1984_Table2_definitions.csv` (already present).
+`reference_tables/Frahm_etal_1984_Table2_species_lookup.csv`, and
+`reference_tables/Frahm_etal_1984_Table2_definitions.csv`.
 
 ## Preparation → `Frahm_etal_1984_Table2.csv`
-One row per species (44, hard-checked in the build script). The reformat reads the frozen
-snapshot positionally, skips the 2 header rows, parses each percentage/ratio column, and tags
+The snapshot follows printed Table 2 on PDF page 4: ten aligned measure columns,
+three header tiers, group headings, 44 species in source order, nine printed mean rows
+with their two count columns, and the source footnote. The R reader selects species
+through the item lookup, parses the ten percentage/ratio columns, and tags
 every row `source = "Frahm_etal_1984"`. `ASG_percent_ASV` is additionally range-checked
 (0, 100] on every build run.
+
+Run `Rscript --vanilla Frahm_etal_1984/Frahm_etal_1984_Table2.R` from the repository root.
+The 44-row output differs from the previous CSV in one cell: the printed
+*Tupaia glis* ASG:CGL ratio is **18.1**, correcting **13.1** in the former snapshot.
+The public TSV was rebuilt with the same correction. Human visual signoff remains open.
 
 ## Table 1-3 footnote — species-name synonymy vs Stephan et al. (1981)
 Table 2 shares Table 1's printed footnote (species names follow Corbet & Hill 1980; six species
@@ -37,7 +45,5 @@ the printed relative-size/ratio figures — not independently re-derived from Ta
 volumes.
 
 ## Extraction / build record
-Snapshot, reformat script, CSV, definitions, and public TSV were already in place and working.
-This README was added by Microsoft Copilot (AI assistant) on 2026-09-25, reading the existing
-`.R` script, definitions file, and the sibling Table 1 README to document the pipeline. No values
-were re-transcribed or changed.
+The previous snapshot captured the species values but omitted the printed group and mean
+rows. The source layout and the ratio correction above were checked against the rendered PDF.

@@ -18,13 +18,17 @@ dataset_root <- local({ d<-folder
   while (dirname(d)!=d && !file.exists(file.path(d,"__ReadMe.xlsx"))) d<-dirname(d)
   if (file.exists(file.path(d,"__ReadMe.xlsx"))) d else NA_character_ })
 setwd(folder)
-snapshot_xlsx  <- file.path(folder, paste0(item_name, "_snapshot.xlsx"))
+snapshot_xlsx  <- file.path(folder, "HerculanoHouzel_etal_2013_Table1-a_snapshot.xlsx")
 final_csv      <- file.path(folder, paste0(item_name, ".csv"))
 readme_xlsx    <- file.path(dataset_root, "__ReadMe.xlsx")
 public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 
 library(readxl)
-snap <- as.data.frame(read_excel(snapshot_xlsx, sheet="Table1b", .name_repair="minimal"), check.names=FALSE)
+snap <- as.data.frame(read_excel(snapshot_xlsx, sheet="Table1", skip=21,
+                                 n_max=7, col_names=FALSE,
+                                 .name_repair="minimal"), check.names=FALSE)
+names(snap) <- c("FunctionalGroup", "Areas_in_atlas", "pct_cortical_area",
+                 "pct_cortical_volume", "Neurons", "pct_cortical_neurons")
 num <- function(x) as.numeric(gsub(",", "", x))
 out <- data.frame(
   Species="Mus musculus", Species_HerculanoHouzel2013="Mouse",

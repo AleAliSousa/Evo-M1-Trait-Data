@@ -38,35 +38,38 @@ base          <- local({                                   # repo root; NA if ru
 setwd(folder)
 
 ## ---- read the frozen snapshot ----
-snapshot_sheet <- "Table1"
-header_rows <- 2L   # row 1 caption + row 2 header
-
-pos <- c(
-  "code",
-  "species_disp",
-  "n_raw",
-  "Corpus_geniculatum_laterale_mm3"
-)
+snapshot_sheets <- c("Page386", "Page387")
+header_rows <- 5L
 
 num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
 
-raw <- read_excel(snapshot_xlsx, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")
-
-dat <- raw %>%
-  slice(-(seq_len(header_rows)))
-
-names(dat)[seq_along(pos)] <- pos
+read_source_page <- function(sheet) {
+  raw <- read_excel(snapshot_xlsx, sheet = sheet, col_names = FALSE,
+                    col_types = "text", .name_repair = "minimal")
+  stopifnot(ncol(raw) == 12L)
+  raw <- raw[-seq_len(header_rows), ]
+  tibble(source_label = raw[[1]],
+         CGL = suppressWarnings(num(raw[[11]])),
+         n_CGL = suppressWarnings(num(raw[[12]]))) %>%
+    filter(!is.na(CGL))
+}
+dat <- bind_rows(lapply(snapshot_sheets, read_source_page))
+stopifnot(nrow(dat) == 55L)
+lookup <- read.csv(file.path("reference_tables", paste0(item_name, "_species_lookup.csv")),
+                   stringsAsFactors = FALSE)
 
 ## ---- clean ----
 clean <- dat %>%
-  filter(!is.na(num(Corpus_geniculatum_laterale_mm3))) %>%
+  inner_join(lookup, by = "source_label") %>%
+  arrange(analysis_order) %>%
   transmute(
-    code = str_squish(code),
-    species = str_squish(species_disp),
-    n = as.integer(num(n_raw)),
-    corpus_geniculatum_laterale_mm3 = num(Corpus_geniculatum_laterale_mm3),
+    code = as.character(as.integer(source_code)),
+    species = species,
+    n = as.integer(n_CGL),
+    corpus_geniculatum_laterale_mm3 = CGL,
     source = source_name
   )
+stopifnot(nrow(clean) == 53L)
 
 write.csv(clean, output_csv, row.names = FALSE)
 

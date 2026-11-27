@@ -56,7 +56,7 @@ public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 # Barks_etal_2014_TABLEI.
 
 # Load the data
-data <- read_xlsx(snapshot_xlsx)
+data <- read_xlsx(snapshot_xlsx, skip = 1)
 
 # Move values ending in "a" from Brain volume into a new column
 data1 <- data %>%
@@ -110,6 +110,7 @@ data2 <- data1 %>%
 
 # Remove completely blank rows introduced by formatting in the snapshot.
 result_df <- data2 %>%
+  mutate(specimen_number = as.character(as.integer(specimen_number))) %>%
   mutate(across(everything(), ~ str_squish(as.character(.x)))) %>%
   mutate(across(everything(), ~ na_if(.x, ""))) %>%
   filter(if_any(everything(), ~ !is.na(.x)))

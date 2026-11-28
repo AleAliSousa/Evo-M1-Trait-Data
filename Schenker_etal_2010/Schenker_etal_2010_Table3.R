@@ -4,8 +4,9 @@ if (length(arg) != 1L) stop('Run with Rscript')
 folder <- dirname(normalizePath(sub('^--file=', '', arg)))
 root <- dirname(folder)
 item <- tools::file_path_sans_ext(basename(sub('^--file=', '', arg)))
-x <- read.csv(file.path(folder, paste0(item, '_snapshot.csv')), check.names=FALSE,
-              colClasses='character', na.strings=NULL)
+x <- read.csv(file.path(folder, paste0(item, '_snapshot.csv')), skip=5L, header=FALSE,
+              col.names=c('Subject','Left 44 neuron density (1000s/mm3)','Left 45 neuron density (1000s/mm3)','Right 44 neuron density (1000s/mm3)','Right 45 neuron density (1000s/mm3)','Left 44 total neurons (x10^6)','CE Left 44','Left 45 total neurons (x10^6)','CE Left 45','Right 44 total neurons (x10^6)','CE Right 44','Right 45 total neurons (x10^6)','CE Right 45'),
+              check.names=FALSE, colClasses='character', na.strings=NULL)
 x <- x[grepl('^C[0-9]{4}$', x$Subject),,drop=FALSE]
 stopifnot(nrow(x)==12L, length(unique(x$Subject))==12L)
 parts <- list()

@@ -11,7 +11,7 @@
 # _unilateral suffix so a one-side value is never silently averaged with a both-sides one.
 #
 # One snapshot per printed table (project convention; matches HerculanoHouzel_etal_2015).
-# The taxon each source table was captioned by is carried in the `group` column.
+# Taxon scope is inferred from the printed specimen code in this reader.
 # NB: the 1981 volume data span 16 printed tables (I-XVI) with three taxon granularities:
 # I-VI & XIV-XVI split insectivore/prosimian/simian; VII/X/XII are insectivore-only with a
 # pooled-"primates" partner (VIII/XI/XIII); IX (visual) is primates-only.
@@ -47,6 +47,8 @@ clean_hdr <- function(h) str_squish(str_remove(h, "\\s*\\(\\d+\\)$"))
 snap <- read_excel(file.path(folder, "Stephan_etal_1981_TableXIII_snapshot.xlsx"),
                    sheet = "TableXIII", skip = 1)   # row 1 is the caption
 names(snap) <- clean_hdr(names(snap))
+# The printed specimen code identifies the taxon scope for analysis.
+snap$group <- ifelse(as.numeric(snap$code) < 150, "Prosimian", "Simian")
 
 # type the structure columns numeric; keep species/group as identifiers
 id <- c("code", "group", "species")

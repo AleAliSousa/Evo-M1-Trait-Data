@@ -21,4 +21,6 @@ names(dat) <- c("Measure", "Born before", "In early gestation", "Conceived after
 foot <- grep("^Data are given in means \\(SD\\); P-values for difference between the exposed", lines, value=TRUE)
 stopifnot(length(foot)>=1L)
 dat[nrow(dat)+1L,] <- c(foot[1],rep("",5))
-utils::write.csv(dat, out, row.names=FALSE, na="", fileEncoding="UTF-8")
+grid <- rbind(c("", "Exposure to famine", "", "", "", ""), names(dat), as.matrix(dat))
+utils::write.table(grid, out, sep=",", row.names=FALSE, col.names=FALSE,
+                   quote=TRUE, na="", fileEncoding="UTF-8")

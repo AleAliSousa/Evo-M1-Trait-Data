@@ -11,3 +11,7 @@ Table 8.3. Activity budgets as percentage of a 12-hour period. F feeding; R rest
 Reader: `MorroghBernard_etal_2008_Table8.3.R`. Numeric fields are derived explicitly; raw source cells remain available. Source_row links the analysis back to the snapshot. Published contextual information, if needed, is kept separately in reference_tables/MorroghBernard_etal_2008_Table8.3_context.csv and joined by Source_row. No taxa are inferred from genus-only examples. Source-specific records must not be pooled as independent observations with reused compilations.
 
 Build uses Item name and Item encoded from the registry. During owner registration use DATASET_REGISTRY=ManyPrimates__2022/ManyPrimates_all_items_build_registry.xlsx. Routine registry insertion remains the owner's step. Public TSV is written only under __Public/comparative-data.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the caption, the four age–sex class spanning headers, their F/R/T subheaders, the source footnote markers on three sites, and the three printed notes. The reader selects nine data rows, strips site footnote markers for analysis, and maps the context table to corrected physical Source_row values. Run `Rscript --vanilla MorroghBernard_etal_2008/MorroghBernard_etal_2008_Table8.3.R` from repository root. Independent human source comparison remains separate.

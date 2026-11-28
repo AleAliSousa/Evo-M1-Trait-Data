@@ -24,7 +24,8 @@ setwd(folder)
 
 setwd(folder)
 options(scipen = 999)
-raw <- read.csv("Smaers_etal_2011_a_SupplementaryTable2_snapshot.csv", check.names = FALSE, stringsAsFactors = FALSE)
+raw <- read.csv("Smaers_etal_2011_a_SupplementaryTable2_snapshot.csv", skip = 1, check.names = FALSE, stringsAsFactors = FALSE)
+names(raw) <- c("Individual", "Section interval 5 left white", "Section interval 5 left grey", "Section interval 5 right white", "Section interval 5 right grey")
 sp  <- sub("^([A-Z][a-z]+ [a-z]+).*$", "\\1", raw$Individual)
 cat <- trimws(sub("^[A-Z][a-z]+ [a-z]+", "", raw$Individual))
 g <- function(col) raw[[col]]

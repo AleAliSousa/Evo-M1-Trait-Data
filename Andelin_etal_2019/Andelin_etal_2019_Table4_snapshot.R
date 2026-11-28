@@ -64,20 +64,21 @@ tables1 <- extract_tables(
   output  = "matrix"
 )
 df0 <- as.data.frame(tables1[[1]], stringsAsFactors = FALSE)
-# Re-attach the paper's two-row header, flattened to "<measure> <hemisphere>".
-colnames(df0) <- c(
-  "Group", "N", "Event time",
-  "V1 Surface area Left",      "V1 Surface area Right",
-  "Cortex surface area Left",  "Cortex surface area Right",
-  "% SC VSAR Left",            "% SC VSAR Right"
-)
-## 3. TIDY + SAVE SNAPSHOT -----------------------------------------
-# Keep only the four real group rows, in the paper's order, and drop the thin
-# space the typesetting uses as a thousands separator (e.g. "90 447" -> "90447")
-# so the snapshot is a clean, faithful copy of Table 4.
-drop_digit_space <- function(x) gsub("(?<=\\d)\\s+(?=\\d)", "", x, perl = TRUE)
-df_snapshot <- df0 %>%
+# Tabula extracts only the data rectangle. Restore the printed header tiers
+# in their source column positions rather than flattening them here.
+colnames(df0) <- c("Group", "N", "Event time", "V1 left", "V1 right",
+                   "Cortex left", "Cortex right", "VSAR left", "VSAR right")
+## 3. RESTORE SOURCE TABLE LAYOUT -----------------------------------
+df_data <- df0 %>%
   filter(str_detect(Group, "^(AN|EB|LB|SC)$")) %>%
-  arrange(match(Group, c("AN", "EB", "LB", "SC"))) %>%
-  mutate(across(everything(), ~ drop_digit_space(trimws(.x))))
-write.csv(df_snapshot, snapshot_csv, row.names = FALSE)
+  mutate(across(everything(), ~ trimws(.x)))
+stopifnot(identical(df_data$Group, c("AN", "EB", "LB", "SC")))
+df_snapshot <- rbind(
+  c("Table 4. Human surface area means by hemisphere.", rep("", 8)),
+  c("", "", "", "V1 Surface area^a", "", "Cortex surface area^a", "", "% SC VSAR", ""),
+  c("Group", "N", "Event time", "Left", "Right", "Left", "Right", "Left", "Right"),
+  as.matrix(df_data),
+  c("a Areas in mm2.", rep("", 8))
+)
+write.table(df_snapshot, snapshot_csv, sep = ",", quote = TRUE,
+            row.names = FALSE, col.names = FALSE, na = "")

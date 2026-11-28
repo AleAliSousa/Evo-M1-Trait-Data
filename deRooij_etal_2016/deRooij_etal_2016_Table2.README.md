@@ -16,6 +16,11 @@ Rscript deRooij_etal_2016_Table2.R
 
 The script reads only `deRooij_etal_2016_Table2_snapshot.csv` for measurements and writes `deRooij_etal_2016_Table2.csv` plus the DOI-coded public TSV under `__Public/comparative-data/`. The snapshot is frozen; do not overwrite it when rebuilding. Definitions are in `reference_tables/deRooij_etal_2016_Table2_definitions.csv`.
 
+Layout edit: restored the printed `Exposure to famine` heading above the three exposure
+groups. The snapshot extractor now emits this header row and the R reader skips it. From the
+repository root run `Rscript deRooij_etal_2016/deRooij_etal_2016_Table2.R`; the 54-row
+analysis CSV is byte-identical to its pre-edit version.
+
 ## Source and verification
 
 No replot: printed table, not a figure. AI checked PDF table text and layout; human visual signoff pending.

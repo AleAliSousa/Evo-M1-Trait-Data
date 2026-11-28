@@ -15,7 +15,7 @@ Karbowski's per-species averages.
 - The publisher xlsx stores the 23 tables across **18 sheets** — five sheets carry two
   tables each: sheet `Table 1` = S1 + S2; `Table 2` = S3 + S4; `Table 3` = S5 + S6;
   `Table 5` = S8 + S9; `Table 6` = S10 + S11. (Sheet name ≠ table number.)
-- Frozen snapshot: **`Karbowski__2007_TablesS1-S23_snapshot.xlsx`** — one sheet per table (since the one-snapshot-per-item convention each table S<N> reads its own byte-identical copy `Karbowski__2007_TableS<N>_snapshot.xlsx`; this original file is kept for the owner to retire)
+- Frozen snapshot: **`Karbowski__2007_TablesS1-S23_snapshot.xlsx`** — one sheet per table (since the one-snapshot-per-item convention each table S<N> reads its own cell-identical copy `Karbowski__2007_TableS<N>_snapshot.xlsx`; the copies differ only in `docProps/custom.xml`, not in worksheet contents; this original file is kept for the owner to retire)
   (`Table S1` … `Table S23`), caption + header + data rows in printed order, original
   units, `average <species>` summary rows and printed subdivision labels kept.
 

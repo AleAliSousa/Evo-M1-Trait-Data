@@ -37,7 +37,7 @@ the authors from the literature and databases named in the companion reference l
 dataset itself, as assembled here, is the paper's own contribution.
 
 ## Files
-- `Zhu_etal_2023_SupplementaryData1_snapshot.csv` — frozen, verbatim sheet export (974 rows).
+- `Zhu_etal_2023_SupplementaryData1_snapshot.csv` — frozen sheet grid with its printed title row, followed by the header and 974 data rows. The R reader skips the title row for the analysis CSV.
 - `Zhu_etal_2023_SupplementaryData1.csv` / public TSV — same content, published (verbatim
   reference-code column retained, renamed `Supplementary_References_codes` for clarity).
 - `Zhu_etal_2023_SupplementaryData1_refs_long.csv` — the reference-resolution bridge table

@@ -67,6 +67,14 @@ the rendered table images and transcribed by hand. Each
 (all printed columns, printed row order); all cleaning happens in the `.R`, never in the
 snapshot.
 
+The layout audit restored each printed caption and the two header rows, including the
+`Eco-ethological Characteristics` heading spanning Activity Time, Diet, and Locomotor Type.
+The four R readers skip those source rows and assign their analysis column names. From the
+repository root, run `Rscript Matano__1992/Matano__1992_Table1.R` through `Table4.R`.
+All four rebuilt analysis CSVs are byte-identical to their pre-edit versions; the accessory-sum
+checks pass (maximum residuals 0.05, 0.02, 0.05, and 0.02 mm³). The source footnotes remain
+documented here and are not inserted as measurement rows.
+
 Each builder reads its snapshot **as character throughout** (`col_types = cols(.default =
 col_character())`). Matano prints 3 significant figures and the trailing zeros are meaningful
 (`0.380`, `8.50`, `0.8000`); parsing to double would silently drop them and rewrite the

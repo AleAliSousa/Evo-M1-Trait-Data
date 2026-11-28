@@ -18,3 +18,7 @@ Diet percentages are checked against 100 with 1.5 percentage-point rounding tole
 Executed R checks on 2026-10-23: 36 pass, 18 not_evaluable, 2 mismatch.
 - Feeding_pct_active_8: recomputed 26.0163, printed 22, difference 4.01626; retained unchanged.
 - Feed_travel_ratio_8: recomputed 1.04065, printed 0.9, difference 0.14065; retained unchanged.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed Ranging, Feeding, and Indices spanning header tier in its source positions. The R reader skips the caption and grouped header before reading the 24 data rows; source-row references shift by one physical row. Run `Rscript --vanilla Chivers__1984/Chivers__1984_Table24.1.R` from the repository root with the registered item. The scanned source still requires independent human comparison.

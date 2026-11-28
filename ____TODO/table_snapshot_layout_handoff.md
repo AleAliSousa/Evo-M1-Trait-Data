@@ -86,3 +86,62 @@ Seventeen CSV snapshots have cell content identical to their analysis CSVs;
 these require source comparison, not automatic rewriting. Most of the 1,036
 current files remain to be individually source-checked. Do not mark this audit complete
 from the name or metadata scan alone.
+
+## Next 100-item batch (2026-11-27)
+
+Audited 100 further table/matrix snapshots and marked them `source_layout_existing`
+in `table_snapshot_layout_inventory.csv`:
+
+- **56 EBRAINS receptor fingerprint TSVs** in `PalomeroGallagher_etal_2018`:
+  each snapshot's SHA-256 and byte count match its source-download manifest;
+  all retain four columns and their original receptor row order (824 data rows
+  total). The series README records an earlier independent download comparison.
+- **21 XLSX table items**: every worksheet, cell position, and cell value matches
+  the local source workbook, as do sheet names and merged ranges. These are Baker 2025 SupplementaryData1; Baldoni
+  2025 TableS1; Chen–Wiens 2020 SupplementaryData3; Clipperton-Allen 2019
+  Tables S1–S2; Dupont 2026 Tables S2–S3; Franco 2000 Table1; Garcia–Ravignani
+  2020 sp1; Herberstein 2022 Observations; Hrvoj-Mihic 2026 SD1–SD2;
+  Kamilar–Cooper 2013 S2; ManyPrimates 2022 speciespredictors; Martin 2017
+  MammalianVocalisationData; Nunn–Samson 2018 SupplementaryTable1; Pagel
+  2026 SupplementaryData2; Palomero-Gallagher–Zilles 2018 TableS3; Sherwood
+  2020 SupplementaryTables 1–2; and Sjölin 2022 SupplementaryData. Franco's
+  transcription was also compared to the printed PDF Table 1: species group
+  breaks and paired-eye blank cells retain their printed positions.
+- **23 Karbowski 2007 Tables S1–S23**: compared their 23 worksheet layouts
+  with the printed supplement PDF. All 398 species/group row labels occur in
+  source order (S23's two section labels differ only by a trailing colon), and
+  the first measurement in each of 393 populated rows matches the printed
+  value. Captions, three/four-column headers, summary rows, and subdivision
+  breaks retain their printed layout. All 23 item workbooks have identical
+  worksheet cells to the aggregate 23-sheet snapshot. Their XLSX packages
+  differ in custom document properties, so the Karbowski README's former
+  “byte-identical” description was corrected to “cell-identical.”
+
+No data-layout correction or R rebuild was needed in this batch. The inventory
+now has **902** snapshots pending source comparison. This remains an assistant
+source check, not human visual signoff; the EBRAINS live URLs were not
+re-downloaded during this pass. Figure and text snapshots were excluded.
+
+## Next 501 table/matrix snapshots (2026-11-27)
+
+The inventory moved from 902 to **401 pending source comparisons** during this batch: 501 newly assessed. The current project-wide inventory is 463 `source_layout_existing`, 69 corrected/repaired statuses, 103 `confirmed_layout_departure_pending_reconstruction`, and 401 pending, totaling 1,036 table/matrix snapshot files. These are assistant source checks, not human visual signoff. Figures and text snapshots were excluded. `table_snapshot_layout_batch500_triage.csv` is an automated 500-candidate triage sheet with updated statuses, **not** the list of 501 completed audits; use the inventory as the authoritative ledger.
+
+Corrections in this batch restored source geometry while moving analysis transformations into R:
+
+- Andelin Table 4, Bianchi Tables 1–2, Awbrey Table 1, and all 16 Stephan 1981 group-column XLSX snapshots;
+- Hohmann 1991 Tables 3–11, including stacked statistic rows and separate species panels; Glendenning–Masterton 1998 Table 4 with vertically stacked A/B panels; MacLean 2014 Tables S1–S7 with direct DOCX cell grids;
+- Erbaba 2025 Table 1, Bush–Allman 2004b Table 2, Bjugn–Gundersen 1993 Table 2, Hakeem 2005 Table 2, Smaers 2011 Supplementary Tables 1–2, Tan–Li 1999 Table 1, Hopkins 2011 Table 2, Gautier 1988 Table 12.3, and Zhu 2023 Supplementary Data 1 and 3.
+
+Each corrected R script was run. The derived CSV/TSV data stayed the same where the change was only spatial. Source-row identifiers were updated where they are meant to identify physical snapshot rows. The Hakeem six data rows were already present; its correction restored the printed caption, heading and numeric display punctuation. The two Zhu snapshots now retain the source worksheet title rows and their R readers skip them. The Smaers snapshot extractors now emit the two printed header tiers.
+
+Sources used for the conforming checks include exact bytes or exact worksheet/DOCX cell grids for publisher supplements, plus local PDF table text and rendered pages for printed tables. Numeric row matching in the triage sheet was used only to locate source candidates, not as proof of layout conformity. The audit notes for each item are in `table_snapshot_layout_inventory.csv`.
+
+**Unresolved confirmed departures:** 103 project-wide are listed with a specific note in the inventory. Larger reconstruction cohorts include Armstrong 1979, Baron 1996, Dickscheid 2021, Stephan 1970, Barbeito Andrés 2019, Nudo 1995, Smaers 2017, Zilles 2011, and several individual printed tables with flattened grouped headers. These are confirmed nonconformities, not completed corrections. Rebuild their source grids, update each R reader and item README, and compare regenerated analysis outputs. Do not classify any as conforming merely because their values match the source. Another 401 still need source comparison.
+
+## Continued source-layout edits (2026-11-27)
+
+Corrected 28 further confirmed departures after the 501-item audit: Baldwin 2017 Tables 2–4; Garey 2006 Tables 4 and 6; Matano 1992 Tables 1–4; Laska 2003 Table 1; de Rooij 2016 Tables 2–3; Giannaris–Rosene 2012 Tables 4–5; Pontzer 2014 Table S1; Gatome 2010 Tables 1–4; Barger 2012 Table 4.1; Castillo-Morales 2016 Table 1; Chivers 1984 Table 24.1; Elston 2005 Table 3; Hardus 2008/2009 Table 4.2; Schenker 2010 Tables 2–3; Morrogh-Bernard 2008 Table 8.3; and Lewitus 2012 Table 4. The individual item READMEs describe each change and give its rebuild command. These edits restore printed captions, section rows, grouped header tiers, notes, and in Baldwin Table 4 the threshold/sample-size rows in their printed orientation. Extraction scripts for de Rooij Table 2 and Pontzer Table S1 were also updated and regenerated to cell-identical corrected snapshots.
+
+All 28 item readers were run. Analysis data were identical to the previous versions, apart from physical `source_row` identifiers where source rows were added. The Laska shared reader now supports skipping source context rows. Gatome Table 1's apparent count mismatch and de Rooij Table 3's large WMH values are printed in the PDFs and were preserved. Castillo-Morales Table 1 has a printed “non-neocortex” heading over the first volume column although its Nr values are consistent with that column being total brain volume; the header and numbers were preserved and the ambiguity documented. No clear transcription error meeting the user's correction criteria was found in this group.
+
+The current inventory totals 1,036 table/matrix snapshots: 463 `source_layout_existing`, 97 corrected/repaired, 75 `confirmed_layout_departure_pending_reconstruction`, and 401 `pending_source_comparison`. The automated triage sheet's statuses were refreshed; its numeric match statistics are candidate-location aids, not human visual signoff. The independent human source comparison remains separate and is not claimed by these edits. Continue with the 75 confirmed departures, especially individual printed tables with flattened headers, then audit the 401 pending snapshots.

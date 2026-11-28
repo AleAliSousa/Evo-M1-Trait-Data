@@ -1,12 +1,17 @@
 ## Printed case-by-area LT-ICMS threshold table -> analysis CSV and public TSV.
 .sp <- local({a<-grep('^--file=',commandArgs(FALSE),value=TRUE);if(length(a))return(normalizePath(sub('^--file=','',a[1])));for(i in rev(seq_len(sys.nframe()))){p<-sys.frame(i)$ofile;if(!is.null(p))return(normalizePath(p))};stop('Run saved item script.')})
 folder<-dirname(.sp);item_name<-tools::file_path_sans_ext(basename(.sp));base<-dirname(folder)
-snap<-utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),check.names=FALSE,colClasses='character',stringsAsFactors=FALSE,na.strings=NULL,fileEncoding='UTF-8')
-stopifnot(nrow(snap)==11L,ncol(snap)==13L)
+snap<-utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),header=FALSE,check.names=FALSE,colClasses='character',stringsAsFactors=FALSE,na.strings=NULL,fileEncoding='UTF-8')
+stopifnot(nrow(snap)==25L,ncol(snap)==7L,snap[2,1]=='Case No.',snap[25,1]!='')
 areas<-c('M','3a','3b','Sc','PP','S2/Pv')
-parts<-lapply(seq_along(areas),function(j){a<-areas[j];d<-data.frame(source_row=seq_len(nrow(snap)),case_as_published=snap[['Case No.']],cortical_area=a,
- threshold_as_published=snap[[paste0(a,' Average threshold (μA)')]],n_as_published=snap[[paste0(a,' n')]],stringsAsFactors=FALSE);d})
-final.dataframe<-do.call(rbind,lapply(seq_len(nrow(snap)),function(i)do.call(rbind,lapply(parts,function(p)p[i,,drop=FALSE]))))
+case_rows<-which(seq_len(nrow(snap))>=4L & seq_len(nrow(snap))<25L & nzchar(snap[[1]]))
+stopifnot(length(case_rows)==11L,identical(snap[[1]][case_rows[11]],'Average'))
+parts<-lapply(seq_along(areas),function(j){
+ n_printed<-vapply(case_rows,function(i){if(i+1L<25L && !nzchar(snap[[1]][i+1L]))snap[[j+1L]][i+1L] else ''},character(1))
+ data.frame(source_row=case_rows,case_as_published=snap[[1]][case_rows],cortical_area=areas[j],
+  threshold_as_published=snap[[j+1L]][case_rows],n_as_published=sub('^[nN]\\s*=\\s*','',n_printed),stringsAsFactors=FALSE)
+})
+final.dataframe<-do.call(rbind,lapply(seq_along(case_rows),function(i)do.call(rbind,lapply(parts,function(p)p[i,,drop=FALSE]))))
 final.dataframe$case_id<-gsub('–','-',final.dataframe$case_as_published,fixed=TRUE)
 final.dataframe$mean_threshold_uA<-suppressWarnings(as.numeric(final.dataframe$threshold_as_published))
 final.dataframe$sites_n<-suppressWarnings(as.integer(final.dataframe$n_as_published))

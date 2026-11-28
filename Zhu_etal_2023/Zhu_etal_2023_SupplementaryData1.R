@@ -8,7 +8,7 @@ options(scipen=999)
 .sp<-local({a<-grep("^--file=",commandArgs(FALSE),value=TRUE);if(length(a))return(normalizePath(sub("^--file=","",a[1])));if(requireNamespace("rstudioapi",quietly=TRUE)&&rstudioapi::isAvailable()){p<-rstudioapi::getSourceEditorContext()$path;if(nzchar(p))return(normalizePath(p))};stop("Run with Rscript or Source in RStudio.",call.=FALSE)})
 folder<-dirname(.sp);item_name<-tools::file_path_sans_ext(basename(.sp));base<-local({d<-folder;while(dirname(d)!=d&&!file.exists(file.path(d,"__ReadMe.xlsx")))d<-dirname(d);if(file.exists(file.path(d,"__ReadMe.xlsx")))d else NA_character_})
 
-raw<-read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,stringsAsFactors=FALSE)
+raw<-read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=1,check.names=FALSE,stringsAsFactors=FALSE)
 clean<-raw
 names(clean)[names(clean)=="Supplementary.References"]<-"Supplementary_References_codes"
 names(clean)[names(clean)=="Supplementary References"]<-"Supplementary_References_codes"

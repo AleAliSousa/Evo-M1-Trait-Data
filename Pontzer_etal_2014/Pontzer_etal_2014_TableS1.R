@@ -7,8 +7,11 @@ folder <- dirname(normalizePath(sub("^--file=", "", a)))
 item_name <- sub("\\.R$", "", basename(sub("^--file=", "", a)))
 root <- dirname(folder)
 snapshot <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
-                     colClasses = "character", check.names = FALSE,
+                     skip = 2, colClasses = "character", check.names = FALSE,
                      na.strings = character(0), fileEncoding = "UTF-8")
+names(snapshot) <- c("Species", "Population", "N", "Mean age, y", "Body mass Mean, kg",
+                     "Body mass SD", "Body mass Range", "TEE Mean, kcal/d", "TEE SD",
+                     "TEE Range", "Notes")
 stopifnot(nrow(snapshot) == 19L)
 
 # Resolve abbreviated names through this paper's rows in the General key.

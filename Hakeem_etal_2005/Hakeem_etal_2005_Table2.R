@@ -35,9 +35,12 @@ setwd(folder)
 
 dat <- read.csv(
   paste0(item_name, "_snapshot.csv"),
+  skip = 1,
   stringsAsFactors = FALSE,
   check.names = FALSE
 )
+names(dat) <- c("Structure", "Volume_cm3")
+dat$Volume_cm3 <- as.numeric(gsub(",", "", dat$Volume_cm3, fixed = TRUE))
 
 csv_file <- paste0(item_name, ".csv")
 

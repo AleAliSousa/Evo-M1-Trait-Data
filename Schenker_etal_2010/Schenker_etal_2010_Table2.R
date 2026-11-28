@@ -4,7 +4,7 @@ if (length(arg) != 1L) stop('Run with Rscript')
 folder <- dirname(normalizePath(sub('^--file=', '', arg)))
 root <- dirname(folder)
 item <- tools::file_path_sans_ext(basename(sub('^--file=', '', arg)))
-x <- read.csv(file.path(folder, paste0(item, '_snapshot.csv')), check.names=FALSE,
+x <- read.csv(file.path(folder, paste0(item, '_snapshot.csv')), skip=3L, check.names=FALSE,
               colClasses='character', na.strings=NULL)
 x <- x[grepl('^C[0-9]{4}$', x$Subject),,drop=FALSE]
 stopifnot(nrow(x)==12L, length(unique(x$Subject))==12L)

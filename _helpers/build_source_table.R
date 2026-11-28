@@ -4,13 +4,15 @@ build_source_table <- function(folder, item_name, base) {
   frozen <- file.path(folder, spec$snapshot)
   if (grepl('\\.xlsx?$', frozen)) {
     raw <- as.data.frame(readxl::read_excel(frozen, sheet=spec$sheet, skip=spec$skip, col_types='text', .name_repair='minimal'), check.names=FALSE)
-  } else raw <- read.csv(frozen, check.names=FALSE, colClasses='character', na.strings=NULL)
+  } else raw <- read.csv(frozen, skip=if(is.null(spec$csv_skip)) 0L else spec$csv_skip,
+                         check.names=FALSE, colClasses='character', na.strings=NULL)
   raw[is.na(raw)] <- ''
   if(isTRUE(spec$append_next_species_line)) for(i in seq_len(nrow(raw)-1L)) {
     if(nzchar(raw[i,2]) && grepl('^\\(',raw[i+1,1])) raw[i,1]<-paste(raw[i,1],raw[i+1,1])
   }
   source_rows <- seq_len(nrow(raw))
   if (length(spec$keep_rows)) { source_rows <- unlist(spec$keep_rows); raw <- raw[source_rows,,drop=FALSE] }
+  if (!is.null(spec$source_row_offset)) source_rows <- source_rows + spec$source_row_offset
   if (isTRUE(spec$fill_species)) {
     for(i in seq_len(nrow(raw))) if(i>1 && !nzchar(raw[i,spec$species_col])) raw[i,spec$species_col] <- raw[i-1,spec$species_col]
   }

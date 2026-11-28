@@ -21,7 +21,8 @@ parse_age <- function(z) {
   out
 }
 final.dataframe <- data.frame(
-  ape_name=x[["Ape name"]], reference_key=x[["Reference"]], species_printed=x[["Species"]],
+  ape_name=sub(" \\[[^]]+\\]$", "", x[["Ape name"]]),
+  reference_key=gsub(", ", "; ", sub("^.*\\[([^]]+)\\]$", "\\1", x[["Ape name"]])), species_printed=x[["Species"]],
   species_unresolved=unname(name_map[x[["Species"]]]), sex=unname(sex_map[x[["Sex"]]]),
   first_exposure_printed=x[["Age of first exposure to sign/symbols"]],
   first_exposure_age_years=parse_age(x[["Age of first exposure to sign/symbols"]]),

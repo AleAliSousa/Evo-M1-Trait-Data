@@ -18,7 +18,7 @@ repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
 scalar <- function(x) {x <- gsub(" ","",x,fixed=TRUE); ifelse(grepl("^[0-9]+([.][0-9]+)?$",x),num(x),NA_real_)}
 fill <- function(x) {for(i in seq_along(x)) if(i>1 && !nzchar(x[i])) x[i]<-x[i-1];x}
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=1,n_max=24,col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=2,n_max=24,col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
 
 raw$Species <- fill(raw$Species)
 is_group <- apply(raw[,3:ncol(raw)],1,function(z)all(z==""))
@@ -26,7 +26,7 @@ location <- ifelse(is_group,raw[[2]],"")
 raw$Location <- fill(location)
 final.dataframe <- raw[!is_group,,drop=FALSE]
 names(final.dataframe)[1:2]<-c("species_as_published","Observer")
-final.dataframe$Source_row <- which(!is_group)+2L
+final.dataframe$Source_row <- which(!is_group)+3L
 cols <- c("Density_gp_km2","Home_range_ha","Territory_ha","Day_range_m","Night_trees","Feeding_min_day","Fruit_flowers_pct","Leaves_pct","Animal_matter_pct","Travel_min_day","Active_period_min","Feeding_pct_active","Feed_travel_ratio","Travel_pct_active","Biomass_kg_km2","Fruit_leaves_ratio","Dayrange_biomass_ratio","Dayrange_homerange_ratio","Dayrange_fruit_ratio")
 for(j in seq_along(cols)) {
  v <- final.dataframe[[j+2]]

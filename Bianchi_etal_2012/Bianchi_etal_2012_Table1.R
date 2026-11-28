@@ -4,8 +4,8 @@
 ## regional specializations and comparison to humans
 ## Table 1. Demographic information for chimpanzee (N=7) and human samples (N=8)
 ##
-## Input  : Bianchi_etal_2012_Table1_snapshot.csv (hand-transcribed, verbatim
-##          copy of the printed Table 1, p. 3 of the article PDF)
+## Input  : Bianchi_etal_2012_Table1_snapshot.csv (printed species blocks,
+##          column positions, caption and footnote from Table 1)
 ## Output : Bianchi_etal_2012_Table1.csv
 ##          __Public/comparative-data/<Item encoded>.tsv
 ##
@@ -33,10 +33,20 @@ base <- local({
 
 setwd(folder)
 
-dat <- read.csv(
-  paste0(item_name, "_snapshot.csv"),
-  stringsAsFactors = FALSE,
-  check.names = FALSE
+source <- read.csv(paste0(item_name, "_snapshot.csv"), header = FALSE,
+                   stringsAsFactors = FALSE, check.names = FALSE,
+                   colClasses = "character", na.strings = character())
+stopifnot(nrow(source) == 20L, ncol(source) == 5L,
+          source[3, 1] == "Chimpanzee #", source[11, 1] == "Human #")
+data_rows <- c(4:10, 12:19)
+dat <- data.frame(
+  Species = c(rep("Chimpanzee", 7L), rep("Human", 8L)),
+  Individual = as.integer(source[data_rows, 1]),
+  Age_years = as.integer(source[data_rows, 2]),
+  Sex = source[data_rows, 3],
+  PMI_h = gsub("∼", "~", source[data_rows, 4], fixed = TRUE),
+  Length_of_fixation = source[data_rows, 5],
+  stringsAsFactors = FALSE
 )
 
 csv_file <- paste0(item_name, ".csv")

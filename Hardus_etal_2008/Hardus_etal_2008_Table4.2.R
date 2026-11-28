@@ -16,9 +16,9 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=3L,n_max=23L,col_names=c("Call type","Basic feature","Call","Maximum frequency (Hz)","Duration (s)","n"),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
 final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
-final.dataframe$Source_row <- seq_len(nrow(raw))+1L
+final.dataframe$Source_row <- seq_len(nrow(raw))+3L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
 final.dataframe[["N_calls"]] <- scalar(raw[["n"]]) * 1
 parts<-list();z<-0L

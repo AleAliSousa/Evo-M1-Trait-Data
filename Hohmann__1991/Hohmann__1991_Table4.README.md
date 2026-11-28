@@ -11,3 +11,5 @@ Table 4. Size, composition and utilization of the vocal repertoire. C context eq
 Reader: `Hohmann__1991_Table4.R`. Numeric fields are derived explicitly; raw source cells remain available. Source_row links the analysis back to the snapshot. Published contextual information, if needed, is kept separately in reference_tables/Hohmann__1991_Table4_context.csv and joined by Source_row. No taxa are inferred from genus-only examples. Source-specific records must not be pooled as independent observations with reused compilations.
 
 Build uses Item name and Item encoded from the registry. During owner registration use DATASET_REGISTRY=ManyPrimates__2022/ManyPrimates_all_items_build_registry.xlsx. Routine registry insertion remains the owner's step. Public TSV is written only under __Public/comparative-data.
+
+Layout audit (2026-11-27): compared with the scanned printed Table 4 (PDF p. 5). Restored separate species and age/sex heading tiers in the snapshot. The R reader assigns composite analysis names after reading the two-tier source grid. Build: `Rscript --vanilla Hohmann__1991_Table4.R`. `Source_row` now refers to the physical snapshot row after both heading rows.

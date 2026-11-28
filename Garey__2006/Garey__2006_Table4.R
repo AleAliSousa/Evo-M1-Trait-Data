@@ -29,7 +29,8 @@ lo <- function(v) num(sub("^([0-9.]+)-([0-9.]+)$", "\\1", ifelse(v %in% c("-", "
 hi <- function(v) num(sub("^([0-9.]+)-([0-9.]+)$", "\\2", ifelse(v %in% c("-", ""), NA, v)))
 
 ## ---- Table 4: body and brain weight (g) and cortical thickness (mm), areas 4 and 7, 13 species ----
-x <- readr::read_csv(paste0(item_name, "_snapshot.csv"), show_col_types = FALSE, col_types = readr::cols(.default = "c"))
+x <- readr::read_csv(paste0(item_name, "_snapshot.csv"), skip = 1, show_col_types = FALSE, col_types = readr::cols(.default = "c"))
+names(x) <- c("Order", "Species", "Body:Brain weight in grams", "Cortical thickness in mm: Area 4", "Cortical thickness in mm: Area 7")
 x$Order <- sub(" \\(\\*[0-9]+\\)$", "", x$Order)  # drop the translator's endnote mark (*74); see README
 x$Order <- stats::ave(x$Order, cumsum(!is.na(x$Order)), FUN = function(v) v[1])  # order is printed once per group; fill down
 bb  <- strsplit(x[["Body:Brain weight in grams"]], ":", fixed = TRUE)

@@ -16,9 +16,10 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=3L,n_max=9L,col_names=c("Site",paste(rep(c("UFM","FM","SAF","NSAF"),each=3L),rep(c("F","R","T"),4L),sep="_")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
 final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
-final.dataframe$Source_row <- seq_len(nrow(raw))+1L
+final.dataframe$Site <- sub("[¹²³]$", "", final.dataframe$Site)
+final.dataframe$Source_row <- seq_len(nrow(raw))+3L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
 context <- read_csv(file.path(folder,"reference_tables",paste0(item_name,"_context.csv")),col_types=cols(.default=col_character()),na=character(),show_col_types=FALSE)
 stopifnot(!anyDuplicated(context$Source_row))

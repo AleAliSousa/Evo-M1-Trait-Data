@@ -8,6 +8,11 @@ Table 2, “Case overview,” was transcribed from the [structured table on the 
 
 The reader turns each responsive/tested pair into separate numeric counts, retaining published fractions, case, duration, area and total-row status. The output has 133 rows (19 source rows × seven printed area/total columns). Printed total rows and columns are flagged so they are not counted as independent observations. This table measures the frequency of movement-evoking ICMS sites, not cortical surface area, full map shape, or stimulation thresholds. The originally listed ICMS-map figures remain a separate extraction task.
 
+Layout audit restored the printed `Number of sites tested in each brain area` spanning header
+above M through Total. The R reader skips that source header when building the 133 analysis rows
+and records physical snapshot rows. The build command below passed with the same five printed
+arithmetic discrepancies already documented here.
+
 ## Printed total checks
 
 The reader recomputes each row's six area sums against its printed total. Five of 38 numerator/denominator comparisons differ: 14–34 at 500 ms (responsive 16 versus printed 15), 14–88 at 50 and 800 ms (tested 42 versus printed 52 in each row), 14–124 at 500 ms (responsive 26 versus printed 25), and the 500-ms published aggregate (responsive 324 versus printed 323). All cells remain as printed. These are source-table inconsistencies, not extraction corrections; use the six area cells for area-specific analysis and do not infer a corrected published total.

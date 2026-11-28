@@ -41,13 +41,20 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-## The snapshot preserves the printed layout: title line, blank line, header
-## row, then 4 subjects (Adult male / Adult female / Juvenile male /
-## Combined) x 4 statistic rows (Mean / Range / N / FA) each, one column
-## per tested frequency (125 Hz-8 kHz) plus a Catch column (N, FA totals).
-snap <- read.csv(snapshot_csv, skip = 2, stringsAsFactors = FALSE,
-                  check.names = FALSE, colClasses = "character", encoding = "UTF-8")
-stopifnot(nrow(snap) == 16)  # 4 subjects x 4 statistic rows
+## The snapshot keeps the printed Frequency tier and separate subject headings.
+source_rows <- read.csv(snapshot_csv, header = FALSE, stringsAsFactors = FALSE,
+                        check.names = FALSE, colClasses = "character",
+                        na.strings = character(), encoding = "UTF-8")
+stopifnot(nrow(source_rows) == 23L, ncol(source_rows) == 10L)
+subject_rows <- c(4L, 9L, 14L, 19L)
+stopifnot(identical(source_rows[subject_rows, 1],
+                    c("Adult male", "Adult female", "Juvenile male", "Combined")))
+data_rows <- unlist(lapply(subject_rows, function(i) (i + 1L):(i + 4L)))
+snap <- source_rows[data_rows, , drop = FALSE]
+names(snap) <- c("Subject", "Statistic", "125 Hz", "250 Hz", "500 Hz",
+                 "1 kHz", "2 kHz", "4 kHz", "8 kHz", "Catch")
+snap$Subject <- rep(source_rows[subject_rows, 1], each = 4L)
+stopifnot(identical(snap$Statistic, rep(c("Mean", "Range", "N", "FA"), 4L)))
 
 freq_cols <- c("125 Hz", "250 Hz", "500 Hz", "1 kHz", "2 kHz", "4 kHz", "8 kHz")
 freq_hz   <- c(125, 250, 500, 1000, 2000, 4000, 8000)

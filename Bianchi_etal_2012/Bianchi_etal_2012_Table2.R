@@ -4,8 +4,8 @@
 ## regional specializations and comparison to humans
 ## Table 2. Dependent measures in areas 3b, 4, 18, and 10 in chimpanzees and humans
 ##
-## Input  : Bianchi_etal_2012_Table2_snapshot.csv (hand-transcribed, verbatim
-##          copy of the printed Table 2, p. 4 of the article PDF)
+## Input  : Bianchi_etal_2012_Table2_snapshot.csv (printed measure rows by
+##          area columns, with separate chimpanzee and human blocks)
 ## Output : Bianchi_etal_2012_Table2.csv
 ##          __Public/comparative-data/<Item encoded>.tsv
 ##
@@ -36,11 +36,33 @@ base <- local({
 
 setwd(folder)
 
-dat <- read.csv(
-  paste0(item_name, "_snapshot.csv"),
-  stringsAsFactors = FALSE,
-  check.names = FALSE
-)
+source <- read.csv(paste0(item_name, "_snapshot.csv"), header = FALSE,
+                   stringsAsFactors = FALSE, check.names = FALSE,
+                   colClasses = "character", na.strings = character())
+stopifnot(nrow(source) == 19L, ncol(source) == 5L,
+          source[3, 1] == "Chimpanzee", source[12, 1] == "Human")
+keys <- c("Cell_soma_area_um2", "Cell_soma_depth_um", "TDL_um", "MSL_um",
+          "DSC", "DSN", "DSD", "Dendritic_trees_count")
+parse_pair <- function(x) {
+  parts <- strsplit(x, "\\s*±\\s*")[[1]]
+  stopifnot(length(parts) == 2L)
+  as.numeric(parts)
+}
+out <- list()
+for (species in c("Chimpanzee", "Human")) {
+  first <- if (species == "Chimpanzee") 4L else 13L
+  n_measures <- if (species == "Chimpanzee") 8L else 7L
+  for (area in seq_len(4L)) {
+    record <- list(Species = species, Area = c("Area3b", "Area4", "Area18", "Area10")[area])
+    for (measure in seq_len(8L)) {
+      value <- if (measure <= n_measures) parse_pair(source[first + measure - 1L, area + 1L]) else c(NA_real_, NA_real_)
+      record[[paste0(keys[measure], "_mean")]] <- value[1]
+      record[[paste0(keys[measure], "_SD")]] <- value[2]
+    }
+    out[[length(out) + 1L]] <- record
+  }
+}
+dat <- do.call(rbind.data.frame, c(out, stringsAsFactors = FALSE))
 
 csv_file <- paste0(item_name, ".csv")
 

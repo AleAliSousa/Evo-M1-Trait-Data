@@ -3,14 +3,15 @@ a <- grep("^--file=",commandArgs(FALSE),value=TRUE)
 if(!length(a))stop("Run with Rscript <script>.R",call.=FALSE)
 sp<-normalizePath(sub("^--file=","",a[1]));folder<-dirname(sp);base<-dirname(folder)
 item<-sub("\\.R$","",basename(sp))
-raw<-read.csv(file.path(folder,paste0(item,"_snapshot.csv")),colClasses="character",
+raw<-read.csv(file.path(folder,paste0(item,"_snapshot.csv")),skip=2,colClasses="character",
               check.names=FALSE,stringsAsFactors=FALSE,na.strings=character())
+names(raw)<-c("Species","Adults #L","Adults #A","Adults #R","Sub-Adults #L","Sub-Adults #A","Sub-Adults #R","Adults Only R:L Ratio")
 stopifnot(nrow(raw)==4L,identical(raw$Species,c("Orangutan","Gorilla","Chimpanzees","Bonobo")))
 map<-read.csv(file.path(folder,"reference_tables","Hopkins_etal_2011_source_species_map.csv"),
               stringsAsFactors=FALSE)
 species<-map$method_species_label[match(raw$Species,map$source_label)]
 stopifnot(!anyNA(species))
-out<-data.frame(source_row=1:4,species_as_printed=raw$Species,
+out<-data.frame(source_row=4:7,species_as_printed=raw$Species,
   species_in_methods=species,Species=species,
   adult_n_left=as.integer(raw[[2]]),adult_n_ambiguous=as.integer(raw[[3]]),
   adult_n_right=as.integer(raw[[4]]),subadult_n_left=as.integer(raw[[5]]),

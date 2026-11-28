@@ -14,3 +14,5 @@ Build uses Item name and Item encoded from the registry. During owner registrati
 
 
 Table arithmetic audit: 34 checks; 4 printed mismatches retained. Checks do not alter source cells. Full diagnostics are in the restricted ManyPrimates_20261021 QA directory.
+
+Layout audit (2026-11-27): compared with printed Table 7 on the scanned PDF. The snapshot now follows the source: numbered vocal categories and three vertically stacked statistic lines across the age/sex columns; two header tiers retain the active-epoch counts. The R reader fills category labels and names the three statistic lines to create analysis rows. Build: `Rscript --vanilla Hohmann__1991_Table7.R`. `Source_row` refers to the physical snapshot line.

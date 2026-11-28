@@ -1,20 +1,22 @@
-"Species","Population","N","Mean age, y","Body mass Mean, kg","Body mass SD","Body mass Range","TEE Mean, kcal/d","TEE SD","TEE Range","Notes"
-"M. murinus","Wild","18","Adult","0.064","0.011","0.049–0.098","28","11","7–50","From nontorpor animals"
-"Lepilemur ruficaudatus","Wild","9","Adult","0.77","0.09","0.66–0.94","121","52","52–204",""
-"Eulemur sp.","Wild","11","Adult","1.84","0.22","1.58–2.17","146","22","114–189",""
-"L. catta","Wild","11","Adult","2.24","0.27","1.77–2.65","146","33","105–205",""
-"P. diadema","Wild","6","Adult","4.90","0.54","3.90–5.40","346","73","228–434",""
-"Aloutta palliata","Wild","5","Adult","7.12","1.42","5.80–9.43","602","118","460–787",""
-"Papio cynocephalus","Wild","6","—","12.0","1.4","—","813","143","—",""
-"H. sapiens","Hadza","30","37.0","46.6","6.98","34.0–58.2","2,212","537","1,459–3,363",""
-"C. jacchus","Laboratory","6","Adult","0.47","0.07","0.39–0.56","52","7","43–59","University of Zurich"
-"L. catta","Research station","5","Adult","2.21","0.08","2.13–2.30","217","44","164–274","DLC"
-"M. radiata","Laboratory","5","8.9","4.20","0.60","—","251","30","—","“Lean” group; measured via calorimetry chamber"
-"A. nigroviridis","Zoo","1","Adult","7.90","—","—","524","—","—","Lincoln Park Zoo"
-"M. mulata","Laboratory","11","20.0","14.40","2.30","—","607","72","—","Control group"
-"Papio anubis","Research station","8","Adult","16.18","1.85","13.20–18.75","832","205","550–1,231",""
-"P. paniscus","Sanctuary","4","17.5","38.0","5.02","31.0–43.0","1,767","469","1,336–2,431","Lola ya Bonobo Sanctuary"
-"P. troglodytes","Sanctuary and zoo","10","18.0","57.1","13.79","40.0–88.0","2,386","593","1,475–3,461","Tchimpounga Sanctuary and Lincoln Park Zoo"
-"H. sapiens","Westerners","195","41.7","72.2","10.31","49.5–101.3","2,482","499","1,351–4,682","US and Europe"
-"P. pygmaeus","Zoo","3","25.3","74.8","35.58","53.2–115.9","1,984","380","1,732–2,422",""
-"G. gorilla","Zoo","5","21.4","123.7","71.28","65.8–220.0","3,160","1,222","1,826–5,006","Lincoln Park Zoo"
+Table S1. Additional information for primate TEE samples (Table 1),,,,,,,,,,
+Species,Population,N,"Mean age, y",Body mass,,,TEE,,,Notes
+Species,Population,N,"Mean age, y","Mean, kg",SD,Range,"Mean, kcal/d",SD,Range,Notes
+M. murinus,Wild,18,Adult,0.064,0.011,0.049–0.098,28,11,7–50,From nontorpor animals
+Lepilemur ruficaudatus,Wild,9,Adult,0.77,0.09,0.66–0.94,121,52,52–204,
+Eulemur sp.,Wild,11,Adult,1.84,0.22,1.58–2.17,146,22,114–189,
+L. catta,Wild,11,Adult,2.24,0.27,1.77–2.65,146,33,105–205,
+P. diadema,Wild,6,Adult,4.90,0.54,3.90–5.40,346,73,228–434,
+Aloutta palliata,Wild,5,Adult,7.12,1.42,5.80–9.43,602,118,460–787,
+Papio cynocephalus,Wild,6,—,12.0,1.4,—,813,143,—,
+H. sapiens,Hadza,30,37.0,46.6,6.98,34.0–58.2,"2,212",537,"1,459–3,363",
+C. jacchus,Laboratory,6,Adult,0.47,0.07,0.39–0.56,52,7,43–59,University of Zurich
+L. catta,Research station,5,Adult,2.21,0.08,2.13–2.30,217,44,164–274,DLC
+M. radiata,Laboratory,5,8.9,4.20,0.60,—,251,30,—,“Lean” group; measured via calorimetry chamber
+A. nigroviridis,Zoo,1,Adult,7.90,—,—,524,—,—,Lincoln Park Zoo
+M. mulata,Laboratory,11,20.0,14.40,2.30,—,607,72,—,Control group
+Papio anubis,Research station,8,Adult,16.18,1.85,13.20–18.75,832,205,"550–1,231",
+P. paniscus,Sanctuary,4,17.5,38.0,5.02,31.0–43.0,"1,767",469,"1,336–2,431",Lola ya Bonobo Sanctuary
+P. troglodytes,Sanctuary and zoo,10,18.0,57.1,13.79,40.0–88.0,"2,386",593,"1,475–3,461",Tchimpounga Sanctuary and Lincoln Park Zoo
+H. sapiens,Westerners,195,41.7,72.2,10.31,49.5–101.3,"2,482",499,"1,351–4,682",US and Europe
+P. pygmaeus,Zoo,3,25.3,74.8,35.58,53.2–115.9,"1,984",380,"1,732–2,422",
+G. gorilla,Zoo,5,21.4,123.7,71.28,65.8–220.0,"3,160","1,222","1,826–5,006",Lincoln Park Zoo

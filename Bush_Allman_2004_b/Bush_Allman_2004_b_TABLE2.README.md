@@ -18,3 +18,5 @@ PDF p. 6 (journal p. 1093). `Bush_Allman_2004_b_TABLE2_snapshot.csv` is a frozen
 - `Bush_Allman_2004_b_TABLE2.R`: reproducible build
 - `Bush_Allman_2004_b_TABLE2.csv`: clean analysis table
 - `Bush_Allman_2004_b_TABLE2_definitions.csv`: field definitions
+
+Layout audit (2026-11-27): compared with PDF Table 2. Restored Magnocellular and Parvocellular spanning heading tier, subordinate Count and Coefficient of error tier, and printed thousands separators. The R reader assigns flat analysis names. Build: `Rscript --vanilla Bush_Allman_2004_b_TABLE2.R`.

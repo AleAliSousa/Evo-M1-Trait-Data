@@ -11,3 +11,7 @@ Table 4.2. Features and descriptive statistics of 23 orangutan sounds and vocali
 Reader: `Hardus_etal_2008_Table4.2.R`. Numeric fields are derived explicitly; raw source cells remain available. Source_row links the analysis back to the snapshot. Published contextual information, if needed, is kept separately in reference_tables/Hardus_etal_2009_Table4.2_context.csv and joined by Source_row. No taxa are inferred from genus-only examples. Source-specific records must not be pooled as independent observations with reused compilations.
 
 Build uses Item name and Item encoded from the registry. During owner registration use DATASET_REGISTRY=ManyPrimates__2022/ManyPrimates_all_items_build_registry.xlsx. Routine registry insertion remains the owner's step. Public TSV is written only under __Public/comparative-data.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed caption, the Range/mean±SD second header tier, the Basic feature footnote marker, and the three notes below the table. The R reader selects the 23 data rows after those header tiers and retains the previous analysis column names; Source_row now refers to physical rows in the corrected snapshot. Run `Rscript --vanilla Hardus_etal_2008/Hardus_etal_2008_Table4.2.R` from repository root. Independent human comparison remains separate.

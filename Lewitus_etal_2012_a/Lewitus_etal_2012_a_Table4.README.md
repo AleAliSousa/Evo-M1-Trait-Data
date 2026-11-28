@@ -3,7 +3,7 @@
 Lewitus, Sherwood & Hof (2012). Cellular signatures in the primary visual cortex of phylogeny and placentation. Brain Struct Funct 217(2):531-547. doi:10.1007/s00429-011-0338-5
 
 ## Source -> snapshot
-PDF p.9 (journal p.539). Clean born-digital text; transcribed from a render. 8 species, columns in printed order (two-level headers flattened with a colon).
+PDF p.9 (journal p.539). Clean born-digital text; transcribed from a render. 8 species, columns in printed order. The snapshot now retains the caption and three printed header tiers; R selects data rows.
 
 ## What is data
 Only the **Observed value** (glial cell density in V1, cells/mm3, species mean; STEREOLOGY, Measure code ends .Stereology) is a measurement (role primary). Predicted value, % deviation and Within 95% PI come from the authors' regression of Old/New World monkeys (role derived; do not merge as observations).
@@ -17,3 +17,7 @@ Per-species glial and neuronal densities for the rest of the ~71 species and gli
 
 ## Build
 `Lewitus_etal_2012_a_Table4.R` -> `..._Table4.csv` (8 rows). RA side-by-side check pending.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the caption and printed Glial cell density, Species mean data, and Independent contrasts spanning headings with their lower tiers. The published thousands separators were restored in the eight observed and predicted cells. The R reader skips the source-layout rows and removes separators during numeric parsing. Run `Rscript --vanilla Lewitus_etal_2012_a/Lewitus_etal_2012_a_Table4.R` from repository root. Independent human source comparison remains separate.

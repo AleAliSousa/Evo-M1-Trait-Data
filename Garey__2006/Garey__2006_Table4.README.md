@@ -27,6 +27,10 @@ Species are resolved through `_keys/General/species_key.csv` (`source_publicatio
 names are kept in `species_as_published`. The translator's *Glossary of Species Names* (printed pp. 281-282)
 gives the modern equivalents used. Genus-level (`sp.`) where the table does not say which species.
 
+Layout edit: restored the printed `Cortical thickness in mm` spanning heading above Areas 4
+and 7. Run `Rscript Garey__2006/Garey__2006_Table4.R` from the repository root; the reader
+derives flat headings and reproduced the prior 13-row analysis CSV byte for byte.
+
 ## Open points
 - Human visual check of the snapshot against the PDF page is pending.
 - 'Bat' is order-level (Chiroptera sp.); no species printed.

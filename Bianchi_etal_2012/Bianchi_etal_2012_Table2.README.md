@@ -5,9 +5,8 @@ Bronson, E., Hopkins, W. D., Semendeferi, K., Jacobs, B., Hof, P. R., & Sherwood
 Dendritic morphology of pyramidal neurons in the chimpanzee neocortex: regional specializations and
 comparison to humans. *Cerebral Cortex*, 23(10), 2429-2436. doi:10.1093/cercor/bhs239
 
-Source snapshot: `Bianchi_etal_2012_Table2_snapshot.csv` (hand-transcribed, verbatim copy of the
-printed Table 2, "Dependent measures in areas 3b, 4, 18, and 10 in chimpanzees and humans," p. 4 of
-the article PDF).
+Source snapshot: `Bianchi_etal_2012_Table2_snapshot.csv` (hand-transcribed
+sketch of printed Table 2, p. 4 of the article PDF).
 
 ## What we built
 The paper folder had only the source PDF; this item had no snapshot, CSV, R script, README, or
@@ -31,8 +30,14 @@ section thickness, and experimental procedure as Jacobs et al. (1997, 2001) — 
 re-derive those human values, only reproduces them as printed alongside the new chimpanzee data.
 
 ## Checks
-- 8 rows (4 areas x 2 species), 18 columns, matching the printed table exactly. Dendritic tree count
-  is reported for chimpanzees only — left blank for humans, matching the source table's own omission.
+- The snapshot has printed measure rows and four area columns under separate
+  chimpanzee and human blocks. All 60 printed mean–SD cells matched the PDF
+  text layer. Dendritic tree count is reported for chimpanzees only.
+- Layout corrected 2026-11-27: the former snapshot was transposed into eight
+  species-by-area rows with 18 analysis columns. That reshaping now occurs in
+  `Bianchi_etal_2012_Table2.R`. `Rscript --vanilla
+  Bianchi_etal_2012/Bianchi_etal_2012_Table2.R` regenerated the eight-row
+  analysis CSV byte-identically to the pre-correction version.
 
 ## Extraction / build record
 Transcribed directly from the article PDF's Table 2 (page 4) by Microsoft Copilot (AI assistant) on

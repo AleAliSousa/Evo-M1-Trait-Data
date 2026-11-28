@@ -5,9 +5,8 @@ Bronson, E., Hopkins, W. D., Semendeferi, K., Jacobs, B., Hof, P. R., & Sherwood
 Dendritic morphology of pyramidal neurons in the chimpanzee neocortex: regional specializations and
 comparison to humans. *Cerebral Cortex*, 23(10), 2429-2436. doi:10.1093/cercor/bhs239
 
-Source snapshot: `Bianchi_etal_2012_Table1_snapshot.csv` (hand-transcribed, verbatim copy of the
-printed Table 1, "Demographic information for chimpanzee (N=7) and human samples (N=8)," p. 3 of the
-article PDF).
+Source snapshot: `Bianchi_etal_2012_Table1_snapshot.csv` (hand-transcribed
+sketch of printed Table 1, p. 3 of the article PDF).
 
 ## What we built
 The paper folder had only the source PDF; this item had no snapshot, CSV, R script, README, or
@@ -28,8 +27,14 @@ in this study (see the sibling item `Bianchi_etal_2012_Table2` for the resulting
 measures). This is sample provenance metadata, not a trait measurement in itself.
 
 ## Checks
-- 15 rows (7 chimpanzee + 8 human), 6 columns, matching the printed table exactly, including the
-  approximate ("~4") PMI values printed for several chimpanzee specimens.
+- The snapshot has the printed five-column layout, separate chimpanzee/human
+  section rows, caption, footnote and 15 specimen rows. The R reader adds a
+  Species column and changes the printed approximate sign to `~` in the
+  six-column analysis CSV.
+- Layout corrected 2026-11-27: the former snapshot had repeated Species cells
+  and an added Individual column. `Rscript --vanilla
+  Bianchi_etal_2012/Bianchi_etal_2012_Table1.R` regenerated the 15-row
+  analysis CSV byte-identically to the pre-correction version.
 
 ## Extraction / build record
 Transcribed directly from the article PDF's Table 1 (page 3) by Microsoft Copilot (AI assistant) on

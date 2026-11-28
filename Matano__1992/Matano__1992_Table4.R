@@ -71,7 +71,10 @@ setwd(folder)
 # drop them and rewrite the already-published CSV/TSV. Numeric coercion happens below,
 # for the integrity check only.
 snap <- read_csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
-                 col_types = cols(.default = col_character()))
+                 skip = 3, col_names = FALSE, col_types = cols(.default = col_character()))
+names(snap) <- c("Species", "Specimens_n", "Body_weight_g", "InfOliv_Principal_mm3",
+                 "InfOliv_AccMed_mm3", "InfOliv_AccDors_mm3", "Med_plus_Dorsal_mm3",
+                 "Activity_Time", "Diet", "Locomotor_Type")
 
 out <- data.frame(
   Species        = snap$Species,

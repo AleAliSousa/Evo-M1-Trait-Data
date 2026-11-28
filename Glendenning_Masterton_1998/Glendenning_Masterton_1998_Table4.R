@@ -6,8 +6,8 @@
 ## clusters CN and SO, based on Table 3 entries -- largest at top, smallest at
 ## bottom; the printed "Average" row marks where the mean falls; * p<0.05,
 ## ** p<0.01 (deviation from average); ranks less than 6 apart not reliably
-## different. Snapshot keeps the printed layout: 12 columns (A = first 6,
-## p. 72; B = last 6, p. 73) x 54 printed rows. DERIVED (rank order of Table 3).
+## different. Snapshot keeps two separate six-column panels (A and B) in page order;
+## this reader joins them for analysis. DERIVED (rank order of Table 3).
 
 ## 0. PATHS --------------------------------------------------------
 .sp <- local({
@@ -56,8 +56,18 @@ resolve <- function(x) {
 }
 
 ## 2. LOAD -------------------------------------------------------------
-snap <- read.csv(snapshot_csv, colClasses = "character", encoding = "UTF-8", check.names = FALSE)
-stopifnot(nrow(snap) == 54L, ncol(snap) == 12L)
+grid <- read.csv(snapshot_csv, header = FALSE, colClasses = "character", encoding = "UTF-8", check.names = FALSE)
+stopifnot(ncol(grid) == 6L, grid[[1]][1] == "Table 4A")
+b_start <- which(grid[[1]] == "Table 4B")
+stopifnot(length(b_start) == 1L)
+head_a <- as.character(grid[2, ])
+head_b <- as.character(grid[b_start + 1L, ])
+panel_a <- grid[3:(b_start - 1L), , drop = FALSE]
+panel_b <- grid[(b_start + 2L):nrow(grid), , drop = FALSE]
+stopifnot(nrow(panel_a) == 54L, nrow(panel_b) == 54L)
+# The printed panels are stacked on separate pages. Join only for analysis.
+snap <- as.data.frame(cbind(panel_a, panel_b), stringsAsFactors = FALSE, check.names = FALSE)
+names(snap) <- c(head_a, head_b)
 
 ## species via Table 1 of the same paper (Tables 2-7 print common names only;
 ## Table 1 prints the binomial for each Animal No.), then the species key.

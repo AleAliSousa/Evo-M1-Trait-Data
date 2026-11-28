@@ -26,9 +26,14 @@ on the structure-group:
 
 Fundamental / telencephalon / periventricular groups split into all three taxa; diencephalon,
 palaeocortex and vestibular split insectivore-vs-pooled-primates; the visual table is
-primates-only. The taxon each table was captioned by is carried in each file's `group` column.
+primates-only. The snapshots keep code and species as the first two printed
+columns; the former extra `group` column was removed on 2026-11-27. For the
+12 single-scope Tables I–VII, X, XII, XIV–XVI, the printed taxon scope is
+added by each R reader from the table caption. For the four pooled-primates
+Tables VIII, IX, XI and XIII, the reader derives the scope from the printed
+specimen code (prosimian below 0150; simian from 0150 upward).
 
-Each printed table is its own item under ``: `Stephan_etal_1981_Table{I..XVI}` with a
+Each printed table is its own item: `Stephan_etal_1981_Table{I..XVI}` with a
 matching `_snapshot.xlsx`, `.R`, `.csv`, and public TSV
 (`10.1159%2F000155963_Table{I..XVI}.tsv`).
 
@@ -36,6 +41,13 @@ matching `_snapshot.xlsx`, `.R`, `.csv`, and public TSV
 > label). The split is merge-invariant: `volumes_long.csv` / `volumes_wide.csv` are byte-identical
 > before and after; only provenance labels in `volumes_unfiltered.csv` / `volumes_flags.csv`
 > refine to the per-table item names. See the split invariance report.
+
+**Layout rebuild check (2026-11-27).** Ran `Rscript --vanilla
+Stephan_etal_1981/Stephan_etal_1981_Table{N}.R` separately for each of the
+12 single-scope tables listed above and for Tables VIII, IX, XI and XIII.
+Every resulting analysis CSV was
+byte-identical to its pre-correction version. No human visual signoff is
+claimed.
 
 ## Laterality
 Vestibular structures (Tables XII & XIII, codes 35-39) were measured from **one side only**

@@ -1,3 +1,6 @@
+Table 2,,,,,,,,,,,,,
+Stereological estimates and CE of shrinkage-corrected volumes (mm3) for each cortical area,,,,,,,,,,,,,
+,,,,,,Volume (mm3),,,,,,,
 Subject,Sex,Age (years),Whole brain (cm3),Left neocortical gray (cm3),Right neocortical gray (cm3),Left 44 volume (mm3),CE Left 44,Left 45 volume (mm3),CE Left 45,Right 44 volume (mm3),CE Right 44,Right 45 volume (mm3),CE Right 45
 C0630,Female,13,415.4,96.5,97.9,669.1,0.026,746.4,0.018,760.0,0.019,801.2,0.012
 C0342,Female,35,348.1,91.0,93.8,437.8,0.008,413.0,0.013,568.5,0.006,468.1,0.009
@@ -14,3 +17,4 @@ C0367,Male,41,377.2,86.8,80.5,778.4,0.036,537.4,0.021,521.1,0.013,506.3,0.025
 Mean,,,360.9,88.4,87.7,600.9,,500.6,,648.0,,633.2,
 SD,,,40.7,10.1,9.6,181.6,,199.3,,190.9,,210.6,
 CV,,,11.3%,11.4%,11.0%,30.2%,,39.8%,,29.5%,,33.3%,
+"Note: SD, standard deviation; CE, coefficients of error; CV, coefficient of variation.",,,,,,,,,,,,,

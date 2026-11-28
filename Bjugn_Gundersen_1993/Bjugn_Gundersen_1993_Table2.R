@@ -1,7 +1,8 @@
 ## Frozen printed table -> analysis CSV -> registry-coded public TSV.
 .sp <- local({a<-grep('^--file=',commandArgs(FALSE),value=TRUE);if(length(a))return(normalizePath(sub('^--file=','',a[1])));for(i in rev(seq_len(sys.nframe()))){p<-sys.frame(i)$ofile;if(!is.null(p))return(normalizePath(p))};stop('Run the saved item script with Rscript or source().')})
 folder<-dirname(.sp);item_name<-tools::file_path_sans_ext(basename(.sp));base<-dirname(folder)
-snap<-utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),check.names=FALSE,colClasses='character',stringsAsFactors=FALSE,na.strings=NULL,fileEncoding='UTF-8')
+snap<-utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),skip=2,check.names=FALSE,colClasses='character',stringsAsFactors=FALSE,na.strings=NULL,fileEncoding='UTF-8')
+names(snap)<-c('Animal number',paste0('White matter ',c('Σ','G','E','N'),' (10^6)'),paste0('Gray matter ',c('Σ','G','E','N'),' (10^6)'),'Gray matter neuron CE')
 stopifnot(nrow(snap)==8L,ncol(snap)==10L)
 parts<-lapply(seq_len(nrow(snap)),function(i)do.call(rbind,lapply(c('White','Gray'),function(matter)do.call(rbind,lapply(c('Σ','G','E','N'),function(cell){
  value<-as.numeric(snap[[paste0(matter,' matter ',cell,' (10^6)')]][i])

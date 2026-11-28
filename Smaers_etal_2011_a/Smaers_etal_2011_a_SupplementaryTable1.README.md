@@ -17,6 +17,13 @@ the printed column headers), so the source->snapshot step is reproducible — it
 table. 26 individuals; left/right frontal white & grey + total brain; catalogue numbers in the Individual
 label. **RAW, primary, per-individual data; left & right hemispheres kept separate.**
 
+Layout audit: the printed `Frontal left`/`Frontal right` header tier and its `white`/`grey`
+subheaders are preserved as two snapshot rows. Run
+`Rscript Smaers_etal_2011_a/Smaers_etal_2011_a_SupplementaryTable1_snapshot.R` then
+`Rscript Smaers_etal_2011_a/Smaers_etal_2011_a_SupplementaryTable1.R` from the repository root.
+The reader derives the flat analysis column names. The PDF's caption follows the grid and is
+documented here rather than added as a data row.
+
 ## Checking -> `comparison/`
 `Smaers_etal_2011_compare_to_public_tsv.R` audits the snapshot against the DOI-coded TSV that **pre-existed
 in the Public folder** (`comparison/10.1159%2F000323671_SupplementaryTable1.tsv`, prepared elsewhere),

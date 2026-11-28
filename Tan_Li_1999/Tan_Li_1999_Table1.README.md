@@ -10,6 +10,11 @@ Table 1. Distribution of the middle- and long-wavelength opsins among 20 species
 
 Reader: `Tan_Li_1999_Table1.R`. Numeric fields are derived explicitly; raw source cells remain available. Source_row links the analysis back to the snapshot. Published contextual information, if needed, is kept separately in reference_tables/Tan_Li_1999_Table1_context.csv and joined by Source_row. No taxa are inferred from genus-only examples. Source-specific records must not be pooled as independent observations with reused compilations.
 
+Layout audit: restored the printed `Samples` and `Alleles` spanning header row and the
+`Male`/`Female` and `M`/`L` subheaders. The R reader derives the flat analysis names and records
+the physical source row after the two header rows. From the repository root run
+`Rscript Tan_Li_1999/Tan_Li_1999_Table1.R`; 20 species rows and both arithmetic checks pass.
+
 Build uses Item name and Item encoded from the registry. During owner registration use DATASET_REGISTRY=ManyPrimates__2022/ManyPrimates_all_items_build_registry.xlsx. Routine registry insertion remains the owner's step. Public TSV is written only under __Public/comparative-data.
 
 

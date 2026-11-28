@@ -8,6 +8,12 @@ doi:10.1002/ar.a.20255
 Source snapshot: `Hakeem_etal_2005_Table2_snapshot.csv` (hand-transcribed, verbatim copy of the
 printed Table 2, "Elephant brain volume measurements," p. 1126 of the article PDF).
 
+Layout audit: restored the printed title, volume heading, and thousands separators. The six
+source rows, including "Other cerebellar structures," were already present. The R reader skips
+the title and removes display commas for the analysis CSV. Run
+`Rscript Hakeem_etal_2005/Hakeem_etal_2005_Table2.R` from the repository root; the six output
+rows match the six printed rows, and the analysis CSV is unchanged.
+
 ## What we built
 The paper folder previously had no source PDF at all (flagged as genuinely missing); the source
 PDF was subsequently supplied. This item had no snapshot, CSV, R script, README, or definitions.

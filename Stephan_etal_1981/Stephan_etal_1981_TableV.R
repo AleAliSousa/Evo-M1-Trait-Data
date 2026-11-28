@@ -7,7 +7,7 @@
 # Taxon scope: Prosimian. All volumes in mm3; body weight g; brain weight mg.
 #
 # One snapshot per printed table (project convention; matches HerculanoHouzel_etal_2015).
-# The taxon each source table was captioned by is carried in the `group` column.
+# The printed taxon scope is added by this reader, not stored as a snapshot column.
 # NB: the 1981 volume data span 16 printed tables (I-XVI) with three taxon granularities:
 # I-VI & XIV-XVI split insectivore/prosimian/simian; VII/X/XII are insectivore-only with a
 # pooled-"primates" partner (VIII/XI/XIII); IX (visual) is primates-only.
@@ -43,6 +43,8 @@ clean_hdr <- function(h) str_squish(str_remove(h, "\\s*\\(\\d+\\)$"))
 snap <- read_excel(file.path(folder, "Stephan_etal_1981_TableV_snapshot.xlsx"),
                    sheet = "TableV", skip = 1)   # row 1 is the caption
 names(snap) <- clean_hdr(names(snap))
+# Taxon scope is printed in the table caption; add it for the analysis view.
+snap$group <- "Prosimian"
 
 # type the structure columns numeric; keep species/group as identifiers
 id <- c("code", "group", "species")

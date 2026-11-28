@@ -110,7 +110,10 @@ table4 <- function() {
   A <- A[rowSums(A != "") > 0, , drop = FALSE]; B <- B[rowSums(B != "") > 0, , drop = FALSE]
   rownames(A) <- NULL; rownames(B) <- NULL
   stopifnot(nrow(A) == 54L, nrow(B) == 54L)
-  t <- cbind(A, B)
+  rows <- rbind(unname(names(A)), as.matrix(A), c("Table 4B", rep("", 5)),
+                unname(names(B)), as.matrix(B))
+  t <- as.data.frame(rows, stringsAsFactors = FALSE, check.names = FALSE)
+  names(t) <- c("Table 4A", rep("", 5))
   list(t = t, notes = NULL)
 }
 r <- table4(); main_write(r$t, r$notes, "Table4")

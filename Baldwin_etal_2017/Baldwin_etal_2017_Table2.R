@@ -11,8 +11,8 @@
 folder <- dirname(.sp);item_name <- tools::file_path_sans_ext(basename(.sp));base <- dirname(folder)
 snap <- utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),
                         header=FALSE,colClasses='character',na.strings='',check.names=FALSE,fileEncoding='UTF-8')
-stopifnot(nrow(snap)==22L,ncol(snap)==9L,snap[1,1]=='Table 2',snap[2,1]=='Case No.',snap[22,1]=='Note:')
-d <- snap[3:21,,drop=FALSE];stopifnot(nrow(d)==19L)
+stopifnot(nrow(snap)==23L,ncol(snap)==9L,snap[1,1]=='Table 2',snap[2,1]=='Case No.',snap[3,1]=='Case No.',snap[23,1]=='Note:')
+d <- snap[4:22,,drop=FALSE];stopifnot(nrow(d)==19L)
 key <- utils::read.csv(file.path(base,'_keys','General','species_key.csv'),stringsAsFactors=FALSE,fileEncoding='UTF-8')
 key <- key[key$source_publication=='Baldwin_etal_2017' & key$variant_name=='tree shrews',]
 stopifnot(nrow(key)==1L)
@@ -33,7 +33,7 @@ table_checks <- do.call(rbind,lapply(seq_len(nrow(d)),function(i) data.frame(
   note='Published discrepancy retained, not silently repaired.',stringsAsFactors=FALSE)))
 if(any(table_checks$status=='mismatch'))warning(sum(table_checks$status=='mismatch'),' Table 2 total checks mismatch; printed values retained.')
 final.dataframe <- do.call(rbind,lapply(seq_len(nrow(d)),function(i)do.call(rbind,lapply(seq_along(areas),function(j)
-  data.frame(source_row=i,case_as_published=case[i],stimulus_duration_ms=duration[i],
+  data.frame(source_row=i+3L,case_as_published=case[i],stimulus_duration_ms=duration[i],
              area_as_published=areas[j],responsive_sites=counts[[j]][i,1],tested_sites=counts[[j]][i,2],
              fraction_as_published=d[[j+2]][i],
              row_role=if(case[i]=='Total')'cross-case total' else 'case observation',

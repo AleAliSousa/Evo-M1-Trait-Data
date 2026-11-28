@@ -91,8 +91,7 @@ for (i in seq_along(trs)) {
     stop(basename(source_docx), ": row ", i, " has ", col, " cells", call. = FALSE)
 }
 
-snap <- rbind(c("source_row", paste0("c", seq_len(expected_columns))),
-              cbind(as.character(seq_len(nrow(grid))), grid))
+snap <- grid
 csv_field <- function(x) {
   q <- grepl("[,\"\r\n]", x)
   x[q] <- paste0("\"", gsub("\"", "\"\"", x[q], fixed = TRUE), "\"")

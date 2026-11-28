@@ -23,6 +23,11 @@ Species are resolved through `_keys/General/species_key.csv` (`source_publicatio
 names are kept in `species_as_published`. The translator's *Glossary of Species Names* (printed pp. 281-282)
 gives the modern equivalents used. Genus-level (`sp.`) where the table does not say which species.
 
+Layout edit: restored the printed title and `Monkey` spanning heading above Macaque and
+Marmoset. Run `Rscript Garey__2006/Garey__2006_Table6.R` from the repository root; the reader
+derives flat headings, joins the printed thickness/ratio row pairs, and reproduced the prior
+40-row analysis CSV byte for byte.
+
 ## Open points
 - Human visual check of the snapshot against the PDF page is pending.
 - `Prosimian` in Table 6 (German *Halbaffe*, confirmed on the German scan) is mapped to the black lemur, the prosimian Brodmann illustrates throughout (Lemur macaco).

@@ -4,6 +4,10 @@ Baldwin, M. K. L., Cooke, D. F., & Krubitzer, L. (2017). Intracortical microstim
 
 The open [PMC PDF](https://pmc.ncbi.nlm.nih.gov/articles/PMC6075024/pdf/bhv329.pdf) is frozen in this folder. Table 3 is printed on PDF page 5. The 10-case snapshot was manually transcribed in printed order and checked against the rendered page by Codex on 2026-11-23. Superscript `a` is represented as `ᵃ` and the source's `Unknown` text is retained. Its footnote says cases 14–14 and 14–20 lacked thorough movement recording. Complex-movement subcategories overlap and are not an exclusive partition; their displayed numbers must not be summed into the total complex column.
 
+Layout audit restored the printed title and the `Complex movements` spanning header with its
+three subcategories. The R reader derives the flat analysis names and records physical snapshot
+rows 4–13. The 10-row build and both site-total checks passed with the command below.
+
 Run `Rscript --vanilla Baldwin_etal_2017/Baldwin_etal_2017_Table3.R` from repository root. The reader writes a 10-row analysis CSV and registry-coded public TSV, with source strings preserved beside parsed counts. It checks the 471 tested and 323 movement-eliciting site totals stated in the Results, and bounds each case's complex count by its movement count. It does not infer unrecorded movement types. The AddON registry entry is used while the main registry is occupied. Human visual signoff remains pending.
 
 This is a table item, so no figure replot applies. Figure 6/7/11/12 map geometry and per-site thresholds still require separate figure digitization.

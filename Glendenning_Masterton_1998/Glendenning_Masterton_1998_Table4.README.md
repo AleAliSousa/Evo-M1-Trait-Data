@@ -43,3 +43,5 @@ Species: printed names kept; harmonised through `_keys/General/species_key.csv` 
 
 <!-- errata:begin -->
 <!-- errata:end -->
+
+Layout audit (2026-11-27): printed Table 4A and 4B occupy separate six-column pages (PDF pp. 14–15). The former snapshot joined the panels side by side. It now stacks the two source panels, with their own heading rows. `Glendenning_Masterton_1998_Table4.R` joins them for analysis; `Table4_snapshot.R` emits the new layout. Build: `Rscript --vanilla Glendenning_Masterton_1998_Table4.R`.

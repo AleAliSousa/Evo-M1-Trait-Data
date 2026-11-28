@@ -16,9 +16,11 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=2,col_names=FALSE,col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+# The snapshot keeps the two printed heading tiers; analysis labels are assigned here.
+names(raw) <- c("Vocal pattern","Macaca silenus_A_male","Macaca silenus_A_female","Macaca silenus_J_both","Macaca silenus_I_both","Macaca radiata_A_male","Macaca radiata_A_female","Macaca radiata_J_both","Macaca radiata_I_both","Mode of equivalence")
 final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
-final.dataframe$Source_row <- seq_len(nrow(raw))+1L
+final.dataframe$Source_row <- seq_len(nrow(raw))+2L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
 final.dataframe<-do.call(rbind,lapply(seq_len(nrow(raw)),function(i)do.call(rbind,lapply(names(raw)[2:9],function(nm){v<-raw[[nm]][i];data.frame(final.dataframe[i,,drop=FALSE],Species=sub("_.*","",nm),Age_sex_class=sub("^[^_]+_","",nm),Presence_symbol=v,Observed_call=if(v=="x")1 else NA_real_,check.names=FALSE)}))))
 write_csv(final.dataframe, file.path(folder, paste0(item_name, ".csv")), na="")

@@ -6,12 +6,14 @@ folder <- dirname(normalizePath(sub('^--file=', '', args[[1L]])))
 
 read_snapshot <- function(number, rows, columns) {
   path <- file.path(folder, sprintf('MacLean_etal_2014_TableS%d_snapshot.csv', number))
-  x <- read.csv(path, check.names = FALSE, colClasses = 'character',
-                na.strings = NULL, strip.white = FALSE, fileEncoding = 'UTF-8')
-  if (nrow(x) != rows || ncol(x) != columns + 1L ||
-      !identical(as.integer(x$source_row), seq_len(rows))) {
-    stop(sprintf('Unexpected Table S%d snapshot structure', number))
+  x <- read.csv(path, header = FALSE, col.names = paste0('c', seq_len(columns)),
+                check.names = FALSE, colClasses = 'character', na.strings = NULL,
+                strip.white = FALSE, fileEncoding = 'UTF-8')
+  if (nrow(x) != rows || ncol(x) != columns) {
+    stop(sprintf('Unexpected Table S%d source grid', number))
   }
+  # The snapshot contains only Word table cells; row locators belong in analysis.
+  x$source_row <- seq_len(rows)
   x
 }
 

@@ -90,9 +90,11 @@ if (is.na(item_encoded)) stop("Item not found in registry: ", item_name)
 
 ## ---- read the frozen snapshot (as printed; everything character) -----------
 snap <- utils::read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
-                 colClasses = "character", check.names = FALSE,
+                 skip = 2L, colClasses = "character", check.names = FALSE,
                  stringsAsFactors = FALSE, encoding = "UTF-8")
 stopifnot(nrow(snap) == 28L)
+## The printed second-tier header says only "volume (cm3)" under "neocortex".
+names(snap)[4] <- "neocortex volume (cm3)"
 
 num <- function(x) as.numeric(x)
 

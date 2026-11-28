@@ -4,7 +4,7 @@ MacLean EL et al. (2014). The evolution of self-control. *PNAS* 111:E2140–E214
 
 ## Sources and rebuild
 
-The seven `pnas.1323533111.st0*.docx` files are byte-preserved copies of the publisher supplementary tables supplied in the main checkout. The per-item `MacLean_etal_2014_TableS<N>_snapshot.R` scripts read their displayed Word-table cells into `MacLean_etal_2014_TableS<N>_snapshot.csv`. Each snapshot includes the table's header and any blank or footnote rows, with a one-based `source_row` locator. These snapshots preserve printed values, spellings, missing markers, and row order.
+The seven `pnas.1323533111.st0*.docx` files are byte-preserved copies of the publisher supplementary tables supplied in the main checkout. The per-item `MacLean_etal_2014_TableS<N>_snapshot.R` scripts read their displayed Word-table cells into `MacLean_etal_2014_TableS<N>_snapshot.csv`. Each snapshot includes the table's header and any blank or footnote rows, with the same rows and columns as the Word tables. The R readers derive a one-based `source_row` locator. These snapshots preserve printed values, spellings, missing markers, and row order.
 
 Run:
 
@@ -47,3 +47,7 @@ The tables print no totals or other relation that can be recomputed within a sin
 ## Boundaries
 
 S4 identifies living cognitive-test subjects, whereas S1 brain volumes are literature-derived species data. They are distinct evidence types. The supplementary tables do not establish that any S4 subject contributed an S1 brain measurement. Common-name spellings vary between tables (`white carneau pigeon` in S4 versus `white carnea pigeon` in S5; `Scurius niger` in S1/S5 versus `Sciurus niger` in S3), so joins should use an explicitly reviewed name crosswalk rather than an automatic exact-string match.
+
+## Layout audit (2026-11-27)
+
+The former seven CSV snapshots prepended `source_row` and generic column names to the original Word cell grids. Those additions are now made in the item R readers. Each `*_snapshot.R` was run against its local publisher DOCX and regenerated the corrected CSV byte-identically; all seven analysis CSVs and public TSVs rebuilt unchanged. Commands: `Rscript --vanilla MacLean_etal_2014_TableS<N>_snapshot.R` and `Rscript --vanilla MacLean_etal_2014_TableS<N>.R` for N = 1–7. The source Word tables were not visually signed off by a human.

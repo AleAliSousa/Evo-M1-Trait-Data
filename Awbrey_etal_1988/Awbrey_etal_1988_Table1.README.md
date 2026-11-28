@@ -47,6 +47,12 @@ one adult male, one adult female, one juvenile male (3 individuals total).
 ## Verification
 Table I was first read from the extracted PDF text layer, then the same
 page was rendered at 150 dpi and checked value-by-value against the image.
+Layout audit on 2026-11-27 found that the former CSV repeated each subject in
+four statistic rows and flattened the printed Frequency heading. The snapshot
+now has separate subject heading rows, the Frequency tier, and the printed
+Mean/Range/N/FA rows. The R reader fills subject identity during reshaping.
+`Rscript --vanilla Awbrey_etal_1988/Awbrey_etal_1988_Table1.R` rebuilt the
+28-row analysis CSV byte-identically to the pre-correction version.
 The text-layer extraction misread the Combined row's 2-kHz mean ("101") as
 "10!"; the rendered page image confirms the correct printed value is 101 dB
 (matching the pattern that Combined values fall at or near the midpoint of

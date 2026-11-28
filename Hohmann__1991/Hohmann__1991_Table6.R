@@ -16,9 +16,11 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=2,col_names=FALSE,col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+# The snapshot keeps the printed species header tier; analysis labels are assigned here.
+names(raw) <- c("Vocal pattern","A_rate","A_pct","B_rate","B_pct","FI_printed")
 final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
-final.dataframe$Source_row <- seq_len(nrow(raw))+1L
+final.dataframe$Source_row <- seq_len(nrow(raw))+2L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
 final.dataframe$FI <- scalar(raw$FI_printed)
 final.dataframe$FI_recalculated <- abs(num(gsub("[()]","",raw$A_pct))-num(gsub("[()]","",raw$B_pct)))/(num(gsub("[()]","",raw$A_pct))+num(gsub("[()]","",raw$B_pct)))

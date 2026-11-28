@@ -40,8 +40,11 @@ setwd(folder)
 xlsx <- "000323671_sm_suppltables.xlsx"
 
 st2 <- read_excel(xlsx, sheet = "Table 3", col_names = FALSE)
-names(st2) <- c("Individual","Section interval 5 left white","Section interval 5 left grey",
-                "Section interval 5 right white","Section interval 5 right grey")
-write_csv(st2, paste0(item_name, "_snapshot.csv"))
+grid <- rbind(
+  c("Individual", "Section interval 5 left", "", "Section interval 5 right", ""),
+  c("", "white", "grey", "white", "grey"),
+  trimws(as.matrix(st2))
+)
+write_csv(as.data.frame(grid, stringsAsFactors = FALSE), paste0(item_name, "_snapshot.csv"), col_names = FALSE)
 
 message("Extracted snapshot from Adobe export: ST2 ", nrow(st2), " indiv.")

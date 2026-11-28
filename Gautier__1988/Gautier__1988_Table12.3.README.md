@@ -7,6 +7,11 @@ Table 12.3. Ancestral states of the different characters
 Source: Gautier-1988-Interspecific affinities among gu.pdf. Printed page 215 (PDF pages 24 and 26 are duplicate scans).
 Snapshot transcribed by Codex on 2026-10-23 from the scanned table and checked against rendered PDF pages. Original labels, ordering, meaningful blanks, uncertainty marks and notes are retained. Human visual sign-off remains pending.
 
+Layout audit restored the printed three-tier `Ancestral state of characters` / `hypothesis 1, 2` /
+`− WC, + WC` header. From the repository root run
+`Rscript Gautier__1988/Gautier__1988_Table12.3.R`; the reader skips the source header tiers
+and rebuilds the same 48 analysis rows. The duplicate scan is excluded.
+
 ## Build and observation level
 Run `Gautier__1988_Table12.3.R`. The reader loads the frozen snapshot, preserves printed labels and creates the analysis CSV and registry-coded public TSV. Observation level: character × phylogenetic hypothesis; methodological context. Data role: secondary.
 The optional DATASET_REGISTRY points to ManyPrimates__2022/ManyPrimates_Chivers_Gautier_build_registry.xlsx until the owner registers the supplied rows in __ReadMe.xlsx. The live registry is unchanged.

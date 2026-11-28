@@ -3,7 +3,7 @@
 Walton, E., et al. (2022). Brain Structure in Acutely Underweight and Partially Weight-Restored Individuals With Anorexia Nervosa: A Coordinated Analysis by the ENIGMA Eating Disorders Working Group. Biological Psychiatry. https://doi.org/10.1016/j.biopsych.2022.04.022
 
 Source: <https://raw.githubusercontent.com/MICA-MNI/ENIGMA/b08974b55243060cbc1fad12c87048037446e8f7/enigmatoolbox/datasets/summary_statistics/anorexia_case-controls_CortSurf.csv>. Downloaded 2026-11-22; SHA-256 `c2b7bb46caac25e93a5606088536a32389aa33c24a2c1a14a185ad31c72b7c85`.
-Frozen source: `Walton_etal_2022_ENIGMA_CaseControls_CortSurf_snapshot.csv`, bytes unchanged. 68 analysis rows.
+Frozen source: `Walton_etal_2022_ENIGMA_CaseControls_CortSurf_snapshot.csv`, source cells unchanged (repository LF line endings; original download used CRLF). 68 analysis rows.
 
 Published adjusted group contrast; no new test or spatial null. Generic d_icv header does not define covariates; metric comes from file name and loader.
 

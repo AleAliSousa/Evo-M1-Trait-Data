@@ -32,7 +32,17 @@ library(tidyverse)
 library(stringr)
 library(readxl)
 ## 2. READ SNAPSHOT (written by Andelin_etal_2019_Table4_snapshot.R; never regenerated here) ----
-df_snapshot <- read.csv(snapshot_csv, colClasses = "character", check.names = FALSE, stringsAsFactors = FALSE)
+source_rows <- read.csv(snapshot_csv, header = FALSE, colClasses = "character",
+                        check.names = FALSE, stringsAsFactors = FALSE,
+                        na.strings = character())
+stopifnot(nrow(source_rows) == 8L, ncol(source_rows) == 9L,
+          identical(source_rows[4:7, 1], c("AN", "EB", "LB", "SC")))
+df_snapshot <- source_rows[4:7, , drop = FALSE]
+names(df_snapshot) <- c(
+  "Group", "N", "Event time", "V1 Surface area Left", "V1 Surface area Right",
+  "Cortex surface area Left", "Cortex surface area Right",
+  "% SC VSAR Left", "% SC VSAR Right"
+)
 ## 4. STANDARDIZE --> FINAL TABLE ----------------------------------
 measure_cols <- c(
   "V1 Surface area Left",      "V1 Surface area Right",

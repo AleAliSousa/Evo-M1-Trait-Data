@@ -16,9 +16,18 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+source_grid <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=2,col_names=FALSE,col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+# The snapshot retains the printed three-line cell blocks. Build the analysis rows here.
+stopifnot(nrow(source_grid) %% 3L == 0L)
+names(source_grid) <- c("Vocal category","A_male","A_female","S_male","S_female","J_male","J_female","I_both","Σ")
+first <- seq.int(1L,nrow(source_grid),by=3L)
+labels <- sub("^[0-9]+ +", "", source_grid[[1]][first])
+labels[grepl("^Σ",labels)] <- "Σ total"
+raw <- source_grid
+raw[[1]] <- rep(labels, each=3L)
+raw <- tibble::add_column(raw, Statistic=rep(c("rate per 10h","percent within age-sex","percent within call"),length(first)),.after=1L)
 final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
-final.dataframe$Source_row <- seq_len(nrow(raw))+1L
+final.dataframe$Source_row <- seq_len(nrow(raw))+2L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
 final.dataframe<-do.call(rbind,lapply(seq_len(nrow(raw)),function(i)do.call(rbind,lapply(names(raw)[3:10],function(nm){v<-raw[[nm]][i];data.frame(final.dataframe[i,,drop=FALSE],Species="Macaca radiata",Age_sex_class=nm,Value=scalar(gsub(",","",v)),Total_flag=raw[[1]][i]=="Σ total" || nm=="Σ",Active_epochs=c(130,142,142,124,159,119,264,NA_real_)[match(nm,names(raw)[3:10])],check.names=FALSE)}))))
 # ManyPrimates table arithmetic audit

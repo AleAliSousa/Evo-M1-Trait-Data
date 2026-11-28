@@ -31,7 +31,7 @@ reference number for values they generated themselves.
 for the same note on provenance.
 
 ## Files
-- `Zhu_etal_2023_SupplementaryData3_snapshot.csv` — frozen, verbatim sheet export (94 rows).
+- `Zhu_etal_2023_SupplementaryData3_snapshot.csv` — frozen sheet grid with its printed title row, followed by the header and 94 data rows. The R reader skips the title row for the analysis CSV.
 - `Zhu_etal_2023_SupplementaryData3.csv` / public TSV — same content, published.
 - `Zhu_etal_2023_SupplementaryData3_refs_long.csv` — reference-resolution bridge table (538
   rows: one per species × cited reference/note).

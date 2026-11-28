@@ -14,3 +14,5 @@ Build uses Item name and Item encoded from the registry. During owner registrati
 
 
 Table arithmetic audit: 58 checks; 0 printed mismatches retained. Checks do not alter source cells. Full diagnostics are in the restricted ManyPrimates_20261021 QA directory.
+
+Layout audit (2026-11-27): compared with printed Table 5 on PDF p. 8. Restored separate species and measure heading tiers; the R reader assigns analysis labels and derives species rows. Build: `Rscript --vanilla Hohmann__1991_Table5.R`. `Source_row` now identifies the physical row after the two heading rows.

@@ -13,7 +13,8 @@ base <- local({
 setwd(folder)
 
 ## ---- frozen snapshot: Table 6, thickness of layer I (mm) and ratio to total cortical thickness ----
-x <- readr::read_csv(paste0(item_name, "_snapshot.csv"), show_col_types = FALSE, col_types = readr::cols(.default = "c"))
+x <- readr::read_csv(paste0(item_name, "_snapshot.csv"), skip = 2, show_col_types = FALSE, col_types = readr::cols(.default = "c"))
+names(x) <- c("Area 12)", "Man", "Monkey: Macaque", "Monkey: Marmoset", "Prosimian", "Flying fox", "Hedgehog", "Kinkajou", "Rabbit", "Ground squirrel", "Kangaroo")
 
 ## ---- species harmonisation via the General-collection key (scoped to this paper folder) ----
 key <- readr::read_csv(file.path(base, "_keys", "General", "species_key.csv"), show_col_types = FALSE)

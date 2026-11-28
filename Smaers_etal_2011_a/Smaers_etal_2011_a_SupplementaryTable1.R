@@ -22,7 +22,8 @@ base      <- local({                                     # repo root; NA if run 
 })
 setwd(folder)
 options(scipen = 999)
-raw <- read.csv("Smaers_etal_2011_a_SupplementaryTable1_snapshot.csv", check.names = FALSE, stringsAsFactors = FALSE)
+raw <- read.csv("Smaers_etal_2011_a_SupplementaryTable1_snapshot.csv", skip = 1, check.names = FALSE, stringsAsFactors = FALSE)
+names(raw) <- c("Individual", "Frontal left white", "Frontal left grey", "Frontal right white", "Frontal right grey", "Total brain size")
 sp  <- sub("^([A-Z][a-z]+ [a-z]+).*$", "\\1", raw$Individual)          # genus + epithet
 cat <- trimws(sub("^[A-Z][a-z]+ [a-z]+", "", raw$Individual))           # catalogue / collection no.
 clean <- data.frame(

@@ -55,6 +55,8 @@
     }
   ],
   "snapshot": "Laska_etal_2003_Table1_snapshot.csv",
+  "csv_skip": 1,
+  "source_row_offset": 2,
   "item_encoded": "10.1023%2FB%3AJOEC.0000008009.85523.7a_Table1",
   "species_col": 1,
   "keep_rows": [
@@ -103,5 +105,5 @@
     }
   ],
   "source_sha256": "f7326c958a5d77d80278c05875e6ba1f841b803ec872a5fc353f717e3e95ec1a",
-  "snapshot_sha256": "06d67b30144d095172ddf383ac1e76b9115f1732446a554cf9db7c3ffb7a7fe9"
+  "snapshot_sha256": "1a6e2da00c12c09a0980b748b9186f0380455f595943b6cffbe812a2c374c394"
 }

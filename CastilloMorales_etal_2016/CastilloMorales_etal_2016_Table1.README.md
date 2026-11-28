@@ -20,8 +20,9 @@ body mass^0.64), slope from the 493-species data of González-Lagos et al.
   (`rsob160132_si_001.csv`, gene-family results only) carries no trait
   data and is not this item's source.
 - **Snapshot:** `CastilloMorales_etal_2016_Table1_snapshot.csv` — Table 1
-  transcribed exactly as printed (printed headers, row order, values and
-  the bracketed ref. numbers kept), frozen **before** any cleaning.
+  transcribed in printed row and column order with its caption and both
+  header tiers, including the printed “non-neocortex” and “neocortex” labels.
+  Values and bracketed ref. numbers are kept before cleaning.
   Transcribed by Buddy (AI assistant) on 2026-11-18 from the publisher
   PDF and verified against it: every row cross-checked against the PDF
   text layer, and the Ei signs read from the printed page (the text layer
@@ -84,3 +85,7 @@ Generated from `reference_tables/CastilloMorales_etal_2016_errata.csv` by `_tool
 
 1 recorded, 1 open (proposed), 0 confirmed, 0 withdrawn.
 <!-- errata:end -->
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed caption and the two-tier header. The printed first volume heading has “non-neocortex” above “brain volume (cm3)”, while Nr is consistent with treating that numeric column as total brain volume; the source heading and all numbers were preserved, and the interpretation remains an item caveat. The R reader skips the context rows and names the second volume column for analysis. Run `Rscript --vanilla CastilloMorales_etal_2016/CastilloMorales_etal_2016_Table1.R` from repository root. Independent human source comparison remains separate.

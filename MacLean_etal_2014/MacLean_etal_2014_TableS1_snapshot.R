@@ -4,8 +4,7 @@
 # pnas.1323533111.st01.docx, and R reads that table straight from word/document.xml.
 #
 # Freezes the displayed cell grid of MacLean et al. (2014), PNAS, Table S1:
-# one snapshot row per Word table row (column `source_row` = its 1-based number),
-# one column per grid column (c1..c6), text exactly as the Word cell holds it.
+# one snapshot row and column per Word table cell; row locators are derived in the analysis R script.
 # The original Word file remains authoritative; the snapshot preserves its text and
 # row order. No cleaning happens here.
 #
@@ -91,8 +90,7 @@ for (i in seq_along(trs)) {
     stop(basename(source_docx), ": row ", i, " has ", col, " cells", call. = FALSE)
 }
 
-snap <- rbind(c("source_row", paste0("c", seq_len(expected_columns))),
-              cbind(as.character(seq_len(nrow(grid))), grid))
+snap <- grid
 csv_field <- function(x) {
   q <- grepl("[,\"\r\n]", x)
   x[q] <- paste0("\"", gsub("\"", "\"\"", x[q], fixed = TRUE), "\"")

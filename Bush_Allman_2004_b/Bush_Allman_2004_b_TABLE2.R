@@ -29,7 +29,10 @@ base <- local({
 })
 setwd(folder)
 
-snap <- read.csv("Bush_Allman_2004_b_TABLE2_snapshot.csv", check.names = FALSE,
+snap <- read.csv("Bush_Allman_2004_b_TABLE2_snapshot.csv", skip = 2L,
+                 header = FALSE, col.names = c("species", "magnocellular_count",
+                 "magnocellular_coefficient_of_error", "parvocellular_count",
+                 "parvocellular_coefficient_of_error"), check.names = FALSE,
                  stringsAsFactors = FALSE, na.strings = c("", "NA", "n.a.", "-", "--"))
 
 stopifnot(nrow(snap) == 3L)

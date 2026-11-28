@@ -13,7 +13,7 @@ item_name <- tools::file_path_sans_ext(basename(script_path))
 root <- folder
 while (!file.exists(file.path(root, "__ReadMe.xlsx")) && dirname(root) != root) root <- dirname(root)
 if (!file.exists(file.path(root, "__ReadMe.xlsx"))) stop("Repository root not found")
-snap <- utils::read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")), check.names=FALSE, colClasses="character", na.strings="")
+snap <- utils::read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")), skip=1, check.names=FALSE, colClasses="character", na.strings="")
 stopifnot(nrow(snap)==21L)
 groups <- c("born_before_famine", "early_gestation_exposed", "conceived_after_famine")
 sex <- ""

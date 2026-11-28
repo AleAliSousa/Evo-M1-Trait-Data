@@ -6,6 +6,10 @@ snapshot retains the four source taxon rows and printed columns. Run
 the four-row analysis CSV. The PDF page and snapshot were compared on
 2026-11-26; no human visual signoff is claimed.
 
+Layout audit restored the printed title and `Adults`/`Sub-Adults`/`Adults Only` header tiers.
+The R reader derives flat names, records physical snapshot rows 4–7, and retains the same
+handedness counts. Rebuilt with the command above; the 777-count check passed.
+
 The paper combines previously tested apes with newly tested individuals.
 The methods identify orangutans as *Pongo pygmaeus*, gorillas as *Gorilla
 gorilla*, chimpanzees as *Pan troglodytes*, and bonobos as *Pan paniscus*.

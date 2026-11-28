@@ -15,3 +15,7 @@ Row 20 explicitly pairs `Disco` with *Hylobates concolor* and reports amygdala t
 The dissertation's Table 3.1 (printed p. 112 / PDF p. 130) has one *Hylobates concolor* F age-22 **right-hemisphere** sample, corresponding to the unique case in peer-reviewed Barger et al. 2012 Table 1. That table omits Disco's name, so the journal-to-name link is marked probable. Table 4.1 does **not** print a hemisphere; its amygdala numbers match the **left** values of Barger 2007. Do not transfer the neuron sample's right laterality to these volumes. The journal's gibbon neuron numbers are pooled group means, not Disco-specific counts.
 
 The Barger 2007 source table labels Disco and YN81-146 only `GIBBON`; its legacy analysis CSV maps both to *Hylobates lar*. That generated taxon field is not a source-printed identification for Disco. Barger 2012 supplies the explicit *H. concolor* label, while MacLeod/de Sousa identify the same physical animal as *H. lar*; the biological species remains unresolved in the crosswalk.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed caption and the Amygdaloid Complex / Hippocampal Formation / Refs. header tier above the original column labels. The R reader skips these two source-layout rows. Run `Rscript --vanilla Barger__2012/Barger__2012_Table4.1.R` from repository root to rebuild the analysis CSV. Independent human source comparison remains separate.

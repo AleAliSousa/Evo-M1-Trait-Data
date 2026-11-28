@@ -16,9 +16,20 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+grid <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_names=FALSE,col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+# Printed Table 11 has two stacked panels, each with species as columns.
+hmax <- sub(".*= *([0-9.]+).*", "\\1", grid[[1]][1])
+stopifnot(grepl("^[0-9.]+$",hmax),grid[[1]][2]=="A Macaca")
+panel_b <- which(grid[[1]]=="B Presbytis")
+stopifnot(length(panel_b)==1L)
+make_panel <- function(first,last,panel,species) {
+  do.call(rbind,lapply(seq.int(first,last),function(i) {
+    do.call(rbind,lapply(2:3,function(j) data.frame(Panel=panel,`Vocal category`=grid[[1]][i],Species=species[j-1],Hi=grid[[j]][i],Hi_max=hmax,Source_row=i,check.names=FALSE)))
+  }))
+}
+raw <- rbind(make_panel(3L,panel_b-1L,"A",c("Macaca silenus","Macaca radiata")),make_panel(panel_b+1L,nrow(grid),"B",c("Presbytis johnii","Presbytis entellus")))
 final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
-final.dataframe$Source_row <- seq_len(nrow(raw))+1L
+final.dataframe$Source_row <- raw$Source_row
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
 final.dataframe[["Diversity_Hi"]] <- scalar(raw[["Hi"]]) * 1
 

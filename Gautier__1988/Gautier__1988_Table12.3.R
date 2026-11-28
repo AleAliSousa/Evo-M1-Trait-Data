@@ -18,7 +18,7 @@ repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
 scalar <- function(x) {x <- gsub(" ","",x,fixed=TRUE); ifelse(grepl("^[0-9]+([.][0-9]+)?$",x),num(x),NA_real_)}
 fill <- function(x) {for(i in seq_along(x)) if(i>1 && !nzchar(x[i])) x[i]<-x[i-1];x}
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=1,n_max=12,col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=3,n_max=12,col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
 
 final.dataframe<-do.call(rbind,lapply(seq_len(nrow(raw)),function(i)data.frame(Character=raw[[1]][i],Hypothesis=rep(c(1,2),each=2),Warning_calls=rep(c("excluded","included"),2),State_printed=unlist(raw[i,2:5]),stringsAsFactors=FALSE)))
 final.dataframe$Numeric_result<-ifelse(final.dataframe$Character %in% c("Number of characters","Number of steps"),num(final.dataframe$State_printed),NA_real_)

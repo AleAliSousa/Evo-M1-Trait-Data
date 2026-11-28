@@ -1,4 +1,6 @@
-Call type,Basic feature,Call,Maximum frequency (Hz),Duration (s),n
+Table 4.2. Features and descriptive statistics of 23 orangutan sounds and vocalizations,,,,,
+Call type,Basic feature*,Call,Maximum frequency (Hz),Duration(s),n
+,,,Range/mean±SD,Range/mean±SD,
 Ahh,Compound,V,430–3000/1014±1000,0.030–0.130/0.091±0.048,60
 Ahoor call,Tonal,V,172–862/388±209,0.1–0.5/0.23±0.13,61
 Bark,Non-tonal,S,258–690/425±136,0.14–0.35/0.225±0.057,15
@@ -22,3 +24,6 @@ Rolling call,Compound,S,172–258/241±36,0.13–0.73/0.325±0.183,10
 Squeak,Tonal,V,861–3704,0.05–0.08,7
 Throatscrape,Compound,S,431–1723/612±268,0.030–0.14/0.075±0.029,21
 Whine,Tonal,V,,,1
+"For each call type parameters are presented with information about the range and mean with standard deviation. For these call types only maximum frequency and duration are measured, on the basis of their acoustic profile.",,,,,
+"S, sound; V, vocalization; n, number of calls analyzed.",,,,,
+* Following Struhsaker 1967.,,,,,

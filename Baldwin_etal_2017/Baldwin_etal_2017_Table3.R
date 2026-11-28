@@ -1,10 +1,11 @@
 ## Printed case-level LT-ICMS movement table -> analysis CSV and public TSV.
 .sp <- local({a<-grep('^--file=',commandArgs(FALSE),value=TRUE);if(length(a))return(normalizePath(sub('^--file=','',a[1])));for(i in rev(seq_len(sys.nframe()))){p<-sys.frame(i)$ofile;if(!is.null(p))return(normalizePath(p))};stop('Run saved item script.')})
 folder<-dirname(.sp);item_name<-tools::file_path_sans_ext(basename(.sp));base<-dirname(folder)
-snap<-utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),check.names=FALSE,colClasses='character',stringsAsFactors=FALSE,fileEncoding='UTF-8')
+snap<-utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),skip=2,check.names=FALSE,colClasses='character',stringsAsFactors=FALSE,fileEncoding='UTF-8')
+names(snap)<-c('Case No.','Total sites Tested','Sites with Movements using LT-ICMS','Complex movements: Multijoint','Complex movements: Multibody-part','Complex movements: Multibody-part + multijoint','Total Complex movements')
 stopifnot(nrow(snap)==10L,ncol(snap)==7L)
 num<-function(x)as.integer(sub('^([0-9]+).*','\\1',x))
-final.dataframe<-data.frame(source_row=seq_len(nrow(snap)),case_as_published=snap[['Case No.']],case_id=gsub('–','-',gsub('ᵃ','',snap[['Case No.']],fixed=TRUE),fixed=TRUE),
+final.dataframe<-data.frame(source_row=seq_len(nrow(snap))+3L,case_as_published=snap[['Case No.']],case_id=gsub('–','-',gsub('ᵃ','',snap[['Case No.']],fixed=TRUE),fixed=TRUE),
  species_as_published='Tupaia belangeri',sites_tested=num(snap[['Total sites Tested']]),sites_with_movements_LT_ICMS=num(snap[['Sites with Movements using LT-ICMS']]),
  multijoint_as_published=snap[['Complex movements: Multijoint']],multibody_part_as_published=snap[['Complex movements: Multibody-part']],
  multibody_part_multijoint_as_published=snap[['Complex movements: Multibody-part + multijoint']],total_complex_as_published=snap[['Total Complex movements']],

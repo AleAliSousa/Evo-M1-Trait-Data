@@ -52,6 +52,13 @@ stopifnot(nrow(snapshot) == 19L,
           identical(snapshot$N[17], "195"),
           identical(snapshot$Species[2], "Lepilemur ruficaudatus"),
           identical(snapshot$Population[10], "Research station"))
-write.csv(snapshot, file.path(folder, paste0(item_name, "_snapshot.csv")),
-          row.names = FALSE, na = "", fileEncoding = "UTF-8")
+grid <- rbind(
+  c("Table S1. Additional information for primate TEE samples (Table 1)", rep("", 10)),
+  c("Species", "Population", "N", "Mean age, y", "Body mass", "", "", "TEE", "", "", "Notes"),
+  c("Species", "Population", "N", "Mean age, y", "Mean, kg", "SD", "Range", "Mean, kcal/d", "SD", "Range", "Notes"),
+  as.matrix(snapshot)
+)
+write.table(grid, file.path(folder, paste0(item_name, "_snapshot.csv")),
+            sep = ",", row.names = FALSE, col.names = FALSE, quote = TRUE,
+            na = "", fileEncoding = "UTF-8")
 cat(item_name, ": captured ", nrow(snapshot), " printed rows\n", sep = "")

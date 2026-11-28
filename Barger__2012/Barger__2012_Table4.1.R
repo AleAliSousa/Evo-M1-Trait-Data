@@ -9,7 +9,7 @@ expected <- switch(item, 'Barger__2012_Table4.1'=22L,
                    'Barger__2012_Table4.2'=23L,
                    stop('Unexpected item: ', item))
 snap <- read.csv(file.path(folder, paste0(item, '_snapshot.csv')),
-                 check.names=FALSE, colClasses='character', na.strings=NULL,
+                 skip=2L, check.names=FALSE, colClasses='character', na.strings=NULL,
                  stringsAsFactors=FALSE)
 stopifnot(nrow(snap)==expected,
           identical(names(snap), c('Specimen','Species','A','Lat','Bas','AB','C',
@@ -49,9 +49,9 @@ if (item == 'Barger__2012_Table4.1') {
 } else stopifnot(!any(out$has_printed_specimen_id))
 write.csv(out,file.path(folder,paste0(item,'.csv')),
           row.names=FALSE,na='',fileEncoding='UTF-8')
-registry <- readxl::read_excel(file.path(root,'__ReadMeAddON.xlsx'),sheet='Sheet1')
+registry <- readxl::read_excel(file.path(root,'__ReadMe.xlsx'),sheet='Sheet1')
 matches <- registry[registry[['Item name']] == item,,drop=FALSE]
-if (nrow(matches) != 1L) stop('Expected one AddON registry row')
+if (nrow(matches) != 1L) stop('Expected one registry row')
 encoded <- as.character(matches[['Item encoded']][1])
 if (is.na(encoded) || !nzchar(encoded) || endsWith(encoded,'_'))
   stop('Invalid Item encoded')

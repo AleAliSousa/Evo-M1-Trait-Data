@@ -35,3 +35,5 @@ removed after the registry-coded public TSV was verified against the CSV.
 ## Registration note
 The reader requires one live registry row with a valid `Item encoded` value
 before writing either output.
+
+Layout audit (2026-11-27): compared with printed Table 1. The former snapshot split bracketed citations out of the printed Ape name cells into an added Reference column. The six-column snapshot now keeps the printed cells; the R reader extracts the name and reference key. Build: `Rscript --vanilla Erbaba_etal_2025_Table1.R`.

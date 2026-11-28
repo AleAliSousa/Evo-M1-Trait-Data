@@ -24,5 +24,15 @@ for (line in lines[(start+1L):length(lines)]) {
 if (length(rows)!=28L) stop('Expected 28 printed taxa')
 s <- as.data.frame(do.call(rbind,rows),stringsAsFactors=FALSE)
 names(s) <- c('group_as_published','Taxon','peak workspace','relative object size (R)','real object size R (mm)')
-utils::write.csv(s,snap,row.names=FALSE,na='',fileEncoding='UTF-8')
-cat('Frozen',nrow(s),'Table 1 rows\n')
+out <- list(); previous <- NA_character_
+for (i in seq_len(nrow(s))) {
+  if (!identical(s$group_as_published[i], previous)) {
+    out[[length(out)+1L]] <- c(s$group_as_published[i], '', '', '')
+    previous <- s$group_as_published[i]
+  }
+  out[[length(out)+1L]] <- unname(as.character(s[i, -1L]))
+}
+out <- as.data.frame(do.call(rbind, out), stringsAsFactors=FALSE)
+names(out) <- names(s)[-1L]
+utils::write.csv(out,snap,row.names=FALSE,na='',fileEncoding='UTF-8')
+cat('Frozen',nrow(out),'Table 1 source rows\n')

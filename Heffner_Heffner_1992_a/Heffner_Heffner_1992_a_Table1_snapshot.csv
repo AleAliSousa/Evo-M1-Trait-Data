@@ -1,25 +1,27 @@
-Species,Symbol,Sound localization threshold in deg,threshold_footnote,Delta t in usec,Field of best vision in deg,Visual acuity in c/deg,acuity_footnote,Binocular field in deg,Trophic level
-dolphin,Do,1.1,2,80,—,—,,—,1
-elephant,E,1.2,3,3350,—,—,,80,3
-man,M,1.3,4,875,.7,67.0,24,105,2
-seal,S,3.2,5,378,—,3.6,25,—,1
-opossum,Op,4.6,6,273,15.8,1.8,26,77,4
-pig,P,4.6,7,498,11.6,8.0,,47,2
-macaque,Mk,5.0,8,424,4.3,46.8,27,111,2
-cat,C,5.7,9,258,4.9,9.0,28,105,1
-dog,D,8.0,10,435,5.1,8.3,,75,1
-ferret,F,8.5,11,180,—,—,,—,1
-sea lion,Sl,8.8,12,392,—,4.3,25,—,1
-norway rat domestic,Rd,11.1,13,150,—,—,,76,4
-least weasel,W,12.0,14,76,23.0,2.2,,69,1
-norway rat wild,Rw,12.8,15,130,52.8,1.5,,35,4
-goat,G,18.0,10,680,—,12.5,29,23,5
-wood rat,Wr,19.0,16,115,156.2,2.3,,85,5
-hedgehog,Hh,19.0,17,167,—,—,,35,2
-spiny mouse,Sp,19.0,18,64,—,—,,75,5
-grasshopper mouse,Gm,19.3,16,61,68.5,2.3,,52,2
-horse,H,25.0,19,684,—,—,,28,5
-cow,Cw,30.0,10,1281,132.0,12.4,,20,5
-gerbil,Gr,27.0,20,87,200.0,2.0,30,48,4
-kangaroo rat,Kr,27.0,21,90,—,—,,20,5
-gopher,Go,90.0,22,111,166.0,1.7,,4,5
+TABLE 1. Values of Parameters Examined as Predictors of Sound Localization Acuity in Mammals,,,,,,,
+Species,Symbol,Sound localization threshold in deg¹,Delta t in µsec,Field of best vision in deg,Visual acuity in c/deg²³,Binocular field in deg,Trophic level
+dolphin,Do,1.1²,80,—,—,—,1
+elephant,E,1.2³,3350,—,—,80,3
+man,M,1.3⁴,875,.7,67.0²⁴,105,2
+seal,S,3.2⁵,378,—,3.6²⁵,—,1
+opossum,Op,4.6⁶,273,15.8,1.8²⁶,77,4
+pig,P,4.6⁷,498,11.6,8.0,47,2
+macaque,Mk,5.0⁸,424,4.3,46.8²⁷,111,2
+cat,C,5.7⁹,258,4.9,9.0²⁸,105,1
+dog,D,8.0¹⁰,435,5.1,8.3,75,1
+ferret,F,8.5¹¹,180,—,—,—,1
+sea lion,Sl,8.8¹²,392,—,4.3²⁵,—,1
+norway rat domestic,Rd,11.1¹³,150,—,—,76,4
+least weasel,W,12.0¹⁴,76,23.0,2.2,69,1
+norway rat wild,Rw,12.8¹⁵,130,52.8,1.5,35,4
+goat,G,18.0¹⁰,680,—,12.5²⁹,23,5
+wood rat,Wr,19.0¹⁶,115,156.2,2.3,85,5
+hedgehog,Hh,19.0¹⁷,167,—,—,35,2
+spiny mouse,Sp,19.0¹⁸,64,—,—,75,5
+grasshopper mouse,Gm,19.3¹⁶,61,68.5,2.3,52,2
+horse,H,25.0¹⁹,684,—,—,28,5
+cow,Cw,30.0¹⁰,1281,132.0,12.4,20,5
+gerbil,Gr,27.0²⁰,87,200.0,2.0³⁰,48,4
+kangaroo rat,Kr,27.0²¹,90,—,—,20,5
+gopher,Go,90.0²²,111,166.0,1.7,4,5
+"¹Threshold defined as 75% correct for two-choice procedures and 50% detection for conditioned avoidance procedures ²Renaud and Popper ('75) ³R. Heffner and Heffner ('82) ⁴R. Heffner and Heffner ('88c) ⁵Terhune ('74) ⁶Ravizza and Masterton ('72) ⁷R. Heffner and Heffner ('89) ⁸Brown, et al., ('80), H. Heffner and Heffner ('90) ⁹Casseday and Neff ('73), R. Heffner and Heffner ('88c) ¹⁰R. Heffner and Heffner (in press) ¹¹Kavanagh and Kelly ('87) ¹²Moore ('75) ¹³Kavanagh and Kelly ('86), Kelly ('80) ¹⁴R. Heffner and Heffner ('87) ¹⁵H. Heffner and Heffner ('85) ¹⁶R. Heffner and Heffner ('88a) ¹⁷Chambers ('71) ¹⁸Mooney ('91) ¹⁹H. Heffner and Heffner ('84) ²⁰R. Heffner and Heffner ('88b) ²¹H. Heffner and Masterton ('80) ²²continuous noise bursts, R. Heffner and Heffner ('90) ²³Calculated based on peak density of ganglion cells except as otherwise noted ²⁴Cavonius and Robbins ('73) ²⁵Schusterman ('72) ²⁶Average of ganglion cell density and evoked potential measure, Silveira, et al., ('82) ²⁷Cowey and Ellis ('67) and Cavonius and Robbins ('73) ²⁸Belleville and Wilkinson ('86) and Jacobson, et al., ('76) ²⁹Based on peak density of ganglion cells in Hughes and Witteridge ('73) ³⁰Baker and Emerson ('83)",,,,,,,

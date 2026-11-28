@@ -9,6 +9,14 @@ Medulla, Vmo, VII, XII, in the printed column order (Medulla, Vmo, VII, XII). Al
 Values cross-checked against the page-6 text layer; species de-ligatured (e.g. "ru?caudatus" ->
 "ruficaudatus") to the published binomials.
 
+Layout audit (2026-11-27): The former snapshot alphabetized the 47 species
+and flattened the printed Mean/SD header. The corrected snapshot retains the
+caption, two header tiers and exact printed species order from *Microcebus*
+through *Homo*. The R reader sorts the analysis table. All 47 species and
+their values match the previous analysis CSV when keyed by species; the
+analysis row order is now strictly alphabetical (the former table placed
+*Procolobus* before *Pithecia*). Human source signoff remains independent.
+
 ## Data readable
 `Sherwood_etal_2005_Table1.R` -> `Sherwood_etal_2005_Table1.csv`/`.tsv` (use the csv): snake_case
 columns `medulla_oblongata_mm3`, `trigeminal_motor_Vmo_mm3`, `facial_VII_mm3`, `hypoglossal_XII_mm3`

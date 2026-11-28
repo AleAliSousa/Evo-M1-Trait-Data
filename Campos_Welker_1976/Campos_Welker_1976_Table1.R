@@ -34,7 +34,31 @@ base <- local({
 })
 setwd(folder)
 
-snap <- read_csv(snapshot_csv, show_col_types = FALSE, na = c("", "NA"))
+source_grid <- read.csv(snapshot_csv, header = FALSE, fill = TRUE,
+                        colClasses = "character", na.strings = character(0))
+map <- read_csv(file.path("reference_tables",
+                          "Campos_Welker_1976_Table1_analysis_map.csv"),
+                show_col_types = FALSE, na = c("", "NA"))
+cap_rows <- which(source_grid[[1]] == "Capybara No. 59-490")
+gp_rows <- which(source_grid[[1]] == "Guinea pig No. 60-1")
+factor_rows <- which(source_grid[[1]] == "Multiplication factor³")
+stopifnot(length(cap_rows) == 3L, length(gp_rows) == 3L,
+          length(factor_rows) == 3L)
+source_number <- function(x) as.numeric(gsub("[×³ ,]", "", x))
+block_widths <- c(10L, 4L, 6L)
+values <- bind_rows(lapply(seq_along(block_widths), function(i) {
+  columns <- 1L + seq_len(block_widths[i])
+  tibble(
+    capybara_59_490 = source_number(unlist(source_grid[cap_rows[i], columns])),
+    guinea_pig_60_1 = source_number(unlist(source_grid[gp_rows[i], columns])),
+    printed_multiplication_factor = source_number(
+      unlist(source_grid[factor_rows[i], columns]))
+  )
+}))
+stopifnot(nrow(map) == 20L, nrow(values) == 20L)
+snap <- bind_cols(map, values) %>%
+  select(product, code, source_label, unit, capybara_59_490,
+         guinea_pig_60_1, printed_multiplication_factor, factor_direction, note)
 required <- c(
   "product", "code", "source_label", "unit", "capybara_59_490",
   "guinea_pig_60_1", "printed_multiplication_factor", "factor_direction", "note"

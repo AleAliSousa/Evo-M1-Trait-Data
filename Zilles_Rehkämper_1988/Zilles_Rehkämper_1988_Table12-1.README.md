@@ -10,7 +10,7 @@ PDF: `zilles_rehkamper_1988.pdf` (in this folder). Chapter: Zilles, K., & Rehkä
 
 - `zilles_rehkamper_1988.pdf`: publication.
 - `zilles_rehkamper_1988.xlsx`: raw whole-chapter PDF-to-Excel export retained for provenance.
-- `Zilles_Rehkämper_1988_Table12-1_snapshot.xlsx`: journal-faithful transcription of Table 12-1, including its continuation, blank cells, notes, and sex-code footnote.
+- `Zilles_Rehkämper_1988_Table12-1_snapshot.xlsx`: journal-faithful transcription of Table 12-1, including the separate continuation caption and repeated header on printed p. 169, blank cells, notes, and sex-code footnote.
 - `Zilles_Rehkämper_1988_Table12-1.R`: preparation script. Reads only the snapshot.
 - `Zilles_Rehkämper_1988_Table12-1.csv`: analysis-ready output created by the R script.
 
@@ -36,3 +36,13 @@ No mean is calculated from the table by this script. The chapter text separately
 ### Provenance caution
 
 The chapter explicitly notes uncertainty about whether the literature brain weights are fresh weights. The snapshot therefore preserves the printed values and labels without reclassifying individual observations as fresh brain weights. Likewise, rows lacking body weight or brain weight remain incomplete rather than being imputed.
+
+## Source-layout correction (2026-11-27)
+
+The scanned PDF pp. 12–13 (printed pp. 168–169) place Table 12-1 across two
+pages. The snapshot previously ran the two data blocks together. It now has a
+page break, the printed “(Continued)” caption, and the repeated five-column
+header before the second page's values. The R reader skips those context rows
+before filling blank author cells. `Rscript --vanilla
+Zilles_Rehkämper_1988_Table12-1.R` reproduced the previous 87-row analysis CSV
+cell for cell. This is an assistant layout check, not human visual signoff.

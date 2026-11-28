@@ -20,3 +20,13 @@ Build: frozen source → analysis CSV → registry-coded public TSV. Numeric sou
 Source inspection: assistant checked; no human visual sign-off claimed.
 
 Rebuild: `Rscript InoueNakamura__1997/InoueNakamura__1997_Table3.R`.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared against the EndNote source PDF at printed p. 272. Restored common
+name plus scientific name in the printed first column, and the five primate
+section rows. The shared R builder extracts the scientific label and skips
+section rows for analysis. Source boldface and superscript styling cannot be
+represented fully in CSV; asterisk and footnote letters remain in the cells.
+Ran `Rscript InoueNakamura__1997/InoueNakamura__1997_Table3.R`; the 25-row
+CSV retained SHA-256 `baa220185f812e5fa0e72524a672afafa899e414a007e44763a9b0d369810018`.

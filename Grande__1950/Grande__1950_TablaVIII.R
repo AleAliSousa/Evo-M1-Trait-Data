@@ -47,17 +47,20 @@ dec_es <- function(x) ifelse(grepl(",", x, fixed = TRUE), nchar(sub("^.*,", "", 
 ML_TO_UMOL <- 44.64            # umol O2 per mL O2 (project factor; = 1000/22.4 rounded to 2 dp)
 
 snap <- read_snapshot(paste0(base, "_snapshot.csv"))
-stopifnot(identical(dim(snap), c(8L, 3L)), snap[1, 1] == "TABLA VIII")
+stopifnot(identical(dim(snap), c(8L, 2L)), snap[1, 1] == "TABLA VIII")
 rows <- 4:8
 codes <- c("CMRO2", "AVdiff_O2", "CBF", "CMRO2_total", "CBF_total")
 stopifnot(grepl("^Consumo de oxigeno por 100 g", snap[rows[1], 1]), grepl("^Flujo de sangre total", snap[rows[5], 1]))
-val <- num_es(snap[rows, 2])
+value_cell <- snap[rows, 2]
+has_cc <- grepl(" c\\. c\\.$", value_cell)
+value_printed <- sub(" c\\. c\\.$", "", value_cell)
+val <- num_es(value_printed)
 is_o2 <- codes %in% c("CMRO2", "CMRO2_total", "AVdiff_O2")
 final.dataframe <- data.frame(
   printed_row = rows, row_order = seq_along(rows),
   species_as_published = "cerebro humano",
   quantity_as_published = gsub("\n", " ", snap[rows, 1], fixed = TRUE),
-  value_printed = snap[rows, 2], unit_as_printed = ifelse(nzchar(snap[rows, 3]), snap[rows, 3], "volumenes por 100"),
+  value_printed = value_printed, unit_as_printed = ifelse(has_cc, "c. c.", "volumenes por 100"),
   variable_code = codes, value_numeric = val, stringsAsFactors = FALSE)
 final.dataframe$value_converted <- c(round(val[1] * ML_TO_UMOL, 3), round(val[2] * ML_TO_UMOL / 100, 4), val[3], round(val[4] * ML_TO_UMOL, 2), val[5])
 final.dataframe$unit_converted  <- c("umol O2/100 g/min", "umol O2/mL blood", "mL blood/100 g/min", "umol O2/min", "mL blood/min")

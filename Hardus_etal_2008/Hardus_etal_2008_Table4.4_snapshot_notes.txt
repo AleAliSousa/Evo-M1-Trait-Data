@@ -1,1 +1,9 @@
 Table 4.4. Presence/absence geographic variation. P present; A absent; PP presumed present; PA presumed absent. A/PP/PA can change with observation effort. NA not applicable at captive Great Ape Trust due to absent conditions/age classes. Empty means no information. ¹Raspberries reported at Ketambe but never in nesting context used at other sites. *Raspberry sounds currently one category but may require future splitting. Culture/innovation is the authors’ suggestion, not demonstrated mechanism.
+
+Snapshot layout audit (2026-11-27): Compared rendered local PDF page 10,
+printed Table 4.4. Restored the ten-column grid, the Field sites header tier,
+and Wild / Rehabilitants and captives section rows. The R reader fills context
+and expands site statuses for analysis. Ran
+`Rscript Hardus_etal_2008/Hardus_etal_2008_Table4.4.R`; the 256-row derived
+CSV retained SHA-256
+0895e4e345f897bd4fc942abbdd6e1f2bd9e76f175101483028753de2c5e0b48.

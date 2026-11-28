@@ -1,9 +1,8 @@
 # Lewitus et al. 2014 — Table S1 (physiological & life-history variables) -> CSV + TSV
 #
-# DIGITAL-NATIVE build (no snapshot). The source is the journal's own machine-
-# readable supplement (pbio.1002000.s013.xlsx); per house convention a digital-
-# native source is already the durable, faithful copy, so we read it DIRECTLY and
-# skip the snapshot step. All cleaning is reproducible from that source file.
+# DIGITAL-NATIVE build from an exact frozen copy of the journal workbook.
+# The snapshot retains the publisher worksheet, including source row order.
+# All cleaning and species mapping occur below.
 #   doi:10.1371/journal.pbio.1002000
 #
 # 104 mammal species; 40 physiological / life-history columns. The journal's own
@@ -12,7 +11,8 @@
 #   Glial_cell_denisty -> Glial_cell_density
 #   Basal_metaboic_rate -> Basal_metabolic_rate
 #
-# Source : Lewitus_etal_2014/pbio.1002000.s013.xlsx   (sheet "Sheet1")
+# Source : Lewitus_etal_2014_TableS1_snapshot.xlsx, exact copy of
+#          pbio.1002000.s013.xlsx (sheet "Sheet1")
 # Outputs: Lewitus_etal_2014_TableS1.csv              (104 species)
 #          10.1371%2Fjournal.pbio.1002000_TableS1.tsv in __Public/comparative-data/
 # QA     : private restricted_checks/Lewitus_etal_2014/comparison/
@@ -40,7 +40,7 @@ base      <- local({                                           # repo root; NA i
 })
 setwd(folder)
 
-source_file <- "pbio.1002000.s013.xlsx"    # digital-native journal supplement (kept in-folder)
+source_file <- paste0(item_name, "_snapshot.xlsx")  # frozen copy of publisher supplement
 
 ## ---- species resolver (single source of truth = _keys) ----------------------
 resolve <- local({
@@ -54,7 +54,7 @@ resolve <- local({
     a <- km[tolower(c)]; if (!is.na(a)) return(unname(a)); c }
 })
 
-## ---- read the source directly (row 1 = title, row 2 = header) ----------------
+## ---- read the frozen source grid (row 1 = title, row 2 = header) ------------
 src <- read_excel(source_file, sheet = "Sheet1", skip = 1, .name_repair = "minimal")
 src <- as.data.frame(src, check.names = FALSE)
 src <- src[!is.na(src$Species) & nzchar(trimws(src$Species)), ]   # drop any trailing blank rows

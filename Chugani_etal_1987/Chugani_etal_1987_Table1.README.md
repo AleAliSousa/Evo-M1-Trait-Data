@@ -20,13 +20,21 @@ membership of the four age bins of Table 2 (n = 7 / 4 / 12 / 6).
   ("Cubamazepine", "Ph,enobarbital"), so it was not usable. The table was **transcribed by an AI
   assistant on 2026‑10‑31 from 290‑ppi renders of the embedded page bitmaps** (PDF pp. 2–3), typed
   into the frozen file as printed.
-- The snapshot has **31 rows for 31 printed rows**: the 29 patients in printed order, the
-  `Table I. (Continued)` header where the table breaks across the page, and the footnote line.
-  Column order and the printed five headers are preserved.
+- The snapshot has **34 physical CSV rows**: the opening caption and five-column
+  header, 29 patients in printed order, the `Table 1. (Continued)` caption and
+  repeated header where the table breaks across pages, and the footnote line.
+  The second-page caption was previously misread as Roman `I`; its printed
+  Arabic `1` is restored. Column order is preserved.
 - Printed oddity kept verbatim: the 7.5‑year patient's medication is printed
   `Phenobarbital carbamazepine` with no comma, unlike the other two‑drug cells.
 
 ## Pipeline
+
+Layout audit (2026-11-27): compared the scanned table on PDF pp. 2–3, restored
+its opening caption and repeated continuation header, and ran
+`Rscript Chugani_etal_1987/Chugani_etal_1987_Table1.R` from the repository
+root. The 29-patient analysis CSV remained cell-identical. Independent human
+source comparison is separate.
 
 | file | role |
 |---|---|

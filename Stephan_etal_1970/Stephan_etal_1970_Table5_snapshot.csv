@@ -1,21 +1,28 @@
-id,group,species,bulbus_olfactorius_mm3,palaeocortex_plus_amygdala_mm3,septum_mm3,striatum_mm3,schizocortex_mm3,hippocampus_mm3,neocortex_mm3
-23,Prosimian,Tupaia glis,128.0,256.0,32.1,133.0,84.2,138.0,1007.0
-24,Prosimian,Urogale everetti,186.0,362.0,45.1,199.0,124.0,173.0,1338.0
-25,Prosimian,Microcebus murinus,40.3,94.5,15.5,94.3,39.4,100.0,773.0
-26,Prosimian,Cheirogaleus medius,99.3,181.0,31.5,146.0,59.5,175.0,1252.0
-27,Prosimian,Cheirogaleus major,155.0,315.0,64.1,336.0,144.0,332.0,2963.0
-28,Prosimian,Lepilemur ruficaudatus,131.0,287.0,57.1,388.0,199.0,380.0,3287.0
-29,Prosimian,Hapalemur simus,79.4,223.0,62.1,441.0,214.0,525.0,4331.0
-30,Prosimian,Lemur fulvus,229.0,638.0,121.0,1152.0,433.0,709.0,12442.0
-31,Prosimian,Lemur variegatus,374.0,985.0,206.0,1591.0,608.0,1404.0,15293.0
-32,Prosimian,Avahi laniger,80.6,236.0,78.1,444.0,206.0,476.0,4341.0
-33,Prosimian,Propithecus verreauxi,168.0,565.0,160.0,1425.0,395.0,1044.0,13389.0
-34,Prosimian,Indri indri,142.0,830.0,223.0,1755.0,808.0,1535.0,19976.0
-35,Prosimian,Daubentonia madagascariensis,693.0,1538.0,254.0,2765.0,1044.0,1776.0,22127.0
-36,Prosimian,Loris gracilis,88.1,256.0,41.1,351.0,99.7,191.0,3524.0
-37,Prosimian,Nycticebus coucang,164.0,510.0,92.0,760.0,212.0,566.0,6192.0
-38,Prosimian,Perodicticus potto,312.0,661.0,114.0,712.0,328.0,607.0,6683.0
-39,Prosimian,Galago demidovii,84.4,181.0,25.7,169.0,59.9,152.0,1568.0
-40,Prosimian,Galago senegalensis,81.8,163.0,35.7,210.0,107.0,261.0,2139.0
-41,Prosimian,Galago crassicaudatus,180.0,405.0,70.6,504.0,178.0,412.0,4919.0
-42,Prosimian,Tarsius syrichta,18.1,95.0,20.9,133.0,64.3,138.0,1890.0
+TABLE 5. Volume of the various components of the telencephalon in Prosimians (in mm³).,,,,,,,
+,Bulbus olfactorius,Palaeocortex + NA*,Septum†,Striatum‡,Schizocortex§,Hippocampus,Neocortex‖
+,9,10,11,12,13,14,15
+23. Tupaia glis,128.0,256.0,32.1,133.0,84.2,138.0,1007.0
+24. Urogale everetti,186.0,362.0,45.1,199.0,124.0,173.0,1338.0
+25. Microcebus murinus,40.3,94.5,15.5,94.3,39.4,100.0,773.0
+26. Cheirogaleus medius,99.3,181.0,31.5,146.0,59.5,175.0,1252.0
+27. Cheirogaleus major,155.0,315.0,64.1,336.0,144.0,332.0,2963.0
+28. Lepilemur ruficaudatus,131.0,287.0,57.1,388.0,199.0,380.0,3287.0
+29. Hapalemur simus,79.4,223.0,62.1,441.0,214.0,525.0,4331.0
+30. Lemur fulvus,229.0,638.0,121.0,1152.0,433.0,709.0,12442.0
+31. Lemur variegatus,374.0,985.0,206.0,1591.0,608.0,1404.0,15293.0
+32. Avahi laniger,80.6,236.0,78.1,444.0,206.0,476.0,4341.0
+33. Propithecus verreauxi,168.0,565.0,160.0,1425.0,395.0,1044.0,13389.0
+34. Indri indri,142.0,830.0,223.0,1755.0,808.0,1535.0,19976.0
+35. Daubentonia madagascariensis,693.0,1538.0,254.0,2765.0,1044.0,1776.0,22127.0
+36. Loris gracilis,88.1,256.0,41.1,351.0,99.7,191.0,3524.0
+37. Nycticebus coucang,164.0,510.0,92.0,760.0,212.0,566.0,6192.0
+38. Perodicticus potto,312.0,661.0,114.0,712.0,328.0,607.0,6683.0
+39. Galago demidovii,84.4,181.0,25.7,169.0,59.9,152.0,1568.0
+40. Galago senegalensis,81.8,163.0,35.7,210.0,107.0,261.0,2139.0
+41. Galago crassicaudatus,180.0,405.0,70.6,504.0,178.0,412.0,4919.0
+42. Tarsius syrichta,18.1,95.0,20.9,133.0,64.3,138.0,1890.0
+* Palaeocortex + NA: corpus amygdaloideum was not separated from palaeocortex.,,,,,,,
+† Septum includes the diagonal band of Broca.,,,,,,,
+‡ Striatum includes the internal capsule.,,,,,,,
+"§ Schizocortex comprises entorhinal, perirhinal, pre- and parasubicular regions.",,,,,,,
+‖ Neocortex includes underlying white substance.,,,,,,,

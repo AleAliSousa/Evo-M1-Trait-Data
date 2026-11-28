@@ -32,7 +32,7 @@ base        <- local({                                   # repo root; NA if run 
 setwd(folder)
 
 ## ---- read the frozen snapshot (verbatim headers) ----
-snap <- read.csv(snapshot_csv,
+snap <- read.csv(snapshot_csv, skip = 1L, nrows = 6L,
                  check.names = FALSE, stringsAsFactors = FALSE, colClasses = "character",
                  na.strings = c("", "NA"))
 

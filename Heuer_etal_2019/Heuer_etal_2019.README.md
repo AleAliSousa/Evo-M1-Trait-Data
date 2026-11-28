@@ -119,3 +119,7 @@ not been checked. No dissertation PDF was located in this repository, the
 EndNote PDF store, or the online repositories searched on 2026-11-25. If obtained,
 check for unpublished specimen identifiers and methods; prefer the journal
 article for measurements already published there.
+
+## Table 1 workbook repair (2026-11-27)
+
+Repaired the snapshot worksheet dimension (A1:F45) and removed two dangling drawing links. The table retains the six printed columns, section rows, and species order visible in Table 1 of the local PDF. `openpyxl` normal and read-only modes now both open the workbook and report 45 × 6. The analysis CSV hash remains `6fc83f497b30fa104441af4b392fcc866550d915223534bb56cdad3f99326299`. This is not human visual signoff.

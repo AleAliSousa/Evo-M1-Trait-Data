@@ -16,9 +16,19 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+source_grid <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=2L,n_max=10L,
+                        col_names=c("Site","Overall","UFM_value","UFM_rank","FM_value","FM_rank",
+                                    "SAF_value","SAF_rank","NSAF_value","NSAF_rank"),
+                        col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,
+                        name_repair="minimal",show_col_types=FALSE)
+raw <- data.frame(Site=sub("[¹²³]$", "", source_grid$Site), Overall=source_grid$Overall,
+                  stringsAsFactors=FALSE)
+for (g in c("UFM","FM","SAF","NSAF")) {
+  v <- source_grid[[paste0(g,"_value")]]; rank <- source_grid[[paste0(g,"_rank")]]
+  raw[[g]] <- ifelse(nzchar(rank), paste(v, rank), v)
+}
 final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
-final.dataframe$Source_row <- seq_len(nrow(raw))+1L
+final.dataframe$Source_row <- seq_len(nrow(raw))+2L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
 context <- read_csv(file.path(folder,"reference_tables",paste0(item_name,"_context.csv")),col_types=cols(.default=col_character()),na=character(),show_col_types=FALSE)
 stopifnot(!anyDuplicated(context$Source_row))

@@ -27,3 +27,8 @@ The analysis table is long: one row per region x layer/total. Layer IV in M1 is 
 The six M1 rows plus total reproduce Table 1 exactly; the five present M1 layers sum to the printed
 total of 1,591 um. The existing `__ReadMe.xlsx` row for `Jacobs_etal_2015_Table1` supplies the public
 TSV identifier.
+
+
+## Snapshot layout audit (2026-11-27)
+
+The printed table has three columns with layer rows and Motor/Visual columns. Restored that grid, including the printed dash for absent motor Layer IV; the R reader splits mean ± SD and creates region rows. Compared with the local source PDF Table 1. Ran `Rscript Jacobs_etal_2015/Jacobs_etal_2015_Table1.R`; 14-row CSV SHA-256 stayed `0e4b45806cd54bda208e24abc2c6d13ba3f215cec026fc17a1588ba34e6ca980`.

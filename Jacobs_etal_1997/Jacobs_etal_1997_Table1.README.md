@@ -35,3 +35,15 @@ metadata, not a dendritic-morphology trait measurement in itself (see the siblin
 Transcribed directly from the article PDF's Table 1 (page 3) by Microsoft Copilot (AI assistant) on
 2026-09-25. The CSV, R script, public TSV, README, and definitions file were all built in this pass.
 No prior build existed for this item.
+
+## Source-layout and age correction (2026-11-27)
+
+The snapshot now uses the printed five-column table on PDF p. 3: caption,
+subject code, body weight, autolysis time, cause of death, occupation/education,
+and the two footnotes. Sex, age, and ethnicity are derived by the R reader.
+`Rscript --vanilla Jacobs_etal_1997_Table1.R` rebuilt 26 rows. The prior
+analysis incorrectly treated the disambiguating `.1` and `.2` suffixes in
+`M69.1` and `M69.2` as decimal years; both are 69 years old as the printed
+footnote explicitly states. Those two `Age_years` cells are now 69 in the
+analysis CSV and public TSV. Other cells are unchanged. This is an assistant
+source/layout check, not human visual signoff.

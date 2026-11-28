@@ -32,11 +32,27 @@ base <- local({
 
 setwd(folder)
 
-dat <- read.csv(
-  paste0(item_name, "_snapshot.csv"),
-  stringsAsFactors = FALSE,
-  check.names = FALSE
-)
+printed <- read.csv(paste0(item_name, "_snapshot.csv"), header = FALSE,
+                    colClasses = "character", na.strings = c("", "NA"),
+                    stringsAsFactors = FALSE, check.names = FALSE)
+page_lookup <- read.csv(file.path("reference_tables", paste0(item_name, "_page_lookup.csv")),
+                        stringsAsFactors = FALSE)
+stopifnot(nrow(page_lookup) == 303L,
+          all(page_lookup$source_grid_row <= nrow(printed)))
+cells <- printed[page_lookup$source_grid_row, , drop = FALSE]
+numeric_cell <- function(x) suppressWarnings(as.numeric(x))
+dat <- data.frame(
+  species_row = page_lookup$species_row,
+  source_pdf_page = page_lookup$source_pdf_page,
+  species_printed = trimws(cells[[1]]),
+  n = numeric_cell(cells[[2]]),
+  BL = numeric_cell(cells[[3]]),
+  HL = numeric_cell(cells[[4]]),
+  HW = numeric_cell(cells[[5]]),
+  HH = numeric_cell(cells[[6]]),
+  n2 = numeric_cell(cells[[7]]),
+  CCL = numeric_cell(cells[[8]]),
+  stringsAsFactors = FALSE)
 
 csv_file <- paste0(item_name, ".csv")
 

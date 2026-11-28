@@ -20,11 +20,16 @@ This is the project's second vocal-repertoire count source, alongside **ManyPrim
 McComb & Semple 2005; kept separate at the curator's request, not merged).
 
 ## Source → Snapshot
-Data live in the Zenodo `data` sheet of `ZenodoData_April2026.xlsx`. That sheet was frozen verbatim
-(all 19 columns, 42 species) into `Schniter_Penaherrera-Aguirre_2026_data_snapshot.xlsx`
-(sheet `data_snapshot`): row 1 = title, row 2 = header, values as distributed. The sheet also holds
-body mass, longevity, endocranial volume, group size, conflict score and gut lengths — those are
-kept in the snapshot for provenance but only the repertoire columns are built here.
+Data live in the Zenodo `data` sheet of `ZenodoData_April2026.xlsx`. The
+`Schniter_PenaherreraAguirre_2026_data_snapshot.xlsx` file is an exact copy of
+that workbook, retaining all three sheets. The `data` sheet has 53 columns,
+its header in row 1, and 42 species in source order. The R reader selects the
+repertoire columns and normalizes source nonbreaking spaces and line endings.
+The former snapshot inserted a title row, reduced the source to 19 columns,
+and converted numeric cells to text. After restoring the source workbook,
+`Rscript --vanilla Schniter_PenaherreraAguirre_2026_data.R` reproduced the
+42-row analysis CSV cell for cell. This is an assistant layout check, separate
+from human source signoff.
 
 ## Data readable
 `Schniter_Penaherrera-Aguirre_2026_data.R` → `Schniter_Penaherrera-Aguirre_2026_data.csv`

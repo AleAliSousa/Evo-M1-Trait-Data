@@ -38,3 +38,8 @@ the printed table's own layout — no per-area or per-age breakdown is given in 
 Transcribed directly from the article PDF's Table 2 (page 4) by Microsoft Copilot (AI assistant) on
 2026-09-25. The CSV, R script, public TSV, README, and definitions file were all built in this pass.
 No prior build existed for this item.
+
+
+## Snapshot layout audit (2026-11-27)
+
+The printed table has six measure rows and two integration-region columns with mean ± SD in each cell. Reconstructed that orientation; the R reader transposes and splits the cells. Compared with local PDF Table 2. Ran `Rscript Jacobs_etal_2001/Jacobs_etal_2001_Table2.R`; 2-row CSV SHA-256 stayed `fe9c69b6246677c57edad02253dae3a670d1708f7428d18e84a26b94bbbc2c4a`.

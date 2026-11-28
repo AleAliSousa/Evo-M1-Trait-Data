@@ -36,11 +36,17 @@ base <- local({ d <- folder
 setwd(folder)
 
 ## ---- 1. Read the frozen snapshot (positional; all character) ----
-snap <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")), colClasses = "character",
-                 check.names = FALSE, na.strings = character(0), encoding = "UTF-8")
-names(snap) <- c("block", "line", "label", "area", "pct")
-tab <- snap[snap$block %in% c("left", "right"), ]                 # drop caption and footnote rows
-tab <- tab[order(match(tab$block, c("left", "right")), as.integer(tab$line)), ]
+grid <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
+                 header = FALSE, colClasses = "character", check.names = FALSE,
+                 na.strings = character(0), encoding = "UTF-8")
+stopifnot(ncol(grid) == 6L, nrow(grid) == 61L)
+make_block <- function(block, cols, n) {
+  z <- grid[3:(n + 2L), cols, drop = FALSE]
+  data.frame(block = block, line = as.character(seq_len(n)),
+             label = z[[1L]], area = z[[2L]], pct = z[[3L]],
+             stringsAsFactors = FALSE)
+}
+tab <- rbind(make_block("left", 1:3, 59L), make_block("right", 4:6, 43L))
 is_value <- nzchar(tab$area)
 
 ## ---- 2. Carry group headings down; classify rows ----

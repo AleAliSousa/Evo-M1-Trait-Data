@@ -136,3 +136,7 @@ percentage columns are author-derived from the counts in the same row; the defin
    Python mirror of the script. The `.R` is canonical.
 2. Merge `PROPOSED_species_key_rows.csv` into `_keys/`, then delete the staged file.
 3. Public TSV not written in this session; the `.R` writes it.
+
+## Layout recheck (2026-11-27)
+
+The Table 2 workbook preserves the printed column positions, grouped header tiers, caption, and source row order. Some wrapped header text occupies fewer worksheet lines, but its cell position and grouping are unchanged. No snapshot or reader edit was needed. Independent human source comparison remains separate.

@@ -1,0 +1,21 @@
+product,code,source_label,unit,factor_direction,note
+volume,total_prosencephalon_volume_mm3,total pros.,mm3,capybara_divided_by_guinea_pig,
+volume,neocortex_volume_mm3,neo-cortex,mm3,capybara_divided_by_guinea_pig,
+volume,forebrain_white_matter_volume_mm3,white,mm3,capybara_divided_by_guinea_pig,
+volume,thalamus_volume_mm3,thal,mm3,capybara_divided_by_guinea_pig,"Dorsal thalamus, epithalamus and ventral thalamus including fiber tracts; pretectal nuclei excluded."
+volume,caudate_putamen_accumbens_volume_mm3,cau,mm3,capybara_divided_by_guinea_pig,Caudate-putamen-accumbens complex.
+volume,globus_pallidus_volume_mm3,gp,mm3,capybara_divided_by_guinea_pig,
+volume,basal_forebrain_volume_mm3,bf,mm3,capybara_divided_by_guinea_pig,Includes the source-defined basal forebrain structures listed in Figure 11.
+volume,hippocampus_volume_mm3,hip,mm3,capybara_divided_by_guinea_pig,"Includes Ammon's horn, subiculum, dentate gyrus and anterior continuation of hippocampus."
+volume,hypothalamus_volume_mm3,hy,mm3,capybara_divided_by_guinea_pig,Includes hypothalamic nuclei and inclusive fiber bundles.
+volume,corticothalamic_ratio,cortico-thalamic ratio,ratio,capybara_divided_by_guinea_pig,Printed values retained. The guinea-pig ratio is not reproduced by 170.2 / 36.6 (= 4.65).
+cortical_morphometry,cortical_surface_area_mm2,total cortex surface,mm2,capybara_divided_by_guinea_pig,
+cortical_morphometry,cortical_fissure_area_mm2,cortex in fissures,mm2,capybara_divided_by_guinea_pig,
+cortical_morphometry,cortical_surface_in_fissures_pct,percent cortex in fissures,percent,capybara_divided_by_guinea_pig,
+cortical_morphometry,cortical_thickness_mm,cortical thickness,mm,capybara_divided_by_guinea_pig,
+cell_count,neocortex_mean_neurons_per_sample,mean number of cells/sample - cortex,neurons_per_162000_um3_sample,guinea_pig_divided_by_capybara,All neurons containing nucleoli were counted.
+cell_count,caudate_mean_neurons_per_sample,mean number of cells/sample - cau,neurons_per_162000_um3_sample,guinea_pig_divided_by_capybara,Printed factor 3.0 retained; values imply 3.20.
+cell_count,neocortex_neuronal_density_per_mm3,cell densities - cortex,neurons_per_mm3,guinea_pig_divided_by_capybara,
+cell_count,caudate_neuronal_density_per_mm3,cell densities - cau,neurons_per_mm3,guinea_pig_divided_by_capybara,Printed factor 3.0 retained; values imply 3.20.
+cell_count,neocortex_total_neuron_number,total cell numbers - cortex,neurons,capybara_divided_by_guinea_pig,
+cell_count,caudate_total_neuron_number,total cell numbers - cau,neurons,capybara_divided_by_guinea_pig,

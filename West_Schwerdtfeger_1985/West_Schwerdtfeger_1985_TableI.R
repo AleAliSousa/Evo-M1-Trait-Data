@@ -18,7 +18,8 @@ source_name <- basename(folder)
 num <- function(x) suppressWarnings(as.numeric(x))
 check <- function(id,obs,printed,tol,basis,note="Published values retained; no correction.") data.frame(check_id=id,basis=basis,observed=obs,printed=printed,difference=obs-printed,tolerance=tol,status=ifelse(is.na(obs-printed),"not_evaluable",ifelse(abs(obs-printed)<=tol+1e-10,"pass","mismatch")),note=note)
 raw <- read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),header=FALSE,colClasses="character",check.names=FALSE,na.strings="",fill=TRUE)
-x <- raw[3:13,]
+x <- raw[3:(nrow(raw)-1),]
+x <- x[!is.na(x[[1]]) & nzchar(trimws(x[[1]])), , drop=FALSE]
 final.dataframe <- data.frame(species=rep(c("Erinaceus europaeus","Callithrix jacchus","Tupaia glis"),c(5,3,3)),published_label=x[[1]],record_type=ifelse(grepl("mean",x[[1]]),"reference species mean","individual specimen"),body_mass_g=num(gsub(",","",x[[2]])),telencephalon_volume_mm3=num(gsub(",","",x[[3]])),brain_mass_mg=num(gsub(",","",x[[4]])),normalization_source_key="Stephan1981",specimen_source_key=c(rep("West1984",5),rep("CurrentStudy",6)),source=source_name)
 final.dataframe$specimen_source_key[grepl("mean",x[[1]])] <- "Stephan1981"
 final.dataframe$data_role <- ifelse(final.dataframe$specimen_source_key=="CurrentStudy","primary","secondary")

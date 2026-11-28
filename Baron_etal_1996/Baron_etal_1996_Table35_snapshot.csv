@@ -1,69 +1,122 @@
-species_printed,source_pdf_page,n,AOB_volume_mm3
-Pteronotus gymnonotus,156,3,0.126
-Pteronotus personatus,156,3,0.000
-Pteronotus parnelli,156,3,0.120
-Mormoops megalophylla,156,3,0.000
-Micronycteris megalotis,156,3,0.058
-Micronycteris minuta,156,1,0.027
-Micronycteris schmidtorum,156,3,0.075
-Micronycteris brachyotis,156,1,0.086
-Macrophyllum macrophyllum,156,3,0.081
-Tonatia bidens,156,3,0.201
-Tonatia schulzi,156,1,0.140
-Tonatia sylvicola,156,1,0.211
-Mimon crenulatum,156,2,0.182
-Phyllostomus discolor,156,3,0.616
-Phyllostomus elongatus,156,3,0.291
-Phyllostomus hastatus,156,3,0.312
-Phylloderma stenops,156,2,0.384
-Trachops cirrhosus,156,2,0.269
-Vampyrum spectrum,156,2,0.089
-Glossophaga longirostris,156,1,0.301
-Glossophaga soricina,156,3,0.280
-Monophyllus plethodon,156,2,0.141
-Leptonycteris curasoae,156,1,0.360
-Leptonycteris nivalis,156,3,0.316
-Lonchophylla mordax,156,1,0.168
-Lonchophylla thomasi,156,1,0.152
-Lionycteris spurrelli,156,3,0.087
-Anoura caudifer,156,3,0.186
-Anoura geoffroyi,156,3,0.504
-Choeroniscus minor,156,1,0.000
-Carollia castanea,157,5,0.146
-Carollia perspicillata,157,3,0.241
-Rhinophylla pumilio,157,3,0.000
-Sturnira lilium,157,3,0.188
-Sturnira ludovici,157,2,0.135
-Sturnira tildae,157,3,0.138
-Uroderma bilobatum,157,3,0.213
-Vampyrops brachycephalus,157,2,0.164
-Vampyrops helleri,157,3,0.124
-Vampyrops infuscus,157,1,0.330
-Vampyrops lineatus,157,3,0.197
-Vampyrops vittatus,157,2,0.231
-Vampyrodes caraccioloi,157,1,0.295
-Vampyressa pusilla,157,2,0.155
-Chiroderma salvini,157,4,0.181
-Chiroderma trinitatum,157,2,0.145
-Chiroderma villosum,157,3,0.128
-Chiroderma villosum ssp.,157,1,0.119
-Ectophylla macconnelli,157,2,0.112
-Artibeus cinereus,157,3,0.183
-Artibeus concolor,157,2,0.094
-Artibeus jamaicensis,157,3,0.308
-Artibeus lituratus,157,4,0.375
-Enchisthenes harti,157,4,0.309
-Ardops nichollsi,157,3,0.222
-Sphaeronycteris toxophyllum,157,1,0.021
-Brachyphylla cavernarum,157,3,0.000
-Desmodus rotundus,157,3,0.355
-Diphylla ecaudata,157,4,0.111
-Miniopterus australis,158,2,0.034
-Miniopterus haradei,158,3,0.057
-Miniopterus inflatus,158,3,0.087
-Miniopterus magnater,158,3,0.104
-Miniopterus medius,158,3,0.078
-Miniopterus pusillus,158,3,0.059
-M. schreibersi arenarius,158,3,0.068
-Miniopterus s. blepotis,158,2,0.091
-Miniopterus tristis,158,3,0.074
+> Table 35 <,,,,
+"Table 35. Volumes, size indices, average size indices of the accessory olfactory bulb related to the average of the four Tenrecinae (AvTn = 100) and percentage of AOB relative to the BOL complex (MOB + AOB)",,,,
+,,,,AOB
+,n,Volume,Index,BOL
+slope,,,.64,%
+y-intercept,,,-1.903,
+MORMOOPIDAE,,,,
+Pteronotus gymnonotus,3,0.126,190,1.70
+Pteronotus personatus,3,0.000,0,0.00
+Pteronotus parnelli,3,0.120,140,1.01
+Mormoops megalophylla,3,0.000,0,0.00
+PHYLLOSTOMIDAE,,,,
+PHYLLOSTOMINAE,,,,
+Micronycteris megalotis,3,0.058,139,0.56
+Micronycteris minuta,1,0.027,63,0.23
+Micronycteris schmidtorum,3,0.075,162,0.66
+Micronycteris brachyotis,1,0.086,123,0.39
+Macrophyllum macrophyllum,3,0.081,164,1.82
+Tonatia bidens,3,0.201,184,0.66
+Tonatia schulzi,1,0.140,158,1.53
+Tonatia sylvicola,1,0.211,182,1.42
+Mimon crenulatum,2,0.182,301,2.44
+Phyllostomus discolor,3,0.616,492,1.52
+Phyllostomus elongatus,3,0.291,204,1.40
+Phyllostomus hastatus,3,0.312,140,0.72
+Phylloderma stenops,2,0.384,265,0.44
+Trachops cirrhosus,2,0.269,214,1.14
+Vampyrum spectrum,2,0.089,26,0.10
+GLOSSOPHAGINAE,,,,
+Glossophaga longirostris,1,0.301,510,2.28
+Glossophaga soricina,3,0.280,516,2.37
+Monophyllus plethodon,2,0.141,200,1.03
+Leptonycteris curasoae,1,0.360,372,1.84
+Leptonycteris nivalis,3,0.316,341,1.73
+Lonchophylla mordax,1,0.168,294,1.48
+Lonchophylla thomasi,1,0.152,353,1.58
+Lionycteris spurrelli,3,0.087,190,0.83
+Anoura caudifer,3,0.186,329,1.81
+Anoura geoffroyi,3,0.504,683,2.69
+Choeroniscus minor,1,0.000,0,0.00
+> Table 35 <,,,,
+,,,,AOB
+,n,Volume,Index,BOL
+slope,,,.64,%
+y-intercept,,,-1.903,
+PHYLLOSTOMINAE (cont.),,,,
+CAROLLIINAE,,,,
+Carollia castanea,5,0.146,225,0.70
+Carollia perspicillata,3,0.241,305,0.91
+Rhinophylla pumilio,3,0.000,0,0.00
+STURNIRIN AE,,,,
+Sturnira lilium,3,0.188,219,0.66
+Sturnira ludovici,2,0.135,135,0.43
+Sturnira tildae,3,0.138,143,0.42
+STENODERMINAE,,,,
+Uroderma bilobatum,3,0.213,287,0.74
+Vampyrops brachycephalus,2,0.164,256,0.80
+Vampyrops helleri,3,0.124,185,0.72
+Vampyrops infuscus,1,0.330,215,0.80
+Vampyrops lineatus,3,0.197,214,0.75
+Vampyrops vittatus,2,0.231,184,0.55
+Vampyrodes caraccioloi,1,0.295,223,0.83
+Vampyressa pusilla,2,0.155,314,1.05
+Chiroderma salvini,4,0.181,179,0.58
+Chiroderma trinitatum,2,0.145,218,0.68
+Chiroderma villosum,3,0.128,131,0.47
+Chiroderma villosum ssp.,1,0.119,104,0.34
+Ectophylla macconnelli,2,0.112,247,0.97
+Artibeus cinereus,3,0.183,290,0.96
+Artibeus concolor,2,0.094,113,0.36
+Artibeus jamaicensis,3,0.308,229,0.79
+Artibeus lituratus,4,0.375,228,0.69
+Enchisthenes harti,4,0.309,417,1.46
+Ardops nichollsi,3,0.222,242,0.79
+Sphaeronycteris toxophyllum,1,0.021,26,0.18
+PHYLLONYCTERINAE,,,,
+Brachyphylla cavernarum,3,0.000,0,0.00
+DESMODONTIDAE,,,,
+Desmodus rotundus,3,0.355,285,1.06
+Diphylla ecaudata,4,0.111,98,0.31
+> Table 35 <,,,,
+,,,,AOB
+,n,Volume,Index,BOL
+slope,,,.64,%
+y-intercept,,,-1.903,
+VESPERTILIONIDAE,,,,
+MINIOPTERINAE,,,,
+Miniopterus australis,2,0.034,78,0.76
+Miniopterus haradei,3,0.057,117,1.16
+Miniopterus inflatus,3,0.087,124,1.28
+Miniopterus magnater,3,0.104,146,1.69
+Miniopterus medius,3,0.078,132,1.74
+Miniopterus pusillus,3,0.059,120,1.47
+M. schreibersi arenarius,3,0.068,122,1.28
+Miniopterus s. blepotis,2,0.091,132,1.50
+Miniopterus tristis,3,0.074,102,1.20
+VESPERTILIONIDAE,,,,
+,N,,,
+MICROCHIROPTERA (AvCS),63,,218,1.05
+MICROCHIROPTERA (AvCF),NN = 8,,211,1.02
+MORMOOPIDAE *),2,,165,1.36
+PHYLLOSTOMIDAE,50,,239,1.01
+PHYLLOSTOMINAE *),15,,188,1.00
+Micronycteris,4,,122,0.46
+Tonatia,3,,175,1.20
+Phyllostomus,3,,279,1.21
+GLOSSOPHAGINAE *),10,,379,1.76
+Glossophaga,2,,513,2.33
+Leptonycteris,2,,357,1.79
+Lonchophylla,2,,323,1.53
+Anoura,2,,506,2.25
+CAROLLIINAE *),2,,265,0.81
+STURNIRINAE *),3,,166,0.50
+STENODERMINAE *),20,,215,0.73
+Vampyrops,5,,211,0.72
+Chiroderma,4,,158,0.52
+Artibeus,4,,215,0.70
+DESMODONTIDAE *),2,,192,0.69
+VESPERTILIONIDAE,,,,
+MINIOPTERINAE *),9,,119,1.34
+Number of individuals = n; number of species = N; number of families and/or subfamilies marked by *) = NN,,,,
+Abbreviations: AOB accessory olfactory bulb; MOB main olfactory bulb; AvCS average of Chir. species; AvCF average of families and/or subfam.; BOL complex of olfactory bulbs (AOB + MOB),,,,

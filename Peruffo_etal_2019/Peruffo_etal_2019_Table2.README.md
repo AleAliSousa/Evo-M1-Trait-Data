@@ -31,3 +31,7 @@ subject rows, and several percentages are not exactly the corresponding displaye
 by displayed total. These quantities were probably averaged at a lower measurement level. The merge
 therefore preserves them independently and writes two reconciliation files. `merge_default` selects
 the published Average row while keeping individual rows available, preventing double counting.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed Table 2 caption and source column headings. Analytic `snake_case` names now live in the R reader, which skips the two context rows. Run `Rscript --vanilla Peruffo_etal_2019/Peruffo_etal_2019_Table2.R` from repository root. Independent human source comparison remains separate.

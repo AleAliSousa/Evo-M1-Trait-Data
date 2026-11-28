@@ -18,8 +18,8 @@ This is **part 2 of 2** of supplemental **Table S1** — the **"Brodmann data" s
 | Path | Role |
 |---|---|
 | `Smaers_etal_2017_TableS1part2_pdf_transcription.csv` | Direct transcription of the Brodmann surface-area block in `mmc1.pdf`, PDF page 4. All 37 populated values were checked against that page. |
-| `Smaers_etal_2017_TableS1part2_snapshot.xlsx` | Older publisher-spreadsheet snapshot, retained for history; not a build input. |
-| `Smaers_etal_2017_TableS1part2.R` | Reformat → `Smaers_etal_2017_TableS1part2.csv` (+ DOI-named TSV). Reads only the PDF transcription. |
+| `Smaers_etal_2017_TableS1part2_snapshot.xlsx` | **Snapshot** (sheet `Table S1`): complete source Table S1 grid copied from `Smaers_mmc1.xlsx` rows 9–42 and columns A–AI. The reader selects the surface-area block. |
+| `Smaers_etal_2017_TableS1part2.R` | Reformat → `Smaers_etal_2017_TableS1part2.csv` (+ DOI-named TSV). Reads the source-grid snapshot. |
 | `reference_tables/Smaers_etal_2017_TableS1part2_definitions.csv` | Data dictionary (10-col schema; `Measure = surface area`). |
 | `comparison/Brodmann_surface_1909.csv` | Independent formatted surface-area table (from `cortical surfaces Brodmann 1909 in Smears et al 2017.xlsx`), audited only. |
 | `comparison/Smaers_etal_2017_TableS1part2_compare_to_Brodmann_csv.R` | QA: snapshot vs `Brodmann_surface_1909.csv`. |
@@ -33,7 +33,7 @@ sciureus* has primary visual only (printed blank elsewhere — kept blank).
 
 ## Reformat → CSV
 
-The R reads the PDF transcription, underscores
+The R reads the source-grid snapshot, underscores
 the species name, adds `source = "Smaers_etal_2017"`, and writes the CSV plus a DOI-named TSV. (R is
 not in the build sandbox; the committed CSV/TSV were produced by a Python mirror of this exact logic
 and will be regenerated when you run the R.)
@@ -47,3 +47,14 @@ The earlier snapshot (built from `Smaers_mmc1.xlsx`) matched by species to `Brod
 from the *independent* publisher file `cortical surfaces Brodmann 1909 in Smears et al 2017.xlsx`).
 A clean match across the two independent digitisations confirms the transcription. **Verified: 10
 matched, 0 value mismatches, no snapshot-only / csv-only species.**
+## Snapshot layout recheck (2026-11-27)
+
+The snapshot now reproduces the publisher workbook's complete Table S1 cell
+grid (`Smaers_mmc1.xlsx`, source rows 9–42 and columns A–AI), including both
+volume and surface-area blocks and their original blank columns. Its 222
+nonempty cells match the source workbook at the same relative coordinates.
+The R reader selects Brodmann surface-area rows and columns from this grid.
+Command: `Rscript Smaers_etal_2017/Smaers_etal_2017_TableS1part2.R` from the
+repository root. The rebuilt 10-row analysis CSV matches the prior version
+cell for cell. The PDF transcription remains as a separate source check.
+This layout check is separate from independent human source signoff.

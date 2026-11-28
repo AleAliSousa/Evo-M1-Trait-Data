@@ -41,7 +41,7 @@ Printed table → image-verified snapshot → analysis csv → public TSV.
 |---|---|
 | `Heffner__2004_TABLE1_snapshot.csv` | frozen source, transcribed from the page-image render, footnote markers kept in their own columns exactly as printed |
 | `reference_tables/Heffner__2004_TABLE1_footnotes.csv` | footnote-number → citation text, transcribed from the table's own footnote block |
-| `Heffner__2004_TABLE1.R` | reads the snapshot, resolves footnotes, writes CSV + public TSV |
+| `Heffner__2004_Table1.R` | reads the snapshot, resolves footnotes, writes CSV + public TSV |
 | `Heffner__2004_TABLE1.csv` | one row per species (19) |
 | `reference_tables/Heffner__2004_TABLE1_definitions.csv` | data dictionary |
 
@@ -81,3 +81,7 @@ Species-mean summary value (as compiled by the review), not per-individual.
 ## Units
 kHz (frequency columns), dB re 20 µPa (best sensitivity), octaves (hearing
 range).
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed six-column table, including superscript footnote markers in their source cells, the caption, and bottom notes. R now separates markers from the six source cells before creating its analysis columns. The previously verified minus signs and measurements were retained. Run `Rscript --vanilla Heffner__2004/Heffner__2004_Table1.R` from repository root. Independent human source comparison remains separate.

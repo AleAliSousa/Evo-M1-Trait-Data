@@ -59,3 +59,7 @@ precision at all 14 frequencies -- no arithmetic discrepancies found.
 Frequency in Hz; threshold in dB SPL (re 20 uN/m^2), determined via an
 operant conditioning (food-reinforced key-peck) go/no-go procedure with a
 0.50 corrected-performance criterion.
+
+## Snapshot layout check (2026-11-27)
+
+Compared Table 1 on PDF page 3 with the snapshot. The five columns and 14 frequency rows retain their printed positions; the previously omitted printed caption was restored as the first source row. `Rscript --vanilla Heffner_etal_2016/Heffner_etal_2016_Table1.R` skips that caption, and its analysis CSV is byte-identical to the pre-layout output. This is assistant checking, not independent human source signoff.

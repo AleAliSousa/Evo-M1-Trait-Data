@@ -126,3 +126,7 @@ sources (§9). If Nudo & Masterton 1989/1990b are ever built, run
 ## Flag — absolute values not validated (2026-10-25)
 
 The body, brain and area values are individual FSU animals, and the green-monkey row (1,370 g / 36.54 g) is the same animal printed in Glendenning & Masterton 1998 Table 1. Primate brain masses here are 27–43% below DeCasien-2017 medians and areas are below other sources. Cause unresolved (young animals, partial brain, preparation, recording); shrinkage is neither established nor excluded. Do not pool in species means; within-paper use is fine. **Enforced** since 2026-10-26: brain and body mass rows are skipped by `__metadata/curation/brain_mass_value_flags.csv` and `__merging_body_ecology/body_ecology_value_flags.csv`. See `SOURCE_DISPOSITION_REGISTER.md` and `_keys/specimen_crosswalk/Green_monkey_FSU_specimen_note.md`.
+
+## Layout recheck (2026-11-27)
+
+The Table 1 workbook preserves the printed column positions, grouped header tiers, caption, and source row order. Some wrapped header text occupies fewer worksheet lines, but its cell position and grouping are unchanged. No snapshot or reader edit was needed. Independent human source comparison remains separate.

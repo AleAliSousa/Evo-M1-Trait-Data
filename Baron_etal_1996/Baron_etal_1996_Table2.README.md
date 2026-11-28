@@ -1,5 +1,9 @@
 # Baron et al. 1996 — Table 2
 
+## Snapshot layout audit and correction (2026-11-27)
+
+Compared the eight printed pages of Table 2, including the scanned PDF page 7, with the prior snapshot. Removed the analysis-only `species_row` and `source_pdf_page` columns from the snapshot. It now has the eight printed columns (`species`, `n`, BL, HL, HW, HH, second `n`, CCL), page-continuation headings, and family/subfamily section rows at their source positions. `reference_tables/Baron_etal_1996_Table2_page_lookup.csv` supplies page and row provenance to the R reader. Run `Rscript Baron_etal_1996/Baron_etal_1996_Table2.R` from the repository root; the 303-row analysis CSV is byte-identical (SHA-256 `6e5686b12ba772ebf77f2eef133d2c092127f344608f9104660359966ab27b3a`). The older `Table2_snapshot.R` remains as the historical text extraction and cell-repair record; its prior long-column output is no longer the active snapshot layout. Human source signoff remains independent.
+
 ## Source and scope
 
 Baron, G., Stephan, H., & Frahm, H. D. (1996). *Comparative Neurobiology in

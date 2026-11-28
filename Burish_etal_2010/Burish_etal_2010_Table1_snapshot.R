@@ -79,5 +79,10 @@ variation_rows <- df1$Species == "Variation"
 df1[variation_rows, ] <- apply(df1[variation_rows, ], 2, function(x) {
   ifelse(str_ends(x, "!"), str_replace(x, "!$", "×"), x)
 })
-# Save snapshot as a CSV file
-write.csv(df1, snapshot_csv, row.names = FALSE)
+# Keep the printed caption above the unchanged 15-column grid.
+write.table(matrix(c("Table 1. Cellular composition of the spinal cord",
+                     rep("", ncol(df1) - 1L)), nrow = 1L),
+            snapshot_csv, sep = ",", row.names = FALSE, col.names = FALSE,
+            quote = TRUE)
+write.table(df1, snapshot_csv, sep = ",", row.names = FALSE,
+            col.names = TRUE, quote = TRUE, append = TRUE, na = "NA")

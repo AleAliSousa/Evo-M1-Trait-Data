@@ -21,8 +21,11 @@ root_dir <- local({
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
 
-snapshot <- read.csv(file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
-                     check.names = FALSE, stringsAsFactors = FALSE)
+source(file.path(paper_dir, "_read_baron_multpage.R"))
+snapshot <- read_baron_multpage(
+  file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
+  "Table10", c("n", "OBL", "MES", "CER", "DIE", "TEL"), 56L
+)
 if (!is.null(snapshot$is_header)) {
   ## read.csv() types an is_header column holding only "TRUE"/"" as LOGICAL
   ## (TRUE/NA), and an all-blank one as all-NA. `is_header != "TRUE"` is then

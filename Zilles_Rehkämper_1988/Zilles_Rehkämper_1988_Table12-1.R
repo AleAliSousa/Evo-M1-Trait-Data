@@ -36,7 +36,7 @@ raw <- read_excel(snapshot_file, sheet = snapshot_sheet, skip = 1, col_types = "
 names(raw) <- c("Author", "Sex", "Body_weight_g", "Brain_weight_g", "Origin_of_data")
 
 final.dataframe <- raw %>%
-  filter(!str_detect(coalesce(Author, ""), "^M = male")) %>%
+  filter(!str_detect(coalesce(Author, ""), "^M = male|^TABLE 12-1\\.|^Author$")) %>%
   fill(Author) %>%
   transmute(
     Species = "Pongo sp.",

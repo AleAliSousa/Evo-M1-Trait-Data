@@ -7,6 +7,8 @@ root <- dirname(folder)
 s <- utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),
  check.names=FALSE,colClasses='character',na.strings='',fileEncoding='UTF-8')
 stopifnot(nrow(s)==6L,ncol(s)==9L)
+# The printed region name appears only on the Average line of each block.
+for (i in seq_len(nrow(s))[-1]) if (is.na(s[i,1])) s[i,1] <- s[i-1,1]
 key <- utils::read.csv(file.path(root,'_keys','General','species_key.csv'),stringsAsFactors=FALSE)
 k <- key[key$source_publication==basename(folder) & key$variant_name=='Macaca mulatta',]
 stopifnot(nrow(k)==1L)

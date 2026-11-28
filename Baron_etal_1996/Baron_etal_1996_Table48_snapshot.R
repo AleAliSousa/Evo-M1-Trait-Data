@@ -265,6 +265,24 @@ for (item in sub("^Baron_etal_1996_", "", item_name)) {   # this script writes o
   if (nrow(df) != s$N)
     stop(item, ": ", nrow(df), " rows extracted, the book's Table 1 key gives N = ", s$N)
   out <- file.path(HERE, paste0("Baron_etal_1996_", item, "_snapshot.csv"))
+  # Verify the frozen printed Table 48 grid without replacing its caption and headings.
+  if (item == "Table48") {
+    if (!file.exists(out)) stop(item, ": frozen source-grid snapshot is missing")
+    old <- read.csv(out, header=FALSE, check.names=FALSE, stringsAsFactors=FALSE,
+                    colClasses="character", na.strings=c("", "---"), fileEncoding="UTF-8")
+    is_species <- !is.na(old[[2]]) & grepl("^[0-9]+(?:\\.[0-9]+)?$", trimws(old[[2]]))
+    old <- old[is_species, , drop=FALSE]
+    if (nrow(old) != nrow(df)) stop(item, ": source-grid species count differs from extraction")
+    if (!identical(trimws(old[[1]]), trimws(df$species_printed)))
+      stop(item, ": source-grid species labels differ from extraction")
+    for (j in seq_along(s$cols)) {
+      a <- suppressWarnings(as.numeric(old[[j+1L]])); b <- suppressWarnings(as.numeric(df[[s$cols[j]]]))
+      if (any(is.na(a) != is.na(b) | (!is.na(a) & !is.na(b) & abs(a-b)>1e-9)))
+        stop(item, ": source-grid values differ in ", s$cols[j])
+    }
+    message("  source-grid regression OK: ", item)
+    next
+  }
   # A frozen snapshot that already carries the printed section headings
   # (is_header column) is the hand-checked, page-faithful copy: never overwrite
   # it with the header-less extraction. Verify the extraction reproduces its

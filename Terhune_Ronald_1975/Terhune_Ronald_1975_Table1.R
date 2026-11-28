@@ -47,7 +47,11 @@ library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
 snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
-                  colClasses = "character", encoding = "UTF-8", skip = 1)
+                 colClasses = "character", encoding = "UTF-8", skip = 4,
+                 header = FALSE, nrows = 15,
+                 col.names = c("Frequency (kHz)", "Threshold female (dB re 1 µbar)",
+                               "Threshold male (dB re 1 µbar)", "SD female (dB)", "SD male (dB)",
+                               "Catch trials % correct female", "Catch trials % correct male"))
 stopifnot(nrow(snap) == 15)
 
 ## 3. CLEAN -----------------------------------------------------------

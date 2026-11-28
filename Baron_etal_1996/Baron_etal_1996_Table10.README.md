@@ -40,3 +40,15 @@ derived and are not transcribed.
   `Baron_etal_1996_overlap_taxonomy_audit.R`; it finds zero current core overlap. Merge wiring
   remains on hold for seven historical taxon concepts and for explicit averaging of source rows
   that collapse to the same species.
+
+## Source-layout correction (2026-11-27)
+
+The snapshot now follows printed Table 10 across PDF pp. 56–63,
+with the caption, source-order species and taxonomic headings, repeated
+page headers, and page breaks. `is_header`, `source_pdf_page`, and
+`species_row` are derived by `_read_baron_multpage.R`. The abbreviation
+definitions at the bottom of the last page are represented by their heading
+only. `Rscript --vanilla Baron_etal_1996_Table10.R` reproduced the prior
+272-row analysis CSV cell for cell; `Rscript --vanilla
+Baron_etal_1996_Table10_snapshot.R` passed the source-grid regression.
+This is an assistant layout check, not human visual signoff.

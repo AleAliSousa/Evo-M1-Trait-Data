@@ -18,7 +18,7 @@
 # should treat these as cm3.
 #
 # Output comes from the snapshot only.
-# Input  : Smaers_etal_2017_TableS1part1_snapshot.xlsx   sheet: volumes
+# Input  : Smaers_etal_2017_TableS1part1_snapshot.xlsx   sheet: Table S1
 # Outputs: Smaers_etal_2017_TableS1part1.csv             one row per species (19)
 #          <DOI>_TableS1part1.tsv in __Public/comparative-data/  (named from __ReadMe.xlsx)
 
@@ -48,17 +48,19 @@ suppressPackageStartupMessages({
 ## Set working directory to this script folder
 setwd(folder)
 snapshot_file  <- "Smaers_etal_2017_TableS1part1_snapshot.xlsx"
-snapshot_sheet <- "volumes"
+snapshot_sheet <- "Table S1"
 output_file    <- "Smaers_etal_2017_TableS1part1.csv"
-header_rows    <- 3L
 
 pos <- c("species_disp",
          "primary_visual_gray","prefrontal_gray","other_association_gray","frontal_motor_gray",
          "primary_visual_white","prefrontal_white","other_association_white","frontal_motor_white")
 num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
 
-raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")
-dat <- raw %>% slice(-(seq_len(header_rows)))
+raw <- read_excel(snapshot_file, sheet = snapshot_sheet, range = "A1:AI34",
+                  col_names = FALSE, col_types = "text")
+# The source table occupies the printed 35-column cell grid. Its volume
+# species rows are 4:22; source columns A/E/H/J/M/T/Z/AD/AG carry values.
+dat <- raw[4:22, c(1, 5, 8, 10, 13, 20, 26, 30, 33)]
 names(dat)[seq_along(pos)] <- pos
 
 final.dataframe <- dat %>%

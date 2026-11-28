@@ -16,6 +16,10 @@ source(file.path(repo_base, "_helpers", "cortical_layers_source_common.R"))
 
 item_name <- "Peruffo_etal_2019_Table2"
 raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
+                skip = 2L, header = FALSE,
+                col.names = c("sheep_id_printed", "total_cortex_um", "layer_I_um", "layer_I_percent",
+                              "layer_II_um", "layer_II_percent", "layer_III_um", "layer_III_percent",
+                              "layer_V_um", "layer_V_percent", "layer_VI_um", "layer_VI_percent"),
                 stringsAsFactors = FALSE, check.names = FALSE, na.strings = "")
 Species <- lookup_species("sheep", "Peruffo_etal_2019", repo_base)
 

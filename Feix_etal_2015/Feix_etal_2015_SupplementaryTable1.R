@@ -9,6 +9,8 @@ folder <- dirname(.sp);item_name <- tools::file_path_sans_ext(basename(.sp));bas
 snap <- utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),check.names=FALSE,
   stringsAsFactors=FALSE,colClasses='character',na.strings='',fileEncoding='UTF-8')
 stopifnot(nrow(snap)==45L,ncol(snap)==6L)
+# The printed group cell spans each block; carry its first-row label in R.
+for (j in seq_len(nrow(snap))[-1]) if (is.na(snap$Group[j])) snap$Group[j] <- snap$Group[j-1]
 key <- utils::read.csv(file.path(base,'_keys','General','species_key.csv'),stringsAsFactors=FALSE,fileEncoding='UTF-8')
 key <- key[key$source_publication==basename(folder),]
 i <- match(snap$Species,key$variant_name);stopifnot(!anyNA(i))

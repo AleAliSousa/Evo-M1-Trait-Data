@@ -33,19 +33,24 @@ base        <- local({                                   # repo root; NA if run 
 setwd(folder)
 
 ## ---- read the frozen snapshot (verbatim headers) ----
-snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE,
-                 colClasses = "character", na.strings = c("", "NA"))
-stopifnot(nrow(snap) == 50, ncol(snap) == 13)
-
-## header "<species> [<region>] (G<gestation days>)" -> species, region, gestation
-hd <- names(snap)
-gest <- as.numeric(sub(".*\\(G([0-9.]+)\\)$", "\\1", hd))
-lab  <- trimws(sub("\\s*\\(G[0-9.]+\\)$", "", hd))
-region  <- ifelse(grepl("^(macaque|human) ", lab), sub("^(macaque|human) ", "", lab), NA_character_)
-species <- sub(" (limbic|other|cortex)$", "", lab)
+grid <- read.csv(snapshot_csv, header = FALSE, check.names = FALSE,
+                 stringsAsFactors = FALSE, colClasses = "character",
+                 na.strings = c("", "NA"))
+stopifnot(nrow(grid) == 54L, ncol(grid) == 13L)
+species <- as.character(grid[2L, ])
+for (j in seq_along(species)) if (is.na(species[j]) && j > 1L) species[j] <- species[j - 1L]
+region <- as.character(grid[3L, ])
+gest_label <- as.character(grid[4L, ])
+gest <- vapply(species, function(sp) {
+  val <- unique(na.omit(gest_label[species == sp]))
+  stopifnot(length(val) == 1L)
+  as.numeric(sub("^G", "", val))
+}, numeric(1L))
+snap <- grid[-(1:4), , drop = FALSE]
+names(snap) <- paste0("column", seq_len(ncol(snap)))
 
 out <- list()
-for (j in seq_along(hd)) {
+for (j in seq_along(species)) {
   v <- snap[[j]]; keep <- !is.na(v)
   period <- ifelse(v[keep] == "BIRTH", "birth", ifelse(startsWith(v[keep], "P"), "postnatal", "prenatal"))
   pval <- suppressWarnings(as.numeric(sub("^P", "", v[keep])))          # printed number (PC day or P day)

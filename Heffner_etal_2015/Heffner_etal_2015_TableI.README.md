@@ -52,3 +52,7 @@ comparison species are likewise species means from their own source papers).
 ## Units
 Microseconds (functional head size), degrees (minimum audible angle), kHz
 (phase-cue upper frequency limit).
+
+## Snapshot layout check (2026-11-27)
+
+Compared Table I on PDF page 5. The snapshot now preserves the printed caption, four columns, group headings, common and scientific names in one cell, source order, and lettered notes. The former extra species, common-name, group, and source columns are derived in R; citation labels are kept in `reference_tables/Heffner_etal_2015_TableI_analysis_context.csv`. Run `Rscript --vanilla Heffner_etal_2015/Heffner_etal_2015_TableI.R`. The resulting analysis CSV was compared with its pre-layout version. This assistant comparison is separate from independent human source signoff.

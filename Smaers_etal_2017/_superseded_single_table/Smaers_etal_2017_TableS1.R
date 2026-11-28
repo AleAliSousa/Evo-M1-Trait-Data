@@ -26,9 +26,14 @@ setwd(folder)
 
 setwd(folder)
 options(scipen = 999)
-clean <- read.csv("Smaers_etal_2017_TableS1_snapshot.csv", check.names = FALSE, stringsAsFactors = FALSE)
+source_grid <- read.csv("Smaers_etal_2017_TableS1_snapshot.csv", header = FALSE,
+                        check.names = FALSE, colClasses = "character",
+                        na.strings = c("", "NA"))
+# The archived reader selects the volume block from the full Table S1 grid.
+clean <- source_grid[4:22, c(1, 5, 8, 10, 13, 20, 26, 30, 33)]
 names(clean) <- c("species","primary_visual_gray","prefrontal_gray","other_association_gray","frontal_motor_gray",
                   "primary_visual_white","prefrontal_white","other_association_white","frontal_motor_white")
+clean[-1] <- lapply(clean[-1], as.numeric)
 clean$species <- gsub(" ", "_", trimws(clean$species))
 clean$source  <- "Smaers_etal_2017"
 write.csv(clean, "Smaers_etal_2017_TableS1.csv", row.names = FALSE)

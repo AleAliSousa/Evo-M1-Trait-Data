@@ -34,28 +34,31 @@ base        <- local({                                   # repo root; NA if run 
 setwd(folder)
 
 ## ---- read the frozen snapshot (verbatim headers) ----
-snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE,
+snap <- read.csv(snapshot_csv, header = FALSE, check.names = FALSE, stringsAsFactors = FALSE,
                  colClasses = "character", na.strings = c("", "NA"))
-num <- function(x) suppressWarnings(as.numeric(trimws(x)))
+num <- function(x) suppressWarnings(as.numeric(trimws(sub("\\s*\\[[^]]+\\]$", "", x))))
 
-## first data row of the snapshot is the species score row (printed under the species names)
-sp_score_row <- snap[1, ]
-ev <- snap[-1, ]
+## Caption and two printed heading tiers precede the 95 event rows. Each
+## empirical cell carries its source-reference superscript in the same cell.
+sp_head <- snap[2, ]
+ev <- snap[-(1:3), ]
 stopifnot(nrow(ev) == 95)
 species <- c("hamster", "mouse", "rat", "rabbit", "sp. mouse", "ferret", "cat", "macaque", "human")
 
 out <- list()
 for (k in seq_along(species)) {
-  j <- 3 + (k - 1) * 3                                   # model, empir., empir. ref
-  stopifnot(startsWith(names(snap)[j], species[k]))
+  j <- 3 + (k - 1) * 2                                   # model, empir.
+  stopifnot(startsWith(sp_head[[j]], species[k]))
   out[[k]] <- data.frame(
     species                    = species[k],              # as printed (sp. mouse = spiny mouse per Table 2 header)
     neural_event               = trimws(ev[[1]]),
     event_score                = num(ev[[2]]),
-    species_score              = num(sp_score_row[[j]]),
+    species_score              = num(sub(".*\n", "", sp_head[[j]])),
     predicted_PC_days          = num(ev[[j]]),
     observed_PC_days           = num(ev[[j + 1]]),
-    observed_source_refs       = ev[[j + 2]],             # letters a-m, see definitions / README
+    observed_source_refs       = ifelse(grepl("\\[[^]]+\\]$", ev[[j + 1]]),
+                                         sub(".*\\[([^]]+)\\]$", "\\1", ev[[j + 1]]),
+                                         NA_character_), # letters a-m, see definitions / README
     stringsAsFactors = FALSE)
 }
 clean <- do.call(rbind, out)

@@ -37,8 +37,20 @@ setwd(folder)
 dat <- read.csv(
   paste0(item_name, "_snapshot.csv"),
   stringsAsFactors = FALSE,
-  check.names = FALSE
+  check.names = FALSE,
+  colClasses = "character"
 )
+source_rows <- dat
+parse_cell <- function(x) as.numeric(trimws(strsplit(x, "±", fixed = TRUE)[[1L]]))
+vals <- lapply(source_rows[-1L], function(col) t(vapply(col, parse_cell, numeric(2L))))
+dat <- data.frame(IntegrationLevel = c("Low", "High"), check.names = FALSE)
+stems <- c("Layer_I_II_junction_um", "Layer_II_III_junction_um",
+           "Sampled_soma_depth_um", "Sampled_soma_size_um2",
+           "Layer_III_IV_junction_um", "Gray_white_matter_junction_um")
+for (i in seq_along(stems)) {
+  dat[[paste0(stems[i], "_mean")]] <- c(vals[[1L]][i, 1L], vals[[2L]][i, 1L])
+  dat[[paste0(stems[i], "_SD")]] <- c(vals[[1L]][i, 2L], vals[[2L]][i, 2L])
+}
 
 csv_file <- paste0(item_name, ".csv")
 

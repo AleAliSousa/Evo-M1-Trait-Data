@@ -32,8 +32,25 @@ base        <- local({                                   # repo root; NA if run 
 })
 setwd(folder)
 
-## ---- read the frozen snapshot (verbatim headers; blanks stay blank) ----
-snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE, na.strings = character(0), colClasses = "character")
+## ---- read printed grid; create section keys here for analysis ----
+grid <- read.csv(snapshot_csv, header = FALSE, check.names = FALSE,
+                 stringsAsFactors = FALSE, na.strings = character(0),
+                 colClasses = "character", blank.lines.skip = FALSE)
+stopifnot(ncol(grid) == 6L, grepl("^Table 1\\.", grid[[1]][1]),
+          identical(grid[[2]][2], "Specimen"))
+spec <- c(unlist(grid[3, 2:5]), "Mean")
+body <- grid[-(1:3), , drop = FALSE]
+section <- ""
+keys <- character(nrow(body))
+for (i in seq_len(nrow(body))) {
+  label <- trimws(body[[1]][i])
+  if (label %in% c("Telencephalon", "Diencephalon")) section <- label
+  if (label %in% c("Brain weight, g", "Sections, n", "Mesencephalon", "Pons", "Cerebellum", "Medulla")) section <- ""
+  keys[i] <- if (nzchar(section) && !(label %in% c("Telencephalon", "Diencephalon")))
+    paste(section, label, sep = ": ") else label
+}
+snap <- data.frame(Parameter = keys, body[, 2:6], check.names = FALSE)
+names(snap) <- c("Parameter", spec)
 num <- function(x) suppressWarnings(as.numeric(gsub(",", "", trimws(as.character(x)))))
 
 g <- function(label) { r <- snap[snap$Parameter == label, , drop = FALSE]; stopifnot(nrow(r) == 1); num(gsub("[()]", "", unlist(r[1, -1]))) }

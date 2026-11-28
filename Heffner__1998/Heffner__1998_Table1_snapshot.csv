@@ -1,20 +1,23 @@
-Animal,Low-frequency limit (Hz) as extracted,High-frequency limit (Hz),Best sensitivity (dB),Best frequency (Hz)
-Laboratory mouse,900,79000,5,15000
-Cat,55,79000,-10,8000
-Laboratory rat,530,70500,0,8000
-Rabbit,96,49000,4,4000
-Guinea pig,47,49000,-6,8000
-Dog,67,44000,-1,8000
-Sheep,125,42000,-6,10000
-Pig,42,40500,9,8000
-Goat,78,37000,-11,2000
-Cattle,23,37000,-11,8000
-Horse,55,33500,7,2000
-Chinchilla,50,33000,1,1000
-Human,31,17600,-10,4000
-Canary,250,10000,8,2800
-Budgerigar,125,8000,2,2800
-Zebra finch,-250,7000,21,4000
-Turkey,-250,7000,17,1000
-Pigeon,-125,6600,10,3000
-Mallard duck,-300,6000,15,2000
+Table 1. The hearing range and sensitivity of domestic birds and mammals compared with that of humans,,,,
+Animal,Low-frequency limit (Hz),High-frequency limit (Hz),Best sensitivity (dB),Best frequency (Hz)
+Laboratory mouse,900,"79,000",5,"15,000"
+Cat,55,"79,000",-10,"8,000"
+Laboratory rat,530,"70,500",0,"8,000"
+Rabbit,96,"49,000",4,"4,000"
+Guinea pig,47,"49,000",-6,"8,000"
+Dog,67,"44,000",-1,"8,000"
+Sheep,125,"42,000",-6,"10,000"
+Pig,42,"40,500",9,"8,000"
+Goat,78,"37,000",-11,"2,000"
+Cattle,23,"37,000",-11,"8,000"
+Horse,55,"33,500",7,"2,000"
+Chinchilla,50,"33,000",1,"1,000"
+Human,31,"17,600",-10,"4,000"
+Canary,250,"10,000",8,"2,800"
+Budgerigar,125,"8,000",2,"2,800"
+Zebra finch,< 250,"7,000",21,"4,000"
+Turkey,< 250,"7,000",17,"1,000"
+Pigeon,< 125,"6,600",10,"3,000"
+Mallard duck,< 300,"6,000",15,"2,000"
+Species are listed in descending order of high-frequency hearing and then low-frequency hearing. Low- and high-frequency limits are the lowest and highest frequencies audible at 60 dB (re 20 µN/m²). Best sensitivity is a species’ lowest threshold and best frequency is the frequency at which it occurs.,,,,
+"For individual data, see Fay (1988) and Heffner and Heffner (1992a).",,,,

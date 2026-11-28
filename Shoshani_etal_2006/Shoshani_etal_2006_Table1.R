@@ -33,7 +33,20 @@ base        <- local({                                   # repo root; NA if run 
 setwd(folder)
 
 ## ---- read the frozen snapshot (verbatim headers; blanks stay blank) ----
-snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE, na.strings = character(0), colClasses = "character")
+source_grid <- read.csv(snapshot_csv, header = FALSE, check.names = FALSE,
+                        stringsAsFactors = FALSE, na.strings = character(0),
+                        colClasses = "character")
+section_by_row <- character(nrow(source_grid))
+current_section <- NA_character_
+for (i in seq_len(nrow(source_grid))) {
+  if (grepl("^\\([A-E]\\) ", source_grid[[1]][i]))
+    current_section <- substr(source_grid[[1]][i], 2, 2)
+  section_by_row[i] <- current_section
+}
+data_row <- grepl("^[0-9]+$", source_grid[[1]])
+snap <- source_grid[data_row, , drop = FALSE]
+snap$section <- section_by_row[data_row]
+stopifnot(nrow(snap) == 44L)
 num <- function(x) suppressWarnings(as.numeric(gsub(",", "", trimws(as.character(x)))))
 
 ## strip superscript footnote tags "^f1" etc. from a cell; keep the rest as printed
@@ -43,26 +56,26 @@ tags  <- function(x) vapply(regmatches(x, gregexpr("\\^[A-Za-z]+[0-9]*", x)),
 ## first number in a cell that is a plain number (NA for 'No data', 'Brain', 'A or B' ranges etc.)
 plain <- function(x) { x <- untag(x); ifelse(grepl("^[0-9.,]+$", x), num(x), NA_real_) }
 
-bs  <- untag(snap[[9]]); cer <- untag(snap[[10]])
+bs  <- untag(snap[[8]]); cer <- untag(snap[[9]])
 clean <- data.frame(
   sample_no            = as.integer(snap[[1]]),
-  section              = substr(snap[[2]], 2, 2),                 # A-E, from the printed group headings
-  taxon                = snap[[3]],                               # as printed
-  specimen_or_source   = snap[[4]],
-  captive_or_wild      = untag(snap[[5]]),                        # C, W, ?C, ?, etc.
-  age_printed          = snap[[6]],                               # years, Ad., ?Ad., Yg., Calf
-  sex                  = snap[[7]],
-  body_mass_g_printed  = untag(snap[[8]]),
-  body_mass_g          = plain(snap[[8]]),                        # g as printed (see README: sample 6 printed 1793.300)
+  section              = snap$section,                            # A-E, from printed section rows
+  taxon                = snap[[2]],                               # as printed
+  specimen_or_source   = snap[[3]],
+  captive_or_wild      = untag(snap[[4]]),                        # C, W, ?C, ?, etc.
+  age_printed          = snap[[5]],                               # years, Ad., ?Ad., Yg., Calf
+  sex                  = snap[[6]],
+  body_mass_g_printed  = untag(snap[[7]]),
+  body_mass_g          = plain(snap[[7]]),                        # g as printed (see README: sample 6 printed 1793.300)
   brain_mass_g_printed = bs,
-  brain_mass_g         = plain(snap[[9]]),                        # brain WITH brain-stem and dura fragments (footnote g)
+  brain_mass_g         = plain(snap[[8]]),                        # brain WITH brain-stem and dura fragments (footnote g)
   cerebellum_mass_g    = ifelse(grepl("/", cer), num(sub("/.*", "", cer)), NA_real_),
   cerebellum_pct_of_brain = ifelse(grepl("/", cer), num(sub(".*/", "", cer)), NA_real_),
-  dura_mater_g_printed = untag(snap[[11]]),
-  dura_mater_g         = plain(snap[[11]]),
-  EQ_printed           = untag(snap[[12]]),
-  EQ                   = plain(snap[[12]]),                       # printed value; brackets/NA/j-note cells -> NA
-  footnote_tags        = mapply(function(i) paste(c(tags(snap[[4]][i]), tags(snap[[5]][i]), tags(snap[[8]][i]), tags(snap[[9]][i]), tags(snap[[10]][i]), tags(snap[[11]][i]), tags(snap[[12]][i])), collapse = ";"), seq_len(nrow(snap))),
+  dura_mater_g_printed = untag(snap[[10]]),
+  dura_mater_g         = plain(snap[[10]]),
+  EQ_printed           = untag(snap[[11]]),
+  EQ                   = plain(snap[[11]]),                       # printed value; brackets/NA/j-note cells -> NA
+  footnote_tags        = mapply(function(i) paste(c(tags(snap[[3]][i]), tags(snap[[4]][i]), tags(snap[[7]][i]), tags(snap[[8]][i]), tags(snap[[9]][i]), tags(snap[[10]][i]), tags(snap[[11]][i])), collapse = ";"), seq_len(nrow(snap))),
   source               = source_name,
   stringsAsFactors = FALSE
 )

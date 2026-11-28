@@ -27,13 +27,19 @@ Gait-mechanics traits plus context; the analysis transforms (logs, arcsines) sta
 ## Source -> snapshot -> CSV
 - **Source:** `mammal_gait.txt` (tab-separated, kept in this folder).
 - **Snapshot:** `Wimberly_etal_2021_MammalGait_snapshot.xlsx` (sheet `MammalGait_snapshot`) — a frozen,
-  faithful copy of the source, all 13 original columns (the blank first header is named
-  `Species_printed`). Golden rule: freeze before cleaning.
+  faithful copy of the source grid, all 14 columns, including the blank first
+  header. The R reader names that column `Species_printed` during reformatting.
 - **Reformat:** `Wimberly_etal_2021_MammalGait.R` reads the snapshot, selects the focal columns,
   harmonises species names against `_keys` (printed name preserved as `Species`, accepted binomial in
   `species_sci`), and writes:
   - `Wimberly_etal_2021_MammalGait.csv` (analysis-ready)
   - `__Public/comparative-data/10.1098%2Frspb.2021.0937_MammalGait.tsv` (public, DOI-encoded)
+
+Layout audit (2026-11-27): The former snapshot had changed the source's blank
+A1 header to `Species_printed`. Restoring the blank made all 155 × 14 cells
+match `mammal_gait.txt` at the same positions. `Rscript --vanilla
+Wimberly_etal_2021_MammalGait.R` reproduced the 154-row analysis CSV cell
+for cell. Human source signoff is separate.
 
 ## Species names
 Printed names preserved verbatim in `Species` (underscores -> spaces); accepted binomials in

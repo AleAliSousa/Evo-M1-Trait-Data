@@ -38,3 +38,8 @@ the source footnote for that detail if cross-paper specimen deduplication is nee
 Transcribed directly from the article PDF's Table 1 (page 2) by Microsoft Copilot (AI assistant) on
 2026-09-25. The CSV, R script, public TSV, README, and definitions file were all built in this pass.
 No prior build existed for this item.
+
+
+## Snapshot layout audit (2026-11-27)
+
+The printed table has five columns. Removed derived sex/age columns from the snapshot and restored printed dash cells; the R reader derives sex and age from Subject. Compared with local PDF Table 1. Ran `Rscript Jacobs_etal_2001/Jacobs_etal_2001_Table1.R`; 10-row CSV SHA-256 stayed `90fda7f86cdd43778a2ee3cc0b629e177f032b22062b4fc645746dde8cf91e21`.

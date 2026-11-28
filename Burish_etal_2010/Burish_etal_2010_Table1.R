@@ -34,7 +34,7 @@ library(stringr)
 library(readxl)
 ## 2. READ SNAPSHOT ---------------------------------------------------------
 # Frozen snapshot written by Burish_etal_2010_Table1_snapshot.R (this script only reads it).
-df1 <- read.csv(snapshot_csv, colClasses = "character", check.names = FALSE)
+df1 <- read.csv(snapshot_csv, skip = 1L, colClasses = "character", check.names = FALSE)
 ## 3. MAKE DATA READABLE -----------------------------------------------------
 result_df <- df1
 # Replace "n.a." with NA in the entire dataframe

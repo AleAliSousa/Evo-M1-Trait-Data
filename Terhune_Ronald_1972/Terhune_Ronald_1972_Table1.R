@@ -42,7 +42,7 @@ library(readxl)
 ## skip the title line and the trailing footnote line
 snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
                   colClasses = "character", encoding = "UTF-8",
-                  skip = 1, nrows = 21)
+                  skip = 2, nrows = 21)
 stopifnot(nrow(snap) == 21)
 
 ## 3. CLEAN -----------------------------------------------------------

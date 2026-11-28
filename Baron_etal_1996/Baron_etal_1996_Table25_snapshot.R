@@ -222,9 +222,17 @@ is_header_row <- function(x) {
   x <- toupper(trimws(as.character(x)))   # read.csv types "TRUE"/"" as logical
   !is.na(x) & x == "TRUE"
 }
+source(file.path(HERE, "_read_baron_multpage.R"))
 read_frozen <- function(item) {
-  read.csv(file.path(HERE, paste0("Baron_etal_1996_", item, "_snapshot.csv")),
-           check.names = FALSE, stringsAsFactors = FALSE)
+  path <- file.path(HERE, paste0("Baron_etal_1996_", item, "_snapshot.csv"))
+  if (identical(item, "Table10"))
+    return(read_baron_multpage(path, item, c("n","OBL","MES","CER","DIE","TEL"), 56L))
+  if (identical(item, "Table32"))
+    return(read_baron_multpage(path, item, c("MOB","PAL","STR","SEP","AMY","HIP","SCH","NEO"), 138L))
+  if (identical(item, "Table25")) {
+    return(read_baron_multpage(path, item, SPECS[[item]]$cols, 122L))
+  }
+  read.csv(path, check.names = FALSE, stringsAsFactors = FALSE)
 }
 read_frozen_species_rows <- function(item) {
   old <- read_frozen(item)

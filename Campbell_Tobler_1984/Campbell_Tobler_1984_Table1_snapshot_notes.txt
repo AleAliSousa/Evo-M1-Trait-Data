@@ -1,3 +1,13 @@
 Table 1. Sleep durations for 168 species, printed pp.284–291. Full table retained, including nonmammals. The title's species count is not imposed on record count: strains, repeated conditions and historical taxonomic labels remain separate. Studies are shown at right; A indicates abstract-only data. Measurement B is behavioural observation; E is electrographic recordings. Less-than-24-hour recording duration appears in parentheses. N is animals in the cited study. Drowsiness is excluded unless explicitly noted. Rows from the 31-species wild-bird block are attributed to Amlaner and Ball (1983); the table itself is a secondary review.
 All eight pages were machine visually inspected. OCR character errors were restored to print; historical misspellings visible in print (e.g. Elephus maximus, Loxodonto africano, Gallerinus ursinus) remain. Source row/page and extraction bounds are retained in the context lookup. Scientific names broken across lines are joined downstream, and P./M. rodent abbreviations expanded from their immediately preceding genus. The raw Class/Species field preserves printed names. Shared reference [8] covers both mole rows. Halichoerus has a recording-duration note but no printed sleep-duration value and is not treated as 14 hours of sleep.
 The analysis expands multiple explicit sleep conditions (Triturus and Papio papio) into separate records. Ranges are kept as lower/upper bounds; no midpoint. A point Daily_sleep_h is supplied only when there is exactly one reported point value, no short-record note, and no included-drowsiness flag. This is an eligibility rule for comparison, not a correction to the source. Source study/measurement details remain essential for interpretation.
+
+Snapshot layout audit (2026-11-27): Compared the eight-page printed Table 1
+with its source row/page context lookup. Restored the printed class and subgroup
+section rows and a separate grouped heading tier in the 10-column snapshot.
+The R reader skips the headings/section rows and preserves the existing 169
+source data rows. Page continuation headings are omitted from the CSV grid;
+the context lookup retains each original PDF and printed page. Ran
+`Rscript Campbell_Tobler_1984/Campbell_Tobler_1984_Table1.R`; the 171-row
+analysis CSV retained SHA-256
+70d4ea5c3a9056b74d68db57f6a46446c09098c4189cc8efa786e688acaa1521.

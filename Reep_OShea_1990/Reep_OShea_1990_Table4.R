@@ -31,8 +31,12 @@ base        <- local({                                   # repo root; NA if run 
 })
 setwd(folder)
 
-## ---- read the frozen snapshot (verbatim headers; blanks stay blank) ----
-snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE, na.strings = character(0), colClasses = "character")
+## ---- select the four printed data rows below caption and header tiers ----
+grid <- read.csv(snapshot_csv, header = FALSE, check.names = FALSE,
+                 stringsAsFactors = FALSE, na.strings = character(0), colClasses = "character")
+stopifnot(ncol(grid) == 3L, grepl("^Table 4\\.", grid[[1]][1]),
+          identical(unname(unlist(grid[3, 2:3])), c("(mean)", "SD")))
+snap <- grid[4:7, , drop = FALSE]
 num <- function(x) suppressWarnings(as.numeric(gsub(",", "", trimws(as.character(x)))))
 
 clean <- data.frame(

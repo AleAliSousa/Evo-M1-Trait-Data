@@ -30,8 +30,16 @@ base      <- local({                                     # repo root; NA if run 
 })
 setwd(folder)
 
-snap <- read.csv(file.path(folder, "Sherwood_etal_2005_Table1_snapshot.csv"),
-                 stringsAsFactors = FALSE, check.names = FALSE)
+grid <- read.csv(file.path(folder, "Sherwood_etal_2005_Table1_snapshot.csv"),
+                 header=FALSE, colClasses="character", stringsAsFactors=FALSE,
+                 check.names=FALSE, na.strings=character(0))
+stopifnot(ncol(grid)==10L)
+snap <- grid[grepl("^[0-9]+$",grid[[2]]), , drop=FALSE]
+stopifnot(nrow(snap)==47L)
+names(snap) <- c("species","N","Medulla_volume_Mean","Medulla_volume_SD",
+                 "Vmo_volume_Mean","Vmo_volume_SD","VII_volume_Mean",
+                 "VII_volume_SD","XII_volume_Mean","XII_volume_SD")
+snap <- snap[order(snap$species), , drop=FALSE]  # analysis order; snapshot stays printed
 numv <- function(x) suppressWarnings(as.numeric(gsub(",", "", trimws(as.character(x)))))
 
 clean <- tibble(

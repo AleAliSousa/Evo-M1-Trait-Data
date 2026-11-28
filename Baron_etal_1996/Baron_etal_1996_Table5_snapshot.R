@@ -1,4 +1,6 @@
-# Baron_etal_1996_Table5_snapshot.R -- writes ONLY Baron_etal_1996_Table5_snapshot.csv
+# Historical extractor of the standard Table 5 rows. The active snapshot was
+# rebuilt as the printed eight-column grid on 2026-11-27; do not overwrite it
+# with this legacy extractor's normalized output.
 #
 # R port (2026-11-12) of Baron_etal_1996_Table5_snapshot.py, retired as
 # Baron_etal_1996_Table5_snapshot.py.retired. The original docstring follows (the Python-specific

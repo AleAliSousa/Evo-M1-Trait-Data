@@ -20,3 +20,7 @@ Build: frozen source → analysis CSV → registry-coded public TSV. Numeric sou
 Source inspection: assistant checked; no human visual sign-off claimed.
 
 Rebuild: `Rscript Posada_Colell_2007/Posada_Colell_2007_TableI.R`.
+
+## Snapshot layout and transcription correction (2026-11-27)
+
+Restored the printed caption, Phases/Covered/Uncovered/Uncovered with mark header tiers and the separate Lookings section row. Restored printed percent signs and decimal commas. The source row says `Self-direct`, whereas the previous snapshot had `Self-directed`; the snapshot and analysis label now match the source. The R reader parses percentages and decimal commas and selects the nine data rows. The rebuilt numerical values are unchanged; `source_row` and raw source strings now refer to the corrected snapshot. Run `Rscript --vanilla Posada_Colell_2007/Posada_Colell_2007_TableI.R` from repository root. The Agonistic percent and Uncovered total inconsistencies are printed in the PDF and remain documented. Independent human source comparison remains separate.

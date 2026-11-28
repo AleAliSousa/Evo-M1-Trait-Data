@@ -14,7 +14,9 @@ TSV). Now built to convention:
 - **Frozen source (digital-native, no snapshot):** the journal download
   `gyz043_suppl_Supplement_Data.csv` (14 columns, 1,552 rows) is machine-readable, so it **is** the
   frozen source — kept verbatim, never edited (see `__HOWTO_build_a_dataset_file.md` §0a invariant 1).
-  The earlier `_snapshot.xlsx` was a redundant re-save and has been removed.
+  A legacy `_snapshot.xlsx` remains in the folder. Its 1,553 × 14 worksheet
+  grid was checked cell for cell against the journal CSV on 2026-11-27; the
+  reader continues to use the journal CSV directly.
 - **Reformat:** `Burger_etal_2019_SupplementaryDataSD1.R` reads the source CSV directly, adds the accepted
   binomial as `species_sci` (via `_keys/*/species_key.csv` + `species_reference.csv`; printed
   `Binomial` preserved), and writes:

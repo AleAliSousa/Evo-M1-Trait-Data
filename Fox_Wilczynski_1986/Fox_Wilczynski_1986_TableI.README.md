@@ -48,8 +48,7 @@ cites for comparison (that data lives in its own Stephan-authored registry items
 contains only the paper's own newly collected rodent measurements.
 
 ## Checks
-- 5 rows (2 mouse sex-groups + gerbil + hamster + rat), 14 columns (paired mean/SD for each of
-  6 measures, plus N), matching the printed table exactly.
+- The snapshot has five printed animal rows and seven source columns; the analysis CSV has five rows and fifteen derived columns (sex, N, and six mean/SD pairs).
 - Rank order across species for each measure cross-checked against the shape of the log/log
   regression lines in Figure 2 (same page) — consistent.
 
@@ -58,3 +57,7 @@ Transcribed directly from the article PDF's Table I page image (p. 162) by Micro
 (AI assistant) on 2026-09-25, after the user supplied the previously-missing source PDF. The CSV,
 R script, public TSV, README, and definitions file were all built in this pass. No prior build
 existed for this item.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared with Table I in the local PDF, printed p. 162. The old 15-column snapshot had split every mean ± SD pair and inserted Sex and N, which are not table columns. It is now a seven-column sketch: animal label plus six printed value columns. The R reader extracts mean/SD and supplies the Methods sample sizes and expanded labels. `Rscript --vanilla Fox_Wilczynski_1986/Fox_Wilczynski_1986_TableI.R` rebuilt the analysis CSV and public TSV; the CSV matches its tracked version (`git diff` empty). Human visual signoff remains separate.

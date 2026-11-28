@@ -55,7 +55,7 @@ programmatically (by the series citation in column A); nothing here is retyped f
 
 Totals: 122 patches, 572 795 cell bodies counted in layers I–VI.
 
-## Source → Snapshot → Data readable
+## Source → Data readable
 - **Source (born-digital, EBRAINS data-proxy bucket `p22717-hbp-d000061_BB-CorticalCellDistribution_pub`, one folder
   `<area_dir>/v1.0/` per dataset version).** Each dataset holds, per patch, image patches (nii.gz/png), layer polygons
   (json), segmentation masks (tif), `report.pdf`, and three text files — `info.txt` (ids), `layerinfo.txt` (area in
@@ -75,20 +75,21 @@ Totals: 122 patches, 572 795 cell bodies counted in layers I–VI.
   TRUE) for the downloaded ones; images, masks, polygons and per-patch pdfs are recorded there but not downloaded.
   It also writes `reference_tables/Dickscheid_etal_2021_datasets.csv` (Item name ↔ DOI, KG uuid, bucket folder,
   Julich-Brain area name from the KG record, sections, patches). All 12 KG DOIs equal registry column C.
-- **Reader 2 — `Dickscheid_etal_2021_snapshot.py`** (one parameterised script, `--item <Item name>` or all):
-  verifies each per-patch file against the manifest sha256 (re-downloading a missing one) and writes the constructed
-  snapshot **`<Item name>_snapshot.csv`**: one row per patch × layer, `layerinfo.txt` values **as printed** (numeric
-  strings copied verbatim), the count of `segments.txt` rows with that layer index, the patch totals, and the bucket
-  paths of the two source files. 6 rows per patch; 54–66 rows per item (732 in all). Nothing is averaged or
-  converted there. It refuses to overwrite a differing frozen copy (`--force`, then note it here). Snapshot type:
-  constructed from born-digital files — `Human visual check of snapshot`: not applicable (no printed table; the
-  per-patch files are text and copied untouched).
+- **Source-layout audit (2026-11-27):** The former 12 `<Item name>_snapshot.csv`
+  files joined `info.txt`, `layerinfo.txt`, and `segments.txt` into one derived
+  patch-by-layer table. They were retired because that join changes the source
+  layout. The original 122 sets of three born-digital source files remain
+  frozen in `ebrains_downloads/`, with each file's bucket MD5 in
+  `download_manifest.csv`. The old generator is retained as
+  `Dickscheid_etal_2021_snapshot.py.retired` for history.
 - **Reader 3 — `Dickscheid_etal_2021_stats_pdf_bars.py`:** reads the bar heights of each `stats.pdf` (vector pdf:
   filled rectangles; y axis calibrated from the tick labels, zero = bottom of the axes frame; x labels I…VI
   asserted) into `reference_tables/Dickscheid_etal_2021_stats_pdf_bars.csv` (144 rows). This is **QA only** — the
   published averaged figure made numeric — never a data source.
 - **Build — `Dickscheid_etal_2021_build.R`** (one parameterised script, R 4.5.3, environment `evom1-r`;
-  `Rscript Dickscheid_etal_2021_build.R [Item name]`): reads only the snapshot(s) and the two reference tables,
+  `Rscript Dickscheid_etal_2021_build.R [Item name]`): verifies the raw source
+  files against the manifest MD5, joins the three source tables and counts
+  segmented cells in R, then reads the two reference tables,
   computes the per-patch densities and the layer means/sds, the `I-VI` row, `n_patches`, `n_sections`, `n_cells`,
   and writes **`<Item name>.csv`** (long, 7 rows: Species, Species_Dickscheid2021, specimen, structure,
   structure_bucket, layer, cell_density, cell_density_sd, density_unit_as_published, layer_thickness,
@@ -99,6 +100,11 @@ Totals: 122 patches, 572 795 cell bodies counted in layers I–VI.
   `validate_dataset_item()` (see below); `build_dataset_item()` would run only the first `.R` of the folder and is
   not used for this series. The `read_excel` call on the registry emits ~136 harmless "Expecting logical …" type
   warnings (sparse text columns AN/AO), as in every build script.
+
+The direct-source R build regenerated all 12 seven-row analysis CSVs byte for
+byte from the prior outputs. Its 143/144 figure-bar QA checks retain the one
+pre-existing Area 4a layer-III discrepancy described below. Human source
+comparison/signoff remains separate.
 
 ## Table checks (`table_checks` in the build; 144 checks = 12 items × 6 layers × {density, thickness})
 Relation: the layer mean computed from `segments.txt`/`layerinfo.txt` must equal the bar of the dataset's own averaged
@@ -113,7 +119,7 @@ which is why `layer_thickness` is declared uncorrected despite the README's stat
 
 ## QA against siibra (`siibra` 1.0.1a27, `siibra.features.get(Julich-Brain 3.0.3, "LayerwiseCellDensity")`, 2026-11-17)
 siibra exposes exactly these 12 datasets (same bucket files) and computes per-patch densities with the same formula
-(`features/tabular/layerwise_cell_density.py`). Comparison of its 731 patch × layer rows with the snapshot-derived
+(`features/tabular/layerwise_cell_density.py`). Comparison of its 731 patch × layer rows with the formerly constructed
 values: **731/731 identical** (counts, areas, densities; max |Δ| = 0.0). Area-level means: identical for 71/72
 area × layer cells; the exception is Area 4a layer IV, where siibra's `counts.loc[layer]` raises `KeyError` for the
 zero-count patch and silently drops it (mean 56.15 over 8 patches) whereas this build and `stats.pdf` include it as 0
@@ -124,11 +130,10 @@ independent published mean beyond `stats.pdf`.
 ```
 Dickscheid_etal_2021/
   Dickscheid_etal_2021_download.py            reader 1: registry rows -> KG records -> bucket files + manifest + datasets table
-  Dickscheid_etal_2021_snapshot.py            reader 2 (parameterised): per-patch files -> <Item name>_snapshot.csv (x12)
+  Dickscheid_etal_2021_snapshot.py.retired    former joined-snapshot generator (history only)
   Dickscheid_etal_2021_stats_pdf_bars.py      reader 3: stats.pdf bars -> reference_tables/..._stats_pdf_bars.csv (QA)
-  Dickscheid_etal_2021_build.R                build (parameterised): snapshot -> <Item name>.csv (x12) + public TSVs (x12)
+  Dickscheid_etal_2021_build.R                build (parameterised): frozen per-patch source files -> <Item name>.csv (x12) + public TSVs (x12)
   Dickscheid_etal_2021.README.md              this file (series README)
-  Dickscheid_etal_2021_<Area>_snapshot.csv    12 frozen snapshots (constructed, per patch x layer)
   Dickscheid_etal_2021_<Area>.csv             12 analysis CSVs (use these)
   reference_tables/Dickscheid_etal_2021_definitions.csv     data dictionary (series)
   reference_tables/Dickscheid_etal_2021_datasets.csv        Item name <-> DOI / KG uuid / bucket folder / area / n
@@ -137,11 +142,12 @@ Dickscheid_etal_2021/
   ebrains_downloads/kg_records/<uuid>.json                  12 KG dataset-version records
   ebrains_downloads/<area_dir>/v1.0/{README.md, stats.pdf, DataDescriptor_*.pdf, <section>/<patch>/{info,layerinfo,segments}.txt}
 ```
-`ebrains_downloads/` is 86 MB (segments.txt files); it can be deleted and is restored by the snapshot script from the
-manifest URLs with sha256 verification.
+`ebrains_downloads/` is 86 MB (segments.txt files) and is the frozen source
+for this series. Keep it with the manifest; the R build verifies each source
+file against the recorded bucket MD5.
 
 ## Owner decisions / open points
-- One parameterised snapshot script and one parameterised build serve all 12 items (brief); the house default is one
+- One parameterised build serves all 12 items; the house default is one
   `<Item>.R` per CSV. If per-item wrappers are wanted later, each would be a two-line `source()` of the build with
   `item_name` set from its own filename.
 - One definitions file for the series with `Reference = Dickscheid_etal_2021`; the variable catalog derives `item`

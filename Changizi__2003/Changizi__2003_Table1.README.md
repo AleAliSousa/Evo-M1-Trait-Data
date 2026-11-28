@@ -24,3 +24,11 @@ bottom of journal p. 160). Frozen in `Changizi__2003_Table1_snapshot.xlsx` (shee
 re-run the .R in RStudio.
 
 Pipeline: Source ✅ → Snapshot ✅ → Data readable ✅ → Registry stage ⬜ → R rerun ⬜ → Merge ⬜
+
+## Snapshot layout audit (2026-11-27)
+
+Compared source PDF Table 1 with the workbook. Restored the seven printed
+columns; order labels and species names now occupy the same first column, and
+row type plus repeated order are derived in R. Ran
+`Rscript Changizi__2003/Changizi__2003_Table1.R`; the 35-row CSV retained
+SHA-256 `f51569d3f815a4f9f6f4b8630040d06ed5cb1957d3571ba6c5540afe273a377b`.

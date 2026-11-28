@@ -9,8 +9,9 @@
   stop('Run saved item script with Rscript or source().')
 })
 folder <- dirname(.sp); item_name <- tools::file_path_sans_ext(basename(.sp)); base <- dirname(folder)
-snap <- utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),check.names=FALSE,
-                        stringsAsFactors=FALSE,colClasses='character',na.strings='',fileEncoding='UTF-8')
+snap <- utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),skip=1,nrows=11,
+                        check.names=FALSE,stringsAsFactors=FALSE,colClasses='character',
+                        na.strings='',fileEncoding='UTF-8')
 key <- utils::read.csv(file.path(base,'_keys','General','species_key.csv'),stringsAsFactors=FALSE,fileEncoding='UTF-8')
 key <- key[key$source_publication==basename(folder),]
 lookup <- function(x){m <- match(x,key$variant_name);stopifnot(!anyNA(m));key$accepted_name[m]}

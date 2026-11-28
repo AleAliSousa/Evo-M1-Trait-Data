@@ -43,7 +43,15 @@ Heffner & Heffner (1992a), not new measurements of this paper's own.
   `low_frequency_limit_qualifier`. Until 2026-09-29 these cells were left
   blank on the assumption the glyph was ">" (limit not reached from above);
   the change is logged in `reference_tables/Heffner__1998_errata.csv`
-  (E001-E004). The snapshot keeps the literal extraction.
+  (E001-E004). The snapshot now keeps the printed less-than signs; the R
+  reader turns them into a numeric bound and qualifier.
+
+Layout audit (2026-11-27): compared printed Table 1 on PDF p. 3. The snapshot
+now includes the caption and source notes, restores printed thousands
+separators, and replaces four OCR minus signs with the printed less-than
+bounds. Run `Rscript Heffner__1998/Heffner__1998_Table1.R` from the repository
+root. The 19-row analysis CSV remained cell-identical. Independent human source
+comparison is separate.
 - Best-sensitivity values are printed with an OCR "y" standing in for a
   minus sign elsewhere in this same PDF's raw text (e.g. "y10" = "-10");
   those have been resolved unambiguously to their negative dB values here

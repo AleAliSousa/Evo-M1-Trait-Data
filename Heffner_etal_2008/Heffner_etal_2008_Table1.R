@@ -36,22 +36,29 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
-                  colClasses = "character", encoding = "UTF-8")
-stopifnot(nrow(snap) == 7)
-
-## 3. CLEAN -----------------------------------------------------------
+grid <- read.csv(snapshot_csv, skip = 1, header = FALSE, col.names = c("Species", "Common name", "Threshold"),
+                 stringsAsFactors = FALSE, check.names = FALSE, colClasses = "character", encoding = "UTF-8",
+                 blank.lines.skip = FALSE)
+stopifnot(grid$Species[1] == "Species")
+species_rows <- grid[grepl("^[0-9]+(?:\\.[0-9]+)?$", grid$Threshold), , drop = FALSE]
+stopifnot(nrow(species_rows) == 7, !anyDuplicated(species_rows$Species))
+context <- read.csv(file.path(folder, "reference_tables", "Heffner_etal_2008_Table1_analysis_context.csv"),
+                    stringsAsFactors = FALSE, check.names = FALSE)
+stopifnot(setequal(context$species, species_rows$Species))
+## The source table prints non-echolocators first; retain the prior analysis order here.
+analysis_order <- c("Phyllostomus hastatus", "Artibeus jamaicensis", "Cynopterus brachyotis",
+                    "Eidolon helvum", "Rousettus aegyptiacus", "Eptesicus fuscus", "Carollia perspicillata")
+species_rows <- species_rows[match(analysis_order, species_rows$Species), , drop = FALSE]
+context <- context[match(species_rows$Species, context$species), , drop = FALSE]
 final.dataframe <- tibble(
-  species_row = seq_len(nrow(snap)),
-  binomial    = snap$Species,
-  common_name = snap$`Common name`,
-  echolocation_status = snap$`Echolocation status`,
-  localization_threshold_deg = as.numeric(snap$`Passive sound-localization threshold (deg)`),
-  ## only the two bats measured in this paper are primary; the other five
-  ## rows are the paper's own comparison values cited from earlier studies
-  data_role = ifelse(snap$Species %in% c("Cynopterus brachyotis", "Eidolon helvum"),
-                      "primary", "secondary"),
-  source = snap$Source
+  species_row = seq_len(nrow(species_rows)),
+  binomial = species_rows$Species,
+  common_name = species_rows$`Common name`,
+  echolocation_status = context$echolocation_status,
+  localization_threshold_deg = as.numeric(species_rows$Threshold),
+  data_role = ifelse(species_rows$Species %in% c("Cynopterus brachyotis", "Eidolon helvum"),
+                     "primary", "secondary"),
+  source = context$source
 )
 
 ## 4. WRITE CSV + PUBLIC TSV ------------------------------------------

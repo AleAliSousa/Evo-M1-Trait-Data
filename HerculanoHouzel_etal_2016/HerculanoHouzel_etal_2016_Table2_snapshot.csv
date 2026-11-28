@@ -1,15 +1,19 @@
-species_as_printed,N_CX,N_CX_status,N_M1,N_M1_status,N_SC,N_SC_status,N_M1_per_N_SC,source_location,data_role
-Microcebus murinus,22.31e6,observed,0.43e6,predicted,1.68e6,observed,0.26,"Table 2, p. 451",secondary
-Otolemur garnettii,226.09e6,observed,9.4e6,observed,5.73e6,observed,1.64,"Table 2, p. 451",secondary
-Callithrix jacchus,244.72e6,observed,5.87e6,predicted,3.65e6,observed,1.61,"Table 2, p. 451",secondary
-Aotus trivirgatus,441.90e6,observed,22.18e6,observed,5.82e6,observed,3.81,"Table 2, p. 451",secondary
-Macaca fascicularis,800.96e6,observed,19.22e6,predicted,11.38e6,observed,1.69,"Table 2, p. 451",secondary
-Cebus apella,1.14e9,observed,27.36e6,predicted,,,,"Table 2, p. 451",not_available
-Saimiri sciureus,1.34e9,observed,20.52e6,observed,4.69e6,observed,4.78,"Table 2, p. 451",secondary
-Macaca radiata,1.66e9,observed,39.84e6,predicted,9.06e6,observed,4.40,"Table 2, p. 451",secondary
-Macaca mulatta,1.71e9,observed,41.04e6,predicted,10.00e6,observed,4.10,"Table 2, p. 451",secondary
-Papio cynocephalus,2.88e9,observed,117.68e6,observed,13.48e6,predicted,8.73,"Table 2, p. 451",derived
-Pan troglodytes,6.00e9,predicted,0.30e9,observed,15.16e6,predicted,19.79,"Table 2, p. 451",derived
-Pongo pygmaeus,9.00e9,predicted,0.22e9,predicted,,,,"Table 2, p. 451",not_available
-Gorilla gorilla,9.00e9,predicted,0.22e9,predicted,,,,"Table 2, p. 451",not_available
-Homo sapiens,16.34e9,observed,0.39e9,predicted,19.94e6,predicted,19.56,"Table 2, p. 451",derived
+"TABLE 2. Numbers of Neurons in Primate Cerebral Cortex, Motor Cortex, and Spinal Cord¹",,,,
+Species,N_CX,N_M1,N_SC,N_M1/N_SC
+Microcebus murinus,22.31 × 10^6 (1),0.43 × 10^6 (pred2),1.68 × 10^6 (6),0.26
+Otolemur garnettii,226.09 × 10^6 (2),9.4 × 10^6 (5),5.73 × 10^6 (6),1.64
+Callithrix jacchus,244.72 × 10^6 (2),5.87 × 10^6 (pred2),3.65 × 10^6 (6),1.61
+Aotus trivirgatus,441.90 × 10^6 (2),22.18 × 10^6 (5),5.82 × 10^6 (6),3.81
+Macaca fascicularis,800.96 × 10^6 (1),19.22 × 10^6 (pred2),11.38 × 10^6 (6),1.69
+Cebus apella,1.14 × 10^9 (2),27.36 × 10^6 (pred2),,
+Saimiri sciureus,1.34 × 10^9 (2),20.52 × 10^6 (5),4.69 × 10^6 (6),4.78
+Macaca radiata,1.66 × 10^9 (1),39.84 × 10^6 (pred2),9.06 × 10^6 (6),4.40
+Macaca mulatta,1.71 × 10^9 (2),41.04 × 10^6 (pred2),10.00 × 10^6 (6),4.10
+Papio cynocephalus,2.88 × 10^9 (1),117.68 × 10^6 (5),13.48 × 10^6 (pred3),8.73
+Pan troglodytes,6.00 × 10^9 (pred1),0.30 × 10^9 (5),15.16 × 10^6 (pred4),19.79
+Pongo pygmaeus,9.00 × 10^9 (3),0.22 × 10^9 (pred2),,
+Gorilla gorilla,9.00 × 10^9 (3),0.22 × 10^9 (pred2),,
+Homo sapiens,16.34 × 10^9 (4),0.39 × 10^9 (pred2),19.94 × 10^6 (pred5),19.56
+"¹ Numbers refer to both cortical hemispheres and M1 on both hemispheres. N_CX, number of neurons in the cerebral cortex of both hemispheres; N_M1, number of neurons in area M1 of both hemispheres; N_SC, total number of neurons in the spinal cord; N_ROB, total number of neurons in the rest of brain (ensemble of diencephalon, striatum, mesencephalon, pons, and medulla); N_M1/N_SC, ratio between numbers of neurons in M1 and spinal cord.",,,,
+(1) Values observed by Gabi et al. (2010); (2) values observed by Herculano-Houzel et al. (2007); (3) values predicted by Herculano-Houzel and Kaas (2011); (4) values observed by Azevedo et al. (2009); (5) values observed by Young et al. (2013); (6) values observed by Burish et al. (2010).,,,,
+"(pred) Values predicted as follows: pred1, value predicted from the equation for N_CX × M_CX in Table 1 using M_CX of 252 g (Semendeferi and Damasio, 2000); pred2, values predicted from N_CX in this table using the estimated 2.4% of cortical neurons in M1; pred3, value predicted from the equation for N_SC × M_SC in Table 1 using M_SC of 13.231 g (MacLarnon, 1996); pred4, value predicted from the equation for N_SC × M_SC in Table 1 using M_SC of 16.853 g (MacLarnon, 1996); pred5, value predicted from the equation for N_SC × M_SC in Table 1 using M_SC of 29.700 g (MacLarnon, 1996).",,,,

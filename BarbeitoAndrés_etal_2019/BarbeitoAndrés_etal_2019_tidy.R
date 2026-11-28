@@ -39,10 +39,16 @@ write_csv_tsv <- function(x, stem, dir = folder) {
   message("Wrote ", tsv_file)
 }
 
-b1 <- readr::read_csv(file.path(folder, "BarbeitoAndrés_etal_2019_volumes_snapshot.csv"), col_types = readr::cols(.default = "character"), show_col_types = FALSE)
+read_source_grid <- function(stem) readr::read_csv(
+  file.path(folder, paste0("BarbeitoAndrés_etal_2019_", stem, "_snapshot.csv")),
+  col_names = FALSE, col_types = readr::cols(.default = "c"),
+  show_col_types = FALSE)
 vol_regions <- c("Olfactory_bulbs","Cerebellum","Corpus_callosum","Midbrain","Lateral_ventricle",
                  "Striatum","Cortex","Hypothalamus","Third_ventricle","Hippocampus","Thalamus",
                  "Fimbria","Total")              # row 4 cols 3:15, as published (cleaned)
+b1 <- read_source_grid("volumes")[5:27, 1:15]
+names(b1) <- c("specimen", "group", vol_regions)
+b1$Total <- as.character(rowSums(sapply(b1[3:14], numv), na.rm = TRUE))
 vol_long <- b1 %>%
   pivot_longer(all_of(vol_regions), names_to = "region", values_to = "value") %>%
   transmute(species = "Mus musculus", reference = "BarbeitoAndrés_etal_2019",
@@ -61,8 +67,9 @@ long_cell <- function(blk, measure, units) {
               measure = measure, value = numv(value), units = units) %>%
     filter(!is.na(value))
 }
-n2 <- readr::read_csv(file.path(folder, "BarbeitoAndrés_etal_2019_cellnumber_snapshot.csv"), col_types = readr::cols(.default = "character"), show_col_types = FALSE)
-n3 <- readr::read_csv(file.path(folder, "BarbeitoAndrés_etal_2019_celldensity_snapshot.csv"), col_types = readr::cols(.default = "character"), show_col_types = FALSE)
+n2 <- read_source_grid("cellnumber")[34:48, 1:16]
+n3 <- read_source_grid("celldensity")[55:69, 1:16]
+names(n2) <- names(n3) <- c("group", cell_cols)
 barbeito_volumes <- vol_long
 barbeito_cellnumber <- long_cell(n2, "cell_number",  "cells")
 barbeito_celldensity <- long_cell(n3, "cell_density", "cells_per_mg (as published; verify against paper)")

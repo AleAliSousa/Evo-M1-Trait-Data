@@ -63,3 +63,7 @@ Pending human RA (record `DDMMYYYY_initials` in `__ReadMe.xlsx`).
 
 <!-- errata:begin -->
 <!-- errata:end -->
+
+## Snapshot layout audit (2026-11-27)
+
+Compared with rendered PDF page 12. Tabla VIII has two source columns; the prior snapshot split units into an invented third column. The five printed value-plus-unit strings now stay in the second source column, and R separates number and unit for analysis. `Rscript --vanilla Grande__1950/Grande__1950_TablaVIII_snapshot.R` verified the frozen grid, then `Rscript --vanilla Grande__1950/Grande__1950_TablaVIII.R` rebuilt the five-row analysis CSV with unchanged SHA-256 `a2c68d094f03cf980492b843cf66f615029d1fef1218701704be11744806d7fe` and three passing table checks. Human visual signoff remains separate.

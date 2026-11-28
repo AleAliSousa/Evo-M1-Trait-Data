@@ -39,7 +39,18 @@ setwd(folder)
 dat <- read.csv(
   paste0(item_name, "_snapshot.csv"),
   stringsAsFactors = FALSE,
-  check.names = FALSE
+  check.names = FALSE,
+  colClasses = "character"
+)
+dat <- data.frame(
+  Subject = dat$Subject,
+  Sex = substr(dat$Subject, 1L, 1L),
+  Age_years = as.integer(substring(dat$Subject, 2L)),
+  Body_weight_kg = suppressWarnings(as.numeric(dat$`Body weight (in kg)`)),
+  Autolysis_time_h = as.numeric(dat$`Autolysis time (in h)`),
+  Cause_of_death = dat$`Cause of death`,
+  Occupation_education = ifelse(dat$`Occupation (education)` == "–", "",
+                                 dat$`Occupation (education)`)
 )
 
 csv_file <- paste0(item_name, ".csv")

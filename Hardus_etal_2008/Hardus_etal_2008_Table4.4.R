@@ -16,11 +16,21 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
-final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
+grid <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=1L,
+                 col_types=cols(.default=col_character()),na=character(),
+                 trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+section <- grid[[1L]] %in% c("Wild", "Rehabilitants and captives") &
+           apply(grid[-1L] == "", 1L, all)
+context <- rep(NA_character_, nrow(grid))
+context[section] <- grid[[1L]][section]
+for (i in seq_along(context)) if (is.na(context[i]) && i > 1L) context[i] <- context[i-1L]
+raw <- grid[!section, , drop=FALSE]
+final.dataframe <- data.frame(Context=context[!section],as.data.frame(raw,stringsAsFactors=FALSE),check.names=FALSE)
+names(final.dataframe)[2L] <- "Call type"
+names(final.dataframe)[11L] <- "Culture or innovation suggestion"
 final.dataframe$Source_row <- seq_len(nrow(raw))+1L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
-final.dataframe<-do.call(rbind,lapply(seq_len(nrow(raw)),function(i)do.call(rbind,lapply(names(raw)[3:10],function(nm)data.frame(final.dataframe[i,,drop=FALSE],Site=nm,Status=raw[[nm]][i],Confirmed_presence=if(raw[[nm]][i]%in%c("P","P¹"))1 else if(raw[[nm]][i]=="A")0 else NA_real_,check.names=FALSE)))))
+final.dataframe<-do.call(rbind,lapply(seq_len(nrow(raw)),function(i)do.call(rbind,lapply(names(final.dataframe)[3:10],function(nm)data.frame(final.dataframe[i,,drop=FALSE],Site=nm,Status=final.dataframe[[nm]][i],Confirmed_presence=if(final.dataframe[[nm]][i]%in%c("P","P¹"))1 else if(final.dataframe[[nm]][i]=="A")0 else NA_real_,check.names=FALSE)))))
 write_csv(final.dataframe, file.path(folder, paste0(item_name, ".csv")), na="")
 registry <- read_excel(Sys.getenv("DATASET_REGISTRY", file.path(repo,"__ReadMe.xlsx")), sheet="Sheet1")
 hit <- which(!is.na(registry[["Item name"]]) & registry[["Item name"]] == item_name)

@@ -30,7 +30,8 @@ setwd(folder)
 library(readxl)
 
 raw <- as.data.frame(read_excel(file.path(folder, paste0(item_name, "_snapshot.xlsx")),
-                                sheet = "Table1"))
+                                sheet = "Table1", skip = 3L, col_names = FALSE))
+names(raw) <- c("GENUS", paste0("proc ", seq_len(30L)))
 stopifnot(nrow(raw) == 24, ncol(raw) == 31)
 para <- c(rep("detour problems (DP)", 3), "patterned-string problems (PS)",
           rep("invisible displacement (ID)", 3), rep("tool use (TU)", 2),

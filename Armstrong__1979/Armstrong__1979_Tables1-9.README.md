@@ -11,7 +11,11 @@ Registry item: **Tables 1-9**. Public file:
 
 ## Products
 
-The frozen 106-row snapshot transcribes every row in Tables 1-9. The builder keeps
+## Snapshot layout audit and correction (2026-11-27)
+
+The former single 18-column long snapshot has been retired as `.retired`. Nine separate `Armstrong__1979_Tables1-9_TableN_snapshot.csv` files now sketch the printed table grids: Tables 1, 5, and 6 have the source's side-by-side nuclear measures; Tables 2–4 and 7–9 keep specimen rows and summary-statistic columns, including LGBp/LGBm section rows. Source group headings remain in Table 1. The R reader reshapes the grids and joins `reference_tables/Armstrong__1979_Tables1-9_analysis_map.csv` for measurement metadata and source row/column mapping. Run `Rscript Armstrong__1979/Armstrong__1979_Tables1-9.R` from the repository root. All four output CSVs are byte-identical to their previous versions (combined SHA-256 `21f34f4a0cc083519fc94e7437ed56a238562b1b7482429b2ef6184b29b37e1d`). The source's numerical discrepancies documented below remain untouched. This layout audit is independent of human source signoff.
+
+The nine frozen grids contain 106 source measurements. The builder keeps
 the mixed datatypes separate:
 
 - `Armstrong__1979_Tables1-9_volumes.csv` - Tables 1 and 5

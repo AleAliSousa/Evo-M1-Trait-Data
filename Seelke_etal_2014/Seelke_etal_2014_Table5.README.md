@@ -17,3 +17,11 @@ METHOD WARNING: the paper states it used the **isotropic fractionator** (nuclei 
 - Cells/g ~ Table 4 cells / Table 3 weight: Whole 3.03/0.073 = 41.5 (41.70); Rem Ctx 1.66/0.039 = 42.6 (42.52); V1 0.57/0.015 = 38 (40.98); S1 0.50/0.011 = 45 (46.34); A1 0.30/0.007 = 43 (44.04) - consistent given weight rounding.
 - Neurons/g + non-neurons/g ~ cells/g: Whole 10.92+30.78=41.70 (exact); Sigma 12.28+30.11=42.39 (exact); Rem Ctx 6.73+35.79=42.52; V1 17.31+23.68=40.99 (40.98); S1 20.29+26.05=46.34; A1 28.05+15.99=44.04 - all agree.
 - Render vs text layer agree.
+# Layout audit (2026-11-27)
+
+Compared printed Table 5 on PDF page 7. The snapshot now retains the caption,
+line breaks in the three unit headers, six printed area rows and the note below
+the grid. `Seelke_etal_2014_Table5.R` skips the caption and note. Run
+`Rscript Seelke_etal_2014/Seelke_etal_2014_Table5.R` from the repository root;
+the six-row analysis CSV remained cell-identical. Independent human source
+comparison is separate.

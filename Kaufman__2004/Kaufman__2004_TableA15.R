@@ -2,8 +2,8 @@
 # Computed species-level summary (N, Mean, SD, CV, CV* = unbiased CV) for each
 # genus x weighting x brain region x energetic measure.
 #
-# Snapshot -> clean tidy CSV. The snapshot transcribes the printed Table A15
-# statistics; this script only adds units and orders rows.
+# The snapshot follows the printed pages. This reader propagates the printed
+# section/species headings and applies the analysis order after extraction.
 #
 # Weightings: unweighted (each study counts equally) / weighted (each individual counts).
 # Measures/units: CMRgl (glucose) & CMRO2 (oxygen) umol/100 g/min; CBF (blood flow) mL/100 g/min.
@@ -31,8 +31,46 @@ base      <- local({
 })
 setwd(folder)
 
-raw <- read.csv(paste0(item_name, "_snapshot.csv"),
-                check.names = FALSE, colClasses = "character", stringsAsFactors = FALSE)
+grid <- read.csv(paste0(item_name, "_snapshot.csv"), header = FALSE,
+                 check.names = FALSE, colClasses = "character", stringsAsFactors = FALSE,
+                 blank.lines.skip = FALSE, na.strings = "")
+stopifnot(ncol(grid) == 7L)
+section <- NULL
+species <- NULL
+source_rows <- list()
+section_order <- character()
+for (i in seq_len(nrow(grid))) {
+  if (identical(grid[[3]][i], "N") && identical(grid[[4]][i], "Mean")) {
+    section <- grid[[1]][i]
+    section_order <- c(section_order, section)
+  } else if (!is.na(grid[[2]][i]) && grid[[2]][i] %in% c("unweighted", "weighted")) {
+    stopifnot(!is.null(section))
+    if (!is.na(grid[[1]][i]) && nzchar(grid[[1]][i])) species <- grid[[1]][i]
+    stopifnot(!is.null(species))
+    measure <- sub("^.* (CMRgl|CMRO2|CBF)$", "\\1", section)
+    region <- sub(" (CMRgl|CMRO2|CBF)$", "", section)
+    stopifnot(measure %in% c("CMRgl", "CMRO2", "CBF"), nzchar(region))
+    source_rows[[length(source_rows) + 1L]] <- c(
+      Species = species, weighting = grid[[2]][i], region = region, measure = measure,
+      N = grid[[3]][i], Mean = grid[[4]][i], SD = grid[[5]][i],
+      CV = grid[[6]][i], CVstar = grid[[7]][i]
+    )
+  }
+}
+stopifnot(length(source_rows) == 284L, length(section_order) == 34L)
+raw <- as.data.frame(do.call(rbind, source_rows), stringsAsFactors = FALSE)
+raw$note <- NA_character_
+raw$note[raw$Species == "Homo" & raw$weighting == "weighted" &
+         raw$region == "Parietal Cortex" & raw$measure == "CMRgl"] <- "CVstar=CV"
+raw$note[raw$Species == "Rattus" & raw$weighting == "weighted" &
+         raw$region == "Cerebellum" & raw$measure == "CBF"] <- "short_raw|filled_from_xlsx"
+species_order <- c("Homo", "Macaca", "Canis", "Rattus", "Mus", "Lepus",
+                   "Felis", "Meriones", "Ovis", "Capra", "Equus", "Sus")
+section_key <- paste(raw$region, raw$measure)
+raw <- raw[order(match(section_key, unique(section_order)),
+                 match(raw$Species, species_order),
+                 match(raw$weighting, c("unweighted", "weighted"))), , drop = FALSE]
+stopifnot(!anyNA(match(raw$Species, species_order)))
 num <- function(x) { x <- gsub(",", ".", trimws(x)); x[x %in% c("", "nr", "NA")] <- NA; suppressWarnings(as.numeric(x)) }
 
 clean <- data.frame(

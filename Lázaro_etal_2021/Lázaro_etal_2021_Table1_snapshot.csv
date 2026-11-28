@@ -1,25 +1,33 @@
-"Response","Geographic variable","F","SW","DF","Adj-R2","p","correlation"
-"Brain case height decrease","Latitude","5.6",">0.5","17","0.20","<0.05","Positive"
-"Brain case height decrease","Longitude","5.3",">0.5","17","0.19","<0.05","Positive"
-"Brain case height decrease","Lat. × Long.","6.6",">0.5","17","0.24","<0.05","Positive"
-"Brain case height decrease","Altitude","0.0",">0.1","15","0.01",">0.5","No"
-"Brain case height regrowth","Latitude","0.1",">0.1","14","0.03",">0.1","No"
-"Brain case height regrowth","Longitude","0.4",">0.1","14","0.04",">0.5","No"
-"Brain case height regrowth","Lat. × Long.","0.5",">0.1","14","0.03",">0.1","No"
-"Brain case height regrowth","Altitude","2.2",">0.1","12","0.09",">0.1","No"
-"Brain mass decrease","Latitude","0.1",">0.5","8","0.12",">0.5","No"
-"Brain mass decrease","Longitude","0.2",">0.5","8","0.10",">0.5","No"
-"Brain mass decrease","Lat. × Long.","0.2",">0.5","8","0.10",">0.5","No"
-"Brain mass decrease","Altitude","0.5",">0.5","8","0.06",">0.1","No"
-"Brain mass regrowth","Latitude","2.8",">0.5","7","0.18",">0.1","No"
-"Brain mass regrowth","Longitude","0.7",">0.1","7","0.03",">0.1","No"
-"Brain mass regrowth","Lat. × Long.","0.7",">0.1","7","0.04",">0.1","No"
-"Brain mass regrowth","Altitude","4.5",">0.5","7","0.30",">0.05","No"
-"Body mass decrease","Latitude","2.5",">0.5","24","0.06",">0.1","No"
-"Body mass decrease","Longitude","10.8",">0.5","24","0.28","<0.01","Positive"
-"Body mass decrease","Lat. × Long.","10.2",">0.5","24","0.27","<0.01","Positive"
-"Body mass decrease","Altitude","0.7",">0.5","24","0.03",">0.1","No"
-"Body mass regrowth","Latitude","0.4",">0.5","18","0.03",">0.5","No"
-"Body mass regrowth","Longitude","2.6",">0.05","18","0.08",">0.1","No"
-"Body mass regrowth","Lat. × Long.","2.3",">0.05","18","0.06",">0.1","No"
-"Body mass regrowth","Altitude","0.9",">0.1","18","0.01",">0.1","No"
+Table 1. Results from linear models to test correlation between intensity of Dehnel's Phenomenon and geographic variables,,,,,,,
+,,F,SW,DF,Adj-R2,p,correlation
+Brain case height decrease,,,,,,,
+,Latitude,5.6,>0.5,17,0.20,<0.05,Positive
+,Longitude,5.3,>0.5,17,0.19,<0.05,Positive
+,Lat. × Long.,6.6,>0.5,17,0.24,<0.05,Positive
+,Altitude,0.0,>0.1,15,0.01,>0.5,No
+Brain case height regrowth,,,,,,,
+,Latitude,0.1,>0.1,14,0.03,>0.1,No
+,Longitude,0.4,>0.1,14,0.04,>0.5,No
+,Lat. × Long.,0.5,>0.1,14,0.03,>0.1,No
+,Altitude,2.2,>0.1,12,0.09,>0.1,No
+Brain mass decrease,,,,,,,
+,Latitude,0.1,>0.5,8,0.12,>0.5,No
+,Longitude,0.2,>0.5,8,0.10,>0.5,No
+,Lat. × Long.,0.2,>0.5,8,0.10,>0.5,No
+,Altitude,0.5,>0.5,8,0.06,>0.1,No
+Brain mass regrowth,,,,,,,
+,Latitude,2.8,>0.5,7,0.18,>0.1,No
+,Longitude,0.7,>0.1,7,0.03,>0.1,No
+,Lat. × Long.,0.7,>0.1,7,0.04,>0.1,No
+,Altitude,4.5,>0.5,7,0.30,>0.05,No
+Body mass decrease,,,,,,,
+,Latitude,2.5,>0.5,24,0.06,>0.1,No
+,Longitude,10.8,>0.5,24,0.28,<0.01,Positive
+,Lat. × Long.,10.2,>0.5,24,0.27,<0.01,Positive
+,Altitude,0.7,>0.5,24,0.03,>0.1,No
+Body mass regrowth,,,,,,,
+,Latitude,0.4,>0.5,18,0.03,>0.5,No
+,Longitude,2.6,>0.05,18,0.08,>0.1,No
+,Lat. × Long.,2.3,>0.05,18,0.06,>0.1,No
+,Altitude,0.9,>0.1,18,0.01,>0.1,No
+Note: SW = P-value from Shapiro-Wilk test for normality of residuals distribution. DF = degrees of freedom.,,,,,,,

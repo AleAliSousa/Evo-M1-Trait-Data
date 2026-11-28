@@ -11,3 +11,7 @@ The reader creates 81 available structure-by-measure rows. SC, LGN, V1 and MT ro
 For Charvet et al. Figure 7, the macaque V1 row contributes 1.880 ± 0.085 g and 213.76 ± 54.27 million neurons (SD). The mass-to-volume step is recorded in `../Charvet_etal_2013/internal_checks/Charvet_etal_2013_Figure7_Collins2013_point.README.md`; the source table does not directly measure volume.
 
 Run from repository root: `Rscript --vanilla Collins_etal_2013/Collins_etal_2013_Table1.R`. The reader writes the local CSV and DOI-coded public TSV. No printed totals allow a separate arithmetic check. No figure-derived data are in this item, so no replot applies. Codex compared the snapshot against the rendered PDF table on 2026-11-23; human visual signoff pending. On 2026-11-26 the main `__ReadMe.xlsx` registry was corrected: two duplicate rows had mistakenly cited Wong et al.'s separate auditory paper while describing this Collins visual Table 1. One Collins row is now canonical; the staging workbook's citation was corrected too.
+
+## Snapshot layout check (2026-11-27)
+
+The PDF page 3 table has the same 15 source columns, ten species rows, and variation row already present in the snapshot. The printed caption and explanatory note were restored above and below that grid. `Rscript --vanilla Collins_etal_2013/Collins_etal_2013_Table1.R` reads only the data rows; its 81-row analysis CSV was compared cell by cell with the pre-layout output. This assistant comparison does not constitute independent human source signoff.

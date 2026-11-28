@@ -164,9 +164,14 @@ verified by eye. The archived OCR files and audit notes preserve the extraction 
 
 `Kaufman__2004_TableA15.csv`: one row per genus × weighting × region × measure, with
 `N, Mean, SD, CV, CVstar`. `unweighted` = each study equal; `weighted` = each individual
-equal. The snapshot uses this long format rather than reproducing the PDF's exact
-page layout or ordering; see `old/Kaufman__2004_TableA15_snapshot_audit.md` for the
-comparison and its limits. Two cells were OCR-reconstructed in the original build (Parietal Cortex · CMRgl ·
+equal. The snapshot now follows the eight printed pages (PDF pp. 169–176): repeated
+captions where printed, section headers, blank species cells on weighted rows, page
+breaks, and the source's row order. The R reader propagates section and species
+labels, then applies the existing analysis species order. All 284 numeric rows were
+matched uniquely to the PDF text layer; the first and last pages were also inspected
+as rendered images. `Rscript --vanilla Kaufman__2004_TableA15.R` reproduced the prior
+284-row analysis CSV exactly. See `old/Kaufman__2004_TableA15_snapshot_audit.md` for the
+earlier comparison and its limits. Two cells were OCR-reconstructed in the original build (Parietal Cortex · CMRgl ·
 Homo · weighted CV*; Cerebellum · CBF · Rattus · weighted) and carried in `note`; both
 agree with the manual tables.
 

@@ -19,3 +19,7 @@ This item is a printed table, so no figure replot applies. Do not pool its model
 ## Main-table discrepancy (2026-11-24)
 
 The printed main-text Table 1 is a subset of this supplement and is now frozen separately as `Feix_etal_2015_Table1_snapshot.csv`. For *Hylobates lar*, main Table 1 prints real object size **2.20 mm**, while this supplementary Table 1 prints **22.2 mm**. Both values remain as published in their respective items. Treat them as one modeled result with an unresolved source conflict, not independent observations; clarify the correct value before merging that cell.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared with Supplementary Table 1 on PDF page 17. The Group column is a spanning label; the old CSV repeated it on every species row. The snapshot generator now writes one label per group block and leaves the remaining group cells blank. The R reader fills groups for analysis. Row 37, `D. madagascariensis`, visibly falls within Lemuriformes in the source; its previously missing group and observation level are corrected in the analysis CSV. Regenerating the snapshot with `Rscript --vanilla Feix_etal_2015/Feix_etal_2015_SupplementaryTable1_snapshot.R` and the analysis CSV with `Rscript --vanilla Feix_etal_2015/Feix_etal_2015_SupplementaryTable1.R` succeeded. The only analysis CSV difference is row 37 group/observation level; human visual signoff remains separate.

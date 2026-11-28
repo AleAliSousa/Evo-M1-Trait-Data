@@ -47,3 +47,7 @@ kHz (limits), octaves (excess).
 | `__Public/comparative-data/10.1016%2Fj.heares.2012.09.011_Table1.tsv` | public TSV (repo-level) |
 
 Human visual check of the snapshot: pending (record `DDMMYYYY_initials` in `__ReadMe.xlsx` column AH).
+
+## Snapshot layout check (2026-11-27)
+
+Compared printed Table 1 on PDF page 7. The snapshot now has the four printed columns, group headings, common and scientific names together in the species cell, mean rows, and lettered footnotes below the table. Metadata fields and footnote interpretation are derived by R. Run `Rscript --vanilla Heffner_etal_2013/Heffner_etal_2013_Table1.R`; its 12-row analysis CSV was compared with the pre-layout output. This assistant comparison is separate from independent human source signoff.

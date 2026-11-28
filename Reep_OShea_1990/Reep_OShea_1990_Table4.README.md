@@ -1,6 +1,6 @@
 # Reep & O'Shea 1990 — Table 4 (cortical gray matter thickness, 3 Florida manatees)
 
-Reep RL, O'Shea TJ (1990). Brain Behav Evol 35(4):185-194. doi:10.1159/000115866. PDF p.6 (journal p.190); scanned, no text layer; transcribed snapshot `..._Table4_snapshot.csv` (brain label incl. n, mean thickness mm, SD; plus printed Mean row). Build gives 4 rows.
+Reep RL, O'Shea TJ (1990). Brain Behav Evol 35(4):185-194. doi:10.1159/000115866. PDF p.6 (journal p.190); scanned, no text layer; transcribed snapshot `..._Table4_snapshot.csv` now retains the printed caption and two-tier thickness header above brain labels (including n), means, SDs, and the printed Mean row. `Rscript --vanilla Reep_OShea_1990_Table4.R` reproduced the prior 4-row analysis CSV cell for cell.
 
 ## Fidelity checks
 - **Printed Mean thickness 4.23 mm is not reproducible**: mean of the three brains = 4.02, n-weighted = 4.02 (RA should recheck the digits against the page; the paper text gives a mean thickness of about 4 mm). Kept as printed and flagged; do not use the Mean row for analysis, recompute from rows.

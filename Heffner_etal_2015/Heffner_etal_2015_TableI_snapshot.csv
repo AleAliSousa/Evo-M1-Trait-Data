@@ -1,9 +1,30 @@
-Species,Common name,Group,Functional head size (us),Minimum audible angle (deg),Highest frequency using binaural phase cue (kHz),Source
-Phyllostomus hastatus,Greater spear-nosed bat,Echolocator,108,9.5,Cue not used,Heffner et al. 2007; 2010b
-Artibeus jamaicensis,Jamaican fruit bat,Echolocator,89,9.9,6.3,Heffner et al. 2001c
-Desmodus rotundus,Common vampire bat,Echolocator,61,13.1,5.0,current report
-Eptesicus fuscus,Big brown bat,Echolocator,50,14,Cue not used,Koay et al. 1998
-Carollia perspicillata,Short-tailed fruit bat,Echolocator,47,14.7,Cue not used,Heffner et al. 2007; 2010b
-Rousettus aegyptiacus,Egyptian fruit bat,Atypical echolocator,135,11.6,5.6,Heffner et al. 1999
-Eidolon helvum,Straw-colored fruit bat,Non-echolocator,145,11.7,Cue not used,Heffner et al. 2008
-Cynopterus brachyotis,Dog-faced fruit bat,Non-echolocator,86,10.5,Cue not used,Heffner et al. 2008; 2010a
+"TABLE I. Functional head size (the time it takes for sound to travel around the head from one ear to the other), sound localization acuity, and the high-frequency at which the binaural phase-difference cue is used in bats.",,,
+Species,Functional head size (µs),Minimum audible angle (deg.),Highest frequency using binaural phase cue (kHz)^i
+Echolocators,,,
+"Greater spear-nosed bat a,b
+(Phyllostomus hastatus)",108,9.5,Cue not used
+"Jamaican fruit bat c
+(Artibeus jamaicensis)",89,9.9,6.3
+"Common vampire bat d
+(Desmodus rotundus)",61,13.1,5.0
+"Big brown bat e
+(Eptesicus fuscus)",50,14,Cue not used
+"Short-tailed fruit bat a,b
+(Carollia perspicillata)",47,14.7,Cue not used
+Atypical echolocator,,,
+"Egyptian fruit bat f
+(Rousettus aegyptiacus)",135,11.6,5.6
+Non-echolocators,,,
+"Straw-colored fruit bat g
+(Eidolon helvum)",145,11.7,Cue not used
+"Dog-faced fruit bat g,h
+(Cynopterus brachyotis)",86,10.5,Cue not used
+"a Heffner et al., 2007.",,,
+"b Heffner et al., 2010b.",,,
+"c Heffner et al., 2001c.",,,
+d Current report.,,,
+"e Koay et al., 1998.",,,
+"f Heffner et al., 1999.",,,
+"g Heffner et al., 2008.",,,
+"h Heffner et al., 2010a.",,,
+"i This value is the highest frequency that could be localized using the binaural phase cue; the next higher test frequency (within one octave or less) was not localized above chance. Thus, the true limit could be slightly higher depending on the actual frequencies tested.",,,

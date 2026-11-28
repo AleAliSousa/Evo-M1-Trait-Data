@@ -130,3 +130,13 @@ Generated from `reference_tables/Wegiel_etal_2014_errata.csv` by `_tools/dataset
 
 2 recorded, 2 open (proposed), 0 confirmed, 0 withdrawn.
 <!-- errata:end -->
+
+## Workbook package repair (2026-11-27)
+
+The frozen snapshot retained all printed worksheet cells, but its OOXML dimension
+reported only `A1` and its relationship file referenced absent drawing parts.
+The dimension was set to the extant cell range and those dangling drawing
+relationships were removed. All cell XML, merged ranges, styles and values stayed
+unchanged. `Rscript --vanilla Wegiel_etal_2014_Table1.R` rebuilt the same
+22-row analysis CSV cell for cell. This is an assistant integrity check, not
+human visual signoff.

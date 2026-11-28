@@ -1,5 +1,9 @@
 # Felleman & Van Essen 1991 — Table 2
 
+## Snapshot layout audit and correction (2026-11-27)
+
+Compared the snapshot with printed Table 2 on PDF pages 8–9. Rebuilt the snapshot as the source's six columns, with section and subdivision headings in the first column, cortical area in the second, the four printed measurement columns, and a continuation heading at the page break. The former `section` analysis column is now supplied by `reference_tables/Felleman_VanEssen_1991_Table2_analysis_map.csv` and joined in the R reader by source row. Run `Rscript Felleman_VanEssen_1991/Felleman_VanEssen_1991_Table2.R` from the repository root; the 61-row analysis CSV remained byte-identical (SHA-256 `079fdb4d1d47c62cb61ecfe7585ff664b2ea1610f68323e0c500f9b7612f04e8`). No data cells were re-estimated. This layout audit is separate from human source signoff.
+
 Source: Felleman, D. J., & Van Essen, D. C. (1991). Distributed hierarchical processing in the primate cerebral cortex. *Cerebral Cortex, 1*(1), 1–47. https://doi.org/10.1093/cercor/1.1.1
 
 `Felleman_VanEssen_1991_Table2_snapshot.csv` transcribes both printed pages of Table 2. The analysis CSV preserves absolute surface area and each reported percentage denominator. The source table is a synthesis measured from the authors' Figure 2 two-dimensional macaque cortical map, not a new per-animal experimental series, so `data_role` is `secondary synthesis` and the source's taxonomic precision (`Macaca sp.`) is retained.

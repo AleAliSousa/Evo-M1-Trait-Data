@@ -19,7 +19,16 @@ num <- function(x) suppressWarnings(as.numeric(x))
 
 raw <- read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")), header=FALSE, colClasses="character", check.names=FALSE, na.strings="", fill=TRUE)
 
-x <- raw[3:9,]; labels <- as.character(raw[2,-1])
+## The printed table is split across PDF pages 3 and 4. Join the two
+## seven-species column blocks here, preserving their within-page positions in the snapshot.
+first_header <- 2L
+second_header <- which(raw[[1]] == "Septum")
+stopifnot(length(second_header) == 1L)
+left <- raw[(first_header+1L):(first_header+7L), 1:7, drop=FALSE]
+right <- raw[(second_header+1L):(second_header+7L), 1:7, drop=FALSE]
+stopifnot(identical(as.character(left[[1]]),c("Rat","Possum","Rabbit","Quokka","Cat","Sheep","Human")))
+x <- cbind(left,right)
+labels <- c(as.character(raw[first_header,2:7]),as.character(raw[second_header,1:7]))
 mean_of <- function(z) num(sub(" .*","",z))
 se_of <- function(z) num(sub(".*± *","",z))
 final.dataframe <- do.call(rbind,lapply(seq_along(labels),function(j) data.frame(species=x[[1]],n=c(10,5,5,10,5,5,5),structure=labels[j],mass_mean_mg=mean_of(x[[j+1]])*1000,mass_SE_mg=se_of(x[[j+1]])*1000,hemisphere_scope="whole-brain dissection; pieces of each structure summed",source=source_name)))

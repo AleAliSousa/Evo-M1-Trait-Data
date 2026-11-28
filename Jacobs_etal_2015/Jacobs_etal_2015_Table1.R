@@ -16,7 +16,23 @@ source(file.path(repo_base, "_helpers", "cortical_layers_source_common.R"))
 
 item_name <- "Jacobs_etal_2015_Table1"
 raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
-                stringsAsFactors = FALSE, check.names = FALSE, na.strings = "")
+                stringsAsFactors = FALSE, check.names = FALSE,
+                colClasses = "character", na.strings = "")
+source_grid <- raw
+raw <- do.call(rbind, lapply(c("Motor", "Visual"), function(region) {
+  cell <- source_grid[[region]]
+  absent <- cell == "–"
+  pieces <- strsplit(ifelse(absent, NA_character_, cell), "±", fixed = TRUE)
+  num <- vapply(pieces, function(x) if (length(x) == 2L)
+    as.numeric(gsub(",", "", trimws(x[1L]))) else NA_real_, numeric(1L))
+  sd <- vapply(pieces, function(x) if (length(x) == 2L)
+    as.numeric(gsub(",", "", trimws(x[2L]))) else NA_real_, numeric(1L))
+  data.frame(species_printed = "Giraffa camelopardalis",
+             region_printed = region, layer_printed = source_grid[[1L]],
+             mean_um_printed = num, sd_um_printed = sd,
+             presence_printed = ifelse(absent, "absent (-)",
+               ifelse(source_grid[[1L]] == "Total cortical thickness", "not applicable", "present")))
+}))
 
 species <- lookup_species("Giraffa camelopardalis", "Jacobs_etal_2015", repo_base)
 layer <- canonical_layer(raw$layer_printed)

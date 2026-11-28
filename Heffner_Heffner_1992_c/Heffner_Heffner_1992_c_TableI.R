@@ -39,6 +39,17 @@ library(readxl)
 ## 2. LOAD ----------------------------------------------------------
 snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
                   colClasses = "character", encoding = "UTF-8")
+stopifnot(nrow(snap) == 20L, ncol(snap) == 5L)
+section <- is.na(snap[[2]]) | !nzchar(snap[[2]])
+group <- rep(NA_character_, nrow(snap)); group[section] <- snap$Animal[section]
+for (j in seq_len(nrow(snap))[-1]) if (is.na(group[j])) group[j] <- group[j-1]
+snap <- snap[!section, , drop = FALSE]; group <- group[!section]
+marker <- regmatches(snap$Animal, regexpr("[⁰¹²³⁴⁵⁶⁷⁸⁹]+$", snap$Animal, perl = TRUE))
+stopifnot(length(marker) == nrow(snap))
+footnote <- chartr("⁰¹²³⁴⁵⁶⁷⁸⁹", "0123456789", marker)
+animal <- sub("[⁰¹²³⁴⁵⁶⁷⁸⁹]+$", "", snap$Animal, perl = TRUE)
+snap <- data.frame(Group = group, Animal = animal, Footnote = footnote,
+                   snap[-1], check.names = FALSE, stringsAsFactors = FALSE)
 foot <- read.csv(foot_csv, stringsAsFactors = FALSE)
 stopifnot(nrow(snap) == 17)
 footkey <- setNames(foot$text_as_printed, as.character(foot$footnote))

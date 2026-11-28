@@ -20,3 +20,7 @@ and `ratio_cerebellum_to_brainstem` are blank for Frog.
 
 ## Source
 `Latimer-1956-The Weights of the Parts of the B.pdf`, Table 2.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed six-column matrix with its caption and two header tiers. Removed the added `data_role` and `secondary_source` columns from the snapshot; the R reader derives them from the paper’s cited Rat, Baboon and Man rows. Run `Rscript --vanilla Latimer__1956/Latimer__1956_Table2.R` from repository root. Independent human source comparison remains separate.

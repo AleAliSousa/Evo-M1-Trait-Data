@@ -30,3 +30,7 @@ Generated from `reference_tables/West_Schwerdtfeger_1985_errata.csv` by `_tools/
 
 8 recorded, 0 open (proposed), 8 confirmed, 0 withdrawn.
 <!-- errata:end -->
+
+## Snapshot layout check (2026-11-27)
+
+Compared the snapshot with the printed table on PDF page 7. Restored printed blank separator rows and component indentation without changing the data grid. `Rscript --vanilla West_Schwerdtfeger_1985/West_Schwerdtfeger_1985_TableII.R` selects data rows in R; its analysis CSV matches the pre-layout output. This assistant comparison is separate from independent human source signoff.

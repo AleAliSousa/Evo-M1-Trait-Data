@@ -16,8 +16,13 @@
 folder <- dirname(.sp); setwd(folder); options(stringsAsFactors = FALSE)
 suppressMessages({ library(readxl); library(tidyr); library(dplyr) })
 
-raw <- as.data.frame(read_excel("Hanson_etal_2018_Table2_snapshot.xlsx", sheet = "Table 2", skip = 1,
-                                .name_repair = "minimal"), check.names = FALSE)
+raw <- as.data.frame(read_excel("Hanson_etal_2018_Table2_snapshot.xlsx", sheet = "Table 2",
+                                skip = 2, col_names = FALSE, .name_repair = "minimal"), check.names = FALSE)
+names(raw) <- c("Measure", "Stat", "dC", "mC", "aP", "NA")
+# Fill the printed blank measure cells for each TD row in the analysis layer.
+for (i in seq_len(nrow(raw))[-1]) {
+  if (identical(raw$Stat[i], "TD")) raw$Measure[i] <- raw$Measure[i - 1]
+}
 
 ## keep only the group value rows (WS, TD); drop stat rows
 val <- raw[raw$Stat %in% c("WS", "TD"), ]

@@ -36,6 +36,18 @@ setwd(folder)
 ## ---- read the frozen snapshot (verbatim headers) ----
 snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE,
                  na.strings = c("", "NA"), encoding = "UTF-8", colClasses = "character")
+is_section <- !is.na(snap[[1L]]) & rowSums(!is.na(snap)) == 1L
+section <- rep(NA_character_, nrow(snap))
+section[is_section] <- snap[[1L]][is_section]
+for (i in seq_along(section)) if (is.na(section[i]) && i > 1L) section[i] <- section[i-1L]
+snap <- snap[!is_section, , drop = FALSE]
+section <- section[!is_section]
+page_lookup <- read.csv(file.path("reference_tables", paste0(item_name, "_page_lookup.csv")),
+                        colClasses = "character", stringsAsFactors = FALSE)
+stopifnot(nrow(snap) == nrow(page_lookup),
+          identical(as.integer(page_lookup$source_row), seq_len(nrow(snap))))
+snap <- data.frame(Section = section, snap, `Journal page` = page_lookup$journal_page,
+                   check.names = FALSE, stringsAsFactors = FALSE)
 
 ## footnote/caption rows printed across the table ("Data from Journal of Agricultural Research ...",
 ## "*Data furnished by the Bureau Animal Industry ...") carry no values: dropped from the clean CSV

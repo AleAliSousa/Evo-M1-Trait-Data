@@ -32,8 +32,9 @@ setwd(folder)
 dataset_root   <- base                                   # repo-root alias (NA if run as a lone folder)
 public_tsv_dir <- if (!is.na(base)) file.path(base, "__Public", "comparative-data") else NA_character_
 
-t13 <- read_csv(file.path(folder, "Stephan_etal_1970_Tables1-3_snapshot.csv"), show_col_types = FALSE)
-t46 <- read_csv(file.path(folder, "Stephan_etal_1970_Tables4-6_snapshot.csv"), show_col_types = FALSE)
+source(file.path(folder, "_read_printed_table.R"))
+t13 <- read_printed_table(file.path(folder, "Stephan_etal_1970_Tables1-3_snapshot.csv"))
+t46 <- read_printed_table(file.path(folder, "Stephan_etal_1970_Tables4-6_snapshot.csv"))
 
 clean <- t13 %>%
   left_join(t46 %>% select(-group), by = c("id", "species")) %>%

@@ -2,7 +2,16 @@ a <- grep("^--file=",commandArgs(FALSE),value=TRUE)
 if (!length(a)) stop("Run with Rscript")
 folder <- dirname(normalizePath(sub("^--file=","",a[1])))
 item_name <- "Lázaro_etal_2021_Table3";root <- dirname(folder)
-s <- utils::read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,colClasses="character",fileEncoding="UTF-8")
+s <- utils::read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),header=FALSE,check.names=FALSE,colClasses="character",fileEncoding="UTF-8",blank.lines.skip=FALSE)
+stopifnot(ncol(s)==12L)
+rows <- list();measure <- NA_character_
+for(i in seq_len(nrow(s))) {
+  if(s[[1]][i] %in% c("BCH (mm)","Corr. brain mass (g/mm)","Body mass (g)")) measure <- s[[1]][i]
+  if(!grepl("^[0-9]+$",s[[2]][i])) next
+  stopifnot(!is.na(measure))
+  rows[[length(rows)+1L]] <- c(measure,as.character(s[i,1:12]))
+}
+s <- as.data.frame(do.call(rbind,rows),stringsAsFactors=FALSE)
 stopifnot(nrow(s)==9L,ncol(s)==13L)
 pm <- function(x) { z <- strsplit(x," ± ",fixed=TRUE);stopifnot(all(lengths(z)==2L)); matrix(as.numeric(unlist(z)),ncol=2L,byrow=TRUE) }
 summer <- pm(s[[4]]); winter <- pm(s[[7]]); adult <- pm(s[[10]])

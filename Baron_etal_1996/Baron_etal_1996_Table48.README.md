@@ -41,3 +41,7 @@ tables (Table49-50) are derived and are deliberately not transcribed.
 - merge wiring remains on the whole-source hold recorded in
   `Baron_etal_1996_overlap_taxonomy_audit.md`.
 
+
+## Snapshot layout check (2026-11-27)
+
+Compared the rendered book PDF page 164. The snapshot now has the printed caption, eight-column source grid, order headings, and printed dash marks for unavailable values. `Rscript --vanilla Baron_etal_1996/Baron_etal_1996_Table48.R` derives row and page metadata; the rebuilt analysis CSV matched the pre-layout output. `Rscript --vanilla Baron_etal_1996/Baron_etal_1996_Table48_snapshot.R` verifies extracted species cells against the frozen source grid without replacing it. This assistant comparison is separate from independent human source signoff.

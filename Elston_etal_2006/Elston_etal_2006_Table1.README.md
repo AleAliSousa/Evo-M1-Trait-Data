@@ -39,3 +39,14 @@ recalculated; every number and its source footnote are carried through exactly a
 Transcribed directly from the article PDF's Table 1 (page 4) and its lettered footnote key by
 Microsoft Copilot (AI assistant) on 2026-09-25. The CSV, R script, public TSV, README, and definitions
 file were all built in this pass. No prior build existed for this item.
+
+## Snapshot layout recheck (2026-11-27)
+
+Compared Table 1 with the local PDF. The snapshot now follows the printed
+9-row cortex-by-variable grid with seven species columns, blank cells, and
+source letters attached to values. The R reader transposes this into the
+21-row cortex-by-species analysis CSV. Command from the repository root:
+`Rscript Elston_etal_2006/Elston_etal_2006_Table1.R`.
+The rebuilt analysis CSV matches the prior version cell for cell. The source
+PDF retains the full reference-letter legend. This layout check is separate
+from independent human source signoff.

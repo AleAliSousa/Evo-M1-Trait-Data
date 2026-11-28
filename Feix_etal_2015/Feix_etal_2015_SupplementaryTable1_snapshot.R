@@ -33,7 +33,12 @@ out$Species[13] <- 'Au. afarensis comp (Human)'
 group <- rep('',45L)
 group[1:6] <- 'Hominoidea';group[7:13] <- 'Fossils';group[14:17] <- 'Cercopithecidae'
 group[18:20] <- 'Platyrrhini';group[21:22] <- 'Tarsiidae'
-group[23:36] <- 'Lemuriformes';group[38:45] <- 'Lorisiformes'
+group[23:37] <- 'Lemuriformes';group[38:45] <- 'Lorisiformes'
+previous <- group[1]
+for (i in 2:length(group)) {
+  if (identical(group[i], previous)) group[i] <- ''
+  else previous <- group[i]
+}
 out <- data.frame(Group=group,out,check.names=FALSE,stringsAsFactors=FALSE)
 utils::write.table(out,file.path(folder,paste0(item_name,'_snapshot.csv')),
                    sep=',',quote=TRUE,row.names=FALSE,col.names=TRUE,na='',fileEncoding='UTF-8')

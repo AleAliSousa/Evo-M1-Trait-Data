@@ -1,5 +1,9 @@
 # Felleman_VanEssen_1991_Table5 — Connectivity table for visual areas
 
+## Snapshot layout audit and correction (2026-11-27)
+
+Compared the source's side-by-side Outputs/Inputs grid on PDF page 18 with the snapshot. The active snapshot now has the printed 12 core columns, including the Inputs `From`/`To` pair and blank repeated area labels within each block. The R reader fills group context for the 182-row analysis CSV. The first 23 `Levels crossed` cells (V1 and V2 blocks) had been left blank in both snapshot and analysis output; their values were read from the printed page and restored. These are the only 23 analysis-cell changes; all other cells match the previous CSV. Run `Rscript Felleman_VanEssen_1991/Felleman_VanEssen_1991_Table5.R` from the repository root. The facing-page literature-reference panels remain omitted as documented below; no reference values were inferred. Human source signoff remains independent.
+
 Felleman, D. J., & Van Essen, D. C. (1991). Distributed hierarchical processing in the primate
 cerebral cortex. *Cerebral Cortex*, 1(1), 1–47. https://doi.org/10.1093/cercor/1.1.1
 
@@ -61,9 +65,9 @@ literature support for a pathway is needed.
   laminar-code columns were transcribed from the image.
 
 ## Files
-- `Felleman_VanEssen_1991_Table5_snapshot.csv` — frozen, verbatim transcription (182 rows,
-  long format), matching exactly what is printed (blanks kept as blanks).
-- `Felleman_VanEssen_1991_Table5.csv` / public TSV — same content, published.
+- `Felleman_VanEssen_1991_Table5_snapshot.csv` — source-shaped 12-column core grid (182 pathway rows,
+  with printed group blanks and both Outputs/Inputs pairs); facing-page references omitted.
+- `Felleman_VanEssen_1991_Table5.csv` / public TSV — analysis table read and expanded from that grid.
 
 ## Data role
 **Primary** — the paper's own reported pathway-level connectivity data, transcribed from the

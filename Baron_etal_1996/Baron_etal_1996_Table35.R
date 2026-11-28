@@ -13,9 +13,8 @@
 ## in the already-built Table 32 (whose BOL is the whole olfactory bulb
 ## complex), so this table is the only route to a MOB/AOB volume split.
 ##
-## Input  : Baron_etal_1996_Table35_snapshot.csv (hand-transcribed, verbatim
-##          copy of the printed Table 35's species/n/Volume columns, read
-##          directly from the rendered page images)
+## Input  : Baron_etal_1996_Table35_snapshot.csv (printed five-column grid,
+##          with headings, page continuations, and summary rows)
 ## Output : Baron_etal_1996_Table35.csv
 ##          __Public/comparative-data/<Item encoded>.tsv
 ##
@@ -42,11 +41,25 @@ base <- local({
 
 setwd(folder)
 
-dat <- read.csv(
-  paste0(item_name, "_snapshot.csv"),
-  stringsAsFactors = FALSE,
-  check.names = FALSE
-)
+grid <- read.csv(paste0(item_name, "_snapshot.csv"), header=FALSE,
+                 colClasses="character", stringsAsFactors=FALSE,
+                 check.names=FALSE, na.strings=character(0), blank.lines.skip=FALSE)
+stopifnot(ncol(grid)==5L)
+page <- 155L
+species <- list()
+for(i in seq_len(nrow(grid))) {
+  if(identical(grid[[1]][i], "> Table 35 <")) {page <- page+1L; next}
+  volume <- grid[[3]][i]
+  if(!grepl("^0[.][0-9]{3}$",volume)) next
+  species[[length(species)+1L]] <- c(grid[[1]][i],as.character(page),
+                                    grid[[2]][i],volume)
+}
+stopifnot(length(species)==68L)
+dat <- as.data.frame(do.call(rbind,species),stringsAsFactors=FALSE)
+names(dat) <- c("species_printed","source_pdf_page","n","AOB_volume_mm3")
+dat$source_pdf_page <- as.integer(dat$source_pdf_page)
+dat$n <- as.integer(dat$n)
+dat$AOB_volume_mm3 <- as.numeric(dat$AOB_volume_mm3)
 
 csv_file <- paste0(item_name, ".csv")
 

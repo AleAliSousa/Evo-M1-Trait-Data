@@ -1,5 +1,9 @@
 # Carnes_etal_2011_TableS1
 
+## Snapshot layout audit (2026-11-27)
+
+Compared the snapshot with the locally stored publisher Word supplement `pone.0019853.s001.doc` using `antiword`. The supplement has nine columns in the same order as the 71-row CSV snapshot: species, A–G, and reference exceptions. The snapshot retains the printed species order and source-like row grid. This is a layout check, not independent human signoff.
+
 Source: https://doi.org/10.1371/journal.pone.0019853 — Supplementary table.
 
 Genus and species

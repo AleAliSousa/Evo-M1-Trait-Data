@@ -22,3 +22,7 @@ Role: **secondary**. Hofman compiled Table I from refs 1-12 (Elias & Schwartz 19
 
 ## Build
 `Hofman__1985_TableI.R` -> `Hofman__1985_TableI.csv` (44 rows). Public TSV is written once the registry row is pasted into `__ReadMe.xlsx`.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared with printed Table I in the local PDF. The table prints 10 taxonomic groups as section rows above 44 mammals; the previous snapshot instead repeated a Group column on every species row. The snapshot now has the 10 printed columns and 10 group rows; R carries each group down for analysis. `Rscript --vanilla Hofman__1985/Hofman__1985_TableI.R` rebuilt the 44-row CSV with unchanged SHA-256 `3ca1a9fbeac508f4c142197e11ca0fb2545fce047fd64180beee3625fc7a9e74`; both table checks passed. Human visual signoff remains separate.

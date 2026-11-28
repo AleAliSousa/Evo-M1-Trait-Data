@@ -74,6 +74,18 @@ Threshold in degrees of minimum audible angle, as printed.
    blank/NA rather than fabricated.
 
 <!-- errata:begin -->
+## Snapshot layout audit (2026-11-27)
+
+Compared the snapshot with the Table 1 grid on PDF page 7 (printed p. 253). The
+snapshot now keeps the three printed columns, the two section rows, degree
+symbols, and the pocket-gopher dash. `Heffner_etal_1994_c_Table1.R` fills the
+section labels and parses thresholds when making the analysis CSV; Figure 7's
+cross-check parses the same printed threshold cells. Ran
+`Rscript Heffner_etal_1994_c/Heffner_etal_1994_c_Table1.R` from the repository
+root. The 12-row derived CSV retained SHA-256
+`97ca3f20ee1f5532e14680b0e3a1945900ff2aa884d4f6cdfa01cf2c46fbbdaf`.
+
+<!-- errata:begin -->
 ## Errata
 
 Generated from `reference_tables/Heffner_etal_1994_c_errata.csv` by `_tools/dataset_builder/render_errata.R` -- edit the CSV, not this block. See `_tools/dataset_builder/ERRATA_CONVENTION.md`.

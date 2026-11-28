@@ -22,10 +22,15 @@ root_dir <- local({
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
 
-snapshot <- read.csv(file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
-                     check.names = FALSE, stringsAsFactors = FALSE)
-table10 <- read.csv(file.path(paper_dir, "Baron_etal_1996_Table10_snapshot.csv"),
-                    check.names = FALSE, stringsAsFactors = FALSE)
+source(file.path(paper_dir, "_read_baron_multpage.R"))
+snapshot <- read_baron_multpage(
+  file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
+  "Table32", c("MOB", "PAL", "STR", "SEP", "AMY", "HIP", "SCH", "NEO"), 138L
+)
+table10 <- read_baron_multpage(
+  file.path(paper_dir, "Baron_etal_1996_Table10_snapshot.csv"),
+  "Table10", c("n", "OBL", "MES", "CER", "DIE", "TEL"), 56L
+)
 ## Both snapshots now preserve the source's own printed family/subfamily
 ## section headings as their own rows (is_header == "TRUE"), so both must be
 ## filtered to species-only rows before the row-for-row species_row alignment

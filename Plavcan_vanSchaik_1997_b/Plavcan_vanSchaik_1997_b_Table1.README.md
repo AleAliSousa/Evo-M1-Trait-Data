@@ -29,3 +29,7 @@ The PDF text layer and extracted rows were checked on 2026-11-26. No human
 visual signoff is claimed. The existing main-registry row has an encoded item
 name and public TSV path; descriptive metadata and signoff are staged in
 `Plavcan_vanSchaik_1997_b_Table1_registry_row.xlsx` for owner review.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed caption, Weight/Mandibular/Maxillary/Male spanning headers, and the continuation caption and repeated headings at the page break after Presbytis potenziani. R selects the 87 source data rows and assigns analytic column names. `source_row` now identifies physical snapshot rows. Run `Rscript --vanilla Plavcan_vanSchaik_1997_b/Plavcan_vanSchaik_1997_b_Table1.R` from repository root. Independent human source comparison remains separate.

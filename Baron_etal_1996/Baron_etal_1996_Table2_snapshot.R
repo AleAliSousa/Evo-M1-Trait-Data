@@ -1,4 +1,6 @@
-# Baron_etal_1996_Table2_snapshot.R -- writes ONLY Baron_etal_1996_Table2_snapshot.csv
+# Historical extraction of the normalized Table 2 data. The active snapshot
+# was rebuilt as the printed grid in 2026-11-27; do not overwrite it with this
+# legacy extractor's output. The script remains as the OCR/cell-fix record.
 #
 # Baron, Stephan & Frahm (1996), Comparative Neurobiology in Chiroptera. Table 2 ("Linear measures of
 # brains in mm", PDF pp. 4-11, printed pp. 266-273), parsed from the PDF text layer. One script per output

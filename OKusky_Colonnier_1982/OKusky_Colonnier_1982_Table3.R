@@ -3,14 +3,20 @@ if (!length(a)) stop('Run with Rscript')
 folder <- dirname(normalizePath(sub('^--file=','',a[1])))
 item_name <- tools::file_path_sans_ext(basename(sub('^--file=','',a[1])))
 root <- dirname(folder)
-s <- utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),check.names=FALSE,colClasses='character',na.strings='',fileEncoding='UTF-8')
+source_grid <- utils::read.csv(file.path(folder,paste0(item_name,'_snapshot.csv')),skip=2L,header=FALSE,nrows=8L,
+                               col.names=c('Layer','Microns'),check.names=FALSE,colClasses='character',
+                               na.strings=NULL,fileEncoding='UTF-8')
+parts <- strsplit(source_grid$Microns, ' ± ', fixed=TRUE)
+stopifnot(all(lengths(parts)==2L))
+s <- data.frame(Layer=source_grid$Layer, `Thickness (µm)`=vapply(parts,`[[`,character(1),1L),
+                `SD (µm)`=vapply(parts,`[[`,character(1),2L),check.names=FALSE)
 num <- function(x) as.numeric(gsub(',','',x,fixed=TRUE))
 final.dataframe <- data.frame(source_order=seq_len(nrow(s)),layer=s$Layer,source_species='Macaca fascicularis; Macaca mulatta',Species=NA_character_,area17_thickness_um=num(s[['Thickness (µm)']]),area17_thickness_SD_um=num(s[['SD (µm)']]),observation_level='mean of six hemispheres; two M. fascicularis and one M. mulatta',stringsAsFactors=FALSE)
 stopifnot(nrow(final.dataframe)==8L,abs(sum(final.dataframe$area17_thickness_um[1:7])-final.dataframe$area17_thickness_um[8])<1)
 utils::write.csv(final.dataframe,file.path(folder,paste0(item_name,'.csv')),row.names=FALSE,na='',fileEncoding='UTF-8')
-reg <- readxl::read_excel(file.path(root,'__ReadMeAddON.xlsx'),sheet='Sheet1')
+reg <- readxl::read_excel(file.path(root,'__ReadMe.xlsx'),sheet='Sheet1')
 hit <- which(reg[['Item name']]==item_name)
-if(length(hit)!=1L) stop('Expected one AddON registry row')
+if(length(hit)!=1L) stop('Expected one registry row')
 encoded <- as.character(reg[['Item encoded']][hit])
 utils::write.table(final.dataframe,file.path(root,'__Public','comparative-data',paste0(encoded,'.tsv')),sep='	',row.names=FALSE,na='',fileEncoding='UTF-8')
 cat(item_name,': ',nrow(final.dataframe),' rows

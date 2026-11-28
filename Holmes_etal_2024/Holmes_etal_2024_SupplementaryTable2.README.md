@@ -138,3 +138,7 @@ runs `_tools/file_list.R`. After that, the next build writes the public TSV.
 
 None recorded. All table checks pass and no printed value was found inconsistent, so there is no
 `reference_tables/Holmes_etal_2024_errata.csv`.
+
+## Workbook repair (2026-11-27)
+
+Repaired the worksheet dimension (A1:F32) and removed two dangling drawing links. The table cells, source order, and six printed columns are unchanged and match Supplementary Table 2 on page 2 of the local PDF. `openpyxl` normal and read-only modes now both open the workbook and report 32 × 6. The analysis CSV hash remains `197144af5b0589d92df2b97b2221a367bdd572a1ac6052d035215fa4684620d2`. This does not record human visual signoff.

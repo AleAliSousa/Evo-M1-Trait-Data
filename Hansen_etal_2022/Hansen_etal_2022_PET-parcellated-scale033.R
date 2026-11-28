@@ -1,11 +1,10 @@
 ## Hansen JY, Shafiei G, Markello RD, et al. (2022) Nat Neurosci 25:1569-1581, doi 10.1038/s41593-022-01186-3
 ## Item: PET-parcellated-scale033 -- 41 group-average PET receptor/transporter maps parcellated to the
 ## Lausanne scale033 atlas (68 Desikan-Killiany cortical + 15 subcortical regions, per hemisphere).
-## Build: frozen snapshot -> long analysis CSV (+ public TSV).  See __HOWTO_build_a_dataset_file.md
+## Build: frozen author files -> long analysis CSV (+ public TSV).  See __HOWTO_build_a_dataset_file.md
 ##
-## The frozen source is the CONSTRUCTED snapshot Hansen_etal_2022_PET-parcellated-scale033_snapshot.csv
-## (region x tracer-file; written by the separate _snapshot.R from the authors' parcellated CSVs,
-## values verbatim). This script only READS it. It reshapes to one row per region x tracer file,
+## The frozen source consists of the authors' 41 individual tracer CSVs plus the region workbook
+## in github_hansen_receptors. This script joins them in R, then reshapes to one row per region x tracer file,
 ## parses the authors' filename convention <receptor>_<tracer>_hc<n>_<source>[_suffix], attaches the
 ## measure/unit per map from reference_tables/<item>_tracer_units.csv (constructed from the paper's
 ## Table 1 + Methods) and the Desikan-Killiany spelling used by Johansen_etal_2024_Table2 from
@@ -39,7 +38,6 @@ dataset_root  <- local({
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
 setwd(folder)
-snapshot_csv   <- file.path(folder, paste0(item_name, "_snapshot.csv"))
 tracer_key_csv <- file.path(folder, "reference_tables", paste0(item_name, "_tracer_units.csv"))
 dk_key_csv     <- file.path(folder, "reference_tables", paste0(item_name, "_dk_region_key.csv"))
 final_csv      <- file.path(folder, paste0(item_name, ".csv"))
@@ -49,12 +47,40 @@ public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 ## 1. PACKAGES ---------------------------------------------------------------
 library(readxl)
 
-## 2. READ FROZEN SNAPSHOT + item-scoped keys --------------------------------
-snap <- utils::read.csv(snapshot_csv, colClasses = "character", check.names = FALSE, encoding = "UTF-8")
+## 2. READ FROZEN AUTHOR FILES + item-scoped keys ---------------------------
+src_dir <- file.path(folder, "github_hansen_receptors")
+manifest <- utils::read.csv(file.path(src_dir, "download_manifest.csv"), stringsAsFactors = FALSE)
+region_xlsx <- file.path(src_dir, "data", "lausanne", "region_info_scale033.xlsx")
+tracer_files <- sort(list.files(file.path(src_dir, "data", "PET_parcellated", "scale033"),
+                                pattern = "\\.csv$", full.names = TRUE), method = "radix")
+stopifnot(length(tracer_files) == 41L)
+if (!requireNamespace("digest", quietly = TRUE)) stop("digest is required for source integrity checks")
+for (f in tracer_files) {
+  rel <- substring(f, nchar(src_dir) + 2L)
+  m <- manifest[manifest$repo_path == rel, , drop = FALSE]
+  stopifnot(nrow(m) == 1L)
+  if (!identical(digest::digest(f, algo = "sha256", file = TRUE), m$sha256))
+    stop("Source SHA-256 mismatch: ", rel)
+}
+regions <- as.data.frame(readxl::read_excel(region_xlsx, .name_repair = "minimal"), check.names = FALSE)
+names(regions)[names(regions) == ""] <- "row_index"
+stopifnot(nrow(regions) == 83L)
+regions$scale <- NULL
+read_tokens <- function(f) {
+  txt <- paste(readLines(f, warn = FALSE), collapse = "\n")
+  toks <- trimws(strsplit(txt, "[,\n]")[[1]])
+  toks <- toks[nzchar(toks)]
+  if (length(toks) != 83L) stop("Expected 83 values in ", basename(f))
+  toks
+}
+vals <- lapply(tracer_files, read_tokens)
+names(vals) <- tools::file_path_sans_ext(basename(tracer_files))
+snap <- cbind(regions, as.data.frame(vals, check.names = FALSE, stringsAsFactors = FALSE))
+snap[] <- lapply(snap, as.character)
 meta_cols   <- c("row_index", "id", "label", "hemisphere", "structure", "yeo_7", "von_economo")
 tracer_cols <- setdiff(names(snap), meta_cols)
 if (nrow(snap) != 83L || length(tracer_cols) != 41L)
-  stop("Snapshot shape unexpected: ", nrow(snap), " rows x ", length(tracer_cols), " tracer columns", call. = FALSE)
+  stop("Author-file shape unexpected: ", nrow(snap), " rows x ", length(tracer_cols), " tracer columns", call. = FALSE)
 
 tracer_key <- utils::read.csv(tracer_key_csv, stringsAsFactors = FALSE, encoding = "UTF-8")
 dk_key     <- utils::read.csv(dk_key_csv,     stringsAsFactors = FALSE, encoding = "UTF-8")

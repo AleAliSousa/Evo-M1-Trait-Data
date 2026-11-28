@@ -44,8 +44,28 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-snap  <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
-                  colClasses = "character", encoding = "UTF-8")
+source_grid <- read.csv(snapshot_csv, skip = 2L, header = FALSE, nrows = 24L,
+                        col.names = c("Species", "Symbol", "Sound localization threshold in deg",
+                                      "Delta t in usec", "Field of best vision in deg",
+                                      "Visual acuity in c/deg", "Binocular field in deg",
+                                      "Trophic level"), stringsAsFactors = FALSE,
+                        check.names = FALSE, colClasses = "character", na.strings = NULL,
+                        encoding = "UTF-8")
+marker <- function(x) {
+  z <- sub("^.*?([⁰¹²³⁴⁵⁶⁷⁸⁹]+)$", "\\1", x)
+  z[!grepl("[⁰¹²³⁴⁵⁶⁷⁸⁹]$", x)] <- ""
+  chartr("⁰¹²³⁴⁵⁶⁷⁸⁹", "0123456789", z)
+}
+value <- function(x) sub("[⁰¹²³⁴⁵⁶⁷⁸⁹]+$", "", x)
+snap <- data.frame(Species = source_grid[[1]], Symbol = source_grid[[2]],
+                   `Sound localization threshold in deg` = value(source_grid[[3]]),
+                   threshold_footnote = marker(source_grid[[3]]),
+                   `Delta t in usec` = source_grid[[4]],
+                   `Field of best vision in deg` = source_grid[[5]],
+                   `Visual acuity in c/deg` = value(source_grid[[6]]),
+                   acuity_footnote = marker(source_grid[[6]]),
+                   `Binocular field in deg` = source_grid[[7]],
+                   `Trophic level` = source_grid[[8]], check.names = FALSE)
 foot  <- read.csv(foot_csv,  stringsAsFactors = FALSE)
 xwalk <- read.csv(xwalk_csv, stringsAsFactors = FALSE)
 stopifnot(nrow(snap) == 24)

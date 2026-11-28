@@ -64,50 +64,59 @@ resolve <- function(x) {
 }
 
 ## 2. LOAD -------------------------------------------------------------
-snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE,
-                 colClasses = "character", fileEncoding = "UTF-8", na.strings = NULL)
+grid <- read.csv(snapshot_csv, skip = 1, header = FALSE,
+                 col.names = c("Species", "Predicted", "Observed", "Excess"),
+                 check.names = FALSE, stringsAsFactors = FALSE, colClasses = "character",
+                 fileEncoding = "UTF-8", na.strings = NULL, blank.lines.skip = FALSE)
 refs <- read.csv(refs_csv, stringsAsFactors = FALSE, colClasses = "character", fileEncoding = "UTF-8")
-stopifnot(sum(snap$Row_type == "species") == 12L)
-
-## 3. CLEAN -------------------------------------------------------------
-snap$group <- NA_character_
-g <- NA_character_
-for (i in seq_len(nrow(snap))) {
-  if (snap$Row_type[i] == "group_header") g <- snap$Row_as_printed[i]
-  snap$group[i] <- g
-}
-fn  <- snap[snap$Row_type == "footnote", c("Footnote_marker_as_printed", "Printed_note")]
-fnt <- setNames(fn$Printed_note, fn$Footnote_marker_as_printed)
-to_keys <- function(txt) {             # "Dalland, 1965; Koay et al., 1997." -> keys
+stopifnot(grid$Species[1] == "Species")
+num <- function(x) as.numeric(gsub("\u2212", "-", x))
+species_ix <- which(grepl("\n", grid$Species, fixed = TRUE))
+stopifnot(length(species_ix) == 12L)
+sp <- grid[species_ix, , drop = FALSE]
+first_line <- sub("\n.*", "", sp$Species)
+common <- sub("\\^[a-l]$", "", first_line)
+marker <- sub(".*\\^([a-l])$", "\\1", first_line)
+published <- sub(".*\n", "", sp$Species)
+group <- vapply(species_ix, function(i) {
+  preceding <- grid$Species[seq_len(i - 1L)]
+  tail(preceding[preceding %in% c("Laryngeal echolocators", "Non-echolocators")], 1)
+}, character(1))
+foot_ix <- grepl("^[a-l] ", grid$Species)
+fn <- grid$Species[foot_ix]
+fn_mark <- sub(" .*", "", fn)
+fnt <- setNames(sub("^[a-l] ", "", fn), fn_mark)
+stopifnot(length(fn) == 12L, all(marker %in% names(fnt)))
+to_keys <- function(txt) {
   txt <- sub("\\.$", "", sub(" \\(note.*$", "", txt))
   paste(trimws(strsplit(txt, ";")[[1]]), collapse = "; ")
 }
-num <- function(x) as.numeric(gsub("\u2212", "-", x))
-sp <- snap[snap$Row_type == "species", ]
 final.dataframe <- tibble(
   table_row = seq_len(nrow(sp)),
-  group_as_printed = sp$group,
-  common_name_as_printed = sp$Row_as_printed,
-  footnote_marker = sp$Footnote_marker_as_printed,
-  species_as_published = sp$Scientific_name_as_printed,
-  species = resolve(sp$Scientific_name_as_printed),
-  predicted_high_freq_limit_kHz = num(sp$Predicted_high_frequency_hearing_limit_kHz),
-  observed_high_freq_limit_60dB_kHz = num(sp$Observed_high_frequency_hearing_limit_kHz),
-  excess_high_freq_hearing_octaves = num(sp$Excess_high_frequency_hearing_octaves),
-  source_footnote_as_printed = unname(fnt[sp$Footnote_marker_as_printed]),
-  source_ref_keys = vapply(unname(fnt[sp$Footnote_marker_as_printed]), to_keys, character(1), USE.NAMES = FALSE),
-  data_role = ifelse(sp$Footnote_marker_as_printed == "d", "primary", "secondary"))
+  group_as_printed = group,
+  common_name_as_printed = common,
+  footnote_marker = marker,
+  species_as_published = published,
+  species = resolve(published),
+  predicted_high_freq_limit_kHz = num(sp$Predicted),
+  observed_high_freq_limit_60dB_kHz = num(sp$Observed),
+  excess_high_freq_hearing_octaves = num(sp$Excess),
+  source_footnote_as_printed = unname(fnt[marker]),
+  source_ref_keys = vapply(unname(fnt[marker]), to_keys, character(1), USE.NAMES = FALSE),
+  data_role = ifelse(marker == "d", "primary", "secondary"))
 keys <- unique(unlist(strsplit(final.dataframe$source_ref_keys, "; ")))
 stopifnot(all(keys %in% refs$ref_key))
+mn_ix <- which(grepl("^Mean deviation", grid$Species))
+mn <- tibble(group = c("Laryngeal echolocators", "Non-echolocators"), excess = num(grid$Excess[mn_ix]))
+stopifnot(length(mn_ix) == 2L)
 
 ## 7a. TABLE CHECKS ------------------------------------------------------
 dev <- abs(log2(final.dataframe$observed_high_freq_limit_60dB_kHz /
                 final.dataframe$predicted_high_freq_limit_kHz) - final.dataframe$excess_high_freq_hearing_octaves)
 stopifnot(all(dev < 0.002))
-mn <- snap[snap$Row_type == "mean_deviation", ]
 for (k in seq_len(nrow(mn))) {
   got <- mean(final.dataframe$excess_high_freq_hearing_octaves[final.dataframe$group_as_printed == mn$group[k]])
-  stopifnot(abs(got - num(mn$Excess_high_frequency_hearing_octaves[k])) < 0.0015)
+  stopifnot(abs(got - mn$excess[k]) < 0.0015)
 }
 cat("table_checks: 12/12 excess = log2(obs/pred) within 0.002; 2/2 group means match\n")
 

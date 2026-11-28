@@ -1,8 +1,14 @@
-Species,Common name,Echolocation status,Passive sound-localization threshold (deg),Source
-Phyllostomus hastatus,Greater spear-nosed bat,Echolocator,9.5,Heffner et al. (2007)
-Artibeus jamaicensis,Jamaican fruit bat,Echolocator,9.9,Heffner et al. (2001)
-Cynopterus brachyotis,Dog-faced fruit bat,Non-echolocator,10.5,this study
-Eidolon helvum,Straw-colored fruit bat,Non-echolocator,11.7,this study
-Rousettus aegyptiacus,Egyptian fruit bat,Atypical echolocator (tongue-click),11.6,Heffner et al. (1999)
-Eptesicus fuscus,Big brown bat,Echolocator,14,Koay et al. (1998)
-Carollia perspicillata,Short-tailed fruit bat,Echolocator,14.7,Heffner et al. (2007)
+Table 1 Passive sound-localization thresholds (minimum audible angles) of bats,,
+Species,Common name,Passive sound-localization threshold in degrees
+Non-echolocators,,
+Cynopterus brachyotis,Dog-faced fruit bat,10.5
+Eidolon helvum,Straw-colored fruit bat,11.7
+Atypical echolocator**,,
+Rousettus aegyptiacus,Egyptian fruit bat,11.6
+Echolocators,,
+Phyllostomus hastatus,Greater spear-nosed bat,9.5
+Artibeus jamaicensis,Jamaican fruit bat,9.9
+Eptesicus fuscus,Big brown bat,14
+Carollia perspicillata,Short-tailed fruit bat,14.7
+"* Includes only thresholds obtained using procedures that do not permit echolocation to contribute to performance. Accordingly, thresholds of obstacle avoidance and flying toward a sound-emitting prey are not included.",,
+** This genus of Pteropodidae is believed to have evolved from non-echolocating species and to have secondarily developed echolocation using double tongue clicks for orientation in caves.,,

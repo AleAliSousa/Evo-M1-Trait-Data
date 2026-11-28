@@ -1,64 +1,91 @@
-id,group,species,bulbus_olfactorius_mm3,palaeocortex_plus_amygdala_mm3,septum_mm3,striatum_mm3,schizocortex_mm3,hippocampus_mm3,neocortex_mm3
-1,Insectivore,Sorex minutus,8.7,17.2,2.0,6.0,3.6,10.5,12.7
-2,Insectivore,Sorex araneus,14.2,32.7,3.8,10.1,7.2,20.6,28.1
-3,Insectivore,Crocidura russula,16.4,30.2,3.6,8.2,6.1,15.9,25.5
-4,Insectivore,Crocidura occidentalis,37.8,68.4,6.9,16.8,13.3,38.5,59.1
-5,Insectivore,Suncus murinus,34.4,56.2,5.5,14.8,12.6,31.2,54.1
-6,Insectivore,Echinops telfairi,65.7,118,11.0,24.1,9.6,49.6,48.5
-7,Insectivore,Hemicentetes semispinosus,93.8,148,12.8,29.8,17.4,63.7,73.4
-8,Insectivore,Setifer setosus,210,338,26.0,55.6,41.9,97.7,134
-9,Insectivore,Tenrec ecaudatus,293,452,37.9,101,71.3,146,280
-10,Insectivore,Erinaceus europaeus,350,507,46.2,134,120,220,543
-11,Insectivore,Aethechinus algirus,297,504,41.6,163,113,268,541
-12,Insectivore,Solenodon paradoxus,478,683,68.1,235,140,299,583
-13,Insectivore,Nesogale talazaci,74.6,139,11.2,31.2,20.7,98.9,96.2
-14,Insectivore,Limnogale mergulus,43.2,87.4,19.5,57.9,36.4,78.2,196
-15,Insectivore,Potamogale velox,87.0,191,50.7,132,142,294,1039
-16,Insectivore,Neomys fodiens,15.9,36.0,6.4,18.7,9.0,32.9,56.6
-17,Insectivore,Talpa europaea,60.0,112,14.9,60.2,39.6,86.7,181
-18,Insectivore,Galemys pyrenaicus,39.2,107,20.1,74.4,44.9,109,339
-19,Insectivore,Desmana moschata,142,320,42.6,222,163,267,983
-20,Insectivore,Chlorotalpa stuhlmanni,60.8,131,11.3,43.5,21.4,59.1,129
-21,Insectivore,Elephantulus fuscipes,63.9,121,16.8,44.5,46.8,171,236
-22,Insectivore,Rhynchocyon stuhlmanni,427,705,81.5,222,220,582,1089
-23,Prosimian,Tupaia glis,128,256,32.1,133,84.2,138,1007
-24,Prosimian,Urogale everetti,186,362,45.1,199,124,173,1338
-25,Prosimian,Microcebus murinus,40.3,94.5,15.5,94.3,39.4,100,773
-26,Prosimian,Cheirogaleus medius,99.3,181,31.5,146,59.5,175,1252
-27,Prosimian,Cheirogaleus major,155,315,64.1,336,144,332,2963
-28,Prosimian,Lepilemur ruficaudatus,131,287,57.1,388,199,380,3287
-29,Prosimian,Hapalemur simus,79.4,223,62.1,441,214,525,4331
-30,Prosimian,Lemur fulvus,229,638,121,1152,433,709,12442
-31,Prosimian,Lemur variegatus,374,985,206,1591,608,1404,15293
-32,Prosimian,Avahi laniger,80.6,236,78.1,444,206,476,4341
-33,Prosimian,Propithecus verreauxi,168,565,160,1425,395,1044,13389
-34,Prosimian,Indri indri,142,830,223,1755,808,1535,19976
-35,Prosimian,Daubentonia madagascariensis,693,1538,254,2765,1044,1776,22127
-36,Prosimian,Loris gracilis,88.1,256,41.1,351,99.7,191,3524
-37,Prosimian,Nycticebus coucang,164,510,92.0,760,212,566,6192
-38,Prosimian,Perodicticus potto,312,661,114,712,328,607,6683
-39,Prosimian,Galago demidovii,84.4,181,25.7,169,59.9,152,1568
-40,Prosimian,Galago senegalensis,81.8,163,35.7,210,107,261,2139
-41,Prosimian,Galago crassicaudatus,180,405,70.6,504,178,412,4919
-42,Prosimian,Tarsius syrichta,18.1,95.0,20.9,133,64.3,138,1890
-43,Simian,Callithrix jacchus,28.4,224,49.7,332,85.2,238,4357
-44,Simian,Saguinus oedipus,24.6,282,68.6,420,99.6,259,6050
-45,Simian,Saguinus tamarin,16.8,203,43.6,415,113,278,5969
-46,Simian,Aotes trivirgatus,60.3,394,92.9,779,255,479,9354
-47,Simian,Callicebus moloch,16.8,425,64.7,721,212,481,8973
-48,Simian,Pithecia monacha,38.2,699,123,1642,283,850,21266
-49,Simian,Alouatta seniculus,45.2,943,154,2566,428,1325,29843
-50,Simian,Cebus sp.,49.6,1186,212,3295,436,892,47045
-51,Simian,Cebus albifrons,37.2,892,161,3635,401,1029,53073
-52,Simian,Saimiri sciureus,25.4,411,83.0,929,154,316,14246
-53,Simian,Ateles geoffroyi,92.6,1625,324,4950,732,1366,70856
-54,Simian,Lagothrix logotricha,83.0,1502,241,4662,597,1381,66087
-55,Simian,Macaca mulatta,84.3,1220,271,4032,639,1353,63481
-56,Simian,Cercocebus albigena,121,1639,294,4146,630,1485,68733
-57,Simian,Cercopithecus talapoin,22.3,732,121,1835,237,684,25747
-58,Simian,Cercopithecus ascanius,96.5,1136,243,2627,673,1154,43818
-59,Simian,Cercopithecus mitis,118,1282,249,2769,625,1385,50599
-60,Simian,Colobus badius,51.3,998,288,3156,814,1671,50906
-61,Simian,Pan troglodytes,267,2852,882,12700,2093,3919,302392
-62,Simian,Gorilla gorilla,294,4530,1090,13547,2537,4446,317542
-63,Simian,Homo sapiens,114,9161,2610,28559,6142,10287,1006525
+TABLE 4. Volume of the various components of the telencephalon in Insectivores (in mm³).,,,,,,,
+,Bulbus olfactorius,Palaeocortex + NA*,Septum†,Striatum‡,Schizocortex§,Hippocampus,Neocortex‖
+,9,10,11,12,13,14,15
+A. Basal Insectivores,,,,,,,
+1. Sorex minutus,8.7,17.2,2.0,6.0,3.6,10.5,12.7
+2. Sorex araneus,14.2,32.7,3.8,10.1,7.2,20.6,28.1
+3. Crocidura russula,16.4,30.2,3.6,8.2,6.1,15.9,25.5
+4. Crocidura occidentalis,37.8,68.4,6.9,16.8,13.3,38.5,59.1
+5. Suncus murinus,34.4,56.2,5.5,14.8,12.6,31.2,54.1
+6. Echinops telfairi,65.7,118.0,11.0,24.1,9.6,49.6,48.5
+7. Hemicentetes semispinosus,93.8,148.0,12.8,29.8,17.4,63.7,73.4
+8. Setifer setosus,210.0,338.0,26.0,55.6,41.9,97.7,134.0
+9. Tenrec ecaudatus,293.0,452.0,37.9,101.0,71.3,146.0,280.0
+10. Erinaceus europaeus,350.0,507.0,46.2,134.0,120.0,220.0,543.0
+11. Aethechinus algirus,297.0,504.0,41.6,163.0,113.0,268.0,541.0
+B. Progressive Insectivores,,,,,,,
+12. Solenodon paradoxus,478.0,683.0,68.1,235.0,140.0,299.0,583.0
+13. Nesogale talazaci,74.6,139.0,11.2,31.2,20.7,98.9,96.2
+14. Limnogale mergulus,43.2,87.4,19.5,57.9,36.4,78.2,196.0
+15. Potamogale velox,87.0,191.0,50.7,132.0,142.0,294.0,1039.0
+16. Neomys fodiens,15.9,36.0,6.4,18.7,9.0,32.9,56.6
+17. Talpa europaea,60.0,112.0,14.9,60.2,39.6,86.7,181.0
+18. Galemys pyrenaicus,39.2,107.0,20.1,74.4,44.9,109.0,339.0
+19. Desmana moschata,142.0,320.0,42.6,222.0,163.0,267.0,983.0
+20. Chlorotalpa stuhlmanni,60.8,131.0,11.3,43.5,21.4,59.1,129.0
+21. Elephantulus fuscipes,63.9,121.0,16.8,44.5,46.8,171.0,236.0
+22. Rhynchocyon stuhlmanni,427.0,705.0,81.5,222.0,220.0,582.0,1089.0
+* Palaeocortex + NA: corpus amygdaloideum was not separated from palaeocortex.,,,,,,,
+† Septum includes the diagonal band of Broca.,,,,,,,
+‡ Striatum includes the internal capsule.,,,,,,,
+"§ Schizocortex comprises entorhinal, perirhinal, pre- and parasubicular regions.",,,,,,,
+‖ Neocortex includes underlying white substance.,,,,,,,
+,,,,,,,
+TABLE 5. Volume of the various components of the telencephalon in Prosimians (in mm³).,,,,,,,
+,Bulbus olfactorius,Palaeocortex + NA*,Septum†,Striatum‡,Schizocortex§,Hippocampus,Neocortex‖
+,9,10,11,12,13,14,15
+23. Tupaia glis,128.0,256.0,32.1,133.0,84.2,138.0,1007.0
+24. Urogale everetti,186.0,362.0,45.1,199.0,124.0,173.0,1338.0
+25. Microcebus murinus,40.3,94.5,15.5,94.3,39.4,100.0,773.0
+26. Cheirogaleus medius,99.3,181.0,31.5,146.0,59.5,175.0,1252.0
+27. Cheirogaleus major,155.0,315.0,64.1,336.0,144.0,332.0,2963.0
+28. Lepilemur ruficaudatus,131.0,287.0,57.1,388.0,199.0,380.0,3287.0
+29. Hapalemur simus,79.4,223.0,62.1,441.0,214.0,525.0,4331.0
+30. Lemur fulvus,229.0,638.0,121.0,1152.0,433.0,709.0,12442.0
+31. Lemur variegatus,374.0,985.0,206.0,1591.0,608.0,1404.0,15293.0
+32. Avahi laniger,80.6,236.0,78.1,444.0,206.0,476.0,4341.0
+33. Propithecus verreauxi,168.0,565.0,160.0,1425.0,395.0,1044.0,13389.0
+34. Indri indri,142.0,830.0,223.0,1755.0,808.0,1535.0,19976.0
+35. Daubentonia madagascariensis,693.0,1538.0,254.0,2765.0,1044.0,1776.0,22127.0
+36. Loris gracilis,88.1,256.0,41.1,351.0,99.7,191.0,3524.0
+37. Nycticebus coucang,164.0,510.0,92.0,760.0,212.0,566.0,6192.0
+38. Perodicticus potto,312.0,661.0,114.0,712.0,328.0,607.0,6683.0
+39. Galago demidovii,84.4,181.0,25.7,169.0,59.9,152.0,1568.0
+40. Galago senegalensis,81.8,163.0,35.7,210.0,107.0,261.0,2139.0
+41. Galago crassicaudatus,180.0,405.0,70.6,504.0,178.0,412.0,4919.0
+42. Tarsius syrichta,18.1,95.0,20.9,133.0,64.3,138.0,1890.0
+* Palaeocortex + NA: corpus amygdaloideum was not separated from palaeocortex.,,,,,,,
+† Septum includes the diagonal band of Broca.,,,,,,,
+‡ Striatum includes the internal capsule.,,,,,,,
+"§ Schizocortex comprises entorhinal, perirhinal, pre- and parasubicular regions.",,,,,,,
+‖ Neocortex includes underlying white substance.,,,,,,,
+,,,,,,,
+TABLE 6. Volume of the various components of the telencephalon in Simians (in mm³).,,,,,,,
+,Bulbus olfactorius,Palaeocortex + NA*,Septum†,Striatum‡,Schizocortex§,Hippocampus,Neocortex‖
+,9,10,11,12,13,14,15
+43. Callithrix jacchus,28.4,224.0,49.7,332.0,85.2,238.0,4357.0
+44. Saguinus oedipus,24.6,282.0,68.6,420.0,99.6,259.0,6050.0
+45. Saguinus tamarin,16.8,203.0,43.6,415.0,113.0,278.0,5969.0
+46. Aotes trivirgatus,60.3,394.0,92.9,779.0,255.0,479.0,9354.0
+47. Callicebus moloch,16.8,425.0,64.7,721.0,212.0,481.0,8973.0
+48. Pithecia monacha,38.2,699.0,123.0,1642.0,283.0,850.0,21266.0
+49. Alouatta seniculus,45.2,943.0,154.0,2566.0,428.0,1325.0,29843.0
+50. Cebus sp.,49.6,1186.0,212.0,3295.0,436.0,892.0,47045.0
+51. Cebus albifrons,37.2,892.0,161.0,3635.0,401.0,1029.0,53073.0
+52. Saimiri sciureus,25.4,411.0,83.0,929.0,154.0,316.0,14246.0
+53. Ateles geoffroyi,92.6,1625.0,324.0,4950.0,732.0,1366.0,70856.0
+54. Lagothrix logotricha,83.0,1502.0,241.0,4662.0,597.0,1381.0,66087.0
+55. Macaca mulatta,84.3,1220.0,271.0,4032.0,639.0,1353.0,63481.0
+56. Cercocebus albigena,121.0,1639.0,294.0,4146.0,630.0,1485.0,68733.0
+57. Cercopithecus talapoin,22.3,732.0,121.0,1835.0,237.0,684.0,25747.0
+58. Cercopithecus ascanius,96.5,1136.0,243.0,2627.0,673.0,1154.0,43818.0
+59. Cercopithecus mitis,118.0,1282.0,249.0,2769.0,625.0,1385.0,50599.0
+60. Colobus badius,51.3,998.0,288.0,3156.0,814.0,1671.0,50906.0
+61. Pan troglodytes,267.0,2852.0,882.0,12700.0,2093.0,3919.0,302392.0
+62. Gorilla gorilla,294.0,4530.0,1090.0,13547.0,2537.0,4446.0,317542.0
+63. Homo sapiens,114.0,9161.0,2610.0,28559.0,6142.0,10287.0,1006525.0
+* Palaeocortex + NA: corpus amygdaloideum was not separated from palaeocortex.,,,,,,,
+† Septum includes the diagonal band of Broca.,,,,,,,
+‡ Striatum includes the internal capsule.,,,,,,,
+"§ Schizocortex comprises entorhinal, perirhinal, pre- and parasubicular regions.",,,,,,,
+‖ Neocortex includes underlying white substance.,,,,,,,

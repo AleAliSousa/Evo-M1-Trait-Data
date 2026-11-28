@@ -1,5 +1,9 @@
 # Chang_etal_2017_Table1
 
+## Snapshot layout audit (2026-11-27)
+
+Compared the seven-column snapshot against [the publisher's Table 1 text in the PMC record](https://pmc.ncbi.nlm.nih.gov/articles/PMC5373394/). The GR and GU section rows, behavior rows, total rows, monkey columns C1–M3, and order match the printed table. No layout edit was needed. This is a layout comparison, not human source signoff.
+
 Source: https://doi.org/10.1073/pnas.1620764114 — Table 1; post-training, C1–C3 and M1–M3.
 
 Spontaneous mirror-induced self-directed behaviors

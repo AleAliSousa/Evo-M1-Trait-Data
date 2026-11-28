@@ -1,1 +1,8 @@
 Table 4.1. Comparison of orangutan call descriptions. Empty cells are not absence claims. Short approximately <=25 m; middle approximately <=250 m; long >250 m, per text. Rows compare nomenclature, not independent species. This chapter pools wild and captive orangutan recordings and does not assign every call to a single species.
+
+Snapshot layout audit (2026-11-27): Compared local PDF page 4, printed Table
+4.1. Restored the four printed columns, the two-tier header, and the Wild /
+Rehabilitants and captives section rows. The R reader fills the context for
+analysis. Ran `Rscript Hardus_etal_2008/Hardus_etal_2008_Table4.1.R`; the
+32-row derived CSV retained SHA-256
+e39e8cec89fa99617b5955c551aa8bc4f8a0d99bc43f81abd15dacc56c007d65.

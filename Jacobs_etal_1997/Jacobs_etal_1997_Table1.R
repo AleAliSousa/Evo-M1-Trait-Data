@@ -33,10 +33,24 @@ base <- local({
 
 setwd(folder)
 
-dat <- read.csv(
-  paste0(item_name, "_snapshot.csv"),
-  stringsAsFactors = FALSE,
-  check.names = FALSE
+grid <- read.csv(paste0(item_name, "_snapshot.csv"), header = FALSE,
+                 stringsAsFactors = FALSE, check.names = FALSE,
+                 colClasses = "character", na.strings = character(0))
+stopifnot(ncol(grid) == 5L, nrow(grid) == 30L,
+          grepl("^TABLE 1\\.", grid[[1]][1]))
+body <- grid[3:28, , drop = FALSE]
+subject <- body[[1]]
+dat <- data.frame(
+  Subject = subject,
+  Sex = substr(subject, 1L, 1L),
+  Age_years = as.integer(sub("^[MF]([0-9]+).*", "\\1", subject)),
+  Body_weight_kg = suppressWarnings(as.numeric(body[[2]])),
+  Autolysis_time_h = suppressWarnings(as.numeric(body[[3]])),
+  Cause_of_death = body[[4]],
+  Occupation_education = body[[5]],
+  Ethnicity = ifelse(subject == "M69.2", "Hispanic",
+                     ifelse(subject == "F106", "African-American", "Caucasian")),
+  stringsAsFactors = FALSE, check.names = FALSE
 )
 
 csv_file <- paste0(item_name, ".csv")

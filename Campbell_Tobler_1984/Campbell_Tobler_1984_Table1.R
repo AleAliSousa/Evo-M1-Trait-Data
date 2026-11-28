@@ -16,7 +16,10 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+grid <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=1L,
+                 col_types=cols(.default=col_character()),na=character(),
+                 trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+raw <- grid[apply(as.matrix(grid[-1L]) != "", 1L, any), , drop=FALSE]
 final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
 final.dataframe$Source_row <- seq_len(nrow(raw))+1L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}

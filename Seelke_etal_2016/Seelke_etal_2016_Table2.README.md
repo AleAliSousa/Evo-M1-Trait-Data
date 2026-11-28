@@ -13,3 +13,7 @@ Three source-level concerns are retained as row-level flags rather than correcti
 - OT males received 3 µg oxytocin while OT females received 6 µg; the 25 µl injection volume was common, but dose was not.
 
 Groups with n=3 are separately flagged. `derived_unlisted_myelin_pct`, `source_flags`, and `source_issue_note` expose these checks without changing any printed mean or SE.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed Table 2 caption and the separate treatment-group and Male/Female header tiers. R assigns analytic column keys after reading the seven source rows. The paper itself repeats several OTA male/female means; these remain as printed and flagged in the reader. Run `Rscript --vanilla Seelke_etal_2016/Seelke_etal_2016_Table2.R` from repository root. Independent human source comparison remains separate.

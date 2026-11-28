@@ -8,15 +8,15 @@ neonate weights, neocortex volume, gyrification index (GI), ventricle volume, gl
 neuronal & glial densities, basal metabolic rate, and ~30 life-history / ecology variables
 (lifespan, gestation, litter size, diet, sociality, home range, …).
 
-## Source → CSV → public TSV (digital-native: no snapshot)
-This is a **digital-native** source, so the snapshot step is **skipped** — the journal's own
-machine-readable supplement is already the durable, faithful copy, and freezing a second copy would
-add nothing. The build reads the source **directly** and all cleaning is reproducible from it.
+## Source → snapshot → CSV → public TSV
+This is a **digital-native** source. The snapshot is now an exact copy of the
+journal workbook, retaining its title, headers, original row order and every
+worksheet cell. The build reads that frozen copy.
 
 - **Source:** journal supplement `pbio.1002000.s013.xlsx` (Table S1; sheet `Sheet1`, row 1 = title,
   row 2 = header), kept in this folder. (Table S2 definitions = `pbio.1002000.s014.xlsx`; Table S9
   neuron numbers = `pbio.1002000.s020.xlsx`.)
-- **Reformat:** `Lewitus_etal_2014_TableS1.R` reads the source directly, **corrects the journal's
+- **Reformat:** `Lewitus_etal_2014_TableS1.R` reads the snapshot, **corrects the journal's
   three header typos** (`Neuronal_denisty` → `Neuronal_density`, `Glial_cell_denisty` →
   `Glial_cell_density`, `Basal_metaboic_rate` → `Basal_metabolic_rate`), harmonises species (printed
   underscored name kept as `Species`, accepted binomial added as `species_sci` via the project key),
@@ -25,9 +25,11 @@ add nothing. The build reads the source **directly** and all cleaning is reprodu
   - `__Public/comparative-data/10.1371%2Fjournal.pbio.1002000_TableS1.tsv` (via the
     `__ReadMe.xlsx` Item name → Item encoded lookup)
 
-> The earlier build made a `Lewitus_etal_2014_TableS1_snapshot.xlsx` (a verbatim copy of the source,
-> typos and all); under the current digital-native convention that snapshot is **retired / no longer
-> read** by the build (kept only as legacy provenance). Delete it if you prefer a clean folder.
+The former snapshot had sorted most source species rows. The corrected snapshot
+is byte-identical to `pbio.1002000.s013.xlsx`. The 104-row analysis CSV and
+public TSV rebuilt cell-identically with `Rscript --vanilla
+Lewitus_etal_2014_TableS1.R`. This is an assistant layout check, not human
+visual signoff.
 
 ## Comparison (founder public TSV is the QA anchor)
 `comparison/Lewitus_etal_2014_TableS1_compare_to_public_tsv.R` audits the build output against the

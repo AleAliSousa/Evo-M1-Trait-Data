@@ -712,7 +712,7 @@ RestOfBrain | density (per mass/volume),RestOfBrain,density (per mass/volume),2,
 RestOfBrain | mass,RestOfBrain,mass,2,1,Olkowicz_etal_2016,Aves,primary,FALSE
 RestOfBrain | percentage (relative),RestOfBrain,percentage (relative),2,1,Olkowicz_etal_2016,Aves,primary,FALSE
 Retina | deg,Retina,deg,2,1,Heffner_Heffner_2018,Mammalia (22 spp),info; secondary,FALSE
-Schizo_cortex | surface area,Schizo_cortex,surface area,2,1,Baron_etal_1996,Chiroptera,secondary,FALSE
+Schizo_cortex | surface area,Schizo_cortex,surface area,1,1,Baron_etal_1996,Chiroptera,secondary,FALSE
 Semicortex | surface area,Semicortex,surface area,2,1,Baron_etal_1996,Chiroptera,secondary,FALSE
 Septum | size index (allometric),Septum,size index (allometric),2,1,Kamiya_Pirlot_1988,Carnivora (Ursidae),primary,FALSE
 Sex-biased dispersal | category,Sex-biased dispersal,category,2,1,Strier_etal_2014,Primates,secondary,FALSE
@@ -1422,7 +1422,6 @@ PFG_volume_as_reported | volume,PFG_volume_as_reported,volume,1,1,Kerney_etal_20
 Palaeocortex-amygdala complex | volume,Palaeocortex-amygdala complex,volume,1,1,Pirlot_Nelson_1978,Monotremata/Marsupialia,primary,FALSE
 Palaeocortex_plus_amygdala | volume,Palaeocortex_plus_amygdala,volume,1,1,Stephan_etal_1970,,primary,FALSE
 Paleocortex_plus_amygdala | volume,Paleocortex_plus_amygdala,volume,1,1,Baron_etal_1996,Chiroptera,secondary,FALSE
-Paleocortex_plus_bulb | surface area,Paleocortex_plus_bulb,surface area,1,1,Baron_etal_1996,Chiroptera,secondary,FALSE
 Pallium | mass,Pallium,mass,1,1,Olkowicz_etal_2016,Aves,primary,FALSE
 Parieto-TemporalLobe | percentage (relative),Parieto-TemporalLobe,percentage (relative),1,1,Balzeau_etal_2012,Homo,secondary,FALSE
 Parieto-TemporalLobe | regression,Parieto-TemporalLobe,regression,1,1,Balzeau_etal_2012,Homo,secondary,FALSE
@@ -1897,3 +1896,5 @@ whole-organism | MetabolicRate.mlO2_g_h,whole-organism,MetabolicRate.mlO2_g_h,1,
 whole-organism | Time.min,whole-organism,Time.min,1,1,Capellini_etal_2008,Mammals,info,FALSE
 whole-organism | Time.months,whole-organism,Time.months,1,1,Eagleman_Vaughn_2021,"Primates (25 species, incl. Homo)",primary,FALSE
 whole-organism | presence.absence,whole-organism,presence.absence,1,1,Chen_Wiens_2020,Tetrapoda,secondary,FALSE
+Olfactory_bulb | surface area,Olfactory_bulb,surface area,1,1,Baron_etal_1996,Chiroptera,secondary,FALSE
+Paleocortex_plus_schizocortex | surface area,Paleocortex_plus_schizocortex,surface area,1,1,Baron_etal_1996,Chiroptera,secondary,FALSE

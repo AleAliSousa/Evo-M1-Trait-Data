@@ -36,11 +36,36 @@ base <- local({
 
 setwd(folder)
 
-dat <- read.csv(
+source_grid <- read.csv(
   paste0(item_name, "_snapshot.csv"),
+  skip = 2, nrows = 9,
   stringsAsFactors = FALSE,
-  check.names = FALSE
+  check.names = FALSE, colClasses = "character"
 )
+stopifnot(nrow(source_grid) == 9L)
+source_grid$Cortex <- ifelse(nzchar(source_grid$Cortex),
+                             source_grid$Cortex, NA_character_)
+for (i in seq_len(nrow(source_grid)))
+  if (i > 1L && is.na(source_grid$Cortex[i]))
+    source_grid$Cortex[i] <- source_grid$Cortex[i - 1L]
+source_species <- names(source_grid)[-(1:2)]
+measure <- function(cell) {
+  if (is.na(cell) || cell == "—") return(c(NA_character_, NA_character_))
+  parts <- strsplit(cell, "\\^", fixed = FALSE)[[1]]
+  c(parts[1], if (length(parts) > 1L) parts[2] else NA_character_)
+}
+rows <- lapply(unique(source_grid$Cortex), function(cortex) {
+  block <- source_grid[source_grid$Cortex == cortex, , drop = FALSE]
+  lapply(source_species, function(species) {
+    cells <- lapply(block[[species]], measure)
+    data.frame(Cortex = cortex, Species = species,
+               CSA = as.numeric(cells[[1]][1]), CSA_Ref = cells[[1]][2],
+               BDFA = as.numeric(cells[[2]][1]), BDFA_Ref = cells[[2]][2],
+               TNS = as.numeric(cells[[3]][1]), TNS_Ref = cells[[3]][2])
+  })
+})
+dat <- do.call(rbind, unlist(rows, recursive = FALSE))
+stopifnot(nrow(dat) == 21L)
 
 csv_file <- paste0(item_name, ".csv")
 

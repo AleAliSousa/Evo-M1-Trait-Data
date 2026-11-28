@@ -41,3 +41,7 @@ tables (Table52) are derived and are deliberately not transcribed.
 - merge wiring remains on the whole-source hold recorded in
   `Baron_etal_1996_overlap_taxonomy_audit.md`.
 
+
+## Snapshot layout check (2026-11-27)
+
+Compared the rendered book PDF page 166. Table 51 is printed as two stacked eight-column blocks with repeated species labels. The snapshot now preserves that arrangement, including the shortened second-block labels. `Rscript --vanilla Baron_etal_1996/Baron_etal_1996_Table51.R` joins the blocks by their printed species order and derives row/page metadata; its six-row analysis CSV was compared with the pre-layout output. `Rscript --vanilla Baron_etal_1996/Baron_etal_1996_Table51_snapshot.R` verifies the frozen grid against the PDF extraction without replacing it. This assistant comparison is separate from independent human source signoff.

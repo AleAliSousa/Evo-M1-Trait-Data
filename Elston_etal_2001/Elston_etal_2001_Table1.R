@@ -37,8 +37,36 @@ setwd(folder)
 dat <- read.csv(
   paste0(item_name, "_snapshot.csv"),
   stringsAsFactors = FALSE,
-  check.names = FALSE
+  check.names = FALSE,
+  colClasses = "character"
 )
+metric <- rep(NA_character_, nrow(dat))
+for (i in seq_len(nrow(dat))) {
+  if (dat[[1L]][i] %in% c("Peak branching complexity (mean ± SD)",
+                            "Basal dendritic field areas (× 10⁴ µm²) (mean ± SD)",
+                            "Maximum spine density per 10 µm (mean ± SEM)")) {
+    metric[i] <- dat[[1L]][i]
+  } else if (i > 1L) metric[i] <- metric[i - 1L]
+}
+keep <- dat[[1L]] %in% c("Marmoset", "Macaque", "Human")
+source_rows <- dat[keep, , drop = FALSE]
+metric <- metric[keep]
+species_order <- c("Marmoset", "Macaque", "Human")
+region_order <- c("Occipital", "Temporal", "Prefrontal")
+split_cell <- function(x) as.numeric(trimws(strsplit(x, "±", fixed = TRUE)[[1L]]))
+out <- list()
+for (sp in species_order) for (region in region_order) {
+  row <- list(Species = sp, Region = region)
+  for (m in seq_len(3L)) {
+    val <- split_cell(source_rows[source_rows[[1L]] == sp & metric == unique(metric)[m], region][[1L]])
+    stem <- c("Peak_branching_complexity", "Basal_dendritic_field_area_1e4um2",
+              "Max_spine_density_per_10um")[m]
+    row[[paste0(stem, "_mean")]] <- val[1L]
+    row[[paste0(stem, if (m == 3L) "_SEM" else "_SD")]] <- val[2L]
+  }
+  out[[length(out) + 1L]] <- row
+}
+dat <- do.call(rbind.data.frame, c(out, stringsAsFactors = FALSE))
 
 csv_file <- paste0(item_name, ".csv")
 

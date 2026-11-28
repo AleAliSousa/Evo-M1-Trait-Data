@@ -5,9 +5,15 @@ if (!length(a)) stop("Run with Rscript <script>.R",call.=FALSE)
 sp <- normalizePath(sub("^--file=", "", a[1]))
 folder <- dirname(sp); base <- dirname(folder)
 item_name <- sub("\\.R$", "", basename(sp))
-raw <- read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),
-                colClasses="character",check.names=FALSE,na.strings=character(),
-                stringsAsFactors=FALSE,fileEncoding="UTF-8")
+raw_grid <- read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),header=FALSE,
+                     colClasses="character",check.names=FALSE,na.strings=character(),
+                     stringsAsFactors=FALSE,fileEncoding="UTF-8")
+source_rows <- c(4:55, 59:93)
+raw <- raw_grid[source_rows,,drop=FALSE]
+names(raw) <- c("Species","Weight M (kg)","Weight F (kg)","Weight dim",
+                "Mandibular dim MD","Mandibular dim BL","Mandibular dim Height",
+                "Maxillary dim MD","Maxillary dim BL","Maxillary dim Height",
+                "Male MD","Male BL","Male Height","Comp")
 stopifnot(nrow(raw)==87L,ncol(raw)==14L,
           identical(raw$Species[1],"Cercocebus albigena"),
           identical(tail(raw$Species,1),"Saguinus oedipus"))
@@ -15,7 +21,7 @@ num <- function(x) {
   x[x %in% c("—","–","")] <- NA_character_
   as.numeric(chartr("·",".",x))
 }
-out <- data.frame(source_row=seq_len(nrow(raw)),
+out <- data.frame(source_row=source_rows,
   species_as_published=raw$Species,Species=raw$Species,
   male_weight_kg=num(raw[[2]]),female_weight_kg=num(raw[[3]]),
   weight_dimorphism_as_printed=num(raw[[4]]),

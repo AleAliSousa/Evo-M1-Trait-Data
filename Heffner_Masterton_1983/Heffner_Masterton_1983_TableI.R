@@ -54,13 +54,20 @@ snapshot_sheet <- "TableI_snapshot"
 
 # ---- helpers ---------------------------------------------------------------
 
-# The snapshot carries a title in row 1 and the column names in row 2.
+# The printed grid puts the scientific name beneath each common name. Repeated
+# heading rows on the continued page are ignored while pairing those two rows.
 read_snapshot <- function(path, sheet) {
   raw <- read_excel(path, sheet = sheet, col_names = FALSE, col_types = "text", na = c(""))
-  header <- as.character(unlist(raw[2, ], use.names = FALSE))
-  dat <- raw[-c(1, 2), , drop = FALSE]
-  names(dat) <- header
-  dat[!is.na(dat$common_name) | !is.na(dat$species), , drop = FALSE]
+  species_rows <- which(grepl("^\\(.*\\)$", raw[[1]]))
+  stopifnot(length(species_rows) == 21L, all(species_rows > 1L))
+  dat <- as.data.frame(raw[species_rows - 1L, , drop = FALSE])
+  species <- sub("^\\((.*)\\)$", "\\1", raw[[1]][species_rows])
+  dat <- data.frame(dat[1], species = species, dat[-1], check.names = FALSE)
+  names(dat) <- c("common_name", "species", "phyletic_level", "digital_dexterity",
+                  "body_weight_kg", "area_mm2", "no_fibers_x10_3", "avg_fiber_size_um",
+                  "largest_fiber_size_um", "extension_down_cord_rank", "ventralmost_lamina",
+                  "densest_lamina")
+  dat
 }
 
 # Split a "value [reference]" cell into its numeric value and its bracketed source.

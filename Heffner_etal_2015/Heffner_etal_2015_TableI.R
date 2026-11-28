@@ -35,25 +35,41 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
-                  colClasses = "character", encoding = "UTF-8")
-stopifnot(nrow(snap) == 8)
-
-## 3. CLEAN -----------------------------------------------------------
+grid <- read.csv(snapshot_csv, skip = 1, header = FALSE,
+                 col.names = c("Species", "Functional head size", "Minimum audible angle", "Highest frequency"),
+                 stringsAsFactors = FALSE, check.names = FALSE, colClasses = "character",
+                 encoding = "UTF-8", blank.lines.skip = FALSE)
+stopifnot(grid$Species[1] == "Species")
 num <- function(x) suppressWarnings(as.numeric(x))
+ix <- which(!is.na(num(grid[["Functional head size"]])))
+stopifnot(length(ix) == 8)
+snap <- grid[ix, , drop = FALSE]
+## The source prints each common name and binomial in one cell, with a group heading above.
+snap$binomial <- sub(".*\\(([^()]*)\\).*", "\\1", snap$Species)
+snap$common_name <- sub(" [a-i,]+$", "", sub("\\n.*", "", snap$Species))
+groups <- character(nrow(snap))
+for (i in seq_along(ix)) {
+  previous <- grid$Species[seq_len(ix[i] - 1L)]
+  heading <- tail(previous[previous %in% c("Echolocators", "Atypical echolocator", "Non-echolocators")], 1)
+  groups[i] <- switch(heading, Echolocators = "Echolocator",
+                      `Atypical echolocator` = "Atypical echolocator",
+                      `Non-echolocators` = "Non-echolocator")
+}
+context <- read.csv(file.path(folder, "reference_tables", "Heffner_etal_2015_TableI_analysis_context.csv"),
+                    stringsAsFactors = FALSE)
+stopifnot(setequal(context$species, snap$binomial))
+context <- context[match(snap$binomial, context$species), , drop = FALSE]
 final.dataframe <- tibble(
   species_row = seq_len(nrow(snap)),
-  binomial    = snap$Species,
-  common_name = snap$`Common name`,
-  echolocation_group = snap$Group,
-  functional_head_size_us = num(snap$`Functional head size (us)`),
-  minimum_audible_angle_deg = num(snap$`Minimum audible angle (deg)`),
-  phase_cue_used = snap$`Highest frequency using binaural phase cue (kHz)` != "Cue not used",
-  phase_cue_upper_limit_kHz = ifelse(phase_cue_used,
-                                      num(snap$`Highest frequency using binaural phase cue (kHz)`),
-                                      NA_real_),
-  data_role = ifelse(snap$Species == "Desmodus rotundus", "primary", "secondary"),
-  source = snap$Source
+  binomial = snap$binomial,
+  common_name = snap$common_name,
+  echolocation_group = groups,
+  functional_head_size_us = num(snap[["Functional head size"]]),
+  minimum_audible_angle_deg = num(snap[["Minimum audible angle"]]),
+  phase_cue_used = snap[["Highest frequency"]] != "Cue not used",
+  phase_cue_upper_limit_kHz = ifelse(phase_cue_used, num(snap[["Highest frequency"]]), NA_real_),
+  data_role = ifelse(snap$binomial == "Desmodus rotundus", "primary", "secondary"),
+  source = context$source
 )
 
 ## 4. WRITE CSV + PUBLIC TSV ------------------------------------------

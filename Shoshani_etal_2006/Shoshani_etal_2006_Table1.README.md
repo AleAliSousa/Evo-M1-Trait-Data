@@ -25,3 +25,16 @@ Comparable quantities: `brain_mass_g` and `body_mass_g` for Elephas maximus / Lo
 
 ## Build
 `Shoshani_etal_2006_Table1.R` -> `..._Table1.csv` (44 rows). TSV skipped until the registry row (`..._Table1_registry_row.xlsx`) is pasted into `__ReadMe.xlsx`. RA side-by-side check of the render vs snapshot still pending.
+
+## Snapshot layout recheck (2026-11-27)
+
+Compared Table 1 on printed pp. 125–126 of the local PDF. The snapshot now
+has the 11 printed columns, caption, two header tiers, five separate A–E
+section rows, and the repeated header at the page break. The R reader derives
+the analysis section field by carrying those section headings down to sample
+rows. Command from the repository root:
+`Rscript Shoshani_etal_2006/Shoshani_etal_2006_Table1.R`.
+The rebuilt 44-row analysis CSV matches the prior version cell for cell.
+The extensive printed footnote legend remains in the source PDF and is not
+duplicated in this snapshot; markers in cells are retained. This layout check
+is separate from independent human source signoff.

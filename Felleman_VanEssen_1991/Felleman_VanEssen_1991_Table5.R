@@ -9,10 +9,20 @@ options(scipen=999)
 .sp<-local({a<-grep("^--file=",commandArgs(FALSE),value=TRUE);if(length(a))return(normalizePath(sub("^--file=","",a[1])));if(requireNamespace("rstudioapi",quietly=TRUE)&&rstudioapi::isAvailable()){p<-rstudioapi::getSourceEditorContext()$path;if(nzchar(p))return(normalizePath(p))};stop("Run with Rscript or Source in RStudio.",call.=FALSE)})
 folder<-dirname(.sp);item_name<-tools::file_path_sans_ext(basename(.sp));base<-local({d<-folder;while(dirname(d)!=d&&!file.exists(file.path(d,"__ReadMe.xlsx")))d<-dirname(d);if(file.exists(file.path(d,"__ReadMe.xlsx")))d else NA_character_})
 
-## Long-format analysis table built in Python (hand transcription from rendered page
-## images, cross-checked against the reliable From/To/HierRel/Levels text-layer values);
-## read here verbatim -- no values are re-derived.
-clean<-read.csv(file.path(folder,paste0(item_name,".csv")),check.names=FALSE,stringsAsFactors=FALSE,na.strings="NA")
+## Read the printed side-by-side Outputs / Inputs grid. The source repeats
+## area names only at the start of a block; fill that context here for analysis.
+grid<-read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),header=FALSE,
+               skip=3L,colClasses="character",na.strings=NULL,check.names=FALSE)
+stopifnot(nrow(grid)==182L,ncol(grid)==12L)
+from<-grid[[1]]
+for(i in seq_along(from)) if(!nzchar(from[i])) from[i]<-from[i-1L]
+stopifnot(all(grid[[6]]==grid[[2]]),
+          all(!nzchar(grid[[7]]) | grid[[7]]==from))
+levels<-suppressWarnings(as.integer(grid[[12]]))
+clean<-data.frame(from_area=from,to_area=grid[[2]],
+                  Origin_out=grid[[3]],Term_out=grid[[4]],Dir_out=grid[[5]],
+                  Origin_in=grid[[8]],Term_in=grid[[9]],Dir_in=grid[[10]],
+                  HierRel=grid[[11]],Levels=levels,stringsAsFactors=FALSE)
 
 stopifnot(
   nrow(clean)==182L,

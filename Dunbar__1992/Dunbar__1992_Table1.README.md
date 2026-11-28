@@ -22,3 +22,9 @@ Brain volumes and body weights are attributed in the table notes to Stephan et a
 ## Build
 
 The R script checks for 37 unique genus rows, converts measurement fields to numeric, appends the source identifier, writes the local CSV, and writes the encoded public TSV via `__ReadMe.xlsx`.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared rendered source PDF pages 6–7. The snapshot retains the 12 printed
+columns and 37 genus rows in source order. This is a layout finding only;
+individual numeric cells still belong to the independent human comparison.

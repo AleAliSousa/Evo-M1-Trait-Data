@@ -2,7 +2,13 @@
 
 Jacobs, G. H. (2008). Primate color vision: A comparative perspective. Visual Neuroscience, 25(5–6), 619–633. https://doi.org/10.1017/S0952523808080760
 
-Source: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2008/Jacobs-2008-Primate color vision.pdf. Locus: PDF p.4 / printed p.622. Source table snapshot: `Jacobs__2008_Table1_snapshot.csv` and `Jacobs__2008_Table1_snapshot_notes.txt`. Caption/footnotes, original table order, labels and empty cells are retained. Extraction and machine visual check: Codex, 2026-10-21; this is not an owner/RA check. Owner visual check remains pending for transcribed sources. 2 snapshot rows; grain: pooled population; macaque species unspecified.
+Source: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jacobs__2008/Jacobs-2008-Primate color vision.pdf. Locus: PDF p.4 / printed p.622. Source table snapshot: `Jacobs__2008_Table1_snapshot.csv` and `Jacobs__2008_Table1_snapshot_notes.txt`. Caption/footnotes, original table order, labels and empty cells are retained. Extraction and machine visual check: Codex, 2026-10-21; this is not an owner/RA check. Owner visual check remains pending for transcribed sources. 2 data rows; grain: pooled population; macaque species unspecified.
+
+Layout correction (2026-11-27): the printed caption and source note were
+restored as rows above and below the data grid. Run
+`Rscript Jacobs__2008/Jacobs__2008_Table1.R` from the repository root.
+Substantive analysis cells stayed the same; physical `Source_row` values moved
+from 2–3 to 3–4. Independent human source comparison is separate.
 
 Population incidence is not a universal species state. Keep cited primary sources and male-only scope.
 

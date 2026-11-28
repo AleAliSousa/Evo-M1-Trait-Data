@@ -1,5 +1,9 @@
 # Elston_etal_2005_a_Table2 — prepared Sholl radial-profile item
 
+## Snapshot layout audit (2026-11-27)
+
+Rechecked the local source PDF Table 2 and the snapshot grid. It retains the printed two animal blocks, area rows, and 25–300 µm radial columns with blank endpoint cells. The `**` markers encode printed boldface within cells without changing their positions. No layout edit was needed; human source signoff remains independent.
+
 ## Snapshot → reader → preview
 The actual rotated Table2 is on **printed p.1063, PDF page7**, not p.1062 in the preliminary request locator; p.1062 contains Fig.5 and results prose. This location was confirmed by rendering the page. The snapshot keeps the published orientation after rotating the table to readable horizontal form: repeated VM1/VM2 header rows with 25,50,…,300 µm columns and area rows **6,4,1/2,5,7** in each case. Do not reorder the snapshot to the caption's area list.
 

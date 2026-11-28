@@ -50,7 +50,11 @@ long_cell <- function(blk, measure, units) {
               measure = measure, value = numv(value), units = units) %>%
     filter(!is.na(value))
 }
-blk <- readr::read_csv(file.path(folder, paste0(item_name, "_snapshot.csv")), col_types = readr::cols(.default = "character"), show_col_types = FALSE)
+source_grid <- readr::read_csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
+                               col_names = FALSE, col_types = readr::cols(.default = "c"),
+                               show_col_types = FALSE)
+blk <- source_grid[34:48, 1:16]
+names(blk) <- c("group", cell_cols)
 barbeito_cellnumber <- long_cell(blk, "cell_number",  "cells")
 write_csv_tsv(barbeito_cellnumber, item_name)
 

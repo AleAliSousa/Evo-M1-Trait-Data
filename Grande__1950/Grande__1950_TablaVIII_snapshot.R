@@ -37,14 +37,14 @@ folder <- dirname(.sp)
 paper  <- basename(folder)
 item_name <- sub("_snapshot\\.R$", "", basename(.sp))   # = Grande__1950_TablaVIII
 printed_TablaVIII <- "
-TABLA VIII||
-CONSUMO DE OXIGENO Y RIEGO SANGUINEO DEL CEREBRO HUMANO, SEGUN KETY Y SCHMIDT (1948).||
-Valores medios de 34 observaciones en 14 sujetos jóvenes sanos.||
-Consumo de oxigeno por 100 g. de cerebro y minuto|3,3|c. c.
-Diferencia arterio-venosa de oxigeno (volúmenes por 100)|6,3|
-Flujo de sangre cerebral (por 100 gramos y minuto)|54|c. c.
-Consumo de oxigeno total del cerebro (por minuto)|46|c. c.
-Flujo de sangre total del cerebro (por minuto)|756|c. c.
+TABLA VIII|
+CONSUMO DE OXIGENO Y RIEGO SANGUINEO DEL CEREBRO HUMANO, SEGUN KETY Y SCHMIDT (1948).|
+Valores medios de 34 observaciones en 14 sujetos jóvenes sanos.|
+Consumo de oxigeno por 100 g. de cerebro y minuto|3,3 c. c.
+Diferencia arterio-venosa de oxigeno (volúmenes por 100)|6,3
+Flujo de sangre cerebral (por 100 gramos y minuto)|54 c. c.
+Consumo de oxigeno total del cerebro (por minuto)|46 c. c.
+Flujo de sangre total del cerebro (por minuto)|756 c. c.
 "
 to_grid <- function(txt, ncol) {
   g <- do.call(rbind, lapply(strsplit(trimws(txt), "\n", fixed = TRUE)[[1]], function(line) {
@@ -77,7 +77,7 @@ freeze <- function(grid, file) {
   }
 }
 
-grid <- to_grid(printed_TablaVIII, 3L)
+grid <- to_grid(printed_TablaVIII, 2L)
 stopifnot(nrow(grid) == 8L, all(nzchar(grid[4:8, 2])))
 freeze(grid, file.path(folder, paste0(item_name, "_snapshot.csv")))
 

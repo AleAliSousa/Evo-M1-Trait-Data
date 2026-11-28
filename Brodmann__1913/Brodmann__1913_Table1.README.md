@@ -49,3 +49,13 @@ This paper has five more tables worth mining for additional species/regions:
 Building these would capture the extra species/regions beyond Smaers's primate subset.
 
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → definitions ✅ → README ✅ → catalog row (added) · comparison vs Smaers subset ⬜.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared the local scanned source PDF Table 1 with the snapshot. Restored its
+six-column grid: the order label appears once per block, the extracted genus
+column is removed, and brain/hemisphere weights stay in one printed cell.
+The R reader fills order, derives genus from the printed name, and splits
+weights. The previously checked numeric transcription was preserved. Ran
+`Rscript Brodmann__1913/Brodmann__1913_Table1.R`; the 38-row CSV retained
+SHA-256 `bfb8edae13a6f8f02f723cbf65fef69d14915fdcdb4e5a8097dce856d2de73a2`.

@@ -12,7 +12,7 @@ The `_a` suffix distinguishes this from the Heffners' other 1992 papers (the bli
 | --- | --- |
 | `Heffner-1992-Visual factors in sound localizat.pdf` | the publication (copy of the archive PDF) |
 | `Heffner_Heffner_1992_a_TABLE1_snapshot.csv` | frozen, hand-verified copy of Table 1 as printed |
-| `Heffner_Heffner_1992_a_TABLE1.R` | canonical reformat: snapshot → CSV + public TSV |
+| `Heffner_Heffner_1992_a_Table1.R` | canonical reformat: snapshot → CSV + public TSV |
 | `Heffner_Heffner_1992_a_TABLE1.csv` | analysis-ready data ("use this") |
 | `reference_tables/…_definitions.csv` | data dictionary (10-col schema) |
 | `reference_tables/…_footnotes.csv` | the 30 printed footnotes, verbatim |
@@ -51,3 +51,7 @@ Only the primary columns are candidates for any future `__merging_sensory` compi
 - Table 2 of the paper (correlation coefficients) is derived statistics — not transcribed, per house rule.
 - Species-name standardisation to the repo backbone is deferred to the repo-level step; rows for `species_key.csv` should use token `HeffnerHeffner1992a`.
 - Trophic level is an ecological ranking, not a psychophysical measure — flag if it ever enters a merge.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed eight-column grid with superscript reference markers attached to threshold and acuity cells, the caption, source headings, and footnote paragraph. R separates the markers for analysis. Values previously verified against the scanned page were retained. Run `Rscript --vanilla Heffner_Heffner_1992_a/Heffner_Heffner_1992_a_Table1.R` from repository root. Independent human source comparison remains separate.

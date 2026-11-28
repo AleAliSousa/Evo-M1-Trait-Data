@@ -33,15 +33,35 @@ base <- local({
 })
 setwd(folder)
 
-snap <- read_csv(snapshot_csv, show_col_types = FALSE, na = c("", "NA", "-"))
-crosswalk <- read_csv("Armstrong__1979_specimen_crosswalk.csv", show_col_types = FALSE,
-                      na = c("", "NA"))
-
+## Nine separate source-shaped grids; row/column mappings and analysis metadata
+## stay in the R build rather than becoming extra snapshot columns.
+analysis_map <- read_csv("reference_tables/Armstrong__1979_Tables1-9_analysis_map.csv",
+                         show_col_types = FALSE, col_types = cols(.default = col_character()),
+                         na = c("", "NA", "-"))
+grids <- setNames(lapply(1:9, function(i) {
+  as.matrix(read.csv(paste0(item_name, "_Table", i, "_snapshot.csv"),
+                     header = FALSE, colClasses = "character", na.strings = NULL,
+                     check.names = FALSE))
+}), paste0("Table", 1:9))
+pull_metric <- function(metric) vapply(seq_len(nrow(analysis_map)), function(i) {
+  col <- suppressWarnings(as.integer(analysis_map[[paste0(metric, "_col")]][i]))
+  if (is.na(col)) return(NA_character_)
+  row <- as.integer(analysis_map$source_row[i])
+  value <- grids[[analysis_map$table[i]]][row, col]
+  if (is.na(value) || value %in% c("", "-", "NA")) NA_character_ else value
+}, character(1))
 required <- c("table", "source_group", "role", "specimen_code",
               "species_as_published", "structure", "measure", "unit", "value",
               "percent_value", "n", "mean", "sd", "se", "minimum", "maximum",
               "median", "note")
-stopifnot(identical(names(snap), required))
+snap <- as_tibble(analysis_map[c("table", "source_group", "role", "specimen_code",
+                                 "species_as_published", "structure", "measure", "unit")])
+for (metric in c("value", "percent_value", "n", "mean", "sd", "se", "minimum", "maximum", "median"))
+  snap[[metric]] <- suppressWarnings(as.numeric(pull_metric(metric)))
+snap$note <- analysis_map$note
+stopifnot(identical(names(snap), required), nrow(snap) == 106L)
+crosswalk <- read_csv("Armstrong__1979_specimen_crosswalk.csv", show_col_types = FALSE,
+                      na = c("", "NA"))
 
 expected_rows <- c(Table1 = 32L, Table2 = 6L, Table3 = 10L, Table4 = 6L,
                    Table5 = 14L, Table6 = 18L, Table7 = 6L, Table8 = 9L,

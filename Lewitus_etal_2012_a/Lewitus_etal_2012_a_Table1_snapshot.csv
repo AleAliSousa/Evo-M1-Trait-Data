@@ -1,72 +1,41 @@
-Taxonomic group,Subgroup,Species
-Primates,Strepsirrhini,Galago senegalensis^a
-,,Nycticebus coucang
-,,Lemur catta^a
-,,Eulemur mongoz
-,,Microcebus murinus
-,,Cheirogaleus medius
-,Tarsiidae,Tarsius bancanus
-,,Tarsius syrichta^a
-,Haplorrhini,Callithrix geoffroyi
-,,Leontopithecus rosalia
-,,Saguinus oedipus^a
-,,Cebus capucinus
-,,Saimiri sciureus^a
-,,Aotus trivirgatus
-,,Callicebus moloch
-,,Pithecia pithecia
-,,Alouatta caraya^a
-,,Alouatta palliata
-,,Ateles ater
-,,Macaca fascicularis (2)^a
-,,Macaca mulatta (2)
-,,Macaca maura (5)
-,,Cercocebus torquatus
-,,Mandrillus sphinx
-,,Papio anubis (2)
-,,Cercopithecus mitis
-,,Cercopithecus nictitans
-,,Erythrocebus patas (2)
-,,Colobus angolensis^a
-,,Trachypithecus francoisi
-,Hominoidea,Pongo pygmaeus (2)^a
-,,Pan paniscus
-,,Pan troglodytes (5)
-,,Homo sapiens (6)^a
-,,Gorilla gorilla (2)
-,,Hylobates muelleri^a
-,,Symphalangus syndactylus
-Carnivora,Caniformia,Mustela nigripes^a
-,,Neovison neovison
-,,Mephitis mephitis
-,,Taxidea taxus
-,,Procyon cancrivorus
-,,Procyon lotor^a
-,,Nasua nasua
-,,Bassaricyon gabbii^a
-,,Potos flavus
-,,Ailurus fulgens
-,,Zalophus californianus
-,,Callorhinus ursinus^a
-,,Phoca vitulina
-,,Ursus maritimus^a
-,Feliformia,Canis lupus familiaris
-,,Canis latrans^a
-,,Vulpes vulpes
-,,Panthera pardus^a
-,,Felis catus
-,,Puma concolor
-,,Crocuta crocuta^a
-,,Cynictis penicillata
-Shrew-to-Whale (SW),,Dasyprocta leporina^a
-,,Lepus americanus^a
-,,Cynocephalus volans^a
-,,Tupaia glis^a
-,,Stenella coeruleoalba^a
-,,Tursiops truncatus^a
-,,Megaptera novaeangliae^a
-,,Sus scrofa^a
-,,Scalopus aquaticus^a
-,,Erinaceus europaeus^a
-,,Sorex araneus^a
-,,Trichechus manatus^a
+Table 1. List of species by taxonomic classification,,,,,
+Taxonomic group,Subgroup,Species,Taxonomic group,Subgroup,Species
+Primates,Strepsirrhini,Galago senegalensis^a,Carnivora,Caniformia,Mustela nigripes^a
+,,Nycticebus coucang,,,Neovison neovison
+,,Lemur catta^a,,,Mephitis mephitis
+,,Eulemur mongoz,,,Taxidea taxus
+,,Microcebus murinus,,,Procyon cancrivorus
+,,Cheirogaleus medius,,,Procyon lotor^a
+,Tarsiidae,Tarsius bancanus,,,Nasua nasua
+,,Tarsius syrichta^a,,,Bassaricyon gabbii^a
+,Haplorrhini,Callithrix geoffroyi,,,Potos flavus
+,,Leontopithecus rosalia,,,Ailurus fulgens
+,,Saguinus oedipus^a,,,Zalophus californianus
+,,Cebus capucinus,,,Callorhinus ursinus^a
+,,Saimiri sciureus^a,,,Phoca vitulina
+,,Aotus trivirgatus,,,Ursus maritimus^a
+,,Callicebus moloch,,Feliformia,Canis lupus familiaris
+,,Pithecia pithecia,,,Canis latrans^a
+,,Alouatta caraya^a,,,Vulpes vulpes
+,,Alouatta palliata,,,Panthera pardus^a
+,,Ateles ater,,,Felis catus
+,,Macaca fascicularis (2)^a,,,Puma concolor
+,,Macaca mulatta (2),,,Crocuta crocuta^a
+,,Macaca maura (5),,,Cynictis penicillata
+,,Cercocebus torquatus,Shrew-to-Whale (SW),,Dasyprocta leporina^a
+,,Mandrillus sphinx,,,Lepus americanus^a
+,,Papio anubis (2),,,Cynocephalus volans^a
+,,Cercopithecus mitis,,,Tupaia glis^a
+,,Cercopithecus nictitans,,,Stenella coeruleoalba^a
+,,Erythrocebus patas (2),,,Tursiops truncatus^a
+,,Colobus angolensis^a,,,Megaptera novaeangliae^a
+,,Trachypithecus francoisi,,,Sus scrofa^a
+,Hominoidea,Pongo pygmaeus (2)^a,,,Scalopus aquaticus^a
+,,Pan paniscus,,,Erinaceus europaeus^a
+,,Pan troglodytes (5),,,Sorex araneus^a
+,,Homo sapiens (6)^a,,,Trichechus manatus^a
+,,Gorilla gorilla (2),,,
+,,Hylobates muelleri^a,,,
+,,Symphalangus syndactylus,,,
+"The number of individuals sampled for each species is listed. Where no number is listed, only one individual was sampled.",,,,,
+a Species included in Eutheria group,,,,,

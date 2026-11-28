@@ -19,8 +19,12 @@ root_dir <- local({
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
 
-snapshot <- read.csv(file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
-                     check.names = FALSE, stringsAsFactors = FALSE)
+table3 <- read.csv(file.path(paper_dir, "Ebinger__1974_Table3_snapshot.csv"),
+                   check.names = FALSE, stringsAsFactors = FALSE)
+table4 <- read.csv(file.path(paper_dir, "Ebinger__1974_Table4_snapshot.csv"),
+                   check.names = FALSE, stringsAsFactors = FALSE)
+stopifnot(identical(table3[[1L]], table4[[1L]]))
+snapshot <- cbind(table3, table4[-1L])
 ids <- c("M1", "M2", "M3", "M4", "Sk1", "Sk2", "Sk3", "H1", "H2", "H3")
 stopifnot(nrow(snapshot) == 26L, all(ids %in% names(snapshot)))
 

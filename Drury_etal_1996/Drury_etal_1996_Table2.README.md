@@ -35,3 +35,12 @@ The paper identifies the animal only as a macaque (commercially acquired brain, 
 
 ## Data role
 Primary (measured on the authors' own reconstruction). One hemisphere of one animal: do not treat as a species mean.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared local PDF Table 2. Rebuilt the snapshot as the two printed
+three-column blocks, side by side, with the caption and footnote retained.
+The R reader separates the blocks and supplies line metadata. Ran
+`Rscript Drury_etal_1996/Drury_etal_1996_Table2.R`: all 95 table checks
+passed and the 87-row CSV retained SHA-256
+`3d8fa04e3ae00ff704ea9ea0bcdd04de43a483961e6f6bd0d7ffc05132f58bb0`.

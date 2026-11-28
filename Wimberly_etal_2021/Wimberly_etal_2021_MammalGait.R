@@ -27,6 +27,7 @@ resolve <- function(x) {
 snap <- read_excel(file.path(folder, paste0(item_name, "_snapshot.xlsx")),
                    sheet = "MammalGait_snapshot", .name_repair = "minimal")
 snap <- as.data.frame(snap, check.names = FALSE)
+names(snap)[1] <- "Species_printed"  # source's first column header is blank
 snap <- snap[!is.na(snap$Species_printed) & nzchar(trimws(snap$Species_printed)), ]
 
 numify <- function(v) suppressWarnings(as.numeric(v))

@@ -39,3 +39,11 @@ Generated in an environment without R; outputs were produced by the equivalent s
 `Item encoded` lookup). Re-run in R to regenerate.
 
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → definitions ✅ → README ✅ · single-species human reference (M1 = Precentral row).
+
+Layout audit (2026-11-27): Compared Table 2 on PDF p. 5. The snapshot now
+retains its printed caption, four column-group headings, repeated Mean/SD/COV
+subheadings, 49 region rows in source order, lobe blanks, and closing note.
+`Johansen_etal_2024_Table2.R` skips these source header rows and assigns analysis
+column names by position. `Rscript --vanilla Johansen_etal_2024_Table2.R`
+reproduced the previous 49-row analysis CSV cell for cell. Human source signoff
+is separate.

@@ -58,3 +58,16 @@ printed density (within the source's rounding).
 The R builder requires these discrepancies and fails if any new arithmetic
 discrepancy appears. All printed values remain unchanged; `source_flags` and
 `source_issue_note` carry the cautions into long, wide, and public outputs.
+
+## Snapshot layout recheck (2026-11-27)
+
+Compared Table 1 with the local PDF, printed p. 260. The snapshot now keeps
+the printed volumes, areas, and cell-count blocks as horizontal matrices,
+each with capybara, guinea-pig, and multiplication-factor rows. The R reader
+flattens those blocks and joins analysis-only codes, units, direction flags,
+and comments from `reference_tables/Campos_Welker_1976_Table1_analysis_map.csv`.
+Command from the repository root: `Rscript Campos_Welker_1976/Campos_Welker_1976_Table1.R`.
+The 40-row long output and three datatype-specific CSVs match their prior
+versions cell for cell. The source PDF's footnote text remains the authority
+for the table legend; markers and abbreviated context are retained here.
+This layout check is separate from independent human source signoff.

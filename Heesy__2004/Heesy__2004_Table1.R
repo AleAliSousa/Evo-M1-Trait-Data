@@ -77,7 +77,7 @@ parse_range <- function(x) {
   )
 }
 
-rng <- parse_range(snapshot$`Binocular field as printed`)
+rng <- parse_range(snapshot$`Binocular visual field`)
 
 final.dataframe <- snapshot %>%
   transmute(
@@ -85,9 +85,9 @@ final.dataframe <- snapshot %>%
     common_name = `Common name`,
     n_specimens = as.integer(n),
     orbit_convergence_mean_deg =
-      parse_num(`Orbit convergence as printed`),
+      parse_num(`Orbit convergence`),
     orbit_convergence_sd_deg =
-      parse_sd(`Orbit convergence as printed`),
+      parse_sd(`Orbit convergence`),
     binocular_visual_field_min_deg =
       rng$binocular_visual_field_min_deg,
     binocular_visual_field_max_deg =

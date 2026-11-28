@@ -2,8 +2,18 @@ a <- grep("^--file=",commandArgs(FALSE),value=TRUE)
 if (!length(a)) stop("Run with Rscript")
 folder <- dirname(normalizePath(sub("^--file=","",a[1])))
 item_name <- "Lázaro_etal_2021_Table2";root <- dirname(folder)
-s <- utils::read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,colClasses="character",fileEncoding="UTF-8")
-stopifnot(nrow(s)==114L,ncol(s)==7L)
+s <- utils::read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),header=FALSE,check.names=FALSE,colClasses="character",fileEncoding="UTF-8",blank.lines.skip=FALSE)
+stopifnot(ncol(s)==6L)
+sections <- c("Brain case height decrease","Brain case height regrowth","Brain mass decrease","Brain mass regrowth","Body mass decrease","Body mass regrowth")
+rows <- list();response <- NA_character_
+for(i in seq_len(nrow(s))) {
+  if(s[[1]][i] %in% sections) response <- s[[1]][i]
+  if(!grepl("^[0-9]+[.][0-9]+$",s[[2]][i])) next
+  stopifnot(!is.na(response))
+  rows[[length(rows)+1L]] <- c(response,as.character(s[i,1:6]))
+}
+s <- as.data.frame(do.call(rbind,rows),stringsAsFactors=FALSE)
+stopifnot(nrow(s)==114L)
 out <- data.frame(source_row=seq_len(nrow(s)),response_as_published=s[[1]],predictor_as_published=s[[2]],F_statistic=as.numeric(s[[3]]),DF=as.integer(s[[4]]),adjusted_R2_as_published=as.numeric(s[[5]]),P_as_published=s[[6]],correlation_as_published=s[[7]],data_role="published linear-model result; not raw trait observation",stringsAsFactors=FALSE)
 stopifnot(!anyNA(out$F_statistic),!anyNA(out$DF))
 utils::write.csv(out,file.path(folder,paste0(item_name,".csv")),row.names=FALSE,na="",fileEncoding="UTF-8")

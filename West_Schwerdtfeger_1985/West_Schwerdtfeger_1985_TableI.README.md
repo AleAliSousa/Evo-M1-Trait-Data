@@ -7,3 +7,7 @@ Table I (p.95) supplies eight specimen records and three external species refere
 AI source comparison performed on 2026-10-26. Human RA verification remains pending.
 
 Rebuild with `Rscript West_Schwerdtfeger_1985_TableI.R` from any directory. The frozen source is read locally and the registry supplies the encoded public TSV name. Published taxon labels remain unchanged apart from explicitly described formatting. No global species key or unsupported hemisphere conversion is introduced. Source records enter the database and variable catalog; aggregate merge inputs are unchanged pending source/specimen and anatomical mapping.
+
+## Snapshot layout check (2026-11-27)
+
+Compared the snapshot with the printed table on PDF page 3. Restored printed blank separator rows without changing the data grid. `Rscript --vanilla West_Schwerdtfeger_1985/West_Schwerdtfeger_1985_TableI.R` selects data rows in R; its analysis CSV matches the pre-layout output. This assistant comparison is separate from independent human source signoff.

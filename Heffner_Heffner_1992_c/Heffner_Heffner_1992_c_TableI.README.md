@@ -70,3 +70,7 @@ comparison rows are species means from their own source studies.
 ## Units
 kHz (frequency limits and best frequency), dB SPL (lowest/best threshold,
 re 20 µPa).
+
+## Snapshot layout audit (2026-11-27)
+
+Compared with printed Table I in the local scan. The table has five columns and three rodent-group section rows; footnote numbers are attached to animal labels. The old snapshot inserted Group and Footnote columns. The snapshot now retains the five printed columns, section rows, and superscript footnote markers. The R reader separates those markers and fills groups for analysis. `Rscript --vanilla Heffner_Heffner_1992_c/Heffner_Heffner_1992_c_TABLEI.R` rebuilt the 17-row CSV with unchanged SHA-256 `fa64cd0cd9d6fbd3be65f29168c81c8a675482d25dcd3be4016d3240b41efea9`. Human visual signoff remains separate.

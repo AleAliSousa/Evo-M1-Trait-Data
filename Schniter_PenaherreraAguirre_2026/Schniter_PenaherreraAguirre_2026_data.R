@@ -1,8 +1,8 @@
 # Schniter_PenaherreraAguirre_2026_data.R
 #
 # Purpose
-#   Snapshot preparation. Turn the faithful snapshot of the Schniter &
-#   Penaherrera-Aguirre (2026) Zenodo `data` sheet into a lean, analysis-ready
+#   Snapshot preparation. Read the frozen Zenodo workbook's `data` sheet and
+#   turn it into a lean, analysis-ready
 #   CSV of primate vocal repertoire size (number of vocalization types).
 #   Two repertoire columns are carried: the original McComb & Semple (2005)
 #   values and the paper's contemporary update (with its per-species reference).
@@ -10,7 +10,7 @@
 #   reference_tables/Schniter_PenaherreraAguirre_2026_data_definitions.csv.
 #
 # Input
-#   Schniter_PenaherreraAguirre_2026_data_snapshot.xlsx    sheet: data_snapshot
+#   Schniter_PenaherreraAguirre_2026_data_snapshot.xlsx    sheet: data
 #
 # Outputs
 #   Schniter_PenaherreraAguirre_2026_data.csv              one row per species (42 rows)
@@ -45,17 +45,19 @@ setwd(folder)
 ## (was hard-coded to the pre-rename "Schniter_Penaherrera-Aguirre_..." file).
 snapshot_file  <- paste0(item_name, "_snapshot.xlsx")
 if (!file.exists(snapshot_file)) stop("Frozen snapshot not found: ", file.path(folder, snapshot_file), call. = FALSE)
-snapshot_sheet <- "data_snapshot"
+snapshot_sheet <- "data"
 
-# ---- read snapshot: row 1 = title, row 2 = header ----
-raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_names = FALSE,
+# ---- read the unmodified source sheet; select analysis columns below ----
+dat <- read_excel(snapshot_file, sheet = snapshot_sheet,
                   col_types = "text", na = character())
-header <- as.character(unlist(raw[2, ], use.names = FALSE))
-dat <- raw[-c(1, 2), , drop = FALSE]
-names(dat) <- header
 dat <- dat[!is.na(dat$BinomialNomenclature) & nzchar(trimws(dat$BinomialNomenclature)), , drop = FALSE]
 
-na_txt <- function(x) ifelse(is.na(x) | trimws(x) %in% c("", "NA", "N/A"), NA_character_, trimws(x))
+na_txt <- function(x) {
+  x <- gsub("\u00a0", " ", x, fixed = TRUE)
+  x <- gsub("\r\n", "\n", x, fixed = TRUE)
+  x <- trimws(x)
+  ifelse(is.na(x) | x %in% c("", "NA", "N/A"), NA_character_, x)
+}
 
 final.dataframe <- dat %>%
   transmute(

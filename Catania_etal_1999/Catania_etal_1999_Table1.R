@@ -15,8 +15,10 @@ folder <- dirname(.sp)
 item_name <- tools::file_path_sans_ext(basename(.sp))
 base <- local({ d <- folder; while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d); if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_ })
 
-raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")), check.names = FALSE,
+raw <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
+                header = FALSE, skip = 3L, nrows = 8L, check.names = FALSE,
                 stringsAsFactors = FALSE, na.strings = c("", "—"))
+names(raw) <- c("Cortical area", paste0("case", seq_len(7L)))
 case_cols <- names(raw)[-1]
 case_info <- data.frame(
   source_column = case_cols,

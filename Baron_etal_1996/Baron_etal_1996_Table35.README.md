@@ -32,20 +32,25 @@ rows vs. 303, across only 3 pages), the reliable path was to render each
 page and transcribe species/n/Volume directly, rather than risk silent
 misalignment from a column-recombination script.
 
-## What was excluded
+## Snapshot layout audit (2026-11-27)
 
-- **Index and AOB/BOL % columns** - derived, not transcribed (see above).
-- **Family/subfamily/order average rows** at the end of the printed table
-  (`MICROCHIROPTERA (AvCS)`, `PHYLLOSTOMIDAE`, `Micronycteris`, etc., with
-  their own N/Index/% columns) - these are aggregate summary statistics
-  over the species rows above them, not additional per-species data, and are
-  not part of this item.
+The snapshot now sketches the complete five-column printed matrix on PDF
+pp. 156–158: caption, repeated page headers, slope/intercept, taxonomy
+headings, 68 source-order species rows, Index and AOB/BOL percentage columns,
+the N/NN summary block, and abbreviation note. The former snapshot kept only
+species/n/Volume and inserted a PDF-page metadata column. The reader now
+derives page numbers from page markers and selects species/n/Volume in R; it
+does not bring the derived Index or percentage values into the analysis CSV.
+The 68 species volumes and n values matched the previous hand transcription;
+Index and percentage values were checked against the PDF text layer and the
+rendered page. `Rscript --vanilla Baron_etal_1996_Table35.R` rebuilt the
+analysis CSV cell-identically. Human visual signoff remains independent.
 
 ## Reproducible pipeline
 
 1. `baron_etal_1996 book Comparative Neurobiology.pdf`, PDF pages 156-158,
-   is the printed source; all three pages were rendered to images and
-   read directly (species, n, and Volume only).
+   is the printed source; species/n/Volume were previously transcribed from
+   page images, and the omitted grid context was restored in the layout audit.
 2. `Baron_etal_1996_Table35_snapshot.csv` is the frozen transcription result.
 3. `Baron_etal_1996_Table35.R` reads only the frozen snapshot and writes the
    local analysis CSV plus `ISBN%3A9783764353704_Table35.tsv` in `__Public`.

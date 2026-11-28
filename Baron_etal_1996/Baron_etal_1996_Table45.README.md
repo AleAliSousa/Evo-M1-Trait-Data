@@ -41,3 +41,7 @@ tables (Table46-47) are derived and are deliberately not transcribed.
 - merge wiring remains on the whole-source hold recorded in
   `Baron_etal_1996_overlap_taxonomy_audit.md`.
 
+
+## Source-layout audit (2026-11-27)
+
+The snapshot was compared with printed Table 45 on PDF page 163. Its caption, printed measurement abbreviations, and six species rows now occupy the source grid; extraction metadata (`is_header`, `source_pdf_page`, `species_row`) is derived by R. The snapshot generator was updated and rerun, reproducing the corrected grid cell for cell. Run `Rscript Baron_etal_1996/Baron_etal_1996_Table45.R` from the repository root; the six-row analysis CSV matched its prior output cell for cell. This is an assistant source-layout check, not independent human signoff.

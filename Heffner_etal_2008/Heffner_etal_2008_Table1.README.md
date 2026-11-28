@@ -44,3 +44,7 @@ for *C. brachyotis*) but only the species mean is printed in Table 1.
 ## Units
 Degrees (minimum audible angle at 50% corrected-detection performance for a
 100-ms broadband noise burst).
+
+## Snapshot layout check (2026-11-27)
+
+Compared printed Table 1 on PDF page 5. The snapshot now keeps its caption, three printed columns, group headers, source row order, and printed notes. Derived echolocation categories and citation labels previously inserted as columns are in `reference_tables/Heffner_etal_2008_Table1_analysis_context.csv`; R joins them and restores the established analysis order. Run `Rscript --vanilla Heffner_etal_2008/Heffner_etal_2008_Table1.R`. The rebuilt analysis CSV was compared with the pre-layout output. This assistant comparison is separate from independent human source signoff.

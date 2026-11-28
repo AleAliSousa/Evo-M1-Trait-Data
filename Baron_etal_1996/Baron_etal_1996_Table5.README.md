@@ -1,5 +1,9 @@
 # Baron et al. 1996 — Table 5
 
+## Snapshot layout audit and correction (2026-11-27)
+
+Compared PDF pages 22–32 with the former 11-column snapshot. Rebuilt `Baron_etal_1996_Table5_snapshot.csv` as the printed eight-column, 521-row grid. It retains page-continuation headings, family/subfamily headings, all 342 standard species rows, and sex-specific and literature-comparison supporting lines. The supporting lines were laid out from the PDF text layer; the analysis reader uses only the established standard-row values. `reference_tables/Baron_etal_1996_Table5_analysis_map.csv` supplies page provenance and identifies standard rows. Run `Rscript Baron_etal_1996/Baron_etal_1996_Table5.R` from the repository root; the 342-row analysis CSV is byte-identical (SHA-256 `1f38392581fc5f4dfee1b0bb0124b9dfeee07498decb9d24295e256e2d713313`). Supporting-line cells still merit independent human checking. The old snapshot extraction script remains as the historical OCR and correction record; it does not generate the active layout.
+
 ## Source and scope
 
 Baron, G., Stephan, H., & Frahm, H. D. (1996). *Comparative Neurobiology in
@@ -87,38 +91,13 @@ than treating the whole item as uniformly primary.
 
 1. `baron_etal_1996 book Comparative Neurobiology.pdf`, PDF pages 22-32, is
    the printed source.
-2. `Baron_etal_1996_Table5_snapshot.R` (R port, 2026-11-12, of the retired `Baron_etal_1996_Table5_snapshot.py.retired`; run in a temp dir it regenerates the frozen snapshot byte-for-byte) reads the PDF text layer and writes
-   `Baron_etal_1996_Table5_snapshot.csv`. Its OCR-repair step and full
-   line-classification logic are documented in code.
+2. `Baron_etal_1996_Table5_snapshot.R` is the historical extractor for the standard rows; its OCR-repair and line-classification logic remain documented in code. The active source-shaped grid was rebuilt in the layout audit above.
 3. `Baron_etal_1996_Table5.R` reads only the frozen snapshot and writes the
    local analysis CSV plus `ISBN%3A9783764353704_Table5.tsv` in `__Public`.
 
-## Snapshot vs. analysis CSV: section headers and indentation preserved for readability
+## Snapshot vs. analysis CSV
 
-Following a request to make the frozen snapshot read more like the printed
-page, `Baron_etal_1996_Table5_snapshot.csv`:
-
-- keeps the source's own printed family/subfamily ALL-CAPS section headings
-  (`PTEROPODIDAE`, `PTEROPODINAE (cont.)`, `MORMOOPIDAE`, etc. — 50 heading
-  rows) as their own rows, flagged `is_header = TRUE` with all measurement
-  fields blank, interleaved in their original printed position;
-- indents `species_printed` to mirror the printed page's own three-level
-  visual hierarchy — family headings flush left, subfamily headings with a
-  2-space indent, species rows with a 4-space indent — the same nesting the
-  book itself uses (bold family names, plain subfamily names, inset italic
-  species);
-- leads with `species_printed` rather than a row-number column, so the
-  indentation/hierarchy is the first thing visible when skimming the file;
-  `species_row` is still included (last column) for reference.
-
-This makes the snapshot skimmable by eye and shows the taxonomic groupings
-exactly as printed, rather than requiring a separate species-to-family
-lookup. The analysis CSV/TSV and public TSV remain species-data-only and
-unindented — `Baron_etal_1996_Table5.R` drops the header rows, trims the
-hierarchy-indent whitespace from `species_printed`, renumbers `species_row`
-1-342 over species rows alone, and restores the original column order
-(`species_row, source_pdf_page, species_printed, ...`), so downstream
-consumers see the same shape as before.
+The snapshot follows the printed eight-column table and includes the supporting lines beneath standard species values. The R reader selects the 342 standard rows through the analysis map, trims indentation, and supplies `species_row` and `source_pdf_page` only in the analysis CSV/TSV.
 
 ## OCR corrections: image-verified fixes vs. artifacts left as printed
 

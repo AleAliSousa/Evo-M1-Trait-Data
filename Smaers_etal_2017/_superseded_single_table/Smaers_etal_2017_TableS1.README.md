@@ -7,9 +7,10 @@ Full title (for `__ReadMe.xlsx`): **"Table S1. Overview of data. Related to Figu
 gray & white matter volumes)"**  (from supplement `mmc1`)
 
 ## Source -> Snapshot
-From `Smaers_mmc1.xlsx` (supplemental). `Smaers_etal_2017_TableS1_snapshot.csv` = the "Smaers data"
-block: 19 species x {gray, white} x {primary visual, prefrontal, other cortical association, frontal
-motor}. (A second block, Brodmann 1909 cortical **surface area**, is a separate/secondary sub-table.)
+From `Smaers_mmc1.xlsx` (supplemental). `Smaers_etal_2017_TableS1_snapshot.csv`
+now keeps the complete Table S1 cell grid, with both the 19-species "Smaers
+data" volume block and the 10-species Brodmann cortical surface-area block.
+The archived R reader selects the volume block for its legacy output.
 
 ## Data readable
 `Smaers_etal_2017_TableS1.R` -> `Smaers_etal_2017_TableS1.csv` (use this). This **supersedes the older
@@ -25,3 +26,14 @@ motor}. (A second block, Brodmann 1909 cortical **surface area**, is a separate/
   apes/humans (their Figure S2 legend).
 
 Pipeline: Source -> Snapshot OK -> Data readable OK -> Species note (in progress) -> Online database
+
+## Archived snapshot layout recheck (2026-11-27)
+
+This archived snapshot now retains the full publisher Table S1 grid as a
+34-row, 35-column CSV, source workbook `Smaers_mmc1.xlsx` rows 9–42,
+columns A–AI. All 222 nonempty source cells match at the same relative
+coordinates. The archived R reader selects the volume block; run
+`Rscript Smaers_etal_2017/_superseded_single_table/Smaers_etal_2017_TableS1.R`
+from the repository root. Its rebuilt 19-row CSV matches the prior version
+cell for cell. This archived item is not the active public build. The layout
+check is separate from independent human source signoff.

@@ -70,3 +70,7 @@ figure in the text was read off the fitted/interpolated audiogram curve in
 Fig. 2 rather than being a raw Table 1 entry. Per house convention this is
 flagged here and in the registry N.B., and the table is transcribed exactly
 as printed rather than "corrected" to match the abstract.
+
+## Snapshot layout check (2026-11-27)
+
+Compared Table I with PDF page 2. The six printed columns and 21 frequency rows were already source-shaped; the table number and title are now separate printed rows above them. `Rscript --vanilla Terhune_Ronald_1972/Terhune_Ronald_1972_Table1.R` skips both caption rows; its analysis CSV was compared with the pre-layout output. This assistant comparison is separate from independent human source signoff.

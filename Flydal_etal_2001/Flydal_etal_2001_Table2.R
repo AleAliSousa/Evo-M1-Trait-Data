@@ -41,8 +41,13 @@ library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
 ## Skip the title + blank line; header row then 11 frequency rows.
-snap <- read.csv(snapshot_csv, skip = 2, stringsAsFactors = FALSE,
-                  check.names = FALSE, encoding = "UTF-8")
+raw_grid <- read.csv(snapshot_csv, header = FALSE, stringsAsFactors = FALSE,
+                     check.names = FALSE, colClasses = "character", encoding = "UTF-8")
+stopifnot(ncol(raw_grid) == 6L, nrow(raw_grid) == 12L)
+snap <- raw_grid[2:12, 2:6, drop = FALSE]
+names(snap) <- c("Frequency (Hz)", "Reindeer 1, sound from front (dB)",
+                 "Reindeer 2, sound from front (dB)", "Reindeer 1, sound from behind (dB)",
+                 "Reindeer 2, sound from behind (dB)")
 stopifnot(nrow(snap) == 11)
 
 freq_hz <- c(63, 125, 250, 500, 1000, 2000, 4000, 8000, 16000, 32000, 38000)

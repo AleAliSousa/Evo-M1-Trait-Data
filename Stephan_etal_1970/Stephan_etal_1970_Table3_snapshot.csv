@@ -1,22 +1,29 @@
-id,group,species,body_weight_g,brain_weight_mg,total_brain_net_mm3,medulla_oblongata_mm3,cerebellum_mm3,mesencephalon_mm3,diencephalon_mm3,telencephalon_mm3
-43,Simian,Callithrix jacchus,260.0,7600,7248,334.0,754.0,295.0,549.0,5316.0
-44,Simian,Saguinus oedipus,405.0,10000,9576,345.0,958.0,340.0,729.0,7203.0
-45,Simian,Saguinus tamarin,340.0,10300,9459,434.0,962.0,319.0,706.0,7038.0
-46,Simian,Aotes trivirgatus,850.0,16000,15229,641.0,1661.0,427.0,1086.0,11414.0
-47,Simian,Callicebus moloch,650.0,15500,14434,683.0,1287.0,469.0,1101.0,10894.0
-48,Simian,Pithecia monacha,1500.0,35000,32836,1026.0,3961.0,782.0,2167.0,24901.0
-49,Simian,Alouatta seniculus,6400.0,51000,47749,1840.0,6349.0,1039.0,3217.0,35303.0
-50,Simian,Cebus sp.,2600.0,73000,68672,1844.0,8560.0,1153.0,3999.0,53116.0
-51,Simian,Cebus albifrons,3000.0,80000,75592,1896.0,8357.0,1487.0,4623.0,59229.0
-52,Simian,Saimiri sciureus,680.0,22000,20691,661.0,2071.0,482.0,1311.0,16165.0
-53,Simian,Ateles geoffroyi,8000.0,108000,101034,1834.0,12438.0,1482.0,5334.0,79946.0
-54,Simian,Lagothrix logotricha,5200.0,101000,94939,1742.0,12016.0,1423.0,5206.0,74553.0
-55,Simian,Macaca mulatta,6000.0,93000,87896,1992.0,8965.0,1380.0,4480.0,71080.0
-56,Simian,Cercocebus albigena,7900.0,104000,97603,2708.0,10725.0,1770.0,5351.0,77049.0
-57,Simian,Cercopithecus talapoin,1000.0,39000,36830,1139.0,3085.0,767.0,2460.0,29379.0
-58,Simian,Cercopithecus ascanius,3600.0,65000,61610,1583.0,5654.0,1127.0,3498.0,49748.0
-59,Simian,Cercopithecus mitis,6500.0,76000,71505,2026.0,6848.0,1372.0,4232.0,57027.0
-60,Simian,Colobus badius,7000.0,78000,73818,2007.0,8648.0,1333.0,3945.0,57885.0
-61,Simian,Pan troglodytes,46000.0,420000,396255,6032.0,45280.0,3878.0,15962.0,325104.0
-62,Simian,Gorilla gorilla,125000.0,465000,437433,6983.0,64402.0,4047.0,18014.0,343987.0
-63,Simian,Homo sapiens,65000.0,1330000,1251847,9622.0,137421.0,8087.0,33319.0,1063398.0
+TABLE 3. Data on body and brain weight (in g and mg) and volume of the fundamental brain sections (in mm³) in Simians.,,,,,,,,
+,Body weight* (g),Brain weight† (mg),Total brain‡ (net volume),Medulla oblongata§,Cerebellum‖,Mesencephalon,Diencephalon,Telencephalon
+,1,2,3,4,5,6,7,8
+43. Callithrix jacchus,260.0,"7,600","7,248",334.0,754.0,295.0,549.0,5316.0
+44. Saguinus oedipus,405.0,"10,000","9,576",345.0,958.0,340.0,729.0,7203.0
+45. Saguinus tamarin,340.0,"10,300","9,459",434.0,962.0,319.0,706.0,7038.0
+46. Aotes trivirgatus,850.0,"16,000","15,229",641.0,1661.0,427.0,1086.0,11414.0
+47. Callicebus moloch,650.0,"15,500","14,434",683.0,1287.0,469.0,1101.0,10894.0
+48. Pithecia monacha,1500.0,"35,000","32,836",1026.0,3961.0,782.0,2167.0,24901.0
+49. Alouatta seniculus,6400.0,"51,000","47,749",1840.0,6349.0,1039.0,3217.0,35303.0
+50. Cebus sp.,2600.0,"73,000","68,672",1844.0,8560.0,1153.0,3999.0,53116.0
+51. Cebus albifrons,3000.0,"80,000","75,592",1896.0,8357.0,1487.0,4623.0,59229.0
+52. Saimiri sciureus,680.0,"22,000","20,691",661.0,2071.0,482.0,1311.0,16165.0
+53. Ateles geoffroyi,8000.0,"108,000","101,034",1834.0,12438.0,1482.0,5334.0,79946.0
+54. Lagothrix logotricha,5200.0,"101,000","94,939",1742.0,12016.0,1423.0,5206.0,74553.0
+55. Macaca mulatta,6000.0,"93,000","87,896",1992.0,8965.0,1380.0,4480.0,71080.0
+56. Cercocebus albigena,7900.0,"104,000","97,603",2708.0,10725.0,1770.0,5351.0,77049.0
+57. Cercopithecus talapoin,1000.0,"39,000","36,830",1139.0,3085.0,767.0,2460.0,29379.0
+58. Cercopithecus ascanius,3600.0,"65,000","61,610",1583.0,5654.0,1127.0,3498.0,49748.0
+59. Cercopithecus mitis,6500.0,"76,000","71,505",2026.0,6848.0,1372.0,4232.0,57027.0
+60. Colobus badius,7000.0,"78,000","73,818",2007.0,8648.0,1333.0,3945.0,57885.0
+61. Pan troglodytes,46000.0,"420,000","396,255",6032.0,45280.0,3878.0,15962.0,325104.0
+62. Gorilla gorilla,125000.0,"465,000","437,433",6983.0,64402.0,4047.0,18014.0,343987.0
+63. Homo sapiens,65000.0,"1,330,000","1,251,847",9622.0,137421.0,8087.0,33319.0,1063398.0
+"* Body weight from Bauchot and Stephan (1966, 1969), except Nycticebus cougang and Macaca mulatta.",,,,,,,,
+"† Brain weight from Bauchot and Stephan (1966, 1969), except Macaca mulatta.",,,,,,,,
+"‡ Total brain net volume; ventricles, meningeal membranes and nerves are excluded.",,,,,,,,
+§ Medulla oblongata includes tissue difficult to separate from mesencephalon.,,,,,,,,
+‖ Cerebellum includes brachium and nuclei pontis.,,,,,,,,

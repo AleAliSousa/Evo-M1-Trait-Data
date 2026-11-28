@@ -121,3 +121,7 @@ these numbers (equal weight per mm², nearly equal cells, smaller area and weigh
 not say so, and this check cannot show it.
 
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅
+
+## Snapshot layout audit (2026-11-27)
+
+Compared the 37 × 10 snapshot grid with the first sheet of publisher supplement `sd01.xls`. All blank positions match. Text cells match; 145 displayed numeric strings differ only by floating-point serialization (maximum relative difference 4.1 × 10⁻¹⁶). The source cell positions and order are retained. This is not human visual signoff.

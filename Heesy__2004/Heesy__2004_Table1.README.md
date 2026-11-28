@@ -27,3 +27,7 @@ Table 1: Orbit convergence and binocular visual field overlap.
 
 ## Review flag
 The snapshot was transcribed from the printed table and should receive a second visual review against the PDF before registry status is set to Finished. The paper prints `Equus caballos`; it is preserved verbatim rather than silently corrected.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared with printed Table 1 in the local PDF. The paper has six columns; the former snapshot added two extra raw-value columns after normalizing the orbit-convergence field. The six printed columns now retain the printed strings, and the R reader parses mean, SD, and field ranges from those cells. `Rscript --vanilla Heesy__2004/Heesy__2004_Table1.R` rebuilt the 27-row CSV with unchanged SHA-256 `545d094a998adfded0d2f08be5cac66e2b423327d01227631a4f9282d5de2006`. Human visual signoff remains separate.

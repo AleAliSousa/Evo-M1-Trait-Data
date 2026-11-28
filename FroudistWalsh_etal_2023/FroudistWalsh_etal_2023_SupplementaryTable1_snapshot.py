@@ -16,7 +16,7 @@ the page; the table ends at the page before the next caption).  Every printed da
 layer with an anchored regular expression (area label, then exactly 14 numeric-or-N/A tokens); the column header,
 which the text layer renders with the subscripts broken onto their own lines, is re-joined from those lines and
 asserted against the expected labels.  No table value is typed in this script.  The snapshot keeps the printed
-layout: page, row order within the table, area as printed, 14 receptor columns as printed.  The companion
+layout: area as printed, followed by the 14 receptor columns as printed.  The companion
 <Item>.R reads this file and never writes it.  The script refuses to overwrite a differing frozen copy unless run
 with --force (then explain the change in the README).
 
@@ -49,7 +49,7 @@ for pno, ls in pages[start:end]:
     for i, line in enumerate(ls):
         m = ROW.match(line)
         if m:
-            rows.append([pno, len(rows) + 1, m.group(1), *m.group(2).split()])
+            rows.append([m.group(1), *m.group(2).split()])
         elif (c := CAPTION.match(line)):
             caption = c.group(2)
             # header: the lines between the caption and the first data row, subscripts on their own lines
@@ -74,9 +74,9 @@ while k < len(toks):
         labels.append(t); k += 1
 assert labels == EXPECTED_HEADER, f"unexpected header: {labels}"
 assert len(rows) == 109, f"expected 109 area rows, found {len(rows)}"
-assert len({r[2] for r in rows}) == 109, "duplicate area label"
+assert len({r[0] for r in rows}) == 109, "duplicate area label"
 
-header = ["page", "printed_order", "area"] + EXPECTED_HEADER
+header = ["area"] + EXPECTED_HEADER
 buf = io.StringIO()
 w = csv.writer(buf, lineterminator="\n")
 w.writerow(header)

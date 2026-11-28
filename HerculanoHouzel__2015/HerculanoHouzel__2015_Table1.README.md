@@ -77,3 +77,12 @@ https://github.com/r03ert0/comparative-data
 - This is the **only** table in the dataset captured by web-scrape, so the
   method is documented fully here for traceability.
 - `Oryctolagus cuniculus` has `n.a.` for T and MCX in the source (→ `NA`).
+# Snapshot layout recheck (2026-11-27)
+
+Compared the group rows with the published Table 1. Each printed clade
+heading occupies the first cell of a section row; the other nine cells are
+blank. Removed the repeated clade text from those cells. The R reader still
+fills the analysis `category` column from these section rows. Command from
+the repository root: `Rscript HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R`.
+The rebuilt 24-row analysis CSV matches its prior version cell for cell.
+This layout check is separate from independent human source signoff.

@@ -12,13 +12,24 @@ build_source_table <- function(folder, item_name, base) {
   }
   source_rows <- seq_len(nrow(raw))
   if (length(spec$keep_rows)) { source_rows <- unlist(spec$keep_rows); raw <- raw[source_rows,,drop=FALSE] }
+  if (isTRUE(spec$source_species_parentheses)) {
+    printed <- raw[[1L]]
+    footnote_a <- grepl("\\)a$", printed)
+    raw[[1L]] <- sub("^.*\\(([^()]*)\\)[a-z]?$", "\\1", printed)
+    raw[[1L]][footnote_a] <- paste0(raw[[1L]][footnote_a], "ᵃ")
+    source_rows <- seq_len(nrow(raw))
+  }
   if (!is.null(spec$source_row_offset)) source_rows <- source_rows + spec$source_row_offset
   if (isTRUE(spec$fill_species)) {
     for(i in seq_len(nrow(raw))) if(i>1 && !nzchar(raw[i,spec$species_col])) raw[i,spec$species_col] <- raw[i-1,spec$species_col]
   }
   parse_value <- function(x) {
     z<-trimws(gsub('(cid:219)', '', x, fixed=TRUE)); z<-gsub('Û','',z,fixed=TRUE)
-    z<-gsub('[∗*]$', '', z); z<-gsub(',','',z,fixed=TRUE); z<-gsub('·','.',z,fixed=TRUE)
+    z<-gsub('[∗*]$', '', z)
+    if(isTRUE(spec$percent_sign)) z<-sub('%$', '', z)
+    if(isTRUE(spec$decimal_comma)) z<-gsub(',','.',z,fixed=TRUE)
+    else z<-gsub(',','',z,fixed=TRUE)
+    z<-gsub('·','.',z,fixed=TRUE)
     missing<-z %in% c('', '-', '–', '—', '---', 'NA', 'n.a.')
     v<-lo<-hi<-unc<-rep(NA_real_,length(z)); qualifier<-rep('',length(z))
     for(i in which(!missing)) {

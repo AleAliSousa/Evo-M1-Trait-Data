@@ -1,23 +1,32 @@
-id,group,species,bulbus_olfactorius_mm3,palaeocortex_plus_amygdala_mm3,septum_mm3,striatum_mm3,schizocortex_mm3,hippocampus_mm3,neocortex_mm3
-1,Insectivore,Sorex minutus,8.7,17.2,2.0,6.0,3.6,10.5,12.7
-2,Insectivore,Sorex araneus,14.2,32.7,3.8,10.1,7.2,20.6,28.1
-3,Insectivore,Crocidura russula,16.4,30.2,3.6,8.2,6.1,15.9,25.5
-4,Insectivore,Crocidura occidentalis,37.8,68.4,6.9,16.8,13.3,38.5,59.1
-5,Insectivore,Suncus murinus,34.4,56.2,5.5,14.8,12.6,31.2,54.1
-6,Insectivore,Echinops telfairi,65.7,118.0,11.0,24.1,9.6,49.6,48.5
-7,Insectivore,Hemicentetes semispinosus,93.8,148.0,12.8,29.8,17.4,63.7,73.4
-8,Insectivore,Setifer setosus,210.0,338.0,26.0,55.6,41.9,97.7,134.0
-9,Insectivore,Tenrec ecaudatus,293.0,452.0,37.9,101.0,71.3,146.0,280.0
-10,Insectivore,Erinaceus europaeus,350.0,507.0,46.2,134.0,120.0,220.0,543.0
-11,Insectivore,Aethechinus algirus,297.0,504.0,41.6,163.0,113.0,268.0,541.0
-12,Insectivore,Solenodon paradoxus,478.0,683.0,68.1,235.0,140.0,299.0,583.0
-13,Insectivore,Nesogale talazaci,74.6,139.0,11.2,31.2,20.7,98.9,96.2
-14,Insectivore,Limnogale mergulus,43.2,87.4,19.5,57.9,36.4,78.2,196.0
-15,Insectivore,Potamogale velox,87.0,191.0,50.7,132.0,142.0,294.0,1039.0
-16,Insectivore,Neomys fodiens,15.9,36.0,6.4,18.7,9.0,32.9,56.6
-17,Insectivore,Talpa europaea,60.0,112.0,14.9,60.2,39.6,86.7,181.0
-18,Insectivore,Galemys pyrenaicus,39.2,107.0,20.1,74.4,44.9,109.0,339.0
-19,Insectivore,Desmana moschata,142.0,320.0,42.6,222.0,163.0,267.0,983.0
-20,Insectivore,Chlorotalpa stuhlmanni,60.8,131.0,11.3,43.5,21.4,59.1,129.0
-21,Insectivore,Elephantulus fuscipes,63.9,121.0,16.8,44.5,46.8,171.0,236.0
-22,Insectivore,Rhynchocyon stuhlmanni,427.0,705.0,81.5,222.0,220.0,582.0,1089.0
+TABLE 4. Volume of the various components of the telencephalon in Insectivores (in mm³).,,,,,,,
+,Bulbus olfactorius,Palaeocortex + NA*,Septum†,Striatum‡,Schizocortex§,Hippocampus,Neocortex‖
+,9,10,11,12,13,14,15
+A. Basal Insectivores,,,,,,,
+1. Sorex minutus,8.7,17.2,2.0,6.0,3.6,10.5,12.7
+2. Sorex araneus,14.2,32.7,3.8,10.1,7.2,20.6,28.1
+3. Crocidura russula,16.4,30.2,3.6,8.2,6.1,15.9,25.5
+4. Crocidura occidentalis,37.8,68.4,6.9,16.8,13.3,38.5,59.1
+5. Suncus murinus,34.4,56.2,5.5,14.8,12.6,31.2,54.1
+6. Echinops telfairi,65.7,118.0,11.0,24.1,9.6,49.6,48.5
+7. Hemicentetes semispinosus,93.8,148.0,12.8,29.8,17.4,63.7,73.4
+8. Setifer setosus,210.0,338.0,26.0,55.6,41.9,97.7,134.0
+9. Tenrec ecaudatus,293.0,452.0,37.9,101.0,71.3,146.0,280.0
+10. Erinaceus europaeus,350.0,507.0,46.2,134.0,120.0,220.0,543.0
+11. Aethechinus algirus,297.0,504.0,41.6,163.0,113.0,268.0,541.0
+B. Progressive Insectivores,,,,,,,
+12. Solenodon paradoxus,478.0,683.0,68.1,235.0,140.0,299.0,583.0
+13. Nesogale talazaci,74.6,139.0,11.2,31.2,20.7,98.9,96.2
+14. Limnogale mergulus,43.2,87.4,19.5,57.9,36.4,78.2,196.0
+15. Potamogale velox,87.0,191.0,50.7,132.0,142.0,294.0,1039.0
+16. Neomys fodiens,15.9,36.0,6.4,18.7,9.0,32.9,56.6
+17. Talpa europaea,60.0,112.0,14.9,60.2,39.6,86.7,181.0
+18. Galemys pyrenaicus,39.2,107.0,20.1,74.4,44.9,109.0,339.0
+19. Desmana moschata,142.0,320.0,42.6,222.0,163.0,267.0,983.0
+20. Chlorotalpa stuhlmanni,60.8,131.0,11.3,43.5,21.4,59.1,129.0
+21. Elephantulus fuscipes,63.9,121.0,16.8,44.5,46.8,171.0,236.0
+22. Rhynchocyon stuhlmanni,427.0,705.0,81.5,222.0,220.0,582.0,1089.0
+* Palaeocortex + NA: corpus amygdaloideum was not separated from palaeocortex.,,,,,,,
+† Septum includes the diagonal band of Broca.,,,,,,,
+‡ Striatum includes the internal capsule.,,,,,,,
+"§ Schizocortex comprises entorhinal, perirhinal, pre- and parasubicular regions.",,,,,,,
+‖ Neocortex includes underlying white substance.,,,,,,,

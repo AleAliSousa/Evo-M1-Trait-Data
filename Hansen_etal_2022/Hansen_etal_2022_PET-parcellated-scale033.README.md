@@ -1,5 +1,10 @@
 # Hansen et al. 2022 — PET-parcellated-scale033 (human regional receptor/transporter densities, 41 PET maps)
 
+## Snapshot layout correction (2026-11-27)
+
+The joined 83-region × 41-tracer `..._snapshot.csv` was an analysis assembly of 41 separate published tracer vectors and the region workbook. It was renamed `..._snapshot.csv.retired`, and its generator was retired. `Hansen_etal_2022_PET-parcellated-scale033.R` now verifies all 41 frozen source CSV hashes against `github_hansen_receptors/download_manifest.csv`, reads the original vectors and region workbook, and joins them in R. `Rscript --vanilla Hansen_etal_2022/Hansen_etal_2022_PET-parcellated-scale033.R` rebuilt the 3,403-row CSV and public TSV; the CSV retained SHA-256 `bb0e831ac7287be33d2c74d61ca43aedeb88384a2de8bdb1215d229b1cce6df9`. The historical constructed-snapshot account below describes the retired pipeline. Human source review remains separate.
+
+
 Hansen JY, Shafiei G, Markello RD, Smart K, Cox SML, Nørgaard M, Beliveau V, Wu Y, Gallezot J-D, Aumont É,
 Servaes S, Scala SG, DuBois JM, Wainstein G, Bezgin G, Funck T, Schmitz TW, Spreng RN, Galovic M, Koepp MJ,
 Duncan JS, Coles JP, Fryer TD, Aigbirhio FI, McGinnity CJ, Hammers A, Soucy J-P, Baillet S, Guimond S,

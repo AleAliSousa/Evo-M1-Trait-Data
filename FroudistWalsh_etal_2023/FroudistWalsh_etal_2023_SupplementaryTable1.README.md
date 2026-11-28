@@ -60,7 +60,7 @@ text layer; URL, bytes and sha256 in `supplementary_downloads/download_manifest.
   `N/A` rows of Table 2 (13l, 13m, V4dm) — the pattern here accepts `N/A` and recovers all 109 in both tables, with
   identical area order.
 - **Snapshot**: `FroudistWalsh_etal_2023_SupplementaryTable1_snapshot.csv` — 109 rows, printed layout kept:
-  `page, printed_order, area, AMPA, kainate, NMDA, GABAA, GABAB, GABAA/BZ, M1, M2, M3, α1, α2, 5HT1A, 5HT2A, D1`
+  `area, AMPA, kainate, NMDA, GABAA, GABAB, GABAA/BZ, M1, M2, M3, α1, α2, 5HT1A, 5HT2A, D1`
   (subscripts flattened, Greek α kept; values as printed — the text layer drops trailing zeros, e.g. `0.295`).
 - **Build**: `FroudistWalsh_etal_2023_SupplementaryTable1.R` (reads the snapshot only) →
   **`FroudistWalsh_etal_2023_SupplementaryTable1.csv`** (use this) + public TSV
@@ -99,3 +99,7 @@ comparable with the fmol/mg protein values of Zilles 2017 without the neuron den
 
 Pipeline: Source → Snapshot ✅ (generated, 2026-11-16) → Data readable ✅ → definitions ✅ → README ✅ →
 public TSV ✅ (item was already registered) · single-species macaque reference (*M. fascicularis*, 3 brains).
+
+## Snapshot layout audit (2026-11-27)
+
+The printed table has area plus 14 receptor columns; `page` and `printed_order` were extraction metadata inserted as two leading snapshot columns. They have been removed from the frozen snapshot. The R reader now derives row order and the known four-page pagination, then produces the same long analysis table. `Rscript --vanilla FroudistWalsh_etal_2023/FroudistWalsh_etal_2023_SupplementaryTable1.R` rebuilt the 1,526-row CSV with unchanged SHA-256 `0417d41524eb6048bf355d94e7af643af1e70a320638afdb366e4d816c23186f`. The Python snapshot generator was updated to emit only printed columns; regeneration was not rerun because `pdfplumber` is unavailable in the current base environment. The retained 109 rows and 14 value columns were checked unchanged by the CSV transformation. Human visual signoff remains separate.

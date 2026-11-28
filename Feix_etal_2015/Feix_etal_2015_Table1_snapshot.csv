@@ -1,29 +1,32 @@
-"group_as_published","Taxon","peak workspace","relative object size (R)","real object size R (mm)"
-"haplorhines","Homo sapiens","0.043","0.08","19.00"
-"haplorhines","Pan paniscus","0.029","0.11","28.70"
-"haplorhines","P. troglodytes","0.028","0.10","26.2"
-"haplorhines","Gorilla gorilla","0.031","0.10","28.70"
-"haplorhines","Pongo pygmaeus","0.022","0.14","37.50"
-"haplorhines","Hylobates lar","0.027","0.11","2.20"
-"haplorhines","Papio hamadryas","0.030","0.10","15.60"
-"haplorhines","Macaca fascicularis","0.028","0.10","10.00"
-"haplorhines","Macaca mulatta","0.028","0.10","11.40"
-"haplorhines","Presbytis cristata","0.016","0.16","18.00"
-"haplorhines","Sapajus apella","0.027","0.08","7.90"
-"haplorhines","Cebus albifrons","0.029","0.08","8.70"
-"haplorhines","Alouatta semiculus","0.029","0.08","11.50"
-"haplorhines","Tarsius bancanus","0.023","0.11","5.80"
-"strepsirrhines","Lepilemur leucopus","0.029","0.08","4.00"
-"strepsirrhines","Propithecus verreauxi","0.029","0.09","9.60"
-"strepsirrhines","Avahi laniger","0.024","0.11","7.40"
-"strepsirrhines","Euoticus elegantulus","0.031","0.09","4.20"
-"strepsirrhines","Loris tardigradus","0.029","0.09","2.90"
-"strepsirrhines","Nycticebus coucang","0.030","0.09","4.00"
-"strepsirrhines","Daubentonia madagascariensis","0.029","0.08","10.00"
-"fossils","early H. sapiens Qafzeh 9","0.044","0.08","2.90"
-"fossils","early H. sapiens Ohalo II H2","0.042","0.07","2.50"
-"fossils","H. neanderthalensis Kebara 2","0.043","0.08","3.00"
-"fossils","Au. sediba MH2 (human)","0.044","0.08","2.10"
-"fossils","Au. sediba MH2 (Pan)","0.040","0.09","2.40"
-"fossils","Au. afarensis comp (human)","0.042","0.08","2.40"
-"fossils","Au. afarensis comp (Pan)","0.040","0.08","2.40"
+Taxon,peak workspace,relative object size (R),real object size R (mm)
+haplorhines,,,
+Homo sapiens,0.043,0.08,19.00
+Pan paniscus,0.029,0.11,28.70
+P. troglodytes,0.028,0.10,26.2
+Gorilla gorilla,0.031,0.10,28.70
+Pongo pygmaeus,0.022,0.14,37.50
+Hylobates lar,0.027,0.11,2.20
+Papio hamadryas,0.030,0.10,15.60
+Macaca fascicularis,0.028,0.10,10.00
+Macaca mulatta,0.028,0.10,11.40
+Presbytis cristata,0.016,0.16,18.00
+Sapajus apella,0.027,0.08,7.90
+Cebus albifrons,0.029,0.08,8.70
+Alouatta semiculus,0.029,0.08,11.50
+Tarsius bancanus,0.023,0.11,5.80
+strepsirrhines,,,
+Lepilemur leucopus,0.029,0.08,4.00
+Propithecus verreauxi,0.029,0.09,9.60
+Avahi laniger,0.024,0.11,7.40
+Euoticus elegantulus,0.031,0.09,4.20
+Loris tardigradus,0.029,0.09,2.90
+Nycticebus coucang,0.030,0.09,4.00
+Daubentonia madagascariensis,0.029,0.08,10.00
+fossils,,,
+early H. sapiens Qafzeh 9,0.044,0.08,2.90
+early H. sapiens Ohalo II H2,0.042,0.07,2.50
+H. neanderthalensis Kebara 2,0.043,0.08,3.00
+Au. sediba MH2 (human),0.044,0.08,2.10
+Au. sediba MH2 (Pan),0.040,0.09,2.40
+Au. afarensis comp (human),0.042,0.08,2.40
+Au. afarensis comp (Pan),0.040,0.08,2.40

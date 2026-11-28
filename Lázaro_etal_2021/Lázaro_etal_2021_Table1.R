@@ -2,8 +2,17 @@ a <- grep("^--file=",commandArgs(FALSE),value=TRUE)
 if (!length(a)) stop("Run with Rscript")
 folder <- dirname(normalizePath(sub("^--file=","",a[1])))
 item_name <- "Lázaro_etal_2021_Table1";root <- dirname(folder)
-s <- utils::read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,colClasses="character",fileEncoding="UTF-8")
-stopifnot(nrow(s)==24L,ncol(s)==8L)
+s <- utils::read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),header=FALSE,check.names=FALSE,colClasses="character",fileEncoding="UTF-8",blank.lines.skip=FALSE)
+stopifnot(ncol(s)==8L)
+rows <- list();response <- NA_character_
+for (i in seq_len(nrow(s))) {
+  if (grepl("^(Brain case height|Brain mass|Body mass) (decrease|regrowth)$",s[[1]][i])) response <- s[[1]][i]
+  if (!grepl("^[0-9]+[.][0-9]+$",s[[3]][i])) next
+  stopifnot(!is.na(response))
+  rows[[length(rows)+1L]] <- c(response,as.character(s[i,2:8]))
+}
+s <- as.data.frame(do.call(rbind,rows),stringsAsFactors=FALSE)
+stopifnot(nrow(s)==24L)
 out <- data.frame(source_row=seq_len(nrow(s)),response_as_published=s[[1]],predictor_as_published=s[[2]],F_statistic=as.numeric(s[[3]]),SW_as_published=s[[4]],DF=as.integer(s[[5]]),adjusted_R2_as_published=as.numeric(s[[6]]),P_as_published=s[[7]],correlation_as_published=s[[8]],data_role="published linear-model result; not raw trait observation",stringsAsFactors=FALSE)
 stopifnot(!anyNA(out$F_statistic),!anyNA(out$DF))
 utils::write.csv(out,file.path(folder,paste0(item_name,".csv")),row.names=FALSE,na="",fileEncoding="UTF-8")

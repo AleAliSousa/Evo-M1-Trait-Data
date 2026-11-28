@@ -42,37 +42,32 @@ base <- local({
 
 setwd(folder)
 
-snapshot <- read.csv(
-  paste0(item_name, "_snapshot.csv"),
-  stringsAsFactors = FALSE,
-  check.names = FALSE,
-  encoding = "UTF-8"
-)
-
-## The snapshot preserves the source's own printed family/subfamily section
-## headings as their own rows (is_header == "TRUE"), and indents
-## species_printed to mirror the printed page's family/subfamily/species
-## visual hierarchy, so the frozen snapshot reads as a faithful mirror of
-## the printed table for a human skimming it. The analysis CSV/public TSV
-## are species data only and unindented: header rows are dropped,
-## species_printed has its leading hierarchy-indent whitespace trimmed,
-## species_row is renumbered 1..342 over species rows alone, and columns
-## are restored to this item's original (pre-header-preservation) order.
-## Compare as text: read.csv() types a "TRUE"/"" column as logical TRUE/NA, so
-## `is_header != "TRUE"` is NA on species rows and NA-indexing blanked every one
-## of them (the CSV/TSV were being written as 342 empty rows).
-is_hdr <- toupper(trimws(as.character(snapshot$is_header)))
-is_hdr <- !is.na(is_hdr) & is_hdr == "TRUE"
-dat <- snapshot[!is_hdr, , drop = FALSE]
-dat$species_printed <- trimws(dat$species_printed)
-dat$species_row <- seq_len(nrow(dat))
+## The snapshot sketches all printed lines, including family headings and the
+## sex-specific / literature-comparison sublines. The analysis map identifies
+## only the 342 bold standard rows; its original_order controls output order.
+grid <- read.csv(paste0(item_name, "_snapshot.csv"), header = FALSE,
+                 colClasses = "character", na.strings = NULL,
+                 stringsAsFactors = FALSE, check.names = FALSE, encoding = "UTF-8")
+analysis_map <- read.csv(file.path("reference_tables", paste0(item_name, "_analysis_map.csv")),
+                         stringsAsFactors = FALSE)
+stopifnot(nrow(analysis_map) == 342L,
+          identical(analysis_map$analysis_order, seq_len(342L)),
+          all(analysis_map$source_grid_row <= nrow(grid)))
+standard <- grid[analysis_map$source_grid_row, , drop = FALSE]
+num <- function(x) suppressWarnings(as.numeric(x))
+dat <- data.frame(species_row = analysis_map$analysis_order,
+                  source_pdf_page = analysis_map$source_pdf_page,
+                  species_printed = trimws(standard[[1]]),
+                  BoW_g = num(standard[[2]]),
+                  CV_BoW_pct = num(standard[[3]]),
+                  BrW_mg = num(standard[[4]]),
+                  CV_BrW_pct = num(standard[[5]]),
+                  n_BoW = num(standard[[6]]),
+                  n_BrW = num(standard[[7]]),
+                  Source = standard[[8]], stringsAsFactors = FALSE)
 if (nrow(dat) != 342L || any(is.na(dat$species_printed) | !nzchar(dat$species_printed)))
   stop("Baron_etal_1996_Table5: expected 342 named species rows after dropping headers, got ", nrow(dat), call. = FALSE)
-dat <- dat[, c("species_row", "source_pdf_page", "species_printed",
-               "BoW_g", "CV_BoW_pct", "BrW_mg", "CV_BrW_pct",
-               "n_BoW", "n_BrW", "Source")]
-
-message("Section headers preserved in snapshot: ", sum(is_hdr))
+message("Printed grid rows retained in snapshot: ", nrow(grid))
 
 csv_file <- paste0(item_name, ".csv")
 

@@ -10,8 +10,8 @@
 # Provenance: surface areas are taken from Brodmann (1909) [S3]; only 9 of the 10 species
 # carry the full set (Saimiri sciureus has primary visual only).  Units mm2 (as printed).
 #
-# Input is a direct transcription of the printed mmc1.pdf, PDF page 4.
-# Input  : Smaers_etal_2017_TableS1part2_pdf_transcription.csv
+# Input is the source Table S1 cell grid (publisher mmc1 workbook).
+# Input  : Smaers_etal_2017_TableS1part2_snapshot.xlsx
 # Outputs: Smaers_etal_2017_TableS1part2.csv             one row per species (10)
 #          <DOI>_TableS1_part2_surfacearea.tsv in __Public/comparative-data/
 
@@ -40,15 +40,20 @@ suppressPackageStartupMessages({
 })
 ## Set working directory to this script folder
 setwd(folder)
-snapshot_file  <- "Smaers_etal_2017_TableS1part2_pdf_transcription.csv"
+snapshot_file  <- "Smaers_etal_2017_TableS1part2_snapshot.xlsx"
 output_file    <- "Smaers_etal_2017_TableS1part2.csv"
 
 pos <- c("species_disp",
          "primary_visual_surface","prefrontal_surface","other_association_surface","frontal_motor_surface")
 num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
 
-dat <- read.csv(snapshot_file, colClasses = "character", na.strings = c("", "NA"))
-stopifnot(nrow(dat) == 10L, identical(names(dat), pos))
+raw <- read_excel(snapshot_file, sheet = "Table S1", range = "A1:AI34",
+                  col_names = FALSE, col_types = "text")
+# Brodmann surface-area species occupy rows 25:34 of the same printed table.
+# Source columns A/E/H/J/M contain species and the four measurements.
+dat <- raw[25:34, c(1, 5, 8, 10, 13)]
+names(dat) <- pos
+stopifnot(nrow(dat) == 10L)
 
 final.dataframe <- dat %>%
   filter(!is.na(species_disp), species_disp != "") %>%

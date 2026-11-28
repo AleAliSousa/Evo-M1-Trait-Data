@@ -1,0 +1,62 @@
+source_row,section,subdivision,cortical_area
+3,Visual areas,Occipital,V1
+4,Visual areas,Occipital,V2
+5,Visual areas,Occipital,V3
+6,Visual areas,Occipital,VP
+7,Visual areas,Occipital,V3A
+8,Visual areas,Occipital,V4
+9,Visual areas,Occipital,VOT
+10,Visual areas,Occipital,V4t
+11,Visual areas,Occipital,MT
+12,Visual areas,Total Occipital,
+13,Visual areas,Temporal,FST
+14,Visual areas,Temporal,PITd
+15,Visual areas,Temporal,PITv
+16,Visual areas,Temporal,CITd
+17,Visual areas,Temporal,CITv
+18,Visual areas,Temporal,AITd
+19,Visual areas,Temporal,AITv
+20,Visual areas,Temporal,STPp
+21,Visual areas,Temporal,STPa
+22,Visual areas,Temporal,TF
+23,Visual areas,Temporal,TH
+24,Visual areas,Total Temporal,
+25,Visual areas,Parietal,MSTd
+26,Visual areas,Parietal,MSTl
+27,Visual areas,Parietal,PO
+28,Visual areas,Parietal,PIP
+29,Visual areas,Parietal,LIP
+30,Visual areas,Parietal,VIP
+31,Visual areas,Parietal,MIP
+32,Visual areas,Parietal,MDP
+33,Visual areas,Parietal,DP
+34,Visual areas,Parietal,7a
+35,Visual areas,Total Parietal,
+36,Visual areas,Frontal,FEF
+37,Visual areas,Frontal,46
+38,Visual areas,Total Frontal,
+39,Visual areas,Total Visual Cortex,
+41,Other neocortex,,Somatosensory
+42,Other neocortex,,Motor
+43,Other neocortex,,Auditory
+44,Other neocortex,,Gustatory
+45,Other neocortex,,"Prefrontal (areas 9, 10, 11, 12, 13, 14, 25, 32, 45)"
+46,Other neocortex,,"Cingulate (areas 23, 24, 29, 30, PS)"
+47,Other neocortex,,Perirhinal (35/36)
+48,Other neocortex,,Unspecified neocortex
+49,Other neocortex,Total Neocortex,
+52,Transitional cortex,Hippocampal formation,Subiculum
+53,Transitional cortex,Hippocampal formation,CA1
+54,Transitional cortex,Hippocampal formation,CA3
+55,Transitional cortex,Total Hippocampal Cortex,
+57,Transitional cortex,Transitional areas,Presubiculum
+58,Transitional cortex,Transitional areas,Parasubiculum
+59,Transitional cortex,Transitional areas,Entorhinal
+62,Transitional cortex,Transitional areas,Pro
+63,Transitional cortex,Transitional areas,PaI
+64,Transitional cortex,Total Transitional Cortex,
+66,Paleocortex,,Pyriform
+67,Paleocortex,,Periamygdaloid
+68,Paleocortex,Total Paleocortex,
+70,Non-neocortex,Total Non-neocortex,
+72,Cerebral cortex,Total Cerebral Cortex,

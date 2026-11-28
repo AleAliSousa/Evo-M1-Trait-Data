@@ -31,7 +31,7 @@ setwd(paste0(base, "/"))
 
 ## 1. Read direct from xl
 folder_path <- paste0(folder, "/")
-tabledirectxl <- read_excel(paste0(folder_path,"Powell_etal_2017_Dataset1_snapshot.xlsx"))
+tabledirectxl <- read_excel(paste0(folder_path,"Powell_etal_2017_Dataset1_snapshot.xlsx"), skip = 1)
 
 ## 2. Convert columns to numerical
 tabledirectxl$`Terrestriality` <- as.numeric(tabledirectxl$`Terrestriality`)

@@ -46,3 +46,7 @@ simply absent from the tidy CSV rather than filled with a placeholder.
 
 ## Units
 Center frequency in kHz; signal duration in ms; threshold in dB re 1 uPa.
+
+## Snapshot layout correction (2026-11-27)
+
+Restored the printed caption, mean-threshold spanning heading, Kastelein/present-study and duration tiers, and the printed ellipses in untested cells. R skips the source header rows and drops ellipsis cells during long reshaping. Run `Rscript --vanilla Kastelein_etal_2010_b/Kastelein_etal_2010_b_TableI.R` from repository root. Independent human source comparison remains separate.

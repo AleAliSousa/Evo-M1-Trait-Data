@@ -1,5 +1,9 @@
 # Dunn_Smaers_2018_TableS1
 
+## Snapshot layout audit (2026-11-27)
+
+Compared `Dunn_Smaers_2018_TableS1_snapshot.csv` with `source_files/Data_Sheet_1.pdf` using `pdftotext -layout`. Its 16 columns and 47 species rows follow the printed Table S1 grid and source order, including blank measurement cells and line-wrapped headings. No layout edit was needed. This check is separate from human source verification.
+
 Dunn, J. C., & Smaers, J. B. (2018). Neural correlates of vocal repertoire in primates. Frontiers in neuroscience, 12, 534. https://doi.org/10.3389/fnins.2018.00534
 
 Source: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Dunn_Smaers_2018/source_files/Data_Sheet_1.pdf. Locus: Data_Sheet_1.pdf p.1. Source table snapshot: `Dunn_Smaers_2018_TableS1_snapshot.csv` and `Dunn_Smaers_2018_TableS1_snapshot_notes.txt`. Caption/footnotes, original table order, labels and empty cells are retained. Extraction and machine visual check: Codex, 2026-10-21; this is not an owner/RA check. Owner visual check remains pending for transcribed sources. 47 snapshot rows; grain: species.

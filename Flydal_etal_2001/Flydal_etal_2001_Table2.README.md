@@ -63,3 +63,7 @@ individual-animal Table 2 values are).
 Reindeer 1's threshold at 38 kHz with sound from the front is printed as
 "-" in the source table (not tested, or no reliable threshold obtained) --
 kept as a missing value (NA), not fabricated or interpolated.
+
+## Snapshot layout check (2026-11-27)
+
+Compared Table 2 with PDF page 3. The caption is printed to the left of the five-column grid; the snapshot now places it in its own left column at the header row, with all 11 frequency rows in source order. `Rscript --vanilla Flydal_etal_2001/Flydal_etal_2001_Table2.R` selects the data grid in R; its analysis CSV was compared with the pre-layout output. This assistant comparison is separate from independent human source signoff.

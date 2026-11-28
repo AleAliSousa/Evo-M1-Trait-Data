@@ -1,4 +1,7 @@
-rat (G21.5),hamster (G15.5),mouse (G18.5),rabbit (G31),spiny mouse (G39),ferret (G41),cat (G65),macaque limbic (G165),macaque other (G165),macaque cortex (G165),human limbic (G270),human other (G270),human cortex (G270)
+Translating Time Across Species,,,,,,,,,,,,
+rat,hamster,mouse,rabbit,spiny mouse,ferret,cat,macaque,,,human,,
+,,,,,,,limbic,other,cortex,limbic,other,cortex
+G21.5,G15.5,G18.5,G31,G39,G41,G65,,G165,,,G270,
 9.0,8.1,8.3,9.9,10.4,13.9,14.7,19,20,23,23,25,29
 9.5,8.5,8.7,10.5,11.1,15.0,16.0,21,22,26,26,27,32
 10.0,8.9,9.1,11.1,11.8,16.2,17.3,23,24,28,28,30,35

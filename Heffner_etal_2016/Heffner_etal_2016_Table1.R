@@ -40,7 +40,7 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
+snap <- read.csv(snapshot_csv, skip = 1, stringsAsFactors = FALSE, check.names = FALSE,
                   colClasses = "character", encoding = "UTF-8")
 stopifnot(nrow(snap) == 14)
 

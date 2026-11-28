@@ -19,3 +19,13 @@ This is a model-derived lookup (predictions), not observations; use only as a ti
 
 ## RA check still to do
 Side-by-side read of the render against the snapshot (50 rows x 13 columns).
+
+## Snapshot layout audit (2026-11-27)
+
+Compared the 50-row, 13-column numeric grid with local PDF page 6. Restored
+separate title, species/group, region, and gestation header rows rather than
+joining those headings into one CSV header. The R reader interprets the header
+tiers and produces the same 556 analysis rows. Ran
+`Rscript Clancy_etal_2001/Clancy_etal_2001_Table2.R`; the derived CSV retained
+SHA-256 `489bd28113a4f6766ea94695789d4c0518c971319c5e47e04af863e3bb0f84a1`.
+This source/snapshot comparison does not replace the independent human review.

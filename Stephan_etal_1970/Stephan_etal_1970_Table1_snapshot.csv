@@ -1,23 +1,32 @@
-id,group,species,body_weight_g,brain_weight_mg,total_brain_net_mm3,medulla_oblongata_mm3,cerebellum_mm3,mesencephalon_mm3,diencephalon_mm3,telencephalon_mm3
-1,Insectivore,Sorex minutus,5.3,110,103,17.0,11.0,5.9,8.7,60.7
-2,Insectivore,Sorex araneus,10.3,200,188,26.3,18.3,10.6,15.9,117.0
-3,Insectivore,Crocidura russula,11.0,190,178,23.6,21.8,11.7,15.0,106.0
-4,Insectivore,Crocidura occidentalis,28.0,440,408,59.8,51.3,27.7,28.4,241.0
-5,Insectivore,Suncus murinus,35.0,380,354,50.5,44.8,24.2,26.0,209.0
-6,Insectivore,Echinops telfairi,87.5,620,569,102.0,56.0,45.5,40.0,326.0
-7,Insectivore,Hemicentetes semispinosus,110.0,830,757,108.0,117.0,44.8,48.5,438.0
-8,Insectivore,Setifer setosus,248.0,1510,1404,183.0,142.0,75.7,99.7,903.0
-9,Insectivore,Tenrec ecaudatus,832.0,2570,2336,309.0,339.0,137.0,169.0,1381.0
-10,Insectivore,Erinaceus europaeus,860.0,3350,2969,289.0,388.0,142.0,229.0,1921.0
-11,Insectivore,Aethechinus algirus,700.0,3550,3174,397.0,407.0,157.0,285.0,1927.0
-12,Insectivore,Solenodon paradoxus,900.0,4670,4262,493.0,807.0,204.0,272.0,2486.0
-13,Insectivore,Nesogale talazaci,50.4,790,741,85.3,92.3,47.2,43.8,472.0
-14,Insectivore,Limnogale mergulus,92.0,1150,1046,204.0,176.0,67.4,81.0,518.0
-15,Insectivore,Potamogale velox,660.0,4100,3822,746.0,597.0,250.0,294.0,1936.0
-16,Insectivore,Neomys fodiens,15.2,320,299,42.2,38.9,17.3,25.2,175.0
-17,Insectivore,Talpa europaea,76.0,1020,953,95.5,174.0,49.8,80.2,554.0
-18,Insectivore,Galemys pyrenaicus,57.5,1330,1230,147.0,184.0,62.2,105.0,733.0
-19,Insectivore,Desmana moschata,440.0,4000,3620,402.0,514.0,219.0,344.0,2140.0
-20,Insectivore,Chlorotalpa stuhlmanni,39.8,740,693,68.3,74.7,42.0,51.8,457.0
-21,Insectivore,Elephantulus fuscipes,57.0,1330,1233,120.0,183.0,117.0,112.0,700.0
-22,Insectivore,Rhynchocyon stuhlmanni,490.0,6100,5680,507.0,798.0,523.0,524.0,3328.0
+TABLE 1. Data on body and brain weight (in g and mg) and volume of the fundamental brain sections (in mm³) in Insectivores.,,,,,,,,
+,Body weight* (g),Brain weight† (mg),Total brain‡ (net volume),Medulla oblongata§,Cerebellum‖,Mesencephalon,Diencephalon,Telencephalon
+,1,2,3,4,5,6,7,8
+A. Basal Insectivores,,,,,,,,
+1. Sorex minutus,5.3,110,103,17.0,11.0,5.9,8.7,60.7
+2. Sorex araneus,10.3,200,188,26.3,18.3,10.6,15.9,117.0
+3. Crocidura russula,11.0,190,178,23.6,21.8,11.7,15.0,106.0
+4. Crocidura occidentalis,28.0,440,408,59.8,51.3,27.7,28.4,241.0
+5. Suncus murinus,35.0,380,354,50.5,44.8,24.2,26.0,209.0
+6. Echinops telfairi,87.5,620,569,102.0,56.0,45.5,40.0,326.0
+7. Hemicentetes semispinosus,110.0,830,757,108.0,117.0,44.8,48.5,438.0
+8. Setifer setosus,248.0,"1,510","1,404",183.0,142.0,75.7,99.7,903.0
+9. Tenrec ecaudatus,832.0,"2,570","2,336",309.0,339.0,137.0,169.0,1381.0
+10. Erinaceus europaeus,860.0,"3,350","2,969",289.0,388.0,142.0,229.0,1921.0
+11. Aethechinus algirus,700.0,"3,550","3,174",397.0,407.0,157.0,285.0,1927.0
+B. Progressive Insectivores,,,,,,,,
+12. Solenodon paradoxus,900.0,"4,670","4,262",493.0,807.0,204.0,272.0,2486.0
+13. Nesogale talazaci,50.4,790,741,85.3,92.3,47.2,43.8,472.0
+14. Limnogale mergulus,92.0,"1,150","1,046",204.0,176.0,67.4,81.0,518.0
+15. Potamogale velox,660.0,"4,100","3,822",746.0,597.0,250.0,294.0,1936.0
+16. Neomys fodiens,15.2,320,299,42.2,38.9,17.3,25.2,175.0
+17. Talpa europaea,76.0,"1,020",953,95.5,174.0,49.8,80.2,554.0
+18. Galemys pyrenaicus,57.5,"1,330","1,230",147.0,184.0,62.2,105.0,733.0
+19. Desmana moschata,440.0,"4,000","3,620",402.0,514.0,219.0,344.0,2140.0
+20. Chlorotalpa stuhlmanni,39.8,740,693,68.3,74.7,42.0,51.8,457.0
+21. Elephantulus fuscipes,57.0,"1,330","1,233",120.0,183.0,117.0,112.0,700.0
+22. Rhynchocyon stuhlmanni,490.0,"6,100","5,680",507.0,798.0,523.0,524.0,3328.0
+"* Body weight from Bauchot and Stephan (1966, 1969), except Nycticebus cougang and Macaca mulatta.",,,,,,,,
+"† Brain weight from Bauchot and Stephan (1966, 1969), except Macaca mulatta.",,,,,,,,
+"‡ Total brain net volume; ventricles, meningeal membranes and nerves are excluded.",,,,,,,,
+§ Medulla oblongata includes tissue difficult to separate from mesencephalon.,,,,,,,,
+‖ Cerebellum includes brachium and nuclei pontis.,,,,,,,,

@@ -33,7 +33,14 @@ base        <- local({                                   # repo root; NA if run 
 setwd(folder)
 
 ## ---- read the frozen snapshot (verbatim headers) ----
-snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE, na.strings = c("", "NA"))
+grid <- read.csv(snapshot_csv, header = FALSE, skip = 2L, nrows = 37L,
+                 check.names = FALSE, stringsAsFactors = FALSE,
+                 na.strings = c("", "NA"))
+left <- grid[, 1L:3L, drop = FALSE]
+right <- grid[!is.na(grid[[6L]]), 4L:6L, drop = FALSE]
+names(left) <- names(right) <- c("Taxonomic group", "Subgroup", "Species")
+# The book prints two parallel triplets. Read down the left one, then the right.
+snap <- rbind(left, right)
 num <- function(x) suppressWarnings(as.numeric(gsub(",", "", trimws(as.character(x)))))
 
 ## fill down the merged group / subgroup cells (printed once per block)

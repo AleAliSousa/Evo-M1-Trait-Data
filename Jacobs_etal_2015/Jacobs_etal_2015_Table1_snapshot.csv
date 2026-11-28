@@ -1,15 +1,8 @@
-species_printed,region_printed,layer_printed,mean_um_printed,sd_um_printed,presence_printed
-Giraffa camelopardalis,Motor,Layer I,379,17,present
-Giraffa camelopardalis,Motor,Layer II,180,33,present
-Giraffa camelopardalis,Motor,Layer III,516,59,present
-Giraffa camelopardalis,Motor,Layer IV,,,absent (-)
-Giraffa camelopardalis,Motor,Layer V,157,24,present
-Giraffa camelopardalis,Motor,Layer VI,359,57,present
-Giraffa camelopardalis,Motor,Total cortical thickness,1591,90,not applicable
-Giraffa camelopardalis,Visual,Layer I,255,19,present
-Giraffa camelopardalis,Visual,Layer II,134,12,present
-Giraffa camelopardalis,Visual,Layer III,293,24,present
-Giraffa camelopardalis,Visual,Layer IV,180,19,present
-Giraffa camelopardalis,Visual,Layer V,176,16,present
-Giraffa camelopardalis,Visual,Layer VI,287,15,present
-Giraffa camelopardalis,Visual,Total cortical thickness,1325,36,not applicable
+,Motor,Visual
+Layer I,379 ± 17,255 ± 19
+Layer II,180 ± 33,134 ± 12
+Layer III,516 ± 59,293 ± 24
+Layer IV,–,180 ± 19
+Layer V,157 ± 24,176 ± 16
+Layer VI,359 ± 57,287 ± 15
+Total cortical thickness,1591 ± 90,1325 ± 36

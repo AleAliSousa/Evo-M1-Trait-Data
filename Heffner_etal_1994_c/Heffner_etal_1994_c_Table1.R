@@ -52,7 +52,13 @@ library(readxl)
 ## 2. LOAD ----------------------------------------------------------
 snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
                   colClasses = "character", encoding = "UTF-8")
-stopifnot(nrow(snap) == 12)
+stopifnot(ncol(snap) == 3L, nrow(snap) == 14L)
+group <- ifelse(grepl("^Surface dwellers$|^Subterranean", snap$Species),
+                snap$Species, NA_character_)
+for (i in seq_along(group)) if (is.na(group[i]) && i > 1L) group[i] <- group[i - 1L]
+keep <- !(snap$Species %in% c("Surface dwellers", "Subterraneanᵇ"))
+snap <- snap[keep, , drop = FALSE]
+group <- group[keep]
 
 binomial_lookup <- c(
   "Norway rat (domestic)" = "Rattus norvegicus",
@@ -72,10 +78,10 @@ binomial_lookup <- c(
 ## 3. CLEAN -----------------------------------------------------------
 final.dataframe <- tibble(
   species_row = seq_len(nrow(snap)),
-  group       = tolower(snap$Group),
+  group       = tolower(gsub("ᵇ", "", group, fixed = TRUE)),
   binomial    = unname(binomial_lookup[snap$Species]),
   common_name = snap$Species,
-  localization_threshold_deg = as.numeric(snap$`Threshold (deg)`),  # "" -> NA for pocket gopher
+  localization_threshold_deg = suppressWarnings(as.numeric(gsub("°", "", snap$`Thresholdᵃ`, fixed = TRUE))),
   data_role = ifelse(snap$Source == "Present report", "primary", "secondary"),
   source = snap$Source
 )

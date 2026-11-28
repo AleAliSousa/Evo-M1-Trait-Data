@@ -60,3 +60,7 @@ this paper's own primary measurement.
   table's column layout.
 - `Heesy_etal_2011_Table1.csv` / public TSV — same content, published.
 - `reference_tables/Heesy_etal_2011_Table1_references.csv` — the numbered source lookup.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared the two-page printed Table 1 with the local PDF. The source has nine columns and taxonomic-order section rows. The former snapshot inserted Order and a derived `CONV_digitized_for_this_study` column and repeated the order on every taxon row. The snapshot now carries nine printed columns and 12 section rows, with superscript ² retained in the CONV cells. The R reader fills Order and parses the superscript into the analysis flag. `Rscript --vanilla Heesy_etal_2011/Heesy_etal_2011_Table1.R` rebuilt the 84-row CSV with unchanged SHA-256 `0c4ba15728c4cb67a728c113bd12ed02058a12b10b1e418b4fb1f4bf4b1ac873`. Human visual signoff remains separate.

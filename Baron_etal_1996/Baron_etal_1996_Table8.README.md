@@ -59,3 +59,15 @@ Generated from `reference_tables/Baron_etal_1996_errata.csv` by `_tools/dataset_
 
 7 recorded, 0 open (proposed), 7 confirmed, 0 withdrawn.
 <!-- errata:end -->
+
+## Source-layout correction (2026-11-27)
+
+The snapshot now follows printed Table 8 across PDF pp. 46–53, with caption,
+NET/VENT/REST grouped headings, source-order species and taxonomic headings,
+repeated page headers and page breaks. `is_header`, `source_pdf_page`, and
+`species_row` are derived by `_read_baron_multpage.R`. The abbreviation
+and note definitions at the bottom of the source are represented by their
+heading only. `Rscript --vanilla Baron_etal_1996_Table8.R` reproduced the
+prior 272-row analysis CSV cell for cell; `Rscript --vanilla
+Baron_etal_1996_Table8_snapshot.R` passed extraction regression. This is
+an assistant layout check, not human visual signoff.

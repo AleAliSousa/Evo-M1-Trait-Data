@@ -53,3 +53,10 @@ blocks and the left V1 volume are not served; each has a status and reason in
 (`__merging_cell_counts_isotropic_fractionator/WIRING_into_cell_counts_isotropic_fractionator.md`).
 
 Pipeline: Source → Snapshot ✅ → Data readable ✅ → Species note ✅ → Online database ✅ → Merge (areas) ✅
+
+## Table snapshot scope audit (2026-11-27)
+
+The local six-page article has no printed Table 1. This workbook is an
+analysis-oriented compilation from the paper's prose and figures, as described
+above. It is outside the table/matrix snapshot-layout batch; no source-table
+layout is claimed. No data cells were changed in this audit.

@@ -33,7 +33,8 @@ base      <- local({
 })
 setwd(folder)
 
-snap <- read_csv(file.path(folder, "Stephan_etal_1970_TABLE5_snapshot.csv"), show_col_types = FALSE)
+source(file.path(folder, "_read_printed_table.R"))
+snap <- read_printed_table(file.path(folder, "Stephan_etal_1970_TABLE5_snapshot.csv"))
 
 # Keep species + this table's structure columns; carry `group` as a taxon label.
 clean <- snap %>%

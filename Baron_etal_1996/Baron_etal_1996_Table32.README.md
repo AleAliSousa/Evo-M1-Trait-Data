@@ -36,3 +36,15 @@ size indices and are intentionally excluded.
 - the shared Baron1996 taxonomy/overlap audit is complete and finds zero current core overlap;
   merge wiring remains on hold for seven historical taxon concepts and the required within-source
   species averaging.
+
+## Source-layout correction (2026-11-27)
+
+The snapshot now follows printed Table 32 across PDF pp. 138–145,
+with the caption, source-order species and taxonomic headings, repeated
+page headers, and page breaks. `is_header`, `source_pdf_page`, and
+`species_row` are derived by `_read_baron_multpage.R`. The abbreviation
+definitions at the bottom of the last page are represented by their heading
+only. `Rscript --vanilla Baron_etal_1996_Table32.R` reproduced the prior
+272-row analysis CSV cell for cell; `Rscript --vanilla
+Baron_etal_1996_Table32_snapshot.R` passed the source-grid regression.
+This is an assistant layout check, not human visual signoff.

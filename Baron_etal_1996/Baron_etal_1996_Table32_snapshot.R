@@ -218,18 +218,19 @@ all$ypos <- NULL
 all$species_row <- as.character(seq_len(nrow(all)))
 all[] <- lapply(all, as.character)
 
-# Frozen layout: BOM, every field quoted, CRLF line ends.
-q <- function(x) paste0("\"", gsub("\"", "\"\"", as.character(x)), "\"")
-lines <- c(paste(q(names(all)), collapse = ","),
-           apply(as.matrix(all), 1, function(rw) paste(q(rw), collapse = ",")))
-out <- paste0("\ufeff", paste(lines, collapse = "\r\n"), "\r\n")
-
+# The frozen CSV is the printed page grid. Rebuild the original extraction in
+# memory and compare its cells; never replace the layout with metadata columns.
+source(file.path(HERE, "_read_baron_multpage.R"))
 path <- file.path(HERE, paste0(item_name, "_snapshot.csv"))
-if (file.exists(path)) {
-  old <- readChar(path, file.info(path)$size, useBytes = TRUE); Encoding(old) <- "UTF-8"
-  if (!identical(old, out)) stop("REFUSING to overwrite differing frozen snapshot ", path, call. = FALSE)
-  message("  unchanged ", basename(path), ": ", nrow(sp), " species rows + ", nrow(hd), " heading rows (byte-identical)")
-} else {
-  con <- file(path, "wb"); writeBin(charToRaw(enc2utf8(out)), con); close(con)
-  message("  wrote ", basename(path), ": ", nrow(sp), " species rows + ", nrow(hd), " heading rows")
+old <- read_baron_multpage(path, paste0("Table", 32), cols, 138L)
+stopifnot(nrow(old) == nrow(all),
+          identical(old$species_printed, all$species_printed),
+          identical(old$source_pdf_page, as.integer(all$source_pdf_page)),
+          identical(old$is_header, as.logical(ifelse(all$is_header=="TRUE", TRUE, NA))),
+          identical(old$species_row, as.integer(all$species_row)))
+for (v in cols) {
+  a <- old[[v]]
+  b <- suppressWarnings(as.numeric(ifelse(all[[v]]=="", NA_character_, all[[v]])))
+  if (!identical(a, b)) stop("Source-grid regression differs for ", item_name, " column ", v)
 }
+message("source-grid regression OK: ", basename(path), " (", nrow(sp), " species, ", nrow(hd), " headings)")

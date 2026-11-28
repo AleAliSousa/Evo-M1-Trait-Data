@@ -55,3 +55,7 @@ the "range of greatest sensitivity" (10 dB from maximum) as 16–64 kHz,
 consistent with the printed 49 dB threshold at 16 kHz. Above 64 kHz,
 sensitivity dropped sharply (~150 dB/octave per the text); below 8 kHz it
 declined more gradually (~38 dB/octave).
+
+## Snapshot layout check (2026-11-27)
+
+Compared Table I with PDF page 5. The snapshot now keeps the shared overall-threshold heading above the J9 and WAU transducer columns, followed by ten frequency rows in printed order. `Rscript --vanilla Thomas_etal_1988/Thomas_etal_1988_TableI.R` names and unpivots the source columns; its analysis CSV was compared with the pre-layout output. This assistant comparison is separate from independent human source signoff.

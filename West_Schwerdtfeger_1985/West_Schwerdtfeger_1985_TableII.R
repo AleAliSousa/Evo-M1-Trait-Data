@@ -18,7 +18,9 @@ source_name <- basename(folder)
 num <- function(x) suppressWarnings(as.numeric(x))
 check <- function(id,obs,printed,tol,basis,note="Published values retained; no correction.") data.frame(check_id=id,basis=basis,observed=obs,printed=printed,difference=obs-printed,tolerance=tol,status=ifelse(is.na(obs-printed),"not_evaluable",ifelse(abs(obs-printed)<=tol+1e-10,"pass","mismatch")),note=note)
 raw <- read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),header=FALSE,colClasses="character",check.names=FALSE,na.strings="",fill=TRUE)
-x <- raw[4:16,]
+x <- raw[4:(nrow(raw)-1),]
+x <- x[!is.na(x[[1]]) & nzchar(trimws(x[[1]])), , drop=FALSE]
+x[[1]] <- trimws(x[[1]])
 final.dataframe <- do.call(rbind,lapply(1:4,function(j) data.frame(species="Erinaceus europaeus",specimen_id=c("H5","H9","H11","H15")[j],structure=x[[1]],standardized_volume_mm3=num(x[[j+1]]),printed_group_mean_mm3=num(x[[6]]),hemisphere_scope="not explicitly resolved",normalization_source_key="Stephan1981",specimen_source_key="West1984",source=source_name)))
 table_checks <- check(x[[1]],rowMeans(as.matrix(data.frame(lapply(x[2:5],num)))),num(x[[6]]),.01,"Mean of four printed standardized volumes vs printed mean")
 

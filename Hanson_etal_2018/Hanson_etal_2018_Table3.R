@@ -15,8 +15,13 @@
 folder <- dirname(.sp); setwd(folder); options(stringsAsFactors = FALSE)
 suppressMessages(library(readxl))
 
-raw <- as.data.frame(read_excel("Hanson_etal_2018_Table3_snapshot.xlsx", sheet = "Table 3", skip = 1,
-                                .name_repair = "minimal"), check.names = FALSE)
+raw <- as.data.frame(read_excel("Hanson_etal_2018_Table3_snapshot.xlsx", sheet = "Table 3",
+                                skip = 2, col_names = FALSE), check.names = FALSE)
+names(raw) <- c("Measure", "Stat", "dC", "mC")
+# The printed table leaves the measure cell blank on the second group row.
+for (i in seq_len(nrow(raw))[-1]) {
+  if (is.na(raw$Measure[i]) || !nzchar(raw$Measure[i])) raw$Measure[i] <- raw$Measure[i - 1]
+}
 num <- function(x) suppressWarnings(as.numeric(gsub("[,%]", "", trimws(as.character(x)))))
 split_pm <- function(x) {
   x <- gsub(",", "", trimws(as.character(x))); p <- strsplit(x, "\\s*±\\s*")

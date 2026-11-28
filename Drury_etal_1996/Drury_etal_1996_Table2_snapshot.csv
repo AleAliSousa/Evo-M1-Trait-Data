@@ -1,105 +1,61 @@
-"block","line","Cortical area","Area (mm2)","Percent of total"
-"caption","0","Table 2. Surface Area of Cortical Subdivisions in the Macaque^a","",""
-"left","1","Visual areas","",""
-"left","2","Occipital","",""
-"left","3","V1","941","13.1"
-"left","4","V2","691","9.6"
-"left","5","V3","38","0.5"
-"left","6","VP","64","0.9"
-"left","7","V3A","54","0.7"
-"left","8","V4","298","4.1"
-"left","9","VOT","38","0.5"
-"left","10","V4t","17","0.2"
-"left","11","MT","38","0.5"
-"left","12","Temporal","",""
-"left","13","FST","37","0.5"
-"left","14","PITd","93","1.3"
-"left","15","PITv","92","1.3"
-"left","16","CITd","41","0.6"
-"left","17","CITv","94","1.3"
-"left","18","AITd","65","0.9"
-"left","19","AITv","61","0.8"
-"left","20","STPp","110","1.5"
-"left","21","STPa","57","0.8"
-"left","22","TF","133","1.8"
-"left","23","TH","50","0.7"
-"left","24","Parietal","",""
-"left","25","MSTd","53","0.7"
-"left","26","MST1","13","0.2"
-"left","27","PO","58","0.8"
-"left","28","PIP","58","0.8"
-"left","29","LIP","32","0.4"
-"left","30","VIP","59","0.8"
-"left","31","MIP","35","0.5"
-"left","32","MDP","49","0.7"
-"left","33","DPL","54","0.8"
-"left","34","7a","87","1.2"
-"left","35","Frontal","",""
-"left","36","FEF","94","1.3"
-"left","37","46","122","1.7"
-"left","38","Subtotal (visual)","3726","51.7"
-"left","39","Somatosensory areas","",""
-"left","40","3a","72","1.0"
-"left","41","3b","101","1.4"
-"left","42","1","100","1.4"
-"left","43","2","136","1.9"
-"left","44","5","162","2.2"
-"left","45","7b","137","1.9"
-"left","46","S11","107","1.5"
-"left","47","Ri","26","0.4"
-"left","48","Ig","16","0.2"
-"left","49","Id","16","0.2"
-"left","50","Subtotal (somatosensory)","872","12.1"
-"left","51","Motor areas","",""
-"left","52","4","367","5.1"
-"left","53","6","197","2.7"
-"left","54","SMA","88","1.2"
-"left","55","Subtotal (motor)","652","9.1"
-"left","56","Auditory areas","",""
-"left","57","AUD","153","2.1"
-"left","58","A1","16","0.2"
-"left","59","RL","20","0.3"
-"right","1","CM","14","0.2"
-"right","2","L","13","0.2"
-"right","3","Pa","9","0.1"
-"right","4","Subtotal (auditory)","224","3.1"
-"right","5","Gustatory area","",""
-"right","6","G","19","0.3"
-"right","7","Prefrontal areas","",""
-"right","8","9","139","1.9"
-"right","9","10","144","2.0"
-"right","10","11","24","0.3"
-"right","11","12","19","0.3"
-"right","12","13","37","0.5"
-"right","13","14","64","0.9"
-"right","14","25","45","0.6"
-"right","15","32","27","0.4"
-"right","16","45","39","0.5"
-"right","17","Subtotal (prefrontal)","538","7.5"
-"right","18","Cingulate areas","",""
-"right","19","23","135","1.9"
-"right","20","24","176","2.4"
-"right","21","29","25","0.3"
-"right","22","30","34","0.5"
-"right","23","Ps","7","0.1"
-"right","24","Perirhinal areas","",""
-"right","25","35","41","0.6"
-"right","26","36","73","1.0"
-"right","27","Unspecified cortex","357","5.0"
-"right","28","Subtotal (neocortex)","6878","95.5"
-"right","29","Hippocampal formation","",""
-"right","30","S","42","0.6"
-"right","31","CA1","59","0.8"
-"right","32","CA3","35","0.5"
-"right","33","Transitional areas","",""
-"right","34","PrS","26","0.4"
-"right","35","PaS","19","0.3"
-"right","36","ER","67","0.9"
-"right","37","Pro","34","0.5"
-"right","38","Pall","7","0.1"
-"right","39","Paleocortex","",""
-"right","40","PAC","29","0.4"
-"right","41","PIR","9","0.1"
-"right","42","Total non-neocortex","327","4.5"
-"right","43","Total cerebral cortex","7205","100.0"
-"footnote","0","^a Surface areas of different functional subdivisions of the cerebral cortex, expressed as absolute surface area (column 2) and as a percentage of total cortical surface area (column 3). These values accurately represent the surface area within the intact cortex, given the particular border assignments made on the model of the hemisphere (Fellemann & Van Essen, 1991). We also calculated the surface areas on the two-dimensional map for all of these areas. The two-dimensional estimates were inaccurate by only a few percent for most cortical areas. The inaccuracies were substantially larger (more than 20%) for four areas (V3, V3A, PIP, and FEF), which are located in particularly convoluted regions that contained large residual distortions in the final map.","",""
+Table 2. Surface Area of Cortical Subdivisions in the Macaque^a,,,,,
+Cortical area,Area (mm2),Percent of total,Cortical area,Area (mm2),Percent of total
+Visual areas,,,CM,14,0.2
+Occipital,,,L,13,0.2
+V1,941,13.1,Pa,9,0.1
+V2,691,9.6,Subtotal (auditory),224,3.1
+V3,38,0.5,Gustatory area,,
+VP,64,0.9,G,19,0.3
+V3A,54,0.7,Prefrontal areas,,
+V4,298,4.1,9,139,1.9
+VOT,38,0.5,10,144,2.0
+V4t,17,0.2,11,24,0.3
+MT,38,0.5,12,19,0.3
+Temporal,,,13,37,0.5
+FST,37,0.5,14,64,0.9
+PITd,93,1.3,25,45,0.6
+PITv,92,1.3,32,27,0.4
+CITd,41,0.6,45,39,0.5
+CITv,94,1.3,Subtotal (prefrontal),538,7.5
+AITd,65,0.9,Cingulate areas,,
+AITv,61,0.8,23,135,1.9
+STPp,110,1.5,24,176,2.4
+STPa,57,0.8,29,25,0.3
+TF,133,1.8,30,34,0.5
+TH,50,0.7,Ps,7,0.1
+Parietal,,,Perirhinal areas,,
+MSTd,53,0.7,35,41,0.6
+MST1,13,0.2,36,73,1.0
+PO,58,0.8,Unspecified cortex,357,5.0
+PIP,58,0.8,Subtotal (neocortex),6878,95.5
+LIP,32,0.4,Hippocampal formation,,
+VIP,59,0.8,S,42,0.6
+MIP,35,0.5,CA1,59,0.8
+MDP,49,0.7,CA3,35,0.5
+DPL,54,0.8,Transitional areas,,
+7a,87,1.2,PrS,26,0.4
+Frontal,,,PaS,19,0.3
+FEF,94,1.3,ER,67,0.9
+46,122,1.7,Pro,34,0.5
+Subtotal (visual),3726,51.7,Pall,7,0.1
+Somatosensory areas,,,Paleocortex,,
+3a,72,1.0,PAC,29,0.4
+3b,101,1.4,PIR,9,0.1
+1,100,1.4,Total non-neocortex,327,4.5
+2,136,1.9,Total cerebral cortex,7205,100.0
+5,162,2.2,,,
+7b,137,1.9,,,
+S11,107,1.5,,,
+Ri,26,0.4,,,
+Ig,16,0.2,,,
+Id,16,0.2,,,
+Subtotal (somatosensory),872,12.1,,,
+Motor areas,,,,,
+4,367,5.1,"^a Surface areas of different functional subdivisions of the cerebral cortex, expressed as absolute surface area (column 2) and as a percentage of total cortical surface area (column 3). These values accurately represent the surface area within the intact cortex, given the particular border assignments made on the model of the hemisphere (Fellemann & Van Essen, 1991). We also calculated the surface areas on the two-dimensional map for all of these areas. The two-dimensional estimates were inaccurate by only a few percent for most cortical areas. The inaccuracies were substantially larger (more than 20%) for four areas (V3, V3A, PIP, and FEF), which are located in particularly convoluted regions that contained large residual distortions in the final map.",,
+6,197,2.7,,,
+SMA,88,1.2,,,
+Subtotal (motor),652,9.1,,,
+Auditory areas,,,,,
+AUD,153,2.1,,,
+A1,16,0.2,,,
+RL,20,0.3,,,

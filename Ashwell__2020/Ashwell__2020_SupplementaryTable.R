@@ -26,7 +26,8 @@ options(scipen = 999)
 
 suppressPackageStartupMessages({ library(readxl); library(dplyr); library(stringr) })
 
-raw <- read_excel("Ashwell__2020_SupplementaryTable_snapshot.xlsx", col_types = "text")
+raw <- read_excel("Ashwell__2020_SupplementaryTable_snapshot.xlsx",
+                  range = "A4:P164", col_names = FALSE, col_types = "text")
 
 # The snapshot keeps the printed column headers (units, spaces). Rename to the
 # snake_case codes used in Ashwell__2020_definitions.csv and the merge term map.
@@ -47,6 +48,7 @@ numeric_cols <- clean_names[4:16]
 # rows collapse to one species mean. All other species are already one row each.
 n_in <- nrow(raw)
 dat <- raw %>%
+  filter(!is.na(species), nzchar(species)) %>%
   filter(!str_detect(species, regex("\\b(mean|SD)\\b", ignore_case = TRUE))) %>%
   mutate(species = str_squish(str_replace(species, "\\s+\\d+$", "")),
          across(all_of(numeric_cols), num))

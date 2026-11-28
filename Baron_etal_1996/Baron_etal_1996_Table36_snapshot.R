@@ -197,7 +197,7 @@ SPECS <- list(
   Table25 = list(pages = 122:126, cols = c("MES","MTG","MTC","INC","SUC"), y1 = 135, N = 150),
   Table28 = list(pages = 134,     cols = c("CER","TCN","MCN","ICN","LCN"), y1 = 112, N = 18),
   Table30 = list(pages = 136,     cols = c("NLL","CGM","CGL","GLD","GLV"), y1 = 124, N = 19),
-  Table36 = list(pages = 159,     cols = c("TOT","TOT_minus_BOL","ALLO_minus_BOL","NEO","ALLO","PAL_plus_BOL","SCH","HIP","CING"), y1 = 122, y2 = 293, N = 14),
+  Table36 = list(pages = 159,     cols = c("TOT","BOL","TOT_minus_BOL","NEO","ALLO","ALLO_minus_BOL","PAL_plus_SCH","HIP","CING"), y1 = 122, y2 = 293, N = 14),
   Table39 = list(pages = 161,     cols = c("TOT","NEO","ALLO","SEMI","SCH","BIC"), y1 = 98, y2 = 206, N = 6),
   Table42 = list(pages = 162,     cols = c("SEMI","PRPI","TOL","PSD","PAM"), y1 = 97, y2 = 204, N = 6),
   Table45 = list(pages = 163,     cols = c("BIC","RB","TT","CA","FD"), y1 = 99, y2 = 207, N = 6),
@@ -264,6 +264,14 @@ for (item in sub("^Baron_etal_1996_", "", item_name)) {   # this script writes o
   }
   if (nrow(df) != s$N)
     stop(item, ": ", nrow(df), " rows extracted, the book's Table 1 key gives N = ", s$N)
+  if (item == "Table36") {
+    # The PDF text layer places the final 2.8 against the species word.
+    # The rendered Table 36, p. 159, reads Natalus mexicanus, CING = 2.8.
+    i <- which(grepl("^Natalus mexican us 2;8$", df$species_printed))
+    stopifnot(length(i) == 1L, is.na(df$CING[i]))
+    df$species_printed[i] <- "Natalus mexicanus"
+    df$CING[i] <- 2.8
+  }
   out <- file.path(HERE, paste0("Baron_etal_1996_", item, "_snapshot.csv"))
   # A frozen snapshot that already carries the printed section headings
   # (is_header column) is the hand-checked, page-faithful copy: never overwrite
@@ -282,6 +290,16 @@ for (item in sub("^Baron_etal_1996_", "", item_name)) {   # this script writes o
     if (bad) stop(item, ": ", bad, " cells differ from the frozen snapshot (left untouched)")
     message(sprintf("  kept   %-42s %3d species rows (frozen copy with headers; extraction matches)",
                     basename(out), nrow(df)))
+    next
+  }
+  if (item == "Table36") {
+    printed <- rbind(
+      c("Table 36. Schneider’s area measurements of cortical regions (mm²).", rep("", 9L)),
+      c("", "", "", "TOT minus", "", "", "ALLO minus", "PAL plus", "", ""),
+      c("", "TOT", "BOL", "BOL", "NEO", "ALLO", "BOL", "SCH", "HIP", "CING"),
+      cbind(df$species_printed, df[, s$cols, drop = FALSE]))
+    write.table(printed, out, sep = ",", row.names = FALSE,
+                col.names = FALSE, quote = TRUE, na = "")
     next
   }
   write.csv(df, out, row.names = FALSE, na = "")

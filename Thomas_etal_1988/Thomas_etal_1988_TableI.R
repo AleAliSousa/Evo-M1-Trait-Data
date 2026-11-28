@@ -39,7 +39,11 @@ library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
 snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
-                  colClasses = "character", encoding = "UTF-8", skip = 1)
+                 colClasses = "character", encoding = "UTF-8", skip = 3,
+                 header = FALSE, nrows = 10,
+                 col.names = c("Test frequency (kHz)", "Number of reversals tested",
+                               "Overall threshold J9 transducer (dB re 1 µPa; range of session means)",
+                               "Overall threshold WAU transducer (dB re 1 µPa; range of session means)"))
 stopifnot(nrow(snap) == 10)
 
 ## 3. CLEAN -----------------------------------------------------------

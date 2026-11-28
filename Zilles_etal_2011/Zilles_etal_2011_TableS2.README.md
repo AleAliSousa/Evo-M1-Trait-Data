@@ -12,7 +12,7 @@ Locus: **Supporting Information Table S2. Zilles collection vertebrates** (liste
 
 Source format is a digital-native journal supplement workbook, `nyas_5978_sm_table2.xls` (legible; machine-readable cell values, no OCR involved). Legibility is source-format metadata, not a measurement-confidence score. The article PDF `Zilles-2011-Three brain collecti.pdf` is held in this folder for context only; the table itself is not printed in the article.
 
-`Zilles_etal_2011_TableS2_snapshot.xlsx` (sheet `TableS2`) was generated from the supplement by `Zilles_etal_2011_TableS2_snapshot.py`: it copies the sheet title ("Zilles Collection"), the 11 header cells and every non-blank row in order, converting whole-number numeric cells to integers and stripping non-breaking spaces. Note that the house rule for born-digital sources is to keep the untouched download as the frozen copy; here the original `.xls` is kept unchanged alongside the derived `.xlsx` snapshot. Human visual curation of the snapshot against the supplement is pending.
+`Zilles_etal_2011_TableS2_snapshot.xlsx` (sheet `TableS2`) is a cell-grid copy of the publisher XLS supplement, rebuilt by `Zilles_etal_2011_TableS2_snapshot.py`. It keeps the source title, header, internal blank rows, cell coordinates and line breaks. The untouched publisher `.xls` remains alongside the snapshot. Independent human source comparison is still separate.
 
 ## Snapshot → data readable
 
@@ -49,3 +49,8 @@ Generated from `reference_tables/Zilles_etal_2011_errata.csv` by `_tools/dataset
 
 1 recorded, 0 open (proposed), 1 confirmed, 0 withdrawn.
 <!-- errata:end -->
+
+
+## Snapshot layout recheck (2026-11-27)
+
+Compared the XLS cell grid with the rebuilt XLSX snapshot, including blank rows and heading tiers. Non-numeric text matches at the same coordinates; floating-point representation differences are below 1e-10. Command from the repository root: `python3 Zilles_etal_2011/Zilles_etal_2011_TableS2_snapshot.py`, then `Rscript Zilles_etal_2011/Zilles_etal_2011_TableS2.R`. The rebuilt analysis CSV matches the prior version cell for cell. This is not independent human signoff.

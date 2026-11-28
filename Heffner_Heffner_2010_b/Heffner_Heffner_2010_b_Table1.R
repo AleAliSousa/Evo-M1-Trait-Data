@@ -43,25 +43,33 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
-                  colClasses = "character", encoding = "UTF-8")
+snap <- read.csv(snapshot_csv, skip = 1, nrows = 21,
+                 stringsAsFactors = FALSE, check.names = FALSE,
+                 colClasses = "character", encoding = "UTF-8")
 stopifnot(nrow(snap) == 21)
+source_species <- snap$Species
+published_binomial <- sub("^.*(?:\\(|; )([A-Z][a-z]+ [a-z]+)\\)$", "\\1",
+                           source_species, perl = TRUE)
+common_name <- sub(" \\([A-Z][a-z]+ [a-z]+\\)$", "", source_species)
+common_name <- sub("; [A-Z][a-z]+ [a-z]+\\)$", ")", common_name)
+source_measure <- function(x) as.numeric(sub("\\^.*$", "", x))
+source_ref <- function(x) sub("^[^\\^]*\\^", "", x)
 
 ## 3. CLEAN -----------------------------------------------------------
 final.dataframe <- tibble(
   species_row = seq_len(nrow(snap)),
-  binomial    = snap$Species,
+  binomial    = ifelse(published_binomial == "Tursiops truncates",
+                       "Tursiops truncatus", published_binomial),
   # The PDF prints "Tursiops truncates" in its final row (Table 1, p. 2081).
   # The older snapshot normalized that typo. Keep both representations here;
   # the accepted name is resolved only through the project taxon keys.
-  species_as_published = ifelse(snap$Species == "Tursiops truncatus",
-                                "Tursiops truncates", snap$Species),
-  common_name = snap$`Common name`,
-  audible_freq_high_60dBSPL_khz = as.numeric(snap$`High-frequency Hearing Limit (kHz)`),
-  ref_freq_key = snap$`Ref (freq)`,
-  interaural_distance_functional_us = as.numeric(snap$`Functional Interaural Distance (us)`),
-  basilar_membrane_length_mm = as.numeric(snap$`Basilar Membrane Length (mm)`),
-  ref_bm_length_keys = snap$`Ref (BM length)`,
+  species_as_published = published_binomial,
+  common_name = common_name,
+  audible_freq_high_60dBSPL_khz = source_measure(snap$`High-frequency Hearing Limit (kHz)^a`),
+  ref_freq_key = source_ref(snap$`High-frequency Hearing Limit (kHz)^a`),
+  interaural_distance_functional_us = as.numeric(snap$`Functional Interaural Distance (µs)^b`),
+  basilar_membrane_length_mm = source_measure(snap$`Basilar Membrane Length (mm)`),
+  ref_bm_length_keys = source_ref(snap$`Basilar Membrane Length (mm)`),
   # Table 1 compiles hearing and membrane values from cited works. The
   # interaural distances have no per-row source or acquisition protocol.
   data_role = "secondary",

@@ -38,8 +38,32 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
-                  colClasses = "character", encoding = "UTF-8")
+source_grid <- read.csv(snapshot_csv, skip = 2L, header = FALSE, nrows = 19L,
+                        col.names = c("Species", "High-frequency limit (kHz)",
+                                      "Low-frequency limit (kHz)", "Best frequency (kHz)",
+                                      "Best sensitivity (dB)", "Hearing range (octaves)"),
+                        stringsAsFactors = FALSE, check.names = FALSE,
+                        colClasses = "character", na.strings = NULL, encoding = "UTF-8")
+marker <- function(x) {
+  z <- sub("^.*([¹²³⁴])$", "\\1", x)
+  z[!grepl("[¹²³⁴]$", x)] <- ""
+  out <- unname(c("¹"="1", "²"="2", "³"="3", "⁴"="4")[z])
+  out[is.na(out)] <- ""
+  out
+}
+value <- function(x) sub("[¹²³⁴]$", "", x)
+snap <- data.frame(Species = value(source_grid[[1]]),
+                   `Footnote on species` = marker(source_grid[[1]]),
+                   `High-frequency limit (kHz)` = value(source_grid[[2]]),
+                   `HF footnote` = marker(source_grid[[2]]),
+                   `Low-frequency limit (kHz)` = value(source_grid[[3]]),
+                   `LF footnote` = marker(source_grid[[3]]),
+                   `Best frequency (kHz)` = value(source_grid[[4]]),
+                   `BF footnote` = marker(source_grid[[4]]),
+                   `Best sensitivity (dB)` = value(source_grid[[5]]),
+                   `BS footnote` = marker(source_grid[[5]]),
+                   `Hearing range (octaves)` = value(source_grid[[6]]),
+                   `Range footnote` = marker(source_grid[[6]]), check.names = FALSE)
 foot <- read.csv(foot_csv, stringsAsFactors = FALSE, colClasses = "character")
 stopifnot(nrow(snap) == 19)
 footkey <- setNames(foot$text_as_printed, foot$footnote)

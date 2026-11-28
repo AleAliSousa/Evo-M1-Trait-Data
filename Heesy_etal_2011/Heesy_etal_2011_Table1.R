@@ -8,8 +8,23 @@ options(scipen=999)
 .sp<-local({a<-grep("^--file=",commandArgs(FALSE),value=TRUE);if(length(a))return(normalizePath(sub("^--file=","",a[1])));if(requireNamespace("rstudioapi",quietly=TRUE)&&rstudioapi::isAvailable()){p<-rstudioapi::getSourceEditorContext()$path;if(nzchar(p))return(normalizePath(p))};stop("Run with Rscript or Source in RStudio.",call.=FALSE)})
 folder<-dirname(.sp);item_name<-tools::file_path_sans_ext(basename(.sp));base<-local({d<-folder;while(dirname(d)!=d&&!file.exists(file.path(d,"__ReadMe.xlsx")))d<-dirname(d);if(file.exists(file.path(d,"__ReadMe.xlsx")))d else NA_character_})
 
-clean<-read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,stringsAsFactors=FALSE)
-stopifnot(nrow(clean)==84L, all(c("Order","Taxon","ACT","CONV_deg","Source_codes") %in% names(clean)), !anyNA(clean$Taxon))
+raw<-read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,
+              stringsAsFactors=FALSE,colClasses="character",na.strings="")
+stopifnot(nrow(raw)==96L,ncol(raw)==9L)
+section<-is.na(raw$ACT)
+order<-rep(NA_character_,nrow(raw));order[section]<-raw$Taxon[section]
+for(j in seq_len(nrow(raw))[-1]) if(is.na(order[j])) order[j]<-order[j-1]
+raw<-raw[!section,,drop=FALSE];order<-order[!section]
+raw$ACT[raw$ACT=="NA"]<-NA_character_
+num<-function(x) suppressWarnings(as.numeric(x))
+clean<-data.frame(Order=order,Taxon=raw$Taxon,ACT=raw$ACT,
+  CONV_deg=num(sub("²$","",raw$CONV)),
+  CONV_digitized_for_this_study=ifelse(grepl("²$",raw$CONV),"True","False"),
+  BodyMass_g=num(raw[[4]]),BrainVolume_mm3=num(raw[[5]]),
+  OpticTractVolume_mm3=num(raw[[6]]),LGNVolume_mm3=ifelse(is.na(raw[[7]]),"",raw[[7]]),
+  V1Volume_mm3=num(raw[[8]]),Source_codes=raw[[9]],
+  stringsAsFactors=FALSE,check.names=FALSE)
+stopifnot(nrow(clean)==84L,!anyNA(clean$Taxon))
 
 write.csv(clean,file.path(folder,paste0(item_name,".csv")),row.names=FALSE,na="NA")
 if(!is.na(base)){fc<-readxl::read_excel(file.path(base,"__ReadMe.xlsx"),sheet="Sheet1");enc<-fc$`Item encoded`[match(item_name,fc$`Item name`)];if(!is.na(enc)&&nzchar(enc))write.table(clean,file.path(base,"__Public","comparative-data",paste0(enc,".tsv")),sep="\t",row.names=FALSE,na="NA")else warning("Registry row pending for ",item_name,"; public TSV skipped.")}

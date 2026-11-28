@@ -77,3 +77,7 @@ Generated from `reference_tables/Grande__1950_errata.csv` by `_tools/dataset_bui
 
 1 recorded, 1 open (proposed), 0 confirmed, 0 withdrawn.
 <!-- errata:end -->
+
+## Snapshot layout audit (2026-11-27)
+
+Compared the six-column snapshot with rendered PDF page 6: caption, explanatory line, header, and 15 animal rows occupy source positions. No layout edit was needed. Human visual signoff remains separate.

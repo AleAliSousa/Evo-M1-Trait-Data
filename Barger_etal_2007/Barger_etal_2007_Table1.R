@@ -24,20 +24,27 @@ base      <- local({                                     # repo root; NA if run 
 setwd(folder)
 options(scipen = 999)
 
-raw <- read.csv("Barger_etal_2007_Table1_snapshot.csv", check.names = FALSE,
-                stringsAsFactors = FALSE, na.strings = c("", "NA"))
+grid <- read.csv("Barger_etal_2007_Table1_snapshot.csv", header = FALSE,
+                 fill = TRUE, check.names = FALSE, colClasses = "character",
+                 na.strings = character(0))
+names(grid) <- c("Species_group", "Specimen ID", "Age", "Sex", "Hemi cm3",
+                 "Amygdaloid complex L", "Amygdaloid complex R",
+                 "Basolateral L", "Basolateral R", "Lateral L", "Lateral R",
+                 "Basal L", "Basal R", "Accessory basal L", "Accessory basal R")
+raw <- grid[nzchar(grid[["Specimen ID"]]) &
+            grid[["Specimen ID"]] != "Specimen ID", , drop = FALSE]
 
 binom <- c(Human="Homo sapiens", Chimpanzee="Pan troglodytes", Bonobo="Pan paniscus",
            Gorilla="Gorilla gorilla", Orangutan="Pongo pygmaeus", Gibbon="Hylobates lar")
 
-# Forward-fill species from the group-header rows; keep only specimen rows.
-grp <- NA_character_; keep <- logical(nrow(raw)); sp <- character(nrow(raw))
+# The printed species-group label shares the first specimen row.
+grp <- NA_character_; sp <- character(nrow(raw))
 for (i in seq_len(nrow(raw))) {
   g <- raw[["Species_group"]][i]
-  if (!is.na(g) && g %in% names(binom)) { grp <- unname(binom[g]); keep[i] <- FALSE }
-  else { keep[i] <- !is.na(raw[["Specimen ID"]][i]); sp[i] <- grp }
+  if (nzchar(g) && g %in% names(binom)) grp <- unname(binom[g])
+  sp[i] <- grp
 }
-d <- raw[keep, ]; species <- sp[keep]
+d <- raw; species <- sp
 
 # Footnote markers on Specimen ID:  d = axial sections (subnuclei not collected);
 #   e = basal & accessory basal not discriminable; f = left damaged, right doubled in analysis.

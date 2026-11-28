@@ -17,7 +17,32 @@ base      <- local({
 })
 setwd(folder)
 
-x <- readr::read_csv("HerculanoHouzel_etal_2016_Table2_snapshot.csv", show_col_types = FALSE)
+x_source <- read.csv("HerculanoHouzel_etal_2016_Table2_snapshot.csv",
+                     skip = 1, nrows = 14, check.names = FALSE,
+                     colClasses = "character", encoding = "UTF-8")
+stopifnot(nrow(x_source) == 14L)
+source_number <- function(v) {
+  v <- sub(" \\(.*$", "", v)
+  as.numeric(gsub(" × 10\\^", "e", v))
+}
+source_status <- function(v) {
+  ifelse(is.na(v) | !nzchar(v), NA_character_,
+         ifelse(grepl("pred|\\(3\\)", v), "predicted", "observed"))
+}
+x <- tibble::tibble(
+  species_as_printed = x_source$Species,
+  N_CX = source_number(x_source$N_CX),
+  N_CX_status = source_status(x_source$N_CX),
+  N_M1 = source_number(x_source$N_M1),
+  N_M1_status = source_status(x_source$N_M1),
+  N_SC = source_number(x_source$N_SC),
+  N_SC_status = source_status(x_source$N_SC),
+  N_M1_per_N_SC = as.numeric(x_source$`N_M1/N_SC`),
+  source_location = "Table 2, p. 451",
+  data_role = ifelse(is.na(x_source$N_SC) | !nzchar(x_source$N_SC),
+                     "not_available",
+                     ifelse(grepl("pred", x_source$N_SC), "derived", "secondary"))
+)
 readr::write_csv(x, "HerculanoHouzel_etal_2016_Table2.csv", na = "")
 message(item_name, ": ", nrow(x), " rows written")
 

@@ -8,7 +8,8 @@
 
 | file | what it is |
 | --- | --- |
-| `Caves_etal_2018_TableS1_snapshot.csv` | frozen, faithful copy of Table S1 as printed |
+| `mmc1.docx` | publisher supplement containing Tables S1–S3 |
+| `Caves_etal_2018_TableS1_snapshot.csv` | Table S1 transcribed in its source row/column layout |
 | `Caves_etal_2018_TableS1.csv` | cleaned, analysis-ready data ("use this") |
 | `Caves_etal_2018_TableS1.R` | script that turns the snapshot into the clean CSV |
 | `Caves_etal_2018_TableS1.README.md` | this file |
@@ -19,7 +20,9 @@
 
 ## Snapshot
 
-**Method.** Manual entry from the supplementary raw-data Word document supplied by the authors (`Caves (2018) raw data (entire).docx`). The Word file embeds Mendeley `ADDIN CSL_CITATION` blocks in every cell of the citation column; these were stripped so only the final formatted reference codes (e.g. `[1,2]`) remain. All other content preserved as printed.
+**Method and source check.** The snapshot was manually entered from the authors' supplementary Word table, previously recorded as `Caves (2018) raw data (entire).docx`. The supplied `mmc1.docx` contains the same Table S1 as its first table. Its 41 rows (header plus 40 species) each have four cells, with no merged cells. All 164 snapshot cells match the displayed Word text in the same row and column after trimming ten trailing Word-cell spaces; 154 cells match exactly without trimming. Citation field codes are not part of the displayed cell text. The caption and post-table Method definition remain in the DOCX rather than in the CSV table grid. The source DOCX SHA-256 is `4345b93a8a7de225e481e15c1341329e815c38c8cf3d6125be01ba6ae55d5e16`. This assistant comparison does not mark independent human visual signoff.
+
+**Rebuild check (2026-11-27).** `Rscript Caves_etal_2018/Caves_etal_2018_TableS1.R` completed; the analysis CSV SHA-256 remained `39af8b6e816cd004b9bc61a0b95f20c8d3129b28e5eb6599b085b190dbaadcce`. No snapshot or R-reader edit was needed.
 
 **Columns kept, exactly as in the paper.**
 - `Common Name`
@@ -44,7 +47,7 @@
 ## Notes for the database
 
 - 40 species. 33 have camera-type eyes, 6 have compound eyes, 1 (great scallop) has mirror-type eyes.
-- The four "Method" values used are: `Behavior`, `Peak RGC`, `VEP`, `Interommatidial angle`, `Acceptance angle`. `Peak RGC` = peak retinal ganglion cell density. `VEP` = visually evoked potential.
+- The five "Method" values used are: `Behavior`, `Peak RGC`, `VEP`, `Interommatidial angle`, `Acceptance angle`. `Peak RGC` = peak retinal ganglion cell density. `VEP` = visually evoked potential.
 - Citation ranges printed with an en-dash (e.g. `[30–32]`) are preserved verbatim in the snapshot; if downstream code needs to enumerate the individual references, expand these in the analysis script.
 - Some species names may need updating for NCBI taxonomic consistency (e.g. `Parus carolinensis` is now `Poecile carolinensis`). Species-name standardisation is deferred to a repo-level step, not this table.
 

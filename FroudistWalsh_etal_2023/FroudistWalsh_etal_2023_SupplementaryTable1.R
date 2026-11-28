@@ -51,10 +51,10 @@ library(readxl)
 # so switch the character locale to UTF-8 (no-op in RStudio / any UTF-8 session)
 if (!isTRUE(l10n_info()[["UTF-8"]])) invisible(Sys.setlocale("LC_CTYPE", "en_US.UTF-8"))
 
-## 2. READ FROZEN SNAPSHOT (printed layout: page, printed_order, area, 14 receptor columns as printed) -------------
+## 2. READ FROZEN SNAPSHOT (printed layout: area, 14 receptor columns as printed) -------------
 snap <- utils::read.csv(snapshot_csv, header = TRUE, colClasses = "character", check.names = FALSE,
                         encoding = "UTF-8", na.strings = character(0))
-stopifnot(nrow(snap) == 109, ncol(snap) == 3 + 14)
+stopifnot(nrow(snap) == 109, ncol(snap) == 1 + 14)
 
 ## 3. REFORMAT snapshot -> analysis data ------------------------------------
 # Printed column labels (subscripts flattened by the snapshot script; Greek alpha kept) -> harmonised receptor
@@ -64,13 +64,13 @@ printed_labels <- c("AMPA", "kainate", "NMDA", "GABAA", "GABAB", "GABAA/BZ", "M1
                     "\u03b11", "\u03b12", "5HT1A", "5HT2A", "D1")
 receptor_names <- c("AMPA", "kainate", "NMDA", "GABAA", "GABAB", "GABAA/BZ", "M1", "M2", "M3",
                     "alpha1", "alpha2", "5-HT1A", "5-HT2", "D1")
-stopifnot(identical(names(snap)[1:3], c("page", "printed_order", "area")),
-          identical(enc2utf8(names(snap)[-(1:3)]), enc2utf8(printed_labels)))
+stopifnot(identical(names(snap)[1], "area"),
+          identical(enc2utf8(names(snap)[-1]), enc2utf8(printed_labels)))
 
 num <- function(x) suppressWarnings(as.numeric(ifelse(x %in% c("N/A", ""), NA, x)))
 
 long <- do.call(rbind, lapply(seq_along(printed_labels), function(k) {
-  v <- snap[[3 + k]]
+  v <- snap[[1 + k]]
   data.frame(
     Species                   = "Macaca fascicularis",
     Species_FroudistWalsh2023 = "Macaca fascicularis",   # not printed in the table; from Methods (p. 15)
@@ -79,8 +79,8 @@ long <- do.call(rbind, lapply(seq_along(printed_labels), function(k) {
     receptor_as_printed       = printed_labels[k],
     value_fmol_per_neuron     = num(v),
     value_as_printed          = v,
-    printed_order             = as.integer(snap$printed_order),
-    page                      = as.integer(snap$page),
+    printed_order             = seq_len(nrow(snap)),
+    page                      = rep(13:16, c(30, 33, 33, 13)),
     stringsAsFactors = FALSE, check.names = FALSE)
 }))
 long <- long[order(long$printed_order, match(long$receptor_as_printed, printed_labels)), ]

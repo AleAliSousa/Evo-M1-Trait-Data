@@ -95,9 +95,9 @@
     4,
     5,
     6,
-    7,
     8,
-    9
+    9,
+    10
   ],
   "expected_rows": 9,
   "columns": [
@@ -166,5 +166,9 @@
     }
   ],
   "source_sha256": "82f00282c5b96c22fd70ec9908df5f01b3f8e6ca074d042415cf18d03c359a44",
-  "snapshot_sha256": "800805d22fc042ae1d7c1292bde1ac7f34d79166ece1a4a118a310e1075ea1cc"
+  "snapshot_sha256": "4f483817558df7d582fb1886363ae4b4913291f447a8eb09095ec4d5fe06d220",
+  "csv_skip": 3,
+  "source_row_offset": 4,
+  "percent_sign": true,
+  "decimal_comma": true
 }

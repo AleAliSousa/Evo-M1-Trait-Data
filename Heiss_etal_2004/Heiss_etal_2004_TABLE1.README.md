@@ -18,3 +18,7 @@ restores the indented region hierarchy into a `category` column, and coerces num
 See `__energetics_comparison/` for a cross-paper comparison with Kaufman 2004 (multi-species regional
 CMRgl/CMRO2/CBF) and Karbowski 2007 (rodent glucose/oxygen). A common merge schema is proposed there
 for your confirmation before any energetics merge is built.
+
+## Snapshot layout audit (2026-11-27)
+
+Compared with printed Table 1 in the local PDF. The eighth workbook column was wholly empty and has been removed; the seven printed columns and their row positions remain. `Rscript --vanilla Heiss_etal_2004/Heiss_etal_2004_TABLE1.R` rebuilt the 26-row analysis CSV with unchanged SHA-256 `d4d5ee5ba3963bfceca67fedbf20d6a925f5f1ea747b957d72dac382c119c877`. Human visual signoff remains separate.

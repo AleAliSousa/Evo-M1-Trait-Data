@@ -28,7 +28,21 @@ library(tidyverse)
 # TABLE 1
 ## 1. Read direct from csv
 folder_path <- paste0(folder, "/")
-tabledirectcsv <- read_csv(paste0(folder_path,"Falcone_etal_2019_TABLE2_snapshot.csv"))
+source_grid <- read.csv(paste0(folder_path,"Falcone_etal_2019_TABLE2_snapshot.csv"),
+                        skip = 1, check.names = FALSE, colClasses = "character")
+source_rows <- source_grid[nzchar(source_grid$Species) &
+                             source_grid$Species != "Species", , drop = FALSE]
+stopifnot(nrow(source_rows) == 47L)
+source_number <- function(x) as.numeric(gsub(",", "", x))
+tabledirectcsv <- tibble::tibble(
+  `Scientific name` = ifelse(source_rows$Species == "Cercocebus kandti",
+                             "Cercopithecus kandti", source_rows$Species),
+  `ILA linear density` = source_number(source_rows$A),
+  `ILA primary processes` = source_number(source_rows$B),
+  `ILA total processes` = source_number(source_rows$C),
+  `ILA total length` = source_number(source_rows$D),
+  `ILA complexity` = source_number(source_rows$E)
+)
 
 
 # Set the scipen option to a high value to turn off scientific notation

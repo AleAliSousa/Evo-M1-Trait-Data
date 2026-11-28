@@ -21,8 +21,8 @@
 #     (Cheirogaleidae), Lemuriformes (non-Cheirogaleidae), Lorisiformes,
 #     Non-primates (Dermoptera), Non-primates (Scandentia)) sit on their own
 #     rows and are carried down into `Taxonomic_group`. The superscript "a"
-#     footnote (brain-component values available from Stephan et al. 1981) is
-#     transcribed into the `Stephan1981_note` column.
+#     stays attached to the printed species name; the analysis note is derived
+#     from that marker below.
 #
 # Outputs
 #   Boyer_Harrington_2018_Table1.csv               one row per species (49 rows)
@@ -107,6 +107,8 @@ raw <- read_excel(source_file, sheet = source_sheet, col_types = "text", na = c(
 
 sec <- raw %>%
   mutate(
+    Stephan1981_note = if_else(str_detect(Species, "ᵃ$"), "a", NA_character_),
+    Species          = str_remove(Species, "ᵃ$"),
     Species          = str_squish(Species),
     Taxonomic_group  = if_else(is.na(nTFA), Species, NA_character_)
   ) %>%

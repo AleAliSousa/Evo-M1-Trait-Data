@@ -1,22 +1,22 @@
-Region,Statistic,Neurons (10⁶),CE neurons,Glia (10⁶),CE glia,Total cell (10⁶),CE total cell,Processed Volume (mm³),CE volume,Neuron density (10⁶/mm³),Neuron/glia ratio
+,,Neurons (10⁶),CE neurons,Glia (10⁶),CE glia,Total cell (10⁶),CE total cell,Processed Volume (mm³),CE volume,Neuron density (10⁶/mm³),Neuron/glia ratio
 Frontal,Average,233,"0,071",196,"0,078",429,"0,075",2679,"0,037","0,09","1,21"
-Frontal,St Dev,31,,40,,67,,545,,"0,01",
-Frontal,CV,"0,13",,"0,21",,"0,16",,"0,20",,,
+,St Dev,31,,40,,67,,545,,"0,01",
+,CV,"0,13",,"0,21",,"0,16",,"0,20",,,
 Dorsal prefrontal,Average,41,"0,089",36,"0,093",77,"0,091",452,"0,049","0,09","1,14"
-Dorsal prefrontal,St Dev,9,,6,,14,,97,,"0,02",
-Dorsal prefrontal,CV,"0,23",,"0,17",,"0,18",,"0,21",,"0,18",
+,St Dev,9,,6,,14,,97,,"0,02",
+,CV,"0,23",,"0,17",,"0,18",,"0,21",,"0,18",
 Ventral prefrontal,Average,85,"0,063",52,"0,079",138,"0,072",908,"0,032","0,10","1,68"
-Ventral prefrontal,St Dev,13,,13,,23,,266,,"0,02",
-Ventral prefrontal,CV,"0,15",,"0,24",,"0,17",,"0,29",,,
+,St Dev,13,,13,,23,,266,,"0,02",
+,CV,"0,15",,"0,24",,"0,17",,"0,29",,,
 Posterior frontal,Average,106,"0,058",108,"0,060",214,"0,059",1319,"0,027","0,08","1,01"
-Posterior frontal,St Dev,19,,26,,42,,293,,"0,02",
-Posterior frontal,CV,"0,18",,"0,24",,"0,20",,"0,22",,,
+,St Dev,19,,26,,42,,293,,"0,02",
+,CV,"0,18",,"0,24",,"0,20",,"0,22",,,
 Temporal and parietal,Average,782,"0,085",380,"0,122",1162,"0,105",4875,"0,061","0,16","2,15"
-Temporal and parietal,St Dev,131,,94,,170,,582,,"0,02",
-Temporal and parietal,CV,"0,17",,"0,25",,"0,15",,"0,12",,,
+,St Dev,131,,94,,170,,582,,"0,02",
+,CV,"0,17",,"0,25",,"0,15",,"0,12",,,
 Occipital,Average,334,"0,094",200,"0,120",534,"0,108",1061,"0,113","0,32","1,73"
-Occipital,St Dev,44,,57,,94,,84,,"0,04",
-Occipital,CV,"0,13",,"0,29",,"0,18",,"0,08",,,
+,St Dev,44,,57,,94,,84,,"0,04",
+,CV,"0,13",,"0,29",,"0,18",,"0,08",,,
 Total neocortex,Average,1349,"0,084",776,"0,109",2125,"0,097",8499,"0,077","0,16","1,77"
-Total neocortex,St Dev,140,,129,,202,,807,,,
-Total neocortex,CV,"0,10",,"0,17",,"0,10",,"0,10",,,
+,St Dev,140,,129,,202,,807,,,
+,CV,"0,10",,"0,17",,"0,10",,"0,10",,,

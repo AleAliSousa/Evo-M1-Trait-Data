@@ -16,8 +16,17 @@ folder <- dirname(base)
 item_name <- tools::file_path_sans_ext(basename(base))
 repo <- dirname(folder)
 num <- function(x) suppressWarnings(as.numeric(trimws(as.character(x))))
-raw <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),col_types=cols(.default=col_character()),na=character(),trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
-final.dataframe <- as.data.frame(raw,stringsAsFactors=FALSE)
+grid <- read_csv(file.path(folder,paste0(item_name,"_snapshot.csv")),skip=1L,
+                 col_types=cols(.default=col_character()),na=character(),
+                 trim_ws=FALSE,name_repair="minimal",show_col_types=FALSE)
+section <- grid[[1L]] %in% c("Wild", "Rehabilitants and captives") &
+           grid[[2L]] == "" & grid[[3L]] == "" & grid[[4L]] == ""
+context <- rep(NA_character_, nrow(grid))
+context[section] <- grid[[1L]][section]
+for (i in seq_along(context)) if (is.na(context[i]) && i > 1L) context[i] <- context[i - 1L]
+raw <- grid[!section, , drop=FALSE]
+final.dataframe <- data.frame(Context=context[!section],as.data.frame(raw,stringsAsFactors=FALSE),check.names=FALSE)
+names(final.dataframe)[5L] <- "Communication distance"
 final.dataframe$Source_row <- seq_len(nrow(raw))+1L
 scalar <- function(v) {ok <- grepl("^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$",trimws(v));ifelse(ok,suppressWarnings(as.numeric(v)),NA_real_)}
 

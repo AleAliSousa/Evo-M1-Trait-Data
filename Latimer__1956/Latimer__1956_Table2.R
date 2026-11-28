@@ -17,7 +17,14 @@ setwd(folder)
 ## without a binomial (unspecified taxon); rat/baboon/man values are the paper's own footnoted
 ## secondary citations (Donaldson 1924; Riese & Riese 1952; Donaldson 1909), not this lab's own
 ## dissections -- data_role reflects that per row.
-x <- readr::read_csv("Latimer__1956_Table2_snapshot.csv", show_col_types = FALSE)
+x <- readr::read_csv("Latimer__1956_Table2_snapshot.csv", skip = 3L, n_max = 10L,
+                     col_names = c("species_as_published", "brain_stem_g", "prosencephalon_g",
+                                   "ratio_prosencephalon_to_brainstem", "cerebellum_g",
+                                   "ratio_cerebellum_to_brainstem"), show_col_types = FALSE)
+secondary <- c("Rat" = "Donaldson (1924)", "Baboon" = "Riese & Riese (1952)",
+               "Man" = "Donaldson (1909)")
+x$data_role <- ifelse(x$species_as_published %in% names(secondary), "secondary", "primary")
+x$secondary_source <- unname(secondary[x$species_as_published])
 
 key <- readr::read_csv(file.path(base, "_keys", "Stephan", "species_key.csv"), show_col_types = FALSE)
 key_lat <- key[key$source_publication == "Latimer__1956", ]

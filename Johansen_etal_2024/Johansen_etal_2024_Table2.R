@@ -36,8 +36,13 @@ public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 library(readxl)
 
 ## 2. READ FROZEN SNAPSHOT ---------------------------------------------------
-snap <- read_excel(snapshot_xlsx, sheet = "Table2", .name_repair = "minimal")
+snap <- read_excel(snapshot_xlsx, sheet = "Table2", skip = 3,
+                   col_names = FALSE, .name_repair = "minimal")
 snap <- as.data.frame(snap, check.names = FALSE)
+names(snap) <- c("Lobe", "Region", "Total_Mean", "Total_SD", "Total_COV",
+                 "L_Mean", "L_SD", "L_COV", "R_Mean", "R_SD", "R_COV",
+                 "LR_Mean", "LR_SD", "LR_COV")
+snap <- snap[!is.na(snap$Region) & nzchar(snap$Region), , drop = FALSE]
 
 ## 3. REFORMAT snapshot -> analysis data ------------------------------------
 # Forward-fill the Lobe column (blank on continuation rows in the snapshot).

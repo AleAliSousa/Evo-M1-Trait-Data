@@ -20,6 +20,17 @@ for(line in lines) {
 }
 if(length(rows)!=24L)stop("Expected 24 Table 1 result rows")
 s <- as.data.frame(do.call(rbind,rows),stringsAsFactors=FALSE)
-names(s)<-c("Response","Geographic variable","F","SW","DF","Adj-R2","p","correlation")
-utils::write.csv(s,target,row.names=FALSE,na="",fileEncoding="UTF-8")
-cat("Frozen",nrow(s),"Table 1 rows\n")
+grid <- list(c("Table 1. Results from linear models to test correlation between intensity of Dehnel's Phenomenon and geographic variables",rep("",7)),
+             c("","","F","SW","DF","Adj-R2","p","correlation"))
+previous <- ""
+for(i in seq_len(nrow(s))) {
+  if(s[[1]][i]!=previous) {
+    previous <- s[[1]][i]
+    grid[[length(grid)+1L]] <- c(previous,rep("",7))
+  }
+  grid[[length(grid)+1L]] <- c("",as.character(s[i,2:8]))
+}
+grid[[length(grid)+1L]] <- c("Note: SW = P-value from Shapiro-Wilk test for normality of residuals distribution. DF = degrees of freedom.",rep("",7))
+utils::write.table(do.call(rbind,grid),target,sep=",",row.names=FALSE,col.names=FALSE,
+                   quote=TRUE,na="",fileEncoding="UTF-8")
+cat("Frozen",nrow(s),"Table 1 model-result rows in printed section layout\n")

@@ -3,7 +3,7 @@
 Reep RL, O'Shea TJ (1990). *Regional brain morphometry and lissencephaly in the Sirenia.* Brain Behav Evol 35(4):185-194. doi:10.1159/000115866
 
 ## Source -> snapshot
-`Reep_OShea_1990.pdf` (EndNote 2487; scanned, no text layer). Table 1 is on PDF p.5 (journal p.189). `..._Table1_snapshot.csv` is a **transcribed snapshot** (parameters as rows, specimens M-412, M-433, M-450, M-387 and printed Mean as columns; the "Specimen" spanning header is not a column). The CSV is transposed to one row per specimen (+ Mean row, 5 rows).
+`Reep_OShea_1990.pdf` (EndNote 2487; scanned, no text layer). Table 1 is on PDF p.5 (journal p.189). `..._Table1_snapshot.csv` is a **transcribed snapshot** with the printed caption, two-tier `Specimen` header, telencephalon and diencephalon section rows, indented measures, and note. The R reader supplies section keys and transposes to one row per specimen (+ Mean row, 5 rows). `Rscript --vanilla Reep_OShea_1990_Table1.R` reproduced the prior analysis CSV cell for cell.
 
 ## Fidelity checks (build script output)
 - cortex + basal ganglia/septum + amygdala = printed telencephalon total in all 5 columns (difference 0).

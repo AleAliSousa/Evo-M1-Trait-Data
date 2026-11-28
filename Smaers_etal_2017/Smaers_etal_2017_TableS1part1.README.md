@@ -18,7 +18,7 @@ columns, 19 primate species. (Part 2 = the surface areas; see
 
 | Path | Role |
 |---|---|
-| `Smaers_etal_2017_TableS1part1_snapshot.xlsx` | **Snapshot** (sheet `volumes`): Table S1's Smaers volume block reproduced journal-style (caption row; "Gray matter volume" / "White matter volume" tier-1 span; the 4 region sub-headers ×2; 19 species). Values taken from `Smaers_mmc1.xlsx`. |
+| `Smaers_etal_2017_TableS1part1_snapshot.xlsx` | **Snapshot** (sheet `Table S1`): the complete Table S1 source cell grid, including both volume and surface-area blocks, copied from `Smaers_mmc1.xlsx` rows 9–42 and columns A–AI. The reader selects the volume block. |
 | `Smaers_etal_2017_TableS1part1.R` | Reformat → `Smaers_etal_2017_TableS1part1.csv` (+ DOI-named TSV). Reads only the snapshot. |
 | `reference_tables/Smaers_etal_2017_TableS1part1_definitions.csv` | Data dictionary (10-col schema; `Measure = Volume`). |
 | `comparison/Smaers.csv` | Pre-existing formatted volume table, audited only. |
@@ -96,3 +96,13 @@ Snapshot matched to `Smaers.csv` by species (normalised to genus + species so th
 trinomials match the csv's binomials), on the 7 shared columns (`Smaers.csv` lacks primary-visual
 gray, which is therefore snapshot-only). **Verified: 19 matched, 0 value mismatches, no
 snapshot-only / csv-only species.**
+## Snapshot layout recheck (2026-11-27)
+
+The snapshot now reproduces the publisher workbook's complete Table S1 cell
+grid (`Smaers_mmc1.xlsx`, source rows 9–42 and columns A–AI), including both
+volume and surface-area blocks and their original blank columns. Its 222
+nonempty cells match the source workbook at the same relative coordinates.
+The R reader selects volume rows and source columns from this grid. Command:
+`Rscript Smaers_etal_2017/Smaers_etal_2017_TableS1part1.R` from the repository
+root. The rebuilt 19-row analysis CSV matches the prior version cell for cell.
+This layout check is separate from independent human source signoff.

@@ -53,6 +53,12 @@ resolve_species <- function(...) {
 
 snapshot <- read.csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
                      stringsAsFactors = FALSE, check.names = FALSE)
+stopifnot(identical(names(snapshot), c("Order", "Common Name", "Scientific Name", "n", "Sources (Quantity)")))
+names(snapshot) <- c("order_printed", "common_name_printed", "scientific_name_printed",
+                     "n_specimens", "source_printed")
+for (i in seq_len(nrow(snapshot))[-1]) {
+  if (!nzchar(snapshot$order_printed[i])) snapshot$order_printed[i] <- snapshot$order_printed[i - 1]
+}
 
 final.dataframe <- data.frame(
   order_printed = snapshot$order_printed,

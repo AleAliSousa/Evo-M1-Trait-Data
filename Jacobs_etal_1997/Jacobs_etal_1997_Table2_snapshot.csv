@@ -1,5 +1,10 @@
-AgeGroup,Area,Layer_I_II_junction_um_mean,Layer_I_II_junction_um_SD,Layer_II_III_junction_um_mean,Layer_II_III_junction_um_SD,Sampled_soma_depth_um_mean,Sampled_soma_depth_um_SD,Sampled_soma_size_um2_mean,Sampled_soma_size_um2_SD,Layer_III_IV_junction_um_mean,Layer_III_IV_junction_um_SD,Gray_white_matter_junction_um_mean,Gray_white_matter_junction_um_SD
-Younger(<=50y),Area10,311,44,593,74,824,253,297,9,1288,57,3105,343
-Younger(<=50y),Area18,258,49,511,71,826,245,207,7,1321,204,2783,370
-Older(>50y),Area10,305,41,555,68,831,196,263,8,1429,163,3246,517
-Older(>50y),Area18,257,38,502,100,828,170,199,6,1289,194,2807,528
+TABLE 2. Laminar and Sampled Soma Depths (µm) and Soma Size (µm²)¹,,,,
+,Younger group (≤50 years),,Older group (>50 years),
+,Area 10,Area 18,Area 10,Area 18
+Layer I/II junction,311 ± 44,258 ± 49,305 ± 41,257 ± 38
+Layer II/III junction,593 ± 74,511 ± 71,555 ± 68,502 ± 100
+Sampled soma depth,824 ± 253,826 ± 245,831 ± 196,828 ± 170
+  (sampled soma size),(297 ± 9),(207 ± 7),(263 ± 8),(199 ± 6)
+Layer III/IV junction,"1,288 ± 57","1,321 ± 204","1,429 ± 163","1,289 ± 194"
+Gray/white matter junction,"3,105 ± 343","2,783 ± 370","3,246 ± 517","2,807 ± 528"
+¹ Values represent mean ± S.D.,,,,

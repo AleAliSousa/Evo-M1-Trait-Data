@@ -43,3 +43,14 @@ The *Spider, Black* (*Ateles dariensis* (Goldman)), *Howler, Black* (*Aloutta pa
 
 ## Species assignment for rows with no printed scientific name (owner ruling 2026-10-21)
 `species` is the printed name only (blank on 120 rows). New columns `species_assigned`, `species_assigned_basis`, `species_assigned_confidence`, `species_assigned_domestic` fill those blanks from `reference_tables/Crile_Quiring_1940_Table1_species_assignments.csv` (common name -> species): human groups -> *Homo sapiens*; dog breeds/types -> *Canis lupus familiaris*; cattle breeds/sex classes -> *Bos taurus*; "Calf" -> *Bos taurus* (medium confidence: Lexington, Ky. cattle-farm records); lambs -> *Ovis aries*; pigs -> *Sus scrofa domesticus*; horses, ponies and breeds -> *Equus caballus*; burros -> *Equus asinus*; "Dear White-tailed" (printed spelling) -> *Odocoileus virginianus*; "Leopard, Infant" -> *Panthera pardus*. **118 of 120 assigned; the 2 Mule rows are left unassigned (hybrid).** Domestic taxa carry `species_assigned_domestic = TRUE` so the domestication-pooling decision stays downstream. Rows that already print a scientific name are not touched. The paper states that its scientific names were checked by Arthur B. Fuller (Cleveland Museum of Natural History) but gives no source for the unnamed rows.
+
+## Snapshot layout audit (2026-11-27)
+
+The earlier snapshot added Section and Journal page as data columns. Restored
+the 16 printed columns and inserted each mammal section as a source row. The
+page numbers now come from `reference_tables/Crile_Quiring_1940_Table1_page_lookup.csv`
+inside the R reader. The two printed caption/footnote rows remain. Ran
+`Rscript Crile_Quiring_1940/Crile_Quiring_1940_Table1.R`; the analysis CSV
+retained SHA-256 `7e7d17674080faeb3317b61de44ce64e71da58b867b2aa6af36bfc24ad85ceb0`.
+The transcribed numbers were not altered; individual numeric source checks
+remain separate.

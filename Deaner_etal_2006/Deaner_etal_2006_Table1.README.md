@@ -30,3 +30,11 @@ procedure-column center — no whitespace guessing), then verified against the r
 Built offline 2026-08-31 (Python mirror) — re-run the .R in RStudio.
 
 Pipeline: Source ✅ → Snapshot ✅ → Data readable ✅ → Registry stage ⬜ → R rerun ⬜ → Merge ⬜
+
+## Snapshot layout audit (2026-11-27)
+
+Compared the local PDF page 7 Table 1. Restored its PARADIGM and PROCEDURE
+header rows and the GENUS row above the 24-by-30 score matrix. The R reader
+assigns analysis column names after skipping those source headings. Ran
+`Rscript Deaner_etal_2006/Deaner_etal_2006_Table1.R`; the 113-row CSV
+retained SHA-256 `c8356f697f99af69c5b999e9d73f90ce88831aea323f39c5fe3909191e92bdb1`.

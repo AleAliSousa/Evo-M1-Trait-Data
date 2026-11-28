@@ -4,7 +4,15 @@
 options(scipen=999)
 .sp<-local({a<-grep("^--file=",commandArgs(FALSE),value=TRUE);if(length(a))return(normalizePath(sub("^--file=","",a[1])));if(requireNamespace("rstudioapi",quietly=TRUE)&&rstudioapi::isAvailable()){p<-rstudioapi::getSourceEditorContext()$path;if(nzchar(p))return(normalizePath(p))};stop("Run with Rscript or Source in RStudio.",call.=FALSE)})
 folder<-dirname(.sp);item_name<-tools::file_path_sans_ext(basename(.sp));base<-local({d<-folder;while(dirname(d)!=d&&!file.exists(file.path(d,"__ReadMe.xlsx")))d<-dirname(d);if(file.exists(file.path(d,"__ReadMe.xlsx")))d else NA_character_})
-raw<-read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,stringsAsFactors=FALSE,na.strings="")
+source_grid<-read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,stringsAsFactors=FALSE,na.strings="",colClasses="character")
+analysis_map<-read.csv(file.path(folder,"reference_tables",paste0(item_name,"_analysis_map.csv")),stringsAsFactors=FALSE,na.strings="")
+stopifnot(nrow(analysis_map)==61L,all(analysis_map$source_row>=2L),all(analysis_map$source_row<=nrow(source_grid)+1L))
+raw<-source_grid[analysis_map$source_row-1L,]
+names(raw)<-c("printed_subdivision","printed_cortical_area","area_mm2","pct_visual_cortex","pct_neocortex","pct_cerebral_cortex")
+raw$section<-analysis_map$section
+raw$subdivision<-analysis_map$subdivision
+raw$cortical_area<-analysis_map$cortical_area
+for(nm in c("area_mm2","pct_visual_cortex","pct_neocortex","pct_cerebral_cortex")) raw[[nm]]<-suppressWarnings(as.numeric(raw[[nm]]))
 clean<-data.frame(Species="Macaca sp.",common_name="macaque monkey",case_basis="one composite hemisphere represented by the Figure 2 map",section=raw$section,subdivision=raw$subdivision,structure=ifelse(is.na(raw$cortical_area)|raw$cortical_area=="",raw$subdivision,raw$cortical_area),area_mm2=raw$area_mm2,pct_visual_cortex=raw$pct_visual_cortex,pct_neocortex=raw$pct_neocortex,pct_cerebral_cortex=raw$pct_cerebral_cortex,data_role="secondary synthesis",where_in_paper="Table 2",source=item_name,stringsAsFactors=FALSE)
 stopifnot(nrow(clean)==61L,!anyNA(clean$area_mm2),!anyNA(clean$structure))
 getv<-function(s)clean$area_mm2[clean$subdivision %in% s]

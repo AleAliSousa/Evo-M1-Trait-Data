@@ -33,10 +33,13 @@ raw <- as.data.frame(read_excel(file.path(folder, paste0(item_name, "_snapshot.x
                                 sheet = "Table1"))
 stopifnot(nrow(raw) == 35)
 blank <- function(x) ifelse(!is.na(x) & nzchar(trimws(x)), trimws(x), NA_character_)
+row_type <- ifelse(is.na(blank(raw$`Species common name`)), "order", "species")
+order <- ifelse(row_type == "order", raw$`Order and species latin name`, NA_character_)
+for (i in seq_along(order)) if (is.na(order[i]) && i > 1L) order[i] <- order[i-1L]
 clean <- data.frame(
-  row_type = raw$`Row type`, order = raw$Order,
-  Species = blank(raw$`Species latin (as printed)`),
-  common_name = blank(raw$`Species common`),
+  row_type = row_type, order = order,
+  Species = ifelse(row_type == "species", blank(raw$`Order and species latin name`), NA_character_),
+  common_name = blank(raw$`Species common name`),
   n_ethobehavior_types = as.numeric(raw$`No. of Behavior types`),
   behavior_citation = blank(raw$`Behavior citation`),
   encephalization_index = as.numeric(raw$`Index of enceph.`),

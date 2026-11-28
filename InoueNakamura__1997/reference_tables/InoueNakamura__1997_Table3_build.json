@@ -78,15 +78,12 @@
   "item_encoded": "10.1111%2F1468-5884.00059_Table3",
   "species_col": 1,
   "keep_rows": [
-    1,
     2,
-    3,
     4,
     5,
     6,
     7,
     8,
-    9,
     10,
     11,
     12,
@@ -99,10 +96,13 @@
     19,
     20,
     21,
-    22,
     23,
     24,
-    25
+    26,
+    27,
+    28,
+    29,
+    30
   ],
   "expected_rows": 25,
   "columns": [
@@ -162,5 +162,6 @@
     }
   ],
   "source_sha256": "a4b5b9516b976cbeb34e9237c1fb0c4594afbe2668fcb1494ed0dba091f66db8",
-  "snapshot_sha256": "34ce6e56d0ac1307627f0ec5db8337ca7bac6b4fa0526049d9acae7241771502"
+  "snapshot_sha256": "2f1837a3b72aa0cba0d3f49afcbac74a4fa78b4f0232785e987be91c2a775c23",
+  "source_species_parentheses": true
 }

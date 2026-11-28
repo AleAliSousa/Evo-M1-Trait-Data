@@ -19,6 +19,21 @@ for(line in lines) {
 }
 if(length(rows)!=114L)stop("Expected 114 Table 2 result rows; found ",length(rows))
 s <- as.data.frame(do.call(rbind,rows),stringsAsFactors=FALSE)
-names(s)<-c("Response","Climate variable","F","DF","Adj-R2","P","correlation")
-utils::write.csv(s,target,row.names=FALSE,na="",fileEncoding="UTF-8")
-cat("Frozen",nrow(s),"Table 2 rows\n")
+grid <- list(c("Table 2. Results from linear models testing correlation between intensity of Dehnel's Phenomenon and climate variables",rep("",5)),
+             c("","F","DF","Adj-R2","P","correlation"))
+previous <- ""
+for(i in seq_len(nrow(s))) {
+  if(s[[1]][i]!=previous) {
+    previous <- s[[1]][i]
+    grid[[length(grid)+1L]] <- c(previous,rep("",5))
+  }
+  grid[[length(grid)+1L]] <- as.character(s[i,2:7])
+  if(i %in% c(42L,85L)) {
+    grid[[length(grid)+1L]] <- c("(Continues)",rep("",5))
+    grid[[length(grid)+1L]] <- c("Table 2 (Continued)",rep("",5))
+    grid[[length(grid)+1L]] <- c("","F","DF","Adj-R2","P","correlation")
+  }
+}
+utils::write.table(do.call(rbind,grid),target,sep=",",row.names=FALSE,col.names=FALSE,
+                   quote=TRUE,na="",fileEncoding="UTF-8")
+cat("Frozen",nrow(s),"Table 2 model-result rows in printed section and page layout\n")

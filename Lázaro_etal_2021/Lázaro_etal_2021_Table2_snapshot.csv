@@ -1,115 +1,128 @@
-"Response","Climate variable","F","DF","Adj-R2","P","correlation"
-"Brain case height decrease","Annual mean temperature","0.2","17","0.05",">0.5","No"
-"Brain case height decrease","Mean diurnal temperature range","0.3","17","0.04",">0.5","No"
-"Brain case height decrease","Isothermality","5.4","17","0.20","<0.05","Negative"
-"Brain case height decrease","Temperature seasonality","9.0","17","0.31","<0.01","Positive"
-"Brain case height decrease","Max. Temperature of warmest month","0.9","17","0.01",">0.1","No"
-"Brain case height decrease","Min. Temperature of coldest month","3.1","17","0.11",">0.05","No"
-"Brain case height decrease","Temperature annual range","9.8","17","0.33","<0.01","Positive"
-"Brain case height decrease","Mean temperature of wettest quarter","1.5","17","0.03",">0.1","No"
-"Brain case height decrease","Mean temperature of driest quarter","24.8","17","0.57","<0.001","Negative"
-"Brain case height decrease","Mean temperature of warmest quarter","1.1","17","0.00",">0.1","No"
-"Brain case height decrease","Mean temperature of coldest quarter","2.6","17","0.08",">0.1","No"
-"Brain case height decrease","Annual precipitation","0.0","17","0.03",">0.1","No"
-"Brain case height decrease","Precipitation of wettest month","0.0","17","0.06",">0.5","No"
-"Brain case height decrease","Precipitation of driest month","1.5","17","0.03",">0.1","No"
-"Brain case height decrease","Precipitation seasonality","7.6","17","0.27","<0.05","Positive"
-"Brain case height decrease","Precipitation of wettest quarter","2.3","17","0.06",">0.5","No"
-"Brain case height decrease","Precipitation of driest quarter","2.1","17","0.06",">0.1","No"
-"Brain case height decrease","Precipitation of warmest quarter","0.1","17","0.05",">0.5","No"
-"Brain case height decrease","Precipitation of coldest quarter","2.9","17","0.10",">0.1","No"
-"Brain case height regrowth","Annual mean temperature","2.9","14","0.06",">0.5","No"
-"Brain case height regrowth","Mean diurnal temperature range","0.2","14","0.06",">0.5","No"
-"Brain case height regrowth","Isothermality","0.2","14","0.05",">0.5","No"
-"Brain case height regrowth","Temperature seasonality","1.1","14","0.01",">0.1","No"
-"Brain case height regrowth","Max. Temperature of warmest month","1.2","14","0.01",">0.1","No"
-"Brain case height regrowth","Min. Temperature of coldest month","0.0","14","0.07",">0.5","No"
-"Brain case height regrowth","Temperature annual range","1.4","14","0.03",">0.1","No"
-"Brain case height regrowth","Mean temperature of wettest quarter","1.2","14","0.01",">0.1","No"
-"Brain case height regrowth","Mean temperature of driest quarter","1.8","14","0.05",">0.1","No"
-"Brain case height regrowth","Mean temperature of warmest quarter","1.0","14","0.00",">0.1","No"
-"Brain case height regrowth","Mean temperature of coldest quarter","0.0","14","0.07",">0.5","No"
-"Brain case height regrowth","Annual precipitation","1.6","14","0.04",">0.1","No"
-"Brain case height regrowth","Precipitation of wettest month","3.4","14","0.14",">0.05","No"
-"Brain case height regrowth","Precipitation of driest month","1.4","14","0.03",">0.1","No"
-"Brain case height regrowth","Precipitation seasonality","0.1","14","0.06",">0.5","No"
-"Brain case height regrowth","Precipitation of wettest quarter","3.5","14","0.14",">0.05","No"
-"Brain case height regrowth","Precipitation of driest quarter","0.9","14","0.01",">0.1","No"
-"Brain case height regrowth","Precipitation of warmest quarter","5.0","14","0.21","<0.05","Positive"
-"Brain case height regrowth","Precipitation of coldest quarter","0.0","14","0.07",">0.5","No"
-"Brain mass decrease","Annual mean temperature","0.1","8","0.11",">0.5","No"
-"Brain mass decrease","Mean diurnal temperature range","0.2","8","0.09",">0.5","No"
-"Brain mass decrease","Isothermality","0.0","8","0.12",">0.5","No"
-"Brain mass decrease","Temperature seasonality","0.1","8","0.12",">0.5","No"
-"Brain mass decrease","Max. Temperature of warmest month","0.5","8","0.06",">0.5","No"
-"Brain mass decrease","Min. Temperature of coldest month","0.1","8","0.12",">0.5","No"
-"Brain mass decrease","Temperature annual range","0.1","8","0.11",">0.5","No"
-"Brain mass decrease","Mean temperature of wettest quarter","0.1","8","0.11",">0.5","No"
-"Brain mass decrease","Mean temperature of driest quarter","0.1","8","0.12",">0.5","No"
-"Brain mass decrease","Mean temperature of warmest quarter","0.1","8","0.11",">0.5","No"
-"Brain mass decrease","Mean temperature of coldest quarter","0.1","8","0.12",">0.5","No"
-"Brain mass decrease","Annual precipitation","0.1","8","0.12",">0.5","No"
-"Brain mass decrease","Precipitation of wettest month","0.6","8","0.05",">0.1","No"
-"Brain mass decrease","Precipitation of driest month","0.1","8","0.11",">0.5","No"
-"Brain mass decrease","Precipitation seasonality","0.0","8","0.12",">0.5","No"
-"Brain mass decrease","Precipitation of wettest quarter","0.2","8","0.10",">0.5","No"
-"Brain mass decrease","Precipitation of driest quarter","0.0","8","0.12",">0.5","No"
-"Brain mass decrease","Precipitation of warmest quarter","0.2","8","0.10",">0.5","No"
-"Brain mass decrease","Precipitation of coldest quarter","0.1","8","0.11",">0.5","No"
-"Brain mass regrowth","Annual mean temperature","1.1","7","0.02",">0.1","No"
-"Brain mass regrowth","Mean diurnal temperature range","0.1","7","0.13",">0.5","No"
-"Brain mass regrowth","Isothermality","1.7","7","0.08",">0.1","No"
-"Brain mass regrowth","Temperature seasonality","0.9","7","0.01",">0.1","No"
-"Brain mass regrowth","Max. Temperature of warmest month","1.8","7","0.09",">0.1","No"
-"Brain mass regrowth","Min. Temperature of coldest month","1.0","7","0.00",">0.1","No"
-"Brain mass regrowth","Temperature annual range","0.8","7","0.03",">0.1","No"
-"Brain mass regrowth","Mean temperature of wettest quarter","5.2","7","0.34",">0.05","No"
-"Brain mass regrowth","Mean temperature of driest quarter","1.2","7","0.03",">0.1","No"
-"Brain mass regrowth","Mean temperature of warmest quarter","5.2","7","0.34",">0.05","No"
-"Brain mass regrowth","Mean temperature of coldest quarter","1.0","7","0.00",">0.1","No"
-"Brain mass regrowth","Annual precipitation","3.0","7","0.20",">0.1","No"
-"Brain mass regrowth","Precipitation of wettest month","4.4","7","0.30",">0.05","No"
-"Brain mass regrowth","Precipitation of driest month","2.1","7","0.12",">0.1","No"
-"Brain mass regrowth","Precipitation seasonality","0.3","7","0.10",">0.5","No"
-"Brain mass regrowth","Precipitation of wettest quarter","4.1","7","0.28",">0.05","No"
-"Brain mass regrowth","Precipitation of driest quarter","2.3","7","0.14",">0.1","No"
-"Brain mass regrowth","Precipitation of warmest quarter","4.1","7","0.28",">0.05","No"
-"Brain mass regrowth","Precipitation of coldest quarter","2.0","7","0.11",">0.1","No"
-"Body mass decrease","Annual mean temperature","6.6","24","0.18","<0.05","Negative"
-"Body mass decrease","Mean diurnal temperature range","3.6","24","0.10",">0.05","No"
-"Body mass decrease","Isothermality","8.4","24","0.23","<0.01","Negative"
-"Body mass decrease","Temperature seasonality","13.5","24","0.33","<0.01","Positive"
-"Body mass decrease","Max. Temperature of warmest month","0.8","24","0.01",">0.1","No"
-"Body mass decrease","Min. Temperature of coldest month","10.5","24","0.28","<0.01","Negative"
-"Body mass decrease","Temperature annual range","13.7","24","0.34","<0.01","Positive"
-"Body mass decrease","Mean temperature of wettest quarter","6.1","24","0.17","<0.05","Positive"
-"Body mass decrease","Mean temperature of driest quarter","16.3","24","0.38",">0.001","Negative"
-"Body mass decrease","Mean temperature of warmest quarter","0.0","24","0.04",">0.5","No"
-"Body mass decrease","Mean temperature of coldest quarter","10.5","24","0.28","<0.01","Negative"
-"Body mass decrease","Annual precipitation","4.0","24","0.11",">0.05","No"
-"Body mass decrease","Precipitation of wettest month","0.1","24","0.04",">0.5","No"
-"Body mass decrease","Precipitation of driest month","6.4","24","0.18","<0.05","Negative"
-"Body mass decrease","Precipitation seasonality","9.0","24","0.24","<0.01","Positive"
-"Body mass decrease","Precipitation of wettest quarter","0.4","24","0.03",">0.5","No"
-"Body mass decrease","Precipitation of driest quarter","7.9","24","0.22","<0.01","Negative"
-"Body mass decrease","Precipitation of warmest quarter","0.8","24","0.01",">0.1","No"
-"Body mass decrease","Precipitation of coldest quarter","10.4","24","0.27","<0.01","Negative"
-"Body mass regrowth","Annual mean temperature","1.8","18","0.04",">0.1","No"
-"Body mass regrowth","Mean diurnal temperature range","0.7","18","0.02",">0.1","No"
-"Body mass regrowth","Isothermality","3.1","18","0.10",">0.05","No"
-"Body mass regrowth","Temperature seasonality","2.9","18","0.09",">0.1","No"
-"Body mass regrowth","Max. Temperature of warmest month","0.2","18","0.04",">0.5","No"
-"Body mass regrowth","Min. Temperature of coldest month","2.2","18","0.06",">0.1","No"
-"Body mass regrowth","Temperature annual range","2.4","18","0.07",">0.1","No"
-"Body mass regrowth","Mean temperature of wettest quarter","2.1","18","0.05",">0.1","No"
-"Body mass regrowth","Mean temperature of driest quarter","5.3","18","0.18","<0.05","Negative"
-"Body mass regrowth","Mean temperature of warmest quarter","0.0","18","0.06",">0.5","No"
-"Body mass regrowth","Mean temperature of coldest quarter","2.4","18","0.07",">0.1","No"
-"Body mass regrowth","Annual precipitation","0.1","18","0.05",">0.5","No"
-"Body mass regrowth","Precipitation of wettest month","1.0","18","0.00",">0.1","No"
-"Body mass regrowth","Precipitation of driest month","0.5","18","0.02",">0.1","No"
-"Body mass regrowth","Precipitation seasonality","4.7","18","0.16","<0.05","Positive"
-"Body mass regrowth","Precipitation of wettest quarter","0.5","18","0.02",">0.1","No"
-"Body mass regrowth","Precipitation of driest quarter","1.2","18","0.01",">0.1","No"
-"Body mass regrowth","Precipitation of warmest quarter","2.9","18","0.09",">0.1","No"
-"Body mass regrowth","Precipitation of coldest quarter","1.7","18","0.04",">0.1","No"
+Table 2. Results from linear models testing correlation between intensity of Dehnel's Phenomenon and climate variables,,,,,
+,F,DF,Adj-R2,P,correlation
+Brain case height decrease,,,,,
+Annual mean temperature,0.2,17,0.05,>0.5,No
+Mean diurnal temperature range,0.3,17,0.04,>0.5,No
+Isothermality,5.4,17,0.20,<0.05,Negative
+Temperature seasonality,9.0,17,0.31,<0.01,Positive
+Max. Temperature of warmest month,0.9,17,0.01,>0.1,No
+Min. Temperature of coldest month,3.1,17,0.11,>0.05,No
+Temperature annual range,9.8,17,0.33,<0.01,Positive
+Mean temperature of wettest quarter,1.5,17,0.03,>0.1,No
+Mean temperature of driest quarter,24.8,17,0.57,<0.001,Negative
+Mean temperature of warmest quarter,1.1,17,0.00,>0.1,No
+Mean temperature of coldest quarter,2.6,17,0.08,>0.1,No
+Annual precipitation,0.0,17,0.03,>0.1,No
+Precipitation of wettest month,0.0,17,0.06,>0.5,No
+Precipitation of driest month,1.5,17,0.03,>0.1,No
+Precipitation seasonality,7.6,17,0.27,<0.05,Positive
+Precipitation of wettest quarter,2.3,17,0.06,>0.5,No
+Precipitation of driest quarter,2.1,17,0.06,>0.1,No
+Precipitation of warmest quarter,0.1,17,0.05,>0.5,No
+Precipitation of coldest quarter,2.9,17,0.10,>0.1,No
+Brain case height regrowth,,,,,
+Annual mean temperature,2.9,14,0.06,>0.5,No
+Mean diurnal temperature range,0.2,14,0.06,>0.5,No
+Isothermality,0.2,14,0.05,>0.5,No
+Temperature seasonality,1.1,14,0.01,>0.1,No
+Max. Temperature of warmest month,1.2,14,0.01,>0.1,No
+Min. Temperature of coldest month,0.0,14,0.07,>0.5,No
+Temperature annual range,1.4,14,0.03,>0.1,No
+Mean temperature of wettest quarter,1.2,14,0.01,>0.1,No
+Mean temperature of driest quarter,1.8,14,0.05,>0.1,No
+Mean temperature of warmest quarter,1.0,14,0.00,>0.1,No
+Mean temperature of coldest quarter,0.0,14,0.07,>0.5,No
+Annual precipitation,1.6,14,0.04,>0.1,No
+Precipitation of wettest month,3.4,14,0.14,>0.05,No
+Precipitation of driest month,1.4,14,0.03,>0.1,No
+Precipitation seasonality,0.1,14,0.06,>0.5,No
+Precipitation of wettest quarter,3.5,14,0.14,>0.05,No
+Precipitation of driest quarter,0.9,14,0.01,>0.1,No
+Precipitation of warmest quarter,5.0,14,0.21,<0.05,Positive
+Precipitation of coldest quarter,0.0,14,0.07,>0.5,No
+Brain mass decrease,,,,,
+Annual mean temperature,0.1,8,0.11,>0.5,No
+Mean diurnal temperature range,0.2,8,0.09,>0.5,No
+Isothermality,0.0,8,0.12,>0.5,No
+Temperature seasonality,0.1,8,0.12,>0.5,No
+(Continues),,,,,
+Table 2 (Continued),,,,,
+,F,DF,Adj-R2,P,correlation
+Max. Temperature of warmest month,0.5,8,0.06,>0.5,No
+Min. Temperature of coldest month,0.1,8,0.12,>0.5,No
+Temperature annual range,0.1,8,0.11,>0.5,No
+Mean temperature of wettest quarter,0.1,8,0.11,>0.5,No
+Mean temperature of driest quarter,0.1,8,0.12,>0.5,No
+Mean temperature of warmest quarter,0.1,8,0.11,>0.5,No
+Mean temperature of coldest quarter,0.1,8,0.12,>0.5,No
+Annual precipitation,0.1,8,0.12,>0.5,No
+Precipitation of wettest month,0.6,8,0.05,>0.1,No
+Precipitation of driest month,0.1,8,0.11,>0.5,No
+Precipitation seasonality,0.0,8,0.12,>0.5,No
+Precipitation of wettest quarter,0.2,8,0.10,>0.5,No
+Precipitation of driest quarter,0.0,8,0.12,>0.5,No
+Precipitation of warmest quarter,0.2,8,0.10,>0.5,No
+Precipitation of coldest quarter,0.1,8,0.11,>0.5,No
+Brain mass regrowth,,,,,
+Annual mean temperature,1.1,7,0.02,>0.1,No
+Mean diurnal temperature range,0.1,7,0.13,>0.5,No
+Isothermality,1.7,7,0.08,>0.1,No
+Temperature seasonality,0.9,7,0.01,>0.1,No
+Max. Temperature of warmest month,1.8,7,0.09,>0.1,No
+Min. Temperature of coldest month,1.0,7,0.00,>0.1,No
+Temperature annual range,0.8,7,0.03,>0.1,No
+Mean temperature of wettest quarter,5.2,7,0.34,>0.05,No
+Mean temperature of driest quarter,1.2,7,0.03,>0.1,No
+Mean temperature of warmest quarter,5.2,7,0.34,>0.05,No
+Mean temperature of coldest quarter,1.0,7,0.00,>0.1,No
+Annual precipitation,3.0,7,0.20,>0.1,No
+Precipitation of wettest month,4.4,7,0.30,>0.05,No
+Precipitation of driest month,2.1,7,0.12,>0.1,No
+Precipitation seasonality,0.3,7,0.10,>0.5,No
+Precipitation of wettest quarter,4.1,7,0.28,>0.05,No
+Precipitation of driest quarter,2.3,7,0.14,>0.1,No
+Precipitation of warmest quarter,4.1,7,0.28,>0.05,No
+Precipitation of coldest quarter,2.0,7,0.11,>0.1,No
+Body mass decrease,,,,,
+Annual mean temperature,6.6,24,0.18,<0.05,Negative
+Mean diurnal temperature range,3.6,24,0.10,>0.05,No
+Isothermality,8.4,24,0.23,<0.01,Negative
+Temperature seasonality,13.5,24,0.33,<0.01,Positive
+Max. Temperature of warmest month,0.8,24,0.01,>0.1,No
+Min. Temperature of coldest month,10.5,24,0.28,<0.01,Negative
+Temperature annual range,13.7,24,0.34,<0.01,Positive
+Mean temperature of wettest quarter,6.1,24,0.17,<0.05,Positive
+Mean temperature of driest quarter,16.3,24,0.38,>0.001,Negative
+(Continues),,,,,
+Table 2 (Continued),,,,,
+,F,DF,Adj-R2,P,correlation
+Mean temperature of warmest quarter,0.0,24,0.04,>0.5,No
+Mean temperature of coldest quarter,10.5,24,0.28,<0.01,Negative
+Annual precipitation,4.0,24,0.11,>0.05,No
+Precipitation of wettest month,0.1,24,0.04,>0.5,No
+Precipitation of driest month,6.4,24,0.18,<0.05,Negative
+Precipitation seasonality,9.0,24,0.24,<0.01,Positive
+Precipitation of wettest quarter,0.4,24,0.03,>0.5,No
+Precipitation of driest quarter,7.9,24,0.22,<0.01,Negative
+Precipitation of warmest quarter,0.8,24,0.01,>0.1,No
+Precipitation of coldest quarter,10.4,24,0.27,<0.01,Negative
+Body mass regrowth,,,,,
+Annual mean temperature,1.8,18,0.04,>0.1,No
+Mean diurnal temperature range,0.7,18,0.02,>0.1,No
+Isothermality,3.1,18,0.10,>0.05,No
+Temperature seasonality,2.9,18,0.09,>0.1,No
+Max. Temperature of warmest month,0.2,18,0.04,>0.5,No
+Min. Temperature of coldest month,2.2,18,0.06,>0.1,No
+Temperature annual range,2.4,18,0.07,>0.1,No
+Mean temperature of wettest quarter,2.1,18,0.05,>0.1,No
+Mean temperature of driest quarter,5.3,18,0.18,<0.05,Negative
+Mean temperature of warmest quarter,0.0,18,0.06,>0.5,No
+Mean temperature of coldest quarter,2.4,18,0.07,>0.1,No
+Annual precipitation,0.1,18,0.05,>0.5,No
+Precipitation of wettest month,1.0,18,0.00,>0.1,No
+Precipitation of driest month,0.5,18,0.02,>0.1,No
+Precipitation seasonality,4.7,18,0.16,<0.05,Positive
+Precipitation of wettest quarter,0.5,18,0.02,>0.1,No
+Precipitation of driest quarter,1.2,18,0.01,>0.1,No
+Precipitation of warmest quarter,2.9,18,0.09,>0.1,No
+Precipitation of coldest quarter,1.7,18,0.04,>0.1,No

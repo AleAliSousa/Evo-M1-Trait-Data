@@ -1,6 +1,9 @@
+Class/Species,,,Total Sleep (Rest) Time/24 hr,Sleep (Rest) Episode Length,Sleep (Rest) Placement,,Measurement,,
 Class/Species,N,Photoperiod,Total Sleep (Rest) Time/24 hr,Sleep (Rest) Episode Length,Placement: Dark/Night,Placement: Light/Day,Measurement: B,Measurement: E,Reference
+Invertebrates,,,,,,,,,
 "cockroach
 Leucophea maderae",26,12L/12Dim,14 hr,,,++++,,,[191]
+Fish,,,,,,,,,
 "perch
 Perca fluviatilis",10,natural,5-10 hr,,++++,,,,[168]
 "red-eye
@@ -10,6 +13,7 @@ talmus L.",,natural,1-3 hr,,++++,,,,[168]
 Tilapia mossambica",30,15L/9Dim,6.5-7.5 hr,,+,+++,,,[165]
 "tench
 Tinca tinca L.",25,12L/12D,14.4 hr,15-20 min,+,+++,,,[134]
+Amphibians,,,,,,,,,
 "bullfrog
 Rana catesbiana",10,natural,0 hr,,,,,,[78]
 "lake frog
@@ -20,6 +24,7 @@ Bufo boreas",,natural,14.6 hr,25 -+ 15 min,,+++,,,[83]
 Triturus vulgaris",20,"stimulated
 natural","4.6 hr (water)
 11.0 hr (land)",,,++++,,,[76]
+Reptiles,,,,,,,,,
 "North American
 box turtle
 Terrapene carolina",11,"constant
@@ -58,6 +63,7 @@ dorsalis",8,12L/12D,16.3-17.8 hr,,,,,,[84]
 Phrinosoma regali",13,12L/12D,12.3 hr,,++++,,,,[149]
 "Africian python
 Python sebae",1,,15.6-20.4 hr,,,,,,[134]
+Birds,,,,,,,,,
 "white leghorn chicken
 Gallus domesticus",17,,11.7 hr,,,,,,[95]
 "landaise goose
@@ -179,9 +185,12 @@ Thryomanes bewickii",,11.9L/12.1D,11.3 hr,,+ + + +,,,,
 "American robin
 Turdus migratorius",,"constant
 illumination",3.7 hr,,+ + + +,,,,
+Mammals,,,,,,,,,
+Montremes,,,,,,,,,
 "echidna
 Tachyglossus
 aculeatus",5,,8.6 hr,27 min,+,+++,,,[9]
+Marsupials,,,,,,,,,
 "North American
 opossum
 Didelphis
@@ -198,6 +207,7 @@ Megaleia rufa",5,natural,"0.78–2.1 hr
 (5.5 hr record)",,,,,,[42]
 "kangaroo rat
 Potorous apicalis",4,12L/12D,11.6 hr,,+,+++,,,[17]
+Insectivores,,,,,,,,,
 "European hedgehog
 Erinaceus europaeus",9,,10.1 hr,17 -+ 3.7 min,+,+++,,,[193]
 "Desert hedgehog
@@ -235,10 +245,12 @@ Neomys fodiens",1,12L/12D,13.6 hr,,++,++,,,[44]
 Centetes ecaudatus",,12L/12D,"15.6 hr
 (drowsiness
 included)",,,,,,[170] A
+Chiroptera,,,,,,,,,
 "little brown bat
 Myotis lucifugus",,,19.9 hr,,,,,,[41] A
 "big brown bat
 Eptesicus fuscus",,,19.5 hr,,,,,,[224]
+Primates,,,,,,,,,
 "slow loris
 Nycticebus coucang",6,"natural and
 dim red",11.0 hr,,,++++,,,[188]
@@ -290,6 +302,7 @@ Papio cynocephalus",2,16.5L/7.5D,"6.2 hr
 Pan troglodytes",3,"natural +
 dim nocturnal","9.7 hr
 (14 hr record)",,++++,,,,[31]
+Edentates,,,,,,,,,
 "three-toed sloth
 Bradypus infuscatus",10,"natural +
 dim at night",15.8 hr,,--+,++,,,[47]
@@ -299,9 +312,11 @@ Choloepus hoffmanni",6,natural,16.4 hr,,,,,,[179]
 Priodontes giganteus",3,,18.1 hr,,,,,*,[2]
 "Nine-banded armadillo
 Dasypus novemcinctus",13,12L/12D,17.4 hr,,+ +,+ +,,,[207]
+Lagomorphs,,,,,,,,,
 "rabbit
 Oryctolagus
 cuniculus",2,14L/10D,8.8 hr,,,,,*,[172]
+Rodents,,,,,,,,,
 "mountain beaver
 Aplodontia rufa",,12L/12D,"14.4 hr
 (drowsiness
@@ -382,6 +397,7 @@ Chinchilla laniger",6,12L/12D,12.5 hr,6.5 min,+,+++,,*,[202]
 "degu
 Octodon degu",6,12L/12D,"6.9 hr
 (16 hr record)",,+++,+,,*,[121] A
+Cetaceans,,,,,,,,,
 "Indus dolphin
 Platanista indi",,,7.0 hr,seconds,,,,,[137]
 "Dall porpoise
@@ -407,6 +423,7 @@ illumination","1.3 hr
 "North Pacific
 pilot whale
 Globicephala scammoni",1,,5.3 hr,,+++,,,,[167]
+Carnivores,,,,,,,,,
 "domestic dog (beagle)
 Canis domesticus",7,"constant
 illumination",12.9 hr,45 min,+++,+,,,[216]
@@ -431,18 +448,21 @@ Halichoerus grypus",4,"continuous
 illumination",(14 hr record),,+++,,*,*,[145]
 "Caspian seal
 Gallerinus ursinus",,natural,3.6 hr,,,,,*,[124]
+Proboscidea,,,,,,,,,
 "Asian elephant
 Elephus maximus",13,natural,"3.8 hr
 (8 hr record)",,++++,,*,,[106]
 "Africian elephant
 Loxodonto africano",13,natural,"3.3 hr
 (8 hr record)",,++++,,*,,[106]
+Hyracoidea,,,,,,,,,
 "rock hyrax
 Procavia johnstoni",4,natural,4.9 hr,,++,++,,*,[169] A
 "rock hyrax
 Heterohyrax brucei",4,natural,5.7 hr,,++,++,,*,[169] A
 "tree hyrax
 Dendrohyrax validus",1,natural,4.9 hr,,+,+++,,*,[169] A
+Pefissodactyla,,,,,,,,,
 "horse
 Equus caballus",3,,2.9 hr,,++++,,,*,[153]
 "donkey
@@ -450,6 +470,7 @@ Equus asinus",3,,3.1 hr,,++++,,,*,[153]
 "tapir
 Tapirus terrestris",2,"natural +
 dim at night",4.4 hr,<10 min,,,•,,[223] A
+Artiodactyla,,,,,,,,,
 "sheep
 Ovis aries",3,,3.8 hr,,+++,+,,*,[152]
 "COW

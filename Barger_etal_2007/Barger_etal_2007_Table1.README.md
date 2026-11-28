@@ -10,9 +10,12 @@ and the basolateral division"**
 
 ## Source → Snapshot
 PDF p. 4 (text layer; the grid extracts cleanly). `Barger_etal_2007_Table1_snapshot.csv` — 12
-specimens, faithful to print: species group-header rows kept, left/right (L/R) sub-columns for each
-ROI, footnote markers on the specimen IDs (d/e/f), en-dash `–` for not-collected, `cm3` units, order
-preserved. *Recommend a visual diff against the PDF.*
+specimens, with the printed species group in the first specimen row, the two-tier
+left/right (L/R) header for each ROI, footnote markers on specimen IDs (d/e/f),
+en-dash `–` for not-collected, `cm3` units, and source row order. The footnotes
+following the grid are condensed from the printed wording. This layout was
+checked against the PDF in the assistant audit on 2026-11-27; independent human
+visual signoff remains separate.
 
 Columns (ROIs, each L + R): Amygdaloid complex (AC), Basolateral division (BLD), Lateral (L),
 Basal (B), Accessory basal (AB); plus Hemi = summed both cerebral hemispheres. Footnotes:
@@ -20,8 +23,10 @@ Basal (B), Accessory basal (AB); plus Hemi = summed both cerebral hemispheres. F
 damage (left subnuclei not collected; right hemisphere doubled in Barger's analysis).
 
 ## Data readable
-`Barger_etal_2007_Table1.R` → `Barger_etal_2007_Table1.csv` (**use this**). One row per specimen,
+`Barger_etal_2007_TABLE1.R` → `Barger_etal_2007_Table1.csv` (**use this**). One row per specimen,
 species forward-filled to binomial, `–` → NA, and an `_total` (= L + R) added for each ROI.
+Run `Rscript Barger_etal_2007/Barger_etal_2007_TABLE1.R` from the repository
+root. The rebuilt 12-row analysis CSV matched its prior version cell for cell.
 **`amygdaloid_complex_total`** (whole amygdaloid complex, both hemispheres) is the column that maps to the Stephan
 **Amygdala**. Verified against the paper's prose (human AC 3.805, BLD 2.424, lateral 1.146 cm³).
 

@@ -28,7 +28,30 @@ library(tidyverse)
 # TABLE 1
 ## 1. Read direct from csv
 folder_path <- paste0(folder, "/")
-tabledirectcsv <- read_csv(paste0(folder_path,"Falcone_etal_2019_TABLE1_snapshot.csv"))
+tabledirectcsv <- read_csv(paste0(folder_path,"Falcone_etal_2019_TABLE1_snapshot.csv"),
+                           skip=1L, col_types=cols(.default=col_character()),
+                           na=character(), name_repair="minimal")
+tabledirectcsv[is.na(tabledirectcsv)] <- ""
+section <- tabledirectcsv$Infraclass %in% c("Metatheria (marsupials)", "Eutheria (Placentals)") &
+           apply(as.matrix(tabledirectcsv[-1L]) == "", 1L, all)
+infraclass <- ifelse(section, sub(" \\(.*$", "", tabledirectcsv$Infraclass), "")
+for (i in seq_along(infraclass)) if (infraclass[i] == "" && i > 1L) infraclass[i] <- infraclass[i-1L]
+tabledirectcsv <- tabledirectcsv[!section, , drop=FALSE]
+tabledirectcsv$Infraclass <- infraclass[!section]
+for (field in c("Order", "Suborder", "Parvorder", "Family")) {
+  for (i in seq_len(nrow(tabledirectcsv))) {
+    if (tabledirectcsv[[field]][i] == "" && i > 1L &&
+        tabledirectcsv$Infraclass[i] == tabledirectcsv$Infraclass[i-1L] &&
+        (field == "Order" || tabledirectcsv$Order[i] == tabledirectcsv$Order[i-1L]) &&
+        (field != "Family" || tabledirectcsv$Suborder[i] == tabledirectcsv$Suborder[i-1L]))
+      tabledirectcsv[[field]][i] <- tabledirectcsv[[field]][i-1L]
+  }
+}
+for (field in names(tabledirectcsv)[7:10])
+  tabledirectcsv[[field]][tabledirectcsv[[field]] == "r"] <- "rudimetary"
+tabledirectcsv$Parvorder[tabledirectcsv$Parvorder == "Catarhhini"] <- "Catarhini"
+tabledirectcsv$Suborder[tabledirectcsv$Suborder == "Whippo-morpha"] <- "Whippomorpha"
+tabledirectcsv[tabledirectcsv == ""] <- NA_character_
 
 ## 2. Replace "-" with NA in sheet
 tabledirectcsv <- tabledirectcsv %>%

@@ -8,9 +8,7 @@
 ## Output : Jacobs_etal_1997_Table2.csv
 ##          __Public/comparative-data/<Item encoded>.tsv
 ##
-## No numeric re-derivation is performed. Laminar/soma depths (um) and soma
-## size (um2) are carried through as printed (mean +/- SD), split by age
-## group (younger <=50y; older >50y) and cortical area (10; 18).
+## Printed mean ± SD cells are split and the source matrix is transposed here.
 
 options(scipen = 999)
 
@@ -33,11 +31,31 @@ base <- local({
 
 setwd(folder)
 
-dat <- read.csv(
-  paste0(item_name, "_snapshot.csv"),
-  stringsAsFactors = FALSE,
-  check.names = FALSE
-)
+grid <- read.csv(paste0(item_name, "_snapshot.csv"), header = FALSE,
+                 stringsAsFactors = FALSE, check.names = FALSE,
+                 colClasses = "character", na.strings = character(0))
+stopifnot(ncol(grid) == 5L, nrow(grid) == 10L,
+          grepl("^TABLE 2\\.", grid[[1]][1]))
+keys <- c("Layer_I_II_junction_um", "Layer_II_III_junction_um",
+          "Sampled_soma_depth_um", "Sampled_soma_size_um2",
+          "Layer_III_IV_junction_um", "Gray_white_matter_junction_um")
+split_cell <- function(x) {
+  y <- gsub("[(),]", "", x)
+  parts <- strsplit(y, " ± ", fixed = TRUE)[[1]]
+  stopifnot(length(parts) == 2L)
+  as.integer(parts)
+}
+rows <- lapply(seq_len(4L), function(j) {
+  out <- list(AgeGroup = if (j <= 2L) "Younger(<=50y)" else "Older(>50y)",
+              Area = if (j %% 2L) "Area10" else "Area18")
+  for (k in seq_along(keys)) {
+    v <- split_cell(grid[[j + 1L]][k + 3L])
+    out[[paste0(keys[k], "_mean")]] <- v[1]
+    out[[paste0(keys[k], "_SD")]] <- v[2]
+  }
+  as.data.frame(out, check.names = FALSE)
+})
+dat <- do.call(rbind, rows)
 
 csv_file <- paste0(item_name, ".csv")
 

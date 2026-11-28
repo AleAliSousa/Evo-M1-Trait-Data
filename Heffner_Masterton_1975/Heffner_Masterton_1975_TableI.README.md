@@ -8,6 +8,8 @@ digital dexterity. 69 animal rows spanning mammals. Superseded by the smaller
 Heffner & Masterton 1983 Table I sample (`compare to 1983`).
 
 ## Source → Snapshot
+Layout audit (2026-11-27): compared the workbook with the local source PDF's printed Table I. The workbook retains the stacked common/scientific-name lines, measurement and citation lines, multi-tier headers, and page continuation structure. Its 17 spreadsheet columns include empty spacer columns and separate citation cells to sketch the print layout. No layout edit was needed. This check is separate from human source signoff.
+
 PDF is paywalled and Table I runs over several pages. Transcribed by hand (kept to the original
 layout) and cross-checked against an AI table extraction of the PDF. Frozen transcription:
 `Heffner_Masterton_1975_TableI_snapshot.xlsx`. (`pyramidal_tract_data.xlsx` is a working copy.)

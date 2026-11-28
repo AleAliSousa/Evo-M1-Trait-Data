@@ -31,6 +31,18 @@ public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 
 library(readxl)
 snap <- as.data.frame(read_excel(snapshot_xlsx, sheet="Tabelle1", .name_repair="minimal"), check.names=FALSE)
+ord <- as.character(snap$Ordnung)
+for (i in seq_along(ord)) if (is.na(ord[i]) && i > 1L) ord[i] <- ord[i-1L]
+weight <- as.character(snap$`Hirngewicht (Hemisphärengewicht) in g`)
+brain <- suppressWarnings(as.numeric(sub("\\s*\\(.*$", "", weight)))
+hemisphere <- suppressWarnings(as.numeric(sub("^.*\\(([^)]*)\\).*$", "\\1", weight)))
+hemisphere[!grepl("\\(", weight)] <- NA_real_
+genus <- vapply(snap$Name, function(name) {
+  if (grepl("^(Europäer|Naturmenschen|Idioten)", name)) return("Homo")
+  matches <- regmatches(name, gregexpr("\\([A-Z][a-z]+(?: [a-z]+)?\\)", name, perl=TRUE))[[1L]]
+  if (!length(matches)) return(NA_character_)
+  sub("^\\(([A-Z][a-z]+).*$", "\\1", tail(matches, 1L))
+}, character(1L))
 
 acc <- c(  # printed name -> best-effort accepted binomial (genus-level where undetermined)
  "Europäer: Maximalwert"="Homo sapiens","Europäer: Minimalwert"="Homo sapiens",
@@ -53,13 +65,13 @@ acc <- c(  # printed name -> best-effort accepted binomial (genus-level where un
 out <- data.frame(
   Species = unname(acc[snap$Name]),
   Species_Brodmann1913 = snap$Name,
-  Genus_printed = snap$Genus_printed,
-  Order_printed = snap$Ordnung,
-  `CorticalSurface_1hemisphere.mm2` = suppressWarnings(as.numeric(snap$Rindenflaeche_1hemisphere_qmm)),
-  `SulcalCortex.mm2`  = suppressWarnings(as.numeric(snap$Furchenrinde_qmm)),
-  SulcalCortex_pct    = suppressWarnings(as.numeric(snap$Furchenrinde_pct_Gesamtrinde)),
-  `BrainWeight.g`     = suppressWarnings(as.numeric(snap$Hirngewicht_g)),
-  `HemisphereWeight.g`= suppressWarnings(as.numeric(snap$Hemisphaerengewicht_g)),
+  Genus_printed = genus,
+  Order_printed = ord,
+  `CorticalSurface_1hemisphere.mm2` = suppressWarnings(as.numeric(snap$`Rindenfläche einer Hemisphäre in qmm`)),
+  `SulcalCortex.mm2`  = suppressWarnings(as.numeric(snap$`Furchenrinde Fläche in qmm`)),
+  SulcalCortex_pct    = suppressWarnings(as.numeric(snap$`Furchenrinde %`)),
+  `BrainWeight.g`     = brain,
+  `HemisphereWeight.g`= hemisphere,
   stringsAsFactors=FALSE, check.names=FALSE)
 
 options(scipen=999); write.csv(out, final_csv, row.names=FALSE, na="")

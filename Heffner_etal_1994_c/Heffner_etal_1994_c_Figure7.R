@@ -114,7 +114,7 @@ t1 <- t1[t1$Species %in% names(t1map), ]
 t1$code <- unname(t1map[t1$Species])
 names(t1)[names(t1) == "Species"] <- "Table1_species"
 cmp <- merge(t1, final.dataframe, by.x = "code", by.y = "species_code_as_published")
-cmp$printed <- as.numeric(cmp$`Threshold (deg)`)
+cmp$printed <- suppressWarnings(as.numeric(gsub("°", "", cmp$`Thresholdᵃ`, fixed = TRUE)))
 cmp$pct <- round(100 * (cmp$localization_threshold_deg / cmp$printed - 1), 1)
 cmp$basis <- ifelse(grepl("^printed dot", cmp$position_basis), "dot", "code")
 print(cmp[order(cmp$basis, cmp$code), c("code", "Table1_species", "printed",

@@ -69,6 +69,17 @@ item now preserves the PDF wording in `species_as_published`, retains
 `binomial = Tursiops truncatus` for existing consumers, and leaves
 accepted-name validation to `_keys`.
 
+## Snapshot layout recheck (2026-11-27)
+Compared the snapshot with the local source PDF, printed p. 2081. The
+snapshot now has the four printed columns: the common and scientific names
+share the Species cell, and superscript reference keys remain attached to
+their measured values. The caption and footnotes follow the printed table.
+The R reader separates names and reference keys for the analysis CSV and
+normalizes the published *Tursiops truncates* spelling there. Command:
+`Rscript Heffner_Heffner_2010_b/Heffner_Heffner_2010_b_Table1.R` from the
+repository root. The rebuilt 21-row analysis CSV matches the prior version
+cell for cell. This is a source layout check, not independent human signoff.
+
 ## Units
 High-frequency hearing limit in kHz (60-dB-SPL criterion); functional
 interaural distance in microseconds (time for a sound to travel from one

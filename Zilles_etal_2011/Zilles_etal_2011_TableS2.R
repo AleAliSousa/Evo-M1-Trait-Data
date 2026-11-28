@@ -25,7 +25,7 @@ suppressPackageStartupMessages({library(readxl); library(readr); library(dplyr);
 folder <- dirname(.sp); setwd(folder)
 item_name <- tools::file_path_sans_ext(basename(.sp))
 source_xls <- "nyas_5978_sm_table2.xls"; snapshot_xlsx <- paste0(item_name, "_snapshot.xlsx")
-raw <- read_excel(snapshot_xlsx, sheet="TableS2", skip=1, col_names=TRUE, col_types="text")
+raw <- read_excel(snapshot_xlsx, sheet="TableS2", skip=5, col_names=TRUE, col_types="text")
 if (ncol(raw) != 11L) stop("Expected 11 columns; found ", ncol(raw), ".", call.=FALSE)
 names(raw) <- c("code", "species", "sex", "catalogue_number", "body_weight_g", "brain_weight_fresh_g", "brain_material", "staining", "section_thickness_um", "plane_of_sectioning", "distance_between_sections")
 clean_text <- function(x) {x <- str_squish(as.character(x)); x[x %in% c("", "NA")] <- NA_character_; x}

@@ -39,6 +39,30 @@ dat <- read.csv(
   check.names = FALSE
 )
 
+stopifnot(nrow(dat) == 5L, ncol(dat) == 7L)
+labels <- c("F mouse", "M mouse", "M gerbil", "M hamster", "FSD rat")
+stopifnot(identical(dat$Species, labels))
+split_pm <- function(x) {
+  pieces <- strsplit(as.character(x), "\\s*±\\s*")
+  stopifnot(all(lengths(pieces) == 2L))
+  cbind(as.numeric(vapply(pieces, `[`, "", 1)),
+        as.numeric(vapply(pieces, `[`, "", 2)))
+}
+parts <- lapply(dat[-1], split_pm)
+# Sex, sample size, and the expanded species labels come from the Methods
+# paragraph, not from columns in the printed table.
+dat <- data.frame(
+  Species = c("Mouse (CD-1)", "Mouse (CD-1)", "Mongolian gerbil", "Hamster", "Sprague-Dawley rat"),
+  Sex = c("F", "M", "M", "M", "F"), N = c(22L, 22L, 8L, 17L, 8L),
+  Body_weight_g = parts[[1]][,1], Body_weight_SD_g = parts[[1]][,2],
+  WB_weight_g = parts[[2]][,1], WB_weight_SD_g = parts[[2]][,2],
+  BS_weight_g = parts[[3]][,1], BS_weight_SD_g = parts[[3]][,2],
+  CB_weight_g = parts[[4]][,1], CB_weight_SD_g = parts[[4]][,2],
+  FB_weight_g = parts[[5]][,1], FB_weight_SD_g = parts[[5]][,2],
+  SCA_mm2 = parts[[6]][,1], SCA_SD_mm2 = parts[[6]][,2],
+  stringsAsFactors = FALSE
+)
+
 csv_file <- paste0(item_name, ".csv")
 
 write.csv(

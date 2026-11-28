@@ -9,3 +9,7 @@ Methods and sample sizes are shared with Table I. Tissue preparation differs bet
 AI visual comparison against the PDF was performed on 2026-10-26. Human RA verification remains pending; this is not recorded as a human check.
 
 Rebuild with `Rscript Meyer__1981_TableII.R` from any directory. The frozen source is read locally; the live registry supplies the encoded public TSV name. Published taxon labels are retained. No new global species key or unsupported bilateral conversion is introduced.
+
+## Snapshot layout check (2026-11-27)
+
+Compared printed Table II on PDF pages 3–4 (printed pp. 62–63). The source splits the 13 measurement columns across two facing pages: six columns with species labels on p. 62 and seven columns without repeated labels on p. 63. The snapshot now keeps those as two separate page blocks; `Meyer__1981_TableII.R` joins them by the preserved source row order. Run `Rscript --vanilla Meyer__1981/Meyer__1981_TableII.R`. Its 91-row analysis CSV was compared with the pre-layout output. This assistant comparison is separate from independent human source signoff.

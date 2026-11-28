@@ -39,8 +39,12 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
-                  colClasses = "character", encoding = "UTF-8")
+snap <- read.csv(snapshot_csv, skip = 5L, header = FALSE, nrows = 19L,
+                 col.names = c("Center frequency (kHz)",
+                               "Kastelein et al. 2002 corrected (1700 ms)",
+                               paste(c(0.1,0.5,1,5,10,50,100,300,600,900,1500,2000,2500,3000,4000,5000),"ms")),
+                 stringsAsFactors = FALSE, check.names = FALSE,
+                 colClasses = "character", na.strings = NULL, encoding = "UTF-8")
 stopifnot(nrow(snap) == 19)  # 19 center frequencies (0.25-180 kHz)
 
 ## 3. RESHAPE (wide printed layout -> long tidy rows) -----------------
@@ -54,7 +58,7 @@ long_present <- snap %>%
   select(`Center frequency (kHz)`, all_of(duration_cols)) %>%
   pivot_longer(cols = all_of(duration_cols), names_to = "duration_label",
                values_to = "threshold_db_re_1uPa") %>%
-  filter(threshold_db_re_1uPa != "") %>%
+  filter(!threshold_db_re_1uPa %in% c("", "...")) %>%
   mutate(
     center_frequency_khz = as.numeric(`Center frequency (kHz)`),
     signal_duration_ms   = as.numeric(sub(" ms$", "", duration_label)),
@@ -65,7 +69,7 @@ long_present <- snap %>%
   select(center_frequency_khz, signal_duration_ms, threshold_db_re_1uPa, source_study, data_role)
 
 long_k2002 <- snap %>%
-  filter(`Kastelein et al. 2002 corrected (1700 ms)` != "") %>%
+  filter(!`Kastelein et al. 2002 corrected (1700 ms)` %in% c("", "...")) %>%
   transmute(
     center_frequency_khz = as.numeric(`Center frequency (kHz)`),
     signal_duration_ms = 1700,

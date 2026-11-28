@@ -4,7 +4,8 @@ if (!length(a)) stop("Run with Rscript")
 folder <- dirname(normalizePath(sub("^--file=", "", a[1])))
 item_name <- "Glezer_etal_1993_Table1"
 root <- dirname(folder)
-s <- utils::read.csv(file.path(folder,paste0(item_name,"_snapshot.csv")),check.names=FALSE,colClasses="character",fileEncoding="UTF-8")
+source(file.path(folder, "Glezer_etal_1993_read_table_grids.R"))
+s <- read_table_grids(folder, item_name)
 stopifnot(nrow(s)==55L,ncol(s)==7L,identical(unique(s$taxon_group_as_published),c("Cetaceans","Primates","Rodents","Bats","Hedgehogs")))
 parts <- strsplit(s$numerical_density_M_plus_SEM_as_published," ± ",fixed=TRUE)
 present <- s$numerical_density_M_plus_SEM_as_published!="—"

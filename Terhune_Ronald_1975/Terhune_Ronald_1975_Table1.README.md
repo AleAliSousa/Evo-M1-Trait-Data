@@ -68,3 +68,7 @@ equally-certain raw reading. Female minimum sensitivity: -32 dB at both 11.3
 and 16.0 kHz (tied). Male minimum sensitivity: -31 dB at 44.9 kHz. The
 paper's own summary statement ("lowest threshold was -32 dB... at 16 kHz")
 matches the female subject's value.
+
+## Snapshot layout check (2026-11-27)
+
+Compared Table I with PDF page 3. The snapshot now keeps the separate printed table number/title, three paired column groups (threshold, SD, catch trials), female/male subheaders, and 15 source-order frequency rows. `Rscript --vanilla Terhune_Ronald_1975/Terhune_Ronald_1975_Table1.R` names and reshapes those columns; its analysis CSV was compared with the pre-layout output. This assistant comparison is separate from independent human source signoff.

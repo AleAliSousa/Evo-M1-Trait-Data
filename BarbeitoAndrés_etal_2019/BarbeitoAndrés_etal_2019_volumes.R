@@ -39,10 +39,16 @@ write_csv_tsv <- function(x, stem, dir = folder) {
   message("Wrote ", tsv_file)
 }
 
-b1 <- readr::read_csv(file.path(folder, paste0(item_name, "_snapshot.csv")), col_types = readr::cols(.default = "character"), show_col_types = FALSE)
 vol_regions <- c("Olfactory_bulbs","Cerebellum","Corpus_callosum","Midbrain","Lateral_ventricle",
                  "Striatum","Cortex","Hypothalamus","Third_ventricle","Hippocampus","Thalamus",
                  "Fimbria","Total")              # row 4 cols 3:15, as published (cleaned)
+source_grid <- readr::read_csv(file.path(folder, paste0(item_name, "_snapshot.csv")),
+                               col_names = FALSE, col_types = readr::cols(.default = "c"),
+                               show_col_types = FALSE)
+b1 <- source_grid[5:27, 1:15]
+names(b1) <- c("specimen", "group", vol_regions)
+# Source Total cells are formulas =SUM(C:N); evaluate them in the R reader.
+b1$Total <- as.character(rowSums(sapply(b1[3:14], numv), na.rm = TRUE))
 vol_long <- b1 %>%
   pivot_longer(all_of(vol_regions), names_to = "region", values_to = "value") %>%
   transmute(species = "Mus musculus", reference = "BarbeitoAndrés_etal_2019",

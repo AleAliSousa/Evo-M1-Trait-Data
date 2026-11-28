@@ -18,5 +18,10 @@ Text layer vs render agree on all 15 cells (2.4-3.2, 4.5-6.2, 3.1, 5.9, 31.8; 2.
 ## Lewitus 2014 cross-reference (juvenile periods)
 Lewitus et al. 2014 cites Walker 2006 as the dataset-wide source for primate **juvenile periods** (age at first reproduction). **No table in this paper prints those species values.** The paper's analysis used a 67-species database (age at first reproduction in months, brain weight, max life span, body size, home range, % fruit, group size) compiled from Barton 1999, Harvey et al. 1987, Smith & Jungers 1997, Kappeler & Pereira 2003 and Kaplan et al. 2003 (data at http://www.unm.edu/~hkaplan/pnas/primatedatabase.xls — not in the PDF, not retrievable from this folder). Age at first reproduction appears in the paper only as the dependent variable of Table 1 (regression statistics). So the comparable quantity (juvenile period per species) must be taken from that external Kaplan et al. 2003 database or the secondary sources above, not from this paper.
 
-## RA check still to do
-Side-by-side read of the render against the snapshot (5 rows x 3 value columns).
+## Layout audit (2026-11-27)
+The PDF p. 7 table was compared with the snapshot. Its caption and nested
+`Homo sapiens` Predicted/Observed heading were restored in the printed
+positions; R now reads the five data rows below those headers. Run
+`Rscript Walker_etal_2006/Walker_etal_2006_Table8.R` from the repository root.
+The 15-row analysis CSV remained cell-identical. Independent human source
+comparison is separate.

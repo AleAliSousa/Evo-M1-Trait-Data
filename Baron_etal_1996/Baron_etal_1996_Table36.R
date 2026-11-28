@@ -22,31 +22,28 @@ root_dir <- local({
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
 
-snapshot <- read.csv(file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
-                     check.names = FALSE, stringsAsFactors = FALSE)
-if (!is.null(snapshot$is_header)) {
-  ## read.csv() types an is_header column holding only "TRUE"/"" as LOGICAL
-  ## (TRUE/NA), and an all-blank one as all-NA. `is_header != "TRUE"` is then
-  ## NA on every species row, and indexing with NA turns those rows into all-NA
-  ## rows -- which is what tripped the missing-species stop below. Compare as
-  ## text and treat blank/NA as "not a header".
-  hdr <- toupper(trimws(as.character(snapshot$is_header)))
-  hdr <- !is.na(hdr) & hdr == "TRUE"
-  snapshot <- snapshot[!hdr, , drop = FALSE]
-  snapshot$species_row <- seq_len(nrow(snapshot))
-}
+grid <- read.csv(file.path(paper_dir, paste0(item_name, "_snapshot.csv")),
+                 header = FALSE, fill = TRUE, check.names = FALSE,
+                 colClasses = "character", na.strings = character(0))
+stopifnot(nrow(grid) == 17L, ncol(grid) == 10L)
+snapshot <- grid[4L:17L, , drop = FALSE]
+names(snapshot) <- c("species_printed", "TOT", "BOL", "TOT_minus_BOL",
+                     "NEO", "ALLO", "ALLO_minus_BOL", "PAL_plus_SCH",
+                     "HIP", "CING")
+snapshot$species_row <- seq_len(nrow(snapshot))
+snapshot$source_pdf_page <- 159L
 stopifnot(nrow(snapshot) == 14L, identical(snapshot$species_row, seq_len(14L)))
 
 final.dataframe <- data.frame(
   species_row = snapshot$species_row,
   Species_Baron1996 = trimws(snapshot$species_printed),
   total_cortex_mm2 = as.numeric(snapshot$TOT),
+  olfactory_bulb_mm2 = as.numeric(snapshot$BOL),
   total_minus_bulb_mm2 = as.numeric(snapshot$TOT_minus_BOL),
-  allocortex_minus_bulb_mm2 = as.numeric(snapshot$ALLO_minus_BOL),
   neocortex_mm2 = as.numeric(snapshot$NEO),
   allocortex_mm2 = as.numeric(snapshot$ALLO),
-  paleocortex_plus_bulb_mm2 = as.numeric(snapshot$PAL_plus_BOL),
-  schizocortex_mm2 = as.numeric(snapshot$SCH),
+  allocortex_minus_bulb_mm2 = as.numeric(snapshot$ALLO_minus_BOL),
+  paleocortex_plus_schizocortex_mm2 = as.numeric(snapshot$PAL_plus_SCH),
   hippocampus_mm2 = as.numeric(snapshot$HIP),
   cingulate_mm2 = as.numeric(snapshot$CING),
   source_pdf_page = snapshot$source_pdf_page,

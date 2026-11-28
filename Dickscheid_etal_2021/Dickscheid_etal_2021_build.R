@@ -3,9 +3,9 @@
 ## f06a2fd1-a9ca-42a3-b754-adaa025adb10); one dataset version + DOI 10.25493/... per Julich-Brain area; 12 items
 ## Dickscheid_etal_2021_Area44 ... Dickscheid_etal_2021_AreahOc5 (registry rows with the series citation in col A).
 ##
-## PARAMETERISED build: frozen snapshot <Item name>_snapshot.csv -> <Item name>.csv (long, one row per layer) and the
+## PARAMETERISED build: frozen publisher per-patch text grids -> <Item name>.csv (long, one row per layer) and the
 ## public TSV __Public/comparative-data/<Item encoded>.tsv, for one item or (default) every item of the series.
-## This script only READS the snapshots (written by Dickscheid_etal_2021_snapshot.py).  One parameterised script
+## This script reads the untouched downloaded grids. One parameterised script
 ## serves the 12 items because they are 12 identical tables; items are validated one by one with
 ## validate_dataset_item() (build_dataset_item() runs only the first .R of a folder, so it is not used here).
 ##   Rscript Dickscheid_etal_2021_build.R                               # all items
@@ -15,7 +15,7 @@
 ## male donor (KG subject sub-20, tissue sample B20).  Values are ALL SEGMENTED CELL BODIES (neurons + glia; silver
 ## stain, Merker 1983; automatic Contour Proposal Network segmentation), not neurons.  Data role = primary.
 ##
-## Reformat (what the snapshot leaves undone; same formula as siibra's LayerwiseCellDensity feature and, by the
+## Reformat (same formula as siibra's LayerwiseCellDensity feature and, by the
 ## table checks below, as the dataset's own averaged report stats.pdf):
 ##   per patch x layer:  volume_0.1mm3 = Area_micron2 * 20 (section thickness, micron) * 1.931^(1/3) / 1e6
 ##                       density       = n_cells_in_layer / volume_0.1mm3        [# detected cells / 0.1 mm^3]
@@ -61,6 +61,7 @@ readme_xlsx    <- file.path(dataset_root, "__ReadMe.xlsx")
 public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 datasets_csv   <- file.path(folder, "reference_tables", paste0(series, "_datasets.csv"))
 pdf_bars_csv   <- file.path(folder, "reference_tables", paste0(series, "_stats_pdf_bars.csv"))
+manifest_csv   <- file.path(folder, "ebrains_downloads", "download_manifest.csv")
 
 ## 1. PACKAGES ---------------------------------------------------------------
 library(readxl)
@@ -68,6 +69,7 @@ library(readxl)
 ## 2. SERIES TABLES ----------------------------------------------------------
 datasets  <- utils::read.csv(datasets_csv, colClasses = "character", check.names = FALSE)   # Item name <-> dataset
 pdf_bars  <- utils::read.csv(pdf_bars_csv, check.names = FALSE)                             # averaged-report figures
+manifest  <- utils::read.csv(manifest_csv, colClasses="character", check.names=FALSE)
 filecodes <- readxl::read_excel(readme_xlsx, sheet = "Sheet1")
 items <- commandArgs(TRUE)
 if (!length(items)) items <- datasets$item_name
@@ -81,11 +83,41 @@ LAYERS <- c("I", "II", "III", "IV", "V", "VI")
 table_checks <- data.frame()
 for (item_name in items) {
   ds <- datasets[datasets$item_name == item_name, ]
-  snapshot_csv <- file.path(folder, paste0(item_name, "_snapshot.csv"))
   final_csv    <- file.path(folder, paste0(item_name, ".csv"))
 
-  ## 3. READ FROZEN SNAPSHOT (one row per patch x layer, layerinfo.txt values as printed) ------------------------
-  snap <- utils::read.csv(snapshot_csv, colClasses = "character", check.names = FALSE, na.strings = character(0))
+  ## 3. READ FROZEN SOURCE GRIDS. The patch/layer join and cell counts happen here. ------------------------------
+  area_root <- file.path(folder, "ebrains_downloads", ds$area_dir, "v1.0")
+  source_manifest <- manifest[manifest$area_dir==ds$area_dir &
+                              manifest$file %in% c("info.txt","layerinfo.txt","segments.txt"),]
+  stopifnot(nrow(source_manifest)==3L*as.integer(ds$n_patches))
+  source_paths <- file.path(folder,source_manifest$local_path)
+  stopifnot(all(file.exists(source_paths)),
+            all(unname(tools::md5sum(source_paths))==source_manifest$bucket_md5))
+  layer_files <- sort(list.files(area_root, pattern="^layerinfo[.]txt$",
+                                 recursive=TRUE, full.names=TRUE))
+  stopifnot(length(layer_files)==as.integer(ds$n_patches))
+  patch_rows <- lapply(layer_files, function(li_file) {
+    patch_folder <- dirname(li_file)
+    info <- readLines(file.path(patch_folder,"info.txt"), warn=FALSE)
+    info <- strsplit(info," ",fixed=TRUE)
+    info <- setNames(vapply(info,function(x) paste(x[-1],collapse=" "),character(1)),
+                     vapply(info,`[`,character(1),1))
+    li <- utils::read.table(li_file,skip=1,colClasses="character",
+                            col.names=c("layer_number","layer_name","Area_micron2","AvgThickness_micron"),
+                            comment.char="",stringsAsFactors=FALSE)
+    seg <- utils::read.table(file.path(patch_folder,"segments.txt"),skip=1,
+                             colClasses=c("NULL","NULL","NULL","numeric","NULL"),
+                             comment.char="",stringsAsFactors=FALSE)[[1]]
+    counts <- tabulate(as.integer(seg)+1L,nbins=8L)
+    data.frame(area_dir=ds$area_dir,brain_id=info[["brain_id"]],
+               section_id=basename(dirname(patch_folder)),patch_dir=basename(patch_folder),
+               section_thickness_micron=info[["section_thickness_micron"]],
+               layer_number=li$layer_number,layer_name=li$layer_name,
+               Area_micron2=li$Area_micron2,AvgThickness_micron=li$AvgThickness_micron,
+               n_cells_in_layer=as.character(counts[as.integer(li$layer_number)+1L]),
+               stringsAsFactors=FALSE)
+  })
+  snap <- do.call(rbind,patch_rows)
   stopifnot(all(c("area_dir", "brain_id", "section_id", "patch_dir", "section_thickness_micron", "layer_number",
                   "layer_name", "Area_micron2", "AvgThickness_micron", "n_cells_in_layer") %in% names(snap)),
             all(snap$area_dir == ds$area_dir), all(snap$brain_id == "B20"), all(snap$section_thickness_micron == "20"),

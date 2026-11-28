@@ -41,3 +41,17 @@ tables (Table17-18) are derived and are deliberately not transcribed.
 - merge wiring remains on the whole-source hold recorded in
   `Baron_etal_1996_overlap_taxonomy_audit.md`.
 
+
+## Source-layout correction (2026-11-27)
+
+The snapshot now follows printed Table 16 across PDF pp. 86–90:
+caption, source-order species and family/subfamily rows, repeated page headers,
+and page breaks. Metadata columns `is_header`, `source_pdf_page`, and
+`species_row` are derived in `_read_baron_multpage.R`, rather than stored in
+the source grid. The printed abbreviation definitions at the bottom of the
+last page are represented only by their heading; consult the source page for
+the full definitions. `Rscript --vanilla Baron_etal_1996_Table16.R`
+reproduced the prior 150-row analysis CSV cell for cell, and
+`Rscript --vanilla Baron_etal_1996_Table16_snapshot.R` confirmed that the
+source extraction still matches every frozen species measurement. This is
+an assistant source-layout check, not human visual signoff.

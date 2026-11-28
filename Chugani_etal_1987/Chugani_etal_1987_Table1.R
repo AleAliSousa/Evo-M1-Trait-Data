@@ -57,9 +57,9 @@ resolve <- function(x) {
 resolve_basis <- function(x) key$basis[match(tolower(trimws(x)), tolower(trimws(key$variant_name)))]
 
 ## 2. LOAD (frozen snapshot) -------------------------------------------
-snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
+snap <- read.csv(snapshot_csv, skip = 1L, stringsAsFactors = FALSE, check.names = FALSE,
                  encoding = "UTF-8", colClasses = "character")
-stopifnot(nrow(snap) == 31L)   ## 29 patients + the "(Continued)" header + the footnote
+stopifnot(nrow(snap) == 32L)   ## 29 patients + continuation caption/header + footnote
 
 ## 3. CLEAN -------------------------------------------------------------
 ## drop the two non-data printed rows (continuation header, footnote); they stay in the

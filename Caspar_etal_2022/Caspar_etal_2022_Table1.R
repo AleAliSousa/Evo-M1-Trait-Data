@@ -22,31 +22,32 @@ setwd(folder)
 
 setwd(folder)
 
-## 1. Read direct from xl
+## 1. Read the printed two-page grid; captions and repeated headers stay in the snapshot
 library(readxl)
-tabledirectxl <- read_excel("Caspar_etal_2022_Table1_snapshot.xlsx")
+raw <- read_excel("Caspar_etal_2022_Table1_snapshot.xlsx", col_names = FALSE,
+                  col_types = "text")
+header_row <- which(raw[[1]] == "Species")[1]
+stopifnot(length(header_row) == 1L, !is.na(header_row))
+header <- as.character(unlist(raw[header_row, ], use.names = FALSE))
+header[is.na(header) | !nzchar(header)] <- paste0("unused_", which(is.na(header) | !nzchar(header)))
+tabledirectxl <- raw[-seq_len(header_row), , drop = FALSE]
+names(tabledirectxl) <- header
+tabledirectxl <- tabledirectxl[!is.na(tabledirectxl$Species) &
+                               grepl("^[0-9]+$", tabledirectxl$N), , drop = FALSE]
 
-## 2. Table name / header removal
-
-# Delete the current header and the following three rows
-tabledirectxl <- tabledirectxl[-c(1:3), ]
-
-# Set the next row as the new header
-colnames(tabledirectxl) <- as.character(unlist(tabledirectxl[1, ]))
-
-# Remove the first row since it's now the header
-tabledirectxl <- tabledirectxl[-1, ]
-
-## 3. Where there were merged cells, copy value into all cells included in the merger
-
-# Load the 'zoo' package
-library(zoo)
-
-# Fill empty cells with values from the row above
-# The na.locf() function in R stands for "Last Observation Carried Forward." (It can be done for the whole dataframe or for specific columns.)
-tabledirectxl[c("nGenus", "Genus direction bias (HI), p value", "Genus L/R/A distribution, p value")] <- na.locf(tabledirectxl[c("nGenus", "Genus direction bias (HI), p value", "Genus L/R/A distribution, p value")])
-
-# Note: "Genus direction bias (HI), p value" for "Pithecia pithecia" is a genuine "NA" and was not changed
+## 2. Genus totals are printed once per genus, sometimes on its last or
+## middle species row. Propagate only within the matching genus in R.
+genus <- sub(" .*", "", tabledirectxl$Species)
+genus_cols <- c("nGenus", "Genus direction bias (HI), p value",
+                "Genus L/R/A distribution, p value")
+for (rows in split(seq_len(nrow(tabledirectxl)), genus)) {
+  for (column in genus_cols) {
+    observed <- tabledirectxl[[column]][rows]
+    observed <- observed[!is.na(observed) & nzchar(observed)]
+    stopifnot(length(unique(observed)) == 1L)
+    tabledirectxl[[column]][rows] <- observed[1]
+  }
+}
 
 ## 4. Split 3 columns containing both frequency (#) and percentage (%) into 6 different columns.
 

@@ -35,3 +35,8 @@ human) and 3 cortical regions (occipital, temporal, prefrontal) from a total sam
 Transcribed directly from the article PDF's Table 1 (page 2) by Microsoft Copilot (AI assistant) on
 2026-09-25. The CSV, R script, public TSV, README, and definitions file were all built in this pass.
 No prior build existed for this item.
+
+
+## Snapshot layout audit (2026-11-27)
+
+The printed table has four columns, three measure sections and three species rows per section. Restored that grid; the R reader splits mean ± SD/SEM and forms species-by-region analysis rows. Compared with the local source PDF Table 1. Ran `Rscript Elston_etal_2001/Elston_etal_2001_Table1.R`; nine-row CSV SHA-256 stayed `c1f9130e63494ffc5c458051db54bfe41dfddc057e296debad4056674bc0905f`.

@@ -284,6 +284,14 @@ for (item in sub("^Baron_etal_1996_", "", item_name)) {   # this script writes o
                     basename(out), nrow(df)))
     next
   }
+  if (item == "Table45") {
+    printed <- rbind(c("Table 45. Lütgemeier’s area measurements of the “bicortex” (in mm²)", rep("", length(s$cols))),
+                     c("", s$cols),
+                     cbind(df$species_printed, df[, s$cols, drop = FALSE]))
+    write.table(printed, out, sep = ",", row.names = FALSE,
+                col.names = FALSE, quote = TRUE, na = "")
+    next
+  }
   write.csv(df, out, row.names = FALSE, na = "")
   message(sprintf("  wrote %-42s %3d rows, %d empty cells",
                   basename(out), nrow(df),

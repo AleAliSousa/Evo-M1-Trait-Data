@@ -10,7 +10,7 @@ Schneider's (1957b) cortical surface-area measurements, reprinted in the book. S
 
 Printed on PDF pages 159; 14 rows, matching the species count the book gives for
 these structures in its own Table 1 key (PDF pp. 264-265). Columns carried:
-`total_cortex_mm2`, `total_minus_bulb_mm2`, `allocortex_minus_bulb_mm2`, `neocortex_mm2`, `allocortex_mm2`, `paleocortex_plus_bulb_mm2`, `schizocortex_mm2`, `hippocampus_mm2`, `cingulate_mm2`.
+`total_cortex_mm2`, `olfactory_bulb_mm2`, `total_minus_bulb_mm2`, `neocortex_mm2`, `allocortex_mm2`, `allocortex_minus_bulb_mm2`, `paleocortex_plus_schizocortex_mm2`, `hippocampus_mm2`, `cingulate_mm2`.
 
 ## Reproducible pipeline
 
@@ -34,10 +34,26 @@ tables (Table37-38) are derived and are deliberately not transcribed.
 ## Checks
 
 - exactly 14 rows, from *Pteropus giganteus* through *Miniopterus schreib.*;
-- 1 empty measurement cells (printed gaps in the source, not extraction losses);
+- no empty measurement cells after correction of the printed `Natalus mexicanus`
+  cingulate value (2.8); the PDF text layer had attached `2;8` to the name;
 - the extractor re-derives the frozen Table 10 and Table 32 snapshots on every
   run and stops unless every species string and every value matches exactly;
 - OCR letterform repairs are explicit and listed in the extractor;
 - merge wiring remains on the whole-source hold recorded in
   `Baron_etal_1996_overlap_taxonomy_audit.md`.
+
+## Source-layout and data correction (2026-11-27)
+
+Compared printed Table 36 on PDF page 159. The snapshot now has its printed
+caption, two-tier column headings and 14 species rows, without extractor
+metadata columns. The old flattened column names shifted four meanings:
+printed `BOL` had been called `TOT_minus_BOL`, printed `TOT minus BOL` had been
+called `ALLO_minus_BOL`, printed `ALLO minus BOL` had been called
+`PAL_plus_BOL`, and printed `PAL plus SCH` had been called `SCH`. The R output
+and variable definitions now use the correct printed meanings. The clearly
+visible final `Natalus mexicanus` value is 2.8, not a blank; its name was
+also repaired. Run `Rscript Baron_etal_1996/Baron_etal_1996_Table36_snapshot.R`
+then `Rscript Baron_etal_1996/Baron_etal_1996_Table36.R` from the repository
+root. Both ran successfully. This is an assistant source check, not independent
+human signoff.
 

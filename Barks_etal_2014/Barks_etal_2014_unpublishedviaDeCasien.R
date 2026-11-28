@@ -21,9 +21,10 @@
 ##
 ## Input
 ##   Barks_etal_2014_unpublishedviaDeCasien_snapshot.xlsx
-##     (the per-specimen rows extracted verbatim from DeCasien & Higham 2019 MOESM3;
-##      already in mm3. Each row is linked to its Barks 2014 Table 1 specimen number
-##      by exact whole-brain-volume match.)
+##     (byte-identical DeCasien & Higham 2019 MOESM3 publisher workbook, in mm3).
+##   reference_tables/Barks_etal_2014_unpublishedviaDeCasien_specimen_map.csv
+##     (33-row source-sheet row to Barks Table 1 specimen mapping established by
+##      exact whole-brain-volume match; joined here rather than in the snapshot).
 ##
 ## Output
 ##   Barks_etal_2014_unpublishedviaDeCasien.csv
@@ -32,7 +33,8 @@
 ##
 ## Notes
 ##   - No unit conversion is applied: MOESM3 values are already mm3 (the repo's
-##     canonical unit). This script only reshapes/labels and writes the shared TSV.
+##     canonical unit). This script selects source rows, joins the specimen map,
+##     labels the output, and writes the shared TSV.
 ##   - Volumes are per-individual (N = 1 each). "species" is the binomial;
 ##     "species_as_published" keeps DeCasien's underscored subspecies label.
 ## =============================================================================
@@ -67,8 +69,33 @@ snapshot_file <- paste0(item_name, "_snapshot.xlsx")
 output_file   <- paste0(item_name, ".csv")
 if (!file.exists(snapshot_file)) stop("Snapshot file not found: ", snapshot_file, call. = FALSE)
 
-## ---- 1. read the extracted individual rows -----------------------------------
-df <- readxl::read_excel(snapshot_file)
+## ---- 1. read the publisher's source-layout workbook -------------------------
+## The snapshot is an exact copy of DeCasien & Higham's MOESM3 workbook. The
+## Barks specimen crosswalk belongs in this reader, not in the snapshot grid.
+source_grid <- readxl::read_excel(snapshot_file, sheet = "Brain Region Data (mm3)")
+specimen_map <- read.csv(file.path("reference_tables", paste0(item_name, "_specimen_map.csv")),
+                         stringsAsFactors = FALSE)
+stopifnot(nrow(specimen_map) == 33L,
+          all(specimen_map$source_excel_row >= 2L),
+          all(specimen_map$source_excel_row <= nrow(source_grid) + 1L))
+selected <- source_grid[specimen_map$source_excel_row - 1L, , drop = FALSE]
+stopifnot(all(as.character(selected$References) == "65"),
+          all(grepl("^Gorilla_", selected$Taxon)))
+df <- data.frame(
+  species = specimen_map$species,
+  species_as_published = selected$Taxon,
+  barks_table1_specimen_number = specimen_map$barks_table1_specimen_number,
+  moesm3_row = specimen_map$source_excel_row - 2L,
+  N = selected$N,
+  brain_volume_mm3 = selected$BV,
+  neocortex_GMWM_mm3 = selected$`Neocortex (GM+WM)`,
+  neocortex_GM_mm3 = selected$`Neocortex (GM)`,
+  cerebellum_mm3 = selected$Cerebellum,
+  striatum_mm3 = selected$Striatum,
+  hippocampus_mm3 = selected$Hippocampus,
+  amygdala_mm3 = selected$Amygdala,
+  insula_GM_mm3 = selected$`Insula (GM)`,
+  stringsAsFactors = FALSE)
 
 ## ---- 2. tidy: ensure numeric measurement columns, stable column order --------
 num_cols <- c("brain_volume_mm3","neocortex_GMWM_mm3","neocortex_GM_mm3","cerebellum_mm3",

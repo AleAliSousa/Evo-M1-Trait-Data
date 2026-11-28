@@ -35,7 +35,8 @@ library(tidyverse)
 library(readxl)
 
 ## 2. LOAD ----------------------------------------------------------
-snap <- read.csv(snapshot_csv, stringsAsFactors = FALSE, check.names = FALSE,
+snap <- read.csv(snapshot_csv, skip = 1L, nrows = 19L,
+                  stringsAsFactors = FALSE, check.names = FALSE,
                   colClasses = "character", encoding = "UTF-8")
 stopifnot(nrow(snap) == 19)
 
@@ -51,27 +52,19 @@ binomial_map <- c(
   "Turkey" = "Meleagris gallopavo", "Pigeon" = "Columba livia",
   "Mallard duck" = "Anas platyrhynchos"
 )
-## Four bird low-frequency-limit cells extract from the text layer with a
-## leading minus sign ("-250", "-250", "-125", "-300"). The page image of
-## Table 1 (p. 261) was read on 2026-09-29: the printed glyph is a LESS-THAN
-## sign -- "< 250", "< 250", "< 125", "< 300" -- i.e. the low limit is below
-## the lowest frequency tested. (Until then these cells were left blank on
-## the assumption the glyph was ">"; see reference_tables/Heffner__1998_errata.csv
-## E001-E004.) The snapshot keeps the literal extraction; here the sign is
-## decoded to the bound with a qualifier column, so the value is usable and
-## its meaning is explicit.
+## Four bird low-frequency limits are printed as less-than bounds.
 bird_less_than <- c("Zebra finch", "Turkey", "Pigeon", "Mallard duck")
 
 ## 3. CLEAN -----------------------------------------------------------
-num <- function(x) suppressWarnings(as.numeric(x))
-lf_raw <- snap$`Low-frequency limit (Hz) as extracted`
+num <- function(x) suppressWarnings(as.numeric(gsub(",", "", x)))
+lf_raw <- snap$`Low-frequency limit (Hz)`
 lf_is_lt <- snap$Animal %in% bird_less_than
-stopifnot(all(grepl("^-", lf_raw[lf_is_lt])), !any(grepl("^-", lf_raw[!lf_is_lt])))
+stopifnot(all(grepl("^<", lf_raw[lf_is_lt])), !any(grepl("^<", lf_raw[!lf_is_lt])))
 final.dataframe <- tibble(
   species_row = seq_len(nrow(snap)),
   common_name = snap$Animal,
   binomial    = unname(binomial_map[snap$Animal]),
-  low_frequency_limit_Hz = num(sub("^-", "", lf_raw)),
+  low_frequency_limit_Hz = num(trimws(sub("^<", "", lf_raw))),
   low_frequency_limit_qualifier = ifelse(lf_is_lt, "<", ""),
   high_frequency_limit_Hz = num(snap$`High-frequency limit (Hz)`),
   best_sensitivity_dB = num(snap$`Best sensitivity (dB)`),

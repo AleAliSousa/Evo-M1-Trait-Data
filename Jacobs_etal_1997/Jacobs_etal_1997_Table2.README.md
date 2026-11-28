@@ -34,3 +34,12 @@ areas before comparing dendritic measures.
 Transcribed directly from the article PDF's Table 2 (page 5) by Microsoft Copilot (AI assistant) on
 2026-09-25. The CSV, R script, public TSV, README, and definitions file were all built in this pass.
 No prior build existed for this item.
+
+## Source-layout correction (2026-11-27)
+
+The snapshot now follows the printed five-column matrix on PDF p. 5: six
+measurement rows, younger/older group headers over paired area columns, and
+unsplit mean ± SD cells. The R reader transposes and separates each cell into
+analysis columns. `Rscript --vanilla Jacobs_etal_1997_Table2.R` reproduced the
+prior four-row analysis CSV cell for cell. This is an assistant layout check,
+not human visual signoff.

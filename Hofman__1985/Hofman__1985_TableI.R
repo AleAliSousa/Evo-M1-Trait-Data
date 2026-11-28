@@ -35,6 +35,13 @@ setwd(folder)
 ## ---- read the frozen snapshot (verbatim headers); printed "-" and unprinted blanks -> NA ----
 snap <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE,
                  na.strings = c("", "NA", "-"), colClasses = "character")
+stopifnot(nrow(snap) == 54L, ncol(snap) == 10L)
+section <- rowSums(!is.na(snap[-1])) == 0L
+group <- rep(NA_character_, nrow(snap))
+group[section] <- snap$Mammal[section]
+for (i in seq_len(nrow(snap))[-1]) if (is.na(group[i])) group[i] <- group[i-1]
+snap <- data.frame(Group = group[!section], snap[!section, , drop = FALSE],
+                   check.names = FALSE, stringsAsFactors = FALSE)
 num <- function(x) suppressWarnings(as.numeric(gsub(",", "", trimws(x))))
 idx <- trimws(snap[["Index of folding"]])
 clean <- data.frame(

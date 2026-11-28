@@ -9,11 +9,14 @@ volume merge in `__merging_volumes/`.
 
 ## Source -> Snapshot
 `data_figshare.xlsx` sheet **Hoja1** only (Hoja2 and Hoja3 are empty). Hoja1 stacks three
-sub-tables, frozen here as three faithful snapshots:
-- `..._volumes_snapshot.csv`     - Absolute volumes (mm3), per specimen, 13 regions incl Total.
-- `..._cellnumber_snapshot.csv`  - Cell number, per animal, 5 region groups x {Total, Neurons, Non-neurons}.
-- `..._celldensity_snapshot.csv` - Cell density, same layout.
-Snapshot scripts (one per item; each writes only its own snapshot CSV+TSV from `data_figshare.xlsx`): `..._volumes_snapshot.R`, `..._cellnumber_snapshot.R`, `..._celldensity_snapshot.R`. Item scripts (`..._volumes.R`, `..._cellnumber.R`, `..._celldensity.R`, `..._tidy.R`) only READ the snapshots; the former single script `BarbeitoAndrés_etal_2019.R` was split into these.
+sub-tables, frozen in each of the three registered CSV/TSV snapshot pairs as
+the same complete source worksheet grid. The item readers select the absolute
+volume, cell-number, or cell-density block, respectively.
+Snapshot scripts (one per item; each writes its own source-grid CSV+TSV from
+`data_figshare.xlsx`): `..._volumes_snapshot.R`, `..._cellnumber_snapshot.R`,
+`..._celldensity_snapshot.R`. Item scripts (`..._volumes.R`,
+`..._cellnumber.R`, `..._celldensity.R`, `..._tidy.R`) read the snapshots;
+the former single script `BarbeitoAndrés_etal_2019.R` was split into these.
 Groups: **C** = control, **LP** = low protein, **LCP** = low calorie + protein (labels as published).
 
 ## Data readable
@@ -42,3 +45,22 @@ Rest = Total - the four named regions):
   the volume table is not possible from the snapshot; group-level means were used for the check above.
 
 Pipeline: Source -> Snapshot OK -> Data readable OK -> units/scaling VERIFIED (internal consistency) -> standalone comparison set.
+## Snapshot layout recheck (2026-11-27)
+
+The three registered snapshot pairs (`volumes`, `cellnumber`,
+`celldensity`; CSV and TSV each) now copy the complete 69-row by 16-column
+`Hoja1` worksheet grid from `data_figshare.xlsx`. Source labels, internal
+blanks, and 23 `SUM` formulas remain in their original cells. Every source
+cell was compared with each of the six snapshots: no mismatches.
+
+The three item R readers select their corresponding source block and do the
+reshaping for analysis. The volumes reader evaluates the source `SUM`
+formulas. Rebuild from the repository root with
+`Rscript BarbeitoAndrés_etal_2019/BarbeitoAndrés_etal_2019_volumes.R`,
+`Rscript BarbeitoAndrés_etal_2019/BarbeitoAndrés_etal_2019_cellnumber.R`, and
+`Rscript BarbeitoAndrés_etal_2019/BarbeitoAndrés_etal_2019_celldensity.R`.
+The combined `Rscript BarbeitoAndrés_etal_2019/BarbeitoAndrés_etal_2019_tidy.R`
+reader was also updated and rebuilt to 724 rows. Output row counts and
+substantive values match prior analysis CSVs; 25 item-level
+numeric cells differ only in floating-point serialization (maximum absolute
+difference 1.14e-13). This is separate from independent human source signoff.
